@@ -1,0 +1,10 @@
+
+nibChatTabsDB = {
+	["profileKeys"] = {
+		["Xûñä - Ravencrest"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

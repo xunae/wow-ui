@@ -1,0 +1,2 @@
+
+BD_user = nil

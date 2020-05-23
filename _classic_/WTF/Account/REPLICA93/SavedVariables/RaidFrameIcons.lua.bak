@@ -1,0 +1,11 @@
+
+RaidFrameIconsDB = {
+	["profileKeys"] = {
+		["Xuna - Stormscale"] = "Xuna - Stormscale",
+	},
+	["profiles"] = {
+		["Xuna - Stormscale"] = {
+			["iconSize"] = 20,
+		},
+	},
+}

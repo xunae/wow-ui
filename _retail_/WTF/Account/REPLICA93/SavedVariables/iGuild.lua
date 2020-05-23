@@ -1,0 +1,2 @@
+
+iGuildDB = nil

@@ -1,0 +1,11 @@
+
+XunaTweaksDB = {
+	["customHealthMana"] = true,
+	["darkFrames"] = false,
+	["hideMacros"] = true,
+	["eliteFrame"] = true,
+	["hideBinds"] = true,
+	["classIconPortraits"] = false,
+	["bottomRaidFrame"] = true,
+	["db_version"] = 1,
+}

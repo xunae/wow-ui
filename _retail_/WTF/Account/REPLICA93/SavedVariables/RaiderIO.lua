@@ -1,0 +1,35 @@
+
+RaiderIO_Config = {
+	["enableKeystoneTooltips"] = true,
+	["disableScoreColors"] = false,
+	["showRaiderIOProfile"] = true,
+	["inverseProfileModifier"] = false,
+	["showScoreInCombat"] = true,
+	["enableWhoTooltips"] = true,
+	["enableLFGDropdown"] = true,
+	["enableGuildTooltips"] = true,
+	["lockProfile"] = false,
+	["alwaysExtendTooltip"] = false,
+	["enableClientEnhancements"] = true,
+	["enableProfileModifier"] = true,
+	["enableUnitTooltips"] = true,
+	["enableFriendsTooltips"] = true,
+	["showRaidEncountersInProfile"] = true,
+	["showDropDownCopyURL"] = true,
+	["showAverageScore"] = true,
+	["enableLFGTooltips"] = true,
+	["hidePersonalRaiderIOProfile"] = false,
+	["positionProfileAuto"] = true,
+	["enableWhoMessages"] = true,
+	["showSimpleScoreColors"] = false,
+	["showMainsScore"] = true,
+	["showClientGuildBest"] = true,
+}
+RaiderIO_LastCharacter = "eu-Xunae-draenor"
+RaiderIO_MissingCharacters = {
+	["eu-Enduros-draenor"] = true,
+	["eu-Foxville-draenor"] = true,
+	["eu-Tarikata-draenor"] = true,
+	["eu-Akility-draenor"] = true,
+	["eu-Hunteca-draenor"] = true,
+}

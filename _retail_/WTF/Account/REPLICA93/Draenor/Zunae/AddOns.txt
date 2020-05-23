@@ -1,0 +1,17 @@
+ILD-Arkinventory: disabled
+ILD-Baggins: disabled
+ILD-Bagnon: disabled
+ILD-Combuctor: disabled
+ILD-Onebag3: disabled
+Masque: enabled
+TipTacItemRef: enabled
+BlizzBuffsFacade: enabled
+Quartz: enabled
+Dominos: disabled
+Bartender4: enabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Kui_Nameplates: enabled

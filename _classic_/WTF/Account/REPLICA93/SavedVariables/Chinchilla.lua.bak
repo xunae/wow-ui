@@ -1,0 +1,110 @@
+
+Chinchilla2DB = {
+	["namespaces"] = {
+		["Ping"] = {
+			["profiles"] = {
+				["Default"] = {
+					["enabled"] = false,
+				},
+			},
+		},
+		["Coordinates"] = {
+			["profiles"] = {
+				["Default"] = {
+					["backgroundTexture"] = "None",
+					["scale"] = 0.8,
+					["positionY"] = -78,
+					["positionX"] = 4,
+					["borderTexture"] = "None",
+				},
+			},
+		},
+		["Appearance"] = {
+			["profiles"] = {
+				["Default"] = {
+					["scale"] = 1.1,
+					["borderStyle"] = "Tooltip",
+					["buttonBorderAlpha"] = 0,
+					["shape"] = "SQUARE",
+				},
+			},
+		},
+		["Zoom"] = {
+			["profiles"] = {
+				["Default"] = {
+					["autoZoomTime"] = 10,
+				},
+			},
+		},
+		["TrackingDots"] = {
+		},
+		["QuestTracker"] = {
+		},
+		["RangeCircle"] = {
+		},
+		["ShowHide"] = {
+			["profiles"] = {
+				["Default"] = {
+					["map"] = false,
+					["zoom"] = false,
+				},
+			},
+		},
+		["Position"] = {
+			["profiles"] = {
+				["Default"] = {
+					["minimap"] = {
+						nil, -- [1]
+						-28.4889504101386, -- [2]
+						-22.5705345373849, -- [3]
+					},
+					["minimapLock"] = true,
+				},
+			},
+		},
+		["Location"] = {
+			["profiles"] = {
+				["Default"] = {
+					["backgroundTexture"] = "None",
+					["showClose"] = false,
+					["scale"] = 1,
+					["positionY"] = 83,
+					["borderTexture"] = "None",
+					["font"] = "Arial Narrow",
+				},
+			},
+		},
+		["Compass"] = {
+			["profiles"] = {
+				["Default"] = {
+					["radius"] = 60,
+					["fontSize"] = 10,
+				},
+			},
+		},
+		["MoveButtons"] = {
+			["profiles"] = {
+				["Default"] = {
+					["dayNight"] = 38,
+					["lock"] = true,
+					["clock"] = 270,
+					["map"] = 61,
+				},
+			},
+		},
+		["Expander"] = {
+			["profiles"] = {
+				["Default"] = {
+					["enabled"] = false,
+				},
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Xuna - Stormscale"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+		},
+	},
+}

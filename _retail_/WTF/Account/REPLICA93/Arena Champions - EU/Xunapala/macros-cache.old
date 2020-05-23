@@ -1,0 +1,85 @@
+VER 3 0100000000000001 "1hoj" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@arena1] Fist of Justice
+/use [@arena1] Repentance
+/use [@arena1] Turn Evil
+/run local G=GetSpellInfo SetMacroSpell("1hoj", G"Fist of Justice" or G"Repentance" or G'Turn Evil')
+END
+VER 3 0100000000000002 "2hoj" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@arena2] Fist of Justice
+/use [@arena2] Repentance
+/use [@arena2] Turn Evil
+/run local G=GetSpellInfo SetMacroSpell("2hoj", G"Fist of Justice" or G"Repentance" or G'Turn Evil')
+END
+VER 3 0100000000000003 "3hoj" "INV_Misc_QuestionMark"
+#showtooltip
+/use [@arena3] Fist of Justice
+/use [@arena3] Repentance
+/use [@arena3] Turn Evil
+/run local G=GetSpellInfo SetMacroSpell("3hoj", G"Fist of Justice" or G"Repentance" or G'Turn Evil')
+END
+VER 3 0100000000000004 "bof" "INV_Misc_QuestionMark"
+#showtooltip [talent:7/1]Beacon of Faith; [talent:7/2] Beacon of Insight;[talent:7/3]Avenging Wrath
+/cast [talent:7/1]Beacon of Faith; [talent:7/2] Beacon of Insight
+END
+VER 3 0100000000000005 "burst" "INV_Misc_QuestionMark"
+#showtooltip Devotion Aura
+/cast Avenging Wrath
+/use 13
+END
+VER 3 0100000000000006 "cleanse" "INV_Misc_QuestionMark"
+#showtooltip Cleanse
+/cast [@mouseover,exists] Cleanse; Cleanse
+END
+VER 3 0100000000000007 "denounce" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@mouseover,exists,harm][]Denounce
+END
+VER 3 0100000000000008 "judgment" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [modifier:shift,@player] Cleanse
+/cast [modifier:ctrl,@party1] Cleanse
+/cast [modifier:alt,@party2] Cleanse
+/cast [harm][@targettarget] Judgment
+/stopcasting [nomod]
+END
+VER 3 0100000000000009 "kings" "INV_Misc_QuestionMark"
+#showtooltip Blessing of Kings
+/cast Righteous Fury
+/cast [@player] Blessing of Kings
+/use Alchemist's Flask
+END
+VER 3 010000000000000A "mastery" "INV_Misc_QuestionMark"
+#showtooltip Blessing of Might
+/cast Righteous Fury
+/cast [@player] Blessing of Might
+/use Alchemist's Flask
+END
+VER 3 010000000000000B "NS" "INV_Misc_QuestionMark"
+#showtooltip [talent:6/1]Holy Prism;Execution Sentence
+/cast [talent:6/3]Avenging Wrath
+/use [talent:6/3]13
+/cast [talent:6/1]Holy Prism; Execution Sentence
+END
+VER 3 010000000000000C "rebuke" "INV_Misc_QuestionMark"
+#showtooltip Rebuke
+/cancelaura Hand of Protection
+/cast [modifier:ctrl,@focus,harm] Rebuke
+/cast [nomod,harm] Rebuke
+/cast [modifier:ctrl,@focus,harm] Crusader Strike
+/cast [nomod,harm] Crusader Strike
+END
+VER 3 010000000000000D "tier1" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:1/1]Speed of Light; [talent:1/3]Pursuit of Justice
+END
+VER 3 010000000000000E "tier3" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [talent:3/1,@mouseover,exists,harm][talent:3/1]Judgment; [talent:3/3] Sacred Shield
+END
+VER 3 010000000000000F "trinket" "INV_Misc_QuestionMark"
+#showtooltip
+/use 13
+/use Healthstone
+END

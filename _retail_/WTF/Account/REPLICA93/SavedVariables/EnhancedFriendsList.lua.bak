@@ -1,0 +1,11 @@
+
+EnhancedFriendsListOptions = {
+	["NameFontSize"] = 12,
+	["NameFont"] = "Arial Narrow",
+	["GameIconPack"] = "Default",
+	["NameFontFlag"] = "OUTLINE",
+	["StatusIconPack"] = "Default",
+	["InfoFontFlag"] = "OUTLINE",
+	["InfoFontSize"] = 12,
+	["InfoFont"] = "Arial Narrow",
+}

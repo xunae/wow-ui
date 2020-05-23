@@ -1,0 +1,125 @@
+VER 3 0000000000000159 "1HEX" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1]Hex
+END
+VER 3 000000000000013F "1SHEAR" "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/stopcasting
+/cast [@arena1] Wind Shear
+END
+VER 3 000000000000013D "2HEX" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2]Hex
+END
+VER 3 0000000000000140 "2SHEAR" "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/stopcasting
+/cast [@arena2] Wind Shear
+END
+VER 3 000000000000013E "3HEX" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3]Hex
+END
+VER 3 0000000000000141 "3SHEAR" "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/stopcasting
+/cast [@arena3] Wind Shear
+END
+VER 3 000000000000018A "AutoDrink" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/AutoDrink Conjured Mana Bun, Ley-Enriched Water, Seafoam Coconut Water
+/click AutoDrink
+END
+VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Purify Spirit
+/cast [@mouseover,exists]Purify Spirit; Purify Spirit
+END
+VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Spirit
+/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
+END
+VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [@player,mod:alt,nocombat,nomounted]Water Walking
+/click [mod:alt,nocombat]MultiBarLeftButton1
+/stopmacro [nocombat,mod:alt]
+/use [nomod]Hex
+END
+VER 3 00000000000000AE "HS" "INV_MISC_QUESTIONMARK"
+#showtooltip Abyssal Healing Potion
+/use Healthstone
+/use Abyssal Healing Potion
+END
+VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
+#showtooltip Purge
+/cast [modifier:shift,@player] Purify Spirit
+/cast [modifier:ctrl,@party1] Purify Spirit
+/cast [modifier:alt,@party2]Purify Spirit
+/cast [harm][@targettarget] Purge
+/stopcasting [nomod]
+END
+VER 3 0000000000000180 "RSHAM_HR" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@cursor]Healing Rain
+END
+VER 3 0000000000000188 "RSHAM_HST" "INV_MISC_QUESTIONMARK"
+#showtooltip [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
+/cast [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
+END
+VER 3 0000000000000182 "RSHAM_TIER_3" "INV_MISC_QUESTIONMARK"
+/showtooltip
+/cast [@cursor]Earthgrab Totem
+END
+VER 3 0000000000000183 "RSHAM_TIER_4" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor,talent:4/2]Earthen Wall Totem;[@cursor,talent:4/3]Ancestral Protection Totem 
+END
+VER 3 0000000000000187 "RSHAM_TIER_7" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:6/2,@cursor]Downpour;[talent:6/3]Cloudburst Totem
+END
+VER 3 0000000000000184 "RSHAM_TIER_8" "INV_MISC_QUESTIONMARK"
+#showtooltip [talent:7/2]Wellspring;[talent:7/3]Ascendance
+/use [talent:7/3]Blood Fury
+/cast [talent:7/2]Wellspring;[talent:7/3]Ascendance
+END
+VER 3 0000000000000185 "RSHAM_TRINK_LINK" "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/use Gladiator's Medallion
+/use [@player]Spirit Link Totem
+END
+VER 3 0000000000000186 "RSHAM_TRINKLINKC" "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/use Gladiator's Medallion
+/use [@cursor]Spirit Link Totem
+END
+VER 3 0000000000000139 "SHEAR" "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/stopcasting
+/cast [modifier:shift] Wind Shear
+/cast [target=focus,harm] Wind Shear; [harm] Wind Shear
+END
+VER 3 0000000000000176 "TOTEM_CAP" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Capacitor Totem
+END
+VER 3 000000000000016F "TOTEM_EB" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Earthbind Totem
+END
+VER 3 0000000000000177 "TOTEM_SL" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Spirit Link Totem
+END
+VER 3 0000000000000178 "TOTEM_WW" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Wind Rush Totem
+END
+VER 3 000000000000017B "TRINKET_USE" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@cursor]13;13
+END
+VER 3 000000000000017E "TRINKET_USE2" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@cursor]14;14
+END

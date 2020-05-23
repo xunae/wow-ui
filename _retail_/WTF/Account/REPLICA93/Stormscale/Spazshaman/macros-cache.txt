@@ -1,0 +1,61 @@
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor,talent:4/2]Earthen Wall Totem;[@cursor,talent:4/3]Ancestral Protection Totem 
+END
+VER 3 0100000000000002 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/use Gladiator's Medallion
+/use [@player]Spirit Link Totem
+END
+VER 3 0100000000000003 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use Dread Gladiator's Emblem
+/use Healthstone
+END
+VER 3 0100000000000004 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:7/2]Wellspring;[talent:7/3]Ascendance
+/cast [talent:7/3]Blood Fury(Racial)
+/use  [talent:7/3Dread Gladiator's Medallion
+END
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [talent:6/2,@cursor]Downpour;[talent:6/3]Cloudburst Totem
+END
+VER 3 010000000000000A " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use [@cursor]Healing Rain
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+/showtooltip
+/cast [@cursor]Earthgrab Totem
+END
+VER 3 0100000000000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Healing Tide Totem
+/cast Healing Tide Totem
+END
+VER 3 0100000000000009 " " "INV_MISC_QUESTIONMARK"
+#showtooltip [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
+/cast [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
+END
+VER 3 010000000000000B " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Earthquake
+END
+VER 3 010000000000000C " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@cursor]Liquid Magma Totem
+END
+VER 3 010000000000000D " " "INV_MISC_QUESTIONMARK"
+#showtooltip Spirit Link Totem
+/use Gladiator's Medallion
+/use [@Cursor]Spirit Link Totem
+END
+VER 3 0100000000000001 "HEX" "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [@player,mod:alt,nocombat,nomounted]Water Walking
+/cast [mod:alt,nocombat]Blue Shado-Pan Riding Tiger
+/stopmacro [nocombat,mod:alt]
+/cast [@cursor,talent:3/3] Hex
+/cast [nomod] Hex
+END

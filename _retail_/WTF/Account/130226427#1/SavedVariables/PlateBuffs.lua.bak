@@ -1,0 +1,20 @@
+
+PB_DB = {
+	["profileKeys"] = {
+		["Xuna - Ravencrest"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["ignoreDefaultSpell"] = {
+				["Angelic Bulwark"] = true,
+				["Sprint"] = true,
+				["Focused Will"] = true,
+				["Nature's Vigil"] = true,
+			},
+			["iconTestMode"] = false,
+			["iconsPerBar"] = 4,
+			["showCooldown"] = false,
+			["barOffsetY"] = -14,
+		},
+	},
+}

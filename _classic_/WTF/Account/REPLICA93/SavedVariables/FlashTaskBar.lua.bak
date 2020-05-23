@@ -1,0 +1,12 @@
+
+FlashTaskbarDB = {
+	["profileKeys"] = {
+		["Xuna - Ravencrest"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["end_taxi"] = true,
+			["enter_combat"] = true,
+		},
+	},
+}

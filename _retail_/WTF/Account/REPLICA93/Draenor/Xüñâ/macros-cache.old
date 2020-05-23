@@ -1,0 +1,86 @@
+VER 3 0100000000000031 "1disarm" "INV_MISC_QUESTIONMARK"
+#showtooltip Grapple Weapon
+/cancelaura Spinning Crane Kick
+/cast [@arena1] Grapple Weapon
+END
+VER 3 010000000000004A "1para" "INV_MISC_QUESTIONMARK"
+#showtooltip Paralysis
+/cancelaura Spinning Crane Kick
+/cast [@arena1] Paralysis
+END
+VER 3 0100000000000032 "2disarm" "INV_MISC_QUESTIONMARK"
+#showtooltip Grapple Weapon
+/cancelaura Spinning Crane Kick
+/cast [@arena2] Grapple Weapon
+END
+VER 3 010000000000004B "2para" "INV_MISC_QUESTIONMARK"
+#showtooltip Paralysis
+/cancelaura Spinning Crane Kick
+/cast [@arena2] Paralysis
+END
+VER 3 0100000000000033 "3disarm" "INV_MISC_QUESTIONMARK"
+#showtooltip Grapple Weapon
+/cancelaura Spinning Crane Kick
+/cast [@arena3] Grapple Weapon
+END
+VER 3 010000000000004C "3para" "INV_MISC_QUESTIONMARK"
+#showtooltip Paralysis
+/cancelaura Spinning Crane Kick
+/cast [@arena3] Paralysis
+END
+VER 3 0100000000000046 "cjl" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift,@player] Detox
+/cast [modifier:ctrl,@party1] Detox
+/cast [modifier:alt,@party2] Detox
+/cast Crackling Jade Lightning
+/cancelaura Spinning Crane Kick
+END
+VER 3 010000000000002F "detox" "INV_MISC_QUESTIONMARK"
+#showtooltip Detox
+/cancelaura Spinning Crane Kick
+/cast [@mouseover,exists] Detox; Detox
+END
+VER 3 010000000000001E "hs+fb" "INV_MISC_QUESTIONMARK"
+#showtooltip Fortifying Brew
+/cast Fortifying Brew
+/use 13
+/use Healthstone
+END
+VER 3 0100000000000056 "legacy" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@player] Legacy of the Emperor
+/run SetRaidTarget("Xüñâ", 4)
+END
+VER 3 010000000000005B "meld" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Shadowmeld
+/run SetRaidTarget("Xüñâ", 4)
+END
+VER 3 010000000000004D "renewing" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast Renewing Mist
+/cast [@arenapet1,exists] Provoke
+/cast [@arenapet2,exists] Provoke
+/cast [@arenapet3,exists] Provoke
+/cast [@arenapet4,exists] Provoke
+/cast [@arenapet5,exists] Provoke
+/cancelaura Spinning Crane Kick
+END
+VER 3 010000000000003C "shear" "INV_MISC_QUESTIONMARK"
+#showtooltip Spear Hand Strike
+/cancelaura Spinning Crane Kick
+/cast [modifier:ctrl,@focus,harm] Spear Hand Strike
+/cast [nomod,harm] Spear Hand Strike
+END
+VER 3 010000000000005A "tiger" "ABILITY_MONK_SUMMONTIGERSTATUE"
+#showtooltip
+/cast Invoke Xuen, the White Tiger
+/petattack [@target,exists]
+/cast Tiger Leap
+/petassist
+END
+VER 3 010000000000006D "ZGVMacro1" "0"
+/target Griznak
+/run ZGV:MRM():CG(19,1)
+END

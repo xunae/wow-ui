@@ -1,0 +1,9 @@
+## Interface: 80100
+## Version: 1.0
+## Title: XunaTweaks
+## Notes: Oooookaayy duuuude
+## Author: Xuna
+## SavedVariables: XunaTweaksDB
+
+core.lua
+config.lua

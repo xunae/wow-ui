@@ -1,0 +1,2 @@
+
+iFriendsDB = nil
