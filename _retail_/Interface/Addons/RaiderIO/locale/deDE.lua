@@ -106,18 +106,12 @@ L["OUT_OF_SYNC_DATABASE_S"] = "|cffFFFFFF%s|r hat keine synchronisierte Fraktion
 L["OUTDATED_DATABASE"] = "Wertungen sind %d Tag(e) alt"
 L["OUTDATED_DATABASE_HOURS"] = "Wertungen sind %d Stunde(n) alt"
 L["OUTDATED_DATABASE_S"] = "|cffFFFFFF%s|r benutzt Daten die |cffFF6666%d|r Tag(e) alt sind. Bitte update das Addon für aktuellere Mythic Plus Wertungen."
---[[Translation missing --]]
---[[ L["OUTDATED_DOWNLOAD_LINK"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRED_ALERT"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRED_TITLE"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRES_IN_DAYS"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_EXPIRES_IN_HOURS"] = ""--]] 
---[[Translation missing --]]
---[[ L["OUTDATED_PROFILE_TOOLTIP_MESSAGE"] = ""--]] 
+L["OUTDATED_DOWNLOAD_LINK"] = "Herunterladen: %s"
+L["OUTDATED_EXPIRED_ALERT"] = "|cffFFFFFF%s|r verwendet abgelaufene Daten. Bitte aktualisiere sie jetzt, um die genauesten Daten zu sehen: |cffFFFFFF%s|r"
+L["OUTDATED_EXPIRED_TITLE"] = "Raider.IO-Daten sind abgelaufen"
+L["OUTDATED_EXPIRES_IN_DAYS"] = "Raider.IO-Daten laufen in %d Tagen ab"
+L["OUTDATED_EXPIRES_IN_HOURS"] = "Raider.IO-Daten laufen in %d Stunden ab"
+L["OUTDATED_PROFILE_TOOLTIP_MESSAGE"] = "Bitte aktualisiere jetzt dein Addon, um die genauesten Daten zu sehen. Die Spieler arbeiten hart daran, ihre Fortschritte zu verbessern und die Anzeige sehr alter Daten ist für alle ein schlechter Dienst. Mit dem Raider.IO-Client kannst du deine Daten automatisch synchronisieren."
 L["PLAYER_PROFILE_TITLE"] = "Spieler M+ Profil"
 L["PREV_SEASON_SUFFIX"] = "(*)"
 L["PREVIOUS_SCORE"] = "Vorige M+ Wertung (%s)"

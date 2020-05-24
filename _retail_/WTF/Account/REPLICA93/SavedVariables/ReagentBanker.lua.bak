@@ -1,11 +1,11 @@
 
 ReagentBanker_Settings = {
 	["chatLogDeposits"] = false,
-	["depositModifierKey"] = 2,
-	["autoDeposit"] = true,
-	["includeIgnoredButton"] = false,
 	["includeIgnoredAuto"] = false,
+	["Version"] = "0.1",
+	["includeIgnoredButton"] = false,
+	["depositModifierKey"] = 2,
 	["openTabModifierKey"] = 2,
 	["reagentTabIsDefault"] = false,
-	["Version"] = "0.1",
+	["autoDeposit"] = true,
 }

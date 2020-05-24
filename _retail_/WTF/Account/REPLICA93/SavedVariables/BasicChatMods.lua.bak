@@ -10,6 +10,13 @@ bcmDB = {
 	["BCM_Timestamp"] = true,
 	["nolevel"] = true,
 	["nogroup"] = true,
+	["noChatCopyTip"] = true,
+	["sticky"] = {
+		["EMOTE"] = 1,
+		["YELL"] = 1,
+		["RAID_WARNING"] = 1,
+	},
+	["playerRBrack"] = "",
 	["replacements"] = {
 		"1", -- [1]
 		"2", -- [2]
@@ -29,12 +36,5 @@ bcmDB = {
 		"RW", -- [16]
 		"%1", -- [17]
 	},
-	["sticky"] = {
-		["EMOTE"] = 1,
-		["YELL"] = 1,
-		["RAID_WARNING"] = 1,
-	},
-	["playerRBrack"] = "",
-	["noChatCopyTip"] = true,
 	["playerSeparator"] = ":",
 }

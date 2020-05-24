@@ -569,6 +569,8 @@ L["STRING_OPTIONS_COMBAT_ALPHA_4"] = "当退出队伍"
 L["STRING_OPTIONS_COMBAT_ALPHA_5"] = "当不在副本中"
 L["STRING_OPTIONS_COMBAT_ALPHA_6"] = "当在副本中"
 L["STRING_OPTIONS_COMBAT_ALPHA_7"] = "团队副本测试"
+--[[Translation missing --]]
+--[[ L["STRING_OPTIONS_COMBAT_ALPHA_8"] = ""--]] 
 L["STRING_OPTIONS_COMBAT_ALPHA_DESC"] = [=[选择战斗状态如何影响窗口透明度。
 |cFFFFFF00没变化|r：不修改透明度。
 |cFFFFFF00当在战斗|r：当角色进入战斗时，所选的Alpha将应用于窗口

@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.18 (13th May 2020)
+-- 	Leatrix Plus 8.3.19 (20th May 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.18"
+	LeaPlusLC["AddonVer"] = "8.3.19"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -3349,6 +3349,31 @@
 ----------------------------------------------------------------------
 
 	function LeaPlusLC:Player()
+
+		----------------------------------------------------------------------
+		--	Sync from friends (no reload required)
+		----------------------------------------------------------------------
+
+		do
+
+			hooksecurefunc(QuestSessionManager.StartDialog, "Show", function(self)
+				if LeaPlusLC["SyncFromFriends"] == "On" then
+					local details = C_QuestSession.GetSessionBeginDetails()
+					if details then
+						for index, unit in ipairs({"player", "party1", "party2", "party3", "party4",}) do
+							if UnitGUID(unit) == details.guid then
+								local requesterName = GetUnitName(unit)
+								if LeaPlusLC:FriendCheck(requesterName) then
+									self.ButtonContainer.Confirm:Click()
+								end
+								return
+							end
+						end
+					end
+				end
+			end)
+
+		end
 
 		----------------------------------------------------------------------
 		--	Class icon portraits
@@ -7440,8 +7465,18 @@
 
 		if event == "CONFIRM_SUMMON" then
 			if not UnitAffectingCombat("player") then
-				C_SummonInfo.ConfirmSummon()
-				StaticPopup_Hide("CONFIRM_SUMMON")
+				local sName = GetSummonConfirmSummoner()
+				local sLocation = GetSummonConfirmAreaName()
+				LeaPlusLC:Print(L["The summon from"] .. " " .. sName .. " (" .. sLocation .. ") " .. L["will be automatically accepted in 10 seconds unless cancelled."])
+				C_Timer.After(10, function()
+					local sNameNew = GetSummonConfirmSummoner()
+					local sLocationNew = GetSummonConfirmAreaName()
+					if sName == sNameNew and sLocation == sLocationNew then
+						-- Automatically accept summon after 10 seconds if summoner name and location have not changed
+						C_SummonInfo.ConfirmSummon()
+						StaticPopup_Hide("CONFIRM_SUMMON")
+					end
+				end)
 			end
 			return
 		end
@@ -7466,6 +7501,10 @@
 							StaticPopup_Hide("PARTY_INVITE_XREALM");
 							break
 						end
+					end
+					-- Confirm invite to party sync group request
+					if QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Confirm:IsShown() then
+						QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Confirm:Click()
 					end
 					return
 				end
@@ -7585,6 +7624,7 @@
 				LeaPlusLC:LoadVarChk("NoFriendRequests", "Off")				-- Block friend requests
 
 				LeaPlusLC:LoadVarChk("AcceptPartyFriends", "Off")			-- Party from friends
+				LeaPlusLC:LoadVarChk("SyncFromFriends", "Off")				-- Sync from friends
 				LeaPlusLC:LoadVarChk("AutoConfirmRole", "Off")				-- Queue from friends
 				LeaPlusLC:LoadVarChk("InviteFromWhisper", "Off")			-- Invite from whispers
 				LeaPlusLC:LoadVarChk("InviteFriendsOnly", "Off")			-- Restrict invites to friends
@@ -7749,6 +7789,7 @@
 			LeaPlusDB["NoFriendRequests"]		= LeaPlusLC["NoFriendRequests"]
 
 			LeaPlusDB["AcceptPartyFriends"]		= LeaPlusLC["AcceptPartyFriends"]
+			LeaPlusDB["SyncFromFriends"]		= LeaPlusLC["SyncFromFriends"]
 			LeaPlusDB["AutoConfirmRole"]		= LeaPlusLC["AutoConfirmRole"]
 			LeaPlusDB["InviteFromWhisper"]		= LeaPlusLC["InviteFromWhisper"]
 			LeaPlusDB["InviteFriendsOnly"]		= LeaPlusLC["InviteFriendsOnly"]
@@ -9417,6 +9458,7 @@
 				LeaPlusDB["NoPartyInvites"] = "Off"				-- Block party invites
 				LeaPlusDB["NoFriendRequests"] = "Off"			-- Block friend requests			
 				LeaPlusDB["AcceptPartyFriends"] = "On"			-- Party from friends
+				LeaPlusDB["SyncFromFriends"] = "On"				-- Sync from friends
 				LeaPlusDB["AutoConfirmRole"] = "On"				-- Queue from friends
 				LeaPlusDB["InviteFromWhisper"] = "On"			-- Invite from whispers
 				LeaPlusDB["InviteFriendsOnly"] = "On"			-- Restrict invites to friends
@@ -9806,8 +9848,9 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Groups"					, 	340, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AcceptPartyFriends"		, 	"Party from friends"			, 	340, -92, 	false,	"If checked, party invitations from friends or guild members will be automatically accepted unless you are queued in Dungeon Finder.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -112, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -132,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SyncFromFriends"			, 	"Sync from friends"				,	340, -112, 	false,	"If checked, party sync requests from friends or guild members will be automatically accepted.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoConfirmRole"			, 	"Queue from friends"			,	340, -132, 	false,	"If checked, requests initiated by your party leader to join the Dungeon Finder queue will be automatically accepted if the party leader is in your friends list or guild.|n|nThis option requires that you have selected a role for your character in the Dungeon Finder window.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "InviteFromWhisper"			,   "Invite from whispers"			,	340, -152,	false,	L["If checked, a group invite will be sent to anyone who whispers you with a set keyword as long as you are ungrouped, group leader or raid assistant."] .. "|n|n" .. L["Keyword"] .. ": |cffffffff" .. "dummy" .. "|r")
 
  	LeaPlusLC:CfgBtn("InvWhisperBtn", LeaPlusCB["InviteFromWhisper"])
 

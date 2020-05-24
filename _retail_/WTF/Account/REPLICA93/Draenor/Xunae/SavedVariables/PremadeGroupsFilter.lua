@@ -780,7 +780,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["t2c1f0"] = {
+	["t2c3f2"] = {
 		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
@@ -903,7 +903,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["t2c3f2"] = {
+	["t2c1f0"] = {
 		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
