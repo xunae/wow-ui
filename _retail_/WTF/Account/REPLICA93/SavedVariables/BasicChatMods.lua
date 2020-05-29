@@ -7,6 +7,9 @@ bcmDB = {
 	["playerLBrack"] = "",
 	["BCM_Fade"] = true,
 	["BCM_GMOTD"] = true,
+	["noChatCopyTip"] = true,
+	["nolevel"] = true,
+	["playerRBrack"] = "",
 	["replacements"] = {
 		"1", -- [1]
 		"2", -- [2]
@@ -26,9 +29,6 @@ bcmDB = {
 		"RW", -- [16]
 		"%1", -- [17]
 	},
-	["nolevel"] = true,
-	["playerRBrack"] = "",
-	["noChatCopyTip"] = true,
 	["sticky"] = {
 		["EMOTE"] = 1,
 		["YELL"] = 1,

@@ -67,7 +67,7 @@ TipTac_Config = {
 	["reactText"] = false,
 	["iconCombat"] = false,
 	["fontSize"] = 12,
-	["if_itemQualityBorder"] = true,
+	["if_showItemLevelAndId"] = false,
 	["showGuildRank"] = true,
 	["talentCacheSize"] = 0,
 	["showBuffs"] = false,
@@ -76,15 +76,15 @@ TipTac_Config = {
 	["left"] = 1620.13354492188,
 	["colRace"] = "|cffffffff",
 	["classification_worldboss"] = "%s|r (Boss) ",
-	["colSameGuild"] = "|cffff32ff",
-	["backdropInsets"] = 0,
 	["classification_rareelite"] = "+%s|r (Rare) ",
+	["backdropInsets"] = 0,
+	["colSameGuild"] = "|cffff32ff",
 	["showPlayerGender"] = false,
 	["if_borderlessIcons"] = false,
 	["showTalents"] = false,
 	["colorNameByClass"] = true,
 	["iconClass"] = false,
-	["iconAnchor"] = "TOPLEFT",
+	["classColoredBorder"] = true,
 	["anchorWorldUnitType"] = "normal",
 	["healthBarColor"] = {
 		0, -- [1]
@@ -92,7 +92,7 @@ TipTac_Config = {
 		0.0745098039215686, -- [3]
 		1, -- [4]
 	},
-	["classColoredBorder"] = true,
+	["iconAnchor"] = "TOPLEFT",
 	["hideUFTipsInCombat"] = true,
 	["hideWorldTips"] = false,
 	["tipBorderColor"] = {
@@ -104,7 +104,7 @@ TipTac_Config = {
 	["showUnitTip"] = true,
 	["gttScale"] = 1,
 	["showHiddenTipsOnShift"] = true,
-	["if_showItemLevelAndId"] = false,
+	["if_itemQualityBorder"] = true,
 	["if_showIcon"] = false,
 	["modifyFonts"] = true,
 }

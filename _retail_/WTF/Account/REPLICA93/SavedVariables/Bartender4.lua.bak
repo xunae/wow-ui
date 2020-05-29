@@ -3,20 +3,30 @@ Bartender4DB = {
 	["namespaces"] = {
 		["StatusTrackingBar"] = {
 			["profiles"] = {
+				["Xunap - Draenor"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1.264999985694885,
+						["x"] = -515,
+						["point"] = "BOTTOM",
+						["y"] = 62,
+					},
+				},
 				["Default"] = {
 					["enabled"] = true,
-					["fadeout"] = true,
+					["version"] = 3,
 					["fadeoutdelay"] = 0,
 					["position"] = {
 						["y"] = -0.366455078125,
 						["x"] = -366.1775207519531,
 						["point"] = "TOP",
 					},
-					["fadeoutalpha"] = 0,
+					["fadeout"] = true,
 					["visibility"] = {
 						["always"] = false,
 					},
-					["version"] = 3,
+					["fadeoutalpha"] = 0,
 				},
 				["Xüñâ - Stormscale"] = {
 					["enabled"] = true,
@@ -602,6 +612,72 @@ Bartender4DB = {
 						}, -- [10]
 					},
 				},
+				["Xunap - Draenor"] = {
+					["actionbars"] = {
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 41.75,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [1]
+						{
+							["enabled"] = false,
+							["version"] = 3,
+							["position"] = {
+								["y"] = -227.5,
+								["x"] = -231.4998779296875,
+								["point"] = "CENTER",
+							},
+						}, -- [2]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -82,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [3]
+						{
+							["rows"] = 12,
+							["padding"] = 5,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 610,
+								["x"] = -42,
+								["point"] = "BOTTOMRIGHT",
+							},
+						}, -- [4]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = 3,
+								["point"] = "BOTTOM",
+							},
+						}, -- [5]
+						{
+							["padding"] = 6,
+							["version"] = 3,
+							["position"] = {
+								["y"] = 110,
+								["x"] = -510,
+								["point"] = "BOTTOM",
+							},
+						}, -- [6]
+						{
+						}, -- [7]
+						{
+						}, -- [8]
+						[10] = {
+						},
+					},
+				},
 				["Xuna - Ravencrest"] = {
 					["actionbars"] = {
 						{
@@ -1101,6 +1177,14 @@ Bartender4DB = {
 					},
 					["version"] = 3,
 				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.0000305175781,
+						["x"] = -31.49981689453125,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Xuna - Ravencrest"] = {
 					["version"] = 3,
 					["position"] = {
@@ -1177,6 +1261,14 @@ Bartender4DB = {
 					},
 					["version"] = 3,
 				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 223.0000457763672,
+						["x"] = -31.4998779296875,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Xuna - Ravencrest"] = {
 					["version"] = 3,
 					["position"] = {
@@ -1224,8 +1316,8 @@ Bartender4DB = {
 					},
 				},
 				["Xüñâ - Stormscale"] = {
+					["fadeout"] = true,
 					["fadeoutdelay"] = 0,
-					["fadeoutalpha"] = 0,
 					["position"] = {
 						["y"] = 40,
 						["x"] = -154.000030517578,
@@ -1237,7 +1329,7 @@ Bartender4DB = {
 					["visibility"] = {
 						["always"] = false,
 					},
-					["fadeout"] = true,
+					["fadeoutalpha"] = 0,
 				},
 				["Xunae - Draenor"] = {
 					["padding"] = -2,
@@ -1260,7 +1352,7 @@ Bartender4DB = {
 					},
 				},
 				["Default"] = {
-					["fadeout"] = true,
+					["fadeoutalpha"] = 0,
 					["fadeoutdelay"] = 0,
 					["position"] = {
 						["y"] = 38.57782745361328,
@@ -1268,16 +1360,26 @@ Bartender4DB = {
 						["point"] = "BOTTOMRIGHT",
 						["scale"] = 1,
 					},
-					["version"] = 3,
+					["fadeout"] = true,
 					["padding"] = -1,
 					["visibility"] = {
 						["always"] = false,
 					},
-					["fadeoutalpha"] = 0,
+					["version"] = 3,
+				},
+				["Xunap - Draenor"] = {
+					["padding"] = -2,
+					["version"] = 3,
+					["position"] = {
+						["scale"] = 1,
+						["x"] = 37.5,
+						["point"] = "BOTTOM",
+						["y"] = 41.75,
+					},
 				},
 				["Xuna - Ravencrest"] = {
+					["version"] = 3,
 					["fadeoutalpha"] = 0,
-					["fadeoutdelay"] = 0,
 					["position"] = {
 						["y"] = 40,
 						["x"] = -154.000030517578,
@@ -1289,7 +1391,7 @@ Bartender4DB = {
 					["visibility"] = {
 						["always"] = false,
 					},
-					["version"] = 3,
+					["fadeoutdelay"] = 0,
 				},
 				["Xüñâ - Ravencrest"] = {
 					["padding"] = -2,
@@ -1303,8 +1405,8 @@ Bartender4DB = {
 				},
 				["Xûñä - Stormscale"] = {
 					["enabled"] = false,
+					["version"] = 3,
 					["fadeoutalpha"] = 0,
-					["fadeoutdelay"] = 0,
 					["position"] = {
 						["y"] = 44.2879219055176,
 						["x"] = -306.225463867188,
@@ -1316,7 +1418,7 @@ Bartender4DB = {
 					["visibility"] = {
 						["always"] = false,
 					},
-					["version"] = 3,
+					["fadeoutdelay"] = 0,
 				},
 				["SHAMAN"] = {
 					["padding"] = -2,
@@ -1429,6 +1531,15 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 				},
+				["Xunap - Draenor"] = {
+					["enabled"] = true,
+					["version"] = 3,
+					["position"] = {
+						["y"] = 47,
+						["x"] = -512,
+						["point"] = "BOTTOM",
+					},
+				},
 			},
 		},
 		["Vehicle"] = {
@@ -1472,6 +1583,14 @@ Bartender4DB = {
 						["point"] = "BOTTOM",
 					},
 					["version"] = 3,
+				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 42.50003051757813,
+						["x"] = 104.500244140625,
+						["point"] = "CENTER",
+					},
 				},
 				["Xuna - Ravencrest"] = {
 					["version"] = 3,
@@ -1553,6 +1672,14 @@ Bartender4DB = {
 					},
 					["padding"] = 1,
 				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 38.5,
+						["x"] = 345,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Xuna - Ravencrest"] = {
 					["enabled"] = false,
 					["padding"] = 1,
@@ -1628,11 +1755,19 @@ Bartender4DB = {
 				},
 				["Default"] = {
 					["position"] = {
-						["y"] = -14.9999618530273,
-						["x"] = -82.5,
+						["y"] = 14.25012969970703,
+						["x"] = -111.7498474121094,
 						["point"] = "CENTER",
 					},
 					["version"] = 3,
+				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = -14.99998474121094,
+						["x"] = -82.49993896484375,
+						["point"] = "CENTER",
+					},
 				},
 				["Xuna - Ravencrest"] = {
 					["version"] = 3,
@@ -1712,6 +1847,14 @@ Bartender4DB = {
 					},
 					["padding"] = 1,
 				},
+				["Xunap - Draenor"] = {
+					["version"] = 3,
+					["position"] = {
+						["y"] = 143,
+						["x"] = -460,
+						["point"] = "BOTTOM",
+					},
+				},
 				["Xuna - Ravencrest"] = {
 					["padding"] = 1,
 					["version"] = 3,
@@ -1773,6 +1916,7 @@ Bartender4DB = {
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Xuna - Ravencrest",
+		["Xunap - Draenor"] = "Default",
 		["Zunae - Draenor"] = "Default",
 		["Xüñâ - Stormscale"] = "Xüñâ - Stormscale",
 		["Xunae - Draenor"] = "Default",
@@ -1813,6 +1957,11 @@ Bartender4DB = {
 			["buttonlock"] = true,
 			["onkeydown"] = true,
 			["snapping"] = false,
+		},
+		["Xunap - Draenor"] = {
+			["focuscastmodifier"] = false,
+			["blizzardVehicle"] = true,
+			["outofrange"] = "hotkey",
 		},
 		["Xuna - Ravencrest"] = {
 			["onkeydown"] = true,

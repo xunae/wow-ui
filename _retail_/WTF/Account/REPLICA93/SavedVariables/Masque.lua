@@ -10,6 +10,7 @@ MasqueDB = {
 		["Xüñâ - Stormscale"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
+		["Xunaw - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -1114,10 +1115,11 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_05_akunda's_wrath"] = {
-					["SkinID"] = "Caith - No Shadow",
+				["Masque"] = {
+					["Shadow"] = true,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_09_frost_nova_cast"] = {
+				["WeakAuras_05_akunda's_wrath"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_04_coin_shower"] = {
@@ -1130,9 +1132,8 @@ MasqueDB = {
 				["WeakAuras_05_gift_of_wind_buff_on_you_(mage_only)"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["Masque"] = {
-					["Shadow"] = true,
-					["SkinID"] = "Caith",
+				["WeakAuras_09_frost_nova_cast"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_02_gift_of_n'zoth_lunacy"] = {
 					["SkinID"] = "Caith - No Shadow",

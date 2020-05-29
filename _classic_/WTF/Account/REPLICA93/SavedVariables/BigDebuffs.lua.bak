@@ -28,41 +28,41 @@ BigDebuffsDB = {
 		["Xuna - Valley of Heroes - EU"] = "Default",
 		["Hãllàáhø - Stormscale"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
-		["Níeze - Ravencrest"] = "Default",
+		["Xunalol - Stormscale"] = "Default",
 		["Xunapala - Arena Champions - EU"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Xûñá - Ravencrest"] = "Default",
+		["Xunz - Stormscale"] = "Default",
 		["Xuna - Gehennas"] = "Default",
 		["Xûñä - Ravencrest"] = "Default",
-		["Xuna - Stormscale"] = "Default",
-		["Ckablyatdvai - Ravencrest"] = "Default",
-		["Vapenaysh - Stormscale"] = "Default",
 		["Delimn - Dunemaul"] = "Default",
-		["Xunz - Stormscale"] = "Default",
+		["Vapenaysh - Stormscale"] = "Default",
+		["Ckablyatdvai - Ravencrest"] = "Default",
+		["Xuna - Stormscale"] = "Default",
+		["Xûñá - Ravencrest"] = "Default",
 		["Xüñâ - Ravencrest"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Xunalol - Stormscale"] = "Default",
+		["Níeze - Ravencrest"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["spells"] = {
 				[182067] = {
-					["noRaidFrames"] = false,
 					["noUnitFrames"] = true,
+					["noRaidFrames"] = false,
 				},
 				[88611] = {
-					["noUnitFrames"] = true,
 					["noRaidFrames"] = true,
+					["noUnitFrames"] = true,
+				},
+			},
+			["unitFrames"] = {
+				["arena1"] = {
 				},
 			},
 			["raidFrames"] = {
 				["maxDebuffs"] = 2,
 				["cc"] = 60,
 				["increaseBuffs"] = true,
-			},
-			["unitFrames"] = {
-				["arena1"] = {
-				},
 			},
 		},
 	},

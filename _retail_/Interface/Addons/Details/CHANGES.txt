@@ -1,16 +1,10 @@
-lightweight tag 79c86f99455fa7ec90254668f57c80cf0c12ff01 DetailsRetail.8.3.0.7329.140
+lightweight tag 646732e0a6bcbcbde4a5969a85ddd1be5d2bad41 DetailsRetail.8.3.0.7330.140
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Sat May 23 12:59:45 2020 -0300
+Date:	Sun May 24 12:42:43 2020 -0300
 
-commit 79c86f99455fa7ec90254668f57c80cf0c12ff01
+commit 646732e0a6bcbcbde4a5969a85ddd1be5d2bad41
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sat May 23 12:59:45 2020 -0300
+Date:   Sun May 24 12:42:43 2020 -0300
 
-    Added strings to localization and change log
-
-commit 7a2d7ee6dd3d6c6af3d77c147f751a677c678acc
-Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sat May 23 12:43:44 2020 -0300
-
-    Added options to not show while in Battlegrounds
+    Fixed AutoHide in Battlegrounds
 

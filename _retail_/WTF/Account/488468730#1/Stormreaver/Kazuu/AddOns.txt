@@ -85,3 +85,8 @@ WorldQuestsList: disabled
 XunaTweaks: disabled
 Favorites: disabled
 nibChatTabs: disabled
+Bartender4: disabled
+Masque: disabled
+Masque_Caith: disabled
+Quartz: disabled
+TalentSetManager: disabled

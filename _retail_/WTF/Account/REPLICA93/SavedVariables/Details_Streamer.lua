@@ -8,6 +8,7 @@ Details_StreamerDB = {
 		["Xunadraenei - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Asdwetr - Stormscale"] = "Xûñä - Ravencrest",
 		["Ckablyatdvai - Ravencrest"] = "Xûñä - Ravencrest",
+		["Xunap - Draenor"] = "Xûñä - Ravencrest",
 		["Xunamonkh - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xunalol - Stormscale"] = "Xûñä - Ravencrest",
 		["Xunaorc - Arena Champions - EU"] = "Xûñä - Ravencrest",
@@ -26,18 +27,19 @@ Details_StreamerDB = {
 		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Xuna - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xunae - Draenor"] = "Xûñä - Ravencrest",
+		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xunapala - Arena Champions - EU"] = "Xûñä - Ravencrest",
-		["Níeze - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
-		["Xûñä - Ravencrest"] = "Xûñä - Ravencrest",
 		["Spazshaman - Stormscale"] = "Xûñä - Ravencrest",
+		["Xûñä - Ravencrest"] = "Xûñä - Ravencrest",
 		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
 		["Vapenaysh - Stormscale"] = "Xûñä - Ravencrest",
 		["Delimn - Dunemaul"] = "Xûñä - Ravencrest",
 		["Xunz - Stormscale"] = "Xûñä - Ravencrest",
+		["Níeze - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xüñâ - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xûñä - Stormscale"] = "Xûñä - Ravencrest",
-		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Xunaw - Draenor"] = "Xûñä - Ravencrest",
 	},
 	["profiles"] = {
 		["Xûñä - Ravencrest"] = {
@@ -54,7 +56,10 @@ Details_StreamerDB = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["arrow_anchor_y"] = 0,
+			["main_frame_size"] = {
+				200, -- [1]
+				98.9999923706055, -- [2]
+			},
 			["minimap"] = {
 				["minimapPos"] = 160,
 				["radius"] = 160,
@@ -62,20 +67,12 @@ Details_StreamerDB = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["main_frame_size"] = {
-				200, -- [1]
-				98.9999923706055, -- [2]
-			},
+			["font_size"] = 12,
 			["main_frame_locked"] = true,
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
+			["use_spark"] = true,
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["author"] = "Details! Team",
+			["arrow_anchor_y"] = 0,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -83,10 +80,15 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["y"] = -28.9441528320313,
-			["use_spark"] = true,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
@@ -95,13 +97,13 @@ Details_StreamerDB = {
 				["scale"] = 1.5,
 				["font_shadow"] = true,
 				["y"] = 1.52587890625e-05,
-				["update_speed"] = 0.05,
-				["size"] = 32,
 				["x"] = 0.0001373291015625,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
-			["font_size"] = 12,
 			["point"] = "TOPLEFT",
+			["main_frame_strata"] = "LOW",
 			["row_height"] = 20,
 			["scale"] = 1,
 		},
