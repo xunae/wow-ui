@@ -1,3 +1,25 @@
+### 1.13.56
+
+- LCD Update
+
+### 1.13.55
+
+- Re-release with updated LCD
+
+### 1.13.54
+
+- Set bonus tracking
+- Rejuv duration is 15s for Druids with 8/8 Stormrage
+
+### 1.13.53
+
+- Rollbacks for Winter's Chill and Shadow Weaving
+
+### 1.13.52
+
+- ToC Update for 1.13.4
+- Rollback Sunder Armor refreshes if it ended up missing
+
 ### 1.13.50
 
 - ToC Update for 1.13.3

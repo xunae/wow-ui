@@ -1232,7 +1232,11 @@ if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
             return
         end
 
-        if not BigDebuffs.db.profile.raidFrames.increaseBuffs then return end
+        if (not BigDebuffs.db.profile.raidFrames.increaseBuffs) and
+           (not BigDebuffs.db.profile.raidFrames.showAllClassBuffs)
+        then
+            return
+        end
 
         if ( not frame.optionTable.displayBuffs ) then
             CompactUnitFrame_HideAllBuffs(frame);
@@ -1242,7 +1246,7 @@ if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
         local index = 1;
         local frameNum = 1;
         local filter = nil;
-        while ( frameNum <= 6 ) do
+        while ( frameNum <= MAX_BUFFS ) do
             local buffName = UnitBuff(frame.displayedUnit, index, filter);
             if ( buffName ) then
                 if ( CompactUnitFrame_UtilShouldDisplayBuff(frame.displayedUnit, index, filter) and
@@ -1257,7 +1261,7 @@ if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
             end
             index = index + 1;
         end
-        for i=frameNum, 6 do
+        for i=frameNum, MAX_BUFFS do
             local buffFrame = frame.buffFrames[i];
             if buffFrame then buffFrame:Hide() end
         end
@@ -1685,6 +1689,10 @@ function BigDebuffs:UNIT_AURA(unit)
         if frame.current ~= icon then
             if frame.blizzard then
                 -- Blizzard Frame
+
+                -- fix Obsidian Claw icon
+                icon = icon == 611425 and 1508487 or icon
+
                 SetPortraitToTexture(frame.icon, icon)
 
                 -- Adapt

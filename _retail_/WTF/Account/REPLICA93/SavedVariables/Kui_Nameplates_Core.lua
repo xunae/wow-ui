@@ -18,7 +18,7 @@ KuiNameplatesCoreSaved = {
 			},
 			["cvar_occluded_mult"] = 0.400000005960465,
 			["name_vertical_offset"] = 3,
-			["nameonly_no_font_style"] = true,
+			["bar_texture"] = "Blizzard Raid Bar",
 			["nameonly"] = false,
 			["castbar_height"] = 15,
 			["fade_all"] = true,
@@ -27,12 +27,12 @@ KuiNameplatesCoreSaved = {
 			["fade_conditional_alpha"] = 0.300000011920929,
 			["auras_enabled"] = false,
 			["cvar_disable_alpha"] = false,
-			["frame_width_minus"] = 98,
+			["target_arrows"] = true,
 			["clickthrough_friend"] = true,
 			["bar_animation"] = 2,
 			["fade_non_target_alpha"] = 0.699999988079071,
 			["font_face"] = "Arial Narrow",
-			["target_arrows"] = true,
+			["frame_width_minus"] = 98,
 			["cvar_enable"] = true,
 			["execute_enabled"] = false,
 			["castbar_colour"] = {
@@ -40,7 +40,7 @@ KuiNameplatesCoreSaved = {
 				1, -- [2]
 				0, -- [3]
 			},
-			["bar_texture"] = "Blizzard Raid Bar",
+			["nameonly_no_font_style"] = true,
 		},
 	},
 }

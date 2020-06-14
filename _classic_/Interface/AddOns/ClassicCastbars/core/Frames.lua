@@ -84,18 +84,29 @@ function addon:SetBorderShieldStyle(castbar, cast, db, unitID)
         local width, height = ceil(castbar:GetWidth() * 1.19), ceil(castbar:GetHeight() * 1.19)
         castbar.BorderShield:ClearAllPoints()
         castbar.BorderShield:SetPoint("TOPLEFT", width-10, height+1)
-        castbar.BorderShield:SetPoint("BOTTOMRIGHT", -width+2, -height+4)
+        castbar.BorderShield:SetPoint("BOTTOMRIGHT", -width+(width*0.16), -height+4)
+
+        if not castbar.IconShield then
+            castbar.BorderShield:SetTexCoord(0.16, 0, 0.118, 1, 1, 0, 1, 1) -- cut left side of texture away
+
+            castbar.IconShield = castbar:CreateTexture(nil, "OVERLAY")
+            castbar.IconShield:SetTexture("Interface\\CastingBar\\UI-CastingBar-Arena-Shield")
+        end
+
+        castbar.IconShield:SetPoint("LEFT", castbar.Icon, "LEFT", -0.44 * db.iconSize, 0)
+        castbar.IconShield:SetSize(db.iconSize * 3, db.iconSize * 3)
 
         local unitType = self:GetUnitType(unitID)
         if unitType == "nameplate" then
-            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize) + 2, db.iconPositionY + 2)
+            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize), db.iconPositionY + 2)
         elseif unitType == "party" then
-            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize) + 4, db.iconPositionY + 2)
+            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize) + 2, db.iconPositionY + 2)
         else
-            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize) + 2, db.iconPositionY + 4)
+            castbar.Icon:SetPoint("LEFT", castbar, (db.iconPositionX - db.iconSize) + 2, db.iconPositionY + 2)
         end
 
         castbar.BorderShield:Show()
+        castbar.IconShield:Show()
     else
         if nonLSMBorders[db.castBorder] then
             castbar.Border:SetAlpha(1)
@@ -103,6 +114,9 @@ function addon:SetBorderShieldStyle(castbar, cast, db, unitID)
             castbar.BorderFrameLSM:SetAlpha(1)
         end
         castbar.BorderShield:Hide()
+        if castbar.IconShield then
+            castbar.IconShield:Hide()
+        end
         castbar.Icon:SetPoint("LEFT", castbar, db.iconPositionX - db.iconSize, db.iconPositionY)
     end
 end
@@ -113,6 +127,8 @@ function addon:SetCastbarStyle(castbar, cast, db, unitID)
     castbar:SetStatusBarTexture(db.castStatusBar)
     castbar:SetFrameLevel(db.frameLevel)
     castbar.Text:SetWidth(db.width - 10) -- ensures text gets truncated
+    castbar.currWidth = db.width -- avoids having to use a function call later on
+    castbar:SetIgnoreParentAlpha(db.ignoreParentAlpha)
 
     if cast and cast.isChanneled then
         castbar.Spark:SetAlpha(0)
@@ -429,12 +445,14 @@ function addon:CreateOrUpdateSecureFocusButton(text)
         self.FocusButton:SetAttribute("type", "macro")
     end
 
-    local db = ClassicCastbarsDB.focus
+    local db = ClassicCastbars.db.focus
     self.FocusButton:SetPoint(db.position[1], UIParent, db.position[2], db.position[3] + 30)
     self.FocusButton:SetSize(db.width + 5, db.height + 35)
 
     self.FocusButton:SetAttribute("macrotext", "/targetexact " .. text)
     self.FocusFrame.Text:SetText(text)
+    self.FocusFrame:EnableMouse(true)
+    self.FocusButton:EnableMouse(true)
 end
 
 local NewTimer = _G.C_Timer.NewTimer
@@ -445,6 +463,8 @@ local focusTargetResetTimer -- timer for clearing focus
 local function ClearFocusTarget()
     if not InCombatLockdown() then
         addon.FocusButton:SetAttribute("macrotext", "")
+        addon.FocusFrame:EnableMouse(false)
+        addon.FocusButton:EnableMouse(false)
     else
         focusTargetResetTimer = NewTimer(4, ClearFocusTarget)
     end
@@ -458,6 +478,8 @@ function addon:ClearFocus()
     if self.FocusButton then
         if not InCombatLockdown() then
             self.FocusButton:SetAttribute("macrotext", "")
+            self.FocusFrame:EnableMouse(false)
+            self.FocusButton:EnableMouse(false)
         else
             -- If we're in combat try to check every 4s if we left combat and can update secure frame
             focusTargetResetTimer = NewTimer(4, ClearFocusTarget)
@@ -483,7 +505,7 @@ function addon:SetFocusDisplay(text, unitID)
         -- Create a new unsecure frame to display focus text. We dont reuse the castbar frame as we want to
         -- display this text even when the castbar is hidden
         self.FocusFrame = CreateFrame("Frame", nil, UIParent)
-        self.FocusFrame:SetSize(ClassicCastbarsDB.focus.width + 5, ClassicCastbarsDB.focus.height + 35)
+        self.FocusFrame:SetSize(ClassicCastbars.db.focus.width + 5, ClassicCastbars.db.focus.height + 35)
         self.FocusFrame.Text = self.FocusFrame:CreateFontString(nil, "ARTWORK", "GameFontNormalLargeOutline")
         self.FocusFrame.Text:SetPoint("CENTER", self.FocusFrame, 0, 20)
     end
@@ -513,7 +535,7 @@ function addon:SetFocusDisplay(text, unitID)
     -- HACK: quickly create the focus castbar if it doesnt exist and hide it.
     -- This is just to make anchoring easier for self.FocusFrame on first usage
     if not activeFrames.focus then
-        local pos = ClassicCastbarsDB.focus.position
+        local pos = ClassicCastbars.db.focus.position
         local castbar = self:GetCastbarFrame("focus")
         castbar:ClearAllPoints()
         castbar:SetParent(UIParent)

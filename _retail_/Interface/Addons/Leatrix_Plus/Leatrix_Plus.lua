@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.20 (27th May 2020)
+-- 	Leatrix Plus 8.3.21 (3rd June 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "8.3.20"
+	LeaPlusLC["AddonVer"] = "8.3.21"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -1346,6 +1346,32 @@
 				GameTooltip:Hide()
 				SetQuestInBox()
 			end)
+
+			-- Function to move Wowhead link frame if Leatrix Maps is installed with Remove map border enabled
+			local function MoveWowheadLinks()
+				if LeaMapsDB and LeaMapsDB["NoMapBorder"] and LeaMapsDB["NoMapBorder"] == "On" then
+					mEB:SetParent(WorldMapFrame)
+					mEB:ClearAllPoints()
+					mEB:SetPoint("TOPLEFT", WorldMapFrame, "TOPLEFT", 4, -64)
+					mEB:SetFontObject("GameFontNormalSmall")
+					mEB:SetFrameStrata("HIGH")
+					mEB:SetAlpha(0.5)
+				end
+			end
+
+			-- Run function when Leatrix Maps is loaded
+			if IsAddOnLoaded("Leatrix_Maps") then
+				MoveWowheadLinks()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "Leatrix_Maps" then
+						MoveWowheadLinks()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
 
 		end
 
@@ -7482,7 +7508,7 @@
 		end
 
 		----------------------------------------------------------------------
-		-- Block party invites
+		-- Block party invites and party from friends
 		----------------------------------------------------------------------
 
 		if event == "PARTY_INVITE_REQUEST" then
@@ -7518,6 +7544,10 @@
 					DeclineGroup();
 					StaticPopup_Hide("PARTY_INVITE");
 					StaticPopup_Hide("PARTY_INVITE_XREALM");
+					-- Decline invite to party sync group request
+					if QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:IsShown() then
+						QuestSessionManager.ConfirmInviteToGroupReceivedDialog.ButtonContainer.Decline:Click()
+					end
 					return
 				end
 			end

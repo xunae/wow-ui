@@ -83,7 +83,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t1c3f1"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "1",
@@ -92,7 +92,7 @@ PremadeGroupsFilterState = {
 		["ilvl"] = {
 			["max"] = "",
 			["min"] = "400",
-			["act"] = false,
+			["act"] = true,
 		},
 		["dps"] = {
 			["max"] = "",
@@ -120,7 +120,7 @@ PremadeGroupsFilterState = {
 		["defeated"] = {
 			["max"] = "0",
 			["min"] = "0",
-			["act"] = false,
+			["act"] = true,
 		},
 	},
 	["t2c3f1"] = {

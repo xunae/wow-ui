@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.13.54 (18th March 2020)
+-- 	Leatrix Plus 1.13.65 (27th May 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 --	Version
-	LeaPlusLC["AddonVer"] = "1.13.54"
+	LeaPlusLC["AddonVer"] = "1.13.65"
 	LeaPlusLC["RestartReq"] = nil
 
 --	If client restart is required and has not been done, show warning and quit
@@ -475,16 +475,6 @@
 		end
 
 		----------------------------------------------------------------------
-		--	Release in PvP
-		----------------------------------------------------------------------
-
-		if LeaPlusLC["AutoReleasePvP"] == "On" then
-			LpEvt:RegisterEvent("PLAYER_DEAD");
-		else
-			LpEvt:UnregisterEvent("PLAYER_DEAD");
-		end
-
-		----------------------------------------------------------------------
 		--	Accept resurrection
 		----------------------------------------------------------------------
 
@@ -892,8 +882,20 @@
 				if GetTime() - tDelay >= 0.3 then
 					tDelay = GetTime()
  					if GetCVarBool("autoLootDefault") ~= IsModifiedClick("AUTOLOOTTOGGLE") then
-						for i = GetNumLootItems(), 1, -1 do
-							LootSlot(i)
+						if GetLootMethod() == "master" then
+							-- Master loot is enabled so fast loot if item should be auto looted
+							local lootThreshold = GetLootThreshold()
+							for i = GetNumLootItems(), 1, -1 do
+								local lootIcon, lootName, lootQuantity, currencyID, lootQuality = GetLootSlotInfo(i)
+								if lootQuality and lootThreshold and lootQuality < lootThreshold then
+									LootSlot(i)
+								end
+							end
+						else
+							-- Master loot is disabled so fast loot regardless
+							for i = GetNumLootItems(), 1, -1 do
+								LootSlot(i)
+							end
 						end
 						tDelay = GetTime()
 					end
@@ -930,6 +932,8 @@
 						-- Ignore specific NPCs for selecting, accepting and turning-in quests (required if automation has consequences)
 						if npcID == "15192"	-- Anachronos (Caverns of Time)
 						or npcID == "3430" 	-- Mangletooth (Blood Shard quests, Barrens)
+						or npcID == "14828" -- Gelvas Grimegate (Darkmoon Faire Ticket Redemption, Elwynn Forest and Mulgore)
+						or npcID == "14921" -- Rin'wosho the Trader (Zul'Gurub Isle, Stranglethorn Vale)
 						then
 							return true
 						end
@@ -1030,16 +1034,6 @@
 							or npcID == "15522" -- Sergeant Umala (Thick Leather Collector)
 							or npcID == "15515" -- Skinner Jamani (Heavy Leather Collector)
 							or npcID == "15532" -- Stoneguard Clayhoof (Runecloth Bandage Collector)
-							-- Alliance Cloth Quartermasters
-							or npcID == "14724" -- Bubulo Acerbus (Ironforge)
-							or npcID == "14722" -- Clavicus Knavingham (Stormwind)
-							or npcID == "14723" -- Mistina Steelshield (Ironforge)
-							or npcID == "14725" -- Raedon Duskstriker (Darnassus)
-							-- Horde Cloth Quartermasters
-							or npcID == "14729" -- Ralston Farnsley (Undercity)
-							or npcID == "14728" -- Rumstag Proudstrider (Thunder Bluff)
-							or npcID == "14726" -- Rashona Straglash (Orgrimmar)
-							or npcID == "14727" -- Vehena (Orgrimmar)
 							-- Alliance Commendations
 							or npcID == "15764" -- Officer Ironbeard (Ironforge Commendations)
 							or npcID == "15762" -- Officer Lunalight (Darnassus Commendations)
@@ -1050,9 +1044,6 @@
 							or npcID == "15765" -- Officer Redblade (Orgrimmar Commendations)
 							or npcID == "15767" -- Officer Thunderstrider (Thunder Bluff Commendations)
 							or npcID == "15761" -- Officer Vu'Shalay (Darkspear Commendations)
-							-- Battlemasters
-							or npcID == "15351" -- Alliance Brigadier General (Mark of Honor)
-							or npcID == "15350" -- Horde Warbringer (Mark of Honor)
 							-- Battlegrounds (Alliance)
 							or npcID == "13442" -- Arch Druid Renferal (Storm Crystal, Alterac Valley)
 							-- Battlegrounds (Horde)
@@ -1061,6 +1052,8 @@
 							or npcID == "11039" -- Duke Nicholas Zverenhoff (Eastern Plaguelands)
 							-- Un'Goro crystals
 							or npcID == "9117" 	-- J. D. Collie (Un'Goro Crater)
+							-- E'Ko
+							or npcID == "10307" -- Witch Doctor Mau'ari (Winterspring)
 							then
 								return true
 							end
@@ -1094,6 +1087,48 @@
 				local goldRequiredAmount = GetQuestMoneyToGet()
 				if goldRequiredAmount and goldRequiredAmount > 0 then
 					return true
+				end
+			end
+
+			-- Function to check if quest title has requirements met
+			local function DoesQuestHaveRequirementsMet(title)
+				if title and title ~= "" then
+
+					if not title then
+
+					-- Battlemasters
+					elseif title == L["Concerted Efforts"] or title == L["For Great Honor"] then
+						-- Requires 3 Alterac Valley Mark of Honor, 3 Arathi Basin Mark of Honor, 3 Warsong Gulch Mark of Honor (must be before other Mark of Honor quests)
+						if IsAltKeyDown() and GetItemCount(20560) >= 3 and GetItemCount(20559) >= 3 and GetItemCount(20558) >= 3 then return true end
+					elseif title == L["Remember Alterac Valley!"] or title == L["Invaders of Alterac Valley"] then
+						-- Requires 3 Alterac Valley Mark of Honor
+						if IsAltKeyDown() and GetItemCount(20560) >= 3 then return true end
+					elseif title == L["Claiming Arathi Basin"] or title == L["Conquering Arathi Basin"] then
+						-- Requires 3 Arathi Basin Mark of Honor
+						if IsAltKeyDown() and GetItemCount(20559) >= 3 then return true end
+					elseif title == L["Fight for Warsong Gulch"] or title == L["Battle of Warsong Gulch"] then
+						-- Requires 3 Warsong Gulch Mark of Honor
+						if IsAltKeyDown() and GetItemCount(20558) >= 3 then return true end
+
+					-- Cloth quartermasters
+					elseif title == L["A Donation of Wool"] then
+						-- Requires 60 Wool Cloth
+						if IsAltKeyDown() and GetItemCount(2592) >= 60 then return true end
+					elseif title == L["A Donation of Silk"] then
+						-- Requires 60 Silk Cloth
+						if IsAltKeyDown() and GetItemCount(4306) >= 60 then return true end
+					elseif title == L["A Donation of Mageweave"] then
+						-- Requires 60 Mageweave
+						if IsAltKeyDown() and GetItemCount(4338) >= 60 then return true end
+					elseif title == L["A Donation of Runecloth"] then
+						-- Requires 60 Runecloth
+						if IsAltKeyDown() and GetItemCount(14047) >= 60 then return true end
+					elseif title == L["Additional Runecloth"] then
+						-- Requires 20 Runecloth
+						if IsAltKeyDown() and GetItemCount(14047) >= 20 then return true end
+
+					else return true
+					end
 				end
 			end
 
@@ -1233,7 +1268,7 @@
 							-- Select gossip available quests
 							for i = 1, GetNumGossipAvailableQuests() do
 								local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored = select(i * 7 - 6, GetGossipAvailableQuests())
-								if title then
+								if title and DoesQuestHaveRequirementsMet(title) then
 									return SelectGossipAvailableQuest(i)
 								end
 							end
@@ -2337,6 +2372,29 @@
 	function LeaPlusLC:Player()
 
 		----------------------------------------------------------------------
+		-- Automatically release in battlegrounds
+		----------------------------------------------------------------------
+
+		do
+
+			hooksecurefunc("StaticPopup_Show", function(sType)
+				if sType and sType == "DEATH" and LeaPlusLC["AutoReleasePvP"] == "On" then
+					if C_DeathInfo.GetSelfResurrectOptions() and #C_DeathInfo.GetSelfResurrectOptions() > 0 then return end
+					local InstStat, InstType = IsInInstance()
+					if InstStat and InstType == "pvp" then
+						C_Timer.After(0.2, function()
+							local dialog = StaticPopup_Visible("DEATH")
+							if dialog then
+								StaticPopup_OnClick(_G[dialog], 1)
+							end
+						end)
+					end
+				end
+			end)
+
+		end
+
+		----------------------------------------------------------------------
 		--	Class icon portraits
 		----------------------------------------------------------------------
 
@@ -3169,13 +3227,26 @@
 			local BagItemSearchBox = CreateFrame("EditBox", "BagItemSearchBox", ContainerFrame1, "BagSearchBoxTemplate")
 			BagItemSearchBox:SetSize(110, 18)
 			BagItemSearchBox:SetMaxLetters(15)
-			BagItemSearchBox:SetPoint("TOPLEFT", 54, -29)
 
 			-- Create bank item search box
 			local BankItemSearchBox = CreateFrame("EditBox", "BankItemSearchBox", BankFrame, "BagSearchBoxTemplate")
 			BankItemSearchBox:SetSize(120, 14)
 			BankItemSearchBox:SetMaxLetters(15)
 			BankItemSearchBox:SetPoint("TOPRIGHT", -60, -40)
+
+			-- Attach bag search box first bag only
+			hooksecurefunc("ContainerFrame_Update", function(self)
+				if self:GetID() == 0 then
+					BagItemSearchBox:SetParent(self)
+					BagItemSearchBox:SetPoint("TOPLEFT", self, "TOPLEFT", 54, -29)
+					BagItemSearchBox.anchorBag = self
+					BagItemSearchBox:Show()
+				elseif BagItemSearchBox.anchorBag == self then
+					BagItemSearchBox:ClearAllPoints()
+					BagItemSearchBox:Hide()
+					BagItemSearchBox.anchorBag = nil
+				end
+			end)
 
 		end
 
@@ -4406,15 +4477,8 @@
 
 		if LeaPlusLC["RecentChatWindow"] == "On" then
 
-			-- Create recent chat frame (not parenting to UIParent due to editbox scaling issue)
-			local editFrame = CreateFrame("ScrollFrame", nil, nil, "InputScrollFrameTemplate")
-
-			-- Toggle frame with UIParent
-			local hideUI = false
-			local function HideRecentChatFrame() if editFrame:IsShown() then hideUI = true editFrame:Hide() end	end
-			local function ShowRecentChatFrame() if hideUI and not PetBattleFrame:IsShown() then editFrame:Show() hideUI = false end end
-			hooksecurefunc(UIParent, "Hide", HideRecentChatFrame)
-			hooksecurefunc(UIParent, "Show", ShowRecentChatFrame)
+			-- Create recent chat frame
+			local editFrame = CreateFrame("ScrollFrame", nil, UIParent, "InputScrollFrameTemplate")
 
 			-- Set frame parameters
 			editFrame:ClearAllPoints()
@@ -4442,6 +4506,7 @@
 			editBox:SetAltArrowKeyMode(false)
 			editBox:SetTextInsets(4, 4, 4, 4)
 			editBox:SetWidth(editFrame:GetWidth() - 30)
+			editBox:SetFont(editBox:GetFont(), 16)
 
 			-- Close frame with right-click of editframe or editbox
 			local function CloseRecentChatWindow()
@@ -4482,11 +4547,33 @@
 				if NumMsg > 128 then StartMsg = NumMsg - 127 end
 				local totalMsgCount = 0
 				for iMsg = StartMsg, NumMsg do
-					local chatMessage = chtfrm:GetMessageInfo(iMsg)
+					local chatMessage, r, g, b, chatTypeID = chtfrm:GetMessageInfo(iMsg)
 					if chatMessage then
-						--chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
-						--chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
+
+						-- Handle Battle.net
+						if string.match(chatMessage, "k:(%d+):(%d+):BN_WHISPER:") then
+							local id = tonumber(string.match(chatMessage, "k:(%d+):%d+:BN_WHISPER:"))
+							local totalBNFriends = BNGetNumFriends()
+							for friendIndex = 1, totalBNFriends do
+								local presenceID, name, tag = BNGetFriendInfo(friendIndex)
+								if id == presenceID then
+									tag = strsplit("#", tag)
+									chatMessage =  gsub(chatMessage, "|HBNplayer:.*:.*:.*:BN_WHISPER:.*:", "[" .. tag .. "]:")
+								end
+							end
+						end
+
+						-- Handle colors
+						if r and g and b and chatTypeID then
+							local colorCode = RGBToColorCode(r, g, b)
+							chatMessage = string.gsub(chatMessage, "|r", "|r" .. colorCode) -- Links
+							chatMessage = colorCode .. chatMessage
+						end
+
+						chatMessage = gsub(chatMessage, "|T.-|t", "") -- Remove textures
+						chatMessage = gsub(chatMessage, "{.-}", "") -- Remove ellipsis
 						editBox:Insert(chatMessage .. "|n")
+
 					end
 					totalMsgCount = totalMsgCount + 1
 				end
@@ -6848,11 +6935,40 @@
 
 		if event == "RESURRECT_REQUEST" then
 
-			-- Resurrect automatically if not in combat
-			if not UnitAffectingCombat(arg1) then
-				AcceptResurrect()
-				StaticPopup_Hide("RESURRECT_NO_TIMER")
+			-- Exclude Chained Spirit (Zul'Gurub)
+			local chainLoc
+
+			-- Exclude Chained Spirit (Zul'Gurub)
+			chainLoc = "Chained Spirit"
+			if 	   GameLocale == "zhCN" then chainLoc = "被禁锢的灵魂"
+			elseif GameLocale == "zhTW" then chainLoc = "禁錮之魂"
+			elseif GameLocale == "ruRU" then chainLoc = "Скованный дух"
+			elseif GameLocale == "koKR" then chainLoc = "구속된 영혼"
+			elseif GameLocale == "esMX" then chainLoc = "Espíritu encadenado"
+			elseif GameLocale == "ptBR" then chainLoc = "Espírito Acorrentado"
+			elseif GameLocale == "deDE" then chainLoc = "Angeketteter Geist"
+			elseif GameLocale == "esES" then chainLoc = "Espíritu encadenado"
+			elseif GameLocale == "frFR" then chainLoc = "Esprit enchaîné"
+			elseif GameLocale == "itIT" then chainLoc = "Spirito Incatenato"
 			end
+			if arg1 == chainLoc then return	end
+
+			-- Resurrect
+			local resTimer = GetCorpseRecoveryDelay()
+			if resTimer and resTimer > 0 then
+				-- Resurrect has a delay so wait before resurrecting
+				C_Timer.After(resTimer + 1, function()
+					if not UnitAffectingCombat(arg1) and LeaPlusLC["AutoAcceptRes"] == "On" then
+						AcceptResurrect()
+					end
+				end)
+			else
+				-- Resurrect has no delay so resurrect now
+				if not UnitAffectingCombat(arg1) then
+					AcceptResurrect()
+				end
+			end
+
 			return
 
 		end
@@ -6863,8 +6979,18 @@
 
 		if event == "CONFIRM_SUMMON" then
 			if not UnitAffectingCombat("player") then
-				C_SummonInfo.ConfirmSummon()
-				StaticPopup_Hide("CONFIRM_SUMMON")
+				local sName = GetSummonConfirmSummoner()
+				local sLocation = GetSummonConfirmAreaName()
+				LeaPlusLC:Print(L["The summon from"] .. " " .. sName .. " (" .. sLocation .. ") " .. L["will be automatically accepted in 10 seconds unless cancelled."])
+				C_Timer.After(10, function()
+					local sNameNew = GetSummonConfirmSummoner()
+					local sLocationNew = GetSummonConfirmAreaName()
+					if sName == sNameNew and sLocation == sLocationNew then
+						-- Automatically accept summon after 10 seconds if summoner name and location have not changed
+						C_SummonInfo.ConfirmSummon()
+						StaticPopup_Hide("CONFIRM_SUMMON")
+					end
+				end)
 			end
 			return
 		end
@@ -6935,26 +7061,6 @@
 		if event == "MAIL_LOCK_SEND_ITEMS" then
 			RespondMailLockSendItem(arg1, true)
 			return
-		end
-
-		----------------------------------------------------------------------
-		-- Automatically release in battlegrounds
-		----------------------------------------------------------------------
-
-		if event == "PLAYER_DEAD" then
-
-			-- If player has ability to self-resurrect (soulstone, reincarnation, etc), do nothing and quit
-			if C_DeathInfo.GetSelfResurrectOptions() and #C_DeathInfo.GetSelfResurrectOptions() > 0 then return end
-
-			-- Resurrect if player is in a battleground
-			local InstStat, InstType = IsInInstance()
-			if InstStat and InstType == "pvp" then
-				RepopMe()
-				return
-			end
-
-			return
-
 		end
 
 		----------------------------------------------------------------------
@@ -7999,12 +8105,13 @@
 			elseif str == "quest" then
 				-- Show quest completed status
 				if arg1 and arg1 ~= "" then
-					if tonumber(arg1) then
+					if tonumber(arg1) and tonumber(arg1) < 999999999 then
 						local questCompleted = IsQuestFlaggedCompleted(arg1)
+						local questTitle = C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
 						if questCompleted then
-							LeaPlusLC:Print(arg1 .. ": " .. L["Quest completed."])
+							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
 						else
-							LeaPlusLC:Print(arg1 .. ": " .. L["Quest not completed."])
+							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
 						end
 					else
 						LeaPlusLC:Print("Invalid quest ID.")
@@ -8812,7 +8919,7 @@
 	pg = "Page1";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Character"					, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nQuests which have a gold requirement will not be turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateQuests"			,	"Automate quests"				,	146, -92, 	false,	"If checked, quests will be selected, accepted and turned-in automatically.|n|nQuests which have a gold requirement will not be turned-in automatically.|n|nYou can hold the shift key down when you talk to a quest giver to override this setting.|n|nRepeatable battlemaster and cloth quartermaster quests can be automatically selected by holding down the alt key.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutomateGossip"			,	"Automate gossip"				,	146, -112, 	false,	"If checked, you can hold down the alt key while opening a gossip window to automatically select a single gossip item.|n|nIf the gossip item type is banker, taxi, trainer or vendor, gossip will be skipped without needing to hold the alt key.  You can hold the shift key down to prevent this.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptSummon"			,	"Accept summon"					, 	146, -132, 	false,	"If checked, summon requests will be accepted automatically unless you are in combat.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoAcceptRes"				,	"Accept resurrection"			, 	146, -152, 	false,	"If checked, resurrection requests will be accepted automatically as long as the player resurrecting you is not in combat.")

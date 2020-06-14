@@ -15,23 +15,23 @@ QuestieConfig = {
 				[1491] = true,
 				[3261] = true,
 				[1060] = true,
-				[1483] = true,
+				[3301] = true,
 				[1095] = true,
 				[1065] = true,
-				[959] = true,
-				[1530] = true,
-				[1068] = true,
-				[6562] = true,
-				[874] = true,
-				[1536] = true,
-				[6543] = true,
-				[877] = true,
-				[1130] = true,
 				[6921] = true,
-				[3301] = true,
+				[1068] = true,
+				[1130] = true,
+				[6562] = true,
+				[1536] = true,
+				[877] = true,
+				[6543] = true,
+				[874] = true,
+				[1530] = true,
+				[959] = true,
+				[1483] = true,
 			},
 			["complete"] = {
-				[190] = true,
+				[758] = true,
 				[886] = true,
 				[759] = true,
 				[887] = true,
@@ -53,7 +53,7 @@ QuestieConfig = {
 				[892] = true,
 				[1527] = true,
 				[96] = true,
-				[893] = true,
+				[447] = true,
 				[1529] = true,
 				[638] = true,
 				[766] = true,
@@ -141,6 +141,7 @@ QuestieConfig = {
 				[1105] = true,
 				[1361] = true,
 				[1362] = true,
+				[1107] = true,
 				[235] = true,
 				[6462] = true,
 				[1365] = true,
@@ -167,7 +168,7 @@ QuestieConfig = {
 				[6562] = true,
 				[568] = true,
 				[824] = true,
-				[1136] = true,
+				[569] = true,
 				[5041] = true,
 				[477] = true,
 				[570] = true,
@@ -198,20 +199,21 @@ QuestieConfig = {
 				[582] = true,
 				[5147] = true,
 				[583] = true,
+				[584] = true,
 				[840] = true,
-				[569] = true,
-				[421] = true,
 				[55296] = true,
+				[421] = true,
 				[6641] = true,
 				[6628] = true,
-				[842] = true,
 				[6548] = true,
+				[842] = true,
 				[6544] = true,
+				[1096] = true,
 				[358] = true,
 				[843] = true,
-				[186] = true,
 				[6503] = true,
 				[6481] = true,
+				[849] = true,
 				[844] = true,
 				[1431] = true,
 				[1176] = true,
@@ -223,117 +225,117 @@ QuestieConfig = {
 				[846] = true,
 				[1435] = true,
 				[1180] = true,
-				[424] = true,
-				[1181] = true,
 				[6442] = true,
-				[1182] = true,
+				[1181] = true,
 				[6441] = true,
+				[1182] = true,
+				[1183] = true,
 				[848] = true,
-				[220] = true,
-				[1184] = true,
 				[6401] = true,
+				[1184] = true,
+				[1490] = true,
 				[425] = true,
-				[1492] = true,
+				[1520] = true,
 				[1186] = true,
 				[1521] = true,
 				[850] = true,
-				[1522] = true,
-				[566] = true,
+				[1656] = true,
+				[6361] = true,
 				[362] = true,
 				[851] = true,
-				[6361] = true,
-				[596] = true,
 				[6301] = true,
+				[596] = true,
+				[6284] = true,
 				[852] = true,
 				[6283] = true,
-				[6284] = true,
 				[6143] = true,
-				[853] = true,
 				[5881] = true,
+				[853] = true,
 				[5762] = true,
 				[5741] = true,
-				[1195] = true,
 				[5561] = true,
+				[1195] = true,
+				[5386] = true,
 				[1196] = true,
 				[4770] = true,
 				[1197] = true,
-				[5386] = true,
 				[5381] = true,
 				[5151] = true,
 				[5062] = true,
 				[5052] = true,
-				[1153] = true,
+				[1152] = true,
 				[4921] = true,
+				[1136] = true,
 				[857] = true,
 				[493] = true,
-				[1160] = true,
 				[4881] = true,
-				[858] = true,
 				[4865] = true,
+				[858] = true,
 				[4841] = true,
 				[4767] = true,
+				[855] = true,
 				[430] = true,
 				[494] = true,
-				[1152] = true,
 				[3376] = true,
-				[860] = true,
 				[3093] = true,
-				[605] = true,
+				[860] = true,
 				[2986] = true,
+				[605] = true,
+				[2985] = true,
 				[861] = true,
 				[495] = true,
-				[2985] = true,
 				[2984] = true,
+				[532] = true,
 				[216] = true,
 				[6363] = true,
-				[1656] = true,
 				[1535] = true,
+				[1532] = true,
 				[863] = true,
 				[496] = true,
-				[1532] = true,
 				[1530] = true,
 				[1528] = true,
 				[1524] = true,
+				[1522] = true,
 				[6381] = true,
 				[6383] = true,
 				[865] = true,
-				[1520] = true,
 				[1516] = true,
+				[1492] = true,
 				[185] = true,
 				[6393] = true,
+				[1489] = true,
 				[746] = true,
-				[1490] = true,
-				[1164] = true,
+				[190] = true,
 				[867] = true,
 				[498] = true,
-				[422] = true,
-				[1489] = true,
+				[1153] = true,
+				[1164] = true,
 				[868] = true,
-				[1096] = true,
-				[556] = true,
-				[754] = true,
+				[188] = true,
+				[423] = true,
+				[213] = true,
 				[869] = true,
 				[499] = true,
 				[6421] = true,
 				[742] = true,
 				[870] = true,
 				[1483] = true,
-				[1175] = true,
+				[422] = true,
 				[743] = true,
 				[871] = true,
-				[532] = true,
+				[556] = true,
 				[4904] = true,
 				[744] = true,
 				[872] = true,
-				[188] = true,
-				[423] = true,
+				[220] = true,
+				[1175] = true,
 				[745] = true,
 				[873] = true,
 				[501] = true,
-				[213] = true,
+				[893] = true,
 				[187] = true,
 				[874] = true,
-				[533] = true,
+				[424] = true,
 				[6461] = true,
 				[747] = true,
 				[875] = true,
@@ -342,31 +344,31 @@ QuestieConfig = {
 				[748] = true,
 				[876] = true,
 				[63] = true,
-				[855] = true,
+				[429] = true,
 				[749] = true,
 				[877] = true,
 				[503] = true,
-				[1183] = true,
+				[1160] = true,
 				[750] = true,
 				[878] = true,
-				[849] = true,
-				[25] = true,
+				[575] = true,
+				[754] = true,
 				[751] = true,
 				[879] = true,
 				[4966] = true,
 				[4021] = true,
 				[752] = true,
 				[880] = true,
-				[429] = true,
 				[1086] = true,
+				[533] = true,
 				[753] = true,
 				[881] = true,
-				[447] = true,
-				[575] = true,
+				[566] = true,
+				[186] = true,
 				[189] = true,
 				[882] = true,
 				[6523] = true,
-				[758] = true,
+				[25] = true,
 				[755] = true,
 				[883] = true,
 				[506] = true,
@@ -382,202 +384,206 @@ QuestieConfig = {
 			["TrackerHiddenQuests"] = {
 			},
 			["autocomplete"] = true,
+			["TrackedQuests"] = {
+			},
+			["collapsedQuests"] = {
+			},
 			["journey"] = {
 				{
 					["Party"] = {
 					},
-					["Level"] = 11,
-					["Quest"] = 776,
-					["Timestamp"] = 1567229415,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567229415,
+					["Quest"] = 776,
+					["Level"] = 11,
 				}, -- [1]
 				{
+					["Timestamp"] = 1567229458,
 					["Party"] = {
 					},
-					["Timestamp"] = 1567229458,
 					["Event"] = "Level",
 					["NewLevel"] = 12,
 				}, -- [2]
 				{
 					["Party"] = {
 					},
-					["Level"] = 11,
-					["Quest"] = 744,
-					["Timestamp"] = 1567229458,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567229458,
+					["Quest"] = 744,
+					["Level"] = 11,
 				}, -- [3]
 				{
 					["Party"] = {
 					},
-					["Level"] = 12,
-					["Quest"] = 861,
-					["Timestamp"] = 1567229572,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567229572,
+					["Quest"] = 861,
+					["Level"] = 12,
 				}, -- [4]
 				{
 					["Party"] = {
 					},
-					["Level"] = 12,
-					["Quest"] = 860,
-					["Timestamp"] = 1567229574,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567229574,
+					["Quest"] = 860,
+					["Level"] = 12,
 				}, -- [5]
 				{
 					["Party"] = {
 					},
-					["Level"] = 12,
-					["Quest"] = 760,
-					["Timestamp"] = 1567229770,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567229770,
+					["Quest"] = 760,
+					["Level"] = 12,
 				}, -- [6]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567318885,
-					["Quest"] = 445,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 445,
+					["Timestamp"] = 1567318885,
 				}, -- [7]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567318921,
-					["Quest"] = 354,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 354,
+					["Timestamp"] = 1567318921,
 				}, -- [8]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567318924,
-					["Quest"] = 362,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 362,
+					["Timestamp"] = 1567318924,
 				}, -- [9]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567318948,
-					["Quest"] = 358,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 358,
+					["Timestamp"] = 1567318948,
 				}, -- [10]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567318958,
-					["Quest"] = 398,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 398,
+					["Timestamp"] = 1567318958,
 				}, -- [11]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320297,
-					["Quest"] = 354,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 354,
+					["Timestamp"] = 1567320297,
 				}, -- [12]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320298,
-					["Quest"] = 362,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 362,
+					["Timestamp"] = 1567320298,
 				}, -- [13]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320298,
-					["Quest"] = 355,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 355,
+					["Timestamp"] = 1567320298,
 				}, -- [14]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320336,
-					["Quest"] = 398,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 398,
+					["Timestamp"] = 1567320336,
 				}, -- [15]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320337,
-					["Quest"] = 427,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 427,
+					["Timestamp"] = 1567320337,
 				}, -- [16]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320349,
-					["Quest"] = 355,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 355,
+					["Timestamp"] = 1567320349,
 				}, -- [17]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320354,
-					["Quest"] = 358,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 358,
+					["Timestamp"] = 1567320354,
 				}, -- [18]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320908,
-					["Quest"] = 429,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 429,
+					["Timestamp"] = 1567320908,
 				}, -- [19]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320918,
-					["Quest"] = 427,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 12,
+					["Quest"] = 427,
+					["Timestamp"] = 1567320918,
 				}, -- [20]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320924,
-					["Quest"] = 764,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 12,
+					["Quest"] = 764,
+					["Timestamp"] = 1567320924,
 				}, -- [21]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567320927,
-					["Quest"] = 765,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 12,
+					["Quest"] = 765,
+					["Timestamp"] = 1567320927,
 				}, -- [22]
 				{
 					["Party"] = {
@@ -587,13 +593,14 @@ QuestieConfig = {
 							["Level"] = 13,
 						}, -- [1]
 					},
-					["Timestamp"] = 1567321038,
-					["Quest"] = 435,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 12,
+					["Quest"] = 435,
+					["Timestamp"] = 1567321038,
 				}, -- [23]
 				{
+					["Timestamp"] = 1567321149,
 					["Party"] = {
 						{
 							["Class"] = "Hunter",
@@ -601,7 +608,6 @@ QuestieConfig = {
 							["Level"] = 13,
 						}, -- [1]
 					},
-					["Timestamp"] = 1567321149,
 					["Event"] = "Level",
 					["NewLevel"] = 13,
 				}, -- [24]
@@ -613,11 +619,11 @@ QuestieConfig = {
 							["Level"] = 13,
 						}, -- [1]
 					},
-					["Timestamp"] = 1567321149,
-					["Quest"] = 435,
-					["Level"] = 12,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 12,
+					["Quest"] = 435,
+					["Timestamp"] = 1567321149,
 				}, -- [25]
 				{
 					["Party"] = {
@@ -627,844 +633,844 @@ QuestieConfig = {
 							["Level"] = 13,
 						}, -- [1]
 					},
-					["Timestamp"] = 1567321150,
-					["Quest"] = 449,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 13,
+					["Quest"] = 449,
+					["Timestamp"] = 1567321150,
 				}, -- [26]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321569,
-					["Quest"] = 449,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 13,
+					["Quest"] = 449,
+					["Timestamp"] = 1567321569,
 				}, -- [27]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321569,
-					["Quest"] = 3221,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 13,
+					["Quest"] = 3221,
+					["Timestamp"] = 1567321569,
 				}, -- [28]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321571,
-					["Quest"] = 437,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 13,
+					["Quest"] = 437,
+					["Timestamp"] = 1567321571,
 				}, -- [29]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321588,
-					["Quest"] = 429,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 13,
+					["Quest"] = 429,
+					["Timestamp"] = 1567321588,
 				}, -- [30]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321589,
-					["Quest"] = 430,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 13,
+					["Quest"] = 430,
+					["Timestamp"] = 1567321589,
 				}, -- [31]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321604,
-					["Quest"] = 3221,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 13,
+					["Quest"] = 3221,
+					["Timestamp"] = 1567321604,
 				}, -- [32]
 				{
 					["Party"] = {
 					},
-					["Timestamp"] = 1567321608,
-					["Quest"] = 445,
-					["Level"] = 13,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 13,
+					["Quest"] = 445,
+					["Timestamp"] = 1567321608,
 				}, -- [33]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 13,
 					["Quest"] = 1359,
 					["Timestamp"] = 1567321637,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [34]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 13,
 					["Quest"] = 447,
 					["Timestamp"] = 1567321638,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [35]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 13,
 					["Quest"] = 477,
 					["Timestamp"] = 1567321647,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [36]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 13,
 					["Quest"] = 421,
 					["Timestamp"] = 1567321652,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [37]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 13,
 					["Quest"] = 421,
 					["Timestamp"] = 1567321948,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [38]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 13,
 					["Quest"] = 422,
 					["Timestamp"] = 1567321951,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [39]
 				{
 					["Party"] = {
 					},
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 13,
 					["Quest"] = 430,
 					["Timestamp"] = 1567324241,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [40]
 				{
 					["Party"] = {
 					},
-					["Level"] = 13,
-					["Quest"] = 425,
-					["Timestamp"] = 1567324288,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567324288,
+					["Quest"] = 425,
+					["Level"] = 13,
 				}, -- [41]
 				{
 					["Party"] = {
 					},
-					["Level"] = 13,
-					["Quest"] = 425,
-					["Timestamp"] = 1567324517,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567324517,
+					["Quest"] = 425,
+					["Level"] = 13,
 				}, -- [42]
 				{
+					["Timestamp"] = 1567326248,
 					["Party"] = {
 					},
-					["Timestamp"] = 1567326248,
 					["Event"] = "Level",
 					["NewLevel"] = 14,
 				}, -- [43]
 				{
 					["Party"] = {
 					},
-					["Level"] = 13,
-					["Quest"] = 422,
-					["Timestamp"] = 1567326248,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567326248,
+					["Quest"] = 422,
+					["Level"] = 13,
 				}, -- [44]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 423,
-					["Timestamp"] = 1567326255,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567326255,
+					["Quest"] = 423,
+					["Level"] = 14,
 				}, -- [45]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 447,
-					["Timestamp"] = 1567326533,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567326533,
+					["Quest"] = 447,
+					["Level"] = 14,
 				}, -- [46]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 1359,
-					["Timestamp"] = 1567326541,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567326541,
+					["Quest"] = 1359,
+					["Level"] = 14,
 				}, -- [47]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 1358,
-					["Timestamp"] = 1567326542,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567326542,
+					["Quest"] = 1358,
+					["Level"] = 14,
 				}, -- [48]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 477,
-					["Timestamp"] = 1567924472,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924472,
+					["Quest"] = 477,
+					["Level"] = 14,
 				}, -- [49]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 478,
-					["Timestamp"] = 1567924473,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924473,
+					["Quest"] = 478,
+					["Level"] = 14,
 				}, -- [50]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 478,
-					["Timestamp"] = 1567924602,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924602,
+					["Quest"] = 478,
+					["Level"] = 14,
 				}, -- [51]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 481,
-					["Timestamp"] = 1567924603,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924603,
+					["Quest"] = 481,
+					["Level"] = 14,
 				}, -- [52]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 481,
-					["Timestamp"] = 1567924610,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924610,
+					["Quest"] = 481,
+					["Level"] = 14,
 				}, -- [53]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 482,
-					["Timestamp"] = 1567924610,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924610,
+					["Quest"] = 482,
+					["Level"] = 14,
 				}, -- [54]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 482,
-					["Timestamp"] = 1567924618,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924618,
+					["Quest"] = 482,
+					["Level"] = 14,
 				}, -- [55]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 479,
-					["Timestamp"] = 1567924619,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567924619,
+					["Quest"] = 479,
+					["Level"] = 14,
 				}, -- [56]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 423,
-					["Timestamp"] = 1567925496,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567925496,
+					["Quest"] = 423,
+					["Level"] = 14,
 				}, -- [57]
 				{
 					["Party"] = {
 					},
-					["Level"] = 14,
-					["Quest"] = 424,
-					["Timestamp"] = 1567925497,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567925497,
+					["Quest"] = 424,
+					["Level"] = 14,
 				}, -- [58]
 				{
+					["Timestamp"] = 1567926062,
 					["Party"] = {
 					},
-					["Timestamp"] = 1567926062,
 					["Event"] = "Level",
 					["NewLevel"] = 15,
 				}, -- [59]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 479,
-					["Timestamp"] = 1567927458,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927458,
+					["Quest"] = 479,
+					["Level"] = 15,
 				}, -- [60]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 480,
-					["Timestamp"] = 1567927458,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927458,
+					["Quest"] = 480,
+					["Level"] = 15,
 				}, -- [61]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 424,
-					["Timestamp"] = 1567927465,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927465,
+					["Quest"] = 424,
+					["Level"] = 15,
 				}, -- [62]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 99,
-					["Timestamp"] = 1567927466,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927466,
+					["Quest"] = 99,
+					["Level"] = 15,
 				}, -- [63]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 871,
-					["Timestamp"] = 1567927569,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927569,
+					["Quest"] = 871,
+					["Level"] = 15,
 				}, -- [64]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 5041,
-					["Timestamp"] = 1567927576,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927576,
+					["Quest"] = 5041,
+					["Level"] = 15,
 				}, -- [65]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 867,
-					["Timestamp"] = 1567927587,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927587,
+					["Quest"] = 867,
+					["Level"] = 15,
 				}, -- [66]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1358,
-					["Timestamp"] = 1567927628,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927628,
+					["Quest"] = 1358,
+					["Level"] = 15,
 				}, -- [67]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1492,
-					["Timestamp"] = 1567927629,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927629,
+					["Quest"] = 1492,
+					["Level"] = 15,
 				}, -- [68]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 848,
-					["Timestamp"] = 1567927631,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927631,
+					["Quest"] = 848,
+					["Level"] = 15,
 				}, -- [69]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 869,
-					["Timestamp"] = 1567927640,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927640,
+					["Quest"] = 869,
+					["Level"] = 15,
 				}, -- [70]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 4921,
-					["Timestamp"] = 1567927715,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927715,
+					["Quest"] = 4921,
+					["Level"] = 15,
 				}, -- [71]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 886,
-					["Timestamp"] = 1567927722,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927722,
+					["Quest"] = 886,
+					["Level"] = 15,
 				}, -- [72]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 870,
-					["Timestamp"] = 1567927723,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927723,
+					["Quest"] = 870,
+					["Level"] = 15,
 				}, -- [73]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 899,
-					["Timestamp"] = 1567927733,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927733,
+					["Quest"] = 899,
+					["Level"] = 15,
 				}, -- [74]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 860,
-					["Timestamp"] = 1567927770,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927770,
+					["Quest"] = 860,
+					["Level"] = 15,
 				}, -- [75]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 844,
-					["Timestamp"] = 1567927770,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927770,
+					["Quest"] = 844,
+					["Level"] = 15,
 				}, -- [76]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 6361,
-					["Timestamp"] = 1567927808,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927808,
+					["Quest"] = 6361,
+					["Level"] = 15,
 				}, -- [77]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 6361,
-					["Timestamp"] = 1567927823,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927823,
+					["Quest"] = 6361,
+					["Level"] = 15,
 				}, -- [78]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 6362,
-					["Timestamp"] = 1567927825,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567927825,
+					["Quest"] = 6362,
+					["Level"] = 15,
 				}, -- [79]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 2984,
-					["Timestamp"] = 1567928046,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928046,
+					["Quest"] = 2984,
+					["Level"] = 15,
 				}, -- [80]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1524,
-					["Timestamp"] = 1567928047,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928047,
+					["Quest"] = 1524,
+					["Level"] = 15,
 				}, -- [81]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1524,
-					["Timestamp"] = 1567928334,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928334,
+					["Quest"] = 1524,
+					["Level"] = 15,
 				}, -- [82]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1525,
-					["Timestamp"] = 1567928335,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928335,
+					["Quest"] = 1525,
+					["Level"] = 15,
 				}, -- [83]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 840,
-					["Timestamp"] = 1567928507,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928507,
+					["Quest"] = 840,
+					["Level"] = 15,
 				}, -- [84]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 840,
-					["Timestamp"] = 1567928900,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928900,
+					["Quest"] = 840,
+					["Level"] = 15,
 				}, -- [85]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 842,
-					["Timestamp"] = 1567928901,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567928901,
+					["Quest"] = 842,
+					["Level"] = 15,
 				}, -- [86]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1525,
-					["Timestamp"] = 1567929191,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567929191,
+					["Quest"] = 1525,
+					["Level"] = 15,
 				}, -- [87]
 				{
 					["Party"] = {
 					},
-					["Level"] = 15,
-					["Quest"] = 1526,
-					["Timestamp"] = 1567929192,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567929192,
+					["Quest"] = 1526,
+					["Level"] = 15,
 				}, -- [88]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929332,
 					["Quest"] = 1526,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [89]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929334,
 					["Quest"] = 1526,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [90]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929347,
 					["Quest"] = 1526,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [91]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929348,
 					["Quest"] = 1526,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [92]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929397,
 					["Quest"] = 1526,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [93]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929398,
 					["Quest"] = 1527,
 					["Level"] = 15,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [94]
 				{
-					["Timestamp"] = 1567929530,
 					["Party"] = {
 					},
+					["Timestamp"] = 1567929530,
 					["Event"] = "Level",
 					["NewLevel"] = 16,
 				}, -- [95]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567929634,
 					["Quest"] = 1527,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [96]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930053,
 					["Quest"] = 6362,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [97]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930053,
 					["Quest"] = 6363,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [98]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930220,
 					["Quest"] = 5723,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [99]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930222,
 					["Quest"] = 5722,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [100]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930225,
 					["Quest"] = 437,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [101]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930227,
 					["Quest"] = 480,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [102]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930231,
 					["Quest"] = 99,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [103]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930353,
 					["Quest"] = 962,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [104]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930427,
 					["Quest"] = 6363,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [105]
 				{
 					["Party"] = {
 					},
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1567930427,
 					["Quest"] = 6364,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [106]
 				{
-					["Level"] = 16,
-					["Quest"] = 842,
-					["Timestamp"] = 1583092273,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583092273,
+					["Quest"] = 842,
+					["Level"] = 16,
 				}, -- [107]
 				{
-					["Level"] = 16,
-					["Quest"] = 844,
-					["Timestamp"] = 1583092274,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583092274,
+					["Quest"] = 844,
+					["Level"] = 16,
 				}, -- [108]
 				{
-					["Level"] = 16,
-					["Quest"] = 845,
-					["Timestamp"] = 1583092275,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583092275,
+					["Quest"] = 845,
+					["Level"] = 16,
 				}, -- [109]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583092335,
 					["Quest"] = 6364,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [110]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583093686,
 					["Quest"] = 819,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [111]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583093720,
 					["Quest"] = 871,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [112]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583093721,
 					["Quest"] = 5041,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [113]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583093722,
 					["Quest"] = 872,
 					["Level"] = 16,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [114]
 				{
-					["Timestamp"] = 1583239487,
-					["Quest"] = 865,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 865,
+					["Timestamp"] = 1583239487,
 				}, -- [115]
 				{
-					["Timestamp"] = 1583239488,
-					["Quest"] = 1069,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 1069,
+					["Timestamp"] = 1583239488,
 				}, -- [116]
 				{
-					["Timestamp"] = 1583239497,
-					["Quest"] = 895,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 895,
+					["Timestamp"] = 1583239497,
 				}, -- [117]
 				{
-					["Timestamp"] = 1583239505,
-					["Quest"] = 894,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 894,
+					["Timestamp"] = 1583239505,
 				}, -- [118]
 				{
-					["Timestamp"] = 1583239509,
-					["Quest"] = 1483,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 1483,
+					["Timestamp"] = 1583239509,
 				}, -- [119]
 				{
-					["Timestamp"] = 1583239543,
-					["Quest"] = 887,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 887,
+					["Timestamp"] = 1583239543,
 				}, -- [120]
 				{
-					["Timestamp"] = 1583239560,
-					["Quest"] = 959,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 959,
+					["Timestamp"] = 1583239560,
 				}, -- [121]
 				{
-					["Timestamp"] = 1583239573,
-					["Quest"] = 1492,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 16,
+					["Quest"] = 1492,
+					["Timestamp"] = 1583239573,
 				}, -- [122]
 				{
-					["Timestamp"] = 1583239573,
-					["Quest"] = 896,
-					["Level"] = 16,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 16,
+					["Quest"] = 896,
+					["Timestamp"] = 1583239573,
 				}, -- [123]
 				{
 					["Timestamp"] = 1583239595,
@@ -1472,116 +1478,116 @@ QuestieConfig = {
 					["NewLevel"] = 17,
 				}, -- [124]
 				{
-					["Timestamp"] = 1583239595,
-					["Quest"] = 819,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 17,
+					["Quest"] = 819,
+					["Timestamp"] = 1583239595,
 				}, -- [125]
 				{
-					["Timestamp"] = 1583239596,
-					["Quest"] = 821,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 821,
+					["Timestamp"] = 1583239596,
 				}, -- [126]
 				{
-					["Timestamp"] = 1583239606,
-					["Quest"] = 891,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 891,
+					["Timestamp"] = 1583239606,
 				}, -- [127]
 				{
-					["Timestamp"] = 1583240158,
-					["Quest"] = 845,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 17,
+					["Quest"] = 845,
+					["Timestamp"] = 1583240158,
 				}, -- [128]
 				{
-					["Timestamp"] = 1583240159,
-					["Quest"] = 903,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 903,
+					["Timestamp"] = 1583240159,
 				}, -- [129]
 				{
-					["Timestamp"] = 1583240167,
-					["Quest"] = 869,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 17,
+					["Quest"] = 869,
+					["Timestamp"] = 1583240167,
 				}, -- [130]
 				{
-					["Timestamp"] = 1583240168,
-					["Quest"] = 3281,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 3281,
+					["Timestamp"] = 1583240168,
 				}, -- [131]
 				{
-					["Timestamp"] = 1583240180,
-					["Quest"] = 872,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 17,
+					["Quest"] = 872,
+					["Timestamp"] = 1583240180,
 				}, -- [132]
 				{
-					["Timestamp"] = 1583240181,
-					["Quest"] = 6541,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 6541,
+					["Timestamp"] = 1583240181,
 				}, -- [133]
 				{
-					["Timestamp"] = 1583240196,
-					["Quest"] = 868,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 868,
+					["Timestamp"] = 1583240196,
 				}, -- [134]
 				{
-					["Timestamp"] = 1583240285,
-					["Quest"] = 868,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 17,
+					["Quest"] = 868,
+					["Timestamp"] = 1583240285,
 				}, -- [135]
 				{
-					["Timestamp"] = 1583240319,
-					["Quest"] = 855,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 855,
+					["Timestamp"] = 1583240319,
 				}, -- [136]
 				{
-					["Timestamp"] = 1583240351,
-					["Quest"] = 891,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 17,
+					["Quest"] = 891,
+					["Timestamp"] = 1583240351,
 				}, -- [137]
 				{
-					["Timestamp"] = 1583240354,
-					["Quest"] = 850,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 850,
+					["Timestamp"] = 1583240354,
 				}, -- [138]
 				{
-					["Timestamp"] = 1583242057,
-					["Quest"] = 848,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 17,
+					["Quest"] = 848,
+					["Timestamp"] = 1583242057,
 				}, -- [139]
 				{
-					["Timestamp"] = 1583242057,
-					["Quest"] = 853,
-					["Level"] = 17,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 17,
+					["Quest"] = 853,
+					["Timestamp"] = 1583242057,
 				}, -- [140]
 				{
 					["Timestamp"] = 1583242075,
@@ -1589,200 +1595,200 @@ QuestieConfig = {
 					["NewLevel"] = 18,
 				}, -- [141]
 				{
-					["Timestamp"] = 1583242076,
-					["Quest"] = 867,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 867,
+					["Timestamp"] = 1583242076,
 				}, -- [142]
 				{
-					["Timestamp"] = 1583242076,
-					["Quest"] = 875,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 875,
+					["Timestamp"] = 1583242076,
 				}, -- [143]
 				{
-					["Timestamp"] = 1583242101,
-					["Quest"] = 903,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 903,
+					["Timestamp"] = 1583242101,
 				}, -- [144]
 				{
-					["Timestamp"] = 1583242102,
-					["Quest"] = 881,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 881,
+					["Timestamp"] = 1583242102,
 				}, -- [145]
 				{
-					["Timestamp"] = 1583242113,
-					["Quest"] = 870,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 18,
+					["Quest"] = 870,
+					["Timestamp"] = 1583242113,
 				}, -- [146]
 				{
-					["Timestamp"] = 1583242114,
-					["Quest"] = 877,
-					["Level"] = 18,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 18,
+					["Quest"] = 877,
+					["Timestamp"] = 1583242114,
 				}, -- [147]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 18,
 					["Quest"] = 853,
 					["Timestamp"] = 1583243594,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [148]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 18,
 					["Quest"] = 5722,
 					["Timestamp"] = 1583243752,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [149]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 18,
 					["Quest"] = 5722,
 					["Timestamp"] = 1583243756,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [150]
 				{
-					["Level"] = 18,
-					["Quest"] = 891,
-					["Timestamp"] = 1583245788,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583245788,
+					["Quest"] = 891,
+					["Level"] = 18,
 				}, -- [151]
 				{
-					["Level"] = 18,
-					["Quest"] = 895,
-					["Timestamp"] = 1583247004,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247004,
+					["Quest"] = 895,
+					["Level"] = 18,
 				}, -- [152]
 				{
-					["Level"] = 18,
-					["Quest"] = 887,
-					["Timestamp"] = 1583247005,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247005,
+					["Quest"] = 887,
+					["Level"] = 18,
 				}, -- [153]
 				{
-					["Level"] = 18,
-					["Quest"] = 890,
-					["Timestamp"] = 1583247006,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247006,
+					["Quest"] = 890,
+					["Level"] = 18,
 				}, -- [154]
 				{
-					["Level"] = 18,
-					["Quest"] = 890,
-					["Timestamp"] = 1583247034,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247034,
+					["Quest"] = 890,
+					["Level"] = 18,
 				}, -- [155]
 				{
-					["Level"] = 18,
-					["Quest"] = 892,
-					["Timestamp"] = 1583247035,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247035,
+					["Quest"] = 892,
+					["Level"] = 18,
 				}, -- [156]
 				{
-					["Level"] = 18,
-					["Quest"] = 892,
-					["Timestamp"] = 1583247106,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247106,
+					["Quest"] = 892,
+					["Level"] = 18,
 				}, -- [157]
 				{
-					["Level"] = 18,
-					["Quest"] = 888,
-					["Timestamp"] = 1583247107,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583247107,
+					["Quest"] = 888,
+					["Level"] = 18,
 				}, -- [158]
 				{
-					["Level"] = 18,
-					["Quest"] = 850,
-					["Timestamp"] = 1583248899,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583248899,
+					["Quest"] = 850,
+					["Level"] = 18,
 				}, -- [159]
 				{
-					["Level"] = 18,
-					["Quest"] = 851,
-					["Timestamp"] = 1583248900,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583248900,
+					["Quest"] = 851,
+					["Level"] = 18,
 				}, -- [160]
 				{
-					["Level"] = 18,
-					["Quest"] = 875,
-					["Timestamp"] = 1583249059,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249059,
+					["Quest"] = 875,
+					["Level"] = 18,
 				}, -- [161]
 				{
-					["Level"] = 18,
-					["Quest"] = 876,
-					["Timestamp"] = 1583249060,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249060,
+					["Quest"] = 876,
+					["Level"] = 18,
 				}, -- [162]
 				{
-					["Level"] = 18,
-					["Quest"] = 894,
-					["Timestamp"] = 1583249801,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249801,
+					["Quest"] = 894,
+					["Level"] = 18,
 				}, -- [163]
 				{
-					["Level"] = 18,
-					["Quest"] = 900,
-					["Timestamp"] = 1583249802,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249802,
+					["Quest"] = 900,
+					["Level"] = 18,
 				}, -- [164]
 				{
-					["Level"] = 18,
-					["Quest"] = 900,
-					["Timestamp"] = 1583249907,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249907,
+					["Quest"] = 900,
+					["Level"] = 18,
 				}, -- [165]
 				{
-					["Level"] = 18,
-					["Quest"] = 901,
-					["Timestamp"] = 1583249907,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583249907,
+					["Quest"] = 901,
+					["Level"] = 18,
 				}, -- [166]
 				{
-					["Level"] = 18,
-					["Quest"] = 901,
-					["Timestamp"] = 1583250033,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583250033,
+					["Quest"] = 901,
+					["Level"] = 18,
 				}, -- [167]
 				{
-					["Level"] = 18,
-					["Quest"] = 902,
-					["Timestamp"] = 1583250034,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583250034,
+					["Quest"] = 902,
+					["Level"] = 18,
 				}, -- [168]
 				{
-					["Level"] = 18,
-					["Quest"] = 858,
-					["Timestamp"] = 1583250230,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583250230,
+					["Quest"] = 858,
+					["Level"] = 18,
 				}, -- [169]
 				{
 					["Timestamp"] = 1583250764,
@@ -1790,140 +1796,139 @@ QuestieConfig = {
 					["NewLevel"] = 19,
 				}, -- [170]
 				{
-					["Level"] = 19,
-					["Quest"] = 858,
-					["Timestamp"] = 1583250765,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583250765,
+					["Quest"] = 858,
+					["Level"] = 19,
 				}, -- [171]
 				{
-					["Level"] = 19,
-					["Quest"] = 863,
-					["Timestamp"] = 1583250767,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583250767,
+					["Quest"] = 863,
+					["Level"] = 19,
 				}, -- [172]
 				{
-					["Level"] = 19,
-					["Quest"] = 876,
-					["Timestamp"] = 1583251100,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583251100,
+					["Quest"] = 876,
+					["Level"] = 19,
 				}, -- [173]
 				{
-					["Level"] = 19,
-					["Quest"] = 1060,
-					["Timestamp"] = 1583251101,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583251101,
+					["Quest"] = 1060,
+					["Level"] = 19,
 				}, -- [174]
 				{
-					["Level"] = 19,
-					["Quest"] = 902,
-					["Timestamp"] = 1583251570,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583251570,
+					["Quest"] = 902,
+					["Level"] = 19,
 				}, -- [175]
 				{
-					["Level"] = 19,
-					["Quest"] = 863,
-					["Timestamp"] = 1583251572,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583251572,
+					["Quest"] = 863,
+					["Level"] = 19,
 				}, -- [176]
 				{
-					["Level"] = 19,
-					["Quest"] = 3921,
-					["Timestamp"] = 1583251573,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583251573,
+					["Quest"] = 3921,
+					["Level"] = 19,
 				}, -- [177]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583422531,
 					["Quest"] = 881,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [178]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583422532,
 					["Quest"] = 905,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [179]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424072,
 					["Quest"] = 905,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [180]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424073,
 					["Quest"] = 3261,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [181]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424084,
 					["Quest"] = 877,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [182]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424085,
 					["Quest"] = 880,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [183]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424098,
 					["Quest"] = 4921,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [184]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424212,
 					["Quest"] = 851,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [185]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424213,
 					["Quest"] = 852,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [186]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424220,
 					["Quest"] = 855,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [187]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424456,
 					["Quest"] = 1486,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [188]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583424459,
 					["Quest"] = 1487,
 					["Level"] = 19,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [189]
 				{
-					["Timestamp"] = 1583424783,
 					["Party"] = {
 						{
 							["Class"] = "Shaman",
@@ -1931,193 +1936,193 @@ QuestieConfig = {
 							["Level"] = 18,
 						}, -- [1]
 					},
+					["Timestamp"] = 1583424783,
 					["Event"] = "Level",
 					["NewLevel"] = 20,
 				}, -- [190]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425000,
 					["Quest"] = 852,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [191]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425001,
 					["Quest"] = 4021,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [192]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425453,
 					["Quest"] = 4021,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [193]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425571,
 					["Quest"] = 880,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [194]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425571,
 					["Quest"] = 1489,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [195]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583425573,
 					["Quest"] = 3301,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [196]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583426859,
 					["Quest"] = 1529,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [197]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583426971,
 					["Quest"] = 1489,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [198]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583426972,
 					["Quest"] = 1490,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [199]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583426983,
 					["Quest"] = 1490,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [200]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583426984,
 					["Quest"] = 914,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [201]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427005,
 					["Quest"] = 888,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [202]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427106,
 					["Quest"] = 742,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [203]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427371,
 					["Quest"] = 865,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [204]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427372,
 					["Quest"] = 1491,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [205]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427393,
 					["Quest"] = 896,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [206]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427413,
 					["Quest"] = 1221,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [207]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427418,
 					["Quest"] = 1221,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [208]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427436,
 					["Quest"] = 821,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [209]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427437,
 					["Quest"] = 822,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [210]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427466,
 					["Quest"] = 888,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [211]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427583,
 					["Quest"] = 1529,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [212]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583427584,
 					["Quest"] = 1530,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [213]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583428822,
 					["Quest"] = 3281,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [214]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583428972,
 					["Quest"] = 888,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [215]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583429024,
 					["Quest"] = 891,
 					["Level"] = 20,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [216]
 				{
-					["Timestamp"] = 1583432242,
 					["Party"] = {
 						{
 							["Class"] = "Warrior",
@@ -2140,211 +2145,212 @@ QuestieConfig = {
 							["Level"] = 25,
 						}, -- [4]
 					},
+					["Timestamp"] = 1583432242,
 					["Event"] = "Level",
 					["NewLevel"] = 21,
 				}, -- [217]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435068,
 					["Quest"] = 914,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [218]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435185,
 					["Quest"] = 962,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [219]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435322,
 					["Quest"] = 3921,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [220]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435570,
 					["Quest"] = 3261,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [221]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435571,
 					["Quest"] = 1130,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [222]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435571,
 					["Quest"] = 882,
 					["Level"] = 21,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [223]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583435578,
 					["Quest"] = 1130,
 					["Level"] = 21,
-				}, -- [224]
-				{
-					["Timestamp"] = 1583503151,
-					["Quest"] = 1130,
-					["Level"] = 21,
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
-				}, -- [225]
-				{
-					["Timestamp"] = 1583503156,
-					["Quest"] = 1130,
-					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+				}, -- [224]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 21,
+					["Quest"] = 1130,
+					["Timestamp"] = 1583503151,
+				}, -- [225]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 21,
+					["Quest"] = 1130,
+					["Timestamp"] = 1583503156,
 				}, -- [226]
 				{
-					["Timestamp"] = 1583503159,
-					["Quest"] = 878,
-					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 21,
+					["Quest"] = 878,
+					["Timestamp"] = 1583503159,
 				}, -- [227]
 				{
-					["Timestamp"] = 1583503176,
-					["Quest"] = 893,
-					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 21,
+					["Quest"] = 893,
+					["Timestamp"] = 1583503176,
 				}, -- [228]
 				{
-					["Timestamp"] = 1583503643,
-					["Quest"] = 883,
-					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 21,
+					["Quest"] = 883,
+					["Timestamp"] = 1583503643,
 				}, -- [229]
 				{
-					["Timestamp"] = 1583503964,
-					["Quest"] = 868,
-					["Level"] = 21,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 21,
+					["Quest"] = 868,
+					["Timestamp"] = 1583503964,
 				}, -- [230]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 1062,
 					["Timestamp"] = 1583505339,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [231]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6548,
 					["Timestamp"] = 1583505340,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [232]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 21,
 					["Quest"] = 6548,
 					["Timestamp"] = 1583505677,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [233]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6629,
 					["Timestamp"] = 1583505678,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [234]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 21,
 					["Quest"] = 1487,
 					["Timestamp"] = 1583505989,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [235]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 21,
 					["Quest"] = 1486,
 					["Timestamp"] = 1583505991,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [236]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 21,
 					["Quest"] = 1491,
 					["Timestamp"] = 1583505994,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [237]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 21,
 					["Quest"] = 959,
 					["Timestamp"] = 1583505997,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [238]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6523,
 					["Timestamp"] = 1583505999,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [239]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 21,
 					["Quest"] = 6523,
 					["Timestamp"] = 1583506340,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [240]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6401,
 					["Timestamp"] = 1583506341,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [241]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 21,
 					["Quest"] = 6629,
 					["Timestamp"] = 1583506342,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [242]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 21,
 					["Quest"] = 1060,
 					["Timestamp"] = 1583506428,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [243]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 1058,
 					["Timestamp"] = 1583506428,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [244]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6461,
 					["Timestamp"] = 1583506476,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [245]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 21,
 					["Quest"] = 6284,
 					["Timestamp"] = 1583506591,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [246]
 				{
 					["Timestamp"] = 1583507091,
@@ -2352,333 +2358,333 @@ QuestieConfig = {
 					["NewLevel"] = 22,
 				}, -- [247]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 22,
 					["Quest"] = 6401,
 					["Timestamp"] = 1583507313,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [248]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 6301,
 					["Timestamp"] = 1583507313,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [249]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 6282,
 					["Timestamp"] = 1583507326,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [250]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 22,
 					["Quest"] = 6284,
 					["Timestamp"] = 1583507330,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [251]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 1087,
 					["Timestamp"] = 1583507359,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [252]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 6421,
 					["Timestamp"] = 1583507402,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [253]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 22,
 					["Quest"] = 3301,
 					["Timestamp"] = 1583507412,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [254]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 22,
 					["Quest"] = 6541,
 					["Timestamp"] = 1583507418,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [255]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 6562,
 					["Timestamp"] = 1583507421,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [256]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 22,
 					["Quest"] = 6393,
 					["Timestamp"] = 1583507424,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [257]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580237,
 					["Quest"] = 6461,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [258]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580252,
 					["Quest"] = 6542,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [259]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580296,
 					["Quest"] = 6421,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [260]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580296,
 					["Quest"] = 6481,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [261]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580369,
 					["Quest"] = 1483,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [262]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580369,
 					["Quest"] = 1093,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [263]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580948,
 					["Quest"] = 1093,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [264]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583580949,
 					["Quest"] = 1094,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [265]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581191,
 					["Quest"] = 1062,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [266]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581199,
 					["Quest"] = 1063,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [267]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581218,
 					["Quest"] = 822,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [268]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581220,
 					["Quest"] = 1068,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [269]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581474,
 					["Quest"] = 6542,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [270]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581475,
 					["Quest"] = 6543,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [271]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581659,
 					["Quest"] = 742,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [272]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581694,
 					["Quest"] = 6441,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [273]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583581698,
 					["Quest"] = 6441,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [274]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582028,
 					["Quest"] = 1094,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [275]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582029,
 					["Quest"] = 1095,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [276]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582036,
 					["Quest"] = 959,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [277]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582042,
 					["Quest"] = 959,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [278]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582050,
 					["Quest"] = 1069,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [279]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582051,
 					["Quest"] = 1491,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [280]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582061,
 					["Quest"] = 1221,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [281]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582069,
 					["Quest"] = 1221,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [282]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582073,
 					["Quest"] = 1491,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [283]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582267,
 					["Quest"] = 882,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [284]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582267,
 					["Quest"] = 1130,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [285]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582268,
 					["Quest"] = 907,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [286]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582270,
 					["Quest"] = 883,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [287]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582512,
 					["Quest"] = 1063,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [288]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582526,
 					["Quest"] = 1064,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [289]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582607,
 					["Quest"] = 1064,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [290]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583582608,
 					["Quest"] = 1065,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [291]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583583100,
 					["Quest"] = 1095,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [292]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583583101,
 					["Quest"] = 1096,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [293]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583584624,
 					["Quest"] = 6481,
 					["Level"] = 22,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [294]
 				{
 					["Timestamp"] = 1583584726,
@@ -2686,242 +2692,242 @@ QuestieConfig = {
 					["NewLevel"] = 23,
 				}, -- [295]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 6282,
 					["Timestamp"] = 1583598007,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [296]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 6562,
 					["Timestamp"] = 1583598777,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [297]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 6921,
 					["Timestamp"] = 1583598777,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [298]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 6563,
 					["Timestamp"] = 1583598778,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [299]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 6442,
 					["Timestamp"] = 1583598783,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [300]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 6442,
 					["Timestamp"] = 1583599267,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [301]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 843,
 					["Timestamp"] = 1583601001,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [302]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 1530,
 					["Timestamp"] = 1583602016,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [303]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 1535,
 					["Timestamp"] = 1583602017,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [304]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 1535,
 					["Timestamp"] = 1583602066,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [305]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 1536,
 					["Timestamp"] = 1583602067,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [306]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 6543,
 					["Timestamp"] = 1583602137,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [307]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 6301,
 					["Timestamp"] = 1583602155,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [308]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 1087,
 					["Timestamp"] = 1583602158,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [309]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 6393,
 					["Timestamp"] = 1583602162,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [310]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 1058,
 					["Timestamp"] = 1583602164,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [311]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 23,
 					["Quest"] = 1096,
 					["Timestamp"] = 1583602167,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [312]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 893,
 					["Timestamp"] = 1583602271,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [313]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 23,
 					["Quest"] = 907,
 					["Timestamp"] = 1583602284,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [314]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 23,
 					["Quest"] = 913,
 					["Timestamp"] = 1583602285,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [315]
 				{
-					["Level"] = 23,
-					["Quest"] = 868,
-					["Timestamp"] = 1583602472,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583602472,
+					["Quest"] = 868,
+					["Level"] = 23,
 				}, -- [316]
 				{
-					["Level"] = 23,
-					["Quest"] = 1068,
-					["Timestamp"] = 1583602653,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583602653,
+					["Quest"] = 1068,
+					["Level"] = 23,
 				}, -- [317]
 				{
-					["Level"] = 23,
-					["Quest"] = 1058,
-					["Timestamp"] = 1583602736,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583602736,
+					["Quest"] = 1058,
+					["Level"] = 23,
 				}, -- [318]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583602985,
 					["Quest"] = 1087,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [319]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583602994,
 					["Quest"] = 5881,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [320]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583602999,
 					["Quest"] = 6282,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [321]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583603018,
 					["Quest"] = 5881,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [322]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583603021,
 					["Quest"] = 6301,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [323]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1583603058,
 					["Quest"] = 6393,
 					["Level"] = 23,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [324]
 				{
-					["Timestamp"] = 1583603509,
-					["Quest"] = 6301,
-					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 23,
+					["Quest"] = 6301,
+					["Timestamp"] = 1583603509,
 				}, -- [325]
 				{
-					["Timestamp"] = 1583603509,
-					["Quest"] = 6381,
-					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 23,
+					["Quest"] = 6381,
+					["Timestamp"] = 1583603509,
 				}, -- [326]
 				{
-					["Timestamp"] = 1583603628,
-					["Quest"] = 913,
-					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 23,
+					["Quest"] = 913,
+					["Timestamp"] = 1583603628,
 				}, -- [327]
 				{
-					["Timestamp"] = 1583603629,
-					["Quest"] = 874,
-					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 23,
+					["Quest"] = 874,
+					["Timestamp"] = 1583603629,
 				}, -- [328]
 				{
-					["Timestamp"] = 1583604510,
-					["Quest"] = 884,
-					["Level"] = 23,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 23,
+					["Quest"] = 884,
+					["Timestamp"] = 1583604510,
 				}, -- [329]
 				{
 					["Timestamp"] = 1583604567,
@@ -2929,193 +2935,193 @@ QuestieConfig = {
 					["NewLevel"] = 24,
 				}, -- [330]
 				{
-					["Timestamp"] = 1583604568,
-					["Quest"] = 884,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 884,
+					["Timestamp"] = 1583604568,
 				}, -- [331]
 				{
-					["Timestamp"] = 1583604573,
-					["Quest"] = 878,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 878,
+					["Timestamp"] = 1583604573,
 				}, -- [332]
 				{
-					["Timestamp"] = 1583604576,
-					["Quest"] = 5052,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 5052,
+					["Timestamp"] = 1583604576,
 				}, -- [333]
 				{
-					["Timestamp"] = 1583604578,
-					["Quest"] = 5052,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 5052,
+					["Timestamp"] = 1583604578,
 				}, -- [334]
 				{
-					["Timestamp"] = 1583604591,
-					["Quest"] = 879,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 879,
+					["Timestamp"] = 1583604591,
 				}, -- [335]
 				{
-					["Timestamp"] = 1583604701,
-					["Quest"] = 899,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 899,
+					["Timestamp"] = 1583604701,
 				}, -- [336]
 				{
-					["Timestamp"] = 1583606569,
-					["Quest"] = 516,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 516,
+					["Timestamp"] = 1583606569,
 				}, -- [337]
 				{
-					["Timestamp"] = 1583606572,
-					["Quest"] = 480,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 480,
+					["Timestamp"] = 1583606572,
 				}, -- [338]
 				{
-					["Timestamp"] = 1583606593,
-					["Quest"] = 493,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 493,
+					["Timestamp"] = 1583606593,
 				}, -- [339]
 				{
-					["Timestamp"] = 1583607364,
-					["Quest"] = 494,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 494,
+					["Timestamp"] = 1583607364,
 				}, -- [340]
 				{
-					["Timestamp"] = 1583607692,
-					["Quest"] = 494,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 494,
+					["Timestamp"] = 1583607692,
 				}, -- [341]
 				{
-					["Timestamp"] = 1583607693,
-					["Quest"] = 527,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 527,
+					["Timestamp"] = 1583607693,
 				}, -- [342]
 				{
-					["Timestamp"] = 1583607707,
-					["Quest"] = 493,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 493,
+					["Timestamp"] = 1583607707,
 				}, -- [343]
 				{
-					["Timestamp"] = 1583607708,
-					["Quest"] = 1065,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 1065,
+					["Timestamp"] = 1583607708,
 				}, -- [344]
 				{
-					["Timestamp"] = 1583607709,
-					["Quest"] = 1066,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 1066,
+					["Timestamp"] = 1583607709,
 				}, -- [345]
 				{
-					["Timestamp"] = 1583607743,
-					["Quest"] = 527,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 24,
+					["Quest"] = 527,
+					["Timestamp"] = 1583607743,
 				}, -- [346]
 				{
-					["Timestamp"] = 1583607749,
-					["Quest"] = 6563,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 24,
+					["Quest"] = 6563,
+					["Timestamp"] = 1583607749,
 				}, -- [347]
 				{
-					["Timestamp"] = 1583607761,
-					["Quest"] = 1066,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 24,
+					["Quest"] = 1066,
+					["Timestamp"] = 1583607761,
 				}, -- [348]
 				{
-					["Timestamp"] = 1583607783,
-					["Quest"] = 1066,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 1066,
+					["Timestamp"] = 1583607783,
 				}, -- [349]
 				{
-					["Timestamp"] = 1583607786,
-					["Quest"] = 496,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 496,
+					["Timestamp"] = 1583607786,
 				}, -- [350]
 				{
-					["Timestamp"] = 1583607792,
-					["Quest"] = 501,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 501,
+					["Timestamp"] = 1583607792,
 				}, -- [351]
 				{
-					["Timestamp"] = 1583607809,
-					["Quest"] = 527,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 527,
+					["Timestamp"] = 1583607809,
 				}, -- [352]
 				{
-					["Timestamp"] = 1583607834,
-					["Quest"] = 498,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 498,
+					["Timestamp"] = 1583607834,
 				}, -- [353]
 				{
-					["Timestamp"] = 1583607842,
-					["Quest"] = 549,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 24,
+					["Quest"] = 549,
+					["Timestamp"] = 1583607842,
 				}, -- [354]
 				{
-					["Timestamp"] = 1583608015,
-					["Quest"] = 516,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 516,
+					["Timestamp"] = 1583608015,
 				}, -- [355]
 				{
-					["Timestamp"] = 1583608018,
-					["Quest"] = 480,
-					["Level"] = 24,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 24,
+					["Quest"] = 480,
+					["Timestamp"] = 1583608018,
 				}, -- [356]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 24,
 					["Quest"] = 527,
 					["Timestamp"] = 1583671305,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [357]
 				{
 					["Timestamp"] = 1583671312,
@@ -3123,172 +3129,172 @@ QuestieConfig = {
 					["NewLevel"] = 25,
 				}, -- [358]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 549,
 					["Timestamp"] = 1583671312,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [359]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 498,
 					["Timestamp"] = 1583671325,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [360]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 1066,
 					["Timestamp"] = 1583671345,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [361]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 496,
 					["Timestamp"] = 1583671351,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [362]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 499,
 					["Timestamp"] = 1583671361,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [363]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 499,
 					["Timestamp"] = 1583671362,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [364]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 1067,
 					["Timestamp"] = 1583671370,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [365]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 25,
 					["Quest"] = 501,
 					["Timestamp"] = 1583671378,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [366]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 1130,
 					["Timestamp"] = 1583671575,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [367]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 1131,
 					["Timestamp"] = 1583671580,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [368]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 25,
 					["Quest"] = 1131,
 					["Timestamp"] = 1583671601,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [369]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 1067,
 					["Timestamp"] = 1583671665,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [370]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 1086,
 					["Timestamp"] = 1583671673,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [371]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 1536,
 					["Timestamp"] = 1583672205,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [372]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 1534,
 					["Timestamp"] = 1583672208,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [373]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 885,
 					["Timestamp"] = 1583672735,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [374]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 843,
 					["Timestamp"] = 1583673291,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [375]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 846,
 					["Timestamp"] = 1583673293,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [376]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 885,
 					["Timestamp"] = 1583673429,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [377]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 879,
 					["Timestamp"] = 1583673435,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [378]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 906,
 					["Timestamp"] = 1583673438,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [379]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 25,
 					["Quest"] = 906,
 					["Timestamp"] = 1583673549,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [380]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 25,
 					["Quest"] = 6541,
 					["Timestamp"] = 1583673552,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [381]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 25,
 					["Quest"] = 6541,
 					["Timestamp"] = 1583673571,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [382]
 				{
 					["Timestamp"] = 1583854358,
@@ -3296,130 +3302,130 @@ QuestieConfig = {
 					["NewLevel"] = 26,
 				}, -- [383]
 				{
-					["Level"] = 26,
-					["Quest"] = 1087,
-					["Timestamp"] = 1583854808,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583854808,
+					["Quest"] = 1087,
+					["Level"] = 26,
 				}, -- [384]
 				{
-					["Level"] = 26,
-					["Quest"] = 1088,
-					["Timestamp"] = 1583854809,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583854809,
+					["Quest"] = 1088,
+					["Level"] = 26,
 				}, -- [385]
 				{
-					["Level"] = 26,
-					["Quest"] = 5881,
-					["Timestamp"] = 1583854845,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1583854845,
+					["Quest"] = 5881,
+					["Level"] = 26,
 				}, -- [386]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 1096,
 					["Timestamp"] = 1584191448,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [387]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 26,
 					["Quest"] = 1096,
 					["Timestamp"] = 1584191871,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [388]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 26,
 					["Quest"] = 1058,
 					["Timestamp"] = 1584192121,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [389]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 6641,
 					["Timestamp"] = 1584193034,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [390]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 216,
 					["Timestamp"] = 1584193043,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [391]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 6462,
 					["Timestamp"] = 1584193050,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [392]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 26,
 					["Quest"] = 6641,
 					["Timestamp"] = 1584193134,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [393]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 6641,
 					["Timestamp"] = 1584193179,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [394]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 26,
 					["Quest"] = 6641,
 					["Timestamp"] = 1584193480,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [395]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 6482,
 					["Timestamp"] = 1584195193,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [396]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Abandon",
 					["Level"] = 26,
 					["Quest"] = 6482,
 					["Timestamp"] = 1584195568,
+					["SubType"] = "Abandon",
+					["Event"] = "Quest",
 				}, -- [397]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 26,
 					["Quest"] = 6482,
 					["Timestamp"] = 1584195826,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [398]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 26,
 					["Quest"] = 216,
 					["Timestamp"] = 1584196511,
-				}, -- [399]
-				{
-					["Level"] = 26,
-					["Quest"] = 6462,
-					["Timestamp"] = 1584199276,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+				}, -- [399]
+				{
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
+					["Timestamp"] = 1584199276,
+					["Quest"] = 6462,
+					["Level"] = 26,
 				}, -- [400]
 				{
-					["Level"] = 26,
-					["Quest"] = 6621,
-					["Timestamp"] = 1584199286,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584199286,
+					["Quest"] = 6621,
+					["Level"] = 26,
 				}, -- [401]
 				{
 					["Timestamp"] = 1584199604,
@@ -3427,165 +3433,165 @@ QuestieConfig = {
 					["NewLevel"] = 27,
 				}, -- [402]
 				{
-					["Level"] = 27,
-					["Quest"] = 1086,
-					["Timestamp"] = 1584199604,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584199604,
+					["Quest"] = 1086,
+					["Level"] = 27,
 				}, -- [403]
 				{
-					["Level"] = 27,
-					["Quest"] = 1195,
-					["Timestamp"] = 1584199773,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584199773,
+					["Quest"] = 1195,
+					["Level"] = 27,
 				}, -- [404]
 				{
-					["Level"] = 27,
-					["Quest"] = 1153,
-					["Timestamp"] = 1584199903,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584199903,
+					["Quest"] = 1153,
+					["Level"] = 27,
 				}, -- [405]
 				{
-					["Timestamp"] = 1584274284,
-					["Quest"] = 1534,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 1534,
+					["Timestamp"] = 1584274284,
 				}, -- [406]
 				{
-					["Timestamp"] = 1584274285,
-					["Quest"] = 220,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 27,
+					["Quest"] = 220,
+					["Timestamp"] = 1584274285,
 				}, -- [407]
 				{
-					["Timestamp"] = 1584274420,
-					["Quest"] = 857,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 27,
+					["Quest"] = 857,
+					["Timestamp"] = 1584274420,
 				}, -- [408]
 				{
-					["Timestamp"] = 1584275502,
-					["Quest"] = 857,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 857,
+					["Timestamp"] = 1584275502,
 				}, -- [409]
 				{
-					["Timestamp"] = 1584275617,
-					["Quest"] = 846,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 846,
+					["Timestamp"] = 1584275617,
 				}, -- [410]
 				{
-					["Timestamp"] = 1584275619,
-					["Quest"] = 849,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 27,
+					["Quest"] = 849,
+					["Timestamp"] = 1584275619,
 				}, -- [411]
 				{
-					["Timestamp"] = 1584275777,
-					["Quest"] = 849,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 849,
+					["Timestamp"] = 1584275777,
 				}, -- [412]
 				{
-					["Timestamp"] = 1584276068,
-					["Quest"] = 220,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 220,
+					["Timestamp"] = 1584276068,
 				}, -- [413]
 				{
-					["Timestamp"] = 1584276072,
-					["Quest"] = 63,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 27,
+					["Quest"] = 63,
+					["Timestamp"] = 1584276072,
 				}, -- [414]
 				{
-					["Timestamp"] = 1584276077,
-					["Quest"] = 874,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 874,
+					["Timestamp"] = 1584276077,
 				}, -- [415]
 				{
-					["Timestamp"] = 1584276078,
-					["Quest"] = 873,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 27,
+					["Quest"] = 873,
+					["Timestamp"] = 1584276078,
 				}, -- [416]
 				{
-					["Timestamp"] = 1584276639,
-					["Quest"] = 873,
-					["Level"] = 27,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 27,
+					["Quest"] = 873,
+					["Timestamp"] = 1584276639,
 				}, -- [417]
 				{
-					["Level"] = 27,
-					["Quest"] = 63,
-					["Timestamp"] = 1584355574,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355574,
+					["Quest"] = 63,
+					["Level"] = 27,
 				}, -- [418]
 				{
-					["Level"] = 27,
-					["Quest"] = 100,
-					["Timestamp"] = 1584355577,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355577,
+					["Quest"] = 100,
+					["Level"] = 27,
 				}, -- [419]
 				{
-					["Level"] = 27,
-					["Quest"] = 100,
-					["Timestamp"] = 1584355604,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355604,
+					["Quest"] = 100,
+					["Level"] = 27,
 				}, -- [420]
 				{
-					["Level"] = 27,
-					["Quest"] = 96,
-					["Timestamp"] = 1584355608,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355608,
+					["Quest"] = 96,
+					["Level"] = 27,
 				}, -- [421]
 				{
-					["Level"] = 27,
-					["Quest"] = 1103,
-					["Timestamp"] = 1584355686,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355686,
+					["Quest"] = 1103,
+					["Level"] = 27,
 				}, -- [422]
 				{
-					["Level"] = 27,
-					["Quest"] = 1103,
-					["Timestamp"] = 1584355699,
 					["SubType"] = "Abandon",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584355699,
+					["Quest"] = 1103,
+					["Level"] = 27,
 				}, -- [423]
 				{
-					["Level"] = 27,
-					["Quest"] = 96,
-					["Timestamp"] = 1584356134,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584356134,
+					["Quest"] = 96,
+					["Level"] = 27,
 				}, -- [424]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 27,
 					["Quest"] = 6393,
 					["Timestamp"] = 1584382268,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [425]
 				{
 					["Timestamp"] = 1584382296,
@@ -3593,151 +3599,151 @@ QuestieConfig = {
 					["NewLevel"] = 28,
 				}, -- [426]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 28,
 					["Quest"] = 6282,
 					["Timestamp"] = 1584382296,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [427]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 28,
 					["Quest"] = 6283,
 					["Timestamp"] = 1584382298,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [428]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 28,
 					["Quest"] = 6381,
 					["Timestamp"] = 1584382314,
-				}, -- [429]
-				{
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+				}, -- [429]
+				{
 					["Timestamp"] = 1584453281,
 					["Quest"] = 6283,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [430]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453683,
 					["Quest"] = 6482,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [431]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453699,
 					["Quest"] = 25,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [432]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453715,
 					["Quest"] = 6441,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [433]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453752,
 					["Quest"] = 6571,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [434]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453760,
 					["Quest"] = 6503,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [435]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584453955,
 					["Quest"] = 6544,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [436]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584454122,
 					["Quest"] = 6544,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [437]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584454303,
 					["Quest"] = 6544,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [438]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584454881,
 					["Quest"] = 1918,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [439]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584455926,
 					["Quest"] = 6503,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [440]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584455964,
 					["Quest"] = 6544,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [441]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584455978,
 					["Quest"] = 25,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [442]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584455978,
 					["Quest"] = 1918,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [443]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584455981,
 					["Quest"] = 824,
 					["Level"] = 28,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [444]
 				{
-					["Timestamp"] = 1584467817,
-					["Quest"] = 6441,
-					["Level"] = 28,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 28,
+					["Quest"] = 6441,
+					["Timestamp"] = 1584467817,
 				}, -- [445]
 				{
-					["Timestamp"] = 1584468046,
-					["Quest"] = 824,
-					["Level"] = 28,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 28,
+					["Quest"] = 824,
+					["Timestamp"] = 1584468046,
 				}, -- [446]
 				{
-					["Timestamp"] = 1584468068,
-					["Quest"] = 6921,
-					["Level"] = 28,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 28,
+					["Quest"] = 6921,
+					["Timestamp"] = 1584468068,
 				}, -- [447]
 				{
 					["Timestamp"] = 1584468538,
@@ -3745,207 +3751,207 @@ QuestieConfig = {
 					["NewLevel"] = 29,
 				}, -- [448]
 				{
-					["Timestamp"] = 1584468538,
-					["Quest"] = 1195,
-					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 29,
+					["Quest"] = 1195,
+					["Timestamp"] = 1584468538,
 				}, -- [449]
 				{
-					["Timestamp"] = 1584468541,
-					["Quest"] = 1196,
-					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 29,
+					["Quest"] = 1196,
+					["Timestamp"] = 1584468541,
 				}, -- [450]
 				{
-					["Timestamp"] = 1584468586,
-					["Quest"] = 1131,
-					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 29,
+					["Quest"] = 1131,
+					["Timestamp"] = 1584468586,
 				}, -- [451]
 				{
-					["Timestamp"] = 1584468718,
-					["Quest"] = 1049,
-					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 29,
+					["Quest"] = 1049,
+					["Timestamp"] = 1584468718,
 				}, -- [452]
 				{
-					["Timestamp"] = 1584468724,
-					["Quest"] = 1049,
-					["Level"] = 29,
 					["Event"] = "Quest",
 					["SubType"] = "Abandon",
+					["Level"] = 29,
+					["Quest"] = 1049,
+					["Timestamp"] = 1584468724,
 				}, -- [453]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 5881,
 					["Timestamp"] = 1584531411,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [454]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 4542,
 					["Timestamp"] = 1584531421,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [455]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 4542,
 					["Timestamp"] = 1584531603,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [456]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 4841,
 					["Timestamp"] = 1584531605,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [457]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 1196,
 					["Timestamp"] = 1584531610,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [458]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 1197,
 					["Timestamp"] = 1584531612,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [459]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 5147,
 					["Timestamp"] = 1584531663,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [460]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 4821,
 					["Timestamp"] = 1584531673,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [461]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 4767,
 					["Timestamp"] = 1584531680,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [462]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 1149,
 					["Timestamp"] = 1584532891,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [463]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 1150,
 					["Timestamp"] = 1584532892,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [464]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 1197,
 					["Timestamp"] = 1584533881,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [465]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 4841,
 					["Timestamp"] = 1584533887,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [466]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 5064,
 					["Timestamp"] = 1584533891,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [467]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 4821,
 					["Timestamp"] = 1584533897,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [468]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 4865,
 					["Timestamp"] = 1584533898,
+					["SubType"] = "Accept",
+					["Event"] = "Quest",
 				}, -- [469]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 1153,
 					["Timestamp"] = 1584534075,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [470]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Complete",
 					["Level"] = 29,
 					["Quest"] = 1088,
 					["Timestamp"] = 1584534333,
+					["SubType"] = "Complete",
+					["Event"] = "Quest",
 				}, -- [471]
 				{
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
 					["Level"] = 29,
 					["Quest"] = 1089,
 					["Timestamp"] = 1584534342,
-				}, -- [472]
-				{
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+				}, -- [472]
+				{
 					["Timestamp"] = 1584553119,
 					["Quest"] = 4904,
 					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [473]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584553696,
 					["Quest"] = 4865,
 					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [474]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584553698,
 					["Quest"] = 5062,
 					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [475]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584553701,
 					["Quest"] = 5151,
 					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [476]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584556879,
 					["Quest"] = 5147,
 					["Level"] = 29,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [477]
 				{
 					["Timestamp"] = 1584556904,
@@ -3953,109 +3959,109 @@ QuestieConfig = {
 					["NewLevel"] = 30,
 				}, -- [478]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584556904,
 					["Quest"] = 4904,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [479]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584557237,
 					["Quest"] = 1131,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [480]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584557240,
 					["Quest"] = 1136,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [481]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584557298,
 					["Quest"] = 5062,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [482]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584557301,
 					["Quest"] = 5088,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [483]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584557662,
 					["Quest"] = 1532,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [484]
 				{
-					["Level"] = 30,
-					["Quest"] = 5088,
-					["Timestamp"] = 1584642630,
 					["SubType"] = "Complete",
 					["Event"] = "Quest",
+					["Timestamp"] = 1584642630,
+					["Quest"] = 5088,
+					["Level"] = 30,
 				}, -- [485]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584645334,
 					["Quest"] = 5064,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [486]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1584646021,
 					["Quest"] = 5151,
 					["Level"] = 30,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [487]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686608,
 					["Quest"] = 188,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [488]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686673,
 					["Quest"] = 628,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [489]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686834,
 					["Quest"] = 582,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [490]
 				{
-					["SubType"] = "Complete",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686837,
 					["Quest"] = 596,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Complete",
 				}, -- [491]
 				{
-					["SubType"] = "Accept",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686840,
 					["Quest"] = 598,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
 				}, -- [492]
 				{
-					["SubType"] = "Abandon",
-					["Event"] = "Quest",
 					["Timestamp"] = 1590686857,
 					["Quest"] = 598,
 					["Level"] = 38,
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
 				}, -- [493]
 				{
 					["Timestamp"] = 1590687436,
@@ -4063,51 +4069,68 @@ QuestieConfig = {
 					["NewLevel"] = 39,
 				}, -- [494]
 				{
-					["Timestamp"] = 1590687616,
-					["Quest"] = 569,
-					["Level"] = 39,
 					["Event"] = "Quest",
 					["SubType"] = "Complete",
+					["Level"] = 39,
+					["Quest"] = 569,
+					["Timestamp"] = 1590687616,
 				}, -- [495]
 				{
-					["Timestamp"] = 1590687650,
-					["Quest"] = 572,
-					["Level"] = 39,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
+					["Level"] = 39,
+					["Quest"] = 572,
+					["Timestamp"] = 1590687650,
 				}, -- [496]
 				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 39,
+					["Quest"] = 584,
 					["Timestamp"] = 1590687689,
+				}, -- [497]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 39,
+					["Quest"] = 2932,
+					["Timestamp"] = 1590687694,
+				}, -- [498]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Abandon",
+					["Level"] = 39,
+					["Quest"] = 2932,
+					["Timestamp"] = 1590687701,
+				}, -- [499]
+				{
+					["Event"] = "Quest",
+					["SubType"] = "Accept",
+					["Level"] = 39,
+					["Quest"] = 598,
+					["Timestamp"] = 1590687705,
+				}, -- [500]
+				{
+					["Timestamp"] = 1591034531,
 					["Quest"] = 584,
 					["Level"] = 39,
 					["Event"] = "Quest",
-					["SubType"] = "Accept",
-				}, -- [497]
+					["SubType"] = "Complete",
+				}, -- [501]
 				{
-					["Timestamp"] = 1590687694,
-					["Quest"] = 2932,
+					["Timestamp"] = 1591034563,
+					["Quest"] = 585,
 					["Level"] = 39,
 					["Event"] = "Quest",
 					["SubType"] = "Accept",
-				}, -- [498]
+				}, -- [502]
 				{
-					["Timestamp"] = 1590687701,
-					["Quest"] = 2932,
-					["Level"] = 39,
 					["Event"] = "Quest",
-					["SubType"] = "Abandon",
-				}, -- [499]
-				{
-					["Timestamp"] = 1590687705,
-					["Quest"] = 598,
+					["SubType"] = "Complete",
 					["Level"] = 39,
-					["Event"] = "Quest",
-					["SubType"] = "Accept",
-				}, -- [500]
-			},
-			["collapsedQuests"] = {
-			},
-			["TrackedQuests"] = {
+					["Quest"] = 1107,
+					["Timestamp"] = 1591035693,
+				}, -- [503]
 			},
 			["TrackerLocation"] = {
 				"TOPRIGHT", -- [1]
@@ -4124,18 +4147,14 @@ QuestieConfig = {
 				{
 					["Party"] = {
 					},
-					["Level"] = 1,
-					["Quest"] = 747,
-					["Timestamp"] = 1567795578,
 					["SubType"] = "Accept",
 					["Event"] = "Quest",
+					["Timestamp"] = 1567795578,
+					["Quest"] = 747,
+					["Level"] = 1,
 				}, -- [1]
 			},
 		},
-	},
-	["profileKeys"] = {
-		["Xuna - Gehennas"] = "Default",
-		["Xuna - Gandling"] = "Default",
 	},
 	["global"] = {
 		["globalScale"] = 1,
@@ -4143,10 +4162,14 @@ QuestieConfig = {
 		["globalMiniMapScale"] = 1,
 		["clusterLevelHotzone"] = 30,
 	},
+	["profileKeys"] = {
+		["Xuna - Gehennas"] = "Default",
+		["Xuna - Gandling"] = "Default",
+	},
 	["profiles"] = {
 		["Default"] = {
 			["minimap"] = {
-				["minimapPos"] = 352.674173825682,
+				["minimapPos"] = 207.927813585635,
 			},
 		},
 	},

@@ -5,10 +5,12 @@ BigDebuffsDB = {
 		},
 	},
 	["profileKeys"] = {
+		["Xunay - Draenor"] = "Default",
 		["Thorag - Khadgar"] = "Default",
 		["Xunaorc - Valley of Heroes - EU"] = "Default",
 		["Xüñâ - Stormscale"] = "Default",
 		["Xûñâ - Ravencrest"] = "Default",
+		["Xunac - Draenor"] = "Default",
 		["Xunadraenei - Arena Champions - EU"] = "Default",
 		["Asdwetr - Stormscale"] = "Default",
 		["Spazshaman - Stormscale"] = "Default",
@@ -30,38 +32,43 @@ BigDebuffsDB = {
 		["Xuna - Valley of Heroes - EU"] = "Default",
 		["Hãllàáhø - Stormscale"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
-		["Xunaw - Draenor"] = "Default",
+		["Xunawl - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
+		["Xunae - Draenor"] = "Default",
 		["Xunapala - Arena Champions - EU"] = "Default",
 		["Xunalol - Stormscale"] = "Default",
-		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Níeze - Ravencrest"] = "Default",
-		["Xuna - Stormscale"] = "Default",
-		["Xûñä - Ravencrest"] = "Default",
-		["Ckablyatdvai - Ravencrest"] = "Default",
-		["Vapenaysh - Stormscale"] = "Default",
-		["Delimn - Dunemaul"] = "Default",
-		["Xunz - Stormscale"] = "Default",
 		["Xûñá - Ravencrest"] = "Default",
+		["Xunz - Stormscale"] = "Default",
+		["Delimn - Dunemaul"] = "Default",
+		["Xûñä - Ravencrest"] = "Default",
+		["Vapenaysh - Stormscale"] = "Default",
+		["Ckablyatdvai - Ravencrest"] = "Default",
+		["Xuna - Stormscale"] = "Default",
+		["Níeze - Ravencrest"] = "Default",
+		["Xunamonk - Arena Champions - EU"] = "Default",
 		["Xüñâ - Ravencrest"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Xunae - Draenor"] = "Default",
+		["Xunaw - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["spells"] = {
-				[182067] = {
-					["noRaidFrames"] = false,
-					["noUnitFrames"] = true,
-				},
-				[88611] = {
-					["noUnitFrames"] = true,
-					["noRaidFrames"] = true,
-				},
-			},
 			["raidFrames"] = {
 				["maxDebuffs"] = 2,
 				["cc"] = 60,
 				["increaseBuffs"] = true,
+			},
+			["nameplates"] = {
+				["enabled"] = false,
+			},
+			["spells"] = {
+				[182067] = {
+					["noUnitFrames"] = true,
+					["noRaidFrames"] = false,
+				},
+				[88611] = {
+					["noRaidFrames"] = true,
+					["noUnitFrames"] = true,
+				},
 			},
 			["unitFrames"] = {
 				["arena1"] = {

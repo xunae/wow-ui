@@ -1330,7 +1330,7 @@ namespace.castTimeTalentDecreases = {
     [GetSpellInfo(8129)] = 2500,     -- Mana Burn
     [GetSpellInfo(5176)] = 1500,     -- Wrath
     [GetSpellInfo(2912)] = 3000,     -- Starfire
-    [GetSpellInfo(5185)] = 3000,     -- Healing Touch
+    [GetSpellInfo(9888)] = 3000,     -- Healing Touch
     [GetSpellInfo(2645)] = 1000,     -- Ghost Wolf
     [GetSpellInfo(691)] = 6000,      -- Summon Felhunter
     [GetSpellInfo(688)] = 6000,      -- Summon Imp
@@ -1551,6 +1551,7 @@ namespace.playerInterrupts = {
     [GetSpellInfo(8042)] = 1,  -- Earth Shock
     [GetSpellInfo(19244)] = 1, -- Spell Lock
     [GetSpellInfo(6552)] = 1,  -- Pummel
+    [GetSpellInfo(16979)] = 1, -- Feral Charge
 }
 
 -- Skip pushback calculation for these spells since they
@@ -1563,7 +1564,7 @@ namespace.pushbackBlacklist = {
     [GetSpellInfo(2054)] = 1,       -- Heal
     [GetSpellInfo(2050)] = 1,       -- Lesser Heal
     [GetSpellInfo(596)] = 1,        -- Prayer of Healing
-    [GetSpellInfo(2060)] = 1,       -- Greater Heal
+    [GetSpellInfo(25314)] = 1,      -- Greater Heal
     [GetSpellInfo(19750)] = 1,      -- Flash of Light
     [GetSpellInfo(635)] = 1,        -- Holy Light
     -- Druid heals are afaik many times not talented so ignoring them for now
@@ -1574,6 +1575,7 @@ namespace.pushbackBlacklist = {
     [GetSpellInfo(20589)] = 1,      -- Escape Artist
 }
 
+-- Player spells that can't be interrupted
 namespace.uninterruptibleList = {
     [GetSpellInfo(4068)] = 1,       -- Iron Grenade
     [GetSpellInfo(19769)] = 1,      -- Thorium Grenade
@@ -1586,7 +1588,8 @@ namespace.uninterruptibleList = {
     [GetSpellInfo(4067)] = 1,       -- Big Bronze Bomb
     [GetSpellInfo(4066)] = 1,       -- Small Bronze Bomb
     [GetSpellInfo(4065)] = 1,       -- Large Copper Bomb
-    [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray
+    [GetSpellInfo(13278)] = 1,      -- Gnomish Death Ray TODO: verify
+    [GetSpellInfo(23041)] = 1,      -- Call Anathema
     [GetSpellInfo(20589)] = 1,      -- Escape Artist
     [GetSpellInfo(20549)] = 1,      -- War Stomp
     [GetSpellInfo(1510)] = 1,       -- Volley
@@ -1598,7 +1601,26 @@ namespace.uninterruptibleList = {
     [GetSpellInfo(2480)] = 1,       -- Shoot Bow
     [GetSpellInfo(7918)] = 1,       -- Shoot Gun
     [GetSpellInfo(7919)] = 1,       -- Shoot Crossbow
-    -- TODO: totem attack?
+    [GetSpellInfo(11202)] = 1,      -- Crippling Poison
+    [GetSpellInfo(3421)] = 1,       -- Crippling Poison II
+    [GetSpellInfo(2835)] = 1,       -- Deadly Poison
+    [GetSpellInfo(2837)] = 1,       -- Deadly Poison II
+    [GetSpellInfo(11355)] = 1,      -- Deadly Poison III
+    [GetSpellInfo(11356)] = 1,      -- Deadly Poison IV
+    [GetSpellInfo(25347)] = 1,      -- Deadly Poison V
+    [GetSpellInfo(8681)] = 1,       -- Instant Poison
+    [GetSpellInfo(8686)] = 1,       -- Instant Poison II
+    [GetSpellInfo(8688)] = 1,       -- Instant Poison III
+    [GetSpellInfo(11338)] = 1,      -- Instant Poison IV
+    [GetSpellInfo(11339)] = 1,      -- Instant Poison V
+    [GetSpellInfo(11343)] = 1,      -- Instant Poison VI
+    [GetSpellInfo(5761)] = 1,       -- Mind-numbing Poison
+    [GetSpellInfo(8693)] = 1,       -- Mind-numbing Poison II
+    [GetSpellInfo(11399)] = 1,      -- Mind-numbing Poison III
+    [GetSpellInfo(13227)] = 1,      -- Wound Poison
+    [GetSpellInfo(13228)] = 1,      -- Wound Poison II
+    [GetSpellInfo(13229)] = 1,      -- Wound Poison III
+    [GetSpellInfo(13230)] = 1,      -- Wound Poison IV
 
     -- these are technically uninterruptible but breaks on dmg
     [GetSpellInfo(22999)] = 1,      -- Defibrillate
@@ -1636,14 +1658,13 @@ namespace.castStopBlacklist = {
     [GetSpellInfo(6405)] = 1,       -- Furgbolg Form
 }
 
--- Spells that can't be slowed or speed up
+-- Casts that can't be slowed or speed up
 namespace.unaffectedCastModsSpells = {
     -- Player Spells
     [11605] = 1, -- Slam
     [6651] = 1, -- Instant Toxin
     [1842] = 1, -- Disarm Trap
     [6461] = 1, -- Pick Lock
-    [20904] = 1, -- Aimed Shot
     [2641] = 1, -- Dismiss Pet
     [2480] = 1, -- Shoot Bow
     [7918] = 1, -- Shoot Gun
@@ -1769,14 +1790,80 @@ namespace.unaffectedCastModsSpells = {
     [24189] = 1, -- Force Punch
 }
 
+local function IsNotChanneled(cast) return not cast.isChanneled end
+local function IsRangedSpell(cast) return cast.spellID == 20904 or cast.spellID == 1540 end -- Aimed Shot/Volley
+
+-- Buffs that modify casting speed
+namespace.castModifiers = {
+    [GetSpellInfo(22812)] = { -- Barkskin
+        value = 1.0,
+    },
+
+    [GetSpellInfo(16886)] = { -- Nature's Grace
+        value = -0.5,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(23723)] = { -- Mind Quickening
+        percentage = true,
+        value = 33,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(23733)] = { -- Blinding Light
+        percentage = true,
+        value = 33,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(20554)] = { -- Berserking
+        percentage = true,
+        value = 10,
+        condition = IsNotChanneled,
+    },
+
+    [GetSpellInfo(24542)] = { -- Nimble Healing Touch
+        percentage = true,
+        value = 40,
+        condition = function(cast) return cast.spellID == 9888 end,
+    },
+
+    [GetSpellInfo(24546)] = { -- Rapid Healing
+        percentage = true,
+        value = 40,
+        condition = function(cast) return cast.spellID == 25314 end,
+    },
+
+    [GetSpellInfo(3045)] = { -- Rapid Fire
+        percentage = true,
+        value = 40,
+        condition = IsRangedSpell,
+    },
+
+    [GetSpellInfo(6150)] = { -- Quick Shots
+        percentage = true,
+        value = 30,
+        condition = IsRangedSpell,
+    },
+
+    [GetSpellInfo(28866)] = { -- Kiss of the Spider
+        percentage = true,
+        value = 20,
+        condition = IsRangedSpell,
+    },
+}
+
 -- Addon Savedvariables
 namespace.defaultConfig = {
-    version = "18", -- settings version
+    version = "23", -- settings version
     locale = GetLocale(),
     npcCastUninterruptibleCache = {},
+    usePerCharacterSettings = false,
 
     nameplate = {
         enabled = true,
+        showForFriendly = true,
+        showForEnemy = true,
         width = 106,
         height = 11,
         iconSize = 13,
@@ -1803,6 +1890,7 @@ namespace.defaultConfig = {
         textPositionY = 0,
         frameLevel = 10,
         statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 
     target = {
@@ -1833,6 +1921,7 @@ namespace.defaultConfig = {
         textPositionY = 0,
         frameLevel = 10,
         statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 
     focus = {
@@ -1863,6 +1952,7 @@ namespace.defaultConfig = {
         textPositionY = 0,
         frameLevel = 10,
         statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 
     party = {
@@ -1893,6 +1983,7 @@ namespace.defaultConfig = {
         textPositionY = 0,
         frameLevel = 10,
         statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 
     player = {
@@ -1923,38 +2014,62 @@ namespace.defaultConfig = {
         textPositionY = 1,
         frameLevel = 10,
         statusBackgroundColor = { 0, 0, 0, 0.535 },
+        ignoreParentAlpha = false,
     },
 }
 
-if GetLocale() == "enUS" or GetLocale() == "enGB" then
-    -- Add some sensible defaults here if using english locale
-    -- (both spell name and npc name are locale dependent)
-    namespace.defaultConfig.npcCastUninterruptibleCache = {
-        ["Baroness AnastariBanshee Wail"] = true,
-        ["Maleki the PallidFrostbolt"] = true,
-        ["ShazzrahArcane Explosion"] = true,
-        ["LucifronDominate Mind"] = true,
-        ["EbonrocWing Buffet"] = true,
-        ["EbonrocShadow Flame"] = true,
-        ["FlamegorWing Buffet"] = true,
-        ["FlamegorShadow Flame"] = true,
-        ["FiremawWing Buffet"] = true,
-        ["FiremawShadow Flame"] = true,
-        ["Razorgore the UntamedFireball Volley"] = true,
-        ["Vaelastrasz the CorruptFlame Breath"] = true,
-        ["ChromaggusIgnite Flesh"] = true,
-        ["ChromaggusTime Lapse"] = true,
-        ["ChromaggusFrost Burn"] = true,
-        ["ChromaggusCorrosive Acid"] = true,
-        ["ChromaggusIncinerate"] = true,
-        ["OnyxiaWing Buffet"] = true,
-        ["OnyxiaFlame Breath"] = true,
-        ["HydrospawnMassive Geyser"] = true,
-        ["Zevrim ThornhoofIntense Pain"] = true,
-        ["Zevrim ThornhoofSacrifice"] = true,
-        ["Alzzin the WildshaperEnervate"] = true,
-        ["Alzzin the WildshaperWither"] = true,
-        ["Alzzin the WildshaperWild Regeneration"] = true,
-        ["Princess TheradrasBoulder"] = true,
-    }
-end
+-- NPC spells that can't be interrupted. (Sensible defaults, doesn't include all)
+namespace.defaultConfig.npcCastUninterruptibleCache = {
+    ["11981" .. GetSpellInfo(18500)] = true, -- Flamegor Wing Buffet
+    ["12459" .. GetSpellInfo(25417)] = true, -- Blackwing Warlock Shadowbolt
+    ["12264" .. GetSpellInfo(1449)] = true, -- Shazzrah Arcane Explosion
+    ["13280" .. GetSpellInfo(22421)] = true, -- Hydrospawn Massive Geyser
+    ["11583" .. GetSpellInfo(18431)] = true, -- Nefarian Bellowing Roar
+    ["11983" .. GetSpellInfo(18500)] = true, -- Firemaw Wing Buffet
+    ["11983" .. GetSpellInfo(22539)] = true, -- Firemaw Shadow Flame
+    ["12265" .. GetSpellInfo(133)] = true, -- Lava Spawn Fireball
+    ["11492" .. GetSpellInfo(22662)] = true, -- Alzzin the Wildshaper Wither
+    ["10438" .. GetSpellInfo(116)] = true, -- Maleki the Pallid Frostbolt
+    ["12465" .. GetSpellInfo(22425)] = true, -- Death Talon Wyrmkin Fireball Voley
+    ["14020" .. GetSpellInfo(23310)] = true, -- Chromaggus Time Lapse
+    ["14020" .. GetSpellInfo(23316)] = true, -- Chromaggus Ignite Flesh
+    ["14020" .. GetSpellInfo(23309)] = true, -- Chromaggus Incinerate
+    ["14020" .. GetSpellInfo(23187)] = true, -- Chromaggus Frost Burn
+    ["14020" .. GetSpellInfo(23314)] = true, -- Chromaggus Corrosive Acid
+    ["12468" .. GetSpellInfo(2120)] = true, -- Death Talon Hatcher Flamestrike
+    ["13020" .. GetSpellInfo(9573)] = true, -- Vaelastrasz the Corrupt Flame Breath
+    ["12435" .. GetSpellInfo(22425)] = true, -- Razorgore the Untamed Fireball Volley
+    ["14601" .. GetSpellInfo(18500)] = true, -- Ebonroc Wing Buffet
+    ["14601" .. GetSpellInfo(22539)] = true, -- Ebonroc Shadow Flame
+    ["11981" .. GetSpellInfo(22539)] = true, -- Flamegor Shadow Flame
+    ["11583" .. GetSpellInfo(22539)] = true, -- Nefarian Shadow Flame
+    ["10184" .. GetSpellInfo(18500)] = true, -- Onyxia Wing Buffet
+    ["12118" .. GetSpellInfo(20604)] = true, -- Lucifron Dominate Mind
+    ["12201" .. GetSpellInfo(9483)] = true, -- Princess Theradras Boulder
+    ["10184" .. GetSpellInfo(9573)] = true, -- Onyxia Flame Breath
+    ["10184" .. GetSpellInfo(133)] = true, -- Onyxia Fireball
+    ["11492" .. GetSpellInfo(22661)] = true, -- Alzzin the Wildshaper Enervate
+    ["11490" .. GetSpellInfo(1050)] = true, -- Zevrim Thornhoof Sacrifice
+    ["11490" .. GetSpellInfo(22478)] = true,  -- Zevrim Thornhoof Intense Pain
+    ["10436" .. GetSpellInfo(16868)] = true, -- Baroness Anastari Banshee Wail
+    ["10184" .. GetSpellInfo(18431)] = true, -- Onyxia Bellowing Roar
+    ["11492" .. GetSpellInfo(9616)] = true, -- Alzzin the Wildshaper Wild Regeneration
+    ["13996" .. GetSpellInfo(22334)] = true, -- Blackwing Technician Bomb
+    ["11359" .. GetSpellInfo(16430)] = true, -- Soulflayer Soul Tap
+    ["11359" .. GetSpellInfo(22678)] = true, -- Soulflayer Fear
+    ["11372" .. GetSpellInfo(24011)] = true, -- Razzashi Adder Venom Spit
+    ["14834" .. GetSpellInfo(24322)] = true, -- Hakkar Blood Siphon
+    ["14509" .. GetSpellInfo(24189)] = true, -- High Priest Thekal Force Punch
+    ["11382" .. GetSpellInfo(24314)] = true, -- Broodlord Mandokir Threatening Gaze
+    ["14750" .. GetSpellInfo(24024)] = true, -- Gurubashi Bat Rider Unstable Concoction
+    ["12259" .. GetSpellInfo(686)] = true, -- Gehennas Shadow Bolt
+    ["11339" .. GetSpellInfo(22908)] = true, -- Hakkari Shadow Hunter Volley
+    ["14507" .. GetSpellInfo(14914)] = true, -- High Priest Venoxis Holy Fire
+    ["13161" .. GetSpellInfo(21188)] = true, -- Aerie Gryphon Stun Bomb Attack
+    ["14943" .. GetSpellInfo(21188)] = true, -- Guse's War Rider Stun Bomb Attack
+    ["14947" .. GetSpellInfo(21188)] = true, -- Ichman's Gryphon Stun Bomb Attack
+    ["14944" .. GetSpellInfo(21188)] = true, -- Jeztor's War Rider Stun Bomb Attack
+    ["14945" .. GetSpellInfo(21188)] = true, -- Mulverick's War Rider Stun Bomb Attack
+    ["12119" .. GetSpellInfo(20604)] = true, -- Flamewaker Protector Dominate Mind
+    ["12459" .. GetSpellInfo(22372)] = true, -- Blackwing Warlock Demon Portal
+}
