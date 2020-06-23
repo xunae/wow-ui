@@ -31,7 +31,6 @@ MADB = {
 					},
 					["name"] = "TargetFrame",
 					["scale"] = 1.10000002384186,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"PlayerFrame", -- [2]
@@ -39,6 +38,7 @@ MADB = {
 						230, -- [4]
 						0, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["Boss1TargetFrame"] = {
 					["orgPos"] = {
@@ -49,6 +49,8 @@ MADB = {
 						-236.0000152587891, -- [5]
 					},
 					["name"] = "Boss1TargetFrame",
+					["unit"] = "boss1",
+					["hidden"] = true,
 					["pos"] = {
 						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
@@ -56,8 +58,6 @@ MADB = {
 						2141.996826171875, -- [4]
 						991.0994873046875, -- [5]
 					},
-					["hidden"] = true,
-					["unit"] = "boss1",
 				},
 				["PlayerStatusTexture"] = {
 					["name"] = "PlayerStatusTexture",
@@ -86,6 +86,8 @@ MADB = {
 						-30, -- [5]
 					},
 					["name"] = "Boss5TargetFrame",
+					["unit"] = "boss5",
+					["hidden"] = true,
 					["pos"] = {
 						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
@@ -93,8 +95,6 @@ MADB = {
 						2141.996826171875, -- [4]
 						471.0994567871094, -- [5]
 					},
-					["hidden"] = true,
-					["unit"] = "boss5",
 				},
 				["FocusFrame"] = {
 					["orgPos"] = {
@@ -106,7 +106,6 @@ MADB = {
 					},
 					["name"] = "FocusFrame",
 					["scale"] = 1,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"PlayerFrame", -- [2]
@@ -114,6 +113,7 @@ MADB = {
 						180.000010728837, -- [4]
 						-320.000019073487, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["MicroButtonsMover"] = {
 					["orgPos"] = {
@@ -143,7 +143,6 @@ MADB = {
 					},
 					["name"] = "LossOfControlFrame",
 					["scale"] = 0.799999952316284,
-					["orgScale"] = 1,
 					["pos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
@@ -151,6 +150,7 @@ MADB = {
 						0.000125080538882339, -- [4]
 						-59.9999058003369, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["FramerateLabelMover"] = {
 					["orgPos"] = {
@@ -169,23 +169,23 @@ MADB = {
 						102.5552444458008, -- [5]
 					},
 				},
-				["ExtraActionBarFrame"] = {
+				["Boss3TargetFrame"] = {
 					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
+						"TOPLEFT", -- [1]
+						"Boss2TargetFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
 						0, -- [4]
-						120, -- [5]
+						-30, -- [5]
 					},
-					["name"] = "ExtraActionBarFrame",
-					["scale"] = 0.7999999523162842,
-					["orgScale"] = 1,
+					["name"] = "Boss3TargetFrame",
+					["unit"] = "boss3",
+					["hidden"] = true,
 					["pos"] = {
-						"BOTTOM", -- [1]
+						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						-2.908707637594544e-05, -- [4]
-						362.5001220703125, -- [5]
+						"BOTTOMLEFT", -- [3]
+						2141.996826171875, -- [4]
+						731.0994262695312, -- [5]
 					},
 				},
 				["FocusFrameTextureFramePVPIcon"] = {
@@ -216,7 +216,6 @@ MADB = {
 					},
 					["name"] = "MinimapCluster",
 					["scale"] = 1.10000002384186,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPRIGHT", -- [1]
 						"UIParent", -- [2]
@@ -224,36 +223,44 @@ MADB = {
 						-2.76968924070506, -- [4]
 						5.02229230587676, -- [5]
 					},
+					["orgScale"] = 1,
 				},
-				["TargetFrameSpellBar"] = {
+				["Boss4TargetFrame"] = {
 					["orgPos"] = {
 						"TOPLEFT", -- [1]
-						"TargetFrame", -- [2]
+						"Boss3TargetFrame", -- [2]
 						"BOTTOMLEFT", -- [3]
-						25, -- [4]
-						6.999999523162842, -- [5]
-					},
-					["name"] = "TargetFrameSpellBar",
-					["scale"] = 1.29999995231628,
-					["orgScale"] = 1,
-				},
-				["ZoneAbilityFrame"] = {
-					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
 						0, -- [4]
-						120, -- [5]
+						-30, -- [5]
 					},
-					["name"] = "ZoneAbilityFrame",
-					["scale"] = 0.7999999523162842,
-					["orgScale"] = 1,
+					["name"] = "Boss4TargetFrame",
+					["unit"] = "boss4",
+					["hidden"] = true,
 					["pos"] = {
-						"BOTTOM", -- [1]
+						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0.0002150535486240546, -- [4]
-						362.5001220703125, -- [5]
+						"BOTTOMLEFT", -- [3]
+						2141.996826171875, -- [4]
+						601.0994262695312, -- [5]
+					},
+				},
+				["Boss2TargetFrame"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"Boss1TargetFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
+						0, -- [4]
+						-30, -- [5]
+					},
+					["name"] = "Boss2TargetFrame",
+					["unit"] = "boss2",
+					["hidden"] = true,
+					["pos"] = {
+						"BOTTOMLEFT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMLEFT", -- [3]
+						2141.996826171875, -- [4]
+						861.0994262695312, -- [5]
 					},
 				},
 				["PlayerFrame"] = {
@@ -266,7 +273,6 @@ MADB = {
 					},
 					["name"] = "PlayerFrame",
 					["scale"] = 1.10000002384186,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -274,24 +280,23 @@ MADB = {
 						170, -- [4]
 						-98.59844970703125, -- [5]
 					},
+					["orgScale"] = 1,
 				},
-				["TalkingHeadFrame"] = {
+				["PlayerPowerBarAltMover"] = {
 					["orgPos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
 						0, -- [4]
-						96, -- [5]
+						155, -- [5]
 					},
-					["name"] = "TalkingHeadFrame",
-					["scale"] = 0.699999988079071,
-					["orgScale"] = 1,
+					["name"] = "PlayerPowerBarAltMover",
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
-						-881.3053489347782, -- [4]
-						296.8997497558594, -- [5]
+						0.000152587890625, -- [4]
+						225, -- [5]
 					},
 				},
 				["CastingBarFrame"] = {
@@ -345,88 +350,83 @@ MADB = {
 						-30.00004697737775, -- [5]
 					},
 				},
-				["PlayerPowerBarAltMover"] = {
+				["TalkingHeadFrame"] = {
 					["orgPos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
 						0, -- [4]
-						155, -- [5]
+						96, -- [5]
 					},
-					["name"] = "PlayerPowerBarAltMover",
+					["name"] = "TalkingHeadFrame",
+					["scale"] = 0.699999988079071,
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
-						0.000152587890625, -- [4]
-						225, -- [5]
+						-881.3053489347782, -- [4]
+						296.8997497558594, -- [5]
 					},
+					["orgScale"] = 1,
 				},
-				["Boss2TargetFrame"] = {
+				["ZoneAbilityFrame"] = {
+					["orgPos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						120, -- [5]
+					},
+					["name"] = "ZoneAbilityFrame",
+					["scale"] = 0.7999999523162842,
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0.0002150535486240546, -- [4]
+						362.5001220703125, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["TargetFrameSpellBar"] = {
 					["orgPos"] = {
 						"TOPLEFT", -- [1]
-						"Boss1TargetFrame", -- [2]
+						"TargetFrame", -- [2]
 						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						-30, -- [5]
+						25, -- [4]
+						6.999999523162842, -- [5]
 					},
-					["name"] = "Boss2TargetFrame",
-					["pos"] = {
-						"BOTTOMLEFT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						2141.996826171875, -- [4]
-						861.0994262695312, -- [5]
-					},
-					["hidden"] = true,
-					["unit"] = "boss2",
+					["name"] = "TargetFrameSpellBar",
+					["scale"] = 1.29999995231628,
+					["orgScale"] = 1,
 				},
-				["Boss4TargetFrame"] = {
+				["ExtraActionBarFrame"] = {
 					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"Boss3TargetFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
-						0, -- [4]
-						-30, -- [5]
-					},
-					["name"] = "Boss4TargetFrame",
-					["pos"] = {
-						"BOTTOMLEFT", -- [1]
+						"BOTTOM", -- [1]
 						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						2141.996826171875, -- [4]
-						601.0994262695312, -- [5]
-					},
-					["hidden"] = true,
-					["unit"] = "boss4",
-				},
-				["Boss3TargetFrame"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"Boss2TargetFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
+						"BOTTOM", -- [3]
 						0, -- [4]
-						-30, -- [5]
+						120, -- [5]
 					},
-					["name"] = "Boss3TargetFrame",
+					["name"] = "ExtraActionBarFrame",
+					["scale"] = 0.7999999523162842,
 					["pos"] = {
-						"BOTTOMLEFT", -- [1]
+						"BOTTOM", -- [1]
 						"UIParent", -- [2]
-						"BOTTOMLEFT", -- [3]
-						2141.996826171875, -- [4]
-						731.0994262695312, -- [5]
+						"BOTTOM", -- [3]
+						-2.908707637594544e-05, -- [4]
+						362.5001220703125, -- [5]
 					},
-					["hidden"] = true,
-					["unit"] = "boss3",
+					["orgScale"] = 1,
 				},
 			},
 		},
 	},
-	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
 	["tooltips"] = true,
 	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["playSound"] = false,
+	["closeGUIOnEscape"] = false,
 }
