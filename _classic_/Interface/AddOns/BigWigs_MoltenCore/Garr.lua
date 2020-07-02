@@ -10,6 +10,16 @@ mod:SetAllowWin(true)
 mod.engageId = 666
 
 --------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Garr"
+end
+L = mod:GetLocale()
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -19,10 +29,12 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "Pulse", self:SpellName(19492))
-
-	self:Death("Win", 12057)
 end
 
 --------------------------------------------------------------------------------

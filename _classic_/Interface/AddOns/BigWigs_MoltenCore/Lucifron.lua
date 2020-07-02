@@ -15,6 +15,8 @@ mod.engageId = 663
 
 local L = mod:NewLocale("enUS", true)
 if L then
+	L.bossName = "Lucifron"
+
 	L.mc_bar = "MC: %s"
 end
 L = mod:GetLocale()
@@ -31,12 +33,14 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "ImpendingDoom", self:SpellName(19702))
 	self:Log("SPELL_CAST_SUCCESS", "LucifronsCurse", self:SpellName(19703))
 	self:Log("SPELL_AURA_APPLIED", "MindControl", self:SpellName(20604))
-
-	self:Death("Win", 12118)
 end
 
 function mod:OnEngage()

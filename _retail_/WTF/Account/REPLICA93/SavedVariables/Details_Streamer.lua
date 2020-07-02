@@ -81,12 +81,7 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["font_size"] = 12,
 			["per_second"] = {
@@ -103,8 +98,13 @@ Details_StreamerDB = {
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["y"] = -28.9441528320313,
-			["main_frame_strata"] = "LOW",
 			["author"] = "Details! Team",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {
 				200, -- [1]

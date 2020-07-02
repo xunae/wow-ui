@@ -10,6 +10,16 @@ mod:SetAllowWin(true)
 mod.engageId = 665
 
 --------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Gehennas"
+end
+L = mod:GetLocale()
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -20,11 +30,13 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "Curse", self:SpellName(19716))
 	self:Log("SPELL_AURA_APPLIED", "Fire", self:SpellName(19717))
-
-	self:Death("Win", 12259)
 end
 
 --------------------------------------------------------------------------------

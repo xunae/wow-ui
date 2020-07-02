@@ -10,6 +10,16 @@ mod:SetAllowWin(true)
 mod.engageId = 670
 
 --------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Golemagg the Incinerator"
+end
+L = mod:GetLocale()
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -19,8 +29,11 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
-	self:Death("Win", 11988)
  end
 
 --------------------------------------------------------------------------------

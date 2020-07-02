@@ -1,13 +1,16 @@
 
 CorruptionTooltipsDB = {
 	["profileKeys"] = {
-		["Xunae - Draenor"] = "Xunae - Draenor",
 		["Xunaj - Draenor"] = "Xunaj - Draenor",
+		["Xunae - Draenor"] = "Xunae - Draenor",
+		["Xunaw - Draenor"] = "Xunaw - Draenor",
 	},
 	["profiles"] = {
+		["Xunaj - Draenor"] = {
+		},
 		["Xunae - Draenor"] = {
 		},
-		["Xunaj - Draenor"] = {
+		["Xunaw - Draenor"] = {
 		},
 	},
 }

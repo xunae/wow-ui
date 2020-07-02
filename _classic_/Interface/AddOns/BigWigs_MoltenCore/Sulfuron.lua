@@ -10,6 +10,16 @@ mod:SetAllowWin(true)
 mod.engageId = 669
 
 --------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Sulfuron Harbinger"
+end
+L = mod:GetLocale()
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -20,11 +30,13 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "SulfuronHeal", self:SpellName(19775))
 	self:Log("SPELL_CAST_SUCCESS", "Inspire", self:SpellName(19779))
-
-	self:Death("Win", 12098)
  end
 
 --------------------------------------------------------------------------------

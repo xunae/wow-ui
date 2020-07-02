@@ -58,7 +58,15 @@ VWQL = {
 		},
 		["VERSION"] = 85,
 	},
-	["AnchorQCBLeft"] = 1328.22192382813,
+	["Xunaw-Draenor"] = {
+		["VERSION"] = 92,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["Xüñâ-Stormscale"] = {
 		["VERSION"] = 88,
 		["Filter"] = 63,
@@ -78,24 +86,16 @@ VWQL = {
 		},
 	},
 	["ShellGameSize"] = 288.952697753906,
-	["Xunaw-Draenor"] = {
-		["VERSION"] = 92,
-		["Filter"] = 63,
-		["RegularQuestMode"] = true,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
+	["AnchorQCBLeft"] = 1328.22192382813,
 	["SortPrio"] = {
 	},
 	["Xuna-Stormscale"] = {
 		["epicIgnoreFilter"] = false,
 		["servicemedalFilter"] = true,
-		["faction2164IgnoreFilter"] = false,
+		["wakeningessenceFilter"] = true,
 		["wantedIgnoreFilter"] = false,
 		["faction2164Highlight"] = false,
-		["wakeningessenceFilter"] = true,
+		["faction2164IgnoreFilter"] = false,
 		["faction2163Highlight"] = false,
 		["arguniteFilter"] = true,
 		["FilterType"] = {
@@ -213,11 +213,11 @@ VWQL = {
 			[41930] = true,
 			[51628] = true,
 			[44751] = true,
-			[44018] = true,
-			[51652] = true,
-			[43771] = true,
 			[50648] = true,
+			[51652] = true,
 			[48106] = true,
+			[44018] = true,
+			[43771] = true,
 			[44289] = true,
 			[50461] = true,
 			[48951] = true,
@@ -257,6 +257,26 @@ VWQL = {
 	},
 	["AnchorQCBTop"] = 484.0634765625,
 	["AzeriteFormat"] = 20,
+	["Zunae-Draenor"] = {
+		["VERSION"] = 92,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["Xûñá-Ravencrest"] = {
+		["VERSION"] = 85,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
+	["DisableLFG_PopupLeave"] = true,
+	["DisableLFG_Popup"] = true,
 	["Xûñä-Stormscale"] = {
 		["FilterType"] = {
 		},
@@ -274,26 +294,6 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["Xûñá-Ravencrest"] = {
-		["VERSION"] = 85,
-		["Filter"] = 63,
-		["RegularQuestMode"] = true,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
-	["DisableIconsGeneralMap947"] = true,
-	["DisableLFG_Popup"] = true,
-	["Zunae-Draenor"] = {
-		["VERSION"] = 92,
-		["Filter"] = 63,
-		["RegularQuestMode"] = true,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
 	["Xunaj-Draenor"] = {
 		["VERSION"] = 92,
 		["Filter"] = 63,
@@ -303,7 +303,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["OppositeContinent"] = false,
+	["DisableShellGame"] = true,
 	["Spazshaman-Stormscale"] = {
 		["VERSION"] = 85,
 		["FilterType"] = {
@@ -365,8 +365,28 @@ VWQL = {
 		},
 	},
 	["MapIconsScale"] = 1.51,
-	["Arrow_Point2"] = "CENTER",
-	["DisableShellGame"] = true,
+	["Xunae-Draenor"] = {
+		["VERSION"] = 92,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[51044] = true,
+			[58705] = true,
+			[45379] = true,
+			[51642] = true,
+			[52238] = true,
+			[50287] = true,
+			[51444] = true,
+			[50999] = true,
+			[50540] = true,
+			[50874] = true,
+			[50854] = true,
+			[52157] = true,
+			[43943] = true,
+		},
+		["Filter"] = 63,
+	},
+	["OppositeContinent"] = false,
 	["Xunamonkh-ArenaChampions-EU"] = {
 		["Filter"] = 63,
 		["FilterType"] = {
@@ -388,38 +408,11 @@ VWQL = {
 	},
 	["DisableHighlightNewQuest"] = true,
 	["Arrow_PointX"] = -3.04710841178894,
-	["Xunae-Draenor"] = {
-		["VERSION"] = 92,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[54701] = true,
-			[54516] = true,
-			[50549] = true,
-			[52938] = true,
-			[49809] = true,
-			[50957] = true,
-			[54523] = true,
-			[45379] = true,
-			[50619] = true,
-			[54685] = true,
-			[51494] = true,
-			[50875] = true,
-			[50846] = true,
-			[55344] = true,
-			[51175] = true,
-			[43943] = true,
-			[51629] = true,
-			[52169] = true,
-			[51042] = true,
-			[54016] = true,
-		},
-		["Filter"] = 63,
-	},
+	["Arrow_Point2"] = "CENTER",
 	["Ignore"] = {
 	},
 	["ShellGameCenter"] = 39.09521484375,
-	["DisableLFG_PopupLeave"] = true,
+	["DisableIconsGeneralMap947"] = true,
 	["Xunaorc-ValleyofHeroes-EU"] = {
 		["VERSION"] = 85,
 		["FilterType"] = {

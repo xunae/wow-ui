@@ -1,3 +1,11 @@
+### 1.13.58
+
+- Fire Vulnerability stack now work together with Ignite stacks
+
+### 1.13.57
+
+- Ignite refresh workaround
+
 ### 1.13.56
 
 - LCD Update

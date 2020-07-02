@@ -76,7 +76,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -201,6 +200,8 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
+	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -211,5 +212,4 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.2.3",
 }

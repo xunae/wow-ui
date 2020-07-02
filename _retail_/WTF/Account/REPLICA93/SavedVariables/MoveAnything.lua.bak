@@ -322,10 +322,10 @@ MADB = {
 					["name"] = "VehicleSeatIndicator",
 					["pos"] = {
 						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
+						"UIParent", -- [2]
 						"BOTTOMRIGHT", -- [3]
-						1.333251953125, -- [4]
-						-51.0477905273438, -- [5]
+						-85.3331298828125, -- [4]
+						348.9998779296875, -- [5]
 					},
 				},
 				["ObjectiveTrackerFrameMover"] = {
@@ -424,7 +424,6 @@ MADB = {
 	},
 	["closeGUIOnEscape"] = false,
 	["tooltips"] = true,
-	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,

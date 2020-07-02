@@ -15,6 +15,8 @@ mod.engageId = 671
 
 local L = mod:NewLocale("enUS", true)
 if L then
+	L.bossName = "Majordomo Executus"
+
 	L.disabletrigger = "Impossible! Stay your attack, mortals... I submit! I submit!"
 	L.power_next = "Next Power"
 end
@@ -28,18 +30,28 @@ function mod:GetOptions()
 	return {
 		20619, -- Magic Reflection
 		21075, -- Damage Shield
+		{20534, "TANK"}, -- Teleport
 	}
+end
+
+function mod:OnRegister()
+	self.displayName = L.bossName
 end
 
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "MagicReflection", self:SpellName(20619))
 	self:Log("SPELL_CAST_SUCCESS", "DamageShield", self:SpellName(21075))
+	self:Log("SPELL_CAST_SUCCESS", "Teleport", self:SpellName(20534))
 
 	self:RegisterEvent("CHAT_MSG_MONSTER_YELL")
 end
 
 function mod:VerifyEnable(unit)
 	return (UnitIsEnemy(unit, "player") and UnitCanAttack(unit, "player")) and true or false
+end
+
+function mod:OnEngage()
+	self:Bar(20534, 20) -- Teleport
 end
 
 --------------------------------------------------------------------------------
@@ -66,3 +78,6 @@ function mod:DamageShield(args)
 	self:DelayedMessage(21075, 25, "orange", CL.custom_sec:format(L.power_next, 5))
 end
 
+function mod:Teleport(args)
+	self:CDBar(20534, 25) -- 25-30
+end

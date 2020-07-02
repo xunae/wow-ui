@@ -86,7 +86,15 @@ VWQL = {
 		},
 	},
 	["ShellGameSize"] = 288.952697753906,
-	["AnchorQCBLeft"] = 1328.22192382813,
+	["Xunaw-Draenor"] = {
+		["VERSION"] = 92,
+		["Filter"] = 63,
+		["RegularQuestMode"] = true,
+		["Quests"] = {
+		},
+		["FilterType"] = {
+		},
+	},
 	["SortPrio"] = {
 	},
 	["Xunaorc-ArenaChampions-EU"] = {
@@ -107,7 +115,7 @@ VWQL = {
 	},
 	["AnchorQCBTop"] = 484.0634765625,
 	["AzeriteFormat"] = 20,
-	["DisableLFG_PopupLeave"] = true,
+	["DisableIconsGeneralMap947"] = true,
 	["Xunapalah-ArenaChampions-EU"] = {
 		["VERSION"] = 85,
 		["FilterType"] = {
@@ -116,7 +124,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["DisableIconsGeneralMap947"] = true,
+	["DisableLFG_PopupLeave"] = true,
 	["DisableLFG_Popup"] = true,
 	["Xunac-Draenor"] = {
 		["VERSION"] = 92,
@@ -136,34 +144,7 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Xunae-Draenor"] = {
-		["Filter"] = 63,
-		["FilterType"] = {
-		},
-		["Quests"] = {
-			[54701] = true,
-			[54516] = true,
-			[50549] = true,
-			[52938] = true,
-			[49809] = true,
-			[50957] = true,
-			[54523] = true,
-			[45379] = true,
-			[50619] = true,
-			[54685] = true,
-			[51494] = true,
-			[50875] = true,
-			[50846] = true,
-			[55344] = true,
-			[54016] = true,
-			[51042] = true,
-			[51629] = true,
-			[52169] = true,
-			[43943] = true,
-			[51175] = true,
-		},
-		["VERSION"] = 92,
-	},
+	["Arrow_Point2"] = "CENTER",
 	["Arrow_PointX"] = -3.04710841178894,
 	["Xûñá-Ravencrest"] = {
 		["VERSION"] = 85,
@@ -174,25 +155,37 @@ VWQL = {
 		["FilterType"] = {
 		},
 	},
-	["Xûñä-Stormscale"] = {
+	["Zunae-Draenor"] = {
+		["VERSION"] = 92,
 		["Filter"] = 63,
-		["VERSION"] = 89,
+		["RegularQuestMode"] = true,
 		["Quests"] = {
-			[51044] = true,
-			[51157] = true,
-			[51377] = true,
-			[52856] = true,
-			[50854] = true,
-			[52325] = true,
-			[51433] = true,
-			[50744] = true,
-			[52892] = true,
 		},
 		["FilterType"] = {
 		},
 	},
 	["DisableHighlightNewQuest"] = true,
-	["Arrow_Point2"] = "CENTER",
+	["Xunae-Draenor"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+			[50578] = true,
+			[52937] = true,
+			[45379] = true,
+			[55304] = true,
+			[50871] = true,
+			[52892] = true,
+			[50885] = true,
+			[51500] = true,
+			[55344] = true,
+			[51041] = true,
+			[51475] = true,
+			[50636] = true,
+			[43943] = true,
+		},
+		["VERSION"] = 92,
+	},
 	["Xunay-Draenor"] = {
 		["VERSION"] = 92,
 		["Filter"] = 63,
@@ -212,7 +205,7 @@ VWQL = {
 		},
 		["Filter"] = 63,
 	},
-	["OppositeContinent"] = false,
+	["DisableShellGame"] = true,
 	["MapIconsScale"] = 1.51,
 	["Spazshaman-Stormscale"] = {
 		["Filter"] = 63,
@@ -257,15 +250,23 @@ VWQL = {
 		},
 		["VERSION"] = 85,
 	},
-	["DisableShellGame"] = true,
+	["OppositeContinent"] = false,
 	["Ignore"] = {
 	},
 	["ShellGameCenter"] = 39.09521484375,
-	["Zunae-Draenor"] = {
-		["VERSION"] = 92,
+	["Xûñä-Stormscale"] = {
 		["Filter"] = 63,
-		["RegularQuestMode"] = true,
+		["VERSION"] = 89,
 		["Quests"] = {
+			[51044] = true,
+			[51157] = true,
+			[51377] = true,
+			[52856] = true,
+			[50854] = true,
+			[52325] = true,
+			[51433] = true,
+			[50744] = true,
+			[52892] = true,
 		},
 		["FilterType"] = {
 		},
@@ -284,7 +285,7 @@ VWQL = {
 		["manapearlIgnoreFilter"] = false,
 		["faction2163Highlight"] = false,
 		["faction2164Highlight"] = false,
-		["faction2164IgnoreFilter"] = false,
+		["wakeningessenceFilter"] = true,
 		["wantedIgnoreFilter"] = false,
 		["arguniteFilter"] = true,
 		["invasionPointsFilter"] = true,
@@ -405,8 +406,8 @@ VWQL = {
 			[48783] = true,
 			[51652] = true,
 			[48730] = true,
-			[44018] = true,
-			[43771] = true,
+			[50648] = true,
+			[48106] = true,
 			[44289] = true,
 			[48831] = true,
 			[54051] = true,
@@ -418,8 +419,8 @@ VWQL = {
 			[51238] = true,
 			[48951] = true,
 			[50461] = true,
-			[48106] = true,
-			[50648] = true,
+			[43771] = true,
+			[44018] = true,
 			[51608] = true,
 			[51774] = true,
 			[47724] = true,
@@ -434,18 +435,10 @@ VWQL = {
 			[41705] = true,
 			[48698] = true,
 		},
-		["wakeningessenceFilter"] = true,
+		["faction2164IgnoreFilter"] = false,
 	},
 	["DisableRibbon"] = true,
-	["Xunaw-Draenor"] = {
-		["VERSION"] = 92,
-		["Filter"] = 63,
-		["RegularQuestMode"] = true,
-		["Quests"] = {
-		},
-		["FilterType"] = {
-		},
-	},
+	["AnchorQCBLeft"] = 1328.22192382813,
 	["Hãllàáhø-Stormscale"] = {
 		["VERSION"] = 81,
 		["FilterType"] = {

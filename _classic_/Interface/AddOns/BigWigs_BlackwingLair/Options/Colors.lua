@@ -8,6 +8,7 @@ BigWigs:AddColors("Razorgore the Untamed", {
 
 BigWigs:AddColors("Vaelastrasz the Corrupt", {
 	[18173] = {"blue","yellow"},
+	["warmup"] = "cyan",
 })
 
 BigWigs:AddColors("Broodlord Lashlayer", {
@@ -41,6 +42,7 @@ BigWigs:AddColors("Chromaggus", {
 BigWigs:AddColors("NefarianBWL", {
 	[22539] = "yellow",
 	[22686] = {"orange","red"},
+	["add"] = "green",
 	["classcall"] = {"green","red"},
 	["otherwarn"] = "red",
 })

@@ -1,6 +1,8 @@
 # BigWigs
 
-## [v12.1-classic](https://github.com/BigWigsMods/BigWigs/tree/v12.1-classic) (2020-03-08)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v12-classic...v12.1-classic)
+## [v13.1-classic](https://github.com/BigWigsMods/BigWigs/tree/v13.1-classic) (2020-06-19)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v13-classic...v13.1-classic)
 
-- Update zhTW (#777)  
+- MoltenCore: Localize boss names  
+- Update BigWigs\_World.toc (#801)  
+- Update zhCN (#800)  

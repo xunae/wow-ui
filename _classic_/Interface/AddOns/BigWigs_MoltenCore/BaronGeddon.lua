@@ -3,11 +3,21 @@
 -- Module declaration
 --
 
-local mod = BigWigs:NewBoss("Baron Geddon", 409)
+local mod, CL = BigWigs:NewBoss("Baron Geddon", 409)
 if not mod then return end
 mod:RegisterEnableMob(12056)
 mod:SetAllowWin(true)
 mod.engageId = 668
+
+--------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Baron Geddon"
+end
+L = mod:GetLocale()
 
 --------------------------------------------------------------------------------
 -- Initialization
@@ -18,7 +28,12 @@ function mod:GetOptions()
 		{20475, "FLASH", "ICON", "PROXIMITY", "SAY"}, -- Living Bomb
 		19695, -- Inferno
 		20478, -- Armageddon
+		19659, -- Ignite Mana
 	}
+end
+
+function mod:OnRegister()
+	self.displayName = L.bossName
 end
 
 function mod:OnBossEnable()
@@ -26,8 +41,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_REMOVED", "LivingBombRemoved", self:SpellName(20475))
 	self:Log("SPELL_CAST_SUCCESS", "Inferno", self:SpellName(19695))
 	self:Log("SPELL_CAST_SUCCESS", "Armageddon", self:SpellName(20478))
-
-	self:Death("Win", 12056)
+	self:Log("SPELL_CAST_SUCCESS", "IgniteMana", self:SpellName(19659))
 end
 
 --------------------------------------------------------------------------------
@@ -59,4 +73,11 @@ end
 function mod:Armageddon(args)
 	self:Bar(20478, 8)
 	self:Message(20478, "orange")
+end
+
+function mod:IgniteMana(args)
+	-- first cast takes 7-19s, so we skip that
+	self:Bar(19659, 27)
+	self:Message(19659, "orange")
+	self:DelayedMessage(19659, 22, "red", CL.custom_sec:format(self:SpellName(19659), 5), false, "Alert")
 end

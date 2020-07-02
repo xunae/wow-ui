@@ -77,12 +77,12 @@ dbILD = {
 			["toc"] = 80100,
 			["firstun"] = false,
 		},
-		["Xunawl - Draenor"] = {
-			["toc"] = 80300,
-			["firstun"] = false,
-		},
 		["Ghrwetgf - Stormscale"] = {
 			["toc"] = 80000,
+			["firstun"] = false,
+		},
+		["Xunawl - Draenor"] = {
+			["toc"] = 80300,
 			["firstun"] = false,
 		},
 		["Asdwetr - Stormscale"] = {
@@ -126,8 +126,8 @@ dbILD = {
 		["Xunadwarf - Arena Champions - EU"] = "Default",
 		["Xunadraenei - Arena Champions - EU"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Xunawl - Draenor"] = "Default",
 		["Ghrwetgf - Stormscale"] = "Default",
+		["Xunawl - Draenor"] = "Default",
 		["Asdwetr - Stormscale"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xunamonkh - Arena Champions - EU"] = "Default",

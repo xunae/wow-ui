@@ -906,14 +906,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -924,14 +924,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -1105,14 +1105,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -1168,14 +1168,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -1249,14 +1249,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -1303,14 +1303,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -2382,14 +2382,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -2400,14 +2400,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -2583,14 +2583,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -2646,14 +2646,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -2727,14 +2727,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -2781,14 +2781,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -3877,14 +3877,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -4030,14 +4030,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -4057,14 +4057,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -4111,15 +4111,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -4128,6 +4119,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -4346,14 +4346,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -5459,14 +5459,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -5612,14 +5612,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -5639,14 +5639,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -5693,15 +5693,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[115176] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -5710,6 +5701,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -5930,14 +5930,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -6918,14 +6918,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -6936,14 +6936,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -7117,14 +7117,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -7180,14 +7180,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -7261,14 +7261,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -7315,14 +7315,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -8412,14 +8412,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -8565,14 +8565,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -8592,14 +8592,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -8646,15 +8646,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[115176] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -8663,6 +8654,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -8883,14 +8883,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -9002,14 +9002,14 @@ NameplateAurasAceDB = {
 			["IconYOffset"] = 32,
 			["TimerStyle"] = 3,
 			["CustomSpells2"] = {
-				[203761] = {
+				[183517] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
-					["iconSize"] = 32,
 					["showOnEnemies"] = true,
+					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 203761,
+					["spellID"] = 183517,
 				},
 				[79890] = {
 					["pvpCombat"] = 1,
@@ -9020,23 +9020,23 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 79890,
 				},
-				[39077] = {
+				[277242] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["showOnEnemies"] = true,
 					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 39077,
+					["spellID"] = 277242,
 				},
-				[183517] = {
+				[203761] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
-					["showOnEnemies"] = true,
 					["iconSize"] = 32,
+					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 183517,
+					["spellID"] = 203761,
 				},
 				[151962] = {
 					["pvpCombat"] = 1,
@@ -9065,14 +9065,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 59847,
 				},
-				[277242] = {
+				[39077] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["showOnEnemies"] = true,
 					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 277242,
+					["spellID"] = 39077,
 				},
 			},
 			["TimerTextAnchorIcon"] = "CENTER",
@@ -9979,14 +9979,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -10132,14 +10132,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -10159,14 +10159,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -10213,15 +10213,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -10230,6 +10221,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -10448,14 +10448,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -11436,14 +11436,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -11454,14 +11454,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -11635,14 +11635,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -11698,14 +11698,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -11779,14 +11779,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -11833,14 +11833,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -12911,14 +12911,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -12929,14 +12929,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -13110,14 +13110,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -13173,14 +13173,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -13254,14 +13254,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -13308,14 +13308,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -14303,16 +14303,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 51690,
 				},
-				[171152] = {
-					["iconSize"] = 45,
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["allowMultipleInstances"] = false,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 171152,
-				},
 				[10060] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
@@ -14322,6 +14312,16 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 10060,
+				},
+				[171152] = {
+					["iconSize"] = 45,
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["allowMultipleInstances"] = false,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 171152,
 				},
 				[179057] = {
 					["iconSize"] = 45,
@@ -14383,7 +14383,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 198817,
 				},
-				[108416] = {
+				[37506] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14391,7 +14391,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 108416,
+					["spellID"] = 37506,
 				},
 				[69369] = {
 					["iconSize"] = 45,
@@ -14413,7 +14413,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 3045,
 				},
-				[37506] = {
+				[108416] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14421,7 +14421,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 37506,
+					["spellID"] = 108416,
 				},
 				[12042] = {
 					["iconSize"] = 45,
@@ -14443,7 +14443,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 115078,
 				},
-				[207810] = {
+				[31842] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14451,7 +14451,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 207810,
+					["spellID"] = 31842,
 				},
 				[1719] = {
 					["iconSize"] = 45,
@@ -14463,7 +14463,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1719,
 				},
-				[31842] = {
+				[207810] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14471,7 +14471,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 31842,
+					["spellID"] = 207810,
 				},
 				[6940] = {
 					["iconSize"] = 45,
@@ -14543,7 +14543,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14551,7 +14551,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["iconSize"] = 45,
@@ -14673,7 +14673,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 186265,
 				},
-				[33395] = {
+				[6358] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14681,7 +14681,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 33395,
+					["spellID"] = 6358,
 				},
 				[209789] = {
 					["iconSize"] = 45,
@@ -14693,7 +14693,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 209789,
 				},
-				[6358] = {
+				[33395] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -14701,7 +14701,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 6358,
+					["spellID"] = 33395,
 				},
 				[31230] = {
 					["iconSize"] = 45,
@@ -14803,16 +14803,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 46924,
 				},
-				[115176] = {
-					["iconSize"] = 45,
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["allowMultipleInstances"] = false,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
@@ -14822,6 +14812,16 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["iconSize"] = 45,
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["allowMultipleInstances"] = false,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[135373] = {
 					["iconSize"] = 45,
@@ -15054,7 +15054,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 188501,
 				},
-				[87204] = {
+				[113724] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -15062,7 +15062,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[205191] = {
 					["iconSize"] = 45,
@@ -16082,14 +16082,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -16235,14 +16235,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -16262,14 +16262,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -16316,15 +16316,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -16333,6 +16324,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -16551,14 +16551,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -17539,14 +17539,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -17557,14 +17557,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -17740,14 +17740,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -17803,14 +17803,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -17884,14 +17884,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -17938,14 +17938,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -19035,14 +19035,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -19188,14 +19188,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -19215,14 +19215,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -19269,15 +19269,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -19286,6 +19277,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -19506,14 +19506,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -20495,14 +20495,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -20513,14 +20513,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -20696,14 +20696,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -20759,14 +20759,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -20840,14 +20840,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -20894,14 +20894,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -21112,14 +21112,14 @@ NameplateAurasAceDB = {
 			["IconYOffset"] = 32,
 			["TimerStyle"] = 3,
 			["CustomSpells2"] = {
-				[277242] = {
+				[39077] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["showOnEnemies"] = true,
 					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 277242,
+					["spellID"] = 39077,
 				},
 				[59847] = {
 					["pvpCombat"] = 1,
@@ -21130,23 +21130,23 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 59847,
 				},
-				[39077] = {
+				[277242] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["showOnEnemies"] = true,
 					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 39077,
+					["spellID"] = 277242,
 				},
-				[203761] = {
+				[183517] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
-					["iconSize"] = 32,
 					["showOnEnemies"] = true,
+					["iconSize"] = 32,
 					["showOnFriends"] = true,
-					["spellID"] = 203761,
+					["spellID"] = 183517,
 				},
 				[151962] = {
 					["pvpCombat"] = 1,
@@ -21175,14 +21175,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 79890,
 				},
-				[183517] = {
+				[203761] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
-					["showOnEnemies"] = true,
 					["iconSize"] = 32,
+					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 183517,
+					["spellID"] = 203761,
 				},
 			},
 			["TimerTextAnchorIcon"] = "CENTER",
@@ -22081,14 +22081,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -22234,14 +22234,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -22261,14 +22261,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -22315,15 +22315,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -22332,6 +22323,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -22552,14 +22552,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -23559,14 +23559,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -23712,14 +23712,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -23739,14 +23739,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -23793,15 +23793,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[115176] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -23810,6 +23801,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -24028,14 +24028,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -25034,14 +25034,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -25187,14 +25187,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -25214,14 +25214,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -25268,15 +25268,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -25285,6 +25276,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -25503,14 +25503,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -26491,14 +26491,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -26509,14 +26509,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -26692,14 +26692,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -26755,14 +26755,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -26836,14 +26836,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -26890,14 +26890,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -27968,14 +27968,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -27986,14 +27986,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -28169,14 +28169,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -28232,14 +28232,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -28313,14 +28313,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -28367,14 +28367,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -29463,14 +29463,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -29616,14 +29616,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -29643,14 +29643,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -29697,15 +29697,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[115176] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -29714,6 +29705,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -29932,14 +29932,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -30938,14 +30938,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -31091,14 +31091,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -31118,14 +31118,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -31172,15 +31172,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[115176] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -31189,6 +31180,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -31407,14 +31407,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -32414,14 +32414,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -32567,14 +32567,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 33395,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[121471] = {
 					["pvpCombat"] = 1,
@@ -32594,14 +32594,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 197871,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -32648,15 +32648,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 204150,
 				},
-				[235450] = {
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 1,
-					["iconSize"] = 45,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 235450,
-				},
 				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -32665,6 +32656,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 115176,
+				},
+				[235450] = {
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["iconSize"] = 45,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -32883,14 +32883,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1022,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[119381] = {
 					["pvpCombat"] = 1,
@@ -33871,14 +33871,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -33889,14 +33889,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -34070,14 +34070,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -34133,14 +34133,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -34214,14 +34214,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -34268,14 +34268,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,
@@ -35283,7 +35283,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 179057,
 				},
-				[171152] = {
+				[10060] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35291,7 +35291,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 171152,
+					["spellID"] = 10060,
 				},
 				[228049] = {
 					["allowMultipleInstances"] = false,
@@ -35373,7 +35373,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 3045,
 				},
-				[108416] = {
+				[37506] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35381,7 +35381,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 108416,
+					["spellID"] = 37506,
 				},
 				[12042] = {
 					["allowMultipleInstances"] = false,
@@ -35423,7 +35423,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1719,
 				},
-				[207810] = {
+				[31842] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35431,7 +35431,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 207810,
+					["spellID"] = 31842,
 				},
 				[205191] = {
 					["allowMultipleInstances"] = false,
@@ -35453,7 +35453,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 8122,
 				},
-				[87204] = {
+				[113724] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35461,7 +35461,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[196718] = {
 					["allowMultipleInstances"] = false,
@@ -35503,7 +35503,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35511,7 +35511,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["allowMultipleInstances"] = false,
@@ -35653,7 +35653,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 209789,
 				},
-				[33395] = {
+				[6358] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35661,7 +35661,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 33395,
+					["spellID"] = 6358,
 				},
 				[31230] = {
 					["allowMultipleInstances"] = false,
@@ -35773,15 +35773,15 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 118038,
 				},
-				[115176] = {
+				[235450] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[31850] = {
 					["allowMultipleInstances"] = false,
@@ -35844,15 +35844,15 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 135373,
 				},
-				[235450] = {
+				[115176] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[18499] = {
 					["allowMultipleInstances"] = false,
@@ -35924,7 +35924,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[6358] = {
+				[33395] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -35932,7 +35932,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 6358,
+					["spellID"] = 33395,
 				},
 				[207319] = {
 					["allowMultipleInstances"] = false,
@@ -36034,7 +36034,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 6940,
 				},
-				[31842] = {
+				[207810] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -36042,7 +36042,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 31842,
+					["spellID"] = 207810,
 				},
 				[710] = {
 					["allowMultipleInstances"] = false,
@@ -36054,7 +36054,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 710,
 				},
-				[37506] = {
+				[108416] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -36062,7 +36062,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 37506,
+					["spellID"] = 108416,
 				},
 				[2825] = {
 					["allowMultipleInstances"] = false,
@@ -36104,7 +36104,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 48792,
 				},
-				[10060] = {
+				[171152] = {
 					["allowMultipleInstances"] = false,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -36112,7 +36112,7 @@ NameplateAurasAceDB = {
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 10060,
+					["spellID"] = 171152,
 				},
 				[47788] = {
 					["allowMultipleInstances"] = false,
@@ -36941,16 +36941,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 51690,
 				},
-				[171152] = {
-					["iconSize"] = 45,
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["allowMultipleInstances"] = false,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 171152,
-				},
 				[10060] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
@@ -36960,6 +36950,16 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 10060,
+				},
+				[171152] = {
+					["iconSize"] = 45,
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["allowMultipleInstances"] = false,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 171152,
 				},
 				[179057] = {
 					["iconSize"] = 45,
@@ -37021,7 +37021,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 198817,
 				},
-				[108416] = {
+				[37506] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37029,7 +37029,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 108416,
+					["spellID"] = 37506,
 				},
 				[69369] = {
 					["iconSize"] = 45,
@@ -37051,7 +37051,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 3045,
 				},
-				[37506] = {
+				[108416] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37059,7 +37059,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 37506,
+					["spellID"] = 108416,
 				},
 				[12042] = {
 					["iconSize"] = 45,
@@ -37081,7 +37081,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 115078,
 				},
-				[207810] = {
+				[31842] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37089,7 +37089,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 207810,
+					["spellID"] = 31842,
 				},
 				[1719] = {
 					["iconSize"] = 45,
@@ -37101,7 +37101,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 1719,
 				},
-				[31842] = {
+				[207810] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37109,7 +37109,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 31842,
+					["spellID"] = 207810,
 				},
 				[6940] = {
 					["iconSize"] = 45,
@@ -37181,7 +37181,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37189,7 +37189,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["iconSize"] = 45,
@@ -37311,7 +37311,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 186265,
 				},
-				[33395] = {
+				[6358] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37319,7 +37319,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 33395,
+					["spellID"] = 6358,
 				},
 				[209789] = {
 					["iconSize"] = 45,
@@ -37331,7 +37331,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 209789,
 				},
-				[6358] = {
+				[33395] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37339,7 +37339,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 6358,
+					["spellID"] = 33395,
 				},
 				[31230] = {
 					["iconSize"] = 45,
@@ -37441,16 +37441,6 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 46924,
 				},
-				[115176] = {
-					["iconSize"] = 45,
-					["pvpCombat"] = 1,
-					["enabledState"] = 2,
-					["auraType"] = 3,
-					["allowMultipleInstances"] = false,
-					["showOnEnemies"] = true,
-					["showOnFriends"] = true,
-					["spellID"] = 115176,
-				},
 				[235450] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
@@ -37460,6 +37450,16 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
 					["spellID"] = 235450,
+				},
+				[115176] = {
+					["iconSize"] = 45,
+					["pvpCombat"] = 1,
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["allowMultipleInstances"] = false,
+					["showOnEnemies"] = true,
+					["showOnFriends"] = true,
+					["spellID"] = 115176,
 				},
 				[135373] = {
 					["iconSize"] = 45,
@@ -37692,7 +37692,7 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 188501,
 				},
-				[87204] = {
+				[113724] = {
 					["iconSize"] = 45,
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
@@ -37700,7 +37700,7 @@ NameplateAurasAceDB = {
 					["allowMultipleInstances"] = false,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[205191] = {
 					["iconSize"] = 45,
@@ -38702,14 +38702,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 105771,
 				},
-				[87204] = {
+				[113724] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 87204,
+					["spellID"] = 113724,
 				},
 				[136634] = {
 					["pvpCombat"] = 1,
@@ -38720,14 +38720,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 136634,
 				},
-				[113724] = {
+				[87204] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 113724,
+					["spellID"] = 87204,
 				},
 				[199683] = {
 					["pvpCombat"] = 1,
@@ -38903,14 +38903,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 200166,
 				},
-				[116849] = {
+				[642] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 116849,
+					["spellID"] = 642,
 				},
 				[118905] = {
 					["pvpCombat"] = 1,
@@ -38966,14 +38966,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15487,
 				},
-				[115176] = {
+				[235450] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 3,
+					["auraType"] = 1,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 115176,
+					["spellID"] = 235450,
 				},
 				[853] = {
 					["pvpCombat"] = 1,
@@ -39047,14 +39047,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 18499,
 				},
-				[235450] = {
+				[115176] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
-					["auraType"] = 1,
+					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 235450,
+					["spellID"] = 115176,
 				},
 				[204150] = {
 					["pvpCombat"] = 1,
@@ -39101,14 +39101,14 @@ NameplateAurasAceDB = {
 					["showOnFriends"] = true,
 					["spellID"] = 15286,
 				},
-				[642] = {
+				[116849] = {
 					["pvpCombat"] = 1,
 					["enabledState"] = 2,
 					["auraType"] = 3,
 					["iconSize"] = 45,
 					["showOnEnemies"] = true,
 					["showOnFriends"] = true,
-					["spellID"] = 642,
+					["spellID"] = 116849,
 				},
 				[33395] = {
 					["pvpCombat"] = 1,

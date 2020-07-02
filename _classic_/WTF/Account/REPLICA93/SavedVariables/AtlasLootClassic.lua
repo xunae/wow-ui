@@ -1,10 +1,10 @@
 
 AtlasLootClassicDB = {
-	["global"] = {
-		["__addonrevision"] = 1040007,
-	},
 	["profileKeys"] = {
 		["Xuna - Gehennas"] = "Xuna - Gehennas",
+	},
+	["global"] = {
+		["__addonrevision"] = 1050001,
 	},
 	["profiles"] = {
 		["Xuna - Gehennas"] = {

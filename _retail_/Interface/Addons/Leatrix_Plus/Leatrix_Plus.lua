@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.24 (10th June 2020)
+-- 	Leatrix Plus 8.3.25 (16th June 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.24"
+	LeaPlusLC["AddonVer"] = "8.3.25"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -3447,7 +3447,7 @@
 			LeaPlusLC:MakeTx(weatherPanel, "Settings", 16, -72)
 			LeaPlusLC:MakeSL(weatherPanel, "WeatherLevel", "Drag to set the density of weather effects.", 0, 3, 1, 16, -92, "%.0f")
 
-			local weatherSliderTable = {"Off", "Low", "Medium", "High"}
+			local weatherSliderTable = {L["Off"], L["Low"], L["Medium"], L["High"]}
 
 			-- Function to set the weather density
 			local function SetWeatherFunc()

@@ -10,6 +10,16 @@ mod:SetAllowWin(true)
 mod.engageId = 667
 
 --------------------------------------------------------------------------------
+-- Localization
+--
+
+local L = mod:NewLocale("enUS", true)
+if L then
+	L.bossName = "Shazzrah"
+end
+L = mod:GetLocale()
+
+--------------------------------------------------------------------------------
 -- Initialization
 --
 
@@ -21,16 +31,19 @@ function mod:GetOptions()
 	}
 end
 
+function mod:OnRegister()
+	self.displayName = L.bossName
+end
+
 function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "Blink", self:SpellName(23138))
 	self:Log("SPELL_CAST_SUCCESS", "MagicGrounding", self:SpellName(19714))
 	self:Log("SPELL_CAST_SUCCESS", "Counterspell", self:SpellName(19715))
-
-	self:Death("Win", 12264)
 end
 
 function mod:OnEngage()
 	self:Bar(19715, 10.7) -- Counterspell
+	self:Bar(23138, 30)   -- Blink
 end
 
 --------------------------------------------------------------------------------
@@ -38,7 +51,7 @@ end
 --
 
 function mod:Blink(args)
-	self:Bar(23138, 45)
+	self:CDBar(23138, 41) -- 41-50
 	self:Message(23138, "red")
 end
 
