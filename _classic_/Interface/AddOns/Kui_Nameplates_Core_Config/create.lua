@@ -1,4 +1,4 @@
-local opt = KuiNameplatesCoreConfig
+local opt = KuiNameplatesCoreConfig --luacheck:globals KuiNameplatesCoreConfig
 local LSM = LibStub('LibSharedMedia-3.0')
 local L = opt:GetLocale()
 
@@ -26,6 +26,7 @@ function general:Initialise()
     local combat_friendly = self:CreateDropDown('combat_friendly')
     local ignore_uiscale = self:CreateCheckBox('ignore_uiscale')
     local use_blizzard_personal = self:CreateCheckBox('use_blizzard_personal')
+    local use_blizzard_powers = self:CreateCheckBox('use_blizzard_powers',true)
     local glow_as_shadow = self:CreateCheckBox('glow_as_shadow')
     local state_icons = self:CreateCheckBox('state_icons')
     local target_glow = self:CreateCheckBox('target_glow')
@@ -36,9 +37,13 @@ function general:Initialise()
     local target_arrows = self:CreateCheckBox('target_arrows')
     local target_arrows_size = self:CreateSlider('target_arrows_size',20,60)
 
+    use_blizzard_personal.require_reload = true
+    use_blizzard_powers.require_reload = true
+
     target_glow_colour.enabled = function(p) return p.target_glow or p.target_arrows end
     mouseover_glow_colour.enabled = function(p) return p.mouseover_glow end
     target_arrows_size.enabled = function(p) return p.target_arrows end
+    use_blizzard_powers.enabled = function(p) return not p.use_blizzard_personal end
 
     combat_hostile.SelectTable = {
         L.titles.dd_combat_toggle_nothing,
@@ -52,6 +57,7 @@ function general:Initialise()
 
     ignore_uiscale:SetPoint('TOPLEFT',10,-55)
     use_blizzard_personal:SetPoint('LEFT',ignore_uiscale,'RIGHT',190,0)
+    use_blizzard_powers:SetPoint('TOPLEFT',use_blizzard_personal,'BOTTOMLEFT',10,0)
 
     state_icons:SetPoint('TOPLEFT',ignore_uiscale,'BOTTOMLEFT',0,-10)
     target_glow:SetPoint('TOPLEFT',state_icons,'BOTTOMLEFT')
@@ -126,8 +132,8 @@ function fade_rules:Initialise()
     avoid_c:SetPoint('LEFT',avoid_t,'RIGHT',190,0)
 
     avoid_cf:SetPoint('TOPLEFT',avoid_t,'BOTTOMLEFT',0,-10)
-    avoid_ch:SetPoint('LEFT',avoid_cf,'RIGHT',190,0)
-    avoid_ci:SetPoint('TOPLEFT',avoid_cf,'BOTTOMLEFT',10,0)
+    avoid_ch:SetPoint('TOPLEFT',avoid_cf,'BOTTOMLEFT')
+    avoid_ci:SetPoint('TOPLEFT',avoid_ch,'BOTTOMLEFT',10,0)
     avoid_cu:SetPoint('TOPLEFT',avoid_ci,'BOTTOMLEFT')
 end
 -- healthbars ##################################################################
@@ -279,6 +285,7 @@ function text:Initialise()
     local health_text_friend_dmg = text:CreateDropDown('health_text_friend_dmg')
     local health_text_hostile_max = text:CreateDropDown('health_text_hostile_max')
     local health_text_hostile_dmg = text:CreateDropDown('health_text_hostile_dmg')
+    local health_text_percent_symbol = text:CreateCheckBox('health_text_percent_symbol',true)
 
     health_text_friend_max.SelectTable = health_text_SelectTable
     health_text_friend_dmg.SelectTable = health_text_SelectTable
@@ -289,13 +296,15 @@ function text:Initialise()
     health_text_friend_max:SetPoint('TOP',health_text_sep,'BOTTOM',0,-10)
     health_text_friend_max:SetPoint('LEFT',10,0)
     health_text_friend_dmg:SetPoint('LEFT',health_text_friend_max,'RIGHT',10,0)
-    health_text_hostile_max:SetPoint('TOPLEFT',health_text_friend_max,'BOTTOMLEFT',0,0)
+    health_text_hostile_max:SetPoint('TOPLEFT',health_text_friend_max,'BOTTOMLEFT')
     health_text_hostile_dmg:SetPoint('LEFT',health_text_hostile_max,'RIGHT',10,0)
+    health_text_percent_symbol:SetPoint('TOPLEFT',health_text_hostile_max,'BOTTOMLEFT',0,-5)
 
     health_text_friend_max.enabled = function(p) return p.health_text end
     health_text_friend_dmg.enabled = health_text_friend_max.enabled
     health_text_hostile_max.enabled = health_text_friend_max.enabled
     health_text_hostile_dmg.enabled = health_text_friend_max.enabled
+    health_text_percent_symbol.enabled = health_text_friend_max.enabled
 
     local nc_sep = self:CreateSeparator('name_colour_sep')
     local nc_wb = self:CreateCheckBox('name_colour_white_in_bar_mode')
@@ -322,7 +331,7 @@ function text:Initialise()
         return p.name_text and not p.class_colour_enemy_names
     end
 
-    nc_sep:SetPoint('TOP',0,-350)
+    nc_sep:SetPoint('TOP',0,-375)
     nc_wb:SetPoint('TOP',nc_sep,'BOTTOM',0,-10)
     nc_wb:SetPoint('LEFT',10,0)
     nc_nh:SetPoint('TOPLEFT',nc_wb,'BOTTOMLEFT',4,0)
@@ -371,6 +380,7 @@ function nameonly:Initialise()
     local guild_text_npcs = self:CreateCheckBox('guild_text_npcs')
     local guild_text_players = self:CreateCheckBox('guild_text_players')
     local title_text_players = self:CreateCheckBox('title_text_players')
+    local level_nameonly = self:CreateCheckBox('level_nameonly')
     local vis_sep = self:CreateSeparator('nameonly_visibility_sep')
     local text_sep = self:CreateSeparator('nameonly_text_sep','text')
 
@@ -420,6 +430,7 @@ function nameonly:Initialise()
     nameonly_combat_hostile_player.enabled = function(p)
         return p.nameonly and p.nameonly_combat_hostile and (p.nameonly_neutral or p.nameonly_enemies)
     end
+    level_nameonly.enabled = nameonly_neutral.enabled
 
     -- "text"
     text_sep:SetPoint('TOP',0,-285)
@@ -428,6 +439,7 @@ function nameonly:Initialise()
     guild_text_players:SetPoint('TOPLEFT',nameonly_health_colour,'BOTTOMLEFT')
     title_text_players:SetPoint('LEFT',guild_text_players,'RIGHT',190,0)
     guild_text_npcs:SetPoint('TOPLEFT',guild_text_players,'BOTTOMLEFT')
+    level_nameonly:SetPoint('LEFT',guild_text_npcs,'RIGHT',190,0)
 end
 -- frame sizes #################################################################
 function framesizes:Initialise()
@@ -492,7 +504,7 @@ function auras:Initialise()
     local purge_size = self:CreateSlider('auras_purge_size',10,50)
     local side = self:CreateDropDown('auras_side')
     local purge_opposite = self:CreateCheckBox('auras_purge_opposite',true)
-    local offset = self:CreateSlider('auras_offset',-1,30)
+    local offset = self:CreateSlider('auras_offset',-1,60)
     side.SelectTable = {'Top','Bottom'} -- TODO l10n
 
     purge_size.enabled = function(p) return p.auras_show_purge end
@@ -598,6 +610,7 @@ function castbars:Initialise()
     local castbar_detach_height = self:CreateSlider('castbar_detach_height',3,50,nil,'height')
     local castbar_detach_offset = self:CreateSlider('castbar_detach_offset',1,20,nil,'offset')
     local castbar_detach_combine = self:CreateCheckBox('castbar_detach_combine',true)
+    local castbar_detach_nameonly = self:CreateCheckBox('castbar_detach_nameonly',true)
     local castbar_icon_side = self:CreateDropDown('castbar_icon_side')
     castbar_icon_side.SelectTable = { 'Left','Right' } -- TODO l10n
 
@@ -625,8 +638,9 @@ function castbars:Initialise()
     castbar_layout_sep:SetPoint('TOP',0,-260)
     castbar_detach:SetPoint('TOPLEFT',10,-260-15)
     castbar_detach_combine:SetPoint('TOPLEFT',castbar_detach,'BOTTOMLEFT',10,0)
+    castbar_detach_nameonly:SetPoint('TOPLEFT',castbar_detach_combine,'BOTTOMLEFT')
     castbar_icon_side:SetPoint('LEFT',castbar_detach,'RIGHT',170,-8)
-    castbar_detach_width:SetPoint('TOPLEFT',castbar_detach,'BOTTOMLEFT',0,-50)
+    castbar_detach_width:SetPoint('TOPLEFT',castbar_detach,'BOTTOMLEFT',0,-70)
     castbar_detach_height:SetPoint('LEFT',castbar_detach_width,'RIGHT',22,0)
     castbar_detach_offset:SetPoint('LEFT',castbar_detach_height,'RIGHT',22,0)
 
@@ -657,6 +671,7 @@ function castbars:Initialise()
     castbar_detach_combine.enabled = function(p)
         return p.castbar_enable and p.castbar_detach and p.castbar_icon
     end
+    castbar_detach_nameonly.enabled = castbar_detach_width.enabled
 end
 -- threat ######################################################################
 function threat:Initialise()
@@ -811,10 +826,11 @@ function cvars:Initialise()
     sfn.enabled = function(p) return p.cvar_enable end
     -- nameplateShowOnlyNames
     local no = self:CreateCheckBox('cvar_name_only')
-    no.enabled  = sfn.enabled
+    no.enabled = sfn.enabled
+    no.require_reload = true
     -- nameplate{Min,Max}Scale
     local ds = self:CreateCheckBox('cvar_disable_scale')
-    ds.enabled  = sfn.enabled
+    ds.enabled = sfn.enabled
     -- nameplatePersonalShowAlways
     local psa = self:CreateCheckBox('cvar_personal_show_always')
     psa.enabled = sfn.enabled
@@ -827,15 +843,15 @@ function cvars:Initialise()
     -- nameplateMaxDistance
     local md = self:CreateSlider('cvar_max_distance',5,100)
     md:SetValueStep(5)
-    md.enabled  = sfn.enabled
+    md.enabled = sfn.enabled
     -- nameplate{Other,Large}TopInset
     local ct = self:CreateSlider('cvar_clamp_top',-.1,.5)
     ct:SetValueStep(.01)
-    ct.enabled  = sfn.enabled
+    ct.enabled = sfn.enabled
     -- nameplate{Other,Large}BottomInset
     local cb = self:CreateSlider('cvar_clamp_bottom',-.1,.5)
     cb:SetValueStep(.01)
-    cb.enabled  = sfn.enabled
+    cb.enabled = sfn.enabled
     -- nameplateSelfTopInset
     local self_clamp_top = self:CreateSlider('cvar_self_clamp_top',-.1,.5)
     self_clamp_top:SetValueStep(.01)
@@ -847,7 +863,7 @@ function cvars:Initialise()
     -- nameplateOverlapV
     local ov = self:CreateSlider('cvar_overlap_v',0,5)
     ov:SetValueStep(.1)
-    ov.enabled  = sfn.enabled
+    ov.enabled = sfn.enabled
     -- nameplate{Min,Max,Selected}Alpha
     local disable_alpha = self:CreateCheckBox('cvar_disable_alpha')
     disable_alpha.enabled = sfn.enabled

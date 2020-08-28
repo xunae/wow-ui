@@ -2,7 +2,7 @@ MagicRunes: disabled
 MagicRunes_IconDisplay: disabled
 MagicRunes_RuneBars: disabled
 Gladius: enabled
-TotemTimers: disabled
+TotemTimers: enabled
 ShamanFriend: enabled
 Prat-3.0_HighCPUUsageModules: disabled
 Castbars: enabled
@@ -368,12 +368,12 @@ DataStore_Containers: enabled
 Details: enabled
 Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
-Details_DataStorage: enabled
+Details_DataStorage: disabled
 Details_TimeAttack: enabled
-Details_TinyThreat: enabled
+Details_TinyThreat: disabled
 Details_Vanguard: enabled
 Details_3DModelsPaths: enabled
-Details_Streamer: enabled
+Details_Streamer: disabled
 Details_RaidInfo-HellfireCitadel: enabled
 Details_DungeonInfo-Warlords: enabled
 eAlignUpdated: enabled

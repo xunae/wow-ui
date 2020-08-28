@@ -25,18 +25,21 @@ VER 3 0000000000000141 "3SHEAR" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast [@arena3] Wind Shear
 END
+VER 3 000000000000018B "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+/script print('no button yet')
+END
 VER 3 000000000000018A "AutoDrink" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /AutoDrink Conjured Mana Bun, Ley-Enriched Water, Seafoam Coconut Water
 /click AutoDrink
 END
-VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
-#showtooltip Cleanse Spirit
-/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
-END
 VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Purify Spirit
 /cast [@mouseover,exists]Purify Spirit; Purify Spirit
+END
+VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Spirit
+/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
 END
 VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 #showtooltip Hex

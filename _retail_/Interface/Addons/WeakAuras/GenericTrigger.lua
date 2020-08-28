@@ -204,7 +204,8 @@ function TestForMultiSelect(trigger, arg)
 end
 
 function ConstructTest(trigger, arg)
-  local test;
+  local test
+  local preamble
   local name = arg.name;
   if(arg.hidden or arg.type == "tristate" or arg.type == "toggle" or (arg.type == "multiselect" and trigger["use_"..name] ~= nil) or ((trigger["use_"..name] or arg.required) and trigger[name])) then
     local number = tonumber(trigger[name]);
@@ -229,11 +230,15 @@ function ConstructTest(trigger, arg)
     end
   end
 
-  if (test == "(true)") then
-    return nil;
+  if arg.preamble then
+    preamble = arg.preamble:format(trigger[name] or "")
   end
 
-  return test;
+  if (test == "(true)") then
+    return nil, preamble
+  end
+
+  return test, preamble
 end
 
 function ConstructFunction(prototype, trigger, inverse)
@@ -257,6 +262,7 @@ function ConstructFunction(prototype, trigger, inverse)
   local debug = {};
   local store = {};
   local init;
+  local preambles = ""
   if(prototype.init) then
     init = prototype.init(trigger);
   else
@@ -282,7 +288,7 @@ function ConstructFunction(prototype, trigger, inverse)
         if (arg.store) then
           tinsert(store, name);
         end
-        local test = ConstructTest(trigger, arg);
+        local test, preamble = ConstructTest(trigger, arg);
         if (test) then
           if(arg.required) then
             tinsert(required, test);
@@ -293,10 +299,13 @@ function ConstructFunction(prototype, trigger, inverse)
             tinsert(debug, arg.debug:format(trigger[name]));
           end
         end
+        if (preamble) then
+          preambles = preambles .. "\n" .. preamble
+        end
       end
     end
   end
-  local ret = "return function("..tconcat(input, ", ")..")\n";
+  local ret = preambles .. "return function("..tconcat(input, ", ")..")\n";
   ret = ret..(init or "");
 
   ret = ret..(#debug > 0 and tconcat(debug, "\n") or "");
@@ -554,6 +563,13 @@ local function RunTriggerFunc(allStates, data, id, triggernum, event, arg1, arg2
         untriggerCheck = true;
       end
     elseif (data.statesParameter == "unit") then
+      if optionsEvent then
+        if WeakAuras.multiUnitUnits[data.trigger.unit] then
+          arg1 = next(WeakAuras.multiUnitUnits[data.trigger.unit])
+        else
+          arg1 = data.trigger.unit
+        end
+      end
       if arg1 then
         local unit, cloneId
         if WeakAuras.multiUnitUnits[data.trigger.unit] then
@@ -748,12 +764,17 @@ function GenericTrigger.CreateFakeStates(id, triggernum)
   local allStates = WeakAuras.GetTriggerStateForTrigger(id, triggernum);
   RunTriggerFunc(allStates, events[id][triggernum], id, triggernum, "OPTIONS")
 
+  local canHaveDuration = events[id][triggernum].prototype and events[id][triggernum].prototype.canHaveDuration == "timed"
+
   local shown = 0
   for id, state in pairs(allStates) do
     if state.show then
       shown = shown + 1
     end
     state.autoHide = false
+    if canHaveDuration and state.expirationTime == nil then
+      state.progressType = "timed"
+    end
     AddFakeTime(state)
   end
 
@@ -762,6 +783,9 @@ function GenericTrigger.CreateFakeStates(id, triggernum)
     GenericTrigger.CreateFallbackState(data, triggernum, state)
     allStates[""] = state
     state.autoHide = false
+    if canHaveDuration and state.expirationTime == nil then
+      state.progressType = "timed"
+    end
     AddFakeTime(state)
   end
 
@@ -1120,6 +1144,7 @@ function GenericTrigger.Add(data, region)
         local force_events = false;
         local durationFunc, overlayFuncs, nameFunc, iconFunc, textureFunc, stacksFunc, loadFunc;
         local tsuConditionVariables;
+        local prototype = nil
         if(triggerType == "status" or triggerType == "event") then
           if not(trigger.event) then
             error("Improper arguments to WeakAuras.Add - trigger type is \"event\" but event is not defined");
@@ -1142,24 +1167,25 @@ function GenericTrigger.Add(data, region)
               end
             end
 
-            triggerFuncStr = ConstructFunction(event_prototypes[trigger.event], trigger);
+            prototype = event_prototypes[trigger.event]
+            triggerFuncStr = ConstructFunction(prototype, trigger);
 
-            statesParameter = event_prototypes[trigger.event].statesParameter;
+            statesParameter = prototype.statesParameter;
             WeakAuras.debug(id.." - "..triggernum.." - Trigger", 1);
             WeakAuras.debug(triggerFuncStr);
             triggerFunc = WeakAuras.LoadFunction(triggerFuncStr, id);
 
-            durationFunc = event_prototypes[trigger.event].durationFunc;
-            nameFunc = event_prototypes[trigger.event].nameFunc;
-            iconFunc = event_prototypes[trigger.event].iconFunc;
-            textureFunc = event_prototypes[trigger.event].textureFunc;
-            stacksFunc = event_prototypes[trigger.event].stacksFunc;
-            loadFunc = event_prototypes[trigger.event].loadFunc;
+            durationFunc = prototype.durationFunc;
+            nameFunc = prototype.nameFunc;
+            iconFunc = prototype.iconFunc;
+            textureFunc = prototype.textureFunc;
+            stacksFunc = prototype.stacksFunc;
+            loadFunc = prototype.loadFunc;
 
-            if (event_prototypes[trigger.event].overlayFuncs) then
+            if (prototype.overlayFuncs) then
               overlayFuncs = {};
               local dest = 1;
-              for i, v in ipairs(event_prototypes[trigger.event].overlayFuncs) do
+              for i, v in ipairs(prototype.overlayFuncs) do
                 if (v.enable(trigger)) then
                   overlayFuncs[dest] = v.func;
                   dest = dest + 1;
@@ -1167,11 +1193,11 @@ function GenericTrigger.Add(data, region)
               end
             end
 
-            if (event_prototypes[trigger.event].automaticrequired) then
+            if (prototype.automaticrequired) then
               trigger.unevent = "auto";
-            elseif event_prototypes[trigger.event].timedrequired then
-              if type(event_prototypes[trigger.event].timedrequired) == "function" then
-                if event_prototypes[trigger.event].timedrequired(trigger) then
+            elseif prototype.timedrequired then
+              if type(prototype.timedrequired) == "function" then
+                if prototype.timedrequired(trigger) then
                   trigger.unevent = "timed"
                 else
                   if not(WeakAuras.eventend_types[trigger.unevent]) then
@@ -1181,7 +1207,7 @@ function GenericTrigger.Add(data, region)
               else
                 trigger.unevent = "timed"
               end
-            elseif event_prototypes[trigger.event].automatic then
+            elseif prototype.automatic then
               if not(WeakAuras.autoeventend_types[trigger.unevent]) then
                 trigger.unevent = "auto"
               end
@@ -1193,9 +1219,9 @@ function GenericTrigger.Add(data, region)
             trigger.duration = trigger.duration or "1"
 
             if(trigger.unevent == "custom") then
-              untriggerFuncStr = ConstructFunction(event_prototypes[trigger.event], untrigger);
+              untriggerFuncStr = ConstructFunction(prototype, untrigger);
             elseif(trigger.unevent == "auto") then
-              untriggerFuncStr = ConstructFunction(event_prototypes[trigger.event], trigger, true);
+              untriggerFuncStr = ConstructFunction(prototype, trigger, true);
             end
 
             if(untriggerFuncStr) then
@@ -1204,7 +1230,7 @@ function GenericTrigger.Add(data, region)
               untriggerFunc = WeakAuras.LoadFunction(untriggerFuncStr, id);
             end
 
-            local prototype = event_prototypes[trigger.event];
+
             if(prototype) then
               local trigger_all_events = prototype.events;
               internal_events = prototype.internal_events;
@@ -1365,7 +1391,8 @@ function GenericTrigger.Add(data, region)
           loadFunc = loadFunc,
           duration = duration,
           automaticAutoHide = automaticAutoHide,
-          tsuConditionVariables = tsuConditionVariables
+          tsuConditionVariables = tsuConditionVariables,
+          prototype = prototype
         };
       end
     end
@@ -3168,10 +3195,9 @@ do
           if(v:GetObjectType() == "FontString") then
             local text = v:GetText();
             if(text) then
-              local _, _, name = text:find("^(.+) %(%d+ [^%)]+%)$");
+              local _, _, name, shortenedName = text:find("^((.-) ?+?[VI%d]*) %(%d+ .+%)$");
               if(name) then
-                local _, _, shortenedName = name:find("^(.+) [VI%d]+$")
-                return name, shortenedName or name;
+                return name, shortenedName;
               end
             end
           end
@@ -3428,7 +3454,7 @@ function GenericTrigger.GetOverlayInfo(data, triggernum)
         WeakAuras.ActivateAuraEnvironment(nil);
         local count = 0;
         for id, state in pairs(allStates) do
-          if (state.additionalProgress) then
+          if (type(state.additionalProgress) == "table") then
             count = max(count, #state.additionalProgress);
           end
         end
@@ -3691,16 +3717,17 @@ function GenericTrigger.GetTriggerConditions(data, triggernum)
                 end
               end
             end
+            if (v.conditionPreamble) then
+              result[v.name].preamble = v.conditionPreamble;
+            end
             if (v.conditionTest) then
               result[v.name].test = v.conditionTest;
             end
             if (v.conditionEvents) then
               result[v.name].events = v.conditionEvents;
             end
-            if (v.operator_types_without_equal) then
-              result[v.name].operator_types_without_equal = true;
-            elseif (v.operator_types_only_equal) then
-              result[v.name].operator_types_only_equal = true;
+            if (v.operator_types) then
+              result[v.name].operator_types = v.operator_types;
             end
           end
         end
@@ -3887,6 +3914,40 @@ function GenericTrigger.GetTriggerDescription(data, triggernum, namestable)
   end
 end
 
+do
+  -- Based on Code by DejaCharacterStats. Ugly code to figure out the GCD
+  local class = select(2, UnitClass("player"))
+  if class == "DEMONHUNTER"
+    or class == "HUNTER" or class == "SHAMAN"
+    or class == "MAGE" or class == "PRIEST" or class == "WARLOCK"
+    or class == "DEATHKNIGHT" or class == "PALADIN" or class == "WARRIOR"
+  then
+    function WeakAuras.CalculatedGcdDuration()
+      local haste = GetHaste()
+      return max(0.75, 1.5 * 100 / (100+haste))
+    end
+  elseif class == "DRUID" then
+    function WeakAuras.CalculatedGcdDuration()
+      local id = GetShapeshiftFormID()
+      local haste = GetHaste()
+      return id == 1 and 1 or max(0.75, 1.5 * 100 / (100+haste))
+    end
+  elseif class == "MONK" then
+    function WeakAuras.CalculatedGcdDuration()
+      local spec = GetSpecialization()
+      local primaryStat = select(6, GetSpecializationInfo(spec))
+      if primaryStat == LE_UNIT_STAT_AGILITY then
+        return 1
+      end
+      local haste = GetHaste()
+      return max(0.75, 1.5 * 100 / (100+haste))
+    end
+  elseif class == "ROGUE" then
+    function WeakAuras.CalculatedGcdDuration()
+      return 1
+    end
+  end
+end
 
 
 WeakAuras.RegisterTriggerSystem({"event", "status", "custom"}, GenericTrigger);

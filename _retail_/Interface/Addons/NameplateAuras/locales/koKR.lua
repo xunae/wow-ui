@@ -66,11 +66,6 @@ L["Options are not available in combat!"] = "전투 중에는 옵션을 사용�
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
 --[[Translation missing --]]
-L["options:apps:raid-zul"] = [=[Highlight annoying mobs during '%s'
-raid encounter]=]
---[[Translation missing --]]
-L["options:apps:raid-zul:tooltip"] = "Special icon will be above nameplates of '%s' and '%s'"
---[[Translation missing --]]
 L["options:aura-options:allow-multiple-instances"] = "Allow multiple instances of this aura"
 --[[Translation missing --]]
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[If this option is checked, you will see all instances of this aura, even on the same nameplate.
@@ -88,6 +83,8 @@ L["options:auras:pvp-state-indefinite"] = "PVP 전투중 오라 표시"
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "PVP 전투에서만 오라 표시"
 L["options:category:apps"] = "앱"
 L["options:category:interrupts"] = "방해"
+--[[Translation missing --]]
+L["options:category:size-and-position"] = "Size & position"
 L["options:general:always-show-my-auras:tooltip"] = [=[이것은 최우선 순위 필터입니다.
 이 기능을 사용하면 다른 필터와 관계없이 오라가 표시됩니다]=]
 --[[Translation missing --]]
@@ -97,6 +94,8 @@ L["options:general:hide-blizz-frames"] = "블리자드 프레임 숨기기 (UI �
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 --[[Translation missing --]]
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
+--[[Translation missing --]]
+L["options:general:test-mode"] = "Test mode on/off"
 --[[Translation missing --]]
 L["options:general:use-dim-glow"] = "Weak glow of icons"
 --[[Translation missing --]]

@@ -61,10 +61,6 @@ L["Open profiles dialog"] = "Открыть окно профилей"
 L["Options are not available in combat!"] = "Настройки недоступны в бою!"
 L["options:apps:explosive-orbs:tooltip"] = [=[Показывать специальную иконку над неймлэйтами Взрывных Сфер (М+ Взрывной)
 Эта иконка будет иметь размер по умолчанию и будет подсвечена]=]
-L["options:apps:raid-zul"] = [=[Выделить надоедливых мобов на рейдовом боссе
-'%s']=]
-L["options:apps:raid-zul:tooltip"] = [=[Специальная иконка будет показана над нэймплэйтами мобов
-'%s' и '%s']=]
 L["options:aura-options:allow-multiple-instances"] = "Отображать все экземпляры этой ауры"
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[Если эта опция включена, вы будете видеть все экземпляры этой ауры,
 даже на одной полоске здоровья. В другом случае вы будете видеть
@@ -83,12 +79,14 @@ L["options:auras:pvp-state-indefinite"] = "Отображать эту ауру 
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "Отображать эту ауру только в PvP битвах"
 L["options:category:apps"] = "Дополнения"
 L["options:category:interrupts"] = "Прерывания"
+L["options:category:size-and-position"] = "Размер и место"
 L["options:general:always-show-my-auras:tooltip"] = [=[Это высший по приоритету фильтр. Если он включен, ваши ауры
 будут отображаться вне зависимости от других фильтров]=]
 L["options:general:error-omnicc-is-not-loaded"] = "Вы не можете выбрать эту опцию, потому что OmniCC не загружен!"
 L["options:general:hide-blizz-frames"] = "Прятать фреймы аур Blizzard (кроме игрока)"
 L["options:general:hide-player-blizz-frame"] = "Прятать фреймы аур Blizzard на игроке"
 L["options:general:show-aura-tooltip"] = "Показывать имя ауры при наведении мышью на иконку"
+L["options:general:test-mode"] = "Тестовый режим вкл/выкл"
 L["options:general:use-dim-glow"] = "Слабое свечение иконок"
 L["options:general:use-dim-glow:tooltip"] = [=[Если эта опция включена, вы не увидите постоянного внутреннего и внешнего свечения значков
 (эта опция работает только для тех заклинаний, для которых вы явно включили подсветку иконки)]=]
@@ -210,10 +208,6 @@ L["Open profiles dialog"] = "Открыть окно профилей"
 L["Options are not available in combat!"] = "Настройки недоступны в бою!"
 L["options:apps:explosive-orbs:tooltip"] = [=[Показывать специальную иконку над неймлэйтами Взрывных Сфер (М+ Взрывной)
 Эта иконка будет иметь размер по умолчанию и будет подсвечена]=]
-L["options:apps:raid-zul"] = [=[Выделить надоедливых мобов на рейдовом боссе
-'%s']=]
-L["options:apps:raid-zul:tooltip"] = [=[Специальная иконка будет показана над нэймплэйтами мобов
-'%s' и '%s']=]
 L["options:aura-options:allow-multiple-instances"] = "Отображать все экземпляры этой ауры"
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[Если эта опция включена, вы будете видеть все экземпляры этой ауры,
 даже на одной полоске здоровья. В другом случае вы будете видеть
@@ -289,6 +283,7 @@ L["Value must be a number"] = "Значение должно быть число
 L["X offset"] = "Смещение по X"
 L["Y offset"] = "Смещение по Y"
 L["Yes"] = "Да"
-
+L["options:general:test-mode"] = "Тестовый режим вкл/выкл";
+L["options:category:size-and-position"] = "Размер и место";
 
 --@end-debug@]===]

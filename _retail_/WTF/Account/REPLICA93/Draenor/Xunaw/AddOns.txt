@@ -37,7 +37,7 @@ OmniCC: enabled
 BigWigs: enabled
 Recount: disabled
 ReforgeLite: disabled
-BagBrother: enabled
+BagBrother: disabled
 Quartz: disabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_ItemTracker: enabled
@@ -63,7 +63,7 @@ LoseControl: enabled
 Masque_Cainyx: disabled
 MoveAnything: enabled
 NecroticTrack: enabled
-OneBag3: enabled
+OneBag3: disabled
 PortraitTimers: disabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
@@ -580,11 +580,11 @@ MythicPlusTimer: disabled
 bdChat: disabled
 bdMinimap: disabled
 AdiBags_Legion_Filters: enabled
-ILD-Onebag3: enabled
-ILD-Combuctor: enabled
-ILD-Bagnon: enabled
-ILD-Baggins: enabled
-ILD-Arkinventory: enabled
+ILD-Onebag3: disabled
+ILD-Combuctor: disabled
+ILD-Bagnon: disabled
+ILD-Baggins: disabled
+ILD-Arkinventory: disabled
 ILD-Blizzard: enabled
 WorldQuestAssistant: disabled
 LegionToDo: disabled
@@ -601,7 +601,7 @@ Genie: enabled
 Genie_LDB: enabled
 Genie_UI: enabled
 ItemLevelDisplay: enabled
-ILD-Litebag: enabled
+ILD-Litebag: disabled
 RelicInspector: disabled
 TalentSetManager: enabled
 YouOnlyHearOnce: disabled
@@ -643,10 +643,10 @@ BigWigs_EternalPalace: enabled
 ChampionCommander: enabled
 MethodDungeonTools: enabled
 RaiderIO: enabled
-RaiderIO_DB_EU_A: enabled
+RaiderIO_DB_EU_A: disabled
 RaiderIO_DB_EU_H: enabled
-RaiderIO_DB_EU_A_R: enabled
-RaiderIO_DB_EU_H_R: enabled
+RaiderIO_DB_EU_A_R: disabled
+RaiderIO_DB_EU_H_R: disabled
 ATT: disabled
 WeakAurasCompanion: enabled
 TomCats: enabled
@@ -658,3 +658,4 @@ WeakAurasArchive: enabled
 BigWigs_Nyalotha: enabled
 CorruptionTooltips: enabled
 TooltipItemCount: enabled
+BigWigs_CastleNathria: enabled

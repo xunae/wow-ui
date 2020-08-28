@@ -1,8 +1,10 @@
-------------------------------------------------------------------------
-r55 | jaslm@toja.me | 2018-07-19 18:48:39 +0000 (Thu, 19 Jul 2018) | 1 line
-Changed paths:
-   M /trunk/ColorPickerPlus.toc
+lightweight tag 2427da125082a3a0c423e1da81840c180394e262 v902
+Author:	Jane Merrow <jane@FujiMac.local>
+Date:	Wed Aug 26 15:11:43 2020 -0700
 
+commit 2427da125082a3a0c423e1da81840c180394e262
+Author: Jane Merrow <jane@FujiMac.local>
+Date:   Wed Aug 26 15:11:43 2020 -0700
 
-------------------------------------------------------------------------
+    Set toc for live servers (requires "load out of date addons" for classic and ptr servers).
 

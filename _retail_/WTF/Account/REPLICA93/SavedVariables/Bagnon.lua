@@ -4,14 +4,25 @@ Bagnon_Sets = {
 	},
 	["leatherColor"] = {
 	},
+	["glowQuest"] = true,
+	["glowUnusable"] = true,
 	["engineerColor"] = {
 	},
+	["glowPoor"] = false,
 	["herbColor"] = {
 	},
 	["flashFind"] = true,
+	["glowNew"] = true,
 	["inscribeColor"] = {
 	},
+	["soulColor"] = {
+	},
+	["displayBlizzard"] = false,
 	["locked"] = false,
+	["tipCount"] = true,
+	["quiverColor"] = {
+	},
+	["glowSets"] = true,
 	["reagentColor"] = {
 	},
 	["gemColor"] = {
@@ -20,18 +31,18 @@ Bagnon_Sets = {
 	},
 	["glowAlpha"] = 0.5,
 	["emptySlots"] = true,
-	["displayBlizzard"] = false,
-	["glowSets"] = true,
+	["keyColor"] = {
+	},
+	["normalColor"] = {
+	},
 	["glowQuality"] = true,
 	["mineColor"] = {
 	},
-	["tipCount"] = true,
-	["fading"] = true,
 	["refrigeColor"] = {
 	},
+	["version"] = "8.3.8",
 	["profiles"] = {
 	},
-	["colorSlots"] = true,
 	["global"] = {
 		["inventory"] = {
 			["rules"] = {
@@ -64,17 +75,21 @@ Bagnon_Sets = {
 			["point"] = "BOTTOMRIGHT",
 			["hiddenBags"] = {
 			},
-			["scale"] = 1,
+			["scale"] = 0.9,
 			["sort"] = true,
 			["borderColor"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0.1899999976158142, -- [4]
 			},
-			["showBags"] = true,
+			["itemScale"] = 1,
+			["alpha"] = 1,
 			["reverseBags"] = false,
 			["columns"] = 12,
+			["actPanel"] = false,
+			["money"] = true,
+			["bagBreak"] = false,
 			["hiddenRules"] = {
 				["misc"] = false,
 				["use"] = false,
@@ -84,12 +99,8 @@ Bagnon_Sets = {
 				["quest"] = false,
 				["contain"] = true,
 			},
-			["alpha"] = 1,
-			["actPanel"] = false,
-			["itemScale"] = 1,
-			["bagBreak"] = false,
-			["y"] = 137.6889801025391,
-			["x"] = -96.2176513671875,
+			["y"] = 188.2567749023438,
+			["x"] = -93.84220310624391,
 			["search"] = false,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -97,9 +108,10 @@ Bagnon_Sets = {
 				0, -- [1]
 				0, -- [2]
 				0, -- [3]
+				0.5, -- [4]
 			},
 			["brokerObject"] = "BagnonLauncher",
-			["spacing"] = 2,
+			["spacing"] = 4,
 		},
 		["vault"] = {
 			["rules"] = {
@@ -209,8 +221,8 @@ Bagnon_Sets = {
 			["columns"] = 18,
 			["money"] = false,
 			["alpha"] = 1,
-			["y"] = -105.6668090820313,
-			["x"] = 8.955511093139648,
+			["y"] = -85.04461669921875,
+			["x"] = 94.99998474121094,
 			["search"] = false,
 			["broker"] = false,
 			["itemScale"] = 1,
@@ -221,6 +233,8 @@ Bagnon_Sets = {
 			},
 		},
 	},
-	["normalColor"] = {
+	["colorSlots"] = true,
+	["fridgeColor"] = {
 	},
+	["fading"] = true,
 }

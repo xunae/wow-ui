@@ -50,6 +50,9 @@ BigDebuffsDB = {
 				["cc"] = 60,
 				["increaseBuffs"] = true,
 			},
+			["nameplates"] = {
+				["enabled"] = false,
+			},
 			["spells"] = {
 				[182067] = {
 					["noRaidFrames"] = false,

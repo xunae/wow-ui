@@ -120,11 +120,6 @@ L["Options are not available in combat!"] = "Options are not available in combat
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
 --[[Translation missing --]]
-L["options:apps:raid-zul"] = [=[Highlight annoying mobs during '%s'
-raid encounter]=]
---[[Translation missing --]]
-L["options:apps:raid-zul:tooltip"] = "Special icon will be above nameplates of '%s' and '%s'"
---[[Translation missing --]]
 L["options:aura-options:allow-multiple-instances"] = "Allow multiple instances of this aura"
 --[[Translation missing --]]
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[If this option is checked, you will see all instances of this aura, even on the same nameplate.
@@ -153,6 +148,8 @@ L["options:category:apps"] = "Apps"
 --[[Translation missing --]]
 L["options:category:interrupts"] = "Interrupts"
 --[[Translation missing --]]
+L["options:category:size-and-position"] = "Size & position"
+--[[Translation missing --]]
 L["options:general:always-show-my-auras:tooltip"] = [=[This is top priority filter. If you enable this feature,
 your auras will be shown regardless of other filters]=]
 --[[Translation missing --]]
@@ -163,6 +160,8 @@ L["options:general:hide-blizz-frames"] = "Hide Blizzard's aura frames (except pl
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 --[[Translation missing --]]
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
+--[[Translation missing --]]
+L["options:general:test-mode"] = "Test mode on/off"
 --[[Translation missing --]]
 L["options:general:use-dim-glow"] = "Weak glow of icons"
 --[[Translation missing --]]

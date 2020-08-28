@@ -61,9 +61,6 @@ L["Open profiles dialog"] = "Open profiles dialog"
 L["Options are not available in combat!"] = "Options are not available in combat!"
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
-L["options:apps:raid-zul"] = [=[Highlight annoying mobs during '%s'
-raid encounter]=]
-L["options:apps:raid-zul:tooltip"] = "Special icon will be above nameplates of '%s' and '%s'"
 L["options:aura-options:allow-multiple-instances"] = "Allow multiple instances of this aura"
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[If this option is checked, you will see all instances of this aura, even on the same nameplate.
 Otherwise you will see only one instance of this aura (the longest one)]=]
@@ -81,12 +78,14 @@ L["options:auras:pvp-state-indefinite"] = "Show this aura during PvP combat"
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "Show this aura during PvP combat only"
 L["options:category:apps"] = "Apps"
 L["options:category:interrupts"] = "Interrupts"
+L["options:category:size-and-position"] = "Size & position"
 L["options:general:always-show-my-auras:tooltip"] = [=[This is top priority filter. If you enable this feature,
 your auras will be shown regardless of other filters]=]
 L["options:general:error-omnicc-is-not-loaded"] = "You cannot select this option because OmniCC is not loaded!"
 L["options:general:hide-blizz-frames"] = "Hide Blizzard's aura frames (except player)"
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
+L["options:general:test-mode"] = "Test mode on/off"
 L["options:general:use-dim-glow"] = "Weak glow of icons"
 L["options:general:use-dim-glow:tooltip"] = [=[If this option is selected you will not see constant inner and outer glow of the icons
 (this option is valid only for those spells for which you explicitly turned on the glow of icons)]=]
@@ -204,9 +203,6 @@ L["Open profiles dialog"] = "Open profiles dialog"
 L["Options are not available in combat!"] = "Options are not available in combat!"
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
-L["options:apps:raid-zul"] = [=[Highlight annoying mobs during '%s'
-raid encounter]=]
-L["options:apps:raid-zul:tooltip"] = "Special icon will be above nameplates of '%s' and '%s'"
 L["options:aura-options:allow-multiple-instances"] = "Allow multiple instances of this aura"
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[If this option is checked, you will see all instances of this aura, even on the same nameplate.
 Otherwise you will see only one instance of this aura (the longest one)]=]
@@ -283,6 +279,8 @@ L["Value must be a number"] = "Value must be a number"
 L["X offset"] = "X offset"
 L["Y offset"] = "Y offset"
 L["Yes"] = "Yes"
+L["options:general:test-mode"] = "Test mode on/off";
+L["options:category:size-and-position"] = "Size & position";
 
 
 --@end-debug@]===]

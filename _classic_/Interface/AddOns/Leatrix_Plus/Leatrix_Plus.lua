@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.13.68 (16th June 2020)
+-- 	Leatrix Plus 1.13.77 (26th August 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.13.68"
+	LeaPlusLC["AddonVer"] = "1.13.77"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -294,6 +294,7 @@
 		-- Get realm name or set to player's own realm (same realm does not return realm)
 		local void, myRealm = UnitFullName(name)
 		if not myRealm or myRealm == "" then void, myRealm = UnitFullName("player") end
+		if not myRealm or myRealm == "" then return end
 
 		-- Add realm name to character name
 		if not string.find(name, "-") then
@@ -355,16 +356,19 @@
 
 --	Set lock state for configuration buttons
 	function LeaPlusLC:SetDim()
+		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
 		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)					-- Resize mail text
 		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)				-- Resize quest text
 		LeaPlusLC:LockOption("BookFontChange", "BookTextBtn", true)					-- Resize book text
-		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Customise minimap
-		LeaPlusLC:LockOption("TipModEnable", "MoveTooltipButton", true)				-- Manage tooltip
+		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Enhance minimap
+		LeaPlusLC:LockOption("TipModEnable", "MoveTooltipButton", true)				-- Enhance tooltip
 		LeaPlusLC:LockOption("ShowCooldowns", "CooldownsButton", true)				-- Show cooldowns
-		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)				-- Manage frames
-		LeaPlusLC:LockOption("ClassColFrames", "ClassColFramesBtn", true)			-- Class colored frames
 		LeaPlusLC:LockOption("ShowPlayerChain", "ModPlayerChain", true)				-- Show player chain
+		LeaPlusLC:LockOption("FrmEnabled", "MoveFramesButton", true)				-- Manage frames
+		LeaPlusLC:LockOption("ManageBuffs", "ManageBuffsButton", true)				-- Manage buffs
+		LeaPlusLC:LockOption("ManageWidget", "ManageWidgetButton", true)			-- Manage widget
+		LeaPlusLC:LockOption("ClassColFrames", "ClassColFramesBtn", true)			-- Class colored frames
 		LeaPlusLC:LockOption("SetWeatherDensity", "SetWeatherDensityBtn", false)	-- Set weather density
 		LeaPlusLC:LockOption("ViewPortEnable", "ModViewportBtn", true)				-- Enable viewport
 	end
@@ -397,8 +401,8 @@
 		or	(LeaPlusLC["BookFontChange"]		~= LeaPlusDB["BookFontChange"])			-- Resize book text
 
 		-- Interface
-		or	(LeaPlusLC["MinimapMod"]			~= LeaPlusDB["MinimapMod"])				-- Customise minimap
-		or	(LeaPlusLC["TipModEnable"]			~= LeaPlusDB["TipModEnable"])			-- Manage tooltip
+		or	(LeaPlusLC["MinimapMod"]			~= LeaPlusDB["MinimapMod"])				-- Enhance minimap
+		or	(LeaPlusLC["TipModEnable"]			~= LeaPlusDB["TipModEnable"])			-- Enhance tooltip
 		or	(LeaPlusLC["EnhanceDressup"]		~= LeaPlusDB["EnhanceDressup"])			-- Enhance dressup
 		or	(LeaPlusLC["EnhanceQuestLog"]		~= LeaPlusDB["EnhanceQuestLog"])		-- Enhance quest log
 		or	(LeaPlusLC["EnhanceProfessions"]	~= LeaPlusDB["EnhanceProfessions"])		-- Enhance professions
@@ -411,15 +415,16 @@
 		or	(LeaPlusLC["ShowVanityControls"]	~= LeaPlusDB["ShowVanityControls"])		-- Show vanity controls
 		or	(LeaPlusLC["ShowBagSearchBox"]		~= LeaPlusDB["ShowBagSearchBox"])		-- Show bag search box
 		or	(LeaPlusLC["ShowFreeBagSlots"]		~= LeaPlusDB["ShowFreeBagSlots"])		-- Show free bag slots
+		or	(LeaPlusLC["ShowRaidToggle"]		~= LeaPlusDB["ShowRaidToggle"])			-- Show raid button
+		or	(LeaPlusLC["ShowPlayerChain"]		~= LeaPlusDB["ShowPlayerChain"])		-- Show player chain
 		or	(LeaPlusLC["ShowWowheadLinks"]		~= LeaPlusDB["ShowWowheadLinks"])		-- Show Wowhead links
 
 		-- Frames
 		or	(LeaPlusLC["FrmEnabled"]			~= LeaPlusDB["FrmEnabled"])				-- Manage frames
+		or	(LeaPlusLC["ManageBuffs"]			~= LeaPlusDB["ManageBuffs"])			-- Manage buffs
+		or	(LeaPlusLC["ManageWidget"]			~= LeaPlusDB["ManageWidget"])			-- Manage widget
 		or	(LeaPlusLC["ClassColFrames"]		~= LeaPlusDB["ClassColFrames"])			-- Class colored frames
 		or	(LeaPlusLC["ClassIconPortraits"]	~= LeaPlusDB["ClassIconPortraits"])		-- Class icon portraits
-		or	(LeaPlusLC["ShowPlayerChain"]		~= LeaPlusDB["ShowPlayerChain"])		-- Show player chain
-		or	(LeaPlusLC["ShowRaidToggle"]		~= LeaPlusDB["ShowRaidToggle"])			-- Show raid toggle button
-		or	(LeaPlusLC["CombatPlates"]			~= LeaPlusDB["CombatPlates"])			-- Combat plates
 		or	(LeaPlusLC["NoGryphons"]			~= LeaPlusDB["NoGryphons"])				-- Hide gryphons
 		or	(LeaPlusLC["NoClassBar"]			~= LeaPlusDB["NoClassBar"])				-- Hide stance bar
 
@@ -432,6 +437,7 @@
 		or	(LeaPlusLC["FasterMovieSkip"]		~= LeaPlusDB["FasterMovieSkip"])		-- Faster movie skip
 		or	(LeaPlusLC["StandAndDismount"]		~= LeaPlusDB["StandAndDismount"])		-- Stand and dismount
 		or	(LeaPlusLC["ShowVendorPrice"]		~= LeaPlusDB["ShowVendorPrice"])		-- Show vendor price
+		or	(LeaPlusLC["CombatPlates"]			~= LeaPlusDB["CombatPlates"])			-- Combat plates
 
 		-- Settings
 		or	(LeaPlusLC["EnableHotkey"]			~= LeaPlusDB["EnableHotkey"])			-- Enable hotkey
@@ -935,6 +941,49 @@
 
 		do
 
+			-- Create configuration panel
+			local QuestPanel = LeaPlusLC:CreatePanel("Automate quests", "QuestPanel")
+
+			LeaPlusLC:MakeTx(QuestPanel, "Settings", 16, -72)
+			LeaPlusLC:MakeCB(QuestPanel, "AutoQuestShift", "Require shift key for quest automation", 16, -92, false, "If checked, you will need to hold the shift key down for quests to be automated.|n|nIf unchecked, holding shift will prevent quests from being automated.")
+			LeaPlusLC:MakeCB(QuestPanel, "AutoQuestAvailable", "Accept available quests automatically", 16, -112, false, "If checked, available quests will be accepted automatically.")
+			LeaPlusLC:MakeCB(QuestPanel, "AutoQuestCompleted", "Turn-in completed quests automatically", 16, -132, false, "If checked, completed quests will be turned-in automatically.")
+
+			-- Help button hidden
+			QuestPanel.h:Hide()
+
+			-- Back button handler
+			QuestPanel.b:SetScript("OnClick", function() 
+				QuestPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page1"]:Show();
+				return
+			end)
+
+			-- Reset button handler
+			QuestPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["AutoQuestShift"] = "Off"
+				LeaPlusLC["AutoQuestAvailable"] = "On"
+				LeaPlusLC["AutoQuestCompleted"] = "On"
+
+				-- Refresh panel
+				QuestPanel:Hide(); QuestPanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["AutomateQuestsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["AutoQuestShift"] = "Off"
+					LeaPlusLC["AutoQuestAvailable"] = "On"
+					LeaPlusLC["AutoQuestCompleted"] = "On"
+				else
+					QuestPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
 			-- Funcion to ignore specific NPCs
 			local function isNpcBlocked(actionType)
 				local npcGuid = UnitGUID("target") or nil
@@ -1064,8 +1113,6 @@
 							or npcID == "11039" -- Duke Nicholas Zverenhoff (Eastern Plaguelands)
 							-- Un'Goro crystals
 							or npcID == "9117" 	-- J. D. Collie (Un'Goro Crater)
-							-- E'Ko
-							or npcID == "10307" -- Witch Doctor Mau'ari (Winterspring)
 							then
 								return true
 							end
@@ -1147,6 +1194,27 @@
 					elseif title == L["Zulian, Razzashi, and Hakkari Coins"] then
 						-- Requires 1 Zulian Coin, 1 Razzashi Coin, 1 Hakkari Coin
 						if GetItemCount(19698) >= 1 and GetItemCount(19699) >= 1 and GetItemCount(19700) >= 1 then return true end
+					elseif title == L["Frostsaber E'ko"] then
+						-- Requires 3 Frostsaber E'ko
+						if GetItemCount(12430) >= 3 then return true end
+					elseif title == L["Winterfall E'ko"] then
+						-- Requires 3 Winterfall E'ko
+						if GetItemCount(12431) >= 3 then return true end
+					elseif title == L["Shardtooth E'ko"] then
+						-- Requires 3 Shardtooth E'ko
+						if GetItemCount(12432) >= 3 then return true end
+					elseif title == L["Wildkin E'ko"] then
+						-- Requires 3 Wildkin E'ko
+						if GetItemCount(12433) >= 3 then return true end
+					elseif title == L["Chillwind E'ko"] then
+						-- Requires 3 Chillwind E'ko
+						if GetItemCount(12434) >= 3 then return true end
+					elseif title == L["Ice Thistle E'ko"] then
+						-- Requires 3 Ice Thistle E'ko
+						if GetItemCount(12435) >= 3 then return true end
+					elseif title == L["Frostmaul E'ko"] then
+						-- Requires 3 Ice Thistle E'ko
+						if GetItemCount(12436) >= 3 then return true end
 
 					else return true
 					end
@@ -1190,8 +1258,10 @@
 					return
 				end
 
-				-- Do nothing if SHIFT key is being held
-				if IsShiftKeyDown() then return end
+				-- Check for SHIFT key modifier
+				if LeaPlusLC["AutoQuestShift"] == "On" and not IsShiftKeyDown() then return 
+				elseif LeaPlusLC["AutoQuestShift"] == "Off" and IsShiftKeyDown() then return 
+				end
 
 				----------------------------------------------------------------------
 				-- Accept quests automatically
@@ -1199,17 +1269,21 @@
 
 				-- Accept quests with a quest detail window
 				if event == "QUEST_DETAIL" then
-					-- Don't accept blocked quests
-					if isNpcBlocked("Accept") then return end
-					-- Accept quest
-					AcceptQuest()
-					HideUIPanel(QuestFrame)
+					if LeaPlusLC["AutoQuestAvailable"] == "On" then
+						-- Don't accept blocked quests
+						if isNpcBlocked("Accept") then return end
+						-- Accept quest
+						AcceptQuest()
+						HideUIPanel(QuestFrame)
+					end
 				end
 
 				-- Accept quests which require confirmation (such as sharing escort quests)
 				if event == "QUEST_ACCEPT_CONFIRM" then
-					ConfirmAcceptQuest() 
-					StaticPopup_Hide("QUEST_ACCEPT")
+					if LeaPlusLC["AutoQuestAvailable"] == "On" then
+						ConfirmAcceptQuest() 
+						StaticPopup_Hide("QUEST_ACCEPT")
+					end
 				end
 
 				----------------------------------------------------------------------
@@ -1218,35 +1292,41 @@
 
 				-- Turn-in progression quests
 				if event == "QUEST_PROGRESS" and IsQuestCompletable() then
-					-- Don't continue quests for blocked NPCs
-					if isNpcBlocked("Complete") then return end
-					-- Don't continue if quest requires blocked item
-					if QuestRequiresBlockedItem() then return end
-					-- Don't continue if quest requires gold
-					if QuestRequiresGold() then return end
-					-- Continue quest
-					CompleteQuest()
+					if LeaPlusLC["AutoQuestCompleted"] == "On" then
+						-- Don't continue quests for blocked NPCs
+						if isNpcBlocked("Complete") then return end
+						-- Don't continue if quest requires blocked item
+						if QuestRequiresBlockedItem() then return end
+						-- Don't continue if quest requires gold
+						if QuestRequiresGold() then return end
+						-- Continue quest
+						CompleteQuest()
+					end
 				end
 
 				-- Turn in completed quests if only one reward item is being offered
 				if event == "QUEST_COMPLETE" then
-					-- Don't complete quests for blocked NPCs
-					if isNpcBlocked("Complete") then return end
-					-- Don't complete if quest requires blocked item
-					if QuestRequiresBlockedItem() then return end
-					-- Don't complete if quest requires gold
-					if QuestRequiresGold() then return end
-					-- Complete quest
-					if GetNumQuestChoices() <= 1 then
-						GetQuestReward(GetNumQuestChoices())
+					if LeaPlusLC["AutoQuestCompleted"] == "On" then
+						-- Don't complete quests for blocked NPCs
+						if isNpcBlocked("Complete") then return end
+						-- Don't complete if quest requires blocked item
+						if QuestRequiresBlockedItem() then return end
+						-- Don't complete if quest requires gold
+						if QuestRequiresGold() then return end
+						-- Complete quest
+						if GetNumQuestChoices() <= 1 then
+							GetQuestReward(GetNumQuestChoices())
+						end
 					end
 				end
 
 				-- Show quest dialog for quests that use the objective tracker (it will be completed automatically)
 				if event == "QUEST_AUTOCOMPLETE" then
-					local index = GetQuestLogIndexByID(arg1)
-					if GetQuestLogIsAutoComplete(index) then
-						ShowQuestComplete(index)
+					if LeaPlusLC["AutoQuestCompleted"] == "On" then
+						local index = GetQuestLogIndexByID(arg1)
+						if GetQuestLogIsAutoComplete(index) then
+							ShowQuestComplete(index)
+						end
 					end
 				end
 
@@ -1265,32 +1345,40 @@
 						-- Select quests
 						if event == "QUEST_GREETING" then
 							-- Select quest greeting completed quests
-							for i = 1, GetNumActiveQuests() do
-								local title, isComplete = GetActiveTitle(i)
-								if title and isComplete then
-									return SelectActiveQuest(i)
+							if LeaPlusLC["AutoQuestCompleted"] == "On" then
+								for i = 1, GetNumActiveQuests() do
+									local title, isComplete = GetActiveTitle(i)
+									if title and isComplete then
+										return SelectActiveQuest(i)
+									end
 								end
 							end
 							-- Select quest greeting available quests
-							for i = 1, GetNumAvailableQuests() do
-								local title, isComplete = GetAvailableTitle(i)
-								if title and not isComplete then
-									return SelectAvailableQuest(i)
+							if LeaPlusLC["AutoQuestAvailable"] == "On" then
+								for i = 1, GetNumAvailableQuests() do
+									local title, isComplete = GetAvailableTitle(i)
+									if title and not isComplete then
+										return SelectAvailableQuest(i)
+									end
 								end
 							end
 						else
 							-- Select gossip completed quests
-							for i = 1, GetNumGossipActiveQuests() do
-								local title, level, isTrivial, isComplete, isLegendary, isIgnored = select(i * 6 - 5, GetGossipActiveQuests())
-								if title and isComplete then
-									return SelectGossipActiveQuest(i)
+							if LeaPlusLC["AutoQuestCompleted"] == "On" then
+								for i = 1, GetNumGossipActiveQuests() do
+									local title, level, isTrivial, isComplete, isLegendary, isIgnored = select(i * 6 - 5, GetGossipActiveQuests())
+									if title and isComplete then
+										return SelectGossipActiveQuest(i)
+									end
 								end
 							end
 							-- Select gossip available quests
-							for i = 1, GetNumGossipAvailableQuests() do
-								local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored = select(i * 7 - 6, GetGossipAvailableQuests())
-								if title and DoesQuestHaveRequirementsMet(title) then
-									return SelectGossipAvailableQuest(i)
+							if LeaPlusLC["AutoQuestAvailable"] == "On" then
+								for i = 1, GetNumGossipAvailableQuests() do
+									local title, level, isTrivial, isDaily, isRepeatable, isLegendary, isIgnored = select(i * 7 - 6, GetGossipAvailableQuests())
+									if title and DoesQuestHaveRequirementsMet(title) then
+										return SelectGossipAvailableQuest(i)
+									end
 								end
 							end
 						end
@@ -1493,6 +1581,7 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoCombatLogTab"] == "On" then
+
 			-- Ensure combat log is docked
 			if ChatFrame2.isDocked then
 				-- Set combat log attributes when chat windows are updated
@@ -1507,6 +1596,44 @@
 					LeaPlusLC:Print("Combat log cannot be hidden while undocked.")
 				end)
 			end
+
+			-- ElvUI Fix
+			local eFixFuncApplied, eFixHookApplied
+			local function ElvUIFix()
+				if eFixFuncApplied then return end
+				local E = unpack(ElvUI)
+				if E.private.chat.enable then
+					C_Timer.After(2, function()
+						LeaPlusLC:Print("To hide the combat log, you need to disable the chat module in ElvUI.")
+						return
+					end)
+				end
+				hooksecurefunc(E, "PLAYER_ENTERING_WORLD", function()
+					if eFixHookApplied then return end
+					ChatFrame2Tab:EnableMouse(false)
+					ChatFrame2Tab:SetText(" ")
+					ChatFrame2Tab:SetScale(0.01)
+					ChatFrame2Tab:SetWidth(0.01)
+					ChatFrame2Tab:SetHeight(0.01)
+					eFixHookApplied = true
+				end)
+				eFixFuncApplied = true
+			end
+
+			-- Run ElvUI fix when ElvUI has loaded
+			if IsAddOnLoaded("ElvUI") then
+				ElvUIFix()
+			else
+				local waitFrame = CreateFrame("FRAME")
+				waitFrame:RegisterEvent("ADDON_LOADED")
+				waitFrame:SetScript("OnEvent", function(self, event, arg1)
+					if arg1 == "ElvUI" then
+						ElvUIFix()
+						waitFrame:UnregisterAllEvents()
+					end
+				end)
+			end
+
 		end
 
 		----------------------------------------------------------------------
@@ -1558,7 +1685,7 @@
 				LeaPlusCB["ListFramePlayerChainMenu"]:Hide(); -- Hide the dropdown list
 				ChainPanel:Hide();
 				LeaPlusLC["PageF"]:Show();
-				LeaPlusLC["Page6"]:Show();
+				LeaPlusLC["Page5"]:Show();
 				return
 			end) 
 
@@ -1736,7 +1863,7 @@
 			----------------------------------------------------------------------
 
 			-- Create configuration panel
-			local SideMinimap = LeaPlusLC:CreatePanel("Customise minimap", "SideMinimap")
+			local SideMinimap = LeaPlusLC:CreatePanel("Enhance minimap", "SideMinimap")
 
 			-- Hide panel during combat
 			SideMinimap:RegisterEvent("PLAYER_REGEN_DISABLED")
@@ -3954,6 +4081,145 @@
 		end
 
 		----------------------------------------------------------------------
+		-- L41: Manage buffs
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["ManageBuffs"] == "On" then
+
+			-- Allow buff frame to be moved
+			BuffFrame:SetMovable(true)
+			BuffFrame:SetUserPlaced(true)
+			BuffFrame:SetDontSavePosition(true)
+			BuffFrame:SetClampedToScreen(true)
+
+			-- Set buff frame position at startup
+			BuffFrame:ClearAllPoints()
+			BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
+			BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+			TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+
+			-- Set buff frame position when the game resets it
+			hooksecurefunc("UIParent_UpdateTopFramePositions", function()
+				BuffFrame:SetMovable(true)
+				BuffFrame:ClearAllPoints()
+				BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
+			end)
+
+			-- Create drag frame
+			local dragframe = CreateFrame("FRAME")
+			dragframe:SetPoint("TOPRIGHT", BuffFrame, "TOPRIGHT", 0, 2.5)
+			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
+			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0 }})
+			dragframe:SetToplevel(true)
+			dragframe:Hide()
+			dragframe:SetScale(LeaPlusLC["BuffFrameScale"])
+
+			dragframe.t = dragframe:CreateTexture()
+			dragframe.t:SetAllPoints()
+			dragframe.t:SetColorTexture(0.0, 1.0, 0.0, 0.5)
+			dragframe.t:SetAlpha(0.5)
+
+			dragframe.f = dragframe:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+			dragframe.f:SetPoint('CENTER', 0, 0)
+			dragframe.f:SetText(L["Buffs"])
+
+			-- Click handler
+			dragframe:SetScript("OnMouseDown", function(self, btn)
+				-- Start dragging if left clicked
+				if btn == "LeftButton" then
+					BuffFrame:StartMoving()
+				end
+			end)
+
+			dragframe:SetScript("OnMouseUp", function()
+				-- Save frame positions
+				BuffFrame:StopMovingOrSizing()
+				LeaPlusLC["BuffFrameA"], void, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"] = BuffFrame:GetPoint()
+				BuffFrame:SetMovable(true)
+				BuffFrame:ClearAllPoints()
+				BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
+			end)
+
+			-- Create configuration panel
+			local BuffPanel = LeaPlusLC:CreatePanel("Manage buffs", "BuffPanel")
+
+			LeaPlusLC:MakeTx(BuffPanel, "Scale", 16, -72)
+			LeaPlusLC:MakeSL(BuffPanel, "BuffFrameScale", "Drag to set the buffs frame scale.", 0.5, 2, 0.05, 16, -92, "%.2f")
+
+			-- Set scale when slider is changed
+			LeaPlusCB["BuffFrameScale"]:HookScript("OnValueChanged", function()
+				BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+				TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+				dragframe:SetScale(LeaPlusLC["BuffFrameScale"])
+				-- Show formatted slider value
+				LeaPlusCB["BuffFrameScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["BuffFrameScale"] * 100)
+			end)
+
+			-- Help button tooltip
+			BuffPanel.h.tiptext = L["Drag the frame overlay to position the frame."]
+
+			-- Back button handler
+			BuffPanel.b:SetScript("OnClick", function()
+				BuffPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page6"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			BuffPanel.r:SetScript("OnClick", function()
+
+				-- Reset position and scale
+				LeaPlusLC["BuffFrameA"] = "TOPRIGHT"
+				LeaPlusLC["BuffFrameR"] = "TOPRIGHT"
+				LeaPlusLC["BuffFrameX"] = -205
+				LeaPlusLC["BuffFrameY"] = -13
+				LeaPlusLC["BuffFrameScale"] = 1
+				BuffFrame:ClearAllPoints()
+				BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
+
+				-- Refresh configuration panel
+				BuffPanel:Hide(); BuffPanel:Show()
+				dragframe:Show()
+
+			end)
+
+			-- Show configuration panel when options panel button is clicked
+			LeaPlusCB["ManageBuffsButton"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["BuffFrameA"] = "TOPRIGHT"
+					LeaPlusLC["BuffFrameR"] = "TOPRIGHT"
+					LeaPlusLC["BuffFrameX"] = -271
+					LeaPlusLC["BuffFrameY"] = 0
+					LeaPlusLC["BuffFrameScale"] = 0.80
+					BuffFrame:ClearAllPoints()
+					BuffFrame:SetPoint(LeaPlusLC["BuffFrameA"], UIParent, LeaPlusLC["BuffFrameR"], LeaPlusLC["BuffFrameX"], LeaPlusLC["BuffFrameY"])
+					BuffFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+					TemporaryEnchantFrame:SetScale(LeaPlusLC["BuffFrameScale"])
+				else
+					-- Find out if the UI has a non-standard scale
+					if GetCVar("useuiscale") == "1" then
+						LeaPlusLC["gscale"] = GetCVar("uiscale")
+					else
+						LeaPlusLC["gscale"] = 1
+					end
+
+					-- Set drag frame size according to UI scale
+					dragframe:SetWidth(280 * LeaPlusLC["gscale"])
+					dragframe:SetHeight(225 * LeaPlusLC["gscale"])
+
+					-- Show configuration panel
+					BuffPanel:Show()
+					LeaPlusLC:HideFrames()
+					dragframe:Show()
+				end
+			end)
+
+			-- Hide drag frame when configuration panel is closed
+			BuffPanel:HookScript("OnHide", function() dragframe:Hide() end)
+
+		end
+
+		----------------------------------------------------------------------
 		-- L42: Manage frames
 		----------------------------------------------------------------------
 
@@ -3970,26 +4236,8 @@
 			_G.PlayerFrame_SetLocked = function() end
 			_G.TargetFrame_SetLocked = function() end
 
-			-- Create and manage container for UIWidgetTopCenterContainerFrame
-			local topCenterHolder = CreateFrame("Frame", "LeaPlusTopCenterContainerHolder", UIParent)
-			topCenterHolder:SetPoint("TOP", UIParent, "TOP", 0, -30)
-			topCenterHolder:SetSize(10, 58)
-
-			local topCenterContainer = _G.UIWidgetTopCenterContainerFrame
-			topCenterContainer:ClearAllPoints()
-			topCenterContainer:SetPoint('CENTER', topCenterHolder)
-
-			hooksecurefunc(topCenterContainer, 'SetPoint', function(self, void, b)
-				local holder = _G.LeaPlusTopCenterContainerHolder
-				if b and (b ~= holder) then
-					self:ClearAllPoints()
-					self:SetPoint('CENTER', holder)
-					self:SetParent(holder)
-				end
-			end)
-
 			-- Create frame table (used for local traversal)
-			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragMirrorTimer1 = MirrorTimer1, DragLeaPlusTopCenterContainerHolder = LeaPlusTopCenterContainerHolder, DragBuffFrame = BuffFrame}
+			local FrameTable = {DragPlayerFrame = PlayerFrame, DragTargetFrame = TargetFrame, DragMirrorTimer1 = MirrorTimer1}
 
 			-- Create main table structure in saved variables if it doesn't exist
 			if (LeaPlusDB["Frames"]) == nil then
@@ -4027,8 +4275,6 @@
 				LeaFramesSetPos(PlayerFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	, -19, -4)
 				LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	, 250, -4)
 				LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		, -5, -96)
-				LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		, 0, -15)
-				LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	, -205, -13)
 			end
 
 			-- Create configuration panel
@@ -4068,14 +4314,6 @@
 					-- If target frame scale is changed, also change combo point frame
 					if currentframe == "TargetFrame" then
 						ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
-					end
-					-- If buff frame scale is changed, also change temporary enchant frame
-					if currentframe == "BuffFrame" then
-						TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-					end
-					-- If widget top holder scale is changed, also change real widget top center frame
-					if currentframe == "LeaPlusTopCenterContainerHolder" then
-						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 					end
 					-- Set slider formatted text
 					LeaPlusCB["FrameScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["FrameScale"] * 100)
@@ -4131,11 +4369,6 @@
 					end
 					-- Set combo frame scale to match target frame scale
 					ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
-					-- Set temporary enchant frame scale to match buff frame scale
-					TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-					-- Set real widget top center frame scale to match holder frame
-					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-					LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 					-- Set the scale slider value to the selected frame scale
 					LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"])
 					-- Refresh the panel
@@ -4188,11 +4421,7 @@
 				local dragframe = CreateFrame("Frame", nil)
 				LeaPlusLC[dragframe] = dragframe
 				dragframe:SetSize(realframe:GetSize())
-				if realframe:GetName() == "BuffFrame" then
-					dragframe:SetPoint("TOPRIGHT", realframe, "TOPRIGHT", 0, 2.5)
-				else
-					dragframe:SetPoint("TOP", realframe, "TOP", 0, 2.5)
-				end
+				dragframe:SetPoint("TOP", realframe, "TOP", 0, 2.5)
 				dragframe:SetBackdropColor(0.0, 0.5, 1.0);
 				dragframe:SetBackdrop({ 
 					edgeFile = "Interface/Tooltips/UI-Tooltip-Border",
@@ -4202,11 +4431,7 @@
 				dragframe:SetFrameStrata("HIGH")
 
 				-- Set frame clamps
-				if realframe:GetName() == "BuffFrame" then
-					realframe:SetClampedToScreen(true)
-				else
-					realframe:SetClampedToScreen(false)
-				end
+				realframe:SetClampedToScreen(false)
 
 				-- Hide the drag frame and make real frame movable
 				dragframe:Hide()
@@ -4250,8 +4475,6 @@
 				if realframe:GetName() == "PlayerFrame" 					then dragframe.f:SetText(L["Player"]) end
 				if realframe:GetName() == "TargetFrame" 					then dragframe.f:SetText(L["Target"]) end
 				if realframe:GetName() == "MirrorTimer1" 					then dragframe.f:SetText(L["Timer"]) end
-				if realframe:GetName() == "LeaPlusTopCenterContainerHolder" then dragframe.f:SetText(L["Widget"] .. "|n" .. L["Top Center"]) end
-				if realframe:GetName() == "BuffFrame" 						then dragframe.f:SetText(L["Buffs"]) end
 				return LeaPlusLC[dragframe]
 
 			end
@@ -4267,9 +4490,6 @@
 				LeaPlusLC[k]:SetScale(LeaPlusDB["Frames"][vf]["Scale"])
 			end
 			ComboFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
-			TemporaryEnchantFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-			LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
 
 			-- Load defaults first then overwrite with saved values if they exist
 			LeaPlusFramesDefaults()
@@ -4286,15 +4506,6 @@
 				end
 			end
 
-			-- Set buff frame position when the game resets it
-			hooksecurefunc("UIParent_UpdateTopFramePositions", function()
-				if LeaPlusDB["Frames"]["BuffFrame"]["Point"] and LeaPlusDB["Frames"]["BuffFrame"]["Relative"] and LeaPlusDB["Frames"]["BuffFrame"]["XOffset"] and LeaPlusDB["Frames"]["BuffFrame"]["YOffset"] then
-					BuffFrame:SetMovable(true)
-					BuffFrame:ClearAllPoints()
-					BuffFrame:SetPoint(LeaPlusDB["Frames"]["BuffFrame"]["Point"], UIParent, LeaPlusDB["Frames"]["BuffFrame"]["Relative"], LeaPlusDB["Frames"]["BuffFrame"]["XOffset"], LeaPlusDB["Frames"]["BuffFrame"]["YOffset"])
-				end
-			end)
-
 			-- Add move button
 			LeaPlusCB["MoveFramesButton"]:SetScript("OnClick", function()
 				if LeaPlusLC:PlayerInCombat() then
@@ -4305,8 +4516,6 @@
 						LeaFramesSetPos(PlayerFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	,	"-35"	, "-14")
 						LeaFramesSetPos(TargetFrame						, "TOPLEFT"	, UIParent, "TOPLEFT"	,	"190"	, "-14")
 						LeaFramesSetPos(MirrorTimer1					, "TOP"		, UIParent, "TOP"		,	"0"		, "-120")
-						LeaFramesSetPos(LeaPlusTopCenterContainerHolder	, "TOP"		, UIParent, "TOP"		,	"0"		, "-432")
-						LeaFramesSetPos(BuffFrame						, "TOPRIGHT", UIParent, "TOPRIGHT"	,	"-271"	, "0")
 						-- Player
 						LeaPlusDB["Frames"]["PlayerFrame"]["Scale"] = 1.20
 						PlayerFrame:SetScale(LeaPlusDB["Frames"]["PlayerFrame"]["Scale"])
@@ -4315,15 +4524,6 @@
 						LeaPlusDB["Frames"]["TargetFrame"]["Scale"] = 1.20
 						TargetFrame:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
 						LeaPlusLC["DragTargetFrame"]:SetScale(LeaPlusDB["Frames"]["TargetFrame"]["Scale"])
-						-- LeaPlusTopCenterContainerHolder
-						LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
-						UIWidgetTopCenterContainerFrame:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-						LeaPlusTopCenterContainerHolder:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetScale(LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"])
-						-- Buff
-						LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
-						BuffFrame:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
-						LeaPlusLC["DragBuffFrame"]:SetScale(LeaPlusDB["Frames"]["BuffFrame"]["Scale"])
 						-- Set the slider to the selected frame (if there is one)
 						if currentframe then LeaPlusCB["FrameScale"]:SetValue(LeaPlusDB["Frames"][currentframe]["Scale"]); end
 						-- Save locations
@@ -4360,13 +4560,161 @@
 							LeaPlusLC[k]:SetHeight(v:GetHeight() * LeaPlusLC["gscale"])
 						end
 
-						-- Set specific scaled sizes for stubborn frames
+						-- Set timer bar scale
 						LeaPlusLC["DragMirrorTimer1"]:SetSize(206 * LeaPlusLC["gscale"], 50 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragLeaPlusTopCenterContainerHolder"]:SetSize(160 * LeaPlusLC["gscale"], 79 * LeaPlusLC["gscale"]);
-						LeaPlusLC["DragBuffFrame"]:SetSize(280 * LeaPlusLC["gscale"], 225 * LeaPlusLC["gscale"]);
 					end
 				end
 			end)
+
+		end
+
+		----------------------------------------------------------------------
+		-- L43: Manage widget
+		----------------------------------------------------------------------
+
+		if LeaPlusLC["ManageWidget"] == "On" then
+
+			-- Create and manage container for UIWidgetTopCenterContainerFrame
+			local topCenterHolder = CreateFrame("Frame", nil, UIParent)
+			topCenterHolder:SetPoint("TOP", UIParent, "TOP", 0, -15)
+			topCenterHolder:SetSize(10, 58)
+
+			local topCenterContainer = _G.UIWidgetTopCenterContainerFrame
+			topCenterContainer:ClearAllPoints()
+			topCenterContainer:SetPoint('CENTER', topCenterHolder)
+
+			hooksecurefunc(topCenterContainer, 'SetPoint', function(self, void, b)
+				if b and (b ~= topCenterHolder) then
+					-- Reset parent if it changes from topCenterHolder
+					self:ClearAllPoints()
+					self:SetPoint('CENTER', topCenterHolder)
+					self:SetParent(topCenterHolder)
+				end
+			end)
+
+			-- Allow widget frame to be moved
+			topCenterHolder:SetMovable(true)
+			topCenterHolder:SetUserPlaced(true)
+			topCenterHolder:SetDontSavePosition(true)
+			topCenterHolder:SetClampedToScreen(false)
+
+			-- Set widget frame position at startup
+			topCenterHolder:ClearAllPoints()
+			topCenterHolder:SetPoint(LeaPlusLC["WidgetA"], UIParent, LeaPlusLC["WidgetR"], LeaPlusLC["WidgetX"], LeaPlusLC["WidgetY"])
+			topCenterHolder:SetScale(LeaPlusLC["WidgetScale"])
+			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
+
+			-- Create drag frame
+			local dragframe = CreateFrame("FRAME", nil, nil, LeaPlusLC.BackdropTemplate)
+			dragframe:SetPoint("CENTER", topCenterHolder, "CENTER", 0, 1)
+			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
+			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0}})
+			dragframe:SetToplevel(true)
+			dragframe:Hide()
+			dragframe:SetScale(LeaPlusLC["WidgetScale"])
+
+			dragframe.t = dragframe:CreateTexture()
+			dragframe.t:SetAllPoints()
+			dragframe.t:SetColorTexture(0.0, 1.0, 0.0, 0.5)
+			dragframe.t:SetAlpha(0.5)
+
+			dragframe.f = dragframe:CreateFontString(nil, 'ARTWORK', 'GameFontNormalLarge')
+			dragframe.f:SetPoint('CENTER', 0, 0)
+			dragframe.f:SetText(L["Widget"])
+
+			-- Click handler
+			dragframe:SetScript("OnMouseDown", function(self, btn)
+				-- Start dragging if left clicked
+				if btn == "LeftButton" then
+					topCenterHolder:StartMoving()
+				end
+			end)
+
+			dragframe:SetScript("OnMouseUp", function()
+				-- Save frame position
+				topCenterHolder:StopMovingOrSizing()
+				LeaPlusLC["WidgetA"], void, LeaPlusLC["WidgetR"], LeaPlusLC["WidgetX"], LeaPlusLC["WidgetY"] = topCenterHolder:GetPoint()
+				topCenterHolder:SetMovable(true)
+				topCenterHolder:ClearAllPoints()
+				topCenterHolder:SetPoint(LeaPlusLC["WidgetA"], UIParent, LeaPlusLC["WidgetR"], LeaPlusLC["WidgetX"], LeaPlusLC["WidgetY"])
+			end)
+
+			-- Create configuration panel
+			local WidgetPanel = LeaPlusLC:CreatePanel("Manage widget", "WidgetPanel")
+
+			LeaPlusLC:MakeTx(WidgetPanel, "Scale", 16, -72)
+			LeaPlusLC:MakeSL(WidgetPanel, "WidgetScale", "Drag to set the widget scale.", 0.5, 2, 0.05, 16, -92, "%.2f")
+
+			-- Set scale when slider is changed
+			LeaPlusCB["WidgetScale"]:HookScript("OnValueChanged", function()
+				topCenterHolder:SetScale(LeaPlusLC["WidgetScale"])
+				UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
+				dragframe:SetScale(LeaPlusLC["WidgetScale"])
+				-- Show formatted slider value
+				LeaPlusCB["WidgetScale"].f:SetFormattedText("%.0f%%", LeaPlusLC["WidgetScale"] * 100)
+			end)
+
+			-- Help button tooltip
+			WidgetPanel.h.tiptext = L["Drag the frame overlay to position the frame."]
+
+			-- Back button handler
+			WidgetPanel.b:SetScript("OnClick", function()
+				WidgetPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page6"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			WidgetPanel.r:SetScript("OnClick", function()
+
+				-- Reset position and scale
+				LeaPlusLC["WidgetA"] = "TOP"
+				LeaPlusLC["WidgetR"] = "TOP"
+				LeaPlusLC["WidgetX"] = 0
+				LeaPlusLC["WidgetY"] = -15
+				LeaPlusLC["WidgetScale"] = 1
+				topCenterHolder:ClearAllPoints()
+				topCenterHolder:SetPoint(LeaPlusLC["WidgetA"], UIParent, LeaPlusLC["WidgetR"], LeaPlusLC["WidgetX"], LeaPlusLC["WidgetY"])
+
+				-- Refresh configuration panel
+				WidgetPanel:Hide(); WidgetPanel:Show()
+				dragframe:Show()
+
+			end)
+
+			-- Show configuration panel when options panel button is clicked
+			LeaPlusCB["ManageWidgetButton"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["WidgetA"] = "CENTER"
+					LeaPlusLC["WidgetR"] = "CENTER"
+					LeaPlusLC["WidgetX"] = 0
+					LeaPlusLC["WidgetY"] = -160
+					LeaPlusLC["WidgetScale"] = 1.25
+					topCenterHolder:ClearAllPoints()
+					topCenterHolder:SetPoint(LeaPlusLC["WidgetA"], UIParent, LeaPlusLC["WidgetR"], LeaPlusLC["WidgetX"], LeaPlusLC["WidgetY"])
+					topCenterHolder:SetScale(LeaPlusLC["WidgetScale"])
+					UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
+				else
+					-- Find out if the UI has a non-standard scale
+					if GetCVar("useuiscale") == "1" then
+						LeaPlusLC["gscale"] = GetCVar("uiscale")
+					else
+						LeaPlusLC["gscale"] = 1
+					end
+
+					-- Set drag frame size according to UI scale
+					dragframe:SetWidth(160 * LeaPlusLC["gscale"])
+					dragframe:SetHeight(79 * LeaPlusLC["gscale"])
+
+					-- Show configuration panel
+					WidgetPanel:Show()
+					LeaPlusLC:HideFrames()
+					dragframe:Show()
+				end
+			end)
+
+			-- Hide drag frame when configuration panel is closed
+			WidgetPanel:HookScript("OnHide", function() dragframe:Hide() end)
 
 		end
 
@@ -4972,7 +5320,7 @@
 		end
 
 		----------------------------------------------------------------------
-		-- Manage tooltip
+		-- Enhance tooltip
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["TipModEnable"] == "On" then
@@ -5050,7 +5398,7 @@
 			---------------------------------------------------------------------------------------------------------
 
 			-- Create tooltip customisation side panel
-			local SideTip = LeaPlusLC:CreatePanel("Manage tooltip", "SideTip")
+			local SideTip = LeaPlusLC:CreatePanel("Enhance tooltip", "SideTip")
 
 			-- Add controls
 			LeaPlusLC:MakeTx(SideTip, "Settings", 16, -72)
@@ -6833,7 +7181,7 @@
 		local function SetInvKey()
 			local keytext = KeyBox:GetText()
 			if keytext and keytext ~= "" then
-				LeaPlusLC["InvKey"] = KeyBox:GetText()
+				LeaPlusLC["InvKey"] = strtrim(KeyBox:GetText())
 			else
 				LeaPlusLC["InvKey"] = "inv"
 			end
@@ -6846,6 +7194,11 @@
 
 		-- Save the keyword when it changes
 		KeyBox:SetScript("OnTextChanged", SetInvKey)
+
+		-- Refresh editbox with trimmed keyword when edit focus is lost (removes additional spaces)
+		KeyBox:SetScript("OnEditFocusLost", function()
+			KeyBox:SetText(LeaPlusLC["InvKey"])
+		end)
 
 		-- Help button hidden
 		InvPanel.h:Hide()
@@ -6919,7 +7272,7 @@
 		----------------------------------------------------------------------
 
 		if event == "CHAT_MSG_WHISPER" or event == "CHAT_MSG_BN_WHISPER" then
-			if (not UnitExists("party1") or UnitIsGroupLeader("player") or UnitIsGroupAssistant("player")) and strlower(arg1) == strlower(LeaPlusLC["InvKey"]) then
+			if (not UnitExists("party1") or UnitIsGroupLeader("player") or UnitIsGroupAssistant("player")) and strlower(strtrim(arg1)) == strlower(LeaPlusLC["InvKey"]) then
 				if event == "CHAT_MSG_WHISPER" then
 					if LeaPlusLC:FriendCheck(strsplit("-", arg2, 2)) or LeaPlusLC["InviteFriendsOnly"] == "Off" then
 						InviteUnit(arg2)
@@ -7105,6 +7458,9 @@
 
 				-- Automation
 				LeaPlusLC:LoadVarChk("AutomateQuests", "Off")				-- Automate quests
+				LeaPlusLC:LoadVarChk("AutoQuestShift", "Off")				-- Automate quests requires shift
+				LeaPlusLC:LoadVarChk("AutoQuestAvailable", "On")			-- Accept available quests
+				LeaPlusLC:LoadVarChk("AutoQuestCompleted", "On")			-- Turn-in completed quests
 				LeaPlusLC:LoadVarChk("AutomateGossip", "Off")				-- Automate gossip
 				LeaPlusLC:LoadVarChk("AutoAcceptSummon", "Off")				-- Accept summon
 				LeaPlusLC:LoadVarChk("AutoAcceptRes", "Off")				-- Accept resurrection
@@ -7153,12 +7509,12 @@
 				LeaPlusLC:LoadVarNum("LeaPlusBookFontSize", 15, 10, 36)		-- Book text slider
 
 				-- Interface
-				LeaPlusLC:LoadVarChk("MinimapMod", "Off")					-- Customise minimap
+				LeaPlusLC:LoadVarChk("MinimapMod", "Off")					-- Enhance minimap
 				LeaPlusLC:LoadVarChk("HideZoneTextBar", "Off")				-- Hide zone text bar
 				LeaPlusLC:LoadVarChk("HideMiniZoomBtns", "Off")				-- Hide zoom buttons
 				LeaPlusLC:LoadVarNum("MinimapScale", 1, 1, 2)				-- Minimap scale slider
 
-				LeaPlusLC:LoadVarChk("TipModEnable", "Off")					-- Manage tooltip
+				LeaPlusLC:LoadVarChk("TipModEnable", "Off")					-- Enhance tooltip
 				LeaPlusLC:LoadVarChk("TipShowGuild", "On")					-- Show guild
 				LeaPlusLC:LoadVarChk("TipShowTarget", "On")					-- Show target
 				LeaPlusLC:LoadVarChk("TipBackSimple", "Off")				-- Color backdrops
@@ -7185,21 +7541,35 @@
 				LeaPlusLC:LoadVarChk("NoCooldownDuration", "On")			-- Hide cooldown duration
 				LeaPlusLC:LoadVarChk("DurabilityStatus", "Off")				-- Show durability status
 				LeaPlusLC:LoadVarChk("ShowVanityControls", "Off")			-- Show vanity controls
+				LeaPlusLC:LoadVarChk("VanityAltLayout", "Off")				-- Vanity alternative layout
 				LeaPlusLC:LoadVarChk("ShowBagSearchBox", "Off")				-- Show bag search box
 				LeaPlusLC:LoadVarChk("ShowFreeBagSlots", "Off")				-- Show free bag slots
-				LeaPlusLC:LoadVarChk("VanityAltLayout", "Off")				-- Vanity alternative layout
+				LeaPlusLC:LoadVarChk("ShowRaidToggle", "Off")				-- Show raid button
+				LeaPlusLC:LoadVarChk("ShowPlayerChain", "Off")				-- Show player chain
+				LeaPlusLC:LoadVarNum("PlayerChainMenu", 2, 1, 3)			-- Player chain dropdown value
 				LeaPlusLC:LoadVarChk("ShowWowheadLinks", "Off")				-- Show Wowhead links
 
 				-- Frames
 				LeaPlusLC:LoadVarChk("FrmEnabled", "Off")					-- Manage frames
+
+				LeaPlusLC:LoadVarChk("ManageBuffs", "Off")					-- Manage buffs
+				LeaPlusLC:LoadVarAnc("BuffFrameA", "TOPRIGHT")				-- Manage buffs anchor
+				LeaPlusLC:LoadVarAnc("BuffFrameR", "TOPRIGHT")				-- Manage buffs relative
+				LeaPlusLC:LoadVarNum("BuffFrameX", -205, -5000, 5000)		-- Manage buffs position X
+				LeaPlusLC:LoadVarNum("BuffFrameY", -13, -5000, 5000)		-- Manage buffs position Y
+				LeaPlusLC:LoadVarNum("BuffFrameScale", 1, 0.5, 2)			-- Manage buffs scale
+
+				LeaPlusLC:LoadVarChk("ManageWidget", "Off")					-- Manage widget
+				LeaPlusLC:LoadVarAnc("WidgetA", "TOP")						-- Manage widget anchor
+				LeaPlusLC:LoadVarAnc("WidgetR", "TOP")						-- Manage widget relative
+				LeaPlusLC:LoadVarNum("WidgetX", 0, -5000, 5000)				-- Manage widget position X
+				LeaPlusLC:LoadVarNum("WidgetY", -15, -5000, 5000)			-- Manage widget position Y
+				LeaPlusLC:LoadVarNum("WidgetScale", 1, 0.5, 2)				-- Manage widget scale
+
 				LeaPlusLC:LoadVarChk("ClassColFrames", "Off")				-- Class colored frames
 				LeaPlusLC:LoadVarChk("ClassColPlayer", "On")				-- Class colored player frame
 				LeaPlusLC:LoadVarChk("ClassColTarget", "On")				-- Class colored target frame
 				LeaPlusLC:LoadVarChk("ClassIconPortraits", "Off")			-- Class icon portraits
-				LeaPlusLC:LoadVarChk("ShowPlayerChain", "Off")				-- Show player chain
-				LeaPlusLC:LoadVarNum("PlayerChainMenu", 2, 1, 3)			-- Player chain dropdown value
-				LeaPlusLC:LoadVarChk("ShowRaidToggle", "Off")				-- Show raid toggle button
-				LeaPlusLC:LoadVarChk("CombatPlates", "Off")					-- Combat plates
 
 				LeaPlusLC:LoadVarChk("NoGryphons", "Off")					-- Hide gryphons
 				LeaPlusLC:LoadVarChk("NoClassBar", "Off")					-- Hide stance bar
@@ -7228,6 +7598,7 @@
 				LeaPlusLC:LoadVarChk("FasterMovieSkip", "Off")				-- Faster movie skip
 				LeaPlusLC:LoadVarChk("StandAndDismount", "Off")				-- Stand and dismount
 				LeaPlusLC:LoadVarChk("ShowVendorPrice", "Off")				-- Show vendor price
+				LeaPlusLC:LoadVarChk("CombatPlates", "Off")					-- Combat plates
 
 				-- Settings
 				LeaPlusLC:LoadVarChk("ShowMinimapIcon", "On")				-- Show minimap button
@@ -7275,6 +7646,9 @@
 
 			-- Automation
 			LeaPlusDB["AutomateQuests"]			= LeaPlusLC["AutomateQuests"]
+			LeaPlusDB["AutoQuestShift"]			= LeaPlusLC["AutoQuestShift"]
+			LeaPlusDB["AutoQuestAvailable"]		= LeaPlusLC["AutoQuestAvailable"]
+			LeaPlusDB["AutoQuestCompleted"]		= LeaPlusLC["AutoQuestCompleted"]
 			LeaPlusDB["AutomateGossip"]			= LeaPlusLC["AutomateGossip"]
 			LeaPlusDB["AutoAcceptSummon"] 		= LeaPlusLC["AutoAcceptSummon"]
 			LeaPlusDB["AutoAcceptRes"] 			= LeaPlusLC["AutoAcceptRes"]
@@ -7355,21 +7729,35 @@
 			LeaPlusDB["NoCooldownDuration"]		= LeaPlusLC["NoCooldownDuration"]
 			LeaPlusDB["DurabilityStatus"]		= LeaPlusLC["DurabilityStatus"]
 			LeaPlusDB["ShowVanityControls"]		= LeaPlusLC["ShowVanityControls"]
+			LeaPlusDB["VanityAltLayout"]		= LeaPlusLC["VanityAltLayout"]
 			LeaPlusDB["ShowBagSearchBox"]		= LeaPlusLC["ShowBagSearchBox"]
 			LeaPlusDB["ShowFreeBagSlots"]		= LeaPlusLC["ShowFreeBagSlots"]
-			LeaPlusDB["VanityAltLayout"]		= LeaPlusLC["VanityAltLayout"]
+			LeaPlusDB["ShowRaidToggle"]			= LeaPlusLC["ShowRaidToggle"]
+			LeaPlusDB["ShowPlayerChain"]		= LeaPlusLC["ShowPlayerChain"]
+			LeaPlusDB["PlayerChainMenu"]		= LeaPlusLC["PlayerChainMenu"]
 			LeaPlusDB["ShowWowheadLinks"]		= LeaPlusLC["ShowWowheadLinks"]
 
 			-- Frames
 			LeaPlusDB["FrmEnabled"]				= LeaPlusLC["FrmEnabled"]
+
+			LeaPlusDB["ManageBuffs"]			= LeaPlusLC["ManageBuffs"]
+			LeaPlusDB["BuffFrameA"]				= LeaPlusLC["BuffFrameA"]
+			LeaPlusDB["BuffFrameR"]				= LeaPlusLC["BuffFrameR"]
+			LeaPlusDB["BuffFrameX"]				= LeaPlusLC["BuffFrameX"]
+			LeaPlusDB["BuffFrameY"]				= LeaPlusLC["BuffFrameY"]
+			LeaPlusDB["BuffFrameScale"]			= LeaPlusLC["BuffFrameScale"]
+
+			LeaPlusDB["ManageWidget"]			= LeaPlusLC["ManageWidget"]
+			LeaPlusDB["WidgetA"]				= LeaPlusLC["WidgetA"]
+			LeaPlusDB["WidgetR"]				= LeaPlusLC["WidgetR"]
+			LeaPlusDB["WidgetX"]				= LeaPlusLC["WidgetX"]
+			LeaPlusDB["WidgetY"]				= LeaPlusLC["WidgetY"]
+			LeaPlusDB["WidgetScale"]			= LeaPlusLC["WidgetScale"]
+
 			LeaPlusDB["ClassColFrames"]			= LeaPlusLC["ClassColFrames"]
 			LeaPlusDB["ClassColPlayer"]			= LeaPlusLC["ClassColPlayer"]
 			LeaPlusDB["ClassColTarget"]			= LeaPlusLC["ClassColTarget"]
 			LeaPlusDB["ClassIconPortraits"]		= LeaPlusLC["ClassIconPortraits"]
-			LeaPlusDB["ShowPlayerChain"]		= LeaPlusLC["ShowPlayerChain"]
-			LeaPlusDB["PlayerChainMenu"]		= LeaPlusLC["PlayerChainMenu"]
-			LeaPlusDB["ShowRaidToggle"]			= LeaPlusLC["ShowRaidToggle"]
-			LeaPlusDB["CombatPlates"]			= LeaPlusLC["CombatPlates"]
 
 			LeaPlusDB["NoGryphons"]				= LeaPlusLC["NoGryphons"]
 			LeaPlusDB["NoClassBar"]				= LeaPlusLC["NoClassBar"]
@@ -7398,6 +7786,7 @@
 			LeaPlusDB["FasterMovieSkip"] 		= LeaPlusLC["FasterMovieSkip"]
 			LeaPlusDB["StandAndDismount"] 		= LeaPlusLC["StandAndDismount"]
 			LeaPlusDB["ShowVendorPrice"] 		= LeaPlusLC["ShowVendorPrice"]
+			LeaPlusDB["CombatPlates"]			= LeaPlusLC["CombatPlates"]
 
 			-- Settings
 			LeaPlusDB["ShowMinimapIcon"] 		= LeaPlusLC["ShowMinimapIcon"]
@@ -8129,11 +8518,14 @@
 					if tonumber(arg1) and tonumber(arg1) < 999999999 then
 						local questCompleted = IsQuestFlaggedCompleted(arg1)
 						local questTitle = C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
-						if questCompleted then
-							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
-						else
-							LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
-						end
+						C_Timer.After(0.5, function()
+							local questTitle = C_QuestLog.GetQuestInfo(arg1) or L["Unknown"]
+							if questCompleted then
+								LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Completed."])
+							else
+								LeaPlusLC:Print(questTitle .. " (" .. arg1 .. "):" .. "|cffffffff " .. L["Not completed."])
+							end
+						end)
 					else
 						LeaPlusLC:Print("Invalid quest ID.")
 					end
@@ -8202,6 +8594,11 @@
 					LeaPlusLC["DbF"]:SetScript("OnEvent", nil)
 					LeaPlusLC:Print("Tracing stopped.")
 				end
+				return
+			elseif str == "game" then
+				-- Show game build
+				local version, build, gdate, tocversion = GetBuildInfo()
+				LeaPlusLC:Print(L["World of Warcraft"] .. ": |cffffffff" .. version .. "." .. build .. " (" .. gdate .. ") (" .. tocversion .. ")")
 				return
 			elseif str == "config" then
 				-- Show maximum camera distance
@@ -8622,6 +9019,9 @@
 				LeaPlusLC:PlayerLogout(true)					-- Reset permanent settings
 				-- Automation
 				LeaPlusDB["AutomateQuests"] = "On"				-- Automate quests
+				LeaPlusDB["AutoQuestShift"] = "Off"				-- Automate quests requires shift
+				LeaPlusDB["AutoQuestAvailable"] = "On"			-- Accept available quests
+				LeaPlusDB["AutoQuestCompleted"] = "On"			-- Turn-in completed quests
 				LeaPlusDB["AutomateGossip"] = "On"				-- Automate gossip
 				LeaPlusDB["AutoAcceptSummon"] = "On"			-- Accept summon
 				LeaPlusDB["AutoAcceptRes"] = "On"				-- Accept resurrection
@@ -8662,10 +9062,10 @@
 				LeaPlusDB["LeaPlusBookFontSize"] = 22			-- Book font size
 
 				-- Interface
-				LeaPlusDB["MinimapMod"] = "On"					-- Customise minimap
+				LeaPlusDB["MinimapMod"] = "On"					-- Enhance minimap
 				LeaPlusDB["HideZoneTextBar"] = "On"				-- Hide zone text bar
 				LeaPlusDB["MinimapScale"] = 1.30				-- Minimap scale slider
-				LeaPlusDB["TipModEnable"] = "On"				-- Manage tooltip
+				LeaPlusDB["TipModEnable"] = "On"				-- Enhance tooltip
 				LeaPlusDB["TipBackSimple"] = "On"				-- Color backdrops
 				LeaPlusDB["LeaPlusTipSize"] = 1.25				-- Tooltip scale slider
 				LeaPlusDB["TooltipAnchorMenu"] = 2				-- Tooltip anchor
@@ -8682,6 +9082,9 @@
 				LeaPlusDB["ShowVanityControls"] = "On"			-- Show vanity controls
 				LeaPlusDB["ShowBagSearchBox"] = "On"			-- Show bag search box
 				LeaPlusDB["ShowFreeBagSlots"] = "On"			-- Show free bag slots
+				LeaPlusDB["ShowRaidToggle"] = "On"				-- Show raid button
+				LeaPlusDB["ShowPlayerChain"] = "On"				-- Show player chain
+				LeaPlusDB["PlayerChainMenu"] = 3				-- Player chain style
 				LeaPlusDB["ShowWowheadLinks"] = "On"			-- Show Wowhead links
 
 				-- Interface: Manage frames
@@ -8708,26 +9111,22 @@
 				LeaPlusDB["Frames"]["MirrorTimer1"]["XOffset"] = 0
 				LeaPlusDB["Frames"]["MirrorTimer1"]["YOffset"] = -120
 
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"] = {}
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Point"] = "TOP"
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Relative"] = "TOP"
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["XOffset"] = 0
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["YOffset"] = -432
-				LeaPlusDB["Frames"]["LeaPlusTopCenterContainerHolder"]["Scale"] = 1.25
+				LeaPlusDB["ManageBuffs"] = "On"					-- Manage buffs
+				LeaPlusDB["BuffFrameA"] = "TOPRIGHT"			-- Manage buffs anchor
+				LeaPlusDB["BuffFrameR"] = "TOPRIGHT"			-- Manage buffs relative
+				LeaPlusDB["BuffFrameX"] = -271					-- Manage buffs position X
+				LeaPlusDB["BuffFrameY"] = 0						-- Manage buffs position Y
+				LeaPlusDB["BuffFrameScale"] = 0.8				-- Manage buffs scale
 
-				LeaPlusDB["Frames"]["BuffFrame"] = {}
-				LeaPlusDB["Frames"]["BuffFrame"]["Point"] = "TOPRIGHT"
-				LeaPlusDB["Frames"]["BuffFrame"]["Relative"] = "TOPRIGHT"
-				LeaPlusDB["Frames"]["BuffFrame"]["XOffset"] = -271
-				LeaPlusDB["Frames"]["BuffFrame"]["YOffset"] = 0
-				LeaPlusDB["Frames"]["BuffFrame"]["Scale"] = 0.80
+				LeaPlusDB["ManageWidget"] = "On"				-- Manage widget
+				LeaPlusDB["WidgetA"] = "TOP"					-- Manage widget anchor
+				LeaPlusDB["WidgetR"] = "TOP"					-- Manage widget relative
+				LeaPlusDB["WidgetX"] = 0						-- Manage widget position X
+				LeaPlusDB["WidgetY"] = -432						-- Manage widget position Y
+				LeaPlusDB["WidgetScale"] = 1.25					-- Manage widget scale
 
 				LeaPlusDB["ClassColFrames"] = "On"				-- Class colored frames
 				LeaPlusDB["ClassIconPortraits"] = "On"			-- Class icon portraits
-				LeaPlusDB["ShowPlayerChain"] = "On"				-- Show player chain
-				LeaPlusDB["PlayerChainMenu"] = 3				-- Player chain style
-				LeaPlusDB["ShowRaidToggle"] = "On"				-- Show raid toggle button
-				LeaPlusDB["CombatPlates"] = "On"				-- Combat plates
 
 				LeaPlusDB["NoGryphons"] = "On"					-- Hide gryphons
 				LeaPlusDB["NoClassBar"] = "On"					-- Hide stance bar
@@ -8748,6 +9147,7 @@
 				LeaPlusDB["FasterMovieSkip"] = "On"				-- Faster movie skip
 				LeaPlusDB["StandAndDismount"] = "On"			-- Stand and dismount
 				LeaPlusDB["ShowVendorPrice"] = "On"				-- Show vendor price
+				LeaPlusDB["CombatPlates"] = "On"				-- Combat plates
 
 				-- Settings
 				LeaPlusDB["EnableHotkey"] = "On"				-- Enable hotkey
@@ -8950,6 +9350,8 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoSellJunk"				,	"Sell junk automatically"		,	340, -92, 	false,	"If checked, all grey items in your bags will be sold automatically when you visit a merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "AutoRepairGear"			, 	"Repair automatically"			,	340, -112, 	false,	"If checked, your gear will be repaired automatically when you visit a suitable merchant.|n|nYou can hold the shift key down when you talk to a merchant to override this setting.")
 
+ 	LeaPlusLC:CfgBtn("AutomateQuestsBtn", LeaPlusCB["AutomateQuests"])
+
 ----------------------------------------------------------------------
 -- 	LC2: Social
 ----------------------------------------------------------------------
@@ -9016,8 +9418,8 @@
 	pg = "Page5";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Enhancements"				, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MinimapMod"				,	"Customise minimap"				, 	146, -92, 	true,	"If checked, you will be able to customise the minimap.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "TipModEnable"				,	"Manage tooltip"				,	146, -112, 	true,	"If checked, the tooltip will be color coded and you will be able to modify the tooltip layout and scale.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MinimapMod"				,	"Enhance minimap"				, 	146, -92, 	true,	"If checked, you will be able to customise the minimap.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "TipModEnable"				,	"Enhance tooltip"				,	146, -112, 	true,	"If checked, the tooltip will be color coded and you will be able to modify the tooltip layout and scale.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnhanceDressup"			, 	"Enhance dressup"				,	146, -132, 	true,	"If checked, nude and tabard toggle buttons will be added to the dressup frame and model rotation controls will be removed.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnhanceQuestLog"			, 	"Enhance quest log"				,	146, -152, 	true,	"If checked, the quest log frame will be larger and feature a world map button and quest levels.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EnhanceProfessions"		, 	"Enhance professions"			,	146, -172, 	true,	"If checked, the professions frame will be larger.")
@@ -9031,11 +9433,14 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVanityControls"		, 	"Show vanity controls"			, 	340, -172, 	true,	"If checked, helm and cloak toggle checkboxes will be shown in the character sheet.|n|nYou can hold shift and right-click the checkboxes to switch layouts.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowBagSearchBox"			, 	"Show bag search box"			, 	340, -192, 	true,	"If checked, a bag search box will be shown in the backpack frame and the bank frame.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowFreeBagSlots"			, 	"Show free bag slots"			, 	340, -212, 	true,	"If checked, the number of free bag slots will be shown in the backpack button icon and tooltip.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowWowheadLinks"			, 	"Show Wowhead links"			, 	340, -232, 	true,	"If checked, Wowhead links will be shown above the quest log frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Show raid button"				,	340, -232, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	340, -252, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowWowheadLinks"			, 	"Show Wowhead links"			, 	340, -272, 	true,	"If checked, Wowhead links will be shown above the quest log frame.")
 
 	LeaPlusLC:CfgBtn("ModMinimapBtn", LeaPlusCB["MinimapMod"])
 	LeaPlusLC:CfgBtn("MoveTooltipButton", LeaPlusCB["TipModEnable"])
 	LeaPlusLC:CfgBtn("CooldownsButton", LeaPlusCB["ShowCooldowns"])
+	LeaPlusLC:CfgBtn("ModPlayerChain", LeaPlusCB["ShowPlayerChain"])
 
 ----------------------------------------------------------------------
 -- 	LC6: Frames
@@ -9044,20 +9449,20 @@
 	pg = "Page6";
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Features"					, 	146, -72);
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the following frames:|n|n- Player frame|n- Target frame|n- Buffs frame|n- Widget top center frame|n- Timer bar")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -112, 	true,	"If checked, class coloring will be used in the player frame and target frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassIconPortraits"		, 	"Class icon portraits"			,	146, -132, 	true,	"If checked, class icons will be shown in the portrait frames.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowPlayerChain"			, 	"Show player chain"				,	146, -152, 	true,	"If checked, you will be able to show a rare, elite or rare elite chain around the player frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowRaidToggle"			, 	"Raid frame toggle"				,	146, -172, 	true,	"If checked, the button to toggle the raid container frame will be shown just above the raid management frame (left side of the screen) instead of in the raid management frame itself.|n|nThis allows you to toggle the raid container frame without needing to open the raid management frame.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	146, -192, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FrmEnabled"				,	"Manage frames"					, 	146, -92, 	true,	"If checked, you will be able to change the position and scale of the player frame, target frame and timer bar.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManageBuffs"				,	"Manage buffs"					, 	146, -112, 	true,	"If checked, you will be able to change the position and scale of the buffs frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ManageWidget"				,	"Manage widget"					, 	146, -132, 	true,	"If checked, you will be able to change the position and scale of the widget frame.|n|nThe widget frame is commonly used for showing PvP scores and tracking objectives.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassColFrames"			, 	"Class colored frames"			,	146, -152, 	true,	"If checked, class coloring will be used in the player frame and target frame.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ClassIconPortraits"		, 	"Class icon portraits"			,	146, -172, 	true,	"If checked, class icons will be shown in the portrait frames.")
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Visibility"				, 	340, -72);
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoGryphons"				,	"Hide gryphons"					, 	340, -92, 	true,	"If checked, the main bar gryphons will not be shown.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoClassBar"				,	"Hide stance bar"				, 	340, -112, 	true,	"If checked, the stance bar will not be shown.")
 
 	LeaPlusLC:CfgBtn("MoveFramesButton", LeaPlusCB["FrmEnabled"])
+	LeaPlusLC:CfgBtn("ManageBuffsButton", LeaPlusCB["ManageBuffs"])
+	LeaPlusLC:CfgBtn("ManageWidgetButton", LeaPlusCB["ManageWidget"])
 	LeaPlusLC:CfgBtn("ClassColFramesBtn", LeaPlusCB["ClassColFrames"])
-	LeaPlusLC:CfgBtn("ModPlayerChain", LeaPlusCB["ShowPlayerChain"])
 
 ----------------------------------------------------------------------
 -- 	LC7: System
@@ -9081,6 +9486,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -172, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "StandAndDismount"			, 	"Stand and dismount"			,	340, -192, 	true,	"If checked, your character will automatically stand or dismount when an action is prevented because you are either seated or mounted.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVendorPrice"			, 	"Show vendor price"				,	340, -212, 	true,	"If checked, the vendor price will be shown in item tooltips.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	340, -232, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
 
 	LeaPlusLC:CfgBtn("SetWeatherDensityBtn", LeaPlusCB["SetWeatherDensity"])
 	LeaPlusLC:CfgBtn("ModViewportBtn", LeaPlusCB["ViewPortEnable"])

@@ -69,11 +69,12 @@ local FRAME_WIDTH,FRAME_HEIGHT,FRAME_WIDTH_MINUS,FRAME_HEIGHT_MINUS,
       GUILD_TEXT_PLAYERS,TITLE_TEXT_PLAYERS,HEALTH_TEXT_FRIEND_MAX,
       HEALTH_TEXT_FRIEND_DMG,HEALTH_TEXT_HOSTILE_MAX,HEALTH_TEXT_HOSTILE_DMG,
       HIDE_NAMES,GLOBAL_SCALE,FRAME_VERTICAL_OFFSET,
-      MOUSEOVER_HIGHLIGHT,HIGHLIGHT_OPACITY
+      MOUSEOVER_HIGHLIGHT,HIGHLIGHT_OPACITY,LEVEL_TEXT,LEVEL_NAMEONLY,
+      HEALTH_TEXT_PERCENT_SYMBOL
 
 local FADE_UNTRACKED,FADE_AVOID_NAMEONLY,FADE_AVOID_MOUSEOVER,
       FADE_AVOID_TRACKED,FADE_AVOID_COMBAT,FADE_AVOID_CASTING
-local TARGET_ARROWS,TARGET_ARROWS_SIZE,TARGET_ARROWS_INSET
+local TARGET_ARROWS,TARGET_ARROWS_SIZE,TARGET_ARROWS_INSET,TARGET_ARROWS_TEXTURE
 local TARGET_GLOW,TARGET_GLOW_COLOUR,FRAME_GLOW_THREAT,FRAME_GLOW_SIZE,
       GLOW_AS_SHADOW,MOUSEOVER_GLOW,MOUSEOVER_GLOW_COLOUR
 local THREAT_BRACKETS,THREAT_BRACKETS_SIZE
@@ -232,6 +233,8 @@ do
         TARGET_ARROWS = self.profile.target_arrows
         TARGET_ARROWS_SIZE = Scale(self.profile.target_arrows_size)
         TARGET_ARROWS_INSET = Scale(self.profile.target_arrows_inset)
+        TARGET_ARROWS_TEXTURE = self.profile.target_arrows_texture
+
         TARGET_GLOW = self.profile.target_glow
         TARGET_GLOW_COLOUR = self.profile.target_glow_colour
         MOUSEOVER_GLOW = self.profile.mouseover_glow
@@ -251,6 +254,9 @@ do
         FRAME_HEIGHT_PERSONAL = Scale(self.profile.frame_height_personal)
         POWER_BAR_HEIGHT = Scale(self.profile.powerbar_height)
         FRAME_VERTICAL_OFFSET = self.profile.frame_vertical_offset
+
+        LEVEL_TEXT = self.profile.level_text
+        LEVEL_NAMEONLY = self.profile.level_nameonly
 
         FRAME_GLOW_SIZE = Scale(self.profile.frame_glow_size)
         FRAME_GLOW_THREAT = self.profile.frame_glow_threat
@@ -278,10 +284,12 @@ do
         SHOW_NAME_TEXT = self.profile.name_text
         SHOW_ARENA_ID = self.profile.show_arena_id
         HIDE_NAMES = self.profile.hide_names
+
         HEALTH_TEXT_FRIEND_MAX = self.profile.health_text_friend_max
         HEALTH_TEXT_FRIEND_DMG = self.profile.health_text_friend_dmg
         HEALTH_TEXT_HOSTILE_MAX = self.profile.health_text_hostile_max
         HEALTH_TEXT_HOSTILE_DMG = self.profile.health_text_hostile_dmg
+        HEALTH_TEXT_PERCENT_SYMBOL = self.profile.health_text_percent_symbol and '%' or ''
 
         GUILD_TEXT_NPCS = self.profile.guild_text_npcs
         GUILD_TEXT_PLAYERS = self.profile.guild_text_players
@@ -301,9 +309,7 @@ end
 function core:configChangedTargetArrows()
     if not TARGET_ARROWS then return end
     for _,f in addon:Frames() do
-        if not f.TargetArrows then
-            self:CreateTargetArrows(f)
-        end
+        self:CreateTargetArrows(f)
     end
 end
 function core:configChangedFrameSize()
@@ -659,17 +665,15 @@ do
             return
         else
             -- NPCs; reaction colour
-            if not f.state.attackable and f.state.reaction >= 4 then
+            if f.state.reaction > 4 then
                 -- friendly
                 f.NameText:SetTextColor(unpack(NAME_COLOUR_NPC_FRIENDLY))
+            elseif f.state.reaction == 4 then
+                -- neutral
+                f.NameText:SetTextColor(unpack(NAME_COLOUR_NPC_NEUTRAL))
             else
-                if f.state.reaction == 4 then
-                    -- neutral, attackable
-                    f.NameText:SetTextColor(unpack(NAME_COLOUR_NPC_NEUTRAL))
-                else
-                    -- hostile
-                    f.NameText:SetTextColor(unpack(NAME_COLOUR_NPC_HOSTILE))
-                end
+                -- hostile
+                f.NameText:SetTextColor(unpack(NAME_COLOUR_NPC_HOSTILE))
             end
         end
 
@@ -689,7 +693,7 @@ do
             SetNameTextColour(f)
 
             -- update name text colour to with health percent
-            core:NameOnlySetNameTextToHealth(f)
+            core:NameOnlyUpdateNameText(f)
         elseif SHOW_NAME_TEXT or SHOW_ARENA_ID then
             if SHOW_NAME_TEXT and TITLE_TEXT_PLAYERS then
                 -- reset name to title-less
@@ -728,10 +732,10 @@ end
 -- level text ##################################################################
 do
     local function UpdateLevelText(f)
-        if f.IN_NAMEONLY then return end
-        if not core.profile.level_text or f.state.minus or f.state.personal then
-            f.LevelText:Hide()
-        else
+        if LEVEL_TEXT and not f.IN_NAMEONLY and
+           not f.state.minus and
+           not f.state.personal
+        then
             f.LevelText:ClearAllPoints()
 
             if f.state.no_name then
@@ -741,6 +745,8 @@ do
             end
 
             f.LevelText:Show()
+        else
+            f.LevelText:Hide()
         end
     end
     function core:CreateLevelText(f)
@@ -754,11 +760,10 @@ end
 -- health text #################################################################
 do
     local function HealthDisplay_Percent(s)
-        local v = s.health_per
-        if v < 1 then
-            return format('%.1f',v)
+        if s.health_per < 1 then
+            return format('%.1f',s.health_per)..HEALTH_TEXT_PERCENT_SYMBOL
         else
-            return ceil(v)
+            return ceil(s.health_per)..HEALTH_TEXT_PERCENT_SYMBOL
         end
     end
     local health_display_funcs = {
@@ -767,7 +772,7 @@ do
         function(s) return kui.num(s.health_max) end,
         HealthDisplay_Percent,
         function(s) return '-'..kui.num(s.health_deficit) end,
-        function(s) return kui.num(s.health_cur)..'  '..HealthDisplay_Percent(s)..'%' end,
+        function(s) return kui.num(s.health_cur)..'  '..HealthDisplay_Percent(s) end,
         function(s) return kui.num(s.health_cur)..'  -'..kui.num(s.health_deficit) end,
     }
     local function GetHealthDisplay(f,key)
@@ -1050,7 +1055,8 @@ do
         end
 
         if f.state.target then
-            -- update size, colour
+            f.TargetArrows.l:SetTexture(TARGET_ARROWS_TEXTURE)
+            f.TargetArrows.r:SetTexture(TARGET_ARROWS_TEXTURE)
             f.TargetArrows:SetVertexColor(unpack(TARGET_GLOW_COLOUR))
             f.TargetArrows:SetSize(TARGET_ARROWS_SIZE)
 
@@ -1064,11 +1070,9 @@ do
         if not TARGET_ARROWS or f.TargetArrows then return end
 
         local left = f.HealthBar:CreateTexture(nil,'ARTWORK',nil,4)
-        left:SetTexture(MEDIA..'target-arrow')
         left:SetBlendMode('ADD')
 
         local right = f.HealthBar:CreateTexture(nil,'ARTWORK',nil,4)
-        right:SetTexture(MEDIA..'target-arrow')
         right:SetBlendMode('ADD')
         right:SetTexCoord(1,0,0,1)
 
@@ -1501,7 +1505,7 @@ do
         CASTBAR_DETACH_OFFSET = Scale(self.profile.castbar_detach_offset)
         CASTBAR_DETACH_COMBINE = CASTBAR_DETACH and self.profile.castbar_detach_combine
         CASTBAR_DETACH_NAMEONLY = self.profile.castbar_detach_nameonly
-        CASTBAR_RATIO = (1-(CASTBAR_DETACH_HEIGHT/CASTBAR_DETACH_WIDTH))/2
+        CASTBAR_RATIO = (1-(CASTBAR_DETACH_HEIGHT/CASTBAR_DETACH_WIDTH))/2.5
         CASTBAR_ICON_SIDE = self.profile.castbar_icon_side
 
         for _,f in addon:Frames() do
@@ -2209,6 +2213,7 @@ do
         -- update elements affected by nameonly
         f:UpdateNameText()
         f:UpdateHealthText()
+        f:UpdateLevelText()
         f:UpdateFrameGlow()
         f:UpdateStateIcon()
         f:UpdateRaidIcon()
@@ -2284,26 +2289,31 @@ do
             plugin_fading:UpdateFrame(f)
         end
     end
-    function core:NameOnlySetNameTextToHealth(f)
+    function core:NameOnlyUpdateNameText(f)
         -- set name text colour to approximate health
-        if not f.IN_NAMEONLY or not NAMEONLY_HEALTH_COLOUR then return end
+        if not f.IN_NAMEONLY then return end
+        if NAMEONLY_HEALTH_COLOUR then
+            if f.state.health_cur and f.state.health_cur > 0 and
+               f.state.health_max and f.state.health_max > 0
+            then
+                local health_len =
+                    strlen(f.state.name) *
+                    (f.state.health_cur / f.state.health_max)
 
-        if f.state.health_cur and f.state.health_cur > 0 and
-           f.state.health_max and f.state.health_max > 0
-        then
-            local health_len =
-                strlen(f.state.name) *
-                (f.state.health_cur / f.state.health_max)
-
-            f.NameText:SetText(
-                kui.utf8sub(f.state.name, 0, health_len)..
-                '|cff666666'..kui.utf8sub(f.state.name, health_len+1)
-            )
+                f.NameText:SetText(
+                    kui.utf8sub(f.state.name, 0, health_len)..
+                    '|cff666666'..kui.utf8sub(f.state.name, health_len+1)
+                )
+            end
+        end
+        if LEVEL_NAMEONLY then
+            local r,g,b=f.LevelText:GetTextColor()
+            f.NameText:SetText(string.format('|cff%02x%02x%02x',r*255,g*255,b*255)..f.LevelText:GetText()..'|r '..f.NameText:GetText())
         end
     end
     function core:NameOnlyHealthUpdate(f)
         if NAMEONLY_DAMAGED_FRIENDS or not f.state.friend then
-            self:NameOnlySetNameTextToHealth(f)
+            self:NameOnlyUpdateNameText(f)
         else
             -- disable/enable based on health
             self:NameOnlyUpdate(f)

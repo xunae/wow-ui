@@ -1,8 +1,9 @@
 # BigWigs
 
-## [v13.1-classic](https://github.com/BigWigsMods/BigWigs/tree/v13.1-classic) (2020-06-19)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v13-classic...v13.1-classic)
+## [v15-classic](https://github.com/BigWigsMods/BigWigs/tree/v15-classic) (2020-08-10)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v14-classic...v15-classic) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- MoltenCore: Localize boss names  
-- Update BigWigs\_World.toc (#801)  
-- Update zhCN (#800)  
+- bump version  
+- Cthun: Fix format errors  
+    Fixes #827  
+- Proximity: Add some range check items  

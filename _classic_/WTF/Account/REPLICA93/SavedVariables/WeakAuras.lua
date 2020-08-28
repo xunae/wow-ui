@@ -233,8 +233,8 @@ WeakAurasSaved = {
 		},
 		["Mark of the Necromancer"] = {
 			[185065] = "Interface\\Icons\\ability_bossfelorcs_necromancer_orange",
-			[184676] = "Interface\\Icons\\ability_bossfelorcs_necromancer_purple",
 			[185066] = "Interface\\Icons\\ability_bossfelorcs_necromancer_red",
+			[184676] = "Interface\\Icons\\ability_bossfelorcs_necromancer_purple",
 			[184450] = "Interface\\Icons\\ability_bossfelorcs_necromancer_purple",
 		},
 		["Spear of Anguish"] = {
@@ -317,9 +317,8 @@ WeakAurasSaved = {
 		["Shield of Virtue"] = {
 			[217824] = 237452,
 		},
-		["Asphyxiate"] = {
-			[108194] = 538558,
-			[221562] = 538558,
+		["Dark Hatred"] = {
+			[232488] = "Interface\\Icons\\ability_priest_surgeofdarkness",
 		},
 		["Wrath of Gul'dan"] = {
 			[186362] = "Interface\\Icons\\warlock_curse_shadow_aura",
@@ -360,17 +359,17 @@ WeakAurasSaved = {
 		["Maalus"] = {
 			[187620] = "Interface\\Icons\\inv_jewelry_ring_89",
 		},
-		["Unstable Orb"] = {
-			[182001] = "Interface\\Icons\\Spell_Fire_FelFlameRing",
+		["Lunar Beacon"] = {
+			[236712] = 429383,
 		},
 		["Tailwind Totem"] = {
 			[210659] = 136046,
 		},
-		["Dread Thorns"] = {
-			[210340] = "Interface\\Icons\\spell_nature_thorns_nightmare",
+		["Serenity"] = {
+			[152173] = 988197,
 		},
-		["Lunar Beacon"] = {
-			[236712] = 429383,
+		["Devour Magic"] = {
+			[238583] = 136131,
 		},
 		["Permeliative Torment"] = {
 			[211261] = "Interface\\Icons\\ability_socererking_arcanemines",
@@ -390,15 +389,14 @@ WeakAurasSaved = {
 		["Sign of the Dragon"] = {
 			[225753] = "Interface\\Icons\\inv_celestialserpentmount",
 		},
-		["Serenity"] = {
-			[152173] = 988197,
+		["Dread Thorns"] = {
+			[210340] = "Interface\\Icons\\spell_nature_thorns_nightmare",
 		},
 		["Mind Flay"] = {
 			[208697] = "INTERFACE\\ICONS\\spell_shadow_mindflay",
 		},
-		["Searing Brand"] = {
-			[213148] = 236188,
-			[213166] = 135811,
+		["Sign of the Hippo"] = {
+			[225749] = "Interface\\Icons\\inv_pet_celestialbabyhippo",
 		},
 		["Healing Rain"] = {
 			[73920] = 136037,
@@ -406,20 +404,20 @@ WeakAurasSaved = {
 		["Psychic Scream"] = {
 			[8122] = 136184,
 		},
-		["Death Glare"] = {
-			[196591] = "INTERFACE\\ICONS\\achievement_dungeon_the stonecore_slabhide",
-		},
 		["Spew Corruption"] = {
 			[208929] = "Interface\\Icons\\Spell_Shadow_SoulLeech",
 		},
-		["Shattering Scream"] = {
-			[236515] = 1391780,
+		["Death Glare"] = {
+			[196591] = "INTERFACE\\ICONS\\achievement_dungeon_the stonecore_slabhide",
+		},
+		["Tome of Everlasting Silence"] = {
+			[240556] = 133733,
 		},
 		["Fel Infusion"] = {
 			[235240] = 135795,
 		},
-		["Tome of Everlasting Silence"] = {
-			[240556] = 133733,
+		["Shattering Scream"] = {
+			[236515] = 1391780,
 		},
 		["Vantus Rune: Grand Magistrix Elisande"] = {
 			[192775] = "Interface\\Icons\\70_inscription_vantus_rune_suramar",
@@ -445,8 +443,8 @@ WeakAurasSaved = {
 		["Unleash Doom"] = {
 			[199055] = "Interface\\Icons\\Ability_Shaman_Stormstrike",
 		},
-		["Velen's Future Sight"] = {
-			[235966] = 135918,
+		["Cleansing Protocol"] = {
+			[241008] = 135796,
 		},
 		["Rapid Shot"] = {
 			[236596] = 1035040,
@@ -463,14 +461,14 @@ WeakAurasSaved = {
 		["Lightning Shield Overcharge"] = {
 			[273323] = 136051,
 		},
-		["Impale"] = {
-			[222676] = "Interface\\Icons\\ability_bossfellord_felspike",
+		["Empowered Eye of Gul'dan"] = {
+			[221728] = 971290,
 		},
 		["Mind Bomb"] = {
 			[226943] = 136173,
 		},
-		["Cleansing Protocol"] = {
-			[241008] = 135796,
+		["Velen's Future Sight"] = {
+			[235966] = 135918,
 		},
 		["Runic Brand"] = {
 			[231345] = "Interface\\Icons\\boss_odunrunes_blue",
@@ -512,8 +510,8 @@ WeakAurasSaved = {
 		["Icy Ejection"] = {
 			[206936] = 612394,
 		},
-		["Hateful Smash"] = {
-			[238586] = 132345,
+		["Dark Simulacrum"] = {
+			[77606] = "Interface\\Icons\\Spell_Holy_ConsumeMagic",
 		},
 		["Focused Dreadflame"] = {
 			[238505] = 236216,
@@ -527,8 +525,8 @@ WeakAurasSaved = {
 		["Solar Beam"] = {
 			[81261] = 252188,
 		},
-		["Dark Simulacrum"] = {
-			[77606] = "Interface\\Icons\\Spell_Holy_ConsumeMagic",
+		["Hateful Smash"] = {
+			[238586] = 132345,
 		},
 		["Mana Tea"] = {
 			[197908] = 608949,
@@ -563,11 +561,11 @@ WeakAurasSaved = {
 		["Jealous Kiss"] = {
 			[170852] = "Interface\\Icons\\Spell_Shadow_SoothingKiss",
 		},
-		["Burning Soul"] = {
-			[216040] = "Interface\\Icons\\spell_fel_incinerate",
-		},
 		["Silence"] = {
 			[15487] = 458230,
+		},
+		["Void Haze"] = {
+			[184473] = "Interface\\Icons\\ability_priest_voidentropy",
 		},
 		["Tidal Force"] = {
 			[246729] = 136052,
@@ -575,11 +573,11 @@ WeakAurasSaved = {
 		["Bloodthirsty Leap"] = {
 			[225963] = "Interface\\Icons\\creatureportrait_saberworg",
 		},
-		["Torn Soul"] = {
-			[206896] = "Interface\\Icons\\spell_warlock_demonicportal_green",
-		},
 		["Shadowfury"] = {
 			[30283] = 607865,
+		},
+		["Thunder Focus Tea"] = {
+			[116680] = 611418,
 		},
 		["Incapacitating Roar"] = {
 			[99] = 132121,
@@ -590,9 +588,9 @@ WeakAurasSaved = {
 		["Lifecycles (Vivify)"] = {
 			[197916] = 628675,
 		},
-		["Fel Chakram"] = {
-			[182178] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
-			[182200] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
+		["Venomous Pool"] = {
+			[213124] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
+			[215489] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
 		},
 		["Rot"] = {
 			[203096] = "Interface\\Icons\\Spell_Shadow_CreepingPlague",
@@ -609,14 +607,14 @@ WeakAurasSaved = {
 		["Consuming Hunger"] = {
 			[230920] = 237395,
 		},
-		["Astral Shift"] = {
-			[108271] = 538565,
+		["Torn Soul"] = {
+			[206896] = "Interface\\Icons\\spell_warlock_demonicportal_green",
 		},
 		["Toxic Slice"] = {
 			[206798] = "Interface\\Icons\\inv_misc_badcake",
 		},
-		["Gravity Squeeze"] = {
-			[239155] = 1394890,
+		["Astral Vulnerability"] = {
+			[236330] = 135864,
 		},
 		["Black Icey Bling"] = {
 			[203533] = "Interface\\Icons\\inv_misc_cutgemnormal2",
@@ -627,12 +625,11 @@ WeakAurasSaved = {
 		["Spirit Rain"] = {
 			[246771] = 136052,
 		},
-		["Venomous Pool"] = {
-			[213124] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
-			[215489] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
+		["Knock down"] = {
+			[217621] = "Interface\\Icons\\Ability_ThunderClap",
 		},
-		["Thunder Focus Tea"] = {
-			[116680] = 611418,
+		["Astral Shift"] = {
+			[108271] = 538565,
 		},
 		["Lifecycles (Enveloping Mist)"] = {
 			[197919] = 775461,
@@ -643,11 +640,11 @@ WeakAurasSaved = {
 		["Volatile Wound"] = {
 			[216024] = 135734,
 		},
-		["Touch of Death"] = {
-			[115080] = "Interface\\Icons\\ability_monk_touchofdeath",
-		},
 		["Fel Ejection"] = {
 			[205649] = 841218,
+		},
+		["Touch of Death"] = {
+			[115080] = "Interface\\Icons\\ability_monk_touchofdeath",
 		},
 		["Thundering Shock"] = {
 			[230362] = 136111,
@@ -655,21 +652,20 @@ WeakAurasSaved = {
 		["Acidic Fragments"] = {
 			[214718] = "Interface\\Icons\\inv_jewelcrafting_70_gem03_green",
 		},
-		["Font of Corruption"] = {
-			[180526] = "Interface\\Icons\\Spell_Shadow_TwistedFaith",
-		},
 		["Spit Gold"] = {
 			[265773] = 646669,
 		},
-		["Valarjar's Bond"] = {
-			[228018] = "Interface\\Icons\\Spell_Nature_LightningShield",
-			[229529] = "Interface\\Icons\\Spell_Nature_LightningShield",
+		["Bellowing Roar"] = {
+			[204078] = "Interface\\Icons\\Spell_Shadow_Charm",
+		},
+		["Sigil of Silence"] = {
+			[204490] = 1418288,
 		},
 		["Slippery"] = {
 			[239420] = 463570,
 		},
-		["Sigil of Silence"] = {
-			[204490] = 1418288,
+		["Nightmare Corruption"] = {
+			[212886] = "Interface\\Icons\\Spell_DeathKnight_BloodBoil",
 		},
 		["Feltouched"] = {
 			[186134] = "Interface\\Icons\\spell_fel_elementaldevastation",
@@ -725,14 +721,14 @@ WeakAurasSaved = {
 		["Slicing Tornado"] = {
 			[232732] = 999952,
 		},
-		["Touch of Corruption"] = {
-			[209469] = "Interface\\Icons\\Spell_DeathKnight_BloodPlague",
+		["Stone Gaze"] = {
+			[194140] = "INTERFACE\\ICONS\\achievement_dungeon_the stonecore_slabhide",
 		},
 		["Mark of Taerar"] = {
 			[203121] = "Interface\\Icons\\inv_misc_head_dragon_black_nightmare",
 		},
-		["Sanguine Ichor"] = {
-			[226512] = "Interface\\Icons\\Spell_Shadow_BloodBoil",
+		["Lightning Shield"] = {
+			[192106] = 136051,
 		},
 		["Incorporeal Shot"] = {
 			[236305] = 959793,
@@ -746,29 +742,30 @@ WeakAurasSaved = {
 		["Tidal Waves"] = {
 			[53390] = 237590,
 		},
-		["Radiance of Anzu"] = {
-			[185239] = "Interface\\Icons\\spell_burningbladeshaman_blazing_radiance",
-		},
-		["Ring of Frost"] = {
-			[82691] = 464484,
-		},
-		["Stone Gaze"] = {
-			[194140] = "INTERFACE\\ICONS\\achievement_dungeon_the stonecore_slabhide",
-		},
-		["Mark of Lethon"] = {
-			[203124] = "Interface\\Icons\\inv_misc_head_dragon_bronze_nightmare",
-		},
-		["Lightning Shield"] = {
-			[192106] = 136051,
+		["Choking Flames"] = {
+			[214459] = "Interface\\Icons\\Spell_Fire_FelFlameBreath",
 		},
 		["Brand of Argus"] = {
 			[212794] = "Interface\\Icons\\spell_fel_elementaldevastation",
 		},
+		["Touch of Corruption"] = {
+			[209469] = "Interface\\Icons\\Spell_DeathKnight_BloodPlague",
+		},
+		["Mark of Lethon"] = {
+			[203124] = "Interface\\Icons\\inv_misc_head_dragon_bronze_nightmare",
+		},
+		["Warbringer"] = {
+			[7922] = "Interface\\Icons\\Spell_Frost_Stun",
+			[213427] = "Interface\\Icons\\Spell_Frost_Stun",
+		},
+		["Ring of Frost"] = {
+			[82691] = 464484,
+		},
 		["Legacy of the Ravencrest"] = {
 			[199368] = "Interface\\Icons\\inv_helm_plate_lordravencrest_b_01",
 		},
-		["Gorefiend's Corruption"] = {
-			[179867] = "Interface\\Icons\\ability_bossgorefiend_gorefiendscorruption",
+		["Unleash Life"] = {
+			[73685] = 462328,
 		},
 		["Shadow Word: Agony"] = {
 			[184239] = "Interface\\Icons\\Spell_Shadow_DeathsEmbrace",
@@ -780,15 +777,14 @@ WeakAurasSaved = {
 			[204448] = "Interface\\Icons\\inv_shield_24",
 			[206947] = "Interface\\Icons\\inv_shield_24",
 		},
-		["Warbringer"] = {
-			[7922] = "Interface\\Icons\\Spell_Frost_Stun",
-			[213427] = "Interface\\Icons\\Spell_Frost_Stun",
+		["Sanguine Ichor"] = {
+			[226512] = "Interface\\Icons\\Spell_Shadow_BloodBoil",
 		},
 		["Freezing Arrow"] = {
 			[209790] = "Interface\\Icons\\spell_hunter_exoticmunitions_frozen",
 		},
-		["Conflexive Burst"] = {
-			[209598] = 1044088,
+		["Nightmare Blades"] = {
+			[211802] = "Interface\\Icons\\ability_xavius_nightmareblades",
 		},
 		["Coronal Ejection"] = {
 			[206464] = "Interface\\Icons\\ability_skyreach_solar_burst",
@@ -799,12 +795,11 @@ WeakAurasSaved = {
 		["Fel Eruption"] = {
 			[211881] = 1118739,
 		},
-		["Shadowy Volatile Foam"] = {
-			[228819] = 136197,
-			[228818] = 136197,
+		["Phantasmal Cremation"] = {
+			[187344] = "Interface\\Icons\\spell_fel_elementaldevastation",
 		},
-		["Unleash Life"] = {
-			[73685] = 462328,
+		["Gorefiend's Corruption"] = {
+			[179867] = "Interface\\Icons\\ability_bossgorefiend_gorefiendscorruption",
 		},
 		["Well Fed"] = {
 			[225599] = "Interface\\Icons\\Spell_Misc_Food",
@@ -837,8 +832,9 @@ WeakAurasSaved = {
 		["Protected"] = {
 			[229584] = "Interface\\Icons\\Spell_Holy_BlessingOfProtection",
 		},
-		["Earthquake"] = {
-			[77505] = 451165,
+		["Shared Fate"] = {
+			[179908] = "Interface\\Icons\\ability_warlock_soullink",
+			[179909] = "Interface\\Icons\\ability_warlock_soullink",
 		},
 		["Fear"] = {
 			[118699] = 136183,
@@ -855,16 +851,16 @@ WeakAurasSaved = {
 		["Momentum"] = {
 			[198108] = "Interface\\Icons\\Ability_Creature_Cursed_04",
 		},
-		["Heart Seeker"] = {
-			[188929] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
-			[180389] = "Interface\\Icons\\inv_ragnaros_heart",
+		["Runic Shield"] = {
+			[227596] = "Interface\\Icons\\boss_odunrunes_yellow",
+			[227597] = "Interface\\Icons\\boss_odunrunes_orange",
+			[227594] = "Interface\\Icons\\boss_odunrunes_green",
 		},
-		["Unstable Decay"] = {
-			[221028] = "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
+		["Howling Axe"] = {
+			[184369] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
 		},
-		["Shared Fate"] = {
-			[179908] = "Interface\\Icons\\ability_warlock_soullink",
-			[179909] = "Interface\\Icons\\ability_warlock_soullink",
+		["Earthquake"] = {
+			[77505] = 451165,
 		},
 		["Aura of Contempt"] = {
 			[179987] = "Interface\\Icons\\ability_bossdarkvindicator_auraofoppression",
@@ -872,29 +868,30 @@ WeakAurasSaved = {
 		["Arcane Bomb"] = {
 			[192706] = "Interface\\Icons\\INV_Enchant_EssenceArcaneSmall",
 		},
-		["Storm Bolt"] = {
-			[132169] = 613535,
-		},
-		["Uplifting Trance"] = {
-			[197206] = "Interface\\Icons\\ability_monk_vivify",
-		},
-		["Demonic Bindings"] = {
-			[214298] = "Interface\\Icons\\spell_fel_incinerate",
-		},
-		["Howling Axe"] = {
-			[184369] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
-		},
-		["Darkening Soul"] = {
-			[206651] = "Interface\\Icons\\ability_xavius_darkeningsoul",
-		},
-		["Howl of Terror"] = {
-			[5484] = 607852,
-		},
 		["Sigil of Misery"] = {
 			[207685] = 1418287,
 		},
 		["Pulverize"] = {
 			[118345] = 348539,
+		},
+		["Demonic Bindings"] = {
+			[214298] = "Interface\\Icons\\spell_fel_incinerate",
+		},
+		["Toxic Wound"] = {
+			[191855] = "INTERFACE\\ICONS\\ability_rogue_venomouswounds",
+		},
+		["Fiery Phlegm"] = {
+			[228758] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
+		},
+		["Flames of Sargeras"] = {
+			[221606] = 1035051,
+			[221603] = 236297,
+		},
+		["Storm Bolt"] = {
+			[132169] = 613535,
+		},
+		["Uplifting Trance"] = {
+			[197206] = "Interface\\Icons\\ability_monk_vivify",
 		},
 		["Maim"] = {
 			[203123] = 132134,
@@ -905,8 +902,8 @@ WeakAurasSaved = {
 		["Frostbrand"] = {
 			[196834] = 462327,
 		},
-		["Chilled"] = {
-			[206589] = "Interface\\Icons\\Ability_Mage_ChilledToTheBone",
+		["Frigid Blows"] = {
+			[233429] = 237526,
 		},
 		["Soulbind"] = {
 			[236459] = 607854,
@@ -917,11 +914,11 @@ WeakAurasSaved = {
 		["Ghastly Fixation"] = {
 			[182769] = "Interface\\Icons\\ability_fixated_state_purple",
 		},
-		["Den Mother's Roar"] = {
-			[213312] = "Interface\\Icons\\Ability_Druid_ChallangingRoar",
+		["Bestial Choke"] = {
+			[217002] = 237532,
 		},
-		["Strangulate"] = {
-			[47476] = 136214,
+		["Shockwave"] = {
+			[132168] = 236312,
 		},
 		["Meteor Strike"] = {
 			[171017] = 459027,
@@ -929,21 +926,21 @@ WeakAurasSaved = {
 		["Rainfall"] = {
 			[215864] = "Interface\\Icons\\Spell_Nature_GiftoftheWaterSpirit",
 		},
-		["Shockwave"] = {
-			[132168] = 236312,
+		["Strangulate"] = {
+			[47476] = 136214,
 		},
-		["Twilight Glaive"] = {
-			[237561] = 648707,
+		["Salty Spittle"] = {
+			[228768] = "Interface\\Icons\\ability_shawaterelemental_split",
 		},
 		["Illusionary Night"] = {
 			[206311] = 607852,
 		},
+		["Devilsaur's Bite"] = {
+			[224074] = "Interface\\Icons\\Ability_Hunter_Pet_Devilsaur",
+		},
 		["Sterilize"] = {
 			[211615] = "Interface\\Icons\\spell_shaman_staticshock",
 			[208499] = 237587,
-		},
-		["Devilsaur's Bite"] = {
-			[224074] = "Interface\\Icons\\Ability_Hunter_Pet_Devilsaur",
 		},
 		["Spider Sting"] = {
 			[202933] = 1412206,
@@ -951,8 +948,8 @@ WeakAurasSaved = {
 		["Cloudburst Totem"] = {
 			[157504] = 971076,
 		},
-		["Replenishing Roots"] = {
-			[211612] = "Interface\\Icons\\Spell_Magic_ManaGain",
+		["Undulation"] = {
+			[216251] = 136043,
 		},
 		["Star Sign: Wolf"] = {
 			[205445] = 1391537,
@@ -960,14 +957,14 @@ WeakAurasSaved = {
 		["Frostbitten"] = {
 			[212647] = 135845,
 		},
-		["Shield Smash"] = {
-			[241774] = 132357,
+		["Accelerando"] = {
+			[225719] = "Interface\\Icons\\Spell_Holy_BorrowedTime",
 		},
 		["Fetid Rot"] = {
 			[193367] = "Interface\\Icons\\Ability_Creature_Disease_03",
 		},
-		["Accelerando"] = {
-			[225719] = "Interface\\Icons\\Spell_Holy_BorrowedTime",
+		["Mark of the Heavy Hide"] = {
+			[228399] = "Interface\\Icons\\inv_misc_leatherstonehide",
 		},
 		["Light of the Naaru"] = {
 			[183963] = "Interface\\Icons\\Spell_Holy_SurgeOfLight",
@@ -1000,8 +997,8 @@ WeakAurasSaved = {
 		["Unstable Affliction"] = {
 			[196364] = 135975,
 		},
-		["Mark of the Heavy Hide"] = {
-			[228399] = "Interface\\Icons\\inv_misc_leatherstonehide",
+		["Shield Smash"] = {
+			[241774] = 132357,
 		},
 		["Mark of Thassarian"] = {
 			[222317] = "INTERFACE\\ICONS\\spell_deathvortex",
@@ -1018,8 +1015,9 @@ WeakAurasSaved = {
 		["Demonic Trample"] = {
 			[213491] = 134294,
 		},
-		["Curse of the Witch"] = {
-			[193698] = "Interface\\Icons\\Spell_Holy_RemoveCurse",
+		["Ravenous Leap"] = {
+			[197556] = "Interface\\Icons\\ability_blackhand_marked4death",
+			[196497] = "Interface\\Icons\\Spell_Shadow_LifeDrain",
 		},
 		["Flash Flood"] = {
 			[280615] = 135861,
@@ -1062,23 +1060,23 @@ WeakAurasSaved = {
 		["Reality Tear"] = {
 			[274904] = 1022950,
 		},
-		["Deafening Roar"] = {
-			[224703] = 589118,
+		["Toxic Spores"] = {
+			[219235] = "Interface\\Icons\\INV_Misc_Herb_Ragveil",
 		},
-		["Felsinged"] = {
-			[186073] = "Interface\\Icons\\Spell_Fire_FelImmolation",
+		["Time Warp"] = {
+			[80353] = 458224,
 		},
-		["Nightmare Brambles"] = {
-			[210315] = "Interface\\Icons\\spell_druid_massentanglement_nightmare",
+		["Plasma Explosion"] = {
+			[218780] = "Interface\\Icons\\spell_fire_ragnaros_molteninferno",
 		},
 		["Sin and Punishment"] = {
 			[87204] = 135945,
 		},
-		["Gouge"] = {
-			[1776] = 132155,
+		["Gift of the Man'ari"] = {
+			[184124] = "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
 		},
-		["Time Warp"] = {
-			[80353] = 458224,
+		["Felsinged"] = {
+			[186073] = "Interface\\Icons\\Spell_Fire_FelImmolation",
 		},
 		["Rising Fury"] = {
 			[195944] = 463566,
@@ -1090,8 +1088,8 @@ WeakAurasSaved = {
 		["Blinding Sleet"] = {
 			[207167] = 135836,
 		},
-		["Wyvern Sting"] = {
-			[19386] = 135125,
+		["Deafening Roar"] = {
+			[224703] = 589118,
 		},
 		["Mass Repentance"] = {
 			[227508] = 135942,
@@ -1109,23 +1107,23 @@ WeakAurasSaved = {
 		["Calming Waters"] = {
 			[221677] = 538567,
 		},
-		["Repentance"] = {
-			[20066] = 135942,
-		},
 		["Mark of Doom"] = {
 			[181099] = "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+		},
+		["Digest"] = {
+			[181295] = "Interface\\Icons\\Spell_Shadow_DeathCoil",
 		},
 		["Paralysis"] = {
 			[115078] = 629534,
 		},
-		["Song of Chi-Ji"] = {
-			[198909] = 332402,
+		["Innervate"] = {
+			[29166] = 136048,
 		},
 		["Creator's Grace"] = {
 			[235534] = 135939,
 		},
-		["Digest"] = {
-			[181295] = "Interface\\Icons\\Spell_Shadow_DeathCoil",
+		["Repentance"] = {
+			[20066] = 135942,
 		},
 		["Fists of Fury"] = {
 			[120086] = "Interface\\Icons\\Spell_Frost_Stun",
@@ -1158,8 +1156,8 @@ WeakAurasSaved = {
 		["Sandstorm"] = {
 			[196144] = "Interface\\Icons\\spell_sandstorm",
 		},
-		["Stone Toss"] = {
-			[202773] = "Interface\\Icons\\INV_Stone_11",
+		["Blessing of Life"] = {
+			[224232] = "INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost",
 		},
 		["Polymorph"] = {
 			[118] = 136071,
@@ -1172,8 +1170,8 @@ WeakAurasSaved = {
 			[28271] = 132199,
 			[161353] = 294471,
 		},
-		["Blessing of Life"] = {
-			[224232] = "INTERFACE\\ICONS\\spell_shaman_unleashweapon_frost",
+		["Stone Toss"] = {
+			[202773] = "Interface\\Icons\\INV_Stone_11",
 		},
 		["Web of Pain"] = {
 			[215300] = "INTERFACE\\ICONS\\inv_misc_web_02",
@@ -1183,8 +1181,8 @@ WeakAurasSaved = {
 			[208915] = 607854,
 			[208910] = 607854,
 		},
-		["Innervate"] = {
-			[29166] = 136048,
+		["Song of Chi-Ji"] = {
+			[198909] = 332402,
 		},
 		["Bursting Shot"] = {
 			[224729] = "Interface\\Icons\\ability_hunter_burstingshot",
@@ -1199,14 +1197,14 @@ WeakAurasSaved = {
 		["Icefury"] = {
 			[210714] = "Interface\\Icons\\Spell_Frost_IceShard",
 		},
-		["Gift of the Man'ari"] = {
-			[184124] = "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
+		["Wyvern Sting"] = {
+			[19386] = 135125,
 		},
-		["Toxic Spores"] = {
-			[219235] = "Interface\\Icons\\INV_Misc_Herb_Ragveil",
+		["Gouge"] = {
+			[1776] = 132155,
 		},
-		["Plasma Explosion"] = {
-			[218780] = "Interface\\Icons\\spell_fire_ragnaros_molteninferno",
+		["Nightmare Brambles"] = {
+			[210315] = "Interface\\Icons\\spell_druid_massentanglement_nightmare",
 		},
 		["Sonic Scream"] = {
 			[213600] = "Interface\\Icons\\ability_vehicle_sonicshockwave",
@@ -1236,12 +1234,11 @@ WeakAurasSaved = {
 		["Ironskin Brew"] = {
 			[215479] = 1360979,
 		},
-		["Ravenous Leap"] = {
-			[197556] = "Interface\\Icons\\ability_blackhand_marked4death",
-			[196497] = "Interface\\Icons\\Spell_Shadow_LifeDrain",
+		["Curse of the Witch"] = {
+			[193698] = "Interface\\Icons\\Spell_Holy_RemoveCurse",
 		},
-		["Undulation"] = {
-			[216251] = 136043,
+		["Replenishing Roots"] = {
+			[211612] = "Interface\\Icons\\Spell_Magic_ManaGain",
 		},
 		["Frost Prison"] = {
 			[179056] = "Interface\\Icons\\Spell_Frost_Glacier",
@@ -1253,38 +1250,36 @@ WeakAurasSaved = {
 		["Scatter Shot"] = {
 			[213691] = 132153,
 		},
-		["Salty Spittle"] = {
-			[228768] = "Interface\\Icons\\ability_shawaterelemental_split",
+		["Twilight Glaive"] = {
+			[237561] = 648707,
 		},
 		["Moon Burn"] = {
 			[236519] = 136057,
 		},
-		["Bestial Choke"] = {
-			[217002] = 237532,
+		["Den Mother's Roar"] = {
+			[213312] = "Interface\\Icons\\Ability_Druid_ChallangingRoar",
 		},
-		["Frigid Blows"] = {
-			[233429] = 237526,
+		["Chilled"] = {
+			[206589] = "Interface\\Icons\\Ability_Mage_ChilledToTheBone",
 		},
-		["Flames of Sargeras"] = {
-			[221606] = 1035051,
-			[221603] = 236297,
+		["Howl of Terror"] = {
+			[5484] = 607852,
 		},
-		["Fiery Phlegm"] = {
-			[228758] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
+		["Darkening Soul"] = {
+			[206651] = "Interface\\Icons\\ability_xavius_darkeningsoul",
 		},
 		["Touch of Doom"] = {
 			[179977] = "Interface\\Icons\\ability_bossgorefiend_touchofdoom",
 		},
-		["Toxic Wound"] = {
-			[191855] = "INTERFACE\\ICONS\\ability_rogue_venomouswounds",
+		["Unstable Decay"] = {
+			[221028] = "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
 		},
 		["Volatile Rot"] = {
 			[204463] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
 		},
-		["Runic Shield"] = {
-			[227596] = "Interface\\Icons\\boss_odunrunes_yellow",
-			[227597] = "Interface\\Icons\\boss_odunrunes_orange",
-			[227594] = "Interface\\Icons\\boss_odunrunes_green",
+		["Heart Seeker"] = {
+			[188929] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
+			[180389] = "Interface\\Icons\\inv_ragnaros_heart",
 		},
 		["Death Wail"] = {
 			[194684] = "Interface\\Icons\\Spell_Shadow_DeathScream",
@@ -1302,11 +1297,12 @@ WeakAurasSaved = {
 		["Phased Webbing"] = {
 			[215198] = "INTERFACE\\ICONS\\inv_misc_web_02",
 		},
-		["Phantasmal Cremation"] = {
-			[187344] = "Interface\\Icons\\spell_fel_elementaldevastation",
+		["Shadowy Volatile Foam"] = {
+			[228819] = 136197,
+			[228818] = 136197,
 		},
-		["Nightmare Blades"] = {
-			[211802] = "Interface\\Icons\\ability_xavius_nightmareblades",
+		["Conflexive Burst"] = {
+			[209598] = 1044088,
 		},
 		["Earth Shield"] = {
 			[974] = 136089,
@@ -1326,8 +1322,8 @@ WeakAurasSaved = {
 		["Foul Residue"] = {
 			[185687] = "Interface\\Icons\\ability_rhyolith_lavapool",
 		},
-		["Choking Flames"] = {
-			[214459] = "Interface\\Icons\\Spell_Fire_FelFlameBreath",
+		["Radiance of Anzu"] = {
+			[185239] = "Interface\\Icons\\spell_burningbladeshaman_blazing_radiance",
 		},
 		["Voidtouched"] = {
 			[186135] = "Interface\\Icons\\Spell_Shadow_AntiShadow",
@@ -1356,14 +1352,15 @@ WeakAurasSaved = {
 		["Parasitic Fixate"] = {
 			[218342] = 841383,
 		},
-		["Nightmare Corruption"] = {
-			[212886] = "Interface\\Icons\\Spell_DeathKnight_BloodBoil",
+		["Valarjar's Bond"] = {
+			[228018] = "Interface\\Icons\\Spell_Nature_LightningShield",
+			[229529] = "Interface\\Icons\\Spell_Nature_LightningShield",
+		},
+		["Font of Corruption"] = {
+			[180526] = "Interface\\Icons\\Spell_Shadow_TwistedFaith",
 		},
 		["Spirit Wolf"] = {
 			[260881] = 1033494,
-		},
-		["Bellowing Roar"] = {
-			[204078] = "Interface\\Icons\\Spell_Shadow_Charm",
 		},
 		["Dark Discharge"] = {
 			[228769] = "Interface\\Icons\\INV_Elemental_Primal_Shadow",
@@ -1374,8 +1371,9 @@ WeakAurasSaved = {
 		["Nightmare Bloom"] = {
 			[207681] = "Interface\\Icons\\ability_priest_voidentropy",
 		},
-		["Knock down"] = {
-			[217621] = "Interface\\Icons\\Ability_ThunderClap",
+		["Fel Chakram"] = {
+			[182178] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
+			[182200] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
 		},
 		["Sudden Intuition"] = {
 			[183929] = "Interface\\Icons\\Spell_Shadow_SpectralSight",
@@ -1389,14 +1387,14 @@ WeakAurasSaved = {
 		["Delphuric Beam"] = {
 			[209244] = 135730,
 		},
-		["Astral Vulnerability"] = {
-			[236330] = 135864,
+		["Gravity Squeeze"] = {
+			[239155] = 1394890,
 		},
 		["Unbound Chaos"] = {
 			[234059] = 135795,
 		},
-		["Void Haze"] = {
-			[184473] = "Interface\\Icons\\ability_priest_voidentropy",
+		["Burning Soul"] = {
+			[216040] = "Interface\\Icons\\spell_fel_incinerate",
 		},
 		["Phantasmal Wounds"] = {
 			[182325] = "Interface\\Icons\\Spell_Shadow_DevouringPlague",
@@ -1434,8 +1432,8 @@ WeakAurasSaved = {
 		["Defiled Augmentation"] = {
 			[224001] = "Interface\\Icons\\ability_bossfellord_felspike",
 		},
-		["Empowered Eye of Gul'dan"] = {
-			[221728] = 971290,
+		["Impale"] = {
+			[222676] = "Interface\\Icons\\ability_bossfellord_felspike",
 		},
 		["Expel Light"] = {
 			[228029] = "Interface\\Icons\\Spell_Holy_DivineProvidence",
@@ -1462,14 +1460,15 @@ WeakAurasSaved = {
 		["Ghost in the Mist"] = {
 			[207527] = "Interface\\Icons\\spell_hunter_lonewolf",
 		},
-		["Sign of the Hippo"] = {
-			[225749] = "Interface\\Icons\\inv_pet_celestialbabyhippo",
+		["Searing Brand"] = {
+			[213148] = 236188,
+			[213166] = 135811,
 		},
 		["Time Bomb"] = {
 			[206617] = 609814,
 		},
-		["Devour Magic"] = {
-			[238583] = 136131,
+		["Unstable Orb"] = {
+			[182001] = "Interface\\Icons\\Spell_Fire_FelFlameRing",
 		},
 		["Time Dilation"] = {
 			[210339] = "Interface\\Icons\\ability_socererking_arcanefortification",
@@ -1492,8 +1491,9 @@ WeakAurasSaved = {
 		["Powder Keg"] = {
 			[205239] = "Interface\\Icons\\INV_Cask_02",
 		},
-		["Dark Hatred"] = {
-			[232488] = "Interface\\Icons\\ability_priest_surgeofdarkness",
+		["Asphyxiate"] = {
+			[108194] = 538558,
+			[221562] = 538558,
 		},
 		["Bloodboil"] = {
 			[184355] = "Interface\\Icons\\Spell_Shadow_BloodBoil",
@@ -1518,10 +1518,10 @@ WeakAurasSaved = {
 			[233983] = 136181,
 		},
 		["Fixate"] = {
-			[210099] = "Interface\\Icons\\ability_fixated_state_red",
 			[155196] = "Interface\\Icons\\ability_fixated_state_red",
-			[157763] = "Interface\\Icons\\ability_fixated_state_red",
 			[269936] = 841382,
+			[157763] = "Interface\\Icons\\ability_fixated_state_red",
+			[210099] = "Interface\\Icons\\ability_fixated_state_red",
 		},
 		["Wither"] = {
 			[236138] = 136135,
@@ -2256,18 +2256,18 @@ WeakAurasSaved = {
 					["trigger"] = {
 						["showClones"] = false,
 						["type"] = "status",
-						["subeventSuffix"] = "_CAST_START",
+						["unevent"] = "auto",
 						["duration"] = "1",
 						["event"] = "Swing Timer",
 						["subeventPrefix"] = "SPELL",
+						["subeventSuffix"] = "_CAST_START",
 						["use_unit"] = true,
-						["unit"] = "target",
 						["spellIds"] = {
 						},
 						["use_hand"] = true,
 						["names"] = {
 						},
-						["unevent"] = "auto",
+						["unit"] = "target",
 						["hand"] = "main",
 						["debuffType"] = "HARMFUL",
 					},
@@ -2282,7 +2282,7 @@ WeakAurasSaved = {
 				1, -- [3]
 				1, -- [4]
 			},
-			["internalVersion"] = 29,
+			["internalVersion"] = 33,
 			["selfPoint"] = "CENTER",
 			["barColor"] = {
 				0.105882352941176, -- [1]
@@ -2291,7 +2291,6 @@ WeakAurasSaved = {
 				0.834114849567413, -- [4]
 			},
 			["desaturate"] = false,
-			["progressPrecision"] = 0,
 			["sparkOffsetY"] = 0,
 			["subRegions"] = {
 				{
@@ -2387,23 +2386,23 @@ WeakAurasSaved = {
 			["zoom"] = 0,
 			["sparkHeight"] = 10,
 			["texture"] = "Solid",
-			["sparkHidden"] = "NEVER",
+			["id"] = "swing timer",
 			["sparkTexture"] = "Interface\\CastingBar\\UI-CastingBar-Spark",
 			["auto"] = true,
 			["frameStrata"] = 1,
-			["id"] = "swing timer",
+			["sparkHidden"] = "NEVER",
 			["uid"] = "AXm15eVTY6e",
 			["alpha"] = 1,
 			["anchorFrameType"] = "SCREEN",
 			["width"] = 200,
-			["config"] = {
-			},
-			["inverse"] = false,
 			["sparkColor"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
+			},
+			["inverse"] = false,
+			["config"] = {
 			},
 			["orientation"] = "HORIZONTAL",
 			["conditions"] = {
@@ -2437,14 +2436,13 @@ WeakAurasSaved = {
 				},
 			},
 		},
-		["Target debuffs"] = {
-			["arcLength"] = 360,
+		["Details! Aura Group"] = {
+			["grow"] = "RIGHT",
 			["controlledChildren"] = {
-				"target debuffs", -- [1]
 			},
 			["borderBackdrop"] = "Blizzard Tooltip",
-			["xOffset"] = -100,
-			["yOffset"] = -170,
+			["xOffset"] = -678.999450683594,
+			["yOffset"] = 212.765991210938,
 			["anchorPoint"] = "CENTER",
 			["borderColor"] = {
 				0, -- [1]
@@ -2452,66 +2450,92 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["space"] = 1,
+			["space"] = 0,
 			["actions"] = {
 				["start"] = {
 				},
-				["finish"] = {
-				},
 				["init"] = {
+				},
+				["finish"] = {
 				},
 			},
 			["triggers"] = {
 				{
 					["trigger"] = {
-						["debuffType"] = "HELPFUL",
-						["type"] = "aura2",
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
 						["spellIds"] = {
 						},
-						["subeventSuffix"] = "_CAST_START",
-						["unit"] = "player",
-						["subeventPrefix"] = "SPELL",
-						["event"] = "Health",
+						["buffShowOn"] = "showOnActive",
 						["names"] = {
 						},
+						["unit"] = "player",
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
+				["activeTriggerMode"] = 1,
 			},
 			["columnSpace"] = 1,
-			["internalVersion"] = 29,
-			["animation"] = {
-				["start"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-			},
+			["radius"] = 200,
+			["selfPoint"] = "LEFT",
 			["align"] = "CENTER",
-			["stagger"] = 0,
-			["subRegions"] = {
-			},
+			["rotation"] = 0,
+			["height"] = 20,
 			["load"] = {
-				["use_class"] = false,
+				["talent2"] = {
+					["multi"] = {
+					},
+				},
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
+				["talent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["multi"] = {
 					},
 				},
 				["class"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
+					["multi"] = {
+					},
+				},
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["use_combat"] = true,
+				["class_and_spec"] = {
 					["multi"] = {
 					},
 				},
@@ -2527,84 +2551,33 @@ WeakAurasSaved = {
 				0.5, -- [4]
 			},
 			["animate"] = true,
+			["arcLength"] = 360,
 			["scale"] = 1,
-			["rotation"] = 0,
+			["stagger"] = 0,
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["sort"] = "none",
-			["gridType"] = "RD",
-			["useLimit"] = false,
-			["constantFactor"] = "RADIUS",
-			["rowSpace"] = 1,
-			["borderOffset"] = 4,
-			["limit"] = 5,
-			["uid"] = "DWcYG1g6hM9",
-			["id"] = "Target debuffs",
-			["config"] = {
-			},
-			["gridWidth"] = 5,
-			["anchorFrameType"] = "SCREEN",
-			["selfPoint"] = "LEFT",
-			["borderInset"] = 1,
-			["frameStrata"] = 1,
 			["authorOptions"] = {
 			},
+			["useLimit"] = false,
+			["constantFactor"] = "RADIUS",
+			["gridType"] = "RD",
+			["borderOffset"] = 16,
+			["config"] = {
+			},
+			["uid"] = "Z9kZ1F38eaI",
+			["id"] = "Details! Aura Group",
+			["rowSpace"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 199.999969482422,
+			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 0,
+			["gridWidth"] = 5,
+			["limit"] = 5,
 			["conditions"] = {
 			},
-			["radius"] = 200,
-			["grow"] = "RIGHT",
-		},
-		["Combat Time"] = {
-			["outline"] = "OUTLINE",
-			["xOffset"] = 0,
-			["displayText"] = "%c",
-			["customText"] = "-- [Encounter Time] %c (Every Frame)\nfunction()\n    local A = aura_env\n    if A.combatStart then\n        local combatTime = GetTime() - A.combatStart\n        return string.format(\"%02d:%02d\", combatTime/60, combatTime%60)\n    else\n        return \"12:05\"\n    end\nend",
-			["yOffset"] = -383,
-			["anchorPoint"] = "CENTER",
-			["customTextUpdate"] = "update",
-			["automaticWidth"] = "Auto",
-			["actions"] = {
-				["start"] = {
-					["sound_channel"] = "Master",
-					["sound"] = "Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BikeHorn.mp3",
-					["do_message"] = false,
-					["do_sound"] = false,
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["type"] = "custom",
-						["debuffType"] = "HELPFUL",
-						["custom_type"] = "event",
-						["event"] = "Health",
-						["custom"] = "--! [Encounter Time] Trigger (Enter/Exit Combat)\nfunction()\n    local A = aura_env\n    if (UnitExists(\"boss1\") and UnitIsDeadOrGhost(\"player\")) or UnitAffectingCombat(\"player\") or InCombatLockdown() then\n        A.combatStart = A.combatStart or GetTime()\n        return true\n    else\n        A.combatStart = nil\n        return false\n    end\nend",
-						["genericShowOn"] = "showOnActive",
-						["unit"] = "player",
-						["customDuration"] = "",
-						["customName"] = "",
-						["events"] = "INSTANCE_ENCOUNTER_ENGAGE_UNIT, PLAYER_REGEN_DISABLED, PLAYER_REGEN_ENABLED",
-						["names"] = {
-						},
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["subeventSuffix"] = "_CAST_START",
-						["custom_hide"] = "custom",
-					},
-					["untrigger"] = {
-						["custom"] = "function()\n    return true\nend\n\n\n\n\n\n\n\n",
-					},
-				}, -- [1]
-				["activeTriggerMode"] = 1,
-			},
-			["internalVersion"] = 29,
 			["animation"] = {
 				["start"] = {
 					["type"] = "none",
@@ -2625,37 +2598,67 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["font"] = "Oswald",
-			["version"] = 1,
-			["height"] = 34.16662979126,
+			["internalVersion"] = 33,
+		},
+		["Details! Boss Mods Group"] = {
+			["grow"] = "DOWN",
+			["controlledChildren"] = {
+			},
+			["borderBackdrop"] = "Blizzard Tooltip",
+			["xOffset"] = 0,
+			["yOffset"] = 370,
+			["anchorPoint"] = "CENTER",
+			["borderColor"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				1, -- [4]
+			},
+			["space"] = 2,
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["triggers"] = {
+				{
+					["trigger"] = {
+						["type"] = "aura",
+						["subeventSuffix"] = "_CAST_START",
+						["event"] = "Health",
+						["subeventPrefix"] = "SPELL",
+						["spellIds"] = {
+						},
+						["buffShowOn"] = "showOnActive",
+						["unit"] = "player",
+						["names"] = {
+						},
+						["debuffType"] = "HELPFUL",
+					},
+					["untrigger"] = {
+					},
+				}, -- [1]
+				["activeTriggerMode"] = 1,
+			},
+			["columnSpace"] = 1,
+			["radius"] = 200,
+			["selfPoint"] = "TOP",
+			["align"] = "CENTER",
+			["rotation"] = 0,
+			["height"] = 121.503601074219,
 			["load"] = {
-				["ingroup"] = {
+				["talent2"] = {
 					["multi"] = {
 					},
 				},
-				["use_never"] = false,
+				["affixes"] = {
+					["multi"] = {
+					},
+				},
 				["talent"] = {
-					["single"] = 2,
-					["multi"] = {
-					},
-				},
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
-					["multi"] = {
-					},
-				},
-				["race"] = {
-					["multi"] = {
-					},
-				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
-				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -2663,7 +2666,24 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["talent2"] = {
+				["spec"] = {
+					["multi"] = {
+					},
+				},
+				["ingroup"] = {
+					["multi"] = {
+					},
+				},
+				["class_and_spec"] = {
+					["multi"] = {
+					},
+				},
+				["use_class"] = false,
+				["race"] = {
+					["multi"] = {
+					},
+				},
+				["talent3"] = {
 					["multi"] = {
 					},
 				},
@@ -2671,82 +2691,58 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["size"] = {
 					["multi"] = {
 					},
 				},
 			},
-			["fontSize"] = 21,
-			["shadowXOffset"] = 1,
-			["regionType"] = "text",
-			["anchorFrameType"] = "SCREEN",
-			["shadowYOffset"] = -1,
-			["url"] = "https://wago.io/SkU4MMgNm/1",
-			["semver"] = "1.0.0",
-			["color"] = {
-				0.949019607843137, -- [1]
-				0.996078431372549, -- [2]
+			["backdropColor"] = {
+				1, -- [1]
+				1, -- [2]
 				1, -- [3]
-				1, -- [4]
+				0.5, -- [4]
 			},
-			["id"] = "Combat Time",
-			["fixedWidth"] = 200,
-			["frameStrata"] = 4,
-			["width"] = 127.50007629395,
-			["uid"] = "AeVKoJEc3bV",
+			["animate"] = true,
+			["arcLength"] = 360,
+			["scale"] = 1,
+			["stagger"] = 0,
+			["border"] = false,
+			["borderEdge"] = "Square Full White",
+			["regionType"] = "dynamicgroup",
+			["borderSize"] = 2,
+			["sort"] = "none",
+			["authorOptions"] = {
+			},
+			["useLimit"] = false,
+			["constantFactor"] = "RADIUS",
+			["gridType"] = "RD",
+			["borderOffset"] = 16,
 			["config"] = {
 			},
-			["selfPoint"] = "CENTER",
-			["justify"] = "LEFT",
-			["shadowColor"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				1, -- [4]
-			},
+			["uid"] = "77nqVVNLHEN",
+			["id"] = "Details! Boss Mods Group",
+			["rowSpace"] = 1,
+			["frameStrata"] = 1,
+			["width"] = 359.096801757813,
+			["anchorFrameType"] = "SCREEN",
+			["borderInset"] = 0,
+			["gridWidth"] = 5,
+			["limit"] = 5,
 			["conditions"] = {
 			},
-			["wordWrap"] = "WordWrap",
-			["authorOptions"] = {
-			},
-		},
-		["target debuffs"] = {
-			["authorOptions"] = {
-			},
-			["yOffset"] = 0,
-			["anchorPoint"] = "CENTER",
-			["cooldownSwipe"] = true,
-			["cooldownEdge"] = false,
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
-			["triggers"] = {
-				{
-					["trigger"] = {
-						["showClones"] = true,
-						["type"] = "aura2",
-						["subeventSuffix"] = "_CAST_START",
-						["event"] = "Health",
-						["subeventPrefix"] = "SPELL",
-						["spellIds"] = {
-						},
-						["names"] = {
-						},
-						["unit"] = "target",
-						["debuffType"] = "HARMFUL",
-					},
-					["untrigger"] = {
-					},
-				}, -- [1]
-				["activeTriggerMode"] = -10,
-			},
-			["internalVersion"] = 29,
-			["keepAspectRatio"] = false,
+			["internalVersion"] = 33,
 			["animation"] = {
 				["start"] = {
 					["duration_type"] = "seconds",
@@ -2767,81 +2763,6 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["desaturate"] = false,
-			["subRegions"] = {
-				{
-					["text_shadowXOffset"] = 0,
-					["text_text"] = "%s",
-					["text_shadowColor"] = {
-						0, -- [1]
-						0, -- [2]
-						0, -- [3]
-						1, -- [4]
-					},
-					["text_selfPoint"] = "AUTO",
-					["text_automaticWidth"] = "Auto",
-					["text_fixedWidth"] = 64,
-					["anchorYOffset"] = 0,
-					["text_justify"] = "CENTER",
-					["rotateText"] = "NONE",
-					["type"] = "subtext",
-					["text_color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["text_font"] = "Friz Quadrata TT",
-					["text_shadowYOffset"] = 0,
-					["text_wordWrap"] = "WordWrap",
-					["text_visible"] = false,
-					["text_anchorPoint"] = "INNER_BOTTOMRIGHT",
-					["text_fontSize"] = 12,
-					["anchorXOffset"] = 0,
-					["text_fontType"] = "OUTLINE",
-				}, -- [1]
-			},
-			["height"] = 32,
-			["load"] = {
-				["spec"] = {
-					["multi"] = {
-					},
-				},
-				["class"] = {
-					["multi"] = {
-					},
-				},
-				["size"] = {
-					["multi"] = {
-					},
-				},
-			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["zoom"] = 0,
-			["parent"] = "Target debuffs",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["frameStrata"] = 1,
-			["id"] = "target debuffs",
-			["width"] = 32,
-			["alpha"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["config"] = {
-			},
-			["uid"] = "NMjbldQ(IDy",
-			["inverse"] = false,
-			["icon"] = true,
-			["conditions"] = {
-			},
-			["cooldown"] = true,
-			["selfPoint"] = "CENTER",
 		},
 		["pvp cds"] = {
 			["xOffset"] = 0,
@@ -2866,30 +2787,30 @@ WeakAurasSaved = {
 						["duration"] = "2",
 						["dynamicDuration"] = false,
 						["customIcon"] = "function()\n    return aura_env.icon\nend\n\n\n\n\n\n\n\n\n\n",
-						["debuffType"] = "HELPFUL",
-						["type"] = "custom",
-						["custom_type"] = "event",
-						["names"] = {
-						},
-						["buffShowOn"] = "showOnActive",
-						["event"] = "Combat Log",
 						["custom_hide"] = "timed",
+						["type"] = "custom",
+						["subeventSuffix"] = "_CAST_START",
+						["buffShowOn"] = "showOnActive",
 						["unevent"] = "timed",
-						["customName"] = "function()\n    return aura_env.name\nend\n\n\n\n\n\n\n\n\n\n\n\n\n",
+						["event"] = "Combat Log",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["custom"] = "function(_, ...)\n    local timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName = select(1, ...)\n    \n    if event == 'SPELL_CAST_SUCCESS' then\n        if bit.band(sourceFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY) > 0 then\n            return false\n        end\n        \n        for i=1, #aura_env.spells do\n            if aura_env.spells[i] == spellId then\n                PlaySoundFile('Interface\\\\Addons\\\\XunaTweaks\\\\IM.ogg', 'Master')\n                \n                local classFilename = select(2, GetPlayerInfoByGUID(sourceGUID))\n                local color = RAID_CLASS_COLORS[classFilename].colorStr\n                \n                aura_env.icon = GetSpellTexture(spellId)\n                aura_env.name = '|c'..color..''..Ambiguate(sourceName, 'short'):upper()..': '..spellName:upper()..'|r'\n                \n                return true\n            end\n        end\n    end\nend",
+						["customName"] = "function()\n    return aura_env.name\nend\n\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
 						["subeventPrefix"] = "SPELL",
 						["unit"] = "player",
-						["subeventSuffix"] = "_CAST_START",
+						["custom_type"] = "event",
+						["names"] = {
+						},
+						["debuffType"] = "HELPFUL",
 					},
 					["untrigger"] = {
 					},
 				}, -- [1]
 				["activeTriggerMode"] = -10,
 			},
-			["internalVersion"] = 29,
+			["internalVersion"] = 33,
 			["keepAspectRatio"] = false,
 			["selfPoint"] = "CENTER",
 			["desaturate"] = false,
@@ -2921,9 +2842,10 @@ WeakAurasSaved = {
 					["text_wordWrap"] = "WordWrap",
 					["text_fontType"] = "OUTLINE",
 					["text_anchorPoint"] = "OUTER_BOTTOM",
+					["text_visible"] = true,
 					["text_fontSize"] = 18,
 					["anchorXOffset"] = 0,
-					["text_visible"] = true,
+					["text_text_format_n_format"] = "none",
 				}, -- [1]
 			},
 			["height"] = 64,
@@ -2959,13 +2881,13 @@ WeakAurasSaved = {
 					["use_translate"] = false,
 					["scaleType"] = "pulse",
 					["easeType"] = "none",
-					["easeStrength"] = 3,
+					["scalex"] = 1.3,
 					["scaley"] = 1.3,
 					["alpha"] = 0,
-					["scalex"] = 1.3,
+					["use_scale"] = true,
 					["y"] = 0,
 					["x"] = 0,
-					["use_scale"] = true,
+					["easeStrength"] = 3,
 					["type"] = "custom",
 					["colorR"] = 1,
 					["rotate"] = 0,
@@ -2988,19 +2910,19 @@ WeakAurasSaved = {
 			},
 			["authorOptions"] = {
 			},
-			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
+			["cooldownTextDisabled"] = false,
 			["auto"] = true,
 			["anchorFrameType"] = "SCREEN",
 			["id"] = "pvp cds",
 			["uid"] = "pa(xHen0fvW",
-			["alpha"] = 1,
+			["frameStrata"] = 1,
 			["width"] = 64,
 			["stickyDuration"] = false,
 			["config"] = {
 			},
 			["inverse"] = false,
-			["frameStrata"] = 1,
+			["alpha"] = 1,
 			["conditions"] = {
 			},
 			["cooldown"] = false,
@@ -3012,8 +2934,8 @@ WeakAurasSaved = {
 		["minimapPos"] = 4.74981562868536,
 		["hide"] = true,
 	},
-	["lastUpgrade"] = 1593196770,
-	["dbVersion"] = 29,
+	["lastUpgrade"] = 1596644080,
+	["dbVersion"] = 33,
 	["registered"] = {
 	},
 	["frame"] = {

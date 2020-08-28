@@ -62,9 +62,6 @@ L["Options are not available in combat!"] = "Optionen sind im Kampf nicht verfü
 --[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
-L["options:apps:raid-zul"] = [=[Nervige Gegner während dem Bosskampf '%s'
-hervorheben]=]
-L["options:apps:raid-zul:tooltip"] = "Spezielles Symbol wird über der Namensplaketten von '%s' und '%s' angezeigt"
 L["options:aura-options:allow-multiple-instances"] = "Mehrere Exemplare dieser Aura erlauben"
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[Falls diese Option angehakt ist, wirst du alle Exemplare dieser Aura sehen, auch wenn diese sich auf derselben Namensplakette befinden.
 Anderenfalls wirst du nur ein Exemplar dieser Aura sehen (die mit der größten Restdauer)]=]
@@ -82,6 +79,8 @@ L["options:auras:pvp-state-indefinite"] = "Diese Aura während eines PvP-Kampfes
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "Diese Aura nur während eines PvP-Kampfes zeigen"
 L["options:category:apps"] = "Erweiterungen"
 L["options:category:interrupts"] = "Unterbrechungen"
+--[[Translation missing --]]
+L["options:category:size-and-position"] = "Size & position"
 L["options:general:always-show-my-auras:tooltip"] = [=[Dies ist ein Filter höchster Priorität. Falls du diese
  Funktion aktivierst, werden Auren, die du gewirkt hast,
  unabhängig von anderen Filtern gezeigt]=]
@@ -90,6 +89,8 @@ L["options:general:hide-blizz-frames"] = "Blizzards Auraelemente ausblenden (UI-
 --[[Translation missing --]]
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 L["options:general:show-aura-tooltip"] = "Zeigt den Namen der Aura, wenn die Maus sich auf dem Aurasymbol befindet."
+--[[Translation missing --]]
+L["options:general:test-mode"] = "Test mode on/off"
 L["options:general:use-dim-glow"] = "Schwaches Leuchten von Symbolen "
 L["options:general:use-dim-glow:tooltip"] = [=[Wenn diese Option aktiviert ist, wird kein konstantes inneres und äußeres Leuchten der Symbole sichtbar sein.
 (Diese Option ist nur für diejenigen Zauber verfügbar, für die du explizit das Leuchten von Symbolen aktiviert hast)]=]

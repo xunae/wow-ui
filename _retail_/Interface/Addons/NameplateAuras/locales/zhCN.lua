@@ -62,12 +62,6 @@ L["Options are not available in combat!"] = "选项在战斗中不可用!"
 L["options:apps:explosive-orbs:tooltip"] = [=[在邪能爆炸球的姓名版上方显示一个特殊光环（大秘境易爆词缀）
 
 这个光环将会发亮并且是默认大小]=]
-L["options:apps:raid-zul"] = [=[Highlight shadow mobs during '%s' 
-raid encounter]=]
-L["options:apps:raid-zul:tooltip"] = [=[在活化脓液和祖尔的爪牙的姓名版上显示特殊的图标
-
-活化脓液=139195
-祖尔的爪牙=139185]=]
 L["options:aura-options:allow-multiple-instances"] = "允许该光环的多情况设定"
 L["options:aura-options:allow-multiple-instances:tooltip"] = "勾选此项将显示此光环的所有副本，甚至可在同一姓名板上重复显示。否则仅显示此光环的一个副本（剩余时间最长）。"
 L["options:auras:add-new-spell:error1"] = [=[你应该输入法术名称而不是法术ID.
@@ -84,12 +78,16 @@ L["options:auras:pvp-state-indefinite"] = "在PvP战斗中显示此光环"
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "仅在PVP时显示这个光环"
 L["options:category:apps"] = "附加 功能"
 L["options:category:interrupts"] = "打断"
+--[[Translation missing --]]
+L["options:category:size-and-position"] = "Size & position"
 L["options:general:always-show-my-auras:tooltip"] = "这是最高级的过滤器。如果你开启了这个功能，你的光环显示设置将无视其他过滤器的设置。"
 L["options:general:error-omnicc-is-not-loaded"] = "你无法选择这项功能因为OmniCC插件还没有启动！"
 L["options:general:hide-blizz-frames"] = "隐藏暴雪的光环框体 (需要重新加载用户界面)"
 --[[Translation missing --]]
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 L["options:general:show-aura-tooltip"] = "当鼠标在光环图标上悬停时显示光环名称"
+--[[Translation missing --]]
+L["options:general:test-mode"] = "Test mode on/off"
 L["options:general:use-dim-glow"] = "图标较暗发亮"
 L["options:general:use-dim-glow:tooltip"] = "如果选择了这个选项，图标将不会一直持续发亮。（这个功能只针对那些你明确设定图标发亮的技能）"
 L["options:interrupts:enable-interrupts"] = "开启打断监视"
@@ -207,12 +205,6 @@ L["Options are not available in combat!"] = "选项在战斗中不可用!"
 L["options:apps:explosive-orbs:tooltip"] = [=[在邪能爆炸球的姓名版上方显示一个特殊光环（大秘境易爆词缀）
 
 这个光环将会发亮并且是默认大小]=]
-L["options:apps:raid-zul"] = [=[Highlight shadow mobs during '%s' 
-raid encounter]=]
-L["options:apps:raid-zul:tooltip"] = [=[在活化脓液和祖尔的爪牙的姓名版上显示特殊的图标
-
-活化脓液=139195
-祖尔的爪牙=139185]=]
 L["options:aura-options:allow-multiple-instances"] = "允许该光环的多情况设定"
 --[[Translation missing --]]
 L["options:aura-options:allow-multiple-instances:tooltip"] = [=[If this option is checked, you will see all instances of this aura, even on the same nameplate.

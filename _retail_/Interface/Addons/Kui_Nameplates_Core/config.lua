@@ -7,7 +7,7 @@ local kui = LibStub('Kui-1.0')
 local kc = LibStub('KuiConfig-1.0')
 local LSM = LibStub('LibSharedMedia-3.0')
 local addon = KuiNameplates
-local core = KuiNameplatesCore
+local core = KuiNameplatesCore --luacheck:globals KuiNameplatesCore
 -- local event frame
 local cc = CreateFrame('Frame')
 -- add media to LSM ############################################################
@@ -44,7 +44,9 @@ local default_config = {
     target_arrows = false,
     target_arrows_size = 28,
     target_arrows_inset = 0, -- NEX
+    target_arrows_texture = 'interface/addons/kui_nameplates_core/media/target-arrow', -- NEX
     use_blizzard_personal = false,
+    use_blizzard_powers = false,
     frame_vertical_offset = 0,
     show_arena_id = true, -- NEX
 
@@ -98,6 +100,7 @@ local default_config = {
     font_size_small = 10,
     name_text = true,
     level_text = false,
+    level_nameonly = false,
     health_text = false,
     name_vertical_offset = -2,
     bot_vertical_offset = -3,
@@ -116,6 +119,7 @@ local default_config = {
     health_text_friend_dmg = 5,
     health_text_hostile_max = 1,
     health_text_hostile_dmg = 4,
+    health_text_percent_symbol = false,
 
     colour_hated = {.7,.2,.1},
     colour_neutral = {1,.8,0},
@@ -196,7 +200,7 @@ local default_config = {
     castbar_detach_width = 36,
     castbar_detach_offset = 5,
     castbar_detach_combine = true,
-    castbar_detach_nameonly = false, -- nex
+    castbar_detach_nameonly = false,
     castbar_icon_side = 1,
 
     tank_mode = true,
@@ -283,6 +287,7 @@ local function UpdateClickboxSize()
     end
 
     if addon.USE_BLIZZARD_PERSONAL then
+        -- obey width, use static height
         C_NamePlate.SetNamePlateSelfSize(
             core.profile.frame_width_personal - 10,
             45
@@ -300,6 +305,7 @@ end
 local configChanged = {}
 function configChanged.target_arrows(v)
     if v then
+        -- create arrows if needed
         core:configChangedTargetArrows()
     end
 end
@@ -317,14 +323,6 @@ end
 function configChanged.tankmode_force_offtank(v)
     local ele = addon:GetPlugin('TankMode')
     ele:SetForceOffTank(v)
-end
-
-function configChanged.level_text(v)
-    if v then
-        addon:GetPlugin('LevelText'):Enable()
-    else
-        addon:GetPlugin('LevelText'):Disable()
-    end
 end
 
 function configChanged.bar_texture()
@@ -666,10 +664,6 @@ function configChanged.ignore_uiscale(v)
     QueueClickboxUpdate()
 end
 
-function configChanged.use_blizzard_personal(v)
-    addon.USE_BLIZZARD_PERSONAL = v
-end
-
 local function ClickthroughUpdate()
     C_NamePlate.SetNamePlateSelfClickThrough(core.profile.clickthrough_self)
     C_NamePlate.SetNamePlateFriendlyClickThrough(core.profile.clickthrough_friend)
@@ -822,7 +816,6 @@ configLoaded.tankmode_tank_colour = configChangedTankColour
 configLoaded.auras_enabled = configChangedAuras
 
 configLoaded.castbar_enable = configChanged.castbar_enable
-configLoaded.level_text = configChanged.level_text
 
 configLoaded.clickthrough_self = QueueClickthroughUpdate
 
@@ -854,7 +847,12 @@ function configLoaded.ignore_uiscale(v)
     addon:UI_SCALE_CHANGED()
 end
 
-configLoaded.use_blizzard_personal = configChanged.use_blizzard_personal
+function configLoaded.use_blizzard_personal(v)
+    addon.USE_BLIZZARD_PERSONAL = v
+end
+function configLoaded.use_blizzard_powers(v)
+    addon.USE_BLIZZARD_POWERS = v
+end
 
 configLoaded.bossmod_enable = configChanged.bossmod_enable
 
@@ -894,44 +892,7 @@ function core:ConfigChanged(config,k,v)
     end
 end
 function core:InitialiseConfig()
-    if KuiNameplatesCoreSaved then
-        -- XXX 2.15>2.16 health display transition
-        if not KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] then
-            KuiNameplatesCoreSaved['216_HEALTH_TRANSITION'] = true
-            -- re-jigger health display patterns on all profiles (where set)
-            local upd = function(n,k)
-                local v = KuiNameplatesCoreSaved.profiles[n][k]
-                if not v then return end
-                KuiNameplatesCoreSaved.profiles[n][k] = v == 5 and 1 or v + 1
-            end
-            for n,_ in pairs(KuiNameplatesCoreSaved.profiles) do
-                for _,k in next,{
-                    'health_text_friend_max',
-                    'health_text_friend_dmg',
-                    'health_text_hostile_max',
-                    'health_text_hostile_dmg'
-                } do
-                    upd(n,k)
-                end
-            end
-        end
-        -- XXX 2.16.1>2.16.2
-        if not KuiNameplatesCoreSaved['2162_PERSONAL_FRAME_SIZE_TRANSITION'] then
-            KuiNameplatesCoreSaved['2162_PERSONAL_FRAME_SIZE_TRANSITION'] = true
-            -- frame_width_personal was previously pixel-corrected even if
-            -- use_blizzard_personal was enabled, so counteract that
-            local upd = function(n,k)
-                local v = KuiNameplatesCoreSaved.profiles[n][k]
-                if not addon.uiscale or not v or v == 132 then return end
-                KuiNameplatesCoreSaved.profiles[n][k] = floor(v * addon.uiscale) + 10
-            end
-            for n,p in pairs(KuiNameplatesCoreSaved.profiles) do
-                if p.use_blizzard_personal then
-                    upd(n,'frame_width_personal')
-                end
-            end
-        end
-    end
+    --luacheck:globals KuiNameplatesCoreSaved KuiNameplatesCoreConfig
     --[===[@alpha@
     if not KuiNameplatesCoreSaved or not KuiNameplatesCoreSaved.SHUT_UP then
         addon:ui_print('You are using an alpha release;')

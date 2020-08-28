@@ -34,6 +34,11 @@ local function OnEnter(self)
         GameTooltip:AddLine(L.tooltips[self.env],1,1,1,true)
     end
 
+    if self.require_reload then
+        -- add reload hint
+        GameTooltip:AddLine('|n'..L.tooltips['reload_hint'],1,.6,.6,true)
+    end
+
     GameTooltip:Show()
 end
 local function OnLeave(self)
@@ -309,7 +314,7 @@ do
         label:SetText(GetLocaleString(common_name,name,'Slider'))
         label:SetPoint('BOTTOM',slider,'TOP')
 
-        local display = CreateFrame('EditBox',nil,slider)
+        local display = CreateFrame('EditBox',nil,slider,BackdropTemplateMixin and "BackdropTemplate" or nil)
         display:SetFontObject('GameFontHighlightSmall')
         display:SetSize(50,15)
         display:SetPoint('TOP',slider,'BOTTOM',0,1)
@@ -360,6 +365,21 @@ do
 end
 -- colour picker ###############################################################
 do
+    --luacheck:globals ColorPickerFrame OpacitySliderFrame
+    local CLICKED_ENV,CLICKED_HAS_ALPHA
+    local function ColorPickerFrame_func(previous)
+        local r,g,b,a
+        if previous then
+            r,g,b,a=unpack(previous)
+        else
+            r,g,b=ColorPickerFrame:GetColorRGB()
+            if CLICKED_HAS_ALPHA then
+                a=1-OpacitySliderFrame:GetValue()
+            end
+        end
+        opt.config:SetKey(CLICKED_ENV,{r,g,b,a})
+    end
+
     local function Get(self)
         if self.env and opt.profile[self.env] then
             self.block:SetBackdropColor(unpack(opt.profile[self.env]))
@@ -375,8 +395,18 @@ do
         GenericOnShow(self)
     end
     local function ColourPickerOnClick(self)
-        opt.Popup.pages['colour_picker'].colour_picker = self
-        opt.Popup:ShowPage('colour_picker')
+        local val = opt.profile[self.env]
+        CLICKED_ENV = self.env
+        CLICKED_HAS_ALPHA = #val==4
+
+        ColorPickerFrame.func = ColorPickerFrame_func
+        ColorPickerFrame.opacityFunc = ColorPickerFrame_func
+        ColorPickerFrame.cancelFunc = ColorPickerFrame_func
+        ColorPickerFrame.hasOpacity = CLICKED_HAS_ALPHA
+        ColorPickerFrame.opacity = CLICKED_HAS_ALPHA and (1-val[4]) or 1
+        ColorPickerFrame.previousValues = {unpack(val)}
+        ColorPickerFrame:SetColorRGB(val[1],val[2],val[3])
+        ColorPickerFrame:Show()
     end
 
     function opt.CreateColourPicker(parent,name,small,common_name)
@@ -387,7 +417,7 @@ do
         container.env = name
         container.common_name = common_name
 
-        local block = CreateFrame('Frame',nil,container)
+        local block = CreateFrame('Frame',nil,container,BackdropTemplateMixin and "BackdropTemplate" or nil)
         block:SetBackdrop({
             bgFile='interface/buttons/white8x8',
             edgeFile='interface/buttons/white8x8',
@@ -652,131 +682,6 @@ do
 
         self:Show()
     end
-
-    -- colour picker ###########################################################
-    local function ColourPicker_GetColour(self)
-        local r = self.r:GetValue() or 255
-        local g = self.g:GetValue() or 255
-        local b = self.b:GetValue() or 255
-
-        r = r > 0 and r/255 or 0
-        g = g > 0 and g/255 or 0
-        b = b > 0 and b/255 or 0
-
-        if self.o:IsShown() then
-            local o = self.o:GetValue() or 255
-            o = o > 0 and o/255 or 0
-
-            return {r,g,b,o}
-        else
-            return {r,g,b}
-        end
-    end
-    local function ColourPicker_OnValueChanged(slider)
-        local col = ColourPicker_GetColour(slider:GetParent())
-        slider:GetParent().display:SetBackdropColor(unpack(col))
-
-        local text =
-            string.format("%.2f",col[1])..', '..
-            string.format("%.2f",col[2])..', '..
-            string.format("%.2f",col[3])
-
-        if col[4] then
-            text = text..', '..string.format("%.2f",col[4])
-        end
-
-        slider:GetParent().text:SetText(text)
-    end
-    local function ColourPicker_OnShow(self)
-        if not self.colour_picker or
-           not self.colour_picker.env
-        then
-            opt.Popup:Hide()
-            return
-        end
-
-        local val = opt.profile[self.colour_picker.env]
-
-        if not val then
-            opt.Popup:Hide()
-            return
-        end
-
-        if #val == 4 then
-            self.o:Show()
-            self.o:SetValue(val[4]*255)
-        else
-            self.o:Hide()
-        end
-
-        self.r:SetValue(val[1]*255)
-        self.g:SetValue(val[2]*255)
-        self.b:SetValue(val[3]*255)
-    end
-    local function ColourPicker_Callback(self,accept)
-        if accept then
-            self.colour_picker:Set(ColourPicker_GetColour(self))
-        end
-        self.colour_picker = nil
-    end
-    local function CreatePopupPage_ColourPicker()
-        local colour_picker = opt:CreatePopupPage('colour_picker',400,300)
-
-        local display = CreateFrame('Frame',nil,colour_picker)
-        display:SetBackdrop({
-            bgFile='interface/buttons/white8x8',
-            edgeFile='interface/buttons/white8x8',
-            edgeSize=1,
-            insets={top=2,right=2,bottom=2,left=2}
-        })
-        display:SetBackdropBorderColor(.5,.5,.5)
-        display:SetSize(150,150)
-        display:SetPoint('TOPLEFT',35,-45)
-
-        local text = colour_picker:CreateFontString(nil,'ARTWORK','GameFontHighlightSmall')
-        text:SetPoint('TOPLEFT',display,'BOTTOMLEFT',0,-5)
-        text:SetPoint('TOPRIGHT',display,'BOTTOMRIGHT')
-
-        local r = opt.CreateSlider(colour_picker,'ColourPickerR',0,255)
-        r:SetWidth(150)
-        r:SetPoint('TOPRIGHT',-40,-50)
-        r.label:SetText('Red')
-        r.env = nil
-
-        local g = opt.CreateSlider(colour_picker,'ColourPickerG',0,255)
-        g:SetWidth(150)
-        g:SetPoint('TOPLEFT',r,'BOTTOMLEFT',0,-30)
-        g.label:SetText('Green')
-        g.env = nil
-
-        local b = opt.CreateSlider(colour_picker,'ColourPickerB',0,255)
-        b:SetWidth(150)
-        b:SetPoint('TOPLEFT',g,'BOTTOMLEFT',0,-30)
-        b.label:SetText('Blue')
-        b.env = nil
-
-        local o = opt.CreateSlider(colour_picker,'ColourPickerO',0,255)
-        o:SetWidth(150)
-        o:SetPoint('TOPLEFT',b,'BOTTOMLEFT',0,-30)
-        o.label:SetText('Opacity')
-        o.env = nil
-
-        colour_picker.display = display
-        colour_picker.text = text
-        colour_picker.r = r
-        colour_picker.g = g
-        colour_picker.b = b
-        colour_picker.o = o
-
-        colour_picker.callback = ColourPicker_Callback
-        colour_picker:SetScript('OnShow',ColourPicker_OnShow)
-
-        r:HookScript('OnValueChanged',ColourPicker_OnValueChanged)
-        g:HookScript('OnValueChanged',ColourPicker_OnValueChanged)
-        b:HookScript('OnValueChanged',ColourPicker_OnValueChanged)
-        o:HookScript('OnValueChanged',ColourPicker_OnValueChanged)
-    end
-
     -- confirm dialog ##########################################################
     local function ConfirmDialog_PostShow(self,desc,callback)
         self.label:SetText('')
@@ -844,7 +749,7 @@ do
 
     -- create popup ############################################################
     function CreatePopup()
-        local popup = CreateFrame('Frame',nil,opt)
+        local popup = CreateFrame('Frame',nil,opt,BackdropTemplateMixin and "BackdropTemplate" or nil)
         popup:SetBackdrop({
             bgFile='interface/buttons/white8x8',
             edgeFile='interface/dialogframe/ui-dialogbox-border',
@@ -887,7 +792,6 @@ do
         opt.Popup = popup
 
         -- create required pages
-        CreatePopupPage_ColourPicker()
         CreatePopupPage_ConfirmDialog()
         CreatePopupPage_TextEntry()
 
@@ -1011,7 +915,7 @@ do
 end
 -- init category display #######################################################
 local function CreateBackground(invisible)
-    local new = CreateFrame('Frame',nil,opt)
+    local new = CreateFrame('Frame',nil,opt,BackdropTemplateMixin and "BackdropTemplate" or nil)
     if not invisible then
         new:SetBackdrop({
             bgFile = 'interface/buttons/white8x8',
@@ -1131,10 +1035,13 @@ function opt:Initialise()
         local scrollframe = CreateFrame('ScrollFrame',frame_name..'PageScrollFrame',p_bg,'UIPanelScrollFrameTemplate')
         scrollframe:SetPoint('TOPLEFT',p_bg,4,-4)
         scrollframe:SetPoint('BOTTOMRIGHT',p_bg,-26,4)
-
         scrollframe.ScrollBar.scrollStep = 50
-        scrollframe.ScrollBar:SetBackdrop({bgFile='interface/buttons/white8x8'})
-        scrollframe.ScrollBar:SetBackdropColor(0,0,0,.2)
+
+        local bg = scrollframe:CreateTexture(nil,'ARTWORK')
+        bg:SetTexture('interface/buttons/white8x8')
+        bg:SetVertexColor(0,0,0,.2)
+        bg:SetAllPoints(scrollframe.ScrollBar)
+        scrollframe.ScrollBar.bg = bg
 
         self.ScrollFrame = scrollframe
     end
@@ -1216,7 +1123,7 @@ function opt:Initialise()
     version:SetPoint('BOTTOMRIGHT',self,'TOPRIGHT',-10,4)
     version:SetText(format(
         L.titles.version,
-        'Kui Nameplates','Kesava','2.25.4'
+        'Kui Nameplates','Kesava','2.26.2'
     ))
 
     self.TabList = tablist

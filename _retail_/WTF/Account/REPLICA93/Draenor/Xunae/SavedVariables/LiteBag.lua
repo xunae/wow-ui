@@ -1,14 +1,13 @@
 
 LiteBag_OptionsDB = {
 	["Frame:LiteBagInventory"] = {
-		["scale"] = 1,
+		["scale"] = 0.8999999761581421,
 	},
+	["ShowBindsOnText"] = true,
 	["Frame:LiteBagBank"] = {
-		["scale"] = 1,
+		["scale"] = 0.8999999761581421,
 	},
 	["Frame:LiteBagInventoryPanel"] = {
-		["order"] = "bag",
-		["layout"] = "bag",
 		["columns"] = 12,
 	},
 	["Frame:LiteBagBankPanel"] = {

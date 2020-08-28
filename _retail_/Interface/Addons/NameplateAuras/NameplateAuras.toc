@@ -2,7 +2,7 @@
 ## Title: NameplateAuras
 ## Notes: Displays people's buffs/debuffs above their nameplates
 ## SavedVariables: NameplateAurasAceDB
-## Version: 80300.3-release
+## Version: 80300.4-release
 ## OptionalDeps: OmniCC
 
 src\consts.lua

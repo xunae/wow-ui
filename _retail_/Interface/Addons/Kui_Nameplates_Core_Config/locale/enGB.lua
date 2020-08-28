@@ -63,6 +63,7 @@ L.titles = {
 
     ignore_uiscale = 'Pixel correction',
     use_blizzard_personal = 'Ignore personal nameplate',
+    use_blizzard_powers = 'Show default class powers',
 
     clickthrough_sep = 'Clickthrough frames',
     clickthrough_self = 'Personal',
@@ -156,12 +157,13 @@ L.titles = {
     name_text = 'Show name text',
     hide_names = 'Hide non-tracked names',
     level_text = 'Show level text',
+    level_nameonly = 'Show level',
     health_text = 'Show health text',
     name_vertical_offset = 'Name v.offset',
     bot_vertical_offset = 'Level/health v.offset',
 
     name_colour_sep = 'Name text colour',
-    name_colour_white_in_bar_mode = 'White names with visible health bar',
+    name_colour_white_in_bar_mode = 'White names on health bar',
     class_colour_friendly_names = 'Class colour friendly names',
     class_colour_enemy_names = 'Class colour enemy names',
     name_colour_player_friendly = 'Friendly player',
@@ -175,6 +177,7 @@ L.titles = {
     health_text_friend_dmg = 'Damaged friend',
     health_text_hostile_max = 'Max. health hostile',
     health_text_hostile_dmg = 'Damaged hostile',
+    health_text_percent_symbol = 'Show percent symbol',
     dd_health_text_current = 'Current',
     dd_health_text_maximum = 'Maximum',
     dd_health_text_percent = 'Percent',
@@ -237,13 +240,14 @@ L.titles = {
     castbar_name_vertical_offset = 'Spell name offset',
     castbar_detach = 'Detach',
     castbar_detach_combine = 'Overlay spell icon',
+    castbar_detach_nameonly = 'Show in name-only mode',
     castbar_icon_side = 'Spell icon side',
 
     tank_mode = 'Enable tank mode',
     tankmode_force_enable = 'Force tank mode',
     tankmode_force_offtank = 'Force off-tank detection',
-    threat_brackets = 'Show threat brackets',
-    frame_glow_threat = 'Show threat glow',
+    threat_brackets = 'Threat indicators',
+    frame_glow_threat = 'Threat glow',
     tankmode_colour_sep = 'Tank mode colours',
     tankmode_tank_colour = 'Tanking',
     tankmode_trans_colour = 'Transition',
@@ -288,14 +292,16 @@ L.titles = {
     cvar_occluded_mult = 'Line-of-sight alpha',
 }
 L.tooltips = {
+    reload_hint = 'Requires a UI reload.',
+
     bar_texture = 'The texture used for status bars (provided by LibSharedMedia)',
     bar_animation = 'The style of animation to use on health/power bars',
 
     combat_hostile = 'Action to take on hostile frames upon entering and leaving combat.',
     combat_friendly = 'Action to take on friendly frames upon entering and leaving combat.',
 
-    ignore_uiscale = 'Fix pixel alignment issues related to interface scaling. Compensate for the size difference by adjusting /knp > frame sizes > global scale.|n|nThis is necessary even if you do not have UI scale enabled.',
-    use_blizzard_personal = 'Don\'t skin the personal nameplate or its class powers.|n|nRequires a UI reload.',
+    ignore_uiscale = 'Fix pixel alignment issues related to interface scaling. Compensate for the size difference by adjusting /knp > frame sizes > global scale.|n|nYou\'ll also need to disable the nameplate scaling CVars.|n|nThis may be necessary even if you do not have UI scale enabled.',
+    use_blizzard_personal = 'Don\'t skin the personal resource display, which can be enabled in Interface > Names.',
     state_icons = 'Show an icon on bosses and rare units (hidden when level text is shown)',
 
     clickthrough_self = 'Disable the click-box of your personal nameplate',
@@ -309,7 +315,7 @@ L.tooltips = {
     nameonly_combat_hostile = 'Note that this doesn\'t apply to training dummies or other units which don\'t have a threat table',
     guild_text_npcs = 'Such as Flight Master, Quartermaster, etc.',
 
-    target_arrows = 'Show arrows around your current target. These inherit the target glow colour set above.',
+    target_indicators = 'Show indicators around your current target. These inherit the target glow colour set above.',
 
     fade_non_target_alpha = 'Opacity other frames will fade to when you have a target.|n|nInvisible nameplates can still be clicked.',
     fade_conditional_alpha = 'Opacity frames will fade to when matching one of the conditions below',
@@ -317,10 +323,10 @@ L.tooltips = {
     fade_all = 'Fade all frames to the non-target alpha by default',
     fade_friendly_npc = 'Fade friendly NPC nameplates by default (including those in name-only mode)',
     fade_neutral_enemy = 'Fade attackable neutral nameplates by default (including those in name-only mode)',
-    fade_untracked = 'Fade non-tracked nameplates by default (including those in name-only mode).|n|nWhether or not a unit is tracked can by set by changing the "NPC Names" dropdown and other checkboxes in the default interface options under Esc > Interface > Names',
+    fade_untracked = 'Fade non-tracked nameplates by default (including those in name-only mode).|n|nWhether or not a unit is tracked can by set by changing the "NPC Names" dropdown and other checkboxes in Interface > Names',
     fade_avoid_execute_friend = 'Friendly nameplates in execute range',
     fade_avoid_execute_hostile = 'Hostile nameplates in execute range',
-    fade_avoid_tracked = 'Whether or not a unit is tracked can by set by changing the "NPC Names" dropdown and other checkboxes in the default interface options under Esc > Interface > Names',
+    fade_avoid_tracked = 'Whether or not a unit is tracked can by set by changing the "NPC Names" dropdown and other checkboxes in Interface > Names',
 
     colour_self_class = 'Use your class colour on your personal nameplate',
     colour_self = 'The health bar colour of your personal nameplate',
@@ -336,27 +342,23 @@ L.tooltips = {
     colour_friendly_pet = 'Note that friendly pets do not generally have nameplates rendered',
     colour_player = 'The colour of other friendly players\' health bars',
 
-    hide_names = 'Whether or not a unit is tracked can be set by changing the "NPC Names" dropdown and other checkboxes in the default interface options under Esc > Interface > Names.|n|nThis does not affect name-only mode.',
+    hide_names = 'Whether or not a unit is tracked can be set by changing the "NPC Names" dropdown and other checkboxes in Interface > Names.|n|nThis does not affect name-only mode.',
     font_face = 'Fonts are provided by LibSharedMedia.',
     font_size_normal = 'Used for name, level, health and auras.',
     font_size_small = 'Used for guild and spell name.',
 
-    name_colour_white_in_bar_mode = 'Colour NPC\'s and player\'s names white (unless class colour is enabled).|n|nIf this is enabled, the colours below only apply to name-only mode.',
-    class_colour_friendly_names = 'Colour the names of friendly players by their class.',
-    class_colour_enemy_names = 'Colour the names of enemy players by their class.',
+    name_colour_white_in_bar_mode = '(Excluding player class colours)',
 
     health_text_friend_max = 'Health text format used on friendly units at full health',
     health_text_friend_dmg = 'Health text format used on damaged friendly units',
     health_text_hostile_max = 'Health text format used on hostile units at full health',
     health_text_hostile_dmg = 'Health text format used on damaged hostile units',
 
-    frame_width = 'Width of the standard nameplates',
-    frame_height = 'Height of the standard nameplates',
-    frame_width_minus = 'Width of nameplates used on mobs flagged as "minus" (previously referred to as trivial)',
-    frame_height_minus = 'Height of nameplates used on mobs flagged as "minus" (previously referred to as trivial), as well as nameless frames (i.e. "unimportant" units)',
-    frame_width_personal = 'Width of the personal nameplate (enabled by Esc > Interface > Names > Personal Resource Display)',
-    frame_height_personal = 'Height of the personal nameplate (enabled by Esc > Interface > Names > Personal Resource Display)',
-    powerbar_height = 'Height of the power bar on the personal frame. Will not increase beyond frame height',
+    frame_width_minus = 'Width for minus mobs',
+    frame_height_minus = 'Height for minus mobs and frames with a hidden name',
+    frame_width_personal = 'Width of personal resource display (enabled in Interface > Names)',
+    frame_height_personal = 'Height of personal resource display (enabled in Interface > Names)',
+    powerbar_height = 'Height of the power bar on the personal resource display',
     global_scale = 'Scale all nameplates by this amount (obeying the pixel grid)',
 
     auras_enabled = 'Buffs on friends, debuffs on enemies',
@@ -387,7 +389,6 @@ L.tooltips = {
     tank_mode = 'Recolour the health bars of units you are actively tanking when in a tanking specialisation',
     tankmode_force_enable = 'Always use tank mode, even if you\'re not currently in a tanking specialisation',
     tankmode_force_offtank = 'Colour bars being tanked by other tanks in your group, even if you\'re not currently in a tanking specialisation',
-    threat_brackets = 'Show triangles around nameplates to indicate threat status',
     frame_glow_threat = 'Change the colour of the frame glow to indicate threat status',
     tankmode_tank_colour = 'Health bar colour for enemies you are securely tanking',
     tankmode_trans_colour = 'Health bar colour for enemies which are about to change targets',
@@ -412,7 +413,7 @@ L.tooltips = {
 
     cvar_enable = 'When enabled, Kui Nameplates will attempt to lock the CVars on this page to the values set here.|n|nIf this option is disabled, KNP will not modify CVars, even to return them to defaults.',
     cvar_show_friendly_npcs = '|cffffcc00nameplateShowFriendlyNPCs|r',
-    cvar_name_only = '|cffffcc00nameplateShowOnlyNames|r|n|nHide the health bar of the default nameplates in situations where friendly nameplates cannot be otherwise modified by addons.|n|nRequires a UI reload.',
+    cvar_name_only = '|cffffcc00nameplateShowOnlyNames|r|n|nHide the health bar of the default nameplates in situations where friendly nameplates cannot be otherwise modified by addons.',
     cvar_personal_show_always = '|cffffcc00nameplatePersonalShowAlways|r',
     cvar_personal_show_combat = '|cffffcc00nameplatePersonalShowInCombat|r',
     cvar_personal_show_target = '|cffffcc00nameplatePersonalShowWithTarget|r|n|nShow the personal nameplate whenever you have an attackable target.',

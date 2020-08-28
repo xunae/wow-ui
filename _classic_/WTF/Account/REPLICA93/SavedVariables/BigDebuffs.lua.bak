@@ -45,6 +45,14 @@ BigDebuffsDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["raidFrames"] = {
+				["maxDebuffs"] = 2,
+				["cc"] = 60,
+				["increaseBuffs"] = true,
+			},
+			["nameplates"] = {
+				["enabled"] = false,
+			},
 			["spells"] = {
 				[182067] = {
 					["noUnitFrames"] = true,
@@ -58,11 +66,6 @@ BigDebuffsDB = {
 			["unitFrames"] = {
 				["arena1"] = {
 				},
-			},
-			["raidFrames"] = {
-				["maxDebuffs"] = 2,
-				["cc"] = 60,
-				["increaseBuffs"] = true,
 			},
 		},
 	},

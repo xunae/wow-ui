@@ -1,22 +1,25 @@
-# [2.17.8](https://github.com/WeakAuras/WeakAuras2/tree/2.17.8) (2020-06-16)
+# [2.18.2](https://github.com/WeakAuras/WeakAuras2/tree/2.18.2) (2020-08-11)
 
-[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.17.7...2.17.8)
+[Full Changelog](https://github.com/WeakAuras/WeakAuras2/compare/2.18.1...2.18.2)
 
 ## Highlights
 
- - bug fixes 
+ - Bug Fixes 
 
 ## Commits
 
-InfusOnWoW (1):
+InfusOnWoW (4):
 
-- Revert even more spell checker changes
+- Fix cast bars not having fake timers
+- Fix setting of timed duration in custom trigger
+- Options: GetAll
+- Fix trigger options not appearing at all if the type is nil
 
 Stanzilla (1):
 
-- Update README.md
+- Update bug_report.md
 
 mrbuds (1):
 
-- Add missing CLEU subevent prefix, fixes #2224
+- re-enable model region for classic (#2379)
 

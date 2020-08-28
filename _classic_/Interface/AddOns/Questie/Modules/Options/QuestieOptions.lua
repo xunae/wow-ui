@@ -26,7 +26,7 @@ function QuestieOptions:Initialize()
     Questie.configFrame = AceConfigDialog:AddToBlizOptions("Questie", "Questie");
 
     local configFrame = AceGUI:Create("Frame");
-    AceConfigDialog:SetDefaultSize("Questie", 625, 730)
+    AceConfigDialog:SetDefaultSize("Questie", 625, 780)
     AceConfigDialog:Open("Questie", configFrame)
     configFrame:Hide();
     QuestieConfigFrame = configFrame;
@@ -67,8 +67,7 @@ function QuestieOptions:SetGlobalOptionValue(info, value)
 end
 
 function QuestieOptions:AvailableQuestRedraw()
-    QuestieQuest:CalculateAvailableQuests()
-    QuestieQuest:DrawAllAvailableQuests()
+    QuestieQuest:CalculateAndDrawAvailableQuestsIterative()
 end
 
 function QuestieOptions:ClusterRedraw()
@@ -91,6 +90,7 @@ _CreateOptionsTable = function()
             dbm_hud_tab = QuestieOptions.tabs.dbm:Initialize(),
             tracker_tab = QuestieOptions.tabs.tracker:Initialize(),
             nameplate_tab = QuestieOptions.tabs.nameplate:Initialize(),
+            tooltip_tab = QuestieOptions.tabs.tooltip:Initialize(),
             advanced_tab = QuestieOptions.tabs.advanced:Initialize(),
         }
     }

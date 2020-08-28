@@ -1,7 +1,7 @@
 
 AtlasLootClassicDB = {
 	["global"] = {
-		["__addonrevision"] = 1040007,
+		["__addonrevision"] = 1050005,
 	},
 	["profileKeys"] = {
 		["Xuna - Gehennas"] = "Xuna - Gehennas",
@@ -12,10 +12,17 @@ AtlasLootClassicDB = {
 				["minimapPos"] = 168.494299088715,
 			},
 			["GUI"] = {
+				["point"] = {
+					nil, -- [1]
+					nil, -- [2]
+					"CENTER", -- [3]
+					1.5238208770752, -- [4]
+					-86.857063293457, -- [5]
+				},
 				["selected"] = {
 					nil, -- [1]
-					"RazorfenKraul", -- [2]
-					5, -- [3]
+					"ScarletMonasteryCathedral", -- [2]
+					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},
