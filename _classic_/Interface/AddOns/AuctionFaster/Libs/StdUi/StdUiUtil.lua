@@ -4,7 +4,7 @@ if not StdUi then
 	return
 end
 
-local module, version = 'Util', 7;
+local module, version = 'Util', 10;
 if not StdUi:UpgradeNeeded(module, version) then
 	return
 end
@@ -15,6 +15,9 @@ local TableSort = table.sort;
 
 --- @param frame Frame
 function StdUi:MarkAsValid(frame, valid)
+	if not frame.SetBackdrop then
+		Mixin(frame, BackdropTemplateMixin)
+	end
 	if not valid then
 		frame:SetBackdropBorderColor(1, 0, 0, 1);
 		frame.origBackdropBorderColor = { frame:GetBackdropBorderColor() };
@@ -34,7 +37,7 @@ StdUi.Util = {
 	editBoxValidator    = function(self)
 		self.value = self:GetText();
 
-		StdUi:MarkAsValid(self, true);
+		self.stdUi:MarkAsValid(self, true);
 		return true;
 	end,
 
@@ -45,14 +48,32 @@ StdUi.Util = {
 		local total, gold, silver, copper, isValid = StdUi.Util.parseMoney(text);
 
 		if not isValid or total == 0 then
-			StdUi:MarkAsValid(self, false);
+			self.stdUi:MarkAsValid(self, false);
 			return false;
 		end
 
 		self:SetText(StdUi.Util.formatMoney(total));
 		self.value = total;
 
-		StdUi:MarkAsValid(self, true);
+		self.stdUi:MarkAsValid(self, true);
+		return true;
+	end,
+
+	--- @param self EditBox
+	moneyBoxValidatorExC   = function(self)
+		local text = self:GetText();
+		text = text:trim();
+		local total, gold, silver, copper, isValid = StdUi.Util.parseMoney(text);
+
+		if not isValid or total == 0 or (copper and tonumber(copper) > 0) then
+			self.stdUi:MarkAsValid(self, false);
+			return false;
+		end
+
+		self:SetText(StdUi.Util.formatMoney(total, true));
+		self.value = total;
+
+		self.stdUi:MarkAsValid(self, true);
 		return true;
 	end,
 
@@ -64,23 +85,23 @@ StdUi.Util = {
 		local value = tonumber(text);
 
 		if value == nil then
-			StdUi:MarkAsValid(self, false);
+			self.stdUi:MarkAsValid(self, false);
 			return false;
 		end
 
 		if self.maxValue and self.maxValue < value then
-			StdUi:MarkAsValid(self, false);
+			self.stdUi:MarkAsValid(self, false);
 			return false;
 		end
 
 		if self.minValue and self.minValue > value then
-			StdUi:MarkAsValid(self, false);
+			self.stdUi:MarkAsValid(self, false);
 			return false;
 		end
 
 		self.value = value;
 
-		StdUi:MarkAsValid(self, true);
+		self.stdUi:MarkAsValid(self, true);
 
 		return true;
 	end,
@@ -92,7 +113,7 @@ StdUi.Util = {
 		local name, _, icon, _, _, _, spellId = GetSpellInfo(text);
 
 		if not name then
-			StdUi:MarkAsValid(self, false);
+			self.stdUi:MarkAsValid(self, false);
 			return false;
 		end
 
@@ -100,7 +121,7 @@ StdUi.Util = {
 		self.value = spellId;
 		self.icon:SetTexture(icon);
 
-		StdUi:MarkAsValid(self, true);
+		self.stdUi:MarkAsValid(self, true);
 		return true;
 	end,
 
@@ -134,7 +155,7 @@ StdUi.Util = {
 		return total, gold, silver, copper, isValid;
 	end,
 
-	formatMoney         = function(money)
+	formatMoney         = function(money, excludeCopper)
 		if type(money) ~= 'number' then
 			return money;
 		end
@@ -151,14 +172,16 @@ StdUi.Util = {
 		local output = '';
 
 		if gold > 0 then
-			output = format('%s%i%s ', goldColor, gold, '|rg')
+			output = format('%s%i%s ', goldColor, gold, '|rg');
 		end
 
 		if gold > 0 or silver > 0 then
-			output = format('%s%s%02i%s ', output, silverColor, silver, '|rs')
+			output = format('%s%s%02i%s ', output, silverColor, silver, '|rs');
 		end
 
-		output = format('%s%s%02i%s ', output, copperColor, copper, '|rc')
+		if not excludeCopper then
+			output = format('%s%s%02i%s ', output, copperColor, copper, '|rc');
+		end
 
 		return output:trim();
 	end,

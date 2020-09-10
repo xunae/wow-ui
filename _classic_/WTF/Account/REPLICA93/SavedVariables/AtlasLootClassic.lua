@@ -4,12 +4,12 @@ AtlasLootClassicDB = {
 		["Xuna - Gehennas"] = "Xuna - Gehennas",
 	},
 	["global"] = {
-		["__addonrevision"] = 1050005,
+		["__addonrevision"] = 1050006,
 	},
 	["profiles"] = {
 		["Xuna - Gehennas"] = {
 			["minimap"] = {
-				["minimapPos"] = 168.494299088715,
+				["minimapPos"] = 319.928080276557,
 			},
 			["GUI"] = {
 				["point"] = {
@@ -21,8 +21,8 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"RazorfenDowns", -- [2]
-					7, -- [3]
+					"BlackrockDepths", -- [2]
+					nil, -- [3]
 					1, -- [4]
 					0, -- [5]
 				},

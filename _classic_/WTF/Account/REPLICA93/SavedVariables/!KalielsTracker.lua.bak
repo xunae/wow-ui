@@ -1,24 +1,79 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Xûñä - Stormscale"] = {
-			["collapsed"] = true,
-		},
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
 		},
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "3.1.5",
+		["Xûñä - Stormscale"] = {
+			["collapsed"] = true,
+		},
+		["Xuna - Gehennas"] = {
+			["trackedQuests"] = {
+				{
+					["id"] = 2935,
+					["zone"] = "The Hinterlands",
+				}, -- [1]
+				{
+					["id"] = 4504,
+					["zone"] = "Tanaris",
+				}, -- [2]
+				{
+					["id"] = 4289,
+					["zone"] = "Un'Goro Crater",
+				}, -- [3]
+				{
+					["id"] = 4292,
+					["zone"] = "Un'Goro Crater",
+				}, -- [4]
+				{
+					["id"] = 3881,
+					["zone"] = "Un'Goro Crater",
+				}, -- [5]
+				{
+					["id"] = 3883,
+					["zone"] = "Un'Goro Crater",
+				}, -- [6]
+				{
+					["id"] = 3882,
+					["zone"] = "Un'Goro Crater",
+				}, -- [7]
+				{
+					["id"] = 4501,
+					["zone"] = "Un'Goro Crater",
+				}, -- [8]
+				{
+					["id"] = 4284,
+					["zone"] = "Un'Goro Crater",
+				}, -- [9]
+				{
+					["id"] = 4244,
+					["zone"] = "Un'Goro Crater",
+				}, -- [10]
+				{
+					["id"] = 4502,
+					["zone"] = "Un'Goro Crater",
+				}, -- [11]
+				{
+					["id"] = 4491,
+					["zone"] = "Un'Goro Crater",
+				}, -- [12]
+			},
+			["sort"] = "level",
+		},
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
+		["Xuna - Gehennas"] = "Default",
 		["Xüñâ - Stormscale"] = "Default",
+	},
+	["global"] = {
+		["helpTutorial"] = 8,
+		["version"] = "0.3.1",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["progressBar"] = "Blizzard Raid Bar",
 			["yOffset"] = -219,
 			["bgrColor"] = {
 				["a"] = 0,
@@ -27,12 +82,13 @@ KalielsTrackerDB = {
 			["filterAchievCat"] = {
 				[15117] = false,
 			},
-			["fontSize"] = 14,
-			["frameScrollbar"] = false,
-			["maxHeight"] = 500,
-			["colorDifficulty"] = true,
-			["textWordWrap"] = true,
+			["fontSize"] = 11,
 			["hdrOtherButtons"] = false,
+			["maxHeight"] = 470,
+			["colorDifficulty"] = true,
+			["headerCollapsedTxt"] = 2,
+			["textWordWrap"] = true,
+			["questsShowZones"] = false,
 		},
 	},
 }

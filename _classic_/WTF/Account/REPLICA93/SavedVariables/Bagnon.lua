@@ -13,8 +13,8 @@ Bagnon_Sets = {
 	},
 	["soulColor"] = {
 	},
-	["displayBlizzard"] = false,
 	["locked"] = false,
+	["displayBlizzard"] = false,
 	["tipCount"] = true,
 	["quiverColor"] = {
 	},
@@ -87,13 +87,13 @@ Bagnon_Sets = {
 			},
 			["actPanel"] = false,
 			["bagToggle"] = true,
-			["brokerObject"] = "BagnonLauncher",
-			["enabled"] = true,
 			["reverseBags"] = false,
+			["enabled"] = true,
+			["brokerObject"] = "BagnonLauncher",
 			["options"] = false,
-			["alpha"] = 1,
-			["money"] = true,
 			["itemScale"] = 1,
+			["money"] = true,
+			["alpha"] = 1,
 			["hiddenRules"] = {
 				["misc"] = false,
 				["use"] = false,
@@ -104,8 +104,8 @@ Bagnon_Sets = {
 				["contain"] = true,
 			},
 			["bagBreak"] = false,
-			["y"] = 137.689056396484,
-			["x"] = -105.468035812799,
+			["y"] = 147.007537841797,
+			["x"] = -85.5876397460602,
 			["search"] = false,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -213,6 +213,10 @@ Bagnon_Sets = {
 				"quest/all", -- [23]
 				"contain/all", -- [24]
 				"misc/all", -- [25]
+				"all/souls", -- [26]
+				"equip/ammo", -- [27]
+				"all/quiver", -- [28]
+				"all/keys", -- [29]
 			},
 			["point"] = "TOPLEFT",
 			["hiddenBags"] = {
@@ -226,8 +230,8 @@ Bagnon_Sets = {
 			["columns"] = 18,
 			["money"] = false,
 			["alpha"] = 1,
-			["y"] = -105.666809082031,
-			["x"] = 8.95551109313965,
+			["y"] = -105.666748046875,
+			["x"] = 8.95551300048828,
 			["search"] = false,
 			["broker"] = false,
 			["itemScale"] = 1,

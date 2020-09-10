@@ -13,70 +13,6 @@
         },
         {
             "Checksums": {
-                "AngryKeystones": "a79f4db868b0fa71854884745cea9fcc"
-            },
-            "Directories": [
-                "AngryKeystones"
-            ],
-            "Name": "Angry Keystones",
-            "URL": "https://www.curseforge.com/wow/addons/angry-keystones",
-            "Version": "v0.18.4"
-        },
-        {
-            "Checksums": {
-                "AutoDrink": "1eecdf16c0c6748a8b56f5102c42746d"
-            },
-            "Directories": [
-                "AutoDrink"
-            ],
-            "Name": "AutoDrink",
-            "URL": "https://www.curseforge.com/wow/addons/auto-drink",
-            "Version": "v1.5"
-        },
-        {
-            "Checksums": {
-                "AzeriteTooltip": "ae9dbc9898af575f982e7f22295c38f1"
-            },
-            "Directories": [
-                "AzeriteTooltip"
-            ],
-            "Name": "AzeriteTooltip",
-            "URL": "https://www.curseforge.com/wow/addons/azeritetooltip",
-            "Version": "2.0.8"
-        },
-        {
-            "Checksums": {
-                "BigWigs": "18f0bb50b99b3359de7a7eeef898ed4f",
-                "BigWigs_Azeroth": "896bae307ec57c76e0ed4d8ae91b0348",
-                "BigWigs_BattleOfDazaralor": "38d1fc3f25c2e3bfda8abd6114799039",
-                "BigWigs_CastleNathria": "345bb5bc2d82d1709822201c319650bb",
-                "BigWigs_Core": "9f85047408da5049e1863920990edf96",
-                "BigWigs_CrucibleOfStorms": "fa16cb2edd7a536532c756d4824b3fea",
-                "BigWigs_EternalPalace": "cd42316cf9c43580beffb4bd24e4cf17",
-                "BigWigs_Nyalotha": "ee413d80f8d5b4c2dd8d4dffe35dd764",
-                "BigWigs_Options": "c7813b445117c4fcfc69a3125ba199e0",
-                "BigWigs_Plugins": "bc7de82a4e3ea78bfd4da9769f597eaf",
-                "BigWigs_Uldir": "2ccf040c1d02d9700649246f9c025f17"
-            },
-            "Directories": [
-                "BigWigs_Azeroth",
-                "BigWigs_CrucibleOfStorms",
-                "BigWigs_Options",
-                "BigWigs_EternalPalace",
-                "BigWigs_Nyalotha",
-                "BigWigs",
-                "BigWigs_Core",
-                "BigWigs_Plugins",
-                "BigWigs_CastleNathria",
-                "BigWigs_Uldir",
-                "BigWigs_BattleOfDazaralor"
-            ],
-            "Name": "BigWigs Bossmods",
-            "URL": "https://www.curseforge.com/wow/addons/big-wigs",
-            "Version": "v184.4"
-        },
-        {
-            "Checksums": {
                 "BigDebuffs": "5359e2085efc03a809b522657364890b"
             },
             "Directories": [
@@ -96,28 +32,6 @@
             "Name": "Blizzard Raid Interface Antidote",
             "URL": "https://www.curseforge.com/wow/addons/blizzard-raid-interface-antidote",
             "Version": "8.1"
-        },
-        {
-            "Checksums": {
-                "ColorPickerPlus": "a7063d58b2876e4220d1615df6f94b98"
-            },
-            "Directories": [
-                "ColorPickerPlus"
-            ],
-            "Name": "ColorPickerPlus",
-            "URL": "https://www.curseforge.com/wow/addons/colorpickerplus",
-            "Version": "r45"
-        },
-        {
-            "Checksums": {
-                "CorruptionTooltips": "ee1c4b128eb1ce8716b7d2f5b769faf0"
-            },
-            "Directories": [
-                "CorruptionTooltips"
-            ],
-            "Name": "Corruption Tooltips",
-            "URL": "https://www.curseforge.com/wow/addons/corruption-tooltips",
-            "Version": "v1.8.3"
         },
         {
             "Checksums": {
@@ -155,17 +69,6 @@
         },
         {
             "Checksums": {
-                "ExRT": "bb2cc2df591c28889729003599c897ed"
-            },
-            "Directories": [
-                "ExRT"
-            ],
-            "Name": "Exorsus Raid Tools",
-            "URL": "https://www.curseforge.com/wow/addons/exorsus-raid-tools",
-            "Version": "Exorsus Raid Tools v.4170"
-        },
-        {
-            "Checksums": {
                 "Favorites": "030a88fe665b3b53ab46a682c44edf51"
             },
             "Directories": [
@@ -174,31 +77,6 @@
             "Name": "Favorites",
             "URL": "https://www.curseforge.com/wow/addons/favorites",
             "Version": "v3.4"
-        },
-        {
-            "Checksums": {
-                "ILD-Arkinventory": "e16c73c79fed72162c5c59a410a68eaf",
-                "ILD-Baggins": "d1b3fb9e835af4ac19b10c3ede26571e",
-                "ILD-Bagnon": "73928cae98092be656b9a8f92d78ae3b",
-                "ILD-Blizzard": "1a7ce9c3e2a4448adce7e58cef2d6e50",
-                "ILD-Combuctor": "8837d1c129ac862b6123377819e958ce",
-                "ILD-Litebag": "49a917f4b5a06f71ff87b0e93ea04024",
-                "ILD-Onebag3": "1c73bc2ff85aa09f15771213b28126b2",
-                "ItemLevelDisplay": "7c422cdf88064bf55fb6c5fb95f59a86"
-            },
-            "Directories": [
-                "ILD-Onebag3",
-                "ILD-Arkinventory",
-                "ILD-Blizzard",
-                "ILD-Litebag",
-                "ILD-Combuctor",
-                "ILD-Baggins",
-                "ILD-Bagnon",
-                "ItemLevelDisplay"
-            ],
-            "Name": "ItemLevelDisplay",
-            "URL": "https://www.curseforge.com/wow/addons/itemleveldisplay",
-            "Version": "2.1.6"
         },
         {
             "Checksums": {
@@ -227,17 +105,6 @@
             "Name": "Leatrix Plus (Battle for Azeroth and Shadowlands)",
             "URL": "https://www.curseforge.com/wow/addons/leatrix-plus",
             "Version": "8.3.34"
-        },
-        {
-            "Checksums": {
-                "LittleWigs": "e811a061ebad1e9843ff6ee0a294bd88"
-            },
-            "Directories": [
-                "LittleWigs"
-            ],
-            "Name": "LittleWigs",
-            "URL": "https://www.curseforge.com/wow/addons/little-wigs",
-            "Version": "v8.3.11"
         },
         {
             "Checksums": {
@@ -276,117 +143,6 @@
         },
         {
             "Checksums": {
-                "PremadeGroupsFilter": "dd039011a33c732ca245707eee1d0dd4"
-            },
-            "Directories": [
-                "PremadeGroupsFilter"
-            ],
-            "Name": "Premade Groups Filter",
-            "URL": "https://www.curseforge.com/wow/addons/premade-groups-filter",
-            "Version": "1.37"
-        },
-        {
-            "Checksums": {
-                "RaiderIO": "da83f431089054d443fc8bd32fc7cb3f",
-                "RaiderIO_DB_EU_A": "fd959a8a6c27b885904f3692f96fdcf3",
-                "RaiderIO_DB_EU_A_R": "f75e949037b35cb7ed1dd0fe35729ae3",
-                "RaiderIO_DB_EU_H": "9552561b19236903824907281da06bd6",
-                "RaiderIO_DB_EU_H_R": "315609eaccd183c9ca87ecc82ed28c93",
-                "RaiderIO_DB_KR_A": "6416f88251e557bd58ea345442d7d1ef",
-                "RaiderIO_DB_KR_A_R": "fa4c6249854b9378e1d114c7ea632897",
-                "RaiderIO_DB_KR_H": "f552d5df56bd4519c88fb7e837127609",
-                "RaiderIO_DB_KR_H_R": "721816fc3c7dbb143b18d706028ca861",
-                "RaiderIO_DB_TW_A": "3043391daea0cadf70edca64f3cc9922",
-                "RaiderIO_DB_TW_A_R": "b6e18148672b7c8887fcaf0cfa38c953",
-                "RaiderIO_DB_TW_H": "ed7216d9b4841051c3b69dd2ffdb684f",
-                "RaiderIO_DB_TW_H_R": "af7e7c1d53a980bbf8a9d1b65be857b5",
-                "RaiderIO_DB_US_A": "6ae4c868a575061a583ef89f6e8bef5c",
-                "RaiderIO_DB_US_A_R": "cfae51cb35bc3708b88d94c29c7aaa35",
-                "RaiderIO_DB_US_H": "603ba747b63369f19c8bb76c721251e0",
-                "RaiderIO_DB_US_H_R": "2898fec3a9970de31573a8f3f0ad2195"
-            },
-            "Directories": [
-                "RaiderIO_DB_US_A_R",
-                "RaiderIO_DB_EU_H_R",
-                "RaiderIO_DB_KR_A_R",
-                "RaiderIO_DB_KR_H",
-                "RaiderIO_DB_KR_H_R",
-                "RaiderIO_DB_US_A",
-                "RaiderIO_DB_TW_H",
-                "RaiderIO_DB_TW_H_R",
-                "RaiderIO_DB_EU_H",
-                "RaiderIO_DB_EU_A",
-                "RaiderIO_DB_KR_A",
-                "RaiderIO_DB_TW_A",
-                "RaiderIO_DB_US_H_R",
-                "RaiderIO_DB_TW_A_R",
-                "RaiderIO",
-                "RaiderIO_DB_EU_A_R",
-                "RaiderIO_DB_US_H"
-            ],
-            "Name": "Raider.IO Mythic Plus and Raid Progress",
-            "URL": "https://www.curseforge.com/wow/addons/raiderio",
-            "Version": "v202008280600"
-        },
-        {
-            "Checksums": {
-                "ReagentBanker": "66857d283c659baad08494968d0e656d"
-            },
-            "Directories": [
-                "ReagentBanker"
-            ],
-            "Name": "Reagent Banker",
-            "URL": "https://www.curseforge.com/wow/addons/reagent-banker",
-            "Version": "v1.0.2"
-        },
-        {
-            "Checksums": {
-                "REFlex": "ad060d09621bd74ffd05caf8a299f02e"
-            },
-            "Directories": [
-                "REFlex"
-            ],
-            "Name": "REFlex - Arena/Battleground Historian",
-            "URL": "https://www.curseforge.com/wow/addons/reflex-battleground-historian",
-            "Version": "v2.7.5"
-        },
-        {
-            "Checksums": {
-                "ShadowedUF_Options": "b61ec5270871ccbe190bcb76be5b7d4e",
-                "ShadowedUnitFrames": "4e02a909b560b3f006b171f4ed047027"
-            },
-            "Directories": [
-                "ShadowedUF_Options",
-                "ShadowedUnitFrames"
-            ],
-            "Name": "Shadowed Unit Frames",
-            "URL": "https://www.curseforge.com/wow/addons/shadowed-unit-frames",
-            "Version": "v4.2.9"
-        },
-        {
-            "Checksums": {
-                "TalentSetManager": "6b8dc0fdb289420144dd709614198ffd"
-            },
-            "Directories": [
-                "TalentSetManager"
-            ],
-            "Name": "Talent Set Manager",
-            "URL": "https://www.curseforge.com/wow/addons/talent-set-manager",
-            "Version": "v1.3.2"
-        },
-        {
-            "Checksums": {
-                "TooltipItemCount": "80fdb623cde4a3156fb30ca6fc1c884e"
-            },
-            "Directories": [
-                "TooltipItemCount"
-            ],
-            "Name": "Tooltip Item Count",
-            "URL": "https://www.curseforge.com/wow/addons/tooltip-item-count",
-            "Version": "r5-release"
-        },
-        {
-            "Checksums": {
                 "tullaRange": "66f971528d65f21c164195c758f5a827",
                 "tullaRange_Config": "c06bc046cf03d604cec8e4101aa50c77"
             },
@@ -419,17 +175,6 @@
         },
         {
             "Checksums": {
-                "WorldQuestsList": "1c9c124bc02a82b43a07e592a3a40367"
-            },
-            "Directories": [
-                "WorldQuestsList"
-            ],
-            "Name": "World Quests List",
-            "URL": "https://www.curseforge.com/wow/addons/world-quests-list",
-            "Version": "World Quests List v.9.2"
-        },
-        {
-            "Checksums": {
                 "Gladius": "4af1d6588ad1d4e3e44ed39b433c5b47"
             },
             "Directories": [
@@ -449,6 +194,47 @@
             "Name": "NameplateAuras",
             "URL": "https://www.curseforge.com/wow/addons/nameplateauras",
             "Version": "80300.4-release"
+        },
+        {
+            "Checksums": {
+                "DBM-Azeroth-BfA": "deee8dca010120222ee2a711f1df41df",
+                "DBM-Brawlers": "5c653aebb8f7930e8e8dc89211b22f19",
+                "DBM-CastleNathria": "3812a8683cc24c6382e05481094a4495",
+                "DBM-Core": "2b3a2775cb1b177aa6ab40cb7b50155e",
+                "DBM-CrucibleofStorms": "eada264cadf4d4d006aa7e0cdb91ff76",
+                "DBM-DMF": "06d5c58eb73d6e84e4266ad991821864",
+                "DBM-DefaultSkin": "872100ab04ca4b72baab99dce3977e79",
+                "DBM-EternalPalace": "45b5032161c1a6ea4256cf79370db321",
+                "DBM-GUI": "594f5e0a4f900d36cdcab306d3a62680",
+                "DBM-Nyalotha": "50847ef56c0fb42544f93e9b77406d84",
+                "DBM-Party-BfA": "ffe4f62a7cf19a95b1083ec548319ced",
+                "DBM-Party-Shadowlands": "f05f1f16a2638ed8e528403fe2763849",
+                "DBM-StatusBarTimers": "00f44e9a4561f4361c38f5ca4c1a9725",
+                "DBM-Uldir": "97017e8ffb22ee3f9b7f28aa9120fd84",
+                "DBM-WorldEvents": "ba2551916b757809558555e3a654245e",
+                "DBM-ZuldazarRaid": "e7e585c2c7f52d4d162f827120a68ca3"
+            },
+            "Directories": [
+                "DBM-Party-Shadowlands",
+                "DBM-DMF",
+                "DBM-Party-BfA",
+                "DBM-Nyalotha",
+                "DBM-StatusBarTimers",
+                "DBM-ZuldazarRaid",
+                "DBM-Uldir",
+                "DBM-WorldEvents",
+                "DBM-DefaultSkin",
+                "DBM-CastleNathria",
+                "DBM-CrucibleofStorms",
+                "DBM-GUI",
+                "DBM-EternalPalace",
+                "DBM-Azeroth-BfA",
+                "DBM-Brawlers",
+                "DBM-Core"
+            ],
+            "Name": "Deadly Boss Mods (DBM)",
+            "URL": "https://www.curseforge.com/wow/addons/deadly-boss-mods",
+            "Version": "8.3.33"
         }
     ],
     "Backup": {

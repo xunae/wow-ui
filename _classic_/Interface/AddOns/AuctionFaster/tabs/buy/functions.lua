@@ -18,9 +18,28 @@ local AuctionCache = AuctionFaster:GetModule('AuctionCache');
 local format = string.format;
 local TableInsert = tinsert;
 
-function Buy:Enable()
-	self:AddBuyAuctionHouseTab();
-	self:InterceptLinkClick();
+function Buy:OnEnable()
+	self:RegisterEvent('AUCTION_HOUSE_SHOW');
+	self:RegisterEvent('AUCTION_HOUSE_CLOSED');
+end
+
+Buy.initialized = false;
+function Buy:AUCTION_HOUSE_SHOW()
+	if AuctionFaster.db.enabled then
+		if not self.initialized then
+			self:AddBuyAuctionHouseTab();
+			self:InterceptLinkClick();
+			self.initialized = true;
+		end
+
+		if AuctionFaster.db.defaultTab == 'BUY' then
+			AuctionFrameTab_OnClick(self.auctionTabs[2].tabButton);
+		end
+	end
+end
+
+function Buy:AUCTION_HOUSE_CLOSED()
+	self:UnregisterEvent('AUCTION_ITEM_LIST_UPDATE');
 end
 
 function Buy:OnShow()
@@ -36,10 +55,6 @@ function Buy:OnShow()
 end
 
 function Buy:OnHide()
-	self:UnregisterEvent('AUCTION_ITEM_LIST_UPDATE');
-end
-
-function Buy:Disable()
 	self:UnregisterEvent('AUCTION_ITEM_LIST_UPDATE');
 end
 

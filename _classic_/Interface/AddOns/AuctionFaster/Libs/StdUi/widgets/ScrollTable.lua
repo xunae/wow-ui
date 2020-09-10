@@ -4,7 +4,7 @@ if not StdUi then
 	return
 end
 
-local module, version = 'ScrollTable', 5;
+local module, version = 'ScrollTable', 6;
 if not StdUi:UpgradeNeeded(module, version) then
 	return
 end
@@ -67,6 +67,7 @@ local methods = {
 		end
 
 		for i = 1, #columns do
+			local column = self.columns[i];
 			local columnFrame = columnHeadFrame.columns[i];
 			if not columnHeadFrame.columns[i] then
 				columnFrame = self.stdUi:HighlightButton(columnHeadFrame);
@@ -84,6 +85,12 @@ local methods = {
 				end
 
 				columnHeadFrame.columns[i] = columnFrame;
+
+				-- Add column head reference to it's column
+				column.head = columnFrame;
+
+				-- Create a table of empty column cell references
+				column.cells = {};
 			end
 
 			local align = columns[i].align or 'LEFT';
@@ -112,6 +119,21 @@ local methods = {
 
 			columnFrame:SetHeight(self.rowHeight);
 			columnFrame:SetWidth(columns[i].width);
+
+			--- Set the width of a column
+			--- @usage st.columns[i]:SetWidth(width)
+			function column:SetWidth(width)
+				-- Update the column's width value
+				column.width = width;
+
+				-- Set the width of the column's head
+				column.head:SetWidth(width);
+
+				-- Set the width of each cell in the column
+				for j = 1, #column.cells do
+					column.cells[j]:SetWidth(width)
+				end
+			end
 		end
 
 		self:SetDisplayRows(self.numberOfRows, self.rowHeight);
@@ -161,6 +183,9 @@ local methods = {
 					cell.text = self.stdUi:FontString(cell, '');
 
 					rowFrame.columns[j] = cell;
+
+					-- Add cell reference to column
+					self.columns[j].cells[i] = cell;
 
 					local align = columnData.align or 'LEFT';
 
@@ -225,6 +250,12 @@ local methods = {
 		end
 
 		self:SetAutoHeight();
+	end,
+
+	--- Set the width of a column
+	--- @usage st:SetColumnWidth(2, 65)
+	SetColumnWidth   = function(self, columnNumber, width)
+		self.columns[columnNumber]:SetWidth(width);
 	end,
 
 	-------------------------------------------------------------
@@ -336,6 +367,15 @@ local methods = {
 		end
 	end,
 
+	ClearHighlightedRows = function(self)
+		self.highlightedRows = {};
+		self:Refresh();
+	end,
+
+	HighlightRows = function(self, rowIndexes)
+		self.highlightedRows = rowIndexes;
+		self:Refresh();
+	end,
 
 	-------------------------------------------------------------
 	--- Selection Methods
@@ -422,13 +462,16 @@ local methods = {
 
 			if type(format) == 'function' then
 				cellFrame.text:SetText(format(value, rowData, columnData));
-			elseif (format == 'money') then
+			elseif format == 'money' then
 				value = table.stdUi.Util.formatMoney(value);
 				cellFrame.text:SetText(value);
-			elseif (format == 'number') then
+			elseif format == 'moneyShort' then
+				value = table.stdUi.Util.formatMoney(value, true);
+				cellFrame.text:SetText(value);
+			elseif format == 'number' then
 				value = tostring(value);
 				cellFrame.text:SetText(value);
-			elseif (format == 'icon') then
+			elseif format == 'icon' then
 				if cellFrame.texture then
 					cellFrame.texture:SetTexture(value);
 				else
@@ -436,6 +479,8 @@ local methods = {
 					cellFrame.texture = table.stdUi:Texture(cellFrame, iconSize, iconSize, value);
 					cellFrame.texture:SetPoint('CENTER', 0, 0);
 				end
+			elseif format == 'custom' then
+				columnData.renderer(cellFrame, value, rowData, columnData);
 			else
 				cellFrame.text:SetText(value);
 			end
@@ -459,6 +504,12 @@ local methods = {
 
 			if table.selectionEnabled then
 				if table.selected == rowIndex then
+					table:SetHighLightColor(rowFrame, table.stdUi.config.highlight.color);
+				else
+					table:SetHighLightColor(rowFrame, nil);
+				end
+			else
+				if tContains(table.highlightedRows, rowIndex) then
 					table:SetHighLightColor(rowFrame, table.stdUi.config.highlight.color);
 				else
 					table:SetHighLightColor(rowFrame, nil);
@@ -704,6 +755,7 @@ function StdUi:ScrollTable(parent, columns, numRows, rowHeight)
 	scrollTable.data = {};
 	scrollTable.cellEvents = cellEvents;
 	scrollTable.headerEvents = headerEvents;
+	scrollTable.highlightedRows = {};
 
 	-- Add all methods
 	for methodName, method in pairs(methods) do

@@ -13,39 +13,39 @@
         },
         {
             "Checksums": {
-                "AtlasLootClassic": "07b068453ef33d3d971e13100caf5d1b",
-                "AtlasLootClassic_Collections": "6f126e027b05c23309614000e347ec0a",
-                "AtlasLootClassic_Crafting": "cbd33dac233e34efa335e6919060da99",
-                "AtlasLootClassic_Data": "1d863b7908ac9a5f070e6bd882bdcf9a",
-                "AtlasLootClassic_DungeonsAndRaids": "64bd34d11acbe512204c14ce2273cdce",
-                "AtlasLootClassic_Factions": "91815b7ead0875d4683e13d82def97c6",
-                "AtlasLootClassic_Options": "55b12f3028ab4ae4a8142fea97c0a0c1",
-                "AtlasLootClassic_PvP": "baf2302f2a0ffd3363972aabac6b41f5"
+                "AtlasLootClassic": "297046a126c85be6ab2e941240060a36",
+                "AtlasLootClassic_Collections": "c6b9d2f93caf8393d0d9567ad16e74be",
+                "AtlasLootClassic_Crafting": "bfa2cd235acce1f7cb1169868d8cee94",
+                "AtlasLootClassic_Data": "da2adac71b04c534fea8072495c2d01e",
+                "AtlasLootClassic_DungeonsAndRaids": "163533b51bb4bb8f85ec36ca4dcfdab2",
+                "AtlasLootClassic_Factions": "c903328e2ee8373da36ef451f7a6469b",
+                "AtlasLootClassic_Options": "fb55bad79ecb032bb99bba2423c33e9b",
+                "AtlasLootClassic_PvP": "0dc47a4a63d0e132611d9d9ee6d48f08"
             },
             "Directories": [
+                "AtlasLootClassic",
+                "AtlasLootClassic_Factions",
+                "AtlasLootClassic_Collections",
+                "AtlasLootClassic_PvP",
+                "AtlasLootClassic_Options",
                 "AtlasLootClassic_DungeonsAndRaids",
                 "AtlasLootClassic_Data",
-                "AtlasLootClassic_PvP",
-                "AtlasLootClassic_Collections",
-                "AtlasLootClassic_Crafting",
-                "AtlasLootClassic_Factions",
-                "AtlasLootClassic",
-                "AtlasLootClassic_Options"
+                "AtlasLootClassic_Crafting"
             ],
             "Name": "AtlasLootClassic",
             "URL": "https://www.curseforge.com/wow/addons/atlaslootclassic",
-            "Version": "v1.5.5-classic"
+            "Version": "v1.5.6-classic"
         },
         {
             "Checksums": {
-                "AuctionFaster": "b369dbd8989cdfc0371134d569244c82"
+                "AuctionFaster": "ed5f0ffd463ca466bb9786830fcece88"
             },
             "Directories": [
                 "AuctionFaster"
             ],
             "Name": "AuctionFaster",
             "URL": "https://www.curseforge.com/wow/addons/auctionfaster",
-            "Version": "v1.13.6-classic"
+            "Version": "v1.13.9-classic"
         },
         {
             "Checksums": {
@@ -56,46 +56,15 @@
                 "Bagnon_VoidStorage": "6c64a228d2a9aedba19439885fd3703b"
             },
             "Directories": [
-                "Bagnon_GuildBank",
-                "Bagnon_VoidStorage",
                 "Bagnon",
+                "Bagnon_GuildBank",
+                "BagBrother",
                 "Bagnon_Config",
-                "BagBrother"
+                "Bagnon_VoidStorage"
             ],
             "Name": "Bagnon",
             "URL": "https://www.curseforge.com/wow/addons/bagnon",
             "Version": "8.3.8"
-        },
-        {
-            "Checksums": {
-                "BigWigs": "c2b8bc6563cb2f8c4ce6dc0e27935212",
-                "BigWigs_AhnQirajRuins": "c60140141e89e457bfe83add9184db16",
-                "BigWigs_AhnQirajTemple": "2fdef0889ec0c98b71727ff1ce70f588",
-                "BigWigs_BlackwingLair": "8956b436c18c5a2d72b801ac8d7875cb",
-                "BigWigs_Core": "e9225339308f1986866b125cd3e99510",
-                "BigWigs_MoltenCore": "53f1fe7507d115de944d0eb00f7ed793",
-                "BigWigs_Onyxia": "9441a3a370c2d44c12c8e90c9f4f9ad0",
-                "BigWigs_Options": "f12c3b067288d23dee41f062ebb3806a",
-                "BigWigs_Plugins": "5ab821a888b2b5eb9a1815e30d2337fd",
-                "BigWigs_World": "44841f3fdb5dbc10efb5fb308801578b",
-                "BigWigs_ZulGurub": "f9d6e26d420545b1863f3e1cd82fa531"
-            },
-            "Directories": [
-                "BigWigs_ZulGurub",
-                "BigWigs_BlackwingLair",
-                "BigWigs_Options",
-                "BigWigs_MoltenCore",
-                "BigWigs_Onyxia",
-                "BigWigs_World",
-                "BigWigs_Plugins",
-                "BigWigs_AhnQirajRuins",
-                "BigWigs_Core",
-                "BigWigs_AhnQirajTemple",
-                "BigWigs"
-            ],
-            "Name": "BigWigs Bossmods",
-            "URL": "https://www.curseforge.com/wow/addons/big-wigs",
-            "Version": "v15-classic"
         },
         {
             "Checksums": {
@@ -132,16 +101,16 @@
         },
         {
             "Checksums": {
-                "ClassicCastbars": "e3bbd239852e44ffcad65f98b2781ec1",
+                "ClassicCastbars": "515ccefe321e07dd57e015364343947a",
                 "ClassicCastbars_Options": "0638b034cca82bb26fb29017488ca931"
             },
             "Directories": [
-                "ClassicCastbars",
-                "ClassicCastbars_Options"
+                "ClassicCastbars_Options",
+                "ClassicCastbars"
             ],
             "Name": "ClassicCastbars",
             "URL": "https://www.curseforge.com/wow/addons/classiccastbars",
-            "Version": "v1.3.11-classic"
+            "Version": "v1.3.12-classic"
         },
         {
             "Checksums": {
@@ -151,10 +120,10 @@
                 "Kui_Nameplates_Core_Config": "8e901085f1abe52e90ea6ba97ba0d850"
             },
             "Directories": [
-                "Kui_Media",
                 "Kui_Nameplates",
-                "Kui_Nameplates_Core",
-                "Kui_Nameplates_Core_Config"
+                "Kui_Nameplates_Core_Config",
+                "Kui_Media",
+                "Kui_Nameplates_Core"
             ],
             "Name": "KuiNameplates",
             "URL": "https://www.curseforge.com/wow/addons/kuinameplates",
@@ -162,36 +131,14 @@
         },
         {
             "Checksums": {
-                "Leatrix_Plus": "2da3640b707489c1b0d8cf4c22010681"
+                "Leatrix_Plus": "e2ebb06b8806ca3534687a95d2896ac3"
             },
             "Directories": [
                 "Leatrix_Plus"
             ],
             "Name": "Leatrix Plus (Classic)",
             "URL": "https://www.curseforge.com/wow/addons/leatrix-plus-classic",
-            "Version": "1.13.77"
-        },
-        {
-            "Checksums": {
-                "LittleWigs": "e726a7c1f5b366ba8c2d4b65e87a1221"
-            },
-            "Directories": [
-                "LittleWigs"
-            ],
-            "Name": "LittleWigs",
-            "URL": "https://www.curseforge.com/wow/addons/little-wigs",
-            "Version": "v3-classic"
-        },
-        {
-            "Checksums": {
-                "Mapster": "bb501b30c30deecb033575e479ef893f"
-            },
-            "Directories": [
-                "Mapster"
-            ],
-            "Name": "Mapster",
-            "URL": "https://www.curseforge.com/wow/addons/mapster",
-            "Version": "1.8.5-classic"
+            "Version": "1.13.78"
         },
         {
             "Checksums": {
@@ -221,8 +168,8 @@
                 "tullaRange_Config": "8f284ef521f111adc6d7fbcb9e625eff"
             },
             "Directories": [
-                "tullaRange",
-                "tullaRange_Config"
+                "tullaRange_Config",
+                "tullaRange"
             ],
             "Name": "tullaRange",
             "URL": "https://www.curseforge.com/wow/addons/tullarange",
@@ -230,33 +177,123 @@
         },
         {
             "Checksums": {
-                "WeakAuras": "e94ddb555f041a8afb1eae83c3978ab1",
+                "WeakAuras": "003b8597664ba41743d36ad888042eff",
                 "WeakAurasArchive": "4577016b489368d192215cfc4c2677da",
-                "WeakAurasModelPaths": "4527e619a2619d4ac65bee37268e9143",
-                "WeakAurasOptions": "7e3ef226617f8d9a1b5a62caf9f0ffd9",
-                "WeakAurasTemplates": "998f9fc710c7f2997f93b2a1c6702031"
+                "WeakAurasModelPaths": "9bfad8c8f84a07f683a3bc9c5814876b",
+                "WeakAurasOptions": "229f6f32ab9096dc90cc30bedb460554",
+                "WeakAurasTemplates": "0ad598b54ac25bb9fef7f5f771abf25d"
             },
             "Directories": [
-                "WeakAurasTemplates",
                 "WeakAurasModelPaths",
                 "WeakAuras",
-                "WeakAurasArchive",
-                "WeakAurasOptions"
+                "WeakAurasTemplates",
+                "WeakAurasOptions",
+                "WeakAurasArchive"
             ],
             "Name": "WeakAuras",
             "URL": "https://www.curseforge.com/wow/addons/weakauras-2",
-            "Version": "2.18.2-classic"
+            "Version": "2.18.4-classic"
         },
         {
             "Checksums": {
-                "TotemTimers": "08dd396e51d9466ecf0f8e9b6fc4f194"
+                "TotemTimers": "d908506e7b7ec99e2b0ee86b828c3126"
             },
             "Directories": [
                 "TotemTimers"
             ],
             "Name": "TotemTimers Classic",
             "URL": "https://www.curseforge.com/wow/addons/totemtimers-classic",
-            "Version": "1.06-classic"
+            "Version": "1.08-classic"
+        },
+        {
+            "Checksums": {
+                "DBM-AQ20": "4fbcc462cafab98725099114552cd867",
+                "DBM-AQ40": "571e39b53301bcd57be8d523d6b074ed",
+                "DBM-Azeroth": "f03bd6f8b450b03cff124472ca0d8869",
+                "DBM-BWL": "a15b3e307ce709b0936ebbb972955cd0",
+                "DBM-Core": "a039435e512bfe53da92662814a1c722",
+                "DBM-DefaultSkin": "eae351e2ad19f67c9c6468606dc22c09",
+                "DBM-GUI": "c0456ccaddb55c20367ffa769aeca79d",
+                "DBM-MC": "97082f45a6570811afff8fd0928fcfb9",
+                "DBM-Naxx": "6b36558cb053bbd98077434870b89bc4",
+                "DBM-Onyxia": "ef00bfa1158b884b38be315dd56a579f",
+                "DBM-Party-Classic": "dec8a763ae3a3e129b7c70c37fdff903",
+                "DBM-StatusBarTimers": "de28f538787455fff21bb2ada34278c2",
+                "DBM-ZG": "339badf995c79750bdae320282f9bf7c"
+            },
+            "Directories": [
+                "DBM-GUI",
+                "DBM-BWL",
+                "DBM-Onyxia",
+                "DBM-Naxx",
+                "DBM-Core",
+                "DBM-AQ20",
+                "DBM-ZG",
+                "DBM-Azeroth",
+                "DBM-AQ40",
+                "DBM-MC",
+                "DBM-StatusBarTimers",
+                "DBM-Party-Classic",
+                "DBM-DefaultSkin"
+            ],
+            "Name": "Deadly Boss Mods (DBM)",
+            "URL": "https://www.curseforge.com/wow/addons/deadly-boss-mods",
+            "Version": "1.13.59-classic"
+        },
+        {
+            "Checksums": {
+                "Leatrix_Maps": "20297d2f5c97b31323e795d7a6484720"
+            },
+            "Directories": [
+                "Leatrix_Maps"
+            ],
+            "Name": "Leatrix Maps (Classic)",
+            "URL": "https://www.curseforge.com/wow/addons/leatrix-maps-classic",
+            "Version": "1.13.78"
+        },
+        {
+            "Checksums": {
+                "Glass": "bb905ca38b379312af2fcd7e8393d5fd"
+            },
+            "Directories": [
+                "Glass"
+            ],
+            "Name": "Glass",
+            "URL": "https://www.curseforge.com/wow/addons/glass",
+            "Version": "1.4.2-classic"
+        },
+        {
+            "Checksums": {
+                "HealCommClassic": "1e5b1dc956eaf3b61db58c31880e0ad8"
+            },
+            "Directories": [
+                "HealCommClassic"
+            ],
+            "Name": "HealCommClassic",
+            "URL": "https://www.curseforge.com/wow/addons/healcommclassic",
+            "Version": "v1.3.2"
+        },
+        {
+            "Checksums": {
+                "ClassicCodex": "6d92c16c4ac50f710a142ae1ac89b733"
+            },
+            "Directories": [
+                "ClassicCodex"
+            ],
+            "Name": "ClassicCodex",
+            "URL": "https://www.curseforge.com/wow/addons/classiccodex",
+            "Version": "v1.3.9-classic"
+        },
+        {
+            "Checksums": {
+                "!KalielsTracker": "9524537f50ce19e89a32c1ab9c013ddd"
+            },
+            "Directories": [
+                "!KalielsTracker"
+            ],
+            "Name": "Kaliel's Quest Tracker (Classic)",
+            "URL": "https://www.curseforge.com/wow/addons/kaliels-tracker-classic",
+            "Version": "0.3.1"
         }
     ],
     "Backup": {
@@ -264,10 +301,10 @@
         "Number": 7
     },
     "CFCacheCloudFlare": {},
-    "CFCacheTimestamp": 1598619829.4910011,
+    "CFCacheTimestamp": 1599745159.287377,
     "CompactMode": false,
     "IgnoreClientVersion": {},
-    "Version": "3.9.3",
+    "Version": "3.9.4",
     "WAAPIKey": "",
     "WAAccountName": "REPLICA93",
     "WACompanionVersion": 111,

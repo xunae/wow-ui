@@ -414,7 +414,7 @@ LegionWardrobe: enabled
 LegionWardrobeData: enabled
 ConsLegion: disabled
 TidyPlates_Threat: disabled
-!KalielsTracker: disabled
+!KalielsTracker: enabled
 BigWigs_BrokenIsles: enabled
 LittleWigs: enabled
 WorldQuestsList: enabled
@@ -659,3 +659,7 @@ Guidelime: disabled
 Guidelime_Sevenleaves_: disabled
 WeakAurasArchive: enabled
 AAP-Classic: disabled
+Spy: disabled
+Questie: enabled
+ClassicCodex: enabled
+Glass: disabled

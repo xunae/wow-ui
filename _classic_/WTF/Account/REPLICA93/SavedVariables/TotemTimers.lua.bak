@@ -96,65 +96,65 @@ TotemTimers_Profiles = {
 			["TotemWarning"] = {
 				["a"] = 1,
 				["enabled"] = false,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Totem Expiring",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["TotemDestroyed"] = {
 				["a"] = 1,
 				["enabled"] = false,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Totem Destroyed",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["Maelstrom"] = {
 				["a"] = 1,
 				["enabled"] = true,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Maelstrom Notifier",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["Shield"] = {
 				["a"] = 1,
 				["enabled"] = false,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Shield removed",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["EarthShield"] = {
 				["a"] = 1,
 				["enabled"] = true,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Shield removed",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["TotemExpiration"] = {
 				["a"] = 1,
 				["enabled"] = false,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Totem Expired",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 			["Weapon"] = {
 				["a"] = 1,
 				["enabled"] = true,
-				["r"] = 1,
+				["b"] = 0,
 				["sound"] = "",
 				["text"] = "Shield removed",
 				["g"] = 0,
-				["b"] = 0,
+				["r"] = 1,
 			},
 		},
 		["ColorTimerBars"] = false,
@@ -165,7 +165,7 @@ TotemTimers_Profiles = {
 		},
 		["HiddenTotems"] = {
 		},
-		["Lock"] = true,
+		["Lock"] = false,
 		["LavaSurgeAura"] = true,
 		["CrowdControlArrange"] = "horizontal",
 		["Tracker_Clickthrough"] = false,
@@ -185,44 +185,15 @@ TotemTimers_Profiles = {
 		["LongCooldownsArrange"] = "horizontal",
 		["ShowKeybinds"] = true,
 		["TimerBarTexture"] = "Blizzard Raid Bar",
-		["TimerPositions"] = {
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-50, -- [4]
-				-40, -- [5]
-			}, -- [1]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-70, -- [4]
-				0, -- [5]
-			}, -- [2]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-30, -- [4]
-				0, -- [5]
-			}, -- [3]
-			{
-				"CENTER", -- [1]
-				nil, -- [2]
-				"CENTER", -- [3]
-				-50, -- [4]
-				40, -- [5]
-			}, -- [4]
-		},
+		["TotemMenuSpacing"] = 0,
 		["ShowCooldowns"] = true,
-		["TimerBarColor"] = {
-			["a"] = 1,
-			["b"] = 1,
-			["g"] = 0.5,
-			["r"] = 0.5,
-		},
 		["EnhanceCDsSize"] = 30,
+		["TimerBarColor"] = {
+			["a"] = 0,
+			["b"] = 1,
+			["g"] = 0.501960784313726,
+			["r"] = 0.501960784313726,
+		},
 		["ESMainTankMenu"] = true,
 		["ReverseBarBindings"] = false,
 		["ShowOmniCCOnEnhanceCDs"] = true,
@@ -293,15 +264,15 @@ TotemTimers_Profiles = {
 				"BOTTOM", -- [1]
 				nil, -- [2]
 				"BOTTOM", -- [3]
-				-204.799987792969, -- [4]
-				93.799674987793, -- [5]
+				-292.266723632813, -- [4]
+				98.0663146972656, -- [5]
 			},
 			["TotemTimers_TrackerFrame"] = {
 				"BOTTOM", -- [1]
 				nil, -- [2]
 				"BOTTOM", -- [3]
-				-204.400085449219, -- [4]
-				142.967361450195, -- [5]
+				-293.466827392578, -- [4]
+				148.300704956055, -- [5]
 			},
 			["TotemTimers_CastBar1"] = {
 				"CENTER", -- [1]
@@ -370,19 +341,19 @@ TotemTimers_Profiles = {
 		["ESChargesOnly"] = false,
 		["LastMainEnchants"] = {
 			[7714] = {
-				"Windfury Weapon", -- [1]
-				136018, -- [2]
+				"Rockbiter Weapon", -- [1]
+				136086, -- [2]
 			},
 		},
 		["Tooltips"] = true,
 		["MenusAlwaysVisible"] = false,
-		["HideBlizzTimers"] = true,
+		["WeaponTracker"] = true,
 		["EarthShieldTargetName"] = true,
 		["BarBindings"] = true,
 		["WeaponMenuOnRightclick"] = false,
 		["CastBarDirection"] = "auto",
 		["WeaponBarDirection"] = "auto",
-		["WeaponTracker"] = true,
+		["HideBlizzTimers"] = true,
 		["ShieldTracker"] = true,
 		["TrackerTimerBarWidth"] = 36,
 		["TimeStyle"] = "mm:ss",
@@ -399,7 +370,36 @@ TotemTimers_Profiles = {
 		},
 		["TrackerSpacing"] = 5,
 		["EarthShieldMiddleButton"] = "targettarget",
-		["TotemMenuSpacing"] = 0,
+		["TimerPositions"] = {
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-50, -- [4]
+				-40, -- [5]
+			}, -- [1]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-70, -- [4]
+				0, -- [5]
+			}, -- [2]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-30, -- [4]
+				0, -- [5]
+			}, -- [3]
+			{
+				"CENTER", -- [1]
+				nil, -- [2]
+				"CENTER", -- [3]
+				-50, -- [4]
+				40, -- [5]
+			}, -- [4]
+		},
 		["Timer_Clickthrough"] = false,
 		["TotemOrder"] = {
 			{

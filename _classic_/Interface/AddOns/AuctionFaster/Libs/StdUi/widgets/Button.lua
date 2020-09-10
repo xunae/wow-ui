@@ -4,7 +4,7 @@ if not StdUi then
 	return
 end
 
-local module, version = 'Button', 4;
+local module, version = 'Button', 6;
 if not StdUi:UpgradeNeeded(module, version) then return end;
 
 local SquareButtonCoords = {
@@ -91,6 +91,10 @@ function StdUi:HighlightButton(parent, width, height, text, inherit)
 	self:SetObjSize(button, width, height);
 	button.text = self:ButtonLabel(button, text);
 
+	function button:SetFontSize(newSize)
+		self.text:SetFontSize(newSize);
+	end
+
 	local hTex = self:HighlightButtonTexture(button);
 	hTex:SetBlendMode('ADD');
 
@@ -103,6 +107,8 @@ end
 --- @return Button
 function StdUi:Button(parent, width, height, text, inherit)
 	local button = self:HighlightButton(parent, width, height, text, inherit)
+	button.stdUi = self;
+
 	button:SetHighlightTexture(nil);
 
 	self:ApplyBackdrop(button);

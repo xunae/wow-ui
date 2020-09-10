@@ -230,18 +230,18 @@ function XunaTweaks:bottomRaidFrame()
 end
 
 function XunaTweaks:beautifyFonts()
-	TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 12, 'OUTLINE')
-	TextStatusBarText:SetShadowOffset(1, -1)
+	--TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 12, 'OUTLINE')
+	--TextStatusBarText:SetShadowOffset(1, -1)
 
-	for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
-			font:SetFont('Fonts\\ARIALN.ttf', 14)
-			font:SetShadowOffset(1, -1)
-	end
+	--for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
+	--		font:SetFont('Fonts\\ARIALN.ttf', 14)
+	--		font:SetShadowOffset(1, -1)
+	--end
 
-	for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
-			font:SetFont('Fonts\\ARIALN.ttf', 12)
-			font:SetShadowOffset(1, -1)
-	end
+	--for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
+	--		font:SetFont('Fonts\\ARIALN.ttf', 12)
+	--		font:SetShadowOffset(1, -1)
+	--end
 end
 
 function XunaTweaks:beautifyActionBar()

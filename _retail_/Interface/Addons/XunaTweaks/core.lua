@@ -116,7 +116,7 @@ function XunaTweaks:eliteFrame()
 	if not XunaTweaksDB.eliteFrame then
 		eliteFrame:SetTexture(nil);
 	else 
-		eliteFrame:SetTexture('Interface\\TargetingFrame\\UI-TargetingFrame-Rare-Elite');
+		eliteFrame:SetTexture('Interface\\TargetingFrame\\UI-TargetingFrame-Elite');
 		if XunaTweaksDB.darkFrames then
 			eliteFrame:SetVertexColor(XunaTweaksDB.dfc, XunaTweaksDB.dfc, XunaTweaksDB.dfc)
 		else
@@ -255,22 +255,22 @@ function XunaTweaks:bottomRaidFrame()
 end
 
 function XunaTweaks:beautifyFonts()
-	TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 12, 'OUTLINE')
+	--TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 11, 'OUTLINE')
 	--TextStatusBarText:SetShadowOffset(1, -1)
 
-	for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
-			font:SetFont('Fonts\\ARIALN.ttf', 14)
+	--for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
+			--font:SetFont('Fonts\\ARIALN.ttf', 14)
 			--font:SetShadowOffset(1, -1)
-	end
+	--end
 
-	for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
-			font:SetFont('Fonts\\ARIALN.ttf', 12)
+	--for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
+			--font:SetFont('Fonts\\ARIALN.ttf', 12)
 			--font:SetShadowOffset(1, -1)
-	end
+	--end
 end
 
 function XunaTweaks:beautifyActionBar()
-	hooksecurefunc('CooldownFrame_Set', function(self) if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then self:SetCooldown(0,0) end end)
+	--hooksecurefunc('CooldownFrame_Set', function(self) if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then self:SetCooldown(0,0) end end)
 
 	local Path, Height = NumberFontNormalSmall:GetFont();
 	NumberFontNormalSmall:SetFont(Path, Height, 'OUTLINE');
@@ -282,7 +282,7 @@ function XunaTweaks:beautifyActionBar()
 	if XunaTweaksDB.hideMacros then macroAlpha = 0 end
 
 	-- hide microbuttons & bags
-	MicroButtonAndBagsBar:Hide()
+	--MicroButtonAndBagsBar:Hide()
 	--MicroButtonAndBagsBar.MicroBagBar:Hide()
 
 	for i = 1, 12 do
