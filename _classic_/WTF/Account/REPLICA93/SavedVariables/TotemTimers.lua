@@ -314,6 +314,10 @@ TotemTimers_Profiles = {
 				"Rockbiter Weapon", -- [1]
 				136086, -- [2]
 			},
+			[11120] = {
+				"Rockbiter Weapon", -- [1]
+				136086, -- [2]
+			},
 		},
 		["TimersOnButtons"] = false,
 		["TimeStyle"] = "mm:ss",

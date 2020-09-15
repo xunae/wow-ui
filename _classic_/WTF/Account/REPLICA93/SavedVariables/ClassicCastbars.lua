@@ -225,14 +225,14 @@ ClassicCastbarsDB = {
 		["ignoreParentAlpha"] = false,
 		["textPositionX"] = 0,
 		["showSpark"] = true,
-		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
-		["hideIconBorder"] = false,
-		["showIcon"] = true,
 		["statusColorFailed"] = {
 			1, -- [1]
 			0, -- [2]
 			0, -- [3]
 		},
+		["hideIconBorder"] = false,
+		["castStatusBar"] = "Interface\\TargetingFrame\\UI-StatusBar",
+		["showIcon"] = true,
 		["borderColor"] = {
 			1, -- [1]
 			1, -- [2]

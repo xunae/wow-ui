@@ -10,37 +10,25 @@ KalielsTrackerDB = {
 		["Xuna - Gehennas"] = {
 			["trackedQuests"] = {
 				{
-					["id"] = 4289,
-					["zone"] = "Un'Goro Crater",
+					["id"] = 5601,
+					["zone"] = "Eastern Plaguelands",
 				}, -- [1]
 				{
-					["id"] = 3883,
-					["zone"] = "Un'Goro Crater",
+					["id"] = 6029,
+					["zone"] = "Winterspring",
 				}, -- [2]
 				{
-					["id"] = 4501,
-					["zone"] = "Un'Goro Crater",
+					["id"] = 6030,
+					["zone"] = "Winterspring",
 				}, -- [3]
 				{
-					["id"] = 4244,
-					["zone"] = "Un'Goro Crater",
+					["id"] = 5159,
+					["zone"] = "Felwood",
 				}, -- [4]
 				{
-					["id"] = 4145,
-					["zone"] = "Un'Goro Crater",
+					["id"] = 5961,
+					["zone"] = "Undercity",
 				}, -- [5]
-				{
-					["id"] = 4285,
-					["zone"] = "Un'Goro Crater",
-				}, -- [6]
-				{
-					["id"] = 4287,
-					["zone"] = "Un'Goro Crater",
-				}, -- [7]
-				{
-					["id"] = 4288,
-					["zone"] = "Un'Goro Crater",
-				}, -- [8]
 			},
 			["sort"] = "level",
 		},

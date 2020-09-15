@@ -9,7 +9,7 @@ AtlasLootClassicDB = {
 	["profiles"] = {
 		["Xuna - Gehennas"] = {
 			["minimap"] = {
-				["minimapPos"] = 319.928080276557,
+				["minimapPos"] = 314.229058769423,
 			},
 			["GUI"] = {
 				["point"] = {
@@ -21,7 +21,7 @@ AtlasLootClassicDB = {
 				},
 				["selected"] = {
 					nil, -- [1]
-					"BlackrockDepths", -- [2]
+					"DireMaulEast", -- [2]
 					nil, -- [3]
 					1, -- [4]
 					0, -- [5]

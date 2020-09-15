@@ -31,42 +31,13 @@ MADB = {
 					},
 					["name"] = "FocusFrame",
 					["scale"] = 1,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
 						"TOPLEFT", -- [3]
-						250.0000149011621, -- [4]
+						300, -- [4]
 						-425, -- [5]
 					},
-				},
-				["PlayerFrame"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						150, -- [4]
-						-150, -- [5]
-					},
-					["name"] = "PlayerFrame",
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						150, -- [4]
-						-150, -- [5]
-					},
-				},
-				["TargetFrameSpellBar"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"TargetFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
-						25, -- [4]
-						6.999999523162842, -- [5]
-					},
-					["name"] = "TargetFrameSpellBar",
-					["scale"] = 1.5,
 					["orgScale"] = 1,
 				},
 				["TargetFrame"] = {
@@ -86,13 +57,43 @@ MADB = {
 						-150, -- [5]
 					},
 				},
+				["TargetFrameSpellBar"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"TargetFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
+						25, -- [4]
+						6.999999523162842, -- [5]
+					},
+					["name"] = "TargetFrameSpellBar",
+					["scale"] = 1.5,
+					["orgScale"] = 1,
+				},
+				["PlayerFrame"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						150, -- [4]
+						-150, -- [5]
+					},
+					["name"] = "PlayerFrame",
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						150, -- [4]
+						-150, -- [5]
+					},
+				},
 			},
 		},
 	},
-	["tooltips"] = true,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["playSound"] = false,
+	["tooltips"] = true,
 }
