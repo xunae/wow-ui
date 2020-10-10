@@ -1,17 +1,17 @@
 
 XunaTweaksDB = {
-	["darkFrames"] = true,
+	["darkFrames"] = false,
 	["hideMacros"] = true,
 	["db_version"] = 1,
-	["hideGryphons"] = false,
+	["hideGryphons"] = true,
 	["classIconPortraits"] = false,
 	["shamanColor"] = true,
 	["dfc"] = 0.488201230764389,
 	["bottomRaidFrame"] = true,
 	["outOfRangeIcons"] = false,
-	["eliteFrame"] = true,
+	["eliteFrame"] = false,
 	["classColorFrames"] = true,
-	["customHealthMana"] = false,
-	["hideBinds"] = true,
-	["manaColor"] = false,
+	["customHealthMana"] = true,
+	["hideBinds"] = false,
+	["manaColor"] = true,
 }

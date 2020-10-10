@@ -1,0 +1,14 @@
+## Interface: 80300
+
+## Title: Leatrix Maps
+## Notes: Enhancements for your maps.
+
+## Version: 8.3.38
+## Author: Leatrix
+## SavedVariables: LeaMapsDB
+
+Leatrix_Maps_Library.lua
+Leatrix_Maps_Locale.lua
+Leatrix_Maps.xml
+Leatrix_Maps_Reveal.lua
+Leatrix_Maps.lua

@@ -53,15 +53,23 @@ dbILD = {
 			["toc"] = 80300,
 			["firstun"] = false,
 		},
+		["Zunae - Draenor"] = {
+			["toc"] = 80300,
+			["firstun"] = false,
+		},
 		["Xunap - Draenor"] = {
 			["toc"] = 80300,
+			["firstun"] = false,
+		},
+		["Xunapalah - Arena Champions - EU"] = {
+			["toc"] = 80100,
 			["firstun"] = false,
 		},
 		["Xunaj - Draenor"] = {
 			["toc"] = 80300,
 			["firstun"] = false,
 		},
-		["Xunamonkh - Arena Champions - EU"] = {
+		["Xunadraenei - Arena Champions - EU"] = {
 			["toc"] = 80100,
 			["firstun"] = false,
 		},
@@ -69,7 +77,7 @@ dbILD = {
 			["toc"] = 80100,
 			["firstun"] = false,
 		},
-		["Xunae - Draenor"] = {
+		["Xunawl - Draenor"] = {
 			["toc"] = 80300,
 			["firstun"] = false,
 		},
@@ -85,15 +93,15 @@ dbILD = {
 			["toc"] = 80000,
 			["firstun"] = false,
 		},
-		["Xunawl - Draenor"] = {
+		["Xunae - Draenor"] = {
 			["toc"] = 80300,
 			["firstun"] = false,
 		},
-		["Xunadraenei - Arena Champions - EU"] = {
-			["toc"] = 80100,
+		["Dkuna - Draenor"] = {
+			["toc"] = 80300,
 			["firstun"] = false,
 		},
-		["Xunapalah - Arena Champions - EU"] = {
+		["Xunamonkh - Arena Champions - EU"] = {
 			["toc"] = 80100,
 			["firstun"] = false,
 		},
@@ -101,15 +109,10 @@ dbILD = {
 			["toc"] = 80200,
 			["firstun"] = false,
 		},
-		["Zunae - Draenor"] = {
+		["Wluna - Draenor"] = {
 			["toc"] = 80300,
 			["firstun"] = false,
 		},
-	},
-	["global"] = {
-		["silent"] = true,
-		["firstrun"] = false,
-		["hascommon"] = true,
 	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
@@ -125,19 +128,26 @@ dbILD = {
 		["Hãllàáhø - Stormscale"] = "Default",
 		["Xunaorc - Arena Champions - EU"] = "Default",
 		["Xunaw - Draenor"] = "Default",
+		["Zunae - Draenor"] = "Default",
 		["Xunap - Draenor"] = "Default",
+		["Xunapalah - Arena Champions - EU"] = "Default",
 		["Xunaj - Draenor"] = "Default",
-		["Xunamonkh - Arena Champions - EU"] = "Default",
+		["Xunadraenei - Arena Champions - EU"] = "Default",
 		["Xunadwarf - Arena Champions - EU"] = "Default",
-		["Xunae - Draenor"] = "Default",
+		["Xunawl - Draenor"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
 		["Asdwetr - Stormscale"] = "Default",
 		["Ghrwetgf - Stormscale"] = "Default",
-		["Xunawl - Draenor"] = "Default",
-		["Xunadraenei - Arena Champions - EU"] = "Default",
-		["Xunapalah - Arena Champions - EU"] = "Default",
+		["Xunae - Draenor"] = "Default",
+		["Dkuna - Draenor"] = "Default",
+		["Xunamonkh - Arena Champions - EU"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Zunae - Draenor"] = "Default",
+		["Wluna - Draenor"] = "Default",
+	},
+	["global"] = {
+		["silent"] = true,
+		["firstrun"] = false,
+		["hascommon"] = true,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -154,15 +164,15 @@ dbILD = {
 				},
 				["SHOWSOCKETS"] = true,
 				["BAGSFONTSIZE"] = 12,
-				["BAGSFONTOUTLINE"] = "OUTLINE",
+				["FONTSIZE"] = 12,
 				["BAGSCORNER"] = "bl",
 				["FONTOUTLINE"] = "OUTLINE",
 				["BAGS"] = true,
 				["COLORSCHEME"] = "qual",
-				["FONTSIZE"] = 12,
+				["BAGSFONTOUTLINE"] = "OUTLINE",
 				["SHOWBUCKLE"] = false,
-				["SHOWUSELESSILEVEL"] = false,
 				["SHOWENCHANT"] = true,
+				["SHOWUSELESSILEVEL"] = false,
 			},
 		},
 	},

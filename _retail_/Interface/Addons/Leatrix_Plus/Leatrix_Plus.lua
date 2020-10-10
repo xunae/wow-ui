@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 8.3.34 (26th August 2020)
+-- 	Leatrix Plus 8.3.38 (7th October 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,8 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "8.3.34"
-	LeaPlusLC["RestartReq"] = nil
+	LeaPlusLC["AddonVer"] = "8.3.38"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -40,17 +39,6 @@
 		if gametocversion and gametocversion > 90000 then
 			LeaPlusLC.SL = true
 			LeaPlusLC.BackdropTemplate = "BackdropTemplate"
-		end
-	end
-
-	-- If client restart is required and has not been done, show warning and quit (not needed in Shadowlands)
-	if not LeaPlusLC.SL and LeaPlusLC["RestartReq"] then
-		local metaVer = GetAddOnMetadata("Leatrix_Plus", "Version")
-		if metaVer and metaVer ~= LeaPlusLC["AddonVer"] then
-			C_Timer.After(1, function()
-				print(L["NOTICE!|nYou must fully restart your game client before you can use this version of Leatrix Plus."])
-			end)
-			return
 		end
 	end
 
@@ -870,6 +858,38 @@
 
 				},
 
+				-- Sky Golem ()
+				["MuteGolem"] = {
+
+					-- Footsteps (sound/creature/goblinshredder/footstep_goblinshreddermount_general_)
+					"01.ogg#893935", "02.ogg#893937", "03.ogg#893939", "04.ogg#893941", "05.ogg#893943", "06.ogg#893945", "07.ogg#893947", "08.ogg#893949", 
+
+					-- Flight start (sound/creature/goblinshredder/mon_goblinshredder_mount_flightstart_)
+					"01.ogg#898428", "02.ogg#898430", "03.ogg#898432", "04.ogg#898434", "05.ogg#898436", 
+
+					-- Gears (sound/creature/goblinshredder/mon_goblinshredder_mount_gears_)
+					"01.ogg#899109", "02.ogg#899113", "03.ogg#899115", "04.ogg#899117", "05.ogg#899119", "06.ogg#899121", "07.ogg#899123", "08.ogg#899125", "09.ogg#899127", "010.ogg#899111", 
+
+					-- Land (sound/creature/goblinshredder/mon_goblinshredder_mount_land_)
+					"01.ogg#899129", "02.ogg#899131", "03.ogg#899133", "04.ogg#899135", "05.ogg#899137",
+
+					-- Special (sound/creature/goblinshredder/mon_goblinshredder_mount_special_)
+					"01.ogg#898438", "02.ogg#898440", "03.ogg#898442", "04.ogg#898444", "05.ogg#898446",
+
+					-- Take flight gear shift (sound/creature/goblinshredder/mon_goblinshredder_mount_takeflightgearshift_)
+					"01.ogg#899139", "02.ogg#899141", "03.ogg#899143", "04.ogg#899145", "05.ogg#899147", "06.ogg#899149",
+
+					-- Take flight gear shift no boom (sound/creature/goblinshredder/mon_goblinshredder_mount_takeflightgearshiftnoboom_)
+					"01.ogg#903314", "02.ogg#903316", "03.ogg#903318", "04.ogg#903320", "05.ogg#903322", "06.ogg#903324",
+
+					-- General (sound/creature/goblinshredder/mon_goblinshredder_mount_)
+					"flightbackward_lp.ogg#898320", "flightend.ogg#899247", "flightidle_lp.ogg#898322", "flightleftright_lp.ogg#898324", "flightrun_lp.ogg#898326", "idlestand_lp.ogg#898328", "swim_lp.ogg#898330", "swimwaterlayer_lp.ogg#901303",
+
+					-- Engine loop (sound/creature/goblinshredder/)
+					"goblinshredderloop.ogg#550824"
+
+				},
+
 				-- Ready check
 				["MuteReady"] = {
 					"sound/interface/levelup2.ogg#567478",
@@ -911,6 +931,7 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -172, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 140, -192, false, "If checked, Ban-Lu will no longer talk to you.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteATV", "ATV", 140, -212, false, "If checked, Xiwyllag ATV will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteGolem", "Golem", 140, -232, false, "If checked, the Sky Golem mount will be muted.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -2673,8 +2694,9 @@
 
 		if LeaPlusLC["ShowPlayerChain"] == "On" then
 
-			-- Ensure chain doesnt clip through pet portrait
+			-- Ensure chain doesnt clip through pet portrait and rune frame
 			PetPortrait:GetParent():SetFrameLevel(4)
+			RuneFrame:SetFrameLevel(4)
 
 			-- Create configuration panel
 			local ChainPanel = LeaPlusLC:CreatePanel("Show player chain", "ChainPanel")
@@ -7476,6 +7498,11 @@
 				-- Show search results
 				ShowSearchResults()
 			end)
+
+			-- Function to get random argument for random track listing
+			local function GetRandomArgument(...)
+				return (select(random(select("#", ...)), ...))
+			end
 
 			-- Function to show random track listing
 			local function ShowRandomList()

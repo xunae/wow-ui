@@ -22,13 +22,13 @@ OneBag3DB = {
 				},
 			},
 			["position"] = {
-				["top"] = 708.2445068359375,
-				["left"] = 1251.378295898438,
+				["top"] = 676.244384765625,
+				["left"] = 1135.000244140625,
 			},
+			["moved"] = true,
 			["appearance"] = {
 				["lowlevel"] = false,
 			},
-			["moved"] = true,
 		},
 	},
 }

@@ -1,7 +1,6 @@
 SET deselectOnClick "1"
 SET showTargetOfTarget "1"
 SET SpellQueueWindow "29"
-SET scriptErrors "1"
 SET countdownForCooldowns "1"
 SET instantQuestText "1"
 SET watchFrameBaseAlpha "1"

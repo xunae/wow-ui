@@ -7,34 +7,35 @@ L["> 1min"] = "> 1分鐘"
 L["Add new spell: "] = "添加法術（名字）："
 L["Add spell"] = "添加法術"
 L["All auras"] = "所有光環"
-L["Always display icons at full opacity (ReloadUI is required)"] = "總是 以不透明方式顯示圖示 (需/reload)"
 L["Always show auras cast by myself"] = "總是 顯示自己施放的光環"
 L["Anchor point"] = "錨點"
 L["Anchor to icon"] = "在圖示上的錨點"
+--[[Translation missing --]]
+L["anchor-point:bottom"] = "Bottom"
+--[[Translation missing --]]
+L["anchor-point:bottomleft"] = "Bottom left"
+--[[Translation missing --]]
+L["anchor-point:bottomright"] = "Bottom right"
+--[[Translation missing --]]
+L["anchor-point:center"] = "Center"
+--[[Translation missing --]]
+L["anchor-point:left"] = "Left"
+--[[Translation missing --]]
+L["anchor-point:right"] = "Right"
+--[[Translation missing --]]
+L["anchor-point:top"] = "Top"
+--[[Translation missing --]]
+L["anchor-point:topleft"] = "Top left"
+--[[Translation missing --]]
+L["anchor-point:topright"] = "Top right"
 L["Any"] = "任意"
 L["Aura type"] = "光環類型"
 L["Border thickness"] = "邊框厚度"
-L["BOTTOM"] = "底部"
-L["BOTTOMLEFT"] = "底部左邊"
-L["BOTTOMRIGHT"] = "底部右邊"
 --[[Translation missing --]]
 L["Buff"] = "Buff"
-L["By aura type (de/buff) + expire time"] = "以光環類型（減／增益）＋過期時間"
-L["By expire time, ascending"] = "以過期時間，升序"
-L["By expire time, descending"] = "以過期時間，降序"
-L["By icon size, ascending"] = "以圖示大小，升序"
-L["By icon size, descending"] = "以圖示大小，降序"
---[[Translation missing --]]
-L["CENTER"] = "Center"
 --[[Translation missing --]]
 L["Check spell ID"] = [=[Check spell IDs
 (comma-separated)]=]
---[[Translation missing --]]
-L["Circular"] = "Circular"
---[[Translation missing --]]
-L["Circular with OmniCC support"] = "Circular with OmniCC support"
---[[Translation missing --]]
-L["Circular with timer"] = "Circular with timer"
 --[[Translation missing --]]
 L["Click to select spell"] = "Click to select spell"
 L["Curse"] = "詛咒"
@@ -65,20 +66,47 @@ L["Icon size"] = "圖示大小"
 L["Icon X-coord offset"] = "圖示的水平位移"
 L["Icon Y-coord offset"] = "圖示的垂直位移"
 --[[Translation missing --]]
-L["LEFT"] = "Left"
+L["icon-grow-direction:down"] = "Down"
+--[[Translation missing --]]
+L["icon-grow-direction:left"] = "Left"
+--[[Translation missing --]]
+L["icon-grow-direction:right"] = "Right"
+--[[Translation missing --]]
+L["icon-grow-direction:up"] = "Up"
+--[[Translation missing --]]
+L["icon-sort-mode:by-aura-type+by-expire-time"] = "By aura type + by expiration time"
+--[[Translation missing --]]
+L["icon-sort-mode:by-expire-time"] = "By expiration time"
+--[[Translation missing --]]
+L["icon-sort-mode:by-icon-size"] = "By icon size"
+--[[Translation missing --]]
+L["icon-sort-mode:none"] = "Without sorting"
 L["Magic"] = "魔法"
 --[[Translation missing --]]
 L["Mode"] = "Mode"
 --[[Translation missing --]]
 L["No"] = "No"
 --[[Translation missing --]]
-L["None"] = "None"
---[[Translation missing --]]
 L["Only my auras"] = "Only my auras"
 --[[Translation missing --]]
 L["Open profiles dialog"] = "Open profiles dialog"
 --[[Translation missing --]]
 L["Options are not available in combat!"] = "Options are not available in combat!"
+--[[Translation missing --]]
+L["options:alpha:alpha"] = "Alpha of the icons (except the nameplate of your target)"
+--[[Translation missing --]]
+L["options:alpha:alpha-target"] = "Alpha of the icons on the nameplate of your target"
+--[[Translation missing --]]
+L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Alpha"
+--[[Translation missing --]]
+L["options:animation-type:ICON_ANIMATION_TYPE_SCALE"] = "Scale"
+--[[Translation missing --]]
+L["options:apps:dispellable-spells"] = "Show dispellable/stealable auras on enemy nameplates"
+--[[Translation missing --]]
+L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
+--[[Translation missing --]]
+L["options:apps:dispellable-spells:tooltip"] = [=[Show dispellable/stealable auras on nameplates of enemies
+These auras have a dim glow and default size]=]
 --[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
@@ -107,7 +135,11 @@ L["options:auras:pvp-state-indefinite"] = "Show this aura during PvP combat"
 --[[Translation missing --]]
 L["options:auras:pvp-state-onlyduringpvpbattles"] = "Show this aura during PvP combat only"
 --[[Translation missing --]]
+L["options:category:alpha"] = "Alpha"
+--[[Translation missing --]]
 L["options:category:apps"] = "Apps"
+--[[Translation missing --]]
+L["options:category:dispel"] = "Purge/steal"
 --[[Translation missing --]]
 L["options:category:interrupts"] = "Interrupts"
 --[[Translation missing --]]
@@ -115,26 +147,37 @@ L["options:category:size-and-position"] = "Size & position"
 --[[Translation missing --]]
 L["options:general:always-show-my-auras:tooltip"] = [=[This is top priority filter. If you enable this feature,
 your auras will be shown regardless of other filters]=]
---[[Translation missing --]]
-L["options:general:error-omnicc-is-not-loaded"] = "You cannot select this option because OmniCC is not loaded!"
 L["options:general:hide-blizz-frames"] = "隱藏暴雪內置名條光環 (需要 /reload)"
 --[[Translation missing --]]
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 --[[Translation missing --]]
+L["options:general:icon-grow-direction"] = "Icon growing direction"
+--[[Translation missing --]]
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
+--[[Translation missing --]]
+L["options:general:show-cooldown-animation"] = "Show cooldown animation"
+--[[Translation missing --]]
+L["options:general:show-cooldown-text"] = "Show aura's remaining time"
+--[[Translation missing --]]
+L["options:general:show-stacks"] = "Show aura's stacks"
 --[[Translation missing --]]
 L["options:general:test-mode"] = "Test mode on/off"
 --[[Translation missing --]]
-L["options:general:use-dim-glow"] = "Weak glow of icons"
+L["options:glow-type"] = "Glow type"
 --[[Translation missing --]]
-L["options:general:use-dim-glow:tooltip"] = [=[If this option is selected you will not see constant inner and outer glow of the icons
-(this option is valid only for those spells for which you explicitly turned on the glow of icons)]=]
+L["options:glow-type:GLOW_TYPE_ACTIONBUTTON"] = "Action button"
+--[[Translation missing --]]
+L["options:glow-type:GLOW_TYPE_ACTIONBUTTON_DIM"] = "Action button (dim)"
+--[[Translation missing --]]
+L["options:glow-type:GLOW_TYPE_AUTOUSE"] = "Auto-use button"
+--[[Translation missing --]]
+L["options:glow-type:GLOW_TYPE_NONE"] = "None"
+--[[Translation missing --]]
+L["options:glow-type:GLOW_TYPE_PIXEL"] = "Pixel"
 --[[Translation missing --]]
 L["options:interrupts:enable-interrupts"] = "Enable interrupt tracking"
 --[[Translation missing --]]
 L["options:interrupts:enable-only-during-pvp-battles"] = "Enable during PvP battles only"
---[[Translation missing --]]
-L["options:interrupts:glow"] = "Icon glow"
 --[[Translation missing --]]
 L["options:interrupts:icon-size"] = "Icon size"
 --[[Translation missing --]]
@@ -142,11 +185,39 @@ L["options:interrupts:use-shared-icon-texture"] = "Use the same texture for all 
 --[[Translation missing --]]
 L["options:selector:search"] = "Search:"
 --[[Translation missing --]]
+L["options:size-and-position:anchor-point-of-frame"] = "Anchor point to group of icons"
+--[[Translation missing --]]
+L["options:size-and-position:anchor-point-of-frame:tooltip"] = "'Group of icons' is collection of icons per nameplate"
+--[[Translation missing --]]
+L["options:size-and-position:anchor-point-to-nameplate"] = "Anchor point to nameplate"
+--[[Translation missing --]]
+L["options:size-and-position:icon-align"] = "Alignment of icons"
+--[[Translation missing --]]
+L["options:size-and-position:icon-align:bottom-left"] = "Horizontal: bottom / Vertical: left"
+--[[Translation missing --]]
+L["options:size-and-position:icon-align:center"] = "Center"
+--[[Translation missing --]]
+L["options:size-and-position:icon-align:top-right"] = "Horizontal: top / Vertical: right"
+--[[Translation missing --]]
+L["options:size-and-position:non-target-strata"] = "Layer of icons on non-target nameplates"
+--[[Translation missing --]]
+L["options:size-and-position:scale-target"] = "Scale of the icons on the nameplate of your target"
+--[[Translation missing --]]
+L["options:size-and-position:target-strata"] = "Layer of icons on target nameplate"
+--[[Translation missing --]]
+L["options:spells:animation-type"] = "Animation type"
+--[[Translation missing --]]
 L["options:spells:appropriate-spell-ids"] = "Appropriate spell IDs:"
 --[[Translation missing --]]
 L["options:spells:disable-all-spells"] = "Disable all spells"
 --[[Translation missing --]]
 L["options:spells:enable-all-spells"] = "Enable all spells"
+--[[Translation missing --]]
+L["options:spells:icon-animation"] = "Icon animation"
+--[[Translation missing --]]
+L["options:spells:icon-animation-always"] = "Show animation all the time"
+--[[Translation missing --]]
+L["options:spells:icon-animation-threshold"] = "Show animation if aura's remaining time is less than"
 --[[Translation missing --]]
 L["options:spells:icon-glow"] = "Show glow"
 --[[Translation missing --]]
@@ -174,8 +245,6 @@ L["Poison"] = "中毒"
 L["Profiles"] = "設定檔"
 --[[Translation missing --]]
 L["Reload UI"] = "Reload UI"
---[[Translation missing --]]
-L["RIGHT"] = "Right"
 L["Show border around buff icons"] = "在 增益光環周圍 顯示邊框"
 L["Show border around debuff icons"] = "在 減益光環周圍 顯示邊框"
 --[[Translation missing --]]
@@ -191,16 +260,7 @@ L["Spells"] = "法術"
 L["Stack text"] = "堆疊文字"
 L["Text"] = "文字"
 L["Text color"] = "文字顏色"
---[[Translation missing --]]
-L["Texture with timer"] = "Texture with timer"
-L["Timer style:"] = "計時器風格:"
 L["Timer text"] = "計時器文字"
---[[Translation missing --]]
-L["TOP"] = "Top"
---[[Translation missing --]]
-L["TOPLEFT"] = "Top left"
---[[Translation missing --]]
-L["TOPRIGHT"] = "Top right"
 --[[Translation missing --]]
 L["Unknown spell: %s"] = "Unknown spell: %s"
 --[[Translation missing --]]

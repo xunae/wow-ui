@@ -378,10 +378,10 @@ local anchors = {
             pet = "ElvUF_Pet",
             target = "ElvUF_Target",
             focus = "ElvUF_Focus",
-            party1 = "ElvUF_PartyGroup1UnitButton1",
-            party2 = "ElvUF_PartyGroup1UnitButton2",
-            party3 = "ElvUF_PartyGroup1UnitButton3",
-            party4 = "ElvUF_PartyGroup1UnitButton4",
+            party1 = "ElvUF_PartyGroup1UnitButton2",
+            party2 = "ElvUF_PartyGroup1UnitButton3",
+            party3 = "ElvUF_PartyGroup1UnitButton4",
+            party4 = "ElvUF_PartyGroup1UnitButton5",
         },
     },
     ["bUnitFrames"] = {
@@ -1918,7 +1918,8 @@ end
 function BigDebuffs:NAME_PLATE_UNIT_REMOVED(_, unit)
 	local frame = self.Nameplates[unit]
 
-	frame:UnregisterEvent("UNIT_AURA")
+	if frame then frame:UnregisterEvent("UNIT_AURA") end
+
 	for i = 1, #unitsWithRaid do
 		if (unitsWithRaid[i] == unit) then
 			table.remove(unitsWithRaid, i)

@@ -311,8 +311,8 @@ TotemTimers_Profiles = {
 		["Tooltips"] = true,
 		["LastMainEnchants"] = {
 			[7714] = {
-				"Rockbiter Weapon", -- [1]
-				136086, -- [2]
+				"Flametongue Weapon", -- [1]
+				135814, -- [2]
 			},
 			[11120] = {
 				"Rockbiter Weapon", -- [1]

@@ -7,9 +7,11 @@ OmniCCDB = {
 		["Xunac - Draenor"] = "Default",
 		["Xuna - Stormscale"] = "Default",
 		["Xunawl - Draenor"] = "Default",
+		["Xunaw - Draenor"] = "Default",
 		["Xunap - Draenor"] = "Default",
 		["Xunae - Draenor"] = "Default",
-		["Xunaw - Draenor"] = "Default",
+		["Dkuna - Draenor"] = "Default",
+		["Wluna - Draenor"] = "Default",
 	},
 	["global"] = {
 		["addonVersion"] = "8.3.6",
@@ -56,7 +58,7 @@ OmniCCDB = {
 					["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
 					["minSize"] = 0.74,
 					["spiralOpacity"] = 1.00999997742474,
-					["yOff"] = -1,
+					["yOff"] = -2,
 					["fontSize"] = 15,
 				},
 				["Ignore"] = {

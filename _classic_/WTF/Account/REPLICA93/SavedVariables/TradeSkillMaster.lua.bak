@@ -1,0 +1,1285 @@
+
+TradeSkillMasterDB = {
+	["f@Horde - Gehennas@auctioningOptions@whitelist"] = {
+	},
+	["g@ @shoppingOptions@buyoutConfirm"] = false,
+	["_hash"] = 13780359,
+	["r@Gehennas@internalData@saveTimeCancels"] = "",
+	["r@Gehennas@internalData@csvIncome"] = "type,amount,otherPlayer,player,time",
+	["g@ @craftingOptions@defaultMatCostMethod"] = "min(dbmarket, crafting, vendorbuy, convert(dbmarket))",
+	["g@ @craftingUIContext@gatheringDividedContainer"] = {
+		["leftWidth"] = 284,
+	},
+	["g@ @mailingOptions@deMaxQuality"] = 2,
+	["g@ @sniperOptions@sniperSound"] = "TSM_NO_SOUND",
+	["g@ @tooltipOptions@deTooltip"] = true,
+	["g@ @auctionUIContext@sniperScrollingTable"] = {
+		["colWidth"] = {
+			["ilvl"] = 32,
+			["pct"] = 40,
+			["seller"] = 86,
+			["item"] = 230,
+			["bidPct"] = 40,
+			["posts"] = 40,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["itemBid"] = 115,
+			["icon"] = 24,
+			["stack"] = 40,
+		},
+		["colHidden"] = {
+			["bid"] = true,
+			["buyout"] = true,
+			["bidPct"] = true,
+		},
+	},
+	["g@ @vendoringUIContext@buyScrollingTable"] = {
+		["colWidth"] = {
+			["ilvl"] = 32,
+			["qty"] = 40,
+			["item"] = 310,
+			["cost"] = 150,
+		},
+		["colHidden"] = {
+			["ilvl"] = true,
+		},
+	},
+	["g@ @shoppingOptions@maxDeSearchPercent"] = 100,
+	["r@Gehennas@internalData@csvBuys"] = "itemString,stackSize,quantity,price,otherPlayer,player,time,source",
+	["g@ @shoppingOptions@pctSource"] = "dbmarket",
+	["g@ @shoppingOptions@maxDeSearchLvl"] = 500,
+	["g@ @shoppingOptions@buyoutAlertSource"] = "min(100000g, 200% dbmarket)",
+	["c@Xuna - Gehennas@internalData@auctionPrices"] = {
+		["|cffffffff|Hitem:2453::::::::60:::::::|h[Bruiseweed]|h|r"] = {
+			2538, -- [1]
+		},
+		["|cffffffff|Hitem:12205::::::::60:::::::|h[White Spider Meat]|h|r"] = {
+			41184, -- [1]
+		},
+		["|cffffffff|Hitem:12037::::::::60:::::::|h[Mystery Meat]|h|r"] = {
+			2520, -- [1]
+			3150, -- [2]
+			3150, -- [3]
+		},
+		["|cffffffff|Hitem:4337::::::::60:::::::|h[Thick Spider's Silk]|h|r"] = {
+			3792, -- [1]
+		},
+		["|cffffffff|Hitem:3356::::::::60:::::::|h[Kingsblood]|h|r"] = {
+			6258, -- [1]
+		},
+		["|cff1eff00|Hitem:14667::::::::60:::::::|h[Keeper's Wreath]|h|r"] = {
+			150000, -- [1]
+		},
+		["|cffffffff|Hitem:19933::::::::60:::::::|h[Glowing Scorpid Blood]|h|r"] = {
+			20990, -- [1]
+		},
+		["|cffffffff|Hitem:3818::::::::60:::::::|h[Fadeleaf]|h|r"] = {
+			114198, -- [1]
+		},
+		["|cffffffff|Hitem:20424::::::::60:::::::|h[Sandworm Meat]|h|r"] = {
+			259192, -- [1]
+		},
+		["|cffffffff|Hitem:3358::::::::60:::::::|h[Khadgar's Whisker]|h|r"] = {
+			57850, -- [1]
+		},
+		["|cffffffff|Hitem:12207::::::::60:::::::|h[Giant Egg]|h|r"] = {
+			58394, -- [1]
+		},
+		["|cff1eff00|Hitem:20408::::::::60:::::::|h[Twilight Cultist Cowl]|h|r"] = {
+			50000, -- [1]
+			50000, -- [2]
+			50000, -- [3]
+			50000, -- [4]
+		},
+		["|cffffffff|Hitem:3357::::::::60:::::::|h[Liferoot]|h|r"] = {
+			5467, -- [1]
+			7940, -- [2]
+		},
+		["|cffffffff|Hitem:10285::::::::60:::::::|h[Shadow Silk]|h|r"] = {
+			12485, -- [1]
+		},
+		["|cffffffff|Hitem:3821::::::::60:::::::|h[Goldthorn]|h|r"] = {
+			31084, -- [1]
+		},
+	},
+	["g@ @auctioningOptions@disableInvalidMsg"] = false,
+	["g@ @vendoringUIContext@showDefault"] = false,
+	["g@ @auctionUIContext@auctioningSelectionVerticalDividedContainer"] = {
+		["leftWidth"] = 220,
+	},
+	["g@ @internalData@destroyingHistory"] = {
+	},
+	["f@Horde - Gehennas@internalData@mailDisenchantablesChar"] = "",
+	["g@ @destroyingOptions@includeSoulbound"] = false,
+	["f@Horde - Gehennas@internalData@mailExcessGoldLimit"] = 10000000000,
+	["r@Gehennas@internalData@saveTimeExpires"] = "",
+	["g@ @userData@savedShoppingSearches"] = {
+		["isFavorite"] = {
+		},
+		["name"] = {
+		},
+		["filters"] = {
+		},
+	},
+	["g@ @mailingUIContext@showDefault"] = false,
+	["f@Horde - Gehennas@internalData@csvAuctionDBScan"] = "",
+	["f@Horde - Gehennas@internalData@guildGoldLog"] = {
+	},
+	["g@ @auctionUIContext@myAuctionsScrollingTable"] = {
+		["colWidth"] = {
+			["stackSize"] = 30,
+			["buyout"] = 100,
+			["currentBid"] = 100,
+			["group"] = 110,
+			["item"] = 248,
+			["timeLeft"] = 40,
+			["highbidder"] = 110,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @coreOptions@protectAuctionHouse"] = false,
+	["g@ @craftingUIContext@professionDividedContainer"] = {
+		["leftWidth"] = 520,
+	},
+	["r@Gehennas@internalData@saveTimeBuys"] = "",
+	["f@Horde - Gehennas@internalData@auctionDBScanTime"] = 0,
+	["g@ @destroyingUIContext@frame"] = {
+		["centerX"] = 0,
+		["height"] = 442,
+		["centerY"] = 0,
+		["scale"] = 1,
+		["width"] = 296,
+	},
+	["c@Xuna - Gehennas@mainUIContext@exportGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["c@Xuna - Gehennas@mainUIContext@groupsManagementGroupTree"] = {
+		["collapsed"] = {
+		},
+	},
+	["g@ @mainUIContext@ledgerAuctionsScrollingTable"] = {
+		["colWidth"] = {
+			["stackSize"] = 55,
+			["quantity"] = 72,
+			["time"] = 120,
+			["item"] = 305,
+			["player"] = 110,
+		},
+		["colHidden"] = {
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@mailQuantity"] = {
+	},
+	["g@ @mainUIContext@ledgerOtherScrollingTable"] = {
+		["colWidth"] = {
+			["type"] = 200,
+			["time"] = 110,
+			["amount"] = 120,
+			["otherCharacter"] = 122,
+			["character"] = 110,
+		},
+		["colHidden"] = {
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@bankQuantity"] = {
+	},
+	["c@Xuna - Gehennas@mainUIContext@importGroupTree"] = {
+		["collapsed"] = {
+		},
+		["selected"] = {
+		},
+	},
+	["f@Horde - Gehennas@internalData@crafts"] = {
+	},
+	["r@Gehennas@internalData@csvCancelled"] = "itemString,stackSize,quantity,player,time",
+	["g@ @taskListUIContext@isOpen"] = true,
+	["g@ @auctioningOptions@scanCompleteSound"] = "TSM_NO_SOUND",
+	["p@Default@userData@operations"] = {
+		["Mailing"] = {
+			["#Default"] = {
+				["ignoreFactionrealm"] = {
+				},
+				["restock"] = false,
+				["maxQty"] = 10,
+				["relationships"] = {
+				},
+				["maxQtyEnabled"] = false,
+				["target"] = "",
+				["restockSources"] = {
+					["guild"] = false,
+					["bank"] = false,
+				},
+				["ignorePlayer"] = {
+				},
+				["keepQty"] = 0,
+			},
+		},
+		["Auctioning"] = {
+			["#Default"] = {
+				["cancelRepost"] = true,
+				["normalPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(2*avg(crafting,dbmarket,dbregionmarketavg),12*vendorsell))",
+				["cancelUndercut"] = true,
+				["matchStackSize"] = false,
+				["keepQuantity"] = "0",
+				["postCap"] = "5",
+				["bidPercent"] = 1,
+				["relationships"] = {
+				},
+				["maxPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(5*avg(crafting,dbmarket,dbregionmarketavg),30*vendorsell))",
+				["ignoreLowDuration"] = 0,
+				["stackSize"] = "1",
+				["ignoreFactionrealm"] = {
+				},
+				["undercut"] = "1c",
+				["maxExpires"] = "0",
+				["blacklist"] = "",
+				["priceReset"] = "none",
+				["duration"] = 2,
+				["cancelRepostThreshold"] = "1g",
+				["aboveMax"] = "maxPrice",
+				["minPrice"] = "check(first(crafting,dbmarket,dbregionmarketavg),max(0.25*avg(crafting,dbmarket,dbregionmarketavg),1.5*vendorsell))",
+				["ignorePlayer"] = {
+				},
+				["stackSizeIsCap"] = false,
+			},
+		},
+		["Crafting"] = {
+			["#Default"] = {
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
+				["minRestock"] = "10",
+				["craftPriceMethod"] = "",
+				["ignorePlayer"] = {
+				},
+				["maxRestock"] = "20",
+				["minProfit"] = "100g",
+			},
+		},
+		["Warehousing"] = {
+			["#Default"] = {
+				["stackSize"] = 0,
+				["ignoreFactionrealm"] = {
+				},
+				["moveQuantity"] = 0,
+				["keepBankQuantity"] = 0,
+				["relationships"] = {
+				},
+				["restockStackSize"] = 0,
+				["restockQuantity"] = 0,
+				["ignorePlayer"] = {
+				},
+				["keepBagQuantity"] = 0,
+				["restockKeepBankQuantity"] = 0,
+			},
+		},
+		["Vendoring"] = {
+			["#Default"] = {
+				["vsMarketValue"] = "dbmarket",
+				["ignoreFactionrealm"] = {
+				},
+				["enableBuy"] = true,
+				["vsDestroyValue"] = "destroy",
+				["sellAfterExpired"] = 20,
+				["vsMaxMarketValue"] = "0c",
+				["restockQty"] = 0,
+				["restockSources"] = {
+					["alts_ah"] = false,
+					["ah"] = false,
+					["guild"] = false,
+					["alts"] = false,
+					["mail"] = false,
+					["bank"] = false,
+				},
+				["relationships"] = {
+				},
+				["keepQty"] = 0,
+				["vsMaxDestroyValue"] = "0c",
+				["ignorePlayer"] = {
+				},
+				["sellSoulbound"] = false,
+				["enableSell"] = true,
+			},
+		},
+		["Shopping"] = {
+			["#Default"] = {
+				["ignoreFactionrealm"] = {
+				},
+				["showAboveMaxPrice"] = true,
+				["maxPrice"] = "dbmarket",
+				["restockQuantity"] = "0",
+				["restockSources"] = {
+					["alts"] = false,
+					["auctions"] = false,
+					["guild"] = false,
+					["bank"] = false,
+				},
+				["ignorePlayer"] = {
+				},
+				["relationships"] = {
+				},
+			},
+		},
+		["Sniper"] = {
+			["#Default"] = {
+				["ignorePlayer"] = {
+				},
+				["ignoreFactionrealm"] = {
+				},
+				["relationships"] = {
+				},
+				["belowPrice"] = "max(vendorsell, ifgt(DBRegionMarketAvg, 250000g, 0.8, ifgt(DBRegionMarketAvg, 100000g, 0.7, ifgt(DBRegionMarketAvg, 50000g, 0.6, ifgt(DBRegionMarketAvg, 25000g, 0.5, ifgt(DBRegionMarketAvg, 10000g, 0.4, ifgt(DBRegionMarketAvg, 5000g, 0.3, ifgt(DBRegionMarketAvg, 2000g, 0.2, ifgt(DBRegionMarketAvg, 1000g, 0.1, 0.05)))))))) * DBRegionMarketAvg)",
+			},
+		},
+	},
+	["p@Default@internalData@createdDefaultOperations"] = true,
+	["c@Xuna - Gehennas@internalData@auctionMessages"] = {
+		["Your auction of Liferoot sold."] = "|cffffffff|Hitem:3357::::::::60:::::::|h[Liferoot]|h|r",
+		["Your auction of Glowing Scorpid Blood sold."] = "|cffffffff|Hitem:19933::::::::60:::::::|h[Glowing Scorpid Blood]|h|r",
+		["Your auction of Giant Egg sold."] = "|cffffffff|Hitem:12207::::::::60:::::::|h[Giant Egg]|h|r",
+		["Your auction of Kingsblood sold."] = "|cffffffff|Hitem:3356::::::::60:::::::|h[Kingsblood]|h|r",
+		["Your auction of Shadow Silk sold."] = "|cffffffff|Hitem:10285::::::::60:::::::|h[Shadow Silk]|h|r",
+		["Your auction of Sandworm Meat sold."] = "|cffffffff|Hitem:20424::::::::60:::::::|h[Sandworm Meat]|h|r",
+		["Your auction of Goldthorn sold."] = "|cffffffff|Hitem:3821::::::::60:::::::|h[Goldthorn]|h|r",
+		["Your auction of Thick Spider's Silk sold."] = "|cffffffff|Hitem:4337::::::::60:::::::|h[Thick Spider's Silk]|h|r",
+		["Your auction of Bruiseweed sold."] = "|cffffffff|Hitem:2453::::::::60:::::::|h[Bruiseweed]|h|r",
+		["Your auction of Mystery Meat sold."] = "|cffffffff|Hitem:12037::::::::60:::::::|h[Mystery Meat]|h|r",
+		["Your auction of Fadeleaf sold."] = "|cffffffff|Hitem:3818::::::::60:::::::|h[Fadeleaf]|h|r",
+		["Your auction of White Spider Meat sold."] = "|cffffffff|Hitem:12205::::::::60:::::::|h[White Spider Meat]|h|r",
+		["Your auction of Twilight Cultist Cowl sold."] = "|cff1eff00|Hitem:20408::::::::60:::::::|h[Twilight Cultist Cowl]|h|r",
+		["Your auction of Khadgar's Whisker sold."] = "|cffffffff|Hitem:3358::::::::60:::::::|h[Khadgar's Whisker]|h|r",
+		["Your auction of Keeper's Wreath sold."] = "|cff1eff00|Hitem:14667::::::::60:::::::|h[Keeper's Wreath]|h|r",
+	},
+	["_scopeKeys"] = {
+		["char"] = {
+			"Xuna - Gehennas", -- [1]
+		},
+		["sync"] = {
+			"Xuna - Horde - Gehennas", -- [1]
+		},
+		["factionrealm"] = {
+			"Horde - Gehennas", -- [1]
+		},
+		["profile"] = {
+			"Default", -- [1]
+		},
+		["realm"] = {
+			"Gehennas", -- [1]
+		},
+	},
+	["g@ @userData@operations"] = {
+	},
+	["g@ @mainUIContext@dashboardDividedContainer"] = {
+		["leftWidth"] = 300,
+	},
+	["g@ @auctionUIContext@auctioningAuctionScrollingTable"] = {
+		["colWidth"] = {
+			["ilvl"] = 32,
+			["pct"] = 40,
+			["seller"] = 88,
+			["item"] = 226,
+			["bidPct"] = 40,
+			["posts"] = 40,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["itemBid"] = 115,
+			["timeLeft"] = 26,
+			["stack"] = 40,
+		},
+		["colHidden"] = {
+			["bid"] = true,
+			["buyout"] = true,
+			["bidPct"] = true,
+		},
+	},
+	["f@Horde - Gehennas@internalData@mailExcessGoldChar"] = "",
+	["g@ @accountingOptions@autoTrackTrades"] = false,
+	["g@ @auctionUIContext@auctioningLogScrollingTable"] = {
+		["colWidth"] = {
+			["index"] = 14,
+			["info"] = 234,
+			["operation"] = 108,
+			["buyout"] = 110,
+			["seller"] = 90,
+			["item"] = 190,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @mailingOptions@sendItemsIndividually"] = false,
+	["f@Horde - Gehennas@internalData@guildGoldLogLastUpdate"] = {
+	},
+	["g@ @craftingUIContext@craftsScrollingTable"] = {
+		["colWidth"] = {
+			["saleRate"] = 32,
+			["operation"] = 80,
+			["bags"] = 28,
+			["profit"] = 100,
+			["craftingCost"] = 100,
+			["ah"] = 24,
+			["profitPct"] = 50,
+			["craftName"] = 218,
+			["queued"] = 30,
+			["itemValue"] = 100,
+		},
+		["colHidden"] = {
+			["profitPct"] = true,
+		},
+	},
+	["g@ @destroyingOptions@deMaxQuality"] = 3,
+	["g@ @debug@chatLoggingEnabled"] = false,
+	["g@ @appearanceOptions@showTotalMoney"] = false,
+	["g@ @tooltipOptions@tooltipShowModifier"] = "none",
+	["g@ @mainUIContext@frame"] = {
+		["centerX"] = 0.849999964237213,
+		["scale"] = 1,
+		["height"] = 700,
+		["centerY"] = 0.849999964237213,
+		["page"] = 5,
+		["width"] = 900,
+	},
+	["f@Horde - Gehennas@internalData@characterGuilds"] = {
+	},
+	["g@ @tooltipOptions@tooltipPriceFormat"] = "text",
+	["g@ @mainUIContext@dashboardTimeRange"] = -1,
+	["p@Default@gatheringOptions@sources"] = {
+		"vendor", -- [1]
+		"alt", -- [2]
+		"craftProfit", -- [3]
+		"auction", -- [4]
+		"craftNoProfit", -- [5]
+	},
+	["p@Default@userData@groups"] = {
+		[""] = {
+			["Mailing"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Auctioning"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Crafting"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Warehousing"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Vendoring"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Shopping"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+			["Sniper"] = {
+				"#Default", -- [1]
+				["override"] = true,
+			},
+		},
+	},
+	["g@ @tooltipOptions@millTooltip"] = true,
+	["g@ @tooltipOptions@enabled"] = true,
+	["f@Horde - Gehennas@internalData@guildVaults"] = {
+	},
+	["f@Horde - Gehennas@internalData@mats"] = {
+	},
+	["g@ @tooltipOptions@operationTooltips"] = {
+		["Mailing"] = false,
+		["Auctioning"] = false,
+		["Crafting"] = false,
+		["Warehousing"] = false,
+		["Vendoring"] = false,
+		["Shopping"] = false,
+		["Sniper"] = false,
+	},
+	["g@ @tooltipOptions@groupNameTooltip"] = true,
+	["g@ @mainUIContext@ledgerTransactionsScrollingTable"] = {
+		["colWidth"] = {
+			["time"] = 110,
+			["player"] = 95,
+			["item"] = 156,
+			["total"] = 120,
+			["perItem"] = 120,
+			["auctions"] = 60,
+			["stack"] = 55,
+			["type"] = 50,
+		},
+		["colHidden"] = {
+			["total"] = true,
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@reagentBankQuantity"] = {
+	},
+	["g@ @auctionUIContext@auctioningTabGroup"] = {
+		["pathIndex"] = 1,
+	},
+	["s@Xuna - Horde - Gehennas@internalData@money"] = 2843130,
+	["g@ @craftingUIContext@professionScrollingTable"] = {
+		["colWidth"] = {
+			["saleRate"] = 30,
+			["name"] = 288,
+			["itemValue"] = 100,
+			["profitPct"] = 50,
+			["qty"] = 54,
+			["profit"] = 100,
+			["craftingCost"] = 100,
+		},
+		["colHidden"] = {
+			["itemValue"] = true,
+			["profitPct"] = true,
+			["craftingCost"] = true,
+		},
+		["collapsed"] = {
+		},
+	},
+	["g@ @mainUIContext@groupsDividedContainer"] = {
+		["leftWidth"] = 300,
+	},
+	["g@ @userData@customPriceSources"] = {
+	},
+	["g@ @mainUIContext@operationsSummaryScrollingTable"] = {
+		["colWidth"] = {
+			["items"] = 130,
+			["selected"] = 16,
+			["name"] = 248,
+			["groups"] = 130,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @tooltipOptions@embeddedTooltip"] = true,
+	["g@ @tooltipOptions@customPriceTooltips"] = {
+	},
+	["g@ @tooltipOptions@vendorSellTooltip"] = true,
+	["g@ @accountingOptions@trackTrades"] = true,
+	["g@ @craftingOptions@defaultCraftPriceMethod"] = "first(dbminbuyout, dbmarket)*0.95",
+	["g@ @auctionUIContext@shoppingSearchesTabGroup"] = {
+		["pathIndex"] = 1,
+	},
+	["g@ @internalData@appMessageId"] = 0,
+	["c@Xuna - Gehennas@craftingUIContext@groupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["g@ @mailingOptions@inboxMessages"] = true,
+	["g@ @tooltipOptions@detailedDestroyTooltip"] = false,
+	["g@ @shoppingOptions@searchAutoFocus"] = true,
+	["g@ @tooltipOptions@prospectTooltip"] = true,
+	["g@ @craftingOptions@ignoreGuilds"] = {
+	},
+	["g@ @craftingOptions@ignoreCharacters"] = {
+	},
+	["g@ @mailingUIContext@mailsScrollingTable"] = {
+		["colWidth"] = {
+			["items"] = 380,
+			["sender"] = 100,
+			["money"] = 115,
+			["expires"] = 65,
+		},
+		["colHidden"] = {
+			["sender"] = true,
+		},
+	},
+	["g@ @shoppingOptions@minDeSearchLvl"] = 1,
+	["c@Xuna - Gehennas@auctionUIContext@auctioningGroupTree"] = {
+		["unselected"] = {
+		},
+		["collapsed"] = {
+		},
+	},
+	["g@ @taskListUIContext@frame"] = {
+		["topRightY"] = -10,
+		["isOpen"] = true,
+		["topRightX"] = -220,
+		["minimized"] = false,
+	},
+	["s@Xuna - Horde - Gehennas@internalData@goldLog"] = "minute,copper\n26686575,2840000",
+	["g@ @vendoringOptions@displayMoneyCollected"] = false,
+	["c@Xuna - Gehennas@bankingUIContext@mailingGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["g@ @vendoringUIContext@sellScrollingTable"] = {
+		["colWidth"] = {
+			["potential"] = 100,
+			["item"] = 300,
+			["vendorSell"] = 100,
+		},
+		["colHidden"] = {
+		},
+	},
+	["c@Xuna - Gehennas@vendoringUIContext@groupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["r@Gehennas@internalData@csvExpense"] = "type,amount,otherPlayer,player,time",
+	["f@Horde - Gehennas@internalData@expiringAuction"] = {
+		["Xuna"] = 1601201750,
+	},
+	["g@ @vendoringUIContext@frame"] = {
+		["centerX"] = -200,
+		["scale"] = 1,
+		["height"] = 500,
+		["centerY"] = 0,
+		["page"] = 1,
+		["width"] = 560,
+	},
+	["g@ @vendoringUIContext@buybackScrollingTable"] = {
+		["colWidth"] = {
+			["qty"] = 40,
+			["item"] = 360,
+			["cost"] = 100,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @coreOptions@groupPriceSource"] = "dbmarket",
+	["g@ @mailingUIContext@frame"] = {
+		["centerX"] = -200,
+		["scale"] = 1,
+		["height"] = 516,
+		["centerY"] = 0,
+		["page"] = 1,
+		["width"] = 620,
+	},
+	["g@ @bankingUIContext@isOpen"] = true,
+	["g@ @bankingUIContext@frame"] = {
+		["centerX"] = 500,
+		["height"] = 600,
+		["centerY"] = 0,
+		["scale"] = 1,
+		["width"] = 325,
+	},
+	["g@ @destroyingUIContext@itemsScrollingTable"] = {
+		["colWidth"] = {
+			["item"] = 214,
+			["num"] = 30,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @mainUIContext@ledgerDetailScrollingTable"] = {
+		["colWidth"] = {
+			["buyerSeller"] = 100,
+			["source"] = 60,
+			["time"] = 110,
+			["perItem"] = 120,
+			["qty"] = 45,
+			["totalPrice"] = 120,
+			["activityType"] = 91,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @internalData@whatsNewVersion"] = 1,
+	["g@ @craftingUIContext@matsScrollingTable"] = {
+		["colWidth"] = {
+			["price"] = 100,
+			["num"] = 100,
+			["name"] = 242,
+			["professions"] = 310,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @tooltipOptions@inventoryTooltipFormat"] = "full",
+	["g@ @internalData@lastCharacter"] = "Xuna - Gehennas",
+	["g@ @internalData@vendorItems"] = {
+		["i:3372"] = 200,
+		["i:17194"] = 10,
+		["i:17034"] = 200,
+		["i:2320"] = 10,
+		["i:159"] = 25,
+		["i:2321"] = 100,
+		["i:2692"] = 40,
+		["i:4400"] = 2000,
+		["i:1179"] = 125,
+		["i:4470"] = 38,
+		["i:4340"] = 350,
+		["i:2596"] = 120,
+		["i:18256"] = 30000,
+		["i:6530"] = 100,
+		["i:4291"] = 500,
+		["i:4399"] = 200,
+		["i:17020"] = 1000,
+		["i:2324"] = 25,
+		["i:17037"] = 1400,
+		["i:6217"] = 124,
+		["i:2678"] = 10,
+		["i:3371"] = 20,
+		["i:17031"] = 1000,
+		["i:4289"] = 50,
+		["i:17028"] = 700,
+		["i:8343"] = 2000,
+		["i:17036"] = 800,
+		["i:17035"] = 400,
+		["i:4342"] = 2500,
+		["i:3857"] = 500,
+		["i:3713"] = 160,
+		["i:2665"] = 20,
+		["i:16583"] = 10000,
+		["i:17202"] = 10,
+		["i:17021"] = 700,
+		["i:8925"] = 2500,
+		["i:4536"] = 25,
+		["i:10648"] = 500,
+		["i:11291"] = 4500,
+		["i:17196"] = 50,
+		["i:6261"] = 1000,
+		["i:17029"] = 1000,
+		["i:2894"] = 50,
+		["i:14341"] = 5000,
+		["i:18567"] = 150000,
+		["i:3466"] = 2000,
+		["i:2325"] = 1000,
+		["i:10290"] = 2500,
+		["i:2604"] = 50,
+		["i:10647"] = 2000,
+		["i:17030"] = 2000,
+		["i:2605"] = 100,
+		["i:17032"] = 2000,
+		["i:17026"] = 1000,
+		["i:6260"] = 50,
+		["i:4341"] = 500,
+		["i:2880"] = 100,
+		["i:5140"] = 25,
+		["i:17038"] = 2000,
+		["i:17033"] = 2000,
+		["i:21177"] = 3000,
+	},
+	["g@ @mainUIContext@operationsDividedContainer"] = {
+		["leftWidth"] = 306,
+	},
+	["g@ @mailingOptions@keepMailSpace"] = 0,
+	["p@Default@userData@items"] = {
+	},
+	["r@Gehennas@internalData@saveTimeSales"] = "",
+	["g@ @mailingOptions@sendMessages"] = true,
+	["c@Xuna - Gehennas@internalData@auctionSaleHints"] = {
+		["Sandworm Meati:204248259192"] = 1601194550,
+		["Bruiseweedi:2453182538"] = 1601194550,
+		["Mystery Meati:12037103150"] = 1601194550,
+		["Khadgar's Whiskeri:33581357850"] = 1601194550,
+		["Twilight Cultist Cowli:20408150000"] = 1601194550,
+		["Shadow Silki:10285512485"] = 1601194550,
+		["Keeper's Wreathi:146671150000"] = 1601194550,
+		["White Spider Meati:12205841184"] = 1601194550,
+		["Fadeleafi:381814114198"] = 1601194550,
+		["Goldthorni:38211931084"] = 1601194550,
+		["Mystery Meati:1203782520"] = 1601194550,
+		["Giant Eggi:12207758394"] = 1601194550,
+		["Thick Spider's Silki:433723792"] = 1601194550,
+		["Glowing Scorpid Bloodi:199331020990"] = 1601194550,
+		["Kingsbloodi:3356146258"] = 1601194550,
+		["Liferooti:3357207940"] = 1601194550,
+		["Liferooti:3357115467"] = 1601194550,
+	},
+	["c@Xuna - Gehennas@internalData@craftingCooldowns"] = {
+	},
+	["_syncAccountKey"] = {
+		["Horde - Gehennas"] = "Horde - Gehennas - 921176583",
+	},
+	["g@ @auctioningOptions@matchWhitelist"] = true,
+	["g@ @auctionUIContext@shoppingSelectionDividedContainer"] = {
+		["leftWidth"] = 272,
+	},
+	["g@ @auctionUIContext@showDefault"] = false,
+	["f@Horde - Gehennas@coreOptions@ignoreGuilds"] = {
+	},
+	["g@ @craftingUIContext@showDefault"] = false,
+	["g@ @auctioningOptions@cancelWithBid"] = false,
+	["g@ @destroyingOptions@autoStack"] = true,
+	["s@Xuna - Horde - Gehennas@internalData@playerProfessions"] = {
+		["Cooking"] = {
+			["maxLevel"] = 75,
+			["isSecondary"] = false,
+			["level"] = 1,
+			["skillId"] = -1,
+		},
+		["First Aid"] = {
+			["maxLevel"] = 300,
+			["isSecondary"] = false,
+			["level"] = 294,
+			["skillId"] = -1,
+		},
+		["Alchemy"] = {
+			["maxLevel"] = 75,
+			["isSecondary"] = false,
+			["level"] = 1,
+			["skillId"] = -1,
+		},
+	},
+	["f@Horde - Gehennas@internalData@auctionDBScanHash"] = 0,
+	["g@ @destroyingOptions@deAbovePrice"] = "0c",
+	["g@ @mailingOptions@resendDelay"] = 1,
+	["c@Xuna - Gehennas@bankingUIContext@warehousingGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["g@ @destroyingOptions@autoShow"] = true,
+	["g@ @bankingUIContext@tab"] = "Warehousing",
+	["g@ @userData@savedAuctioningSearches"] = {
+		["searchTypes"] = {
+		},
+		["isFavorite"] = {
+		},
+		["name"] = {
+		},
+		["filters"] = {
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@goldLogLastUpdate"] = 1601194628,
+	["g@ @userData@destroyingIgnore"] = {
+	},
+	["g@ @coreOptions@globalOperations"] = false,
+	["g@ @craftingUIContext@frame"] = {
+		["centerX"] = -200,
+		["scale"] = 1,
+		["height"] = 587,
+		["centerY"] = 0,
+		["page"] = 1,
+		["width"] = 820,
+	},
+	["g@ @tooltipOptions@moduleTooltips"] = {
+		["AuctionDB"] = {
+			["regionMinBuyout"] = false,
+			["regionHistorical"] = false,
+			["historical"] = false,
+			["regionSalePercent"] = true,
+			["minBuyout"] = true,
+			["regionMarketValue"] = true,
+			["regionSale"] = true,
+			["marketValue"] = true,
+			["regionSoldPerDay"] = true,
+		},
+		["Auctioning"] = {
+			["postQuantity"] = false,
+			["operationPrices"] = false,
+		},
+		["Crafting"] = {
+			["matPrice"] = false,
+			["detailedMats"] = false,
+			["craftingCost"] = true,
+		},
+		["Accounting"] = {
+			["sale"] = true,
+			["expiredAuctions"] = false,
+			["purchase"] = true,
+			["cancelledAuctions"] = false,
+			["saleRate"] = false,
+		},
+		["Shopping"] = {
+			["maxPrice"] = false,
+		},
+		["Sniper"] = {
+			["belowPrice"] = false,
+		},
+	},
+	["c@Xuna - Gehennas@auctionUIContext@shoppingGroupTree"] = {
+		["unselected"] = {
+		},
+		["collapsed"] = {
+		},
+	},
+	["g@ @mainUIContext@ledgerResaleScrollingTable"] = {
+		["colWidth"] = {
+			["bought"] = 50,
+			["totalProfit"] = 120,
+			["item"] = 194,
+			["sold"] = 50,
+			["avgProfit"] = 120,
+			["avgSellPrice"] = 120,
+			["profitPct"] = 80,
+			["avgBuyPrice"] = 120,
+		},
+		["colHidden"] = {
+			["profitPct"] = true,
+			["totalProfit"] = true,
+		},
+	},
+	["g@ @coreOptions@destroyValueSource"] = "dbmarket",
+	["r@Gehennas@internalData@csvExpired"] = "itemString,stackSize,quantity,player,time",
+	["c@Xuna - Gehennas@bankingUIContext@auctioningGroupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["g@ @tooltipOptions@transformTooltip"] = true,
+	["g@ @craftingUIContext@gatheringScrollingTable"] = {
+		["colWidth"] = {
+			["name"] = 206,
+			["sources"] = 160,
+			["have"] = 50,
+			["need"] = 50,
+		},
+		["colHidden"] = {
+		},
+	},
+	["_version"] = 96,
+	["g@ @mailingOptions@openMailSound"] = "TSM_NO_SOUND",
+	["g@ @auctionUIContext@frame"] = {
+		["centerX"] = -251.599989414215,
+		["scale"] = 1,
+		["height"] = 587,
+		["centerY"] = 28.8999987840653,
+		["page"] = 1,
+		["width"] = 830,
+	},
+	["g@ @appearanceOptions@colorSet"] = "midnight",
+	["f@Horde - Gehennas@gatheringContext@professions"] = {
+	},
+	["c@Xuna - Gehennas@mailingUIContext@groupTree"] = {
+		["collapsed"] = {
+		},
+		["unselected"] = {
+		},
+	},
+	["f@Horde - Gehennas@userData@craftingCooldownIgnore"] = {
+	},
+	["f@Horde - Gehennas@gatheringContext@crafter"] = "",
+	["g@ @coreOptions@minimapIcon"] = {
+		["minimapPos"] = 247.346050607367,
+		["radius"] = 80,
+		["hide"] = false,
+	},
+	["g@ @coreOptions@chatFrame"] = "general",
+	["f@Horde - Gehennas@internalData@expiringMail"] = {
+	},
+	["g@ @auctionUIContext@auctioningSelectionDividedContainer"] = {
+		["leftWidth"] = 272,
+	},
+	["g@ @coreOptions@auctionSaleSound"] = "TSM_NO_SOUND",
+	["g@ @userData@vendoringIgnore"] = {
+	},
+	["f@Horde - Gehennas@internalData@isCraftFavorite"] = {
+	},
+	["g@ @mainUIContext@importExportDividedContainer"] = {
+		["leftWidth"] = 300,
+	},
+	["r@Gehennas@internalData@accountingTrimmed"] = {
+	},
+	["_currentProfile"] = {
+		["Xuna - Gehennas"] = "Default",
+	},
+	["g@ @tooltipOptions@vendorBuyTooltip"] = true,
+	["_syncOwner"] = {
+		["Xuna - Horde - Gehennas"] = "Horde - Gehennas - 921176583",
+	},
+	["g@ @auctionUIContext@auctioningBagScrollingTable"] = {
+		["colWidth"] = {
+			["operation"] = 206,
+			["selected"] = 16,
+			["item"] = 246,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @mainUIContext@ledgerInventoryScrollingTable"] = {
+		["colWidth"] = {
+			["auctionHouse"] = 50,
+			["totalValue"] = 120,
+			["bags"] = 50,
+			["banks"] = 50,
+			["item"] = 160,
+			["totalItems"] = 50,
+			["guildVault"] = 50,
+			["alts"] = 50,
+			["mail"] = 50,
+		},
+		["colHidden"] = {
+		},
+	},
+	["g@ @auctioningOptions@confirmCompleteSound"] = "TSM_NO_SOUND",
+	["g@ @mailingOptions@recentlyMailedList"] = {
+	},
+	["_lastModifiedVersion"] = {
+		["r@internalData@csvSales"] = 10,
+		["g@coreOptions@groupPriceSource"] = 41,
+		["g@userData@destroyingIgnore"] = 10,
+		["s@internalData@classKey"] = 19,
+		["r@internalData@saveTimeBuys"] = 10,
+		["c@internalData@auctionPrices"] = 10,
+		["g@coreOptions@chatFrame"] = 10,
+		["g@destroyingUIContext@itemsScrollingTable"] = 55,
+		["g@internalData@appMessageId"] = 10,
+		["g@craftingOptions@defaultCraftPriceMethod"] = 89,
+		["g@mailingOptions@keepMailSpace"] = 10,
+		["g@debug@chatLoggingEnabled"] = 19,
+		["g@mailingUIContext@mailsScrollingTable"] = 81,
+		["g@auctionUIContext@shoppingSearchesTabGroup"] = 55,
+		["g@mainUIContext@frame"] = 59,
+		["g@craftingUIContext@professionScrollingTable"] = 91,
+		["g@mainUIContext@ledgerOtherScrollingTable"] = 59,
+		["p@gatheringOptions@sources"] = 32,
+		["r@internalData@saveTimeExpires"] = 10,
+		["g@bankingUIContext@tab"] = 55,
+		["g@userData@operations"] = 10,
+		["r@internalData@csvExpense"] = 10,
+		["r@internalData@csvBuys"] = 10,
+		["f@userData@craftingCooldownIgnore"] = 35,
+		["c@bankingUIContext@mailingGroupTree"] = 80,
+		["g@mailingOptions@recentlyMailedList"] = 38,
+		["g@mainUIContext@importExportDividedContainer"] = 55,
+		["g@destroyingOptions@includeSoulbound"] = 10,
+		["g@shoppingOptions@buyoutConfirm"] = 46,
+		["g@vendoringUIContext@showDefault"] = 55,
+		["g@craftingOptions@ignoreCharacters"] = 10,
+		["g@auctioningOptions@scanCompleteSound"] = 10,
+		["g@auctionUIContext@auctioningLogScrollingTable"] = 55,
+		["g@destroyingOptions@autoStack"] = 10,
+		["g@vendoringOptions@displayMoneyCollected"] = 10,
+		["g@mainUIContext@ledgerAuctionsScrollingTable"] = 59,
+		["g@mainUIContext@dashboardUnselectedCharacters"] = 78,
+		["r@internalData@csvCancelled"] = 10,
+		["g@auctionUIContext@frame"] = 55,
+		["s@internalData@goldLogLastUpdate"] = 83,
+		["g@tooltipOptions@customPriceTooltips"] = 10,
+		["g@craftingUIContext@frame"] = 55,
+		["g@vendoringUIContext@buybackScrollingTable"] = 55,
+		["f@gatheringContext@professions"] = 32,
+		["g@mainUIContext@ledgerDetailScrollingTable"] = 59,
+		["g@mailingUIContext@showDefault"] = 55,
+		["g@shoppingOptions@searchAutoFocus"] = 88,
+		["s@internalData@auctionQuantity"] = 19,
+		["p@userData@items"] = 10,
+		["c@internalData@auctionSaleHints"] = 45,
+		["g@auctionUIContext@auctioningSelectionVerticalDividedContainer"] = 66,
+		["g@shoppingOptions@minDeSearchLvl"] = 10,
+		["g@mailingOptions@deMaxQuality"] = 10,
+		["f@internalData@mailExcessGoldLimit"] = 49,
+		["c@mainUIContext@exportGroupTree"] = 80,
+		["g@internalData@vendorItems"] = 10,
+		["f@internalData@mailExcessGoldChar"] = 49,
+		["g@accountingOptions@autoTrackTrades"] = 10,
+		["f@internalData@crafts"] = 53,
+		["c@bankingUIContext@warehousingGroupTree"] = 80,
+		["g@mainUIContext@dashboardDividedContainer"] = 59,
+		["r@internalData@saveTimeSales"] = 10,
+		["g@mailingUIContext@frame"] = 55,
+		["s@internalData@bagQuantity"] = 19,
+		["g@vendoringUIContext@buyScrollingTable"] = 92,
+		["g@destroyingUIContext@frame"] = 55,
+		["g@destroyingOptions@deAbovePrice"] = 10,
+		["s@internalData@reagentBankQuantity"] = 19,
+		["g@tooltipOptions@groupNameTooltip"] = 10,
+		["g@destroyingOptions@deMaxQuality"] = 10,
+		["g@tooltipOptions@moduleTooltips"] = 10,
+		["r@internalData@csvExpired"] = 10,
+		["g@craftingUIContext@matsScrollingTable"] = 55,
+		["g@mainUIContext@operationsDividedContainer"] = 55,
+		["c@internalData@craftingCooldowns"] = 27,
+		["s@internalData@mailQuantity"] = 19,
+		["g@coreOptions@minimapIcon"] = 10,
+		["g@sniperOptions@sniperSound"] = 10,
+		["g@auctionUIContext@shoppingSelectionDividedContainer"] = 55,
+		["g@vendoringOptions@qsMarketValue"] = 10,
+		["r@internalData@accountingTrimmed"] = 10,
+		["g@mailingOptions@sendItemsIndividually"] = 10,
+		["c@auctionUIContext@shoppingGroupTree"] = 80,
+		["g@taskListUIContext@frame"] = 55,
+		["g@auctionUIContext@auctioningTabGroup"] = 93,
+		["f@internalData@auctionDBScanHash"] = 50,
+		["f@internalData@csvAuctionDBScan"] = 50,
+		["g@tooltipOptions@vendorBuyTooltip"] = 10,
+		["g@internalData@whatsNewVersion"] = 94,
+		["g@appearanceOptions@showTotalMoney"] = 95,
+		["g@auctionUIContext@myAuctionsScrollingTable"] = 84,
+		["p@internalData@createdDefaultOperations"] = 11,
+		["c@mainUIContext@importGroupTree"] = 80,
+		["g@mailingOptions@sendMessages"] = 10,
+		["g@mailingOptions@resendDelay"] = 10,
+		["g@coreOptions@destroyValueSource"] = 10,
+		["g@userData@vendoringIgnore"] = 10,
+		["g@mainUIContext@dashboardTimeRange"] = 78,
+		["f@internalData@mailDisenchantablesChar"] = 49,
+		["f@internalData@expiringMail"] = 47,
+		["g@auctionUIContext@sniperScrollingTable"] = 72,
+		["g@coreOptions@protectAuctionHouse"] = 77,
+		["g@mainUIContext@operationsSummaryScrollingTable"] = 76,
+		["g@tooltipOptions@embeddedTooltip"] = 10,
+		["f@gatheringContext@crafter"] = 32,
+		["g@mainUIContext@ledgerResaleScrollingTable"] = 62,
+		["g@tooltipOptions@tooltipPriceFormat"] = 10,
+		["g@destroyingOptions@autoShow"] = 10,
+		["g@craftingUIContext@gatheringScrollingTable"] = 55,
+		["g@bankingUIContext@isOpen"] = 55,
+		["f@internalData@pendingMail"] = 10,
+		["f@coreOptions@ignoreGuilds"] = 10,
+		["g@userData@savedAuctioningSearches"] = 96,
+		["g@tooltipOptions@detailedDestroyTooltip"] = 10,
+		["g@auctioningOptions@disableInvalidMsg"] = 10,
+		["f@internalData@isCraftFavorite"] = 56,
+		["f@internalData@guildVaults"] = 10,
+		["g@mainUIContext@ledgerInventoryScrollingTable"] = 69,
+		["f@auctioningOptions@whitelist"] = 10,
+		["g@vendoringUIContext@frame"] = 55,
+		["g@tooltipOptions@enabled"] = 20,
+		["g@craftingUIContext@professionDividedContainer"] = 55,
+		["f@internalData@guildGoldLogLastUpdate"] = 83,
+		["c@internalData@auctionMessages"] = 10,
+		["g@auctioningOptions@matchWhitelist"] = 10,
+		["f@internalData@auctionDBScanTime"] = 50,
+		["s@internalData@bankQuantity"] = 19,
+		["s@internalData@money"] = 74,
+		["g@auctioningOptions@cancelWithBid"] = 10,
+		["p@userData@operations"] = 10,
+		["r@internalData@saveTimeCancels"] = 10,
+		["g@tooltipOptions@millTooltip"] = 10,
+		["g@auctionUIContext@auctioningAuctionScrollingTable"] = 70,
+		["f@internalData@guildGoldLog"] = 25,
+		["g@craftingUIContext@gatheringDividedContainer"] = 55,
+		["s@internalData@playerProfessions"] = 36,
+		["s@internalData@goldLog"] = 25,
+		["g@auctionUIContext@auctioningBagScrollingTable"] = 55,
+		["g@taskListUIContext@isOpen"] = 55,
+		["g@tooltipOptions@operationTooltips"] = 10,
+		["g@appearanceOptions@colorSet"] = 75,
+		["f@internalData@characterGuilds"] = 10,
+		["g@vendoringUIContext@sellScrollingTable"] = 55,
+		["g@mainUIContext@groupsDividedContainer"] = 55,
+		["r@internalData@csvIncome"] = 10,
+		["f@internalData@mats"] = 10,
+		["g@coreOptions@globalOperations"] = 10,
+		["g@mailingOptions@openMailSound"] = 10,
+		["g@userData@customPriceSources"] = 10,
+		["g@tooltipOptions@deTooltip"] = 10,
+		["f@internalData@expiringAuction"] = 47,
+		["g@internalData@destroyingHistory"] = 10,
+		["c@auctionUIContext@auctioningGroupTree"] = 80,
+		["g@auctionUIContext@showDefault"] = 55,
+		["c@craftingUIContext@groupTree"] = 80,
+		["g@tooltipOptions@vendorSellTooltip"] = 10,
+		["g@mailingOptions@inboxMessages"] = 10,
+		["c@mainUIContext@groupsManagementGroupTree"] = 71,
+		["g@tooltipOptions@prospectTooltip"] = 10,
+		["g@auctionUIContext@shoppingAuctionScrollingTable"] = 70,
+		["g@auctionUIContext@auctioningSelectionDividedContainer"] = 55,
+		["g@userData@savedShoppingSearches"] = 96,
+		["g@tooltipOptions@tooltipShowModifier"] = 10,
+		["g@tooltipOptions@inventoryTooltipFormat"] = 10,
+		["g@auctioningOptions@confirmCompleteSound"] = 10,
+		["p@userData@groups"] = 10,
+		["g@coreOptions@auctionSaleSound"] = 10,
+		["g@tooltipOptions@transformTooltip"] = 10,
+		["c@mailingUIContext@groupTree"] = 80,
+		["g@shoppingOptions@maxDeSearchLvl"] = 79,
+		["g@accountingOptions@trackTrades"] = 10,
+		["g@internalData@lastCharacter"] = 90,
+		["c@vendoringUIContext@groupTree"] = 80,
+		["g@shoppingOptions@buyoutAlertSource"] = 46,
+		["g@craftingUIContext@showDefault"] = 55,
+		["g@craftingOptions@defaultMatCostMethod"] = 10,
+		["g@shoppingOptions@pctSource"] = 12,
+		["g@appearanceOptions@taskListBackgroundLock"] = 87,
+		["g@mainUIContext@ledgerTransactionsScrollingTable"] = 62,
+		["g@craftingUIContext@craftsScrollingTable"] = 86,
+		["g@bankingUIContext@frame"] = 55,
+		["c@bankingUIContext@auctioningGroupTree"] = 80,
+		["g@shoppingOptions@maxDeSearchPercent"] = 23,
+		["g@craftingOptions@ignoreGuilds"] = 10,
+	},
+	["r@Gehennas@internalData@csvSales"] = "itemString,stackSize,quantity,price,otherPlayer,player,time,source",
+	["g@ @mainUIContext@dashboardUnselectedCharacters"] = {
+	},
+	["g@ @auctionUIContext@shoppingAuctionScrollingTable"] = {
+		["colWidth"] = {
+			["ilvl"] = 32,
+			["pct"] = 40,
+			["seller"] = 88,
+			["item"] = 226,
+			["bidPct"] = 40,
+			["posts"] = 40,
+			["buyout"] = 115,
+			["itemBuyout"] = 115,
+			["bid"] = 115,
+			["itemBid"] = 115,
+			["timeLeft"] = 26,
+			["stack"] = 40,
+		},
+		["colHidden"] = {
+			["bid"] = true,
+			["buyout"] = true,
+			["bidPct"] = true,
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@classKey"] = "SHAMAN",
+	["f@Horde - Gehennas@internalData@pendingMail"] = {
+		["Xuna"] = {
+		},
+	},
+	["s@Xuna - Horde - Gehennas@internalData@auctionQuantity"] = {
+		["i:4337"] = 2,
+		["i:20424"] = 8,
+		["i:10285"] = 5,
+		["i:3357"] = 31,
+		["i:3821"] = 19,
+		["i:12205"] = 8,
+		["i:3818"] = 14,
+		["i:3358"] = 13,
+		["i:3356"] = 14,
+		["i:14667"] = 1,
+		["i:2453"] = 18,
+		["i:12037"] = 28,
+		["i:19933"] = 10,
+		["i:20408"] = 4,
+		["i:12207"] = 7,
+	},
+	["g@ @vendoringOptions@qsMarketValue"] = "dbmarket",
+	["g@ @appearanceOptions@taskListBackgroundLock"] = false,
+	["s@Xuna - Horde - Gehennas@internalData@bagQuantity"] = {
+		["i:6657"] = 7,
+		["i:5176"] = 1,
+		["i:12662"] = 1,
+		["i:14047"] = 7,
+		["i:15277"] = 1,
+		["i:6948"] = 1,
+		["i:20742"] = 1,
+		["i:13289"] = 1,
+		["i:8523"] = 1,
+		["i:20741"] = 1,
+		["i:12840"] = 36,
+		["i:17030"] = 5,
+		["i:13446"] = 3,
+		["i:5177"] = 1,
+		["i:12841"] = 10,
+		["i:14529"] = 11,
+		["i:8952"] = 34,
+		["i:20396"] = 1,
+		["i:17345"] = 1,
+		["i:8766"] = 67,
+		["i:18746"] = 1,
+		["i:5175"] = 1,
+		["i:13443"] = 1,
+		["i:5178"] = 1,
+		["i:12938"] = 1,
+	},
+}
+TSMItemInfoDB = {
+	["locale"] = "enUS",
+	["revision"] = "36035",
+	["version"] = 6,
+	["build"] = "1.13.5",
+	["itemStrings"] = "i:108325i:35624i:160711i:52720i:111245i:34055i:152549i:109140i:152544i:23425i:108304i:23427i:22452i:72235i:97621i:22456i:36860i:111671i:74247i:37700i:52988i:36903i:111676i:22792i:111595i:35623i:35622i:108296i:109125i:109124i:108319i:108322i:108308i:111663i:111667i:111662i:108329i:52183i:108309i:36910i:109142i:111672i:35627i:34053i:22457i:52985i:36909i:37705i:37702i:109138i:109137i:111601i:108300i:108297i:37703i:174327i:21886i:152546i:108350i:109143i:108305i:52185i:168646i:52718i:108302i:109139i:111651i:111675i:115504i:111652i:109141i:111674i:111670i:108353i:111650i:35625i:22576i:52719i:152547i:115502i:108365i:22451i:109624i:108299i:152543i:34052i:152548i:109144i:111658i:109625i:108307i:37704i:108295i:22577i:22572i:108294i:108301i:108336i:111665i:108391i:108303i:72092i:108362i:22578i:109119i:23424i:34056i:97512i:111668i:111656i:22446i:108298i:22447i:111659i:21884i:37701i:111669i:22573i:53038i:108326i:111673i:111589i:74252i:23426i:22574i:111666i:111664i:22575i:113588i:21885i:152545i:109991i:108306i:174328i:36912i:168302i:52721i:17030i:8839i:2453i:20741i:11176i:2449i:3818i:5176i:12207i:19933i:10645i:2776i:3821i:11082i:16203i:10939i:11135i:11175i:2581i:8545i:6451i:3531i:16204i:12841i:2772i:14667i:3358i:3356i:14344i:11084i:11139i:11178i:835i:10998i:16202i:10938i:11134i:11174i:3357i:1251i:8544i:13446i:21519i:3858i:8766i:12037i:20725i:8952i:14047i:14529i:20424i:6657i:3012i:2290i:1478i:1712i:1180i:1711i:10285i:6450i:2775i:7734i:14343i:10978i:11138i:11177i:11083i:10940i:13443i:4337i:10620i:2771i:7911i:20408i:11137i:8149i:12205i:3819i:3530i:18904",
+	["data"] = "______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________eAAA0HAAAFAA_kgAAFABAAvAAA3FAAAUAAzwgAAHABAAUAAAZAAAAUAAlwgAAHABAAtAtAAAAAABAAoQhAAPABBAtAAAAAAAAUAA3bgAAHABAAFAAAUAAAAUAArwgAAHABAAgAAA9BAAAUAAxwgAAHABAAKAAAAAAAABAAoQhAAFABBAtAAAWCAAAKAAibgAAHABAABAAAggAAAKAAoPhAAPABAAwAAAuLAAABAMKegAAHDBBAZAAA0HAAAKAAm2gAAHACAAiAAAWCAAAUAA0wgAAHABAAZAAAAAAAAKAA-bgAAHACAA3AAAAAAAAKAAAcgAAHACAAPAAAAAAAAKAACcgAAHACAAjAAAAAAAAKAAEcgAAHACAAtAAAAAAAAKAAGcgAAHACAABAAAUAAAAUAA4ogAAAABAABAAAYJAAAUAA6ogAAAABAABAAAQGAAAUAAoogAAAABAABAAA5AAAAUAA3ogAAAABAA3AAAAAAAAUAA4bgAAHABAABAAAAAAAA6DAGlgAAMABBAeAAAWCAAAKAAs2gAAHABAA1AwASoCAABABHggAAECCAAlAAAvCAAAUAAswgAAHABAAYAAAeAAAAUAAnwgAAHABAA3AAAAAAAAUAAJcgAAHADAAZAAAAAAAAUAAMcgAAHADAAjAAAAAAAAUAAOcgAAHADAAtAAAAAAAAUAATcgAAHADAAMACAXAAAABAA1ygAAAABBAUAAAAAAAAKAA_bgAAHACAAyAAAAAAAAKAABcgAAHACAAKAAAAAAAAKAADcgAAHACAAeAAAAAAAAKAAFcgAAHACAAoAAAAAAAAKAAHcgAAHACAAeAAALBAAAUAAN0gAAHABAABAAAKAAAAUAA1ogAAAABAABAAAQGAAAUAA5ogAAAABAA3AtAoPAAAFAAy6gAAAABAABAAAAAAAAUAAtwgAAPABBAoAAA6DAAAKAAw2gAAHABAA3AtAIDAAAUAA44gAAAABAAeAAAXBAAAKAAHugAAHABAA8AAAAAAAAUAAQcgAAHAEAA3AtAIDAAAUAATtgAAAABAAyAAAQGAAAUAAncgAAHABAA0AAA0HAAAUAAxogAAAABAA3AAAvCAAAUAA3tgAAHABAASAAAFAAAAUAAeygAAAABAAUAKAyAAAAFAAa8gAAAABAAeAUALBAAAFAAZ8gAAAABAAZAPA-AAAAFAAf8gAAAABAAZAPA-AAAAFAAZ8gAAAABAAPAFAlAAAAFAAf8gAAAABAAeAUALBAAAFAAf8gAAAABAAoAAAoPAAAKAAxOhAAHABAABAAAIDAAAUAAnogAAAABAAKAAALBAAAKAAKBhAAHACAAzAuAHyDAABAM2ngAAEADAAyAAAAAAAAUAAKcgAAHADAAUAAAAAAAAUAANcgAAHADAAeAAAAAAAAUAAPcgAAHADAAoAAAAAAAAUAAUcgAAHADAAZAAAAAAAAUAA5bgAAHABAAKAAAAAAAAUAA6bgAAHABAAzApAQGAAAFAAG7gAAAABAAjAAAuLAAAKAAxOhAAHABAAoAAA6DAAAKAAy2gAAHABAAUAAAZAAAAKAAz2gAAHABAAoAAA0HAAAKAA02gAAHACAA8A8AWeAAABABJggAAEBCAAjAAAAAAAAUAA7bgAAHABAABAAAAAAAABAAWWgAAMABBAoAAAwBAAAKAA3tgAAHABAAnAAAkBAAAUAA0sgAAHABAABAAAcAAAAUAA0ogAAAABAABAAAAAAAABAALegAAMABBA",
+	["names"] = "AnkhBlindweedBruiseweedDeadwood Ritual TotemDream DustEarthrootFadeleafFire TotemGiant EggGlowing Scorpid BloodGnomish Death RayGold OreGoldthornGreater Astral EssenceGreater Eternal EssenceGreater Magic EssenceGreater Mystic EssenceGreater Nether EssenceHeavy Linen BandageHeavy Mageweave BandageHeavy Silk BandageHeavy Wool BandageIllusion DustInvader's ScourgestoneIron OreKeeper's WreathKhadgar's WhiskerKingsbloodLarge Brilliant ShardLarge Glimmering ShardLarge Glowing ShardLarge Radiant ShardLarge Rope NetLesser Astral EssenceLesser Eternal EssenceLesser Magic EssenceLesser Mystic EssenceLesser Nether EssenceLiferootLinen BandageMageweave BandageMajor Healing PotionMistletoeMithril OreMorning Glory DewMystery MeatNexus CrystalRoasted QuailRuneclothRunecloth BandageSandworm MeatSavory Deviate DelightScroll of AgilityScroll of Intellect IIScroll of Protection IIScroll of Spirit IIScroll of StaminaScroll of Stamina IIShadow SilkSilk BandageSilver OreSix Demon BagSmall Brilliant ShardSmall Glimmering ShardSmall Glowing ShardSmall Radiant ShardSoul DustStrange DustSuperior Mana PotionThick Spider's SilkThorium OreTin OreTruesilver OreTwilight Cultist CowlVision DustVoodoo CharmWhite Spider MeatWintersbiteWool BandageZorbin's Ultra-Shrinker",
+}

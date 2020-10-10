@@ -9,21 +9,40 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
+				["CastingBarFrame"] = {
+					["orgPos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						157.000015258789, -- [5]
+					},
+					["name"] = "CastingBarFrame",
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						3.05175781250e-05, -- [4]
+						108.745346069336, -- [5]
+					},
+				},
 				["TargetFrame"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
 						"UIParent", -- [2]
 						"TOP", -- [3]
-						-307, -- [4]
-						-150, -- [5]
+						-297, -- [4]
+						-136, -- [5]
 					},
 					["name"] = "TargetFrame",
+					["scale"] = 1.10000002384186,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
 						"TOPLEFT", -- [3]
-						380, -- [4]
-						-150, -- [5]
+						362.658874511719, -- [4]
+						-136.363633408034, -- [5]
 					},
 				},
 				["PlayerFrame"] = {
@@ -31,18 +50,18 @@ MADB = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
 						"TOPLEFT", -- [3]
-						150, -- [4]
-						-150, -- [5]
+						136, -- [4]
+						-136, -- [5]
 					},
 					["name"] = "PlayerFrame",
-					["scale"] = 1,
+					["scale"] = 1.10000002384186,
 					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
 						"TOPLEFT", -- [3]
-						150, -- [4]
-						-150, -- [5]
+						136.363633408034, -- [4]
+						-136.363633408034, -- [5]
 					},
 				},
 			},
@@ -50,7 +69,6 @@ MADB = {
 	},
 	["tooltips"] = true,
 	["closeGUIOnEscape"] = false,
-	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,

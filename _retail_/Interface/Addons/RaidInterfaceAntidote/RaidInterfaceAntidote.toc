@@ -1,9 +1,0 @@
-﻿## Interface: 80100
-## Title: Raid Interface Antidote
-## Authors: MrCool
-## Notes: Makes Blizzard raid frames fail gracefully when the group is modified in combat (i.e: avoid being stuck with duplicate, buggy frames).
-## SavedVariables:
-## Dependencies:
-## OptionalDeps:
-
-Code.lua

@@ -104,9 +104,9 @@ Bagnon_Sets = {
 				["use"] = false,
 			},
 			["alpha"] = 1,
-			["y"] = 147.007537841797,
+			["y"] = 104.763214111328,
 			["bagBreak"] = false,
-			["x"] = -85.5876397460602,
+			["x"] = -102.361358583744,
 			["search"] = false,
 			["broker"] = false,
 			["reverseSlots"] = false,
@@ -238,7 +238,7 @@ Bagnon_Sets = {
 			["itemScale"] = 1,
 		},
 	},
-	["version"] = "8.3.8",
+	["version"] = "9.0.1",
 	["profiles"] = {
 	},
 	["refrigeColor"] = {

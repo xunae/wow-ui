@@ -10,25 +10,17 @@ KalielsTrackerDB = {
 		["Xuna - Gehennas"] = {
 			["trackedQuests"] = {
 				{
-					["id"] = 5601,
-					["zone"] = "Eastern Plaguelands",
+					["id"] = 8075,
+					["zone"] = "Zul'Gurub",
 				}, -- [1]
 				{
-					["id"] = 6029,
-					["zone"] = "Winterspring",
+					["id"] = 8074,
+					["zone"] = "Zul'Gurub",
 				}, -- [2]
 				{
-					["id"] = 6030,
-					["zone"] = "Winterspring",
+					["id"] = 8240,
+					["zone"] = "Zul'Gurub",
 				}, -- [3]
-				{
-					["id"] = 5159,
-					["zone"] = "Felwood",
-				}, -- [4]
-				{
-					["id"] = 5961,
-					["zone"] = "Undercity",
-				}, -- [5]
 			},
 			["sort"] = "level",
 		},

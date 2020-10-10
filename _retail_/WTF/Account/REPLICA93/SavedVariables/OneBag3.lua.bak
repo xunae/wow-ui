@@ -25,10 +25,10 @@ OneBag3DB = {
 				["top"] = 708.2445068359375,
 				["left"] = 1251.378295898438,
 			},
-			["moved"] = true,
 			["appearance"] = {
 				["lowlevel"] = false,
 			},
+			["moved"] = true,
 		},
 	},
 }

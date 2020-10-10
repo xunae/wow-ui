@@ -1,5 +1,0 @@
-VER 3 0100000000000001 "cobra" "INV_MISC_QUESTIONMARK"
-#showtooltip Cobra Shot
-/petattack
-/use Cobra Shot
-END

@@ -61,20 +61,12 @@ Details_StreamerDB = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["main_frame_size"] = {
-				200, -- [1]
-				98.9999923706055, -- [2]
-			},
-			["main_frame_locked"] = true,
-			["main_frame_strata"] = "LOW",
+			["scale"] = 1,
+			["row_height"] = 20,
+			["point"] = "TOPLEFT",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
+			["y"] = -28.9441528320313,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -84,7 +76,10 @@ Details_StreamerDB = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = true,
 			["font_size"] = 12,
+			["x"] = 4.38843965530396,
+			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -92,17 +87,22 @@ Details_StreamerDB = {
 				["font_shadow"] = true,
 				["y"] = 1.525878906250e-05,
 				["update_speed"] = 0.05,
-				["size"] = 32,
-				["x"] = 0.0001373291015625,
 				["attribute_type"] = 1,
+				["x"] = 0.0001373291015625,
+				["size"] = 32,
 			},
-			["x"] = 4.38843965530396,
-			["font_face"] = "Friz Quadrata TT",
-			["use_spark"] = true,
-			["y"] = -28.9441528320313,
-			["point"] = "TOPLEFT",
-			["row_height"] = 20,
-			["scale"] = 1,
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["main_frame_locked"] = true,
+			["main_frame_size"] = {
+				200, -- [1]
+				98.9999923706055, -- [2]
+			},
 		},
 	},
 }

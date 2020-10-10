@@ -3,12 +3,11 @@ LiteBag_OptionsDB = {
 	["Frame:LiteBagInventory"] = {
 		["scale"] = 1,
 	},
+	["ShowBindsOnText"] = true,
 	["Frame:LiteBagBank"] = {
 		["scale"] = 1,
 	},
 	["Frame:LiteBagInventoryPanel"] = {
-		["order"] = "bag",
-		["layout"] = "bag",
 		["columns"] = 12,
 	},
 	["Frame:LiteBagBankPanel"] = {

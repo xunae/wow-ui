@@ -139,8 +139,7 @@ function XunaTweaks:darkFrames()
 		MainMenuXPBarTexture0, MainMenuXPBarTexture1, MainMenuXPBarTexture2, MainMenuXPBarTexture3, MainMenuBarArtFrame.LeftEndCap, MainMenuBarArtFrame.RightEndCap, MainMenuBarArtFrameBackground.BackgroundLarge, MainMenuBarArtFrameBackground.BackgroundLarge2,
 		MainMenuBarArtFrameBackground.BackgroundSmall, 	MainMenuBarArtFrameBackground.BagsArt,	MainMenuBarArtFrameBackground.MicroButtonArt,	StatusTrackingBarManager.SingleBarLarge, StatusTrackingBarManager.SingleBarLargeUpper,	StatusTrackingBarManager.SingleBarSmall,
 		SlidingActionBarTexture0,	SlidingActionBarTexture1,	MainMenuXPBarTextureLeftCap,	MainMenuXPBarTextureRightCap,	MainMenuXPBarTextureMid,
-		ReputationWatchBarTexture0,	ReputationWatchBarTexture1,	ReputationWatchBarTexture2,	ReputationWatchBarTexture3,	ReputationXPBarTexture0,	ReputationXPBarTexture1,	ReputationXPBarTexture2, ReputationXPBarTexture3,
-
+		ReputationWatchBarTexture0,	ReputationWatchBarTexture1,	ReputationWatchBarTexture2,	ReputationWatchBarTexture3,	ReputationXPBarTexture0,	ReputationXPBarTexture1,	ReputationXPBarTexture2, ReputationXPBarTexture3, MicroButtonAndBagsBar.MicroBagBar
 	}) do
 		v:SetVertexColor(c, c, c)
 	end
@@ -255,22 +254,22 @@ function XunaTweaks:bottomRaidFrame()
 end
 
 function XunaTweaks:beautifyFonts()
-	--TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 11, 'OUTLINE')
-	--TextStatusBarText:SetShadowOffset(1, -1)
+	TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 11, 'OUTLINE')
+	TextStatusBarText:SetShadowOffset(1, -1)
 
 	--for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
-			--font:SetFont('Fonts\\ARIALN.ttf', 14)
-			--font:SetShadowOffset(1, -1)
+	--		font:SetFont('Fonts\\ARIALN.ttf', 14)
+	--		font:SetShadowOffset(1, -1)
 	--end
 
 	--for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
-			--font:SetFont('Fonts\\ARIALN.ttf', 12)
-			--font:SetShadowOffset(1, -1)
+	--		font:SetFont('Fonts\\ARIALN.ttf', 12)
+	--		font:SetShadowOffset(1, -1)
 	--end
 end
 
 function XunaTweaks:beautifyActionBar()
-	--hooksecurefunc('CooldownFrame_Set', function(self) if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then self:SetCooldown(0,0) end end)
+	hooksecurefunc('CooldownFrame_Set', function(self) if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then self:SetCooldown(0,0) end end)
 
 	local Path, Height = NumberFontNormalSmall:GetFont();
 	NumberFontNormalSmall:SetFont(Path, Height, 'OUTLINE');
@@ -282,8 +281,8 @@ function XunaTweaks:beautifyActionBar()
 	if XunaTweaksDB.hideMacros then macroAlpha = 0 end
 
 	-- hide microbuttons & bags
-	--MicroButtonAndBagsBar:Hide()
-	--MicroButtonAndBagsBar.MicroBagBar:Hide()
+	MicroButtonAndBagsBar:Hide()
+	MicroButtonAndBagsBar.MicroBagBar:Hide()
 
 	for i = 1, 12 do
 		_G['ActionButton'..i..'HotKey']:SetAlpha(bindAlpha)

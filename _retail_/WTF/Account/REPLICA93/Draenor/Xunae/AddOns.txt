@@ -37,8 +37,8 @@ OmniCC: enabled
 BigWigs: enabled
 Recount: disabled
 ReforgeLite: disabled
-BagBrother: disabled
-Quartz: disabled
+BagBrother: enabled
+Quartz: enabled
 TradeSkillMaster_Accounting: disabled
 TradeSkillMaster_ItemTracker: enabled
 IboUI: disabled
@@ -63,7 +63,7 @@ LoseControl: enabled
 Masque_Cainyx: disabled
 MoveAnything: enabled
 NecroticTrack: enabled
-OneBag3: disabled
+OneBag3: enabled
 PortraitTimers: disabled
 Prat-3.0: enabled
 Prat-3.0_Libraries: enabled
@@ -222,7 +222,7 @@ WIM: enabled
 XunaFrames: enabled
 XunaAuras: disabled
 XunaCD: enabled
-autodrink: disabled
+autodrink: enabled
 BigDebuffs: enabled
 tullaRange: enabled
 tullaRange_Config: enabled
@@ -335,8 +335,8 @@ BlizzBuffsFacade: enabled
 Masque_Caith: disabled
 RaidFrameIcons: enabled
 RCLootCouncil: enabled
-ShadowedUF_Options: disabled
-ShadowedUnitFrames: disabled
+ShadowedUF_Options: enabled
+ShadowedUnitFrames: enabled
 StrataFix: disabled
 XunaTesti: enabled
 TradeSkillMaster_AppHelper: enabled
@@ -368,7 +368,7 @@ DataStore_Containers: enabled
 Details: enabled
 Details_EncounterDetails: disabled
 Details_RaidCheck: disabled
-Details_DataStorage: disabled
+Details_DataStorage: enabled
 Details_TimeAttack: enabled
 Details_TinyThreat: disabled
 Details_Vanguard: disabled
@@ -417,7 +417,7 @@ TidyPlates_Threat: disabled
 !KalielsTracker: disabled
 BigWigs_BrokenIsles: enabled
 LittleWigs: enabled
-WorldQuestsList: disabled
+WorldQuestsList: enabled
 ServerHop: enabled
 AngryWorldQuests: enabled
 SuramarPortals: enabled
@@ -500,8 +500,8 @@ SharedMediaAdditionalFonts: enabled
 AddOnSkins: enabled
 TipTac: disabled
 XIV_Databar: enabled
-AngryKeystones: disabled
-BlizzMove: disabled
+AngryKeystones: enabled
+BlizzMove: enabled
 Details_RaidInfo-TrialOfValor: disabled
 Pawn: disabled
 RaidFadeMore: disabled
@@ -528,7 +528,7 @@ epgp_lootmaster_ml: disabled
 epgp_lootmaster: disabled
 Bagnon_Facade: enabled
 BarrelsOEasy: disabled
-Kui_Media: disabled
+Kui_Media: enabled
 OrderHallCommander: enabled
 ReagentBanker: disabled
 BigDumbLootCouncil: disabled
@@ -546,12 +546,12 @@ Cecile_QuickLaunchSpecGear: enabled
 Cecile_QuickLaunchSpells: enabled
 Cecile_QuickLaunchToys: enabled
 NameplateAuras: enabled
-PremadeGroupsFilter: disabled
+PremadeGroupsFilter: enabled
 bdCore: disabled
 bdGrid: enabled
 bdNameplates: disabled
 SatchelScanner: disabled
-ColorPickerPlus: disabled
+ColorPickerPlus: enabled
 ncHoverBind: enabled
 Masque_ElvUIesque: disabled
 VuhDo: enabled
@@ -600,10 +600,10 @@ Details_RaidInfo-TombOfSargeras: disabled
 Genie: enabled
 Genie_LDB: enabled
 Genie_UI: enabled
-ItemLevelDisplay: disabled
-ILD-Litebag: disabled
+ItemLevelDisplay: enabled
+ILD-Litebag: enabled
 RelicInspector: disabled
-TalentSetManager: disabled
+TalentSetManager: enabled
 YouOnlyHearOnce: disabled
 Favorites: enabled
 Azeroth Auto Pilot: disabled
@@ -612,7 +612,7 @@ BigWigs_WarlordsOfDraenor: enabled
 SilentWorldQuest: disabled
 SilentWorldQuestOptions: disabled
 AzeriteForge: disabled
-BigWigs_Azeroth: disabled
+BigWigs_Azeroth: enabled
 RaiderIO_DB_US_A: disabled
 RaiderIO_DB_US_H: disabled
 RaiderIO_DB_KR_A: disabled
@@ -642,11 +642,11 @@ BattleGroundEnemies: enabled
 BigWigs_EternalPalace: disabled
 ChampionCommander: enabled
 MethodDungeonTools: enabled
-RaiderIO: disabled
+RaiderIO: enabled
 RaiderIO_DB_EU_A: disabled
-RaiderIO_DB_EU_H: disabled
+RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
-RaiderIO_DB_EU_H_R: disabled
+RaiderIO_DB_EU_H_R: enabled
 ATT: disabled
 WeakAurasCompanion: enabled
 TomCats: enabled
@@ -655,10 +655,10 @@ TomCats-Nazjatar: enabled
 LookingForGroup: disabled
 WarPlan: enabled
 WeakAurasArchive: enabled
-BigWigs_Nyalotha: enabled
+BigWigs_Nyalotha: disabled
 CorruptionTooltips: disabled
-TooltipItemCount: disabled
-BigWigs_CastleNathria: disabled
+TooltipItemCount: enabled
+BigWigs_CastleNathria: enabled
 DBM-Azeroth-BfA: enabled
 DBM-ZuldazarRaid: disabled
 DBM-CrucibleofStorms: disabled

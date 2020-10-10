@@ -1,0 +1,24 @@
+tag 9470109195dc0c7be9f29666b73d2f7a71e9a175 8.3.3
+Author:	Mike "Xodiv" Battersby <mib@post.com>
+Date:	Wed Sep 30 12:47:09 2020 +1000
+
+LiteBag 8.3.3 - update localizations
+
+commit 2d826fd73e43087788ad702f8796c42845372f30
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Sep 30 12:42:28 2020 +1000
+
+    Update itIT frFR and zhTW localizations. Fix default BoA and Pet icon usage.
+
+commit 0ec9a055cbd2d90c561f7f80d3eaaf501824d03d
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Sep 30 12:37:58 2020 +1000
+
+    Make the pet icon a bit bigger (12 -> 14)
+
+commit 8bb911a8b13348ea8a7edda40b1065f5f234699a
+Author: Mike "Xodiv" Battersby <mib@post.com>
+Date:   Wed Sep 30 12:37:40 2020 +1000
+
+    Don't fetch enUS localizations
+

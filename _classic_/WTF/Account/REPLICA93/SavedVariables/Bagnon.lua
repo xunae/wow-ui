@@ -36,7 +36,7 @@ Bagnon_Sets = {
 	},
 	["refrigeColor"] = {
 	},
-	["version"] = "8.3.8",
+	["version"] = "9.0.1",
 	["profiles"] = {
 	},
 	["global"] = {
@@ -105,7 +105,7 @@ Bagnon_Sets = {
 			},
 			["bagBreak"] = false,
 			["y"] = 104.763214111328,
-			["x"] = -102.361321386685,
+			["x"] = -102.361358583744,
 			["search"] = false,
 			["broker"] = false,
 			["reverseSlots"] = false,
