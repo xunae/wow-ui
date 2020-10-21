@@ -1,9 +1,9 @@
-## Interface: 80300
+## Interface: 90001
 
 ## Title: Leatrix Maps
 ## Notes: Enhancements for your maps.
 
-## Version: 8.3.38
+## Version: 9.0.03
 ## Author: Leatrix
 ## SavedVariables: LeaMapsDB
 

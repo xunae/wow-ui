@@ -1,38 +1,51 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Xûñä - Stormscale"] = {
-			["collapsed"] = true,
-		},
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
 		},
-	},
-	["profileKeys"] = {
-		["Xuna - Stormscale"] = "Default",
-		["Xûñä - Stormscale"] = "Default",
-		["Xüñâ - Stormscale"] = "Default",
+		["Dkuna - Draenor"] = {
+			["collapsed"] = true,
+		},
+		["Xã - Draenor"] = {
+			["collapsed"] = true,
+		},
+		["Xûñä - Stormscale"] = {
+			["collapsed"] = true,
+		},
+		["Xunae - Draenor"] = {
+			["collapsed"] = true,
+		},
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
-		["version"] = "3.1.5",
+		["version"] = "4.0.0",
+	},
+	["profileKeys"] = {
+		["Zunae - Draenor"] = "Default",
+		["Xñ - Draenor"] = "Default",
+		["Xunae - Draenor"] = "Default",
+		["Xã - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
+		["Xñæ - Draenor"] = "Default",
+		["Dkuna - Draenor"] = "Default",
+		["Uñ - Draenor"] = "Default",
+		["Xüñâ - Stormscale"] = "Default",
+		["Xuna - Stormscale"] = "Default",
+		["Xñä - Draenor"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
+		["Æñ - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["yOffset"] = -219,
+			["hdrOtherButtons"] = false,
 			["bgrColor"] = {
-				["a"] = 0,
+				["a"] = 0.5,
 			},
 			["bgr"] = "None",
-			["filterAchievCat"] = {
-				[15117] = false,
-			},
-			["fontSize"] = 14,
-			["frameScrollbar"] = false,
-			["maxHeight"] = 500,
-			["colorDifficulty"] = true,
-			["textWordWrap"] = true,
-			["hdrOtherButtons"] = false,
+			["fontSize"] = 11,
+			["progressBar"] = "Blizzard Raid Bar",
+			["maxHeight"] = 626,
 		},
 	},
 }

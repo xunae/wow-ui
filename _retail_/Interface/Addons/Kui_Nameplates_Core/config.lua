@@ -49,6 +49,7 @@ local default_config = {
     use_blizzard_powers = false,
     frame_vertical_offset = 0,
     show_arena_id = true, -- NEX
+    show_quest_icon = false, -- NEX (XXX enable by default)
 
     clickthrough_self = false,
     clickthrough_friend = false,
@@ -143,12 +144,12 @@ local default_config = {
     execute_percent = 20,
     execute_colour = {1,1,1},
 
-    frame_width = 132,
-    frame_height = 13,
+    frame_width = 128,
+    frame_height = 16,
     frame_width_minus = 72,
-    frame_height_minus = 8,
-    frame_width_personal = 132,
-    frame_height_personal = 13,
+    frame_height_minus = 14,
+    frame_width_personal = 128,
+    frame_height_personal = 16,
     powerbar_height = 3,
     global_scale = 1,
 
@@ -218,8 +219,8 @@ local default_config = {
     classpowers_enable = true,
     classpowers_on_target = true,
     classpowers_size = 12,
-    classpowers_bar_width = 50,
-    classpowers_bar_height = 3,
+    classpowers_bar_width = 80,
+    classpowers_bar_height = 5,
 
     classpowers_colour_deathknight = {1,.2,.3},
     classpowers_colour_druid       = {1,1,.1},
@@ -265,19 +266,21 @@ local default_config = {
     auras_count_offset_x = 5,
     auras_count_offset_y = -2,
 }
--- local functions #############################################################
+-- global scale helper #########################################################
+-- for frame/texture sizes; apply global scale to given value
 local GLOBAL_SCALE
-local function Scale(v)
+function core:Scale(v)
     if not tonumber(GLOBAL_SCALE) or GLOBAL_SCALE == 1 then
         return v
     else
         return floor((v*GLOBAL_SCALE)+.5)
     end
 end
+-- local functions #############################################################
 local function UpdateClickboxSize()
     if kui.CLASSIC then return end -- XXX functions exist, but break display
-    local o_width = (Scale(core.profile.frame_width) * addon.uiscale) + 10
-    local o_height = (Scale(core.profile.frame_height) * addon.uiscale) + 20
+    local o_width = (core:Scale(core.profile.frame_width) * addon.uiscale) + 10
+    local o_height = (core:Scale(core.profile.frame_height) * addon.uiscale) + 20
 
     if C_NamePlate.SetNamePlateOtherSize then
         C_NamePlate.SetNamePlateOtherSize(o_width,o_height)
@@ -293,8 +296,8 @@ local function UpdateClickboxSize()
             45
         )
     else
-        local p_width = (Scale(core.profile.frame_width_personal) * addon.uiscale) + 10
-        local p_height = (Scale(core.profile.frame_height_personal) * addon.uiscale) + 20
+        local p_width = (core:Scale(core.profile.frame_width_personal) * addon.uiscale) + 10
+        local p_height = (core:Scale(core.profile.frame_height_personal) * addon.uiscale) + 20
         C_NamePlate.SetNamePlateSelfSize(p_width,p_height)
     end
 end
@@ -592,9 +595,9 @@ end
 local function configChangedClassPowers()
     if not core.ClassPowers then return end
     core.ClassPowers.on_target = core.profile.classpowers_on_target
-    core.ClassPowers.icon_size = core.profile.classpowers_size
-    core.ClassPowers.bar_width = core.profile.classpowers_bar_width
-    core.ClassPowers.bar_height = core.profile.classpowers_bar_height
+    core.ClassPowers.icon_size = core:Scale(core.profile.classpowers_size)
+    core.ClassPowers.bar_width = core:Scale(core.profile.classpowers_bar_width)
+    core.ClassPowers.bar_height = core:Scale(core.profile.classpowers_bar_height)
     addon:GetPlugin('ClassPowers'):UpdateConfig()
 end
 configChanged.classpowers_size = configChangedClassPowers
@@ -648,16 +651,6 @@ function configChanged.execute_percent()
 end
 configChanged.execute_auto = configChanged.execute_percent
 
-function configChanged.frame_glow_size()
-    for _,f in addon:Frames() do
-        f:UpdateFrameGlowSize()
-
-        if type(f.UpdateNameOnlyGlowSize) == 'function' then
-            f:UpdateNameOnlyGlowSize()
-        end
-    end
-end
-
 function configChanged.ignore_uiscale(v)
     addon.IGNORE_UISCALE = v
     addon:UI_SCALE_CHANGED()
@@ -684,9 +677,9 @@ configChanged.bossmod_enable = function(v)
     end
 end
 local function configChangedBossMod()
-    core.BossModIcon.icon_size = core.profile.bossmod_icon_size
-    core.BossModIcon.icon_x_offset = core.profile.bossmod_x_offset
-    core.BossModIcon.icon_y_offset = core.profile.bossmod_y_offset
+    core.BossModIcon.icon_size = core:Scale(core.profile.bossmod_icon_size)
+    core.BossModIcon.icon_x_offset = core:Scale(core.profile.bossmod_x_offset)
+    core.BossModIcon.icon_y_offset = core:Scale(core.profile.bossmod_y_offset)
     core.BossModIcon.control_visibility = core.profile.bossmod_control_visibility
     core.BossModIcon.clickthrough = core.profile.bossmod_clickthrough
 
@@ -783,8 +776,6 @@ configChanged.cvar_self_alpha = configChangedCVar
 configChanged.cvar_occluded_mult = configChangedCVar
 
 function configChanged.global_scale()
-    GLOBAL_SCALE = core.profile.global_scale
-    configChanged.frame_glow_size(core.profile.frame_glow_size)
     configChanged.state_icons()
     configChangedCastBar()
     configChangedAuras()
@@ -857,9 +848,15 @@ end
 configLoaded.bossmod_enable = configChanged.bossmod_enable
 
 -- init config #################################################################
+local function UpdateProfile()
+    core.profile = core.config:GetConfig()
+    GLOBAL_SCALE = core.profile.global_scale
+
+    -- initialise config locals in create.lua
+    core:SetLocals()
+end
 function core:ConfigChanged(config,k,v)
-    self.profile = config:GetConfig()
-    self:SetLocals()
+    UpdateProfile()
 
     if k then
         -- call affected key's configChanged function
@@ -879,7 +876,7 @@ function core:ConfigChanged(config,k,v)
     end
 
     if addon.debug and addon.debug_config then
-        kui.print(self:GetActiveProfile())
+        kui.print(self.config.profile)
     end
 
     for _,f in addon:Frames() do
@@ -903,12 +900,8 @@ function core:InitialiseConfig()
     --@end-alpha@]===]
 
     self.config = kc:Initialise('KuiNameplatesCore',default_config)
-    self.profile = self.config:GetConfig()
-
     self.config:RegisterConfigChanged(self,'ConfigChanged')
-
-    -- initialise config locals in create.lua
-    self:SetLocals()
+    UpdateProfile()
 
     -- run config loaded functions
     for k,f in pairs(configLoaded) do

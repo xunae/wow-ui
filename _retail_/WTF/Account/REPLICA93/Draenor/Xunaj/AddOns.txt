@@ -16,7 +16,7 @@ TradeSkillMaster_Crafting: enabled
 TradeSkillMaster_Gathering: disabled
 TradeSkillMaster_Mailing: disabled
 TradeSkillMaster_Shopping: enabled
-Bagnon: enabled
+Bagnon: disabled
 DBM-Party-Cataclysm: enabled
 DBM-PvP: enabled
 DBM-GUI: enabled
@@ -28,7 +28,7 @@ DBM-ThroneFourWinds: enabled
 DBM-WorldEvents: enabled
 DBM-Firelands: enabled
 BattlegroundTargets: disabled
-Bartender4: disabled
+Bartender4: enabled
 XunaUI: disabled
 TellMeWhen: enabled
 TellMeWhen_Options: enabled
@@ -231,8 +231,8 @@ TeleportCloak: enabled
 DBM-StatusBarTimers: enabled
 DBM-DefaultSkin: enabled
 DBM-BlackrockFoundry: disabled
-DBM-Brawlers: disabled
-DBM-DMF: disabled
+DBM-Brawlers: enabled
+DBM-DMF: enabled
 DBM-Draenor: disabled
 DBM-HeartofFear: enabled
 DBM-Highmaul: disabled
@@ -414,7 +414,7 @@ LegionWardrobe: enabled
 LegionWardrobeData: enabled
 ConsLegion: disabled
 TidyPlates_Threat: disabled
-!KalielsTracker: disabled
+!KalielsTracker: enabled
 BigWigs_BrokenIsles: enabled
 LittleWigs: enabled
 WorldQuestsList: enabled
@@ -424,7 +424,7 @@ SuramarPortals: enabled
 GarrisonMissionManager: enabled
 GoFish: disabled
 Dominos_ActionSets: enabled
-Dominos: disabled
+Dominos: enabled
 Dominos_Cast: enabled
 Dominos_Config: enabled
 Dominos_Encounter: enabled
@@ -660,11 +660,12 @@ CorruptionTooltips: disabled
 TooltipItemCount: enabled
 BigWigs_CastleNathria: enabled
 DBM-Azeroth-BfA: enabled
-DBM-ZuldazarRaid: disabled
-DBM-CrucibleofStorms: disabled
+DBM-ZuldazarRaid: enabled
+DBM-CrucibleofStorms: enabled
 DBM-CastleNathria: enabled
 DBM-Party-BfA: enabled
 DBM-Party-Shadowlands: enabled
 DBM-Nyalotha: enabled
-DBM-EternalPalace: disabled
-DBM-Uldir: disabled
+DBM-EternalPalace: enabled
+DBM-Uldir: enabled
+ILD-Baudbag: disabled

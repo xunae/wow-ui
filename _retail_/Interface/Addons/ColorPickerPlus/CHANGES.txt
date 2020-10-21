@@ -1,10 +1,10 @@
-lightweight tag 2427da125082a3a0c423e1da81840c180394e262 v902
-Author:	Jane Merrow <jane@FujiMac.local>
-Date:	Wed Aug 26 15:11:43 2020 -0700
+lightweight tag 6e9ba8dbaba6c90065044204fb3edf1c0b10ec95 r48
+Author:	GitHub <noreply@github.com>
+Date:	Mon Oct 19 10:50:25 2020 -0700
 
-commit 2427da125082a3a0c423e1da81840c180394e262
-Author: Jane Merrow <jane@FujiMac.local>
-Date:   Wed Aug 26 15:11:43 2020 -0700
+commit 6e9ba8dbaba6c90065044204fb3edf1c0b10ec95
+Author: Jaslm <70230626+Jaslm@users.noreply.github.com>
+Date:   Mon Oct 19 10:50:25 2020 -0700
 
-    Set toc for live servers (requires "load out of date addons" for classic and ptr servers).
+    Fix for classic dialog box header
 

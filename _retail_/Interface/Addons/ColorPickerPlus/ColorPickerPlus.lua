@@ -1,16 +1,14 @@
 -- ColorPickerPlus replaces the standard Color Picker to provide
 -- © Jaslm
---      1. text entry for colors (RGB, hex, and HSV values) and alpha (for opacity),
--- 		2. copy to and paste from color palette
---		3. color swatches for the copied color and for the starting color
---      4. analog color choice through a hue bar and saturation/value gradient square
---      5. class palette and copy/paste independent of palette
+--	1. text entry for colors (RGB, hex, and HSV values) and alpha (for opacity),
+--	2. copy to and paste from color palette
+--	3. color swatches for the copied color and for the starting color
+--	4. analog color choice through a hue bar and saturation/value gradient square
+--	5. class palette and copy/paste independent of palette
 
 --VARIABLES
 -------------------------------------------------------------------------------------------------------
--- Fix for Shadowlands API change affecting frames that depend on having a backdrop set:
--- CreateFrame("Frame", "framename", partentframe, BackdropTemplateMixin and "BackdropTemplate")
--------------------------------------------------------------------------------------------------------
+
 local _, ColorPickerPlus = ...
 local MOD = ColorPickerPlus
 local DB
@@ -44,6 +42,7 @@ local gradientHeight = 160
 
 local colorSwatchWidth = 120
 local colorSwatchHeight = 120
+local isClassic = (WOW_PROJECT_ID == WOW_PROJECT_CLASSIC) -- true if on classic server
 
 -- bgtable used in creation of backdrops
 local bgtable = {
@@ -97,7 +96,6 @@ local defaults = {
 		{ r = 0.7, g = 0.7, b = 0.7, a = 0.7 }, -- transparent gray
 	},
 	paletteState = 2,
-	paletteSize = 36,
 }
 
 local classColorPalette = {
@@ -215,8 +213,7 @@ function MOD.ADDON_LOADED (ev, name)
 		DB = ColorPickerPlusDB
 		if DB then
 			if not DB.palette then
-				DB.palette = {}
-				for i = 1, defaults.paletteSize do DB.palette[i] = defaults.palette[i] end
+				DB.palette = defaults.palette
 			end
 			if not DB.paletteState then
 				DB.paletteState = defaults.paletteState
@@ -326,10 +323,19 @@ function MOD:CleanUpColorPickerFrame()
 	end
 
 	-- Add the "Color Picker Plus" dialog title
-	local t = ColorPickerFrame:CreateFontString(ColorPPHeaderText)
-	t:SetFontObject("GameFontNormal")
-	t:SetText("Color Picker Plus")
-	t:SetPoint("TOP", ColorPickerFrameHeader, "TOP", 0, -14)
+	if isClassic then
+		local t = ColorPickerFrame:CreateFontString(ColorPPHeaderText)
+		t:SetFontObject("GameFontNormal")
+		t:SetText("Color Picker Plus")
+		t:SetPoint("TOP", ColorPickerFrameHeader, "TOP", 0, -14)
+	else
+		ColorPickerFrame.Header:Hide()
+		local h = CreateFrame('Frame', "ColorPPHeaderTitle", ColorPickerFrame, "DialogHeaderTemplate")
+		local t = h:CreateFontString(nil, "ARTWORK")
+		t:SetFontObject("GameFontNormal")
+		t:SetText("Color Picker Plus")
+		t:SetPoint("TOP", h, "TOP", 0, -14)
+	end
 
 	-- make the color picker movable.
 	local mover = CreateFrame('Frame', nil, ColorPickerFrame)
@@ -509,19 +515,11 @@ local function PaletteSwatchOnMouseUp (frame, button)
 	if (frame:IsMouseOver()) then
 		if (button == "LeftButton") then
 			if IsModifierKeyDown() then
-				local k = frame._cppKey
-				if k and k >= 1 and k <= defaults.paletteSize then
-					local c = DB.palette[k]
-					if IsShiftKeyDown() then   -- Set the swatch color to the chosen color
-						r, g, b, a = ColorPPChosenColor:GetBackdropColor()
-						frame:SetBackdropColor(r, g, b, a)
-						c.r = r; c.g = g; c.b = b; c.a = a
---					elseif IsControlKeyDown() then
---						local pc = defaults.palette[k]
---						r = pc.r; g = pc.g; b = pc.b; a = pc.a
---						frame:SetBackdropColor(r, g, b, a)
---						c.r = r; c.g = g; c.b = b; c.a = a
-					end
+				if IsShiftKeyDown() then   -- Set the swatch color to the chosen color
+					r, g, b, a = ColorPPChosenColor:GetBackdropColor()
+					frame:SetBackdropColor(r, g, b, a)
+					local c = DB.palette[frame._cppKey]
+					c.r = r; c.g = g; c.b = b; c.a = a
 				end
 			else	-- Set the chosen color to the swatch color
 				r, g, b, a = frame:GetBackdropColor()
@@ -1021,7 +1019,6 @@ local function ColorPPTooltipShow(self)
 		GameTooltip:AddLine("Left click on palette to use palette color")
 		if ColorPPPalette:IsVisible() then
 			GameTooltip:AddLine("Shift left click on palette to save color to palette")
---			GameTooltip:AddLine("Control left click on palette to reset a color to default")
 		end
 	end
 	--GameToolTip:AddLine("Left click on old color to reset current color")
@@ -1076,7 +1073,7 @@ end
 
 function MOD:CreatePaletteSwitcher()
 	-- add copy button to the ColorPickerFrame
-	local b = CreateFrame("Button", "ColorPPSwitcher", ColorPickerFrame, "UIPanelButtonTemplate")
+	local b = CreateFrame("Button", "ColorPPSwitcher", ColorPickerFrame, "UIPanelButtonTemplate", BackdropTemplateMixin and "BackdropTemplate")
 	b:SetText("@")
 	local f = b:GetFontString()
 	f:SetTextColor(1,1,1,1)

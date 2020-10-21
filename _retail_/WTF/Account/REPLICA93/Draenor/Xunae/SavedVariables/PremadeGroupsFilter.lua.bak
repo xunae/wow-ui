@@ -247,7 +247,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t1c2f0"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "1",
@@ -329,7 +329,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c4f0"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -658,7 +658,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["t2c3f2"] = {
+	["t2c1f0"] = {
 		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
@@ -740,7 +740,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["t2c1f0"] = {
+	["t2c3f2"] = {
 		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",

@@ -1,27 +1,21 @@
 
-* remove old config transition helpers
+* fix import/export/dump slash commands
 
-* fix colour pickers reset eachother
-* [classic] bump toc
+* enable class power on holy/prot paladins
+* show class powers on any target
 
-* add option to show detached castbar in name-only mode
-* add option to show level in name-only mode
-* add option to show health text percent symbol
-* add option to show blizzard class powers (implied when personal nameplate is ignored)
-* add option target_arrows_texture (not exposed in ui)
-* add get command
-* use neutral text colour on friendly neutral NPCs in name-only mode
-* use default colour picker in config (install another addon like ColorPickerPlus to get better accuracy, copy/paste, etc.)
-* move fade_avoid_casting_hostile
-* change some titles and tooltips
-* increase auras_offset soft-max
-* fix default UI experience bars aren't visible
-* fix set command help text
-* cross-compatibility with shadowlands beta
-* update KuiLib
-* update SomeoneElsesConfig-Dropdown
-* (classic) update libClassicCasterino
-* (classic) update libClassicDurations
-* (classic) remove libThreatClassic2
-* (classic) bump toc
+* fix lua error when opening bar texture dropdown
+
+* fix lua error when forbidden nameplates are created
+* fix config page copy/reset
+
+* increase frame glow maximum brightness
+* reduce frame shadow alpha slightly
+* change default frame sizes
+* increase class powers bar size
+* fix global scale doesn't apply to class powers or boss mods when changed
+* fix global scale doesn't apply to class powers bar
+* fix lua error when creating class powers bar
+* (beta/prepatch) fix default nameplates become visible sometimes
+* bump toc
 

@@ -269,7 +269,11 @@ function XunaTweaks:beautifyFonts()
 end
 
 function XunaTweaks:beautifyActionBar()
-	hooksecurefunc('CooldownFrame_Set', function(self) if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then self:SetCooldown(0,0) end end)
+	hooksecurefunc("CooldownFrame_Set", function(self)
+	  if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then
+	    self:SetCooldown(0, 0)
+	  end
+        end)
 
 	local Path, Height = NumberFontNormalSmall:GetFont();
 	NumberFontNormalSmall:SetFont(Path, Height, 'OUTLINE');

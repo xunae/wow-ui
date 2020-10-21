@@ -1,0 +1,91 @@
+
+DetailsTimeLineDB = {
+	["max_segments"] = 4,
+	["combat_data"] = {
+		{
+			["date_end"] = "14:09:50",
+			["date_start"] = "14:09:20",
+			["name"] = "Ravnyr",
+			["total_time"] = 30.00199999999313,
+		}, -- [1]
+		{
+			["date_end"] = "14:08:19",
+			["date_start"] = "14:08:04",
+			["name"] = "Tunk",
+			["total_time"] = 15.04099999999744,
+		}, -- [2]
+	},
+	["hide_on_combat"] = false,
+	["IndividualSpells"] = {
+		{
+			[305913] = {
+				{
+					8.898000000001048, -- [1]
+					"Gor'groth", -- [2]
+					305913, -- [3]
+					"SPELL_CAST_SUCCESS", -- [4]
+					"Xã", -- [5]
+				}, -- [1]
+			},
+		}, -- [1]
+		{
+			[308455] = {
+				{
+					10.86100000000442, -- [1]
+					"Tunk", -- [2]
+					308455, -- [3]
+					"SPELL_CAST_SUCCESS", -- [4]
+				}, -- [1]
+			},
+		}, -- [2]
+	},
+	["useicons"] = true,
+	["cooldowns_timeline"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+	},
+	["backdrop_color"] = {
+		0, -- [1]
+		0, -- [2]
+		0, -- [3]
+		0.4, -- [4]
+	},
+	["deaths_data"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+	},
+	["debuff_timeline"] = {
+		{
+		}, -- [1]
+		{
+		}, -- [2]
+	},
+	["window_scale"] = 1,
+	["BossSpellCast"] = {
+		{
+			["Gor'groth"] = {
+				{
+					8.898000000001048, -- [1]
+					"Gor'groth", -- [2]
+					305913, -- [3]
+					"SPELL_CAST_SUCCESS", -- [4]
+					"Xã", -- [5]
+				}, -- [1]
+			},
+		}, -- [1]
+		{
+			["Tunk"] = {
+				{
+					10.86100000000442, -- [1]
+					"Tunk", -- [2]
+					308455, -- [3]
+					"SPELL_CAST_SUCCESS", -- [4]
+				}, -- [1]
+			},
+		}, -- [2]
+	},
+}

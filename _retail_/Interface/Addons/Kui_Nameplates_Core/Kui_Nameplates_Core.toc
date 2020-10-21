@@ -1,4 +1,4 @@
-## Interface: 80300
+## Interface: 90001
 
 ## Author: Kesava
 ## Title: Kui |cff9966ffNameplates:|r |cffffffffCore|r

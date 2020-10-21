@@ -2,14 +2,18 @@
 DBT_AllPersistentOptions = {
 	["Default"] = {
 		["DBM"] = {
-			["FontSize"] = 10,
+			["FontSize"] = 12,
 			["HugeTimerY"] = -120,
-			["TimerY"] = -172.1568908691406,
-			["Font"] = "standardFont",
+			["StartColorG"] = 0.7019607843137254,
 			["TimerPoint"] = "TOP",
-			["TimerX"] = 351.2449951171875,
+			["StartColorR"] = 1,
 			["HugeTimerX"] = 0,
 			["HugeTimerPoint"] = "CENTER",
+			["Font"] = "standardFont",
+			["StartColorB"] = 0,
+			["TimerX"] = 408.5784606933594,
+			["Height"] = 18,
+			["TimerY"] = -203.4902648925781,
 			["BarXOffset"] = 0,
 			["Texture"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
 		},

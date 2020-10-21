@@ -1,6 +1,6 @@
 
 TalentSetManager_Options = {
-	["visible"] = true,
+	["visible"] = false,
 	["interface"] = {
 		["ignored_tiers_bg"] = {
 			1, -- [1]
@@ -17,6 +17,27 @@ TalentSetManager_Options = {
 	["ldb_last_selected"] = "talents",
 }
 TalentSetManager_CharacterSaves = {
+	["Xñ-Draenor"] = {
+		["talents"] = {
+			{
+			}, -- [1]
+			{
+			}, -- [2]
+			{
+			}, -- [3]
+			[5] = {
+			},
+		},
+		["talents_pvp"] = {
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip4"] = 0,
+			["auto_equip2"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
 	["Xunap-Draenor"] = {
 		["talents_pvp"] = {
 		},
@@ -34,11 +55,13 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunadwarf-Arena Champions - EU"] = {
+	["Æñ-Draenor"] = {
 		["talents_pvp"] = {
 		},
 		["talents"] = {
-			[3] = {
+			{
+			}, -- [1]
+			[5] = {
 			},
 		},
 		["version"] = 0,
@@ -81,6 +104,55 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
+	["Xunadwarf-Arena Champions - EU"] = {
+		["talents_pvp"] = {
+		},
+		["talents"] = {
+			[3] = {
+			},
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip2"] = 0,
+			["auto_equip4"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
+	["Xñä-Draenor"] = {
+		["talents_pvp"] = {
+		},
+		["talents"] = {
+			[5] = {
+			},
+			[3] = {
+			},
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip2"] = 0,
+			["auto_equip4"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
+	["Uñ-Draenor"] = {
+		["talents"] = {
+			[5] = {
+			},
+			[2] = {
+			},
+		},
+		["talents_pvp"] = {
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip4"] = 0,
+			["auto_equip2"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
 	["Xunaj-Draenor"] = {
 		["talents"] = {
 			{
@@ -111,6 +183,23 @@ TalentSetManager_CharacterSaves = {
 		["interface"] = {
 			["auto_equip4"] = 0,
 			["auto_equip2"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
+	["Xunadwarf-Valley of Heroes - EU"] = {
+		["talents_pvp"] = {
+		},
+		["talents"] = {
+			{
+			}, -- [1]
+			[3] = {
+			},
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip2"] = 0,
+			["auto_equip4"] = 0,
 			["auto_equip1"] = 0,
 			["auto_equip3"] = 0,
 		},
@@ -181,14 +270,12 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunadraenei-Arena Champions - EU"] = {
+	["Zunae-Draenor"] = {
 		["talents_pvp"] = {
 		},
 		["talents"] = {
 			{
 			}, -- [1]
-			[3] = {
-			},
 		},
 		["version"] = 0,
 		["interface"] = {
@@ -198,12 +285,14 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Zunae-Draenor"] = {
+	["Xunadraenei-Arena Champions - EU"] = {
 		["talents_pvp"] = {
 		},
 		["talents"] = {
 			{
 			}, -- [1]
+			[3] = {
+			},
 		},
 		["version"] = 0,
 		["interface"] = {
@@ -232,19 +321,96 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunamonkh-Arena Champions - EU"] = {
+	["Xunaorc-Valley of Heroes - EU"] = {
+		["talents_pvp"] = {
+		},
 		["talents"] = {
+			{
+			}, -- [1]
 			[3] = {
 			},
-			[2] = {
-			},
-		},
-		["talents_pvp"] = {
 		},
 		["version"] = 0,
 		["interface"] = {
-			["auto_equip4"] = 0,
 			["auto_equip2"] = 0,
+			["auto_equip4"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
+	["Xunae-Draenor"] = {
+		["talents_pvp"] = {
+		},
+		["talents"] = {
+			{
+				{
+					2, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+					1, -- [5]
+					2, -- [6]
+					2, -- [7]
+					["tt"] = "talents",
+					["name"] = "WORLD",
+					["texture"] = "interface\\icons\\inv_misc_questionmark",
+				}, -- [1]
+				{
+					1, -- [1]
+					3, -- [2]
+					1, -- [3]
+					2, -- [4]
+					1, -- [5]
+					2, -- [6]
+					2, -- [7]
+					["tt"] = "talents",
+					["name"] = "M+",
+					["texture"] = "interface\\icons\\inv_misc_questionmark",
+				}, -- [2]
+			}, -- [1]
+			[3] = {
+				{
+					2, -- [1]
+					1, -- [2]
+					1, -- [3]
+					2, -- [4]
+					1, -- [5]
+					3, -- [6]
+					1, -- [7]
+					["texture"] = 136043,
+					["name"] = "M+",
+					["tt"] = "talents",
+				}, -- [1]
+				{
+					3, -- [1]
+					1, -- [2]
+					2, -- [3]
+					2, -- [4]
+					1, -- [5]
+					1, -- [6]
+					3, -- [7]
+					["texture"] = 462328,
+					["name"] = "PVP",
+					["tt"] = "talents",
+				}, -- [2]
+				{
+					3, -- [1]
+					1, -- [2]
+					1, -- [3]
+					2, -- [4]
+					1, -- [5]
+					3, -- [6]
+					1, -- [7]
+					["tt"] = "talents",
+					["name"] = "RAID",
+					["texture"] = 538566,
+				}, -- [3]
+			},
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip2"] = 0,
+			["auto_equip4"] = 0,
 			["auto_equip1"] = 0,
 			["auto_equip3"] = 0,
 		},
@@ -391,23 +557,6 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Dkuna-Draenor"] = {
-		["talents_pvp"] = {
-		},
-		["talents"] = {
-			{
-			}, -- [1]
-			[3] = {
-			},
-		},
-		["version"] = 0,
-		["interface"] = {
-			["auto_equip2"] = 0,
-			["auto_equip4"] = 0,
-			["auto_equip1"] = 0,
-			["auto_equip3"] = 0,
-		},
-	},
 	["Xunamonk-Arena Champions - EU"] = {
 		["talents"] = {
 			[3] = {
@@ -425,7 +574,7 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunaorc-Valley of Heroes - EU"] = {
+	["Dkuna-Draenor"] = {
 		["talents_pvp"] = {
 		},
 		["talents"] = {
@@ -442,73 +591,28 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunae-Draenor"] = {
+	["Xunamonkh-Arena Champions - EU"] = {
+		["talents"] = {
+			[3] = {
+			},
+			[2] = {
+			},
+		},
+		["talents_pvp"] = {
+		},
+		["version"] = 0,
+		["interface"] = {
+			["auto_equip4"] = 0,
+			["auto_equip2"] = 0,
+			["auto_equip1"] = 0,
+			["auto_equip3"] = 0,
+		},
+	},
+	["Xunaorc-Arena Champions - EU"] = {
 		["talents_pvp"] = {
 		},
 		["talents"] = {
-			{
-				{
-					2, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
-					1, -- [5]
-					2, -- [6]
-					2, -- [7]
-					["tt"] = "talents",
-					["name"] = "WORLD",
-					["texture"] = "interface\\icons\\inv_misc_questionmark",
-				}, -- [1]
-				{
-					1, -- [1]
-					3, -- [2]
-					1, -- [3]
-					2, -- [4]
-					1, -- [5]
-					2, -- [6]
-					2, -- [7]
-					["tt"] = "talents",
-					["name"] = "M+",
-					["texture"] = "interface\\icons\\inv_misc_questionmark",
-				}, -- [2]
-			}, -- [1]
 			[3] = {
-				{
-					2, -- [1]
-					1, -- [2]
-					1, -- [3]
-					2, -- [4]
-					1, -- [5]
-					3, -- [6]
-					1, -- [7]
-					["texture"] = 136043,
-					["name"] = "M+",
-					["tt"] = "talents",
-				}, -- [1]
-				{
-					3, -- [1]
-					3, -- [2]
-					2, -- [3]
-					2, -- [4]
-					1, -- [5]
-					1, -- [6]
-					3, -- [7]
-					["texture"] = 462328,
-					["name"] = "PVP",
-					["tt"] = "talents",
-				}, -- [2]
-				{
-					3, -- [1]
-					1, -- [2]
-					1, -- [3]
-					2, -- [4]
-					1, -- [5]
-					3, -- [6]
-					1, -- [7]
-					["tt"] = "talents",
-					["name"] = "RAID",
-					["texture"] = 538566,
-				}, -- [3]
 			},
 		},
 		["version"] = 0,
@@ -536,34 +640,43 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunaorc-Arena Champions - EU"] = {
-		["talents_pvp"] = {
-		},
+	["Xunawl-Draenor"] = {
 		["talents"] = {
-			[3] = {
-			},
+			{
+			}, -- [1]
+			{
+			}, -- [2]
+			{
+			}, -- [3]
+		},
+		["talents_pvp"] = {
 		},
 		["version"] = 0,
 		["interface"] = {
-			["auto_equip2"] = 0,
 			["auto_equip4"] = 0,
+			["auto_equip2"] = 0,
 			["auto_equip1"] = 0,
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunadwarf-Valley of Heroes - EU"] = {
-		["talents_pvp"] = {
-		},
+	["Xã-Draenor"] = {
 		["talents"] = {
 			{
 			}, -- [1]
-			[3] = {
-			},
+			{
+			}, -- [2]
+			nil, -- [3]
+			{
+			}, -- [4]
+			{
+			}, -- [5]
+		},
+		["talents_pvp"] = {
 		},
 		["version"] = 0,
 		["interface"] = {
-			["auto_equip2"] = 0,
 			["auto_equip4"] = 0,
+			["auto_equip2"] = 0,
 			["auto_equip1"] = 0,
 			["auto_equip3"] = 0,
 		},
@@ -602,14 +715,12 @@ TalentSetManager_CharacterSaves = {
 			["auto_equip3"] = 0,
 		},
 	},
-	["Xunawl-Draenor"] = {
+	["Xñæ-Draenor"] = {
 		["talents"] = {
 			{
 			}, -- [1]
-			{
-			}, -- [2]
-			{
-			}, -- [3]
+			[5] = {
+			},
 		},
 		["talents_pvp"] = {
 		},

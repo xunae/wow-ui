@@ -10,29 +10,36 @@ BD_persistent = {
 		["warning"] = "Changing font and background are still a work in progress.",
 		["fontScale"] = 1,
 		["interrupt"] = true,
-		["doubleclickbo"] = true,
-		["skingmotd"] = true,
-		["skinwas"] = false,
-		["font"] = "bdFont",
-		["changefonts"] = true,
-		["topViewport"] = 0,
-		["forcescale"] = false,
-		["topViewportBGColor"] = {
-			0.11, -- [1]
-			0.15, -- [2]
-			0.18, -- [3]
-			1, -- [4]
-		},
-		["bottomViewport"] = 0,
 		["bottomViewportBGColor"] = {
 			0.11, -- [1]
 			0.15, -- [2]
 			0.18, -- [3]
 			1, -- [4]
 		},
+		["skingmotd"] = true,
+		["bottomViewport"] = 0,
+		["doubleclickbo"] = true,
+		["skinwas"] = false,
+		["topViewportBGColor"] = {
+			0.11, -- [1]
+			0.15, -- [2]
+			0.18, -- [3]
+			1, -- [4]
+		},
+		["forcescale"] = false,
+		["topViewport"] = 0,
+		["changefonts"] = true,
+		["font"] = "bdFont",
 	},
 	["user"] = {
 		["profile"] = "default",
+		["profile_spec"] = {
+			false, -- [1]
+			false, -- [2]
+			false, -- [3]
+			false, -- [4]
+			["current"] = false,
+		},
 		["name"] = "Xuna",
 		["spec_profile"] = {
 			{
@@ -43,13 +50,6 @@ BD_persistent = {
 			}, -- [3]
 			{
 			}, -- [4]
-		},
-		["profile_spec"] = {
-			false, -- [1]
-			false, -- [2]
-			false, -- [3]
-			false, -- [4]
-			["current"] = false,
 		},
 	},
 	["gmotd"] = {
@@ -64,11 +64,11 @@ BD_persistent = {
 		},
 	},
 	["profile"] = {
-		["Profiles"] = {
-			["currentprofile"] = "default",
-			["intro"] = "The profile section is new, let me know if you see things that need improvement.",
-			["deleteprofile"] = "Delete Current Profile",
-			["createprofile"] = "Xuna-Stormscale",
+		["Chat"] = {
+			["hideincombat"] = false,
+			["skinchatbubbles"] = "Skin",
+			["bgalpha"] = 0,
+			["chatHide"] = false,
 		},
 		["user"] = {
 			["profile"] = "default",
@@ -82,23 +82,10 @@ BD_persistent = {
 		},
 		["bdAddons"] = {
 		},
-		["positions"] = {
-			["bdCore Alt Power"] = {
-				"BOTTOM", -- [1]
-				"UIParent", -- [2]
-				"BOTTOM", -- [3]
-				-6.09528350830078, -- [4]
-				240.42903137207, -- [5]
-			},
-		},
 		["persistent"] = {
-			["auras"] = {
-				["class"] = {
-					["shaman"] = {
-					},
-				},
+			["blacklist"] = {
 			},
-			["whitelist"] = {
+			["mine"] = {
 			},
 			["General"] = {
 				["tab"] = "Skinning",
@@ -110,47 +97,147 @@ BD_persistent = {
 				["warning"] = "Changing font and background are still a work in progress.",
 				["fontScale"] = 1,
 				["interrupt"] = true,
-				["doubleclickbo"] = true,
-				["skingmotd"] = true,
-				["skinwas"] = false,
-				["font"] = "bdFont",
-				["changefonts"] = true,
-				["topViewport"] = 0,
-				["forcescale"] = false,
-				["topViewportBGColor"] = {
-					0.11, -- [1]
-					0.15, -- [2]
-					0.18, -- [3]
-					1, -- [4]
-				},
-				["bottomViewport"] = 0,
 				["bottomViewportBGColor"] = {
 					0.11, -- [1]
 					0.15, -- [2]
 					0.18, -- [3]
 					1, -- [4]
 				},
-			},
-			["raid"] = {
-			},
-			["goldtrack"] = {
+				["skingmotd"] = true,
+				["bottomViewport"] = 0,
+				["doubleclickbo"] = true,
+				["skinwas"] = false,
+				["topViewportBGColor"] = {
+					0.11, -- [1]
+					0.15, -- [2]
+					0.18, -- [3]
+					1, -- [4]
+				},
+				["forcescale"] = false,
+				["topViewport"] = 0,
+				["changefonts"] = true,
+				["font"] = "bdFont",
 			},
 			["gmotd"] = {
 				["This ain't It, Chief"] = true,
 			},
-			["mine"] = {
+			["goldtrack"] = {
 			},
-			["blacklist"] = {
+			["raid"] = {
+			},
+			["whitelist"] = {
+			},
+			["auras"] = {
+				["class"] = {
+					["shaman"] = {
+					},
+				},
 			},
 		},
-		["Chat"] = {
-			["hideincombat"] = false,
-			["skinchatbubbles"] = "Skin",
-			["bgalpha"] = 0,
-			["chatHide"] = false,
+		["positions"] = {
+			["bdCore Alt Power"] = {
+				"BOTTOM", -- [1]
+				"UIParent", -- [2]
+				"BOTTOM", -- [3]
+				-6.09528350830078, -- [4]
+				240.42903137207, -- [5]
+			},
+		},
+		["Profiles"] = {
+			["createprofile"] = "Xuna-Stormscale",
+			["deleteprofile"] = "Delete Current Profile",
+			["intro"] = "The profile section is new, let me know if you see things that need improvement.",
+			["currentprofile"] = "default",
 		},
 	},
-	["blacklist"] = {
+	["profiles"] = {
+		["default"] = {
+			["Chat"] = {
+				["hideincombat"] = false,
+				["skinchatbubbles"] = "Skin",
+				["bgalpha"] = 0,
+				["chatHide"] = false,
+			},
+			["user"] = {
+				["profile"] = "default",
+				["profile_spec"] = {
+					false, -- [1]
+					false, -- [2]
+					false, -- [3]
+					false, -- [4]
+					["current"] = false,
+				},
+			},
+			["bdAddons"] = {
+			},
+			["persistent"] = {
+				["blacklist"] = {
+				},
+				["mine"] = {
+				},
+				["General"] = {
+					["tab"] = "Skinning",
+					["alteratepowerbar"] = true,
+					["fancymenu"] = false,
+					["errorblock"] = true,
+					["border"] = 2,
+					["background"] = "bdSmooth",
+					["warning"] = "Changing font and background are still a work in progress.",
+					["fontScale"] = 1,
+					["interrupt"] = true,
+					["bottomViewportBGColor"] = {
+						0.11, -- [1]
+						0.15, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["skingmotd"] = true,
+					["bottomViewport"] = 0,
+					["doubleclickbo"] = true,
+					["skinwas"] = false,
+					["topViewportBGColor"] = {
+						0.11, -- [1]
+						0.15, -- [2]
+						0.18, -- [3]
+						1, -- [4]
+					},
+					["forcescale"] = false,
+					["topViewport"] = 0,
+					["changefonts"] = true,
+					["font"] = "bdFont",
+				},
+				["gmotd"] = {
+					["This ain't It, Chief"] = true,
+				},
+				["goldtrack"] = {
+				},
+				["raid"] = {
+				},
+				["whitelist"] = {
+				},
+				["auras"] = {
+					["class"] = {
+						["shaman"] = {
+						},
+					},
+				},
+			},
+			["positions"] = {
+				["bdCore Alt Power"] = {
+					"BOTTOM", -- [1]
+					"UIParent", -- [2]
+					"BOTTOM", -- [3]
+					-6.09528350830078, -- [4]
+					240.42903137207, -- [5]
+				},
+			},
+			["Profiles"] = {
+				["createprofile"] = "Xuna-Stormscale",
+				["deleteprofile"] = "Delete Current Profile",
+				["intro"] = "The profile section is new, let me know if you see things that need improvement.",
+				["currentprofile"] = "default",
+			},
+		},
 	},
 	["users"] = {
 		["Xûñä"] = {
@@ -223,9 +310,9 @@ BD_persistent = {
 				}, -- [4]
 			},
 		},
-		["Xunamonkh"] = {
+		["Xunapala"] = {
 			["profile"] = "default",
-			["name"] = "Xunamonkh",
+			["name"] = "Xunapala",
 			["spec_profile"] = {
 				{
 				}, -- [1]
@@ -237,9 +324,9 @@ BD_persistent = {
 				}, -- [4]
 			},
 		},
-		["Xûñá"] = {
+		["Xunapalah"] = {
 			["profile"] = "default",
-			["name"] = "Xûñá",
+			["name"] = "Xunapalah",
 			["spec_profile"] = {
 				{
 				}, -- [1]
@@ -281,6 +368,13 @@ BD_persistent = {
 		},
 		["Xuna"] = {
 			["profile"] = "default",
+			["profile_spec"] = {
+				false, -- [1]
+				false, -- [2]
+				false, -- [3]
+				false, -- [4]
+				["current"] = false,
+			},
 			["name"] = "Xuna",
 			["spec_profile"] = {
 				{
@@ -292,17 +386,10 @@ BD_persistent = {
 				{
 				}, -- [4]
 			},
-			["profile_spec"] = {
-				false, -- [1]
-				false, -- [2]
-				false, -- [3]
-				false, -- [4]
-				["current"] = false,
-			},
 		},
-		["Xunapalah"] = {
+		["Xûñá"] = {
 			["profile"] = "default",
-			["name"] = "Xunapalah",
+			["name"] = "Xûñá",
 			["spec_profile"] = {
 				{
 				}, -- [1]
@@ -314,9 +401,9 @@ BD_persistent = {
 				}, -- [4]
 			},
 		},
-		["Xunapala"] = {
+		["Xunamonkh"] = {
 			["profile"] = "default",
-			["name"] = "Xunapala",
+			["name"] = "Xunamonkh",
 			["spec_profile"] = {
 				{
 				}, -- [1]
@@ -338,31 +425,31 @@ BD_persistent = {
 			["background"] = "bdSmooth",
 			["warning"] = "Changing font and background are still a work in progress.",
 			["fontScale"] = 1,
-			["topViewport"] = 0,
+			["gmotd"] = {
+				["This ain't It, Chief"] = true,
+			},
 			["interrupt"] = false,
 			["text"] = "Personal recommendation: a 60px viewport at the top and bottom of your screen can mimic an extended camera zoom distance.",
-			["font"] = "Arial Narrow",
-			["skingmotd"] = false,
-			["changefonts"] = true,
-			["doubleclickbo"] = true,
-			["skinwas"] = false,
-			["forcescale"] = false,
-			["topViewportBGColor"] = {
-				0.09, -- [1]
-				0.1, -- [2]
-				0.13, -- [3]
-				1, -- [4]
-			},
-			["bottomViewport"] = 0,
 			["bottomViewportBGColor"] = {
 				0.09, -- [1]
 				0.1, -- [2]
 				0.13, -- [3]
 				1, -- [4]
 			},
-			["gmotd"] = {
-				["This ain't It, Chief"] = true,
+			["skingmotd"] = false,
+			["bottomViewport"] = 0,
+			["font"] = "Arial Narrow",
+			["changefonts"] = true,
+			["topViewportBGColor"] = {
+				0.09, -- [1]
+				0.1, -- [2]
+				0.13, -- [3]
+				1, -- [4]
 			},
+			["forcescale"] = false,
+			["skinwas"] = false,
+			["doubleclickbo"] = true,
+			["topViewport"] = 0,
 		},
 		["Chat"] = {
 		},
@@ -373,94 +460,7 @@ BD_persistent = {
 	},
 	["whitelist"] = {
 	},
-	["profiles"] = {
-		["default"] = {
-			["Profiles"] = {
-				["currentprofile"] = "default",
-				["intro"] = "The profile section is new, let me know if you see things that need improvement.",
-				["deleteprofile"] = "Delete Current Profile",
-				["createprofile"] = "Xuna-Stormscale",
-			},
-			["user"] = {
-				["profile"] = "default",
-				["profile_spec"] = {
-					false, -- [1]
-					false, -- [2]
-					false, -- [3]
-					false, -- [4]
-					["current"] = false,
-				},
-			},
-			["bdAddons"] = {
-			},
-			["positions"] = {
-				["bdCore Alt Power"] = {
-					"BOTTOM", -- [1]
-					"UIParent", -- [2]
-					"BOTTOM", -- [3]
-					-6.09528350830078, -- [4]
-					240.42903137207, -- [5]
-				},
-			},
-			["persistent"] = {
-				["auras"] = {
-					["class"] = {
-						["shaman"] = {
-						},
-					},
-				},
-				["whitelist"] = {
-				},
-				["General"] = {
-					["tab"] = "Skinning",
-					["alteratepowerbar"] = true,
-					["fancymenu"] = false,
-					["errorblock"] = true,
-					["border"] = 2,
-					["background"] = "bdSmooth",
-					["warning"] = "Changing font and background are still a work in progress.",
-					["fontScale"] = 1,
-					["interrupt"] = true,
-					["doubleclickbo"] = true,
-					["skingmotd"] = true,
-					["skinwas"] = false,
-					["font"] = "bdFont",
-					["changefonts"] = true,
-					["topViewport"] = 0,
-					["forcescale"] = false,
-					["topViewportBGColor"] = {
-						0.11, -- [1]
-						0.15, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-					["bottomViewport"] = 0,
-					["bottomViewportBGColor"] = {
-						0.11, -- [1]
-						0.15, -- [2]
-						0.18, -- [3]
-						1, -- [4]
-					},
-				},
-				["raid"] = {
-				},
-				["goldtrack"] = {
-				},
-				["gmotd"] = {
-					["This ain't It, Chief"] = true,
-				},
-				["mine"] = {
-				},
-				["blacklist"] = {
-				},
-			},
-			["Chat"] = {
-				["hideincombat"] = false,
-				["skinchatbubbles"] = "Skin",
-				["bgalpha"] = 0,
-				["chatHide"] = false,
-			},
-		},
+	["blacklist"] = {
 	},
 }
 BD_profiles = nil

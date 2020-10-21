@@ -211,6 +211,69 @@ local migrations = {
         local db = addonTable.db;
         db.IconScale = nil;
     end,
+    [12] = function()
+        local db = addonTable.db;
+        if (#db.TimerTextSoonToExpireColor == 3) then
+            db.TimerTextSoonToExpireColor[#db.TimerTextSoonToExpireColor+1] = 1;
+        end
+        if (#db.TimerTextUnderMinuteColor == 3) then
+            db.TimerTextUnderMinuteColor[#db.TimerTextUnderMinuteColor+1] = 1;
+        end
+        if (#db.TimerTextLongerColor == 3) then
+            db.TimerTextLongerColor[#db.TimerTextLongerColor+1] = 1;
+        end
+    end,
+    [13] = function()
+        local db = addonTable.db;
+        if (db.DefaultIconSize ~= nil) then
+            db.DefaultIconSizeWidth = db.DefaultIconSize;
+            db.DefaultIconSizeHeight = db.DefaultIconSize;
+            db.DefaultIconSize = nil;
+        end
+        for _, spellInfo in pairs(db.CustomSpells2) do
+            if (spellInfo.iconSize ~= nil) then
+                spellInfo.iconSizeWidth = spellInfo.iconSize;
+                spellInfo.iconSizeHeight = spellInfo.iconSize;
+                spellInfo.iconSize = nil;
+            end
+        end
+    end,
+    [14] = function()
+        local db = addonTable.db;
+        if (db.InterruptsIconSize ~= nil) then
+            db.InterruptsIconSizeWidth = db.InterruptsIconSize;
+            db.InterruptsIconSizeHeight = db.InterruptsIconSize;
+            db.InterruptsIconSize = nil;
+        end
+        if (db.Additions_DispellableSpells_IconSize ~= nil) then
+            db.DispelIconSizeWidth = db.Additions_DispellableSpells_IconSize;
+            db.DispelIconSizeHeight = db.Additions_DispellableSpells_IconSize;
+            db.Additions_DispellableSpells_IconSize = nil;
+        end
+    end,
+    [15] = function()
+        local db = addonTable.db;
+        for _, spellInfo in pairs(db.CustomSpells2) do
+            if (spellInfo.animationType == 3) then -- ICON_ANIMATION_TYPE_SCALE
+                spellInfo.animationType = addonTable.ICON_ANIMATION_TYPE_ALPHA;
+            end
+        end
+    end,
+    [16] = function()
+        local db = addonTable.db;
+        if (#db.StacksTextColor == 3) then
+            db.StacksTextColor[#db.StacksTextColor+1] = 1;
+        end
+    end,
+    [17] = function()
+        local db = addonTable.db;
+        local values = { "DebuffBordersMagicColor", "DebuffBordersCurseColor", "DebuffBordersDiseaseColor", "DebuffBordersPoisonColor", "DebuffBordersOtherColor", "BuffBordersColor" };
+        for _, value in pairs(values) do
+            if (#db[value] == 3) then
+                db[value][4] = 1;
+            end
+        end
+    end,
 };
 
 local function FillInMissingEntriesIsSpells()
@@ -247,7 +310,14 @@ local function FillInMissingEntriesIsSpells()
             if (spellInfo.animationDisplayMode == nil) then
                 spellInfo.animationDisplayMode = addonTable.ICON_ANIMATION_DISPLAY_MODE_NONE;
             end
-            -- iconSize my be nil
+            if (spellInfo.iconSizeWidth == nil) then
+                spellInfo.iconSizeWidth = db.DefaultIconSizeWidth;
+            end
+            if (spellInfo.iconSizeHeight == nil) then
+                spellInfo.iconSizeHeight = db.DefaultIconSizeHeight;
+            end
+            -- useRelativeGlowTimer may be nil
+            -- useRelativeAnimationTimer may be nil
             -- checkSpellID may be nil
             -- showGlow may be nil
             if (spellInfo.enabledState == "disabled") then
