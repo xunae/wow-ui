@@ -1,3 +1,7 @@
+**18.0.2**
+* Fixes some frames.
+* Updated dropdown library.
+
 **18.0.1**
 * Fixed sizing and scaling.
 

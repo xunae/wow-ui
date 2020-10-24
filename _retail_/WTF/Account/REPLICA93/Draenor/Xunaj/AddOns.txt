@@ -595,7 +595,7 @@ BankItems: disabled
 BigWigs_Antorus: enabled
 BigWigs_ArgusInvasionPoints: enabled
 BigWigs_MistsOfPandaria: enabled
-BigWigs_Uldir: disabled
+BigWigs_Uldir: enabled
 Details_RaidInfo-TombOfSargeras: disabled
 Genie: enabled
 Genie_LDB: enabled
@@ -625,8 +625,8 @@ RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_H_R: disabled
 RaiderIO_DB_TW_A_R: disabled
 RaiderIO_DB_TW_H_R: disabled
-BigWigs_BattleOfDazaralor: disabled
-BigWigs_CrucibleOfStorms: disabled
+BigWigs_BattleOfDazaralor: enabled
+BigWigs_CrucibleOfStorms: enabled
 AAP-Core: disabled
 AAP-Vanilla: enabled
 AAP-TBC-WotLK: enabled
@@ -639,10 +639,10 @@ ClassicUI: disabled
 Neuron: disabled
 AzeriteTooltip: disabled
 BattleGroundEnemies: enabled
-BigWigs_EternalPalace: disabled
+BigWigs_EternalPalace: enabled
 ChampionCommander: enabled
 MethodDungeonTools: enabled
-RaiderIO: enabled
+RaiderIO: disabled
 RaiderIO_DB_EU_A: disabled
 RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
@@ -655,7 +655,7 @@ TomCats-Nazjatar: enabled
 LookingForGroup: disabled
 WarPlan: enabled
 WeakAurasArchive: enabled
-BigWigs_Nyalotha: disabled
+BigWigs_Nyalotha: enabled
 CorruptionTooltips: disabled
 TooltipItemCount: enabled
 BigWigs_CastleNathria: enabled

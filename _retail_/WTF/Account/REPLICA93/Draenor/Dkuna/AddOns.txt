@@ -29,3 +29,10 @@ RaiderIO_DB_KR_H_R: disabled
 RaiderIO_DB_KR_H: disabled
 RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_A: disabled
+RaiderIO: disabled
+BigWigs_BattleOfDazaralor: enabled
+BigWigs_CrucibleOfStorms: enabled
+BigWigs_Nyalotha: enabled
+BigWigs_EternalPalace: enabled
+BigWigs_Uldir: enabled
+LittleWigs: enabled

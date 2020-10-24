@@ -36,3 +36,10 @@ Dominos_Cast: enabled
 ILD-Baudbag: disabled
 Bartender4: enabled
 !KalielsTracker: enabled
+RaiderIO: disabled
+BigWigs_BattleOfDazaralor: enabled
+BigWigs_CrucibleOfStorms: enabled
+BigWigs_Nyalotha: enabled
+BigWigs_EternalPalace: enabled
+BigWigs_Uldir: enabled
+LittleWigs: enabled

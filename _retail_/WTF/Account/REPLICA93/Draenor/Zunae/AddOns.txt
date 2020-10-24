@@ -26,10 +26,10 @@ Details_RaidCheck: disabled
 Details_Streamer: disabled
 Details_TinyThreat: disabled
 Details_Vanguard: disabled
-BigWigs_Uldir: disabled
-BigWigs_EternalPalace: disabled
-BigWigs_Nyalotha: disabled
-BigWigs_CrucibleOfStorms: disabled
+BigWigs_Uldir: enabled
+BigWigs_EternalPalace: enabled
+BigWigs_Nyalotha: enabled
+BigWigs_CrucibleOfStorms: enabled
 BasicChatMods: disabled
 AzeriteTooltip: disabled
 AngryKeystones: enabled
@@ -38,7 +38,7 @@ AutoDrink: enabled
 BigDebuffs: enabled
 BigWigs: enabled
 BigWigs_Azeroth: enabled
-BigWigs_BattleOfDazaralor: disabled
+BigWigs_BattleOfDazaralor: enabled
 ColorPickerPlus: enabled
 CorruptionTooltips: disabled
 Details: enabled
@@ -61,7 +61,7 @@ OmniCC: enabled
 OmniCC_Config: enabled
 PremadeGroupsFilter: enabled
 RaidInterfaceAntidote: enabled
-RaiderIO: enabled
+RaiderIO: disabled
 RaiderIO_DB_US_A: disabled
 RaiderIO_DB_US_H: disabled
 RaiderIO_DB_EU_A: disabled
