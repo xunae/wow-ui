@@ -117,3 +117,5 @@ DBM-DMF: enabled
 Dominos_Cast: enabled
 ILD-Baudbag: disabled
 !KalielsTracker: enabled
+ClassicUI: enabled
+ATT: enabled

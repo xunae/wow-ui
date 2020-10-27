@@ -2,8 +2,6 @@ local addonName, addon = ...
 XunaTweaks = CreateFrame('Frame')
 
 local defaultConfig = {
-	eliteFrame = true,
-
 	darkFrames = true,
 	dfc = 0.5,
 	
@@ -14,16 +12,11 @@ local defaultConfig = {
 	bottomRaidFrame = true,
 
 	hideGryphons = false,
-	outOfRangeIcons = true,
 	hideMacros = true,
 	hideBinds = false,
-
-	manaColor = true,
-	shamanColor = true,
 }
 
 local initialSetupDone = false
-local eliteFrame = nil
 local classColorFrame = nil
 local classColorFramePlayerBg = nil
 
@@ -53,11 +46,9 @@ XunaTweaks:OnLoad()
 XunaTweaks:SetScript('OnEvent', XunaTweaks.OnEvent)
 
 function XunaTweaks:Initialize()
-	self:eliteFrame()
 	self:darkFrames()
 	self:classColorFrames()
 	self:hideGryphons()
-	self:beautifyFonts()
 	self:beautifyActionBar()
 
 	MinimapZoomOut:Hide()
@@ -66,12 +57,9 @@ function XunaTweaks:Initialize()
 	if not initialSetupDone then
 		initialSetupDone = true
 		self:hideGroupTitles()
-		if XunaTweaksDB.manaColor then self:manaColor() end
-		if XunaTweaksDB.shamanColor then self:shamanColor() end
 		if XunaTweaksDB.classIconPortraits then self:classIconPortraits() end
 		if XunaTweaksDB.customHealthMana then self:customHealthMana() end
 		if XunaTweaksDB.bottomRaidFrame then self:bottomRaidFrame() end
-		if XunaTweaksDB.outOfRangeIcons then self:oufOfRangeIcons() end
 	end
 end
 
@@ -94,35 +82,6 @@ function XunaTweaks:hideGroupTitles()
 			CompactPartyFrameTitle:Hide()
 		end
 	end)
-end
-
-function XunaTweaks:manaColor()
-	_G.PowerBarColor['MANA'] = { r = 0, g = .15, b = .9 }
-end
-
-function XunaTweaks:shamanColor()
-	_G.RAID_CLASS_COLORS['SHAMAN'] = { r = 0, g = 0.44, b = 0.87 }
-end
-
-function XunaTweaks:eliteFrame()
-	local playerFrame = _G['PlayerFrame']
-
-	if not eliteFrame then
-		eliteFrame = playerFrame:CreateTexture('EliteFrameTexture', 'BORDER')
-		eliteFrame:SetAllPoints(playerFrame)
-		eliteFrame:SetTexCoord(1, .09, 0, .78125)
-	end
-
-	if not XunaTweaksDB.eliteFrame then
-		eliteFrame:SetTexture(nil);
-	else 
-		eliteFrame:SetTexture('Interface\\TargetingFrame\\UI-TargetingFrame-Elite');
-		if XunaTweaksDB.darkFrames then
-			eliteFrame:SetVertexColor(XunaTweaksDB.dfc, XunaTweaksDB.dfc, XunaTweaksDB.dfc)
-		else
-			eliteFrame:SetVertexColor(1, 1, 1)
-		end
-	end
 end
 
 function XunaTweaks:darkFrames()
@@ -226,17 +185,8 @@ function XunaTweaks:classIconPortraits()
 end
 
 function XunaTweaks:customHealthMana()
-	hooksecurefunc('TextStatusBar_UpdateTextStringWithValues', function()
-		if UnitHealthMax('player') > 0 and UnitPowerMax('player') > 0 then
-			PlayerFrameHealthBar.TextString:SetText(AbbreviateLargeNumbers(UnitHealth('player'))..' - '..format('%.0f',(UnitHealth('player') / UnitHealthMax('player')) * 100)..'%')
-			PlayerFrameManaBar.TextString:SetText(AbbreviateLargeNumbers(UnitPower('player'))..' - '..format('%.0f',(UnitPower('player') / UnitPowerMax('player')) * 100)..'%')
-		end
-
-		TargetFrameHealthBar.TextString:SetText(AbbreviateLargeNumbers(UnitHealth("target"))..' - '..format("%.0f",(UnitHealth("target") / UnitHealthMax("target")) * 100)..'%')
-		TargetFrameManaBar.TextString:SetText(AbbreviateLargeNumbers(UnitPower("target"))..' - '..format("%.0f",(UnitPower("target") / UnitPowerMax("target")) * 100)..'%')
-		
-		FocusFrameHealthBar.TextString:SetText(AbbreviateLargeNumbers(UnitHealth("focus"))..' - '..format("%.0f",(UnitHealth("focus") / UnitHealthMax("focus")) * 100)..'%')
-		FocusFrameManaBar.TextString:SetText(AbbreviateLargeNumbers(UnitPower("focus"))..' - '..format("%.0f",(UnitPower("focus") / UnitPowerMax("focus")) * 100)..'%')
+	hooksecurefunc('TextStatusBar_UpdateTextStringWithValues', function(statusFrame, textString, value, valueMin, valueMax)
+		statusFrame.TextString:SetText(AbbreviateLargeNumbers(value) .. ' - ' .. format('%.0f', (value / valueMax) * 100) .. '%')
 	end)
 end
 
@@ -253,30 +203,15 @@ function XunaTweaks:bottomRaidFrame()
 	CompactRaidFrameContainer.flowSortFunc = CRFSort_Group
 end
 
-function XunaTweaks:beautifyFonts()
-	TextStatusBarText:SetFont('Fonts\\ARIALN.ttf', 11, 'OUTLINE')
-	TextStatusBarText:SetShadowOffset(1, -1)
-
-	--for _, font in pairs({ GameFontHighlight, GameFontDisable, GameFontHighlightMedium, GameFontNormal, FriendsFont_Normal }) do
-	--		font:SetFont('Fonts\\ARIALN.ttf', 14)
-	--		font:SetShadowOffset(1, -1)
-	--end
-
-	--for _, font in pairs({ GameFontDisableSmall, GameFontHighlightSmall, GameFontNormalSmall, FriendsFont_Small, GameFontHighlightExtraSmall }) do
-	--		font:SetFont('Fonts\\ARIALN.ttf', 12)
-	--		font:SetShadowOffset(1, -1)
-	--end
-end
-
 function XunaTweaks:beautifyActionBar()
 	hooksecurefunc("CooldownFrame_Set", function(self)
 	  if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then
 	    self:SetCooldown(0, 0)
 	  end
-        end)
+  end)
 
 	local Path, Height = NumberFontNormalSmall:GetFont();
-	NumberFontNormalSmall:SetFont(Path, Height, 'OUTLINE');
+	NumberFontNormalSmall:SetFont(Path, 10, 'OUTLINE');
 
 	local bindAlpha = 1
 	if XunaTweaksDB.hideBinds then bindAlpha = 0 end
@@ -311,26 +246,4 @@ function XunaTweaks:hideGryphons()
 		MainMenuBarArtFrame.LeftEndCap:Show()
 		MainMenuBarArtFrame.RightEndCap:Show()
 	end
-end
-
-function XunaTweaks:oufOfRangeIcons()
-	local function colorButton(btn, r, g, b)
-		_G[btn:GetName()..'Icon']:SetVertexColor(r, g, b)
-	end
-
-	hooksecurefunc('ActionButton_OnUpdate', function(self, elapsed)
-		if self.rangeTimer == TOOLTIP_UPDATE_TIME and self.action and HasAction(self.action) then
-			if select(1, IsUsableAction(self.action)) then
-				if IsActionInRange(self.action) == false then
-					colorButton(self, 1, .3, .1)
-				else
-					colorButton(self, 1, 1, 1)
-				end
-			elseif select(2, IsUsableAction(self.action)) then
-				colorButton(self, .1, .3, 1)
-			else
-				colorButton(self, .4, .4, .4)
-			end
-		end
-	end)
 end

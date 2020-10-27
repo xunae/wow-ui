@@ -1,0 +1,2 @@
+
+HeroLibDB = nil

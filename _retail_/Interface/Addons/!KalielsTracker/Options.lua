@@ -42,8 +42,6 @@ local OTF = ObjectiveTrackerFrame
 local overlay
 local overlayShown = false
 
-local _, numQuests = C_QuestLog.GetNumQuestLogEntries()
-
 local OverlayFrameUpdate, OverlayFrameHide, GetModulesOptionsTable, MoveModule, SetSharedColor, IsSpecialLocale	-- functions
 
 local defaults = {
@@ -117,6 +115,13 @@ local defaults = {
 	},
 	char = {
 		collapsed = false,
+		quests = {
+			num = 0,
+			favorites = {}
+		},
+		achievements = {
+			favorites = {}
+		},
 	}
 }
 
@@ -561,7 +566,7 @@ local options = {
 							order = 3.6,
 						},
 						objNumSwitch = {
-							name = "Objective numbers at the beginning "..beta,
+							name = "Objective numbers at the beginning",
 							desc = "Changing the position of objective numbers at the beginning of the line. "..
 								   cBold.."Only for deDE, esES, frFR, ruRU locale.",
 							descStyle = "inline",
@@ -796,7 +801,7 @@ local options = {
 							order = 4.71,
 						},
 						hdrCollapsedTxt2 = {
-							name = ("%d/%d"):format(numQuests, MAX_QUESTS),
+							name = ("%d/%d"):format(0, MAX_QUESTS),
 							type = "toggle",
 							width = "half",
 							get = function()
@@ -809,7 +814,7 @@ local options = {
 							order = 4.72,
 						},
 						hdrCollapsedTxt3 = {
-							name = ("%d/%d Quests"):format(numQuests, MAX_QUESTS),
+							name = ("%d/%d Quests"):format(0, MAX_QUESTS),
 							type = "toggle",
 							get = function()
 								return (db.hdrCollapsedTxt == 3)
@@ -881,19 +886,22 @@ local options = {
 							order = 5.2,
 						},
 						qiActiveButton = {
-							name = "Enable Active button "..beta,
+							name = "Enable Active button",
 							desc = "Show Quest item button for CLOSEST quest as \"Extra Action Button\".\n"..
 								   cBold.."Key bind is shared with EXTRAACTIONBUTTON1.",
 							descStyle = "inline",
 							width = "double",
 							type = "toggle",
+                            confirm = true,
+                            confirmText = warning,
 							set = function()
 								db.qiActiveButton = not db.qiActiveButton
 								if db.qiActiveButton then
 									KT.ActiveButton:Enable()
 								else
 									KT.ActiveButton:Disable()
-								end
+                                end
+                                ReloadUI()
 							end,
 							order = 5.3,
 						},
@@ -1212,7 +1220,9 @@ local options = {
 							width = 1.05,
 							confirm = true,
 							confirmText = warning,
-							disabled = true,
+							disabled = function()
+								return not IsAddOnLoaded("PetTracker")
+							end,
 							set = function()
 								db.addonPetTracker = not db.addonPetTracker
 								if PetTracker.sets then
@@ -1344,8 +1354,6 @@ function KT:SetupOptions()
 	self.options = options
 	db = self.db.profile
 	dbChar = self.db.char
-
-	db.addonPetTracker = false
 
 	general.sec2.args.classBorder.name = general.sec2.args.classBorder.name:format(self.RgbToHex(self.classColor))
 

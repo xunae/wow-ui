@@ -1,0 +1,2 @@
+
+HeroDBCDB = nil

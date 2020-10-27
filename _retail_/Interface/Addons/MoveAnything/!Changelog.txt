@@ -1,3 +1,6 @@
+**18.0.3**
+* Fixed Extra Ability Bar.
+
 **18.0.2**
 * Fixes some frames.
 * Updated dropdown library.

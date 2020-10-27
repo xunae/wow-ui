@@ -43,3 +43,7 @@ BigWigs_Nyalotha: enabled
 BigWigs_EternalPalace: enabled
 BigWigs_Uldir: enabled
 LittleWigs: enabled
+Kui_Media: enabled
+Kui_Nameplates: enabled
+ClassicUI: enabled
+ATT: enabled

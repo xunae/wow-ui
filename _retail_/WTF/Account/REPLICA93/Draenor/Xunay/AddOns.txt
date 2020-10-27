@@ -101,3 +101,5 @@ DBM-WorldEvents: enabled
 Quartz: enabled
 BlizzMove: enabled
 Bartender4: disabled
+ClassicUI: enabled
+ATT: enabled

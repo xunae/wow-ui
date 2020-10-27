@@ -18,11 +18,11 @@ local helpName = "help"
 local helpNumPages = 11
 local cTitle = "|cffffd200"
 local cBold = "|cff00ffe3"
-local cNew = "|cff00ff00"
 local cWarning = "|cffff7f00"
 local cDots = "|cff808080"
 local offs = "\n|T:1:9|t"
 local beta = "|cffff7fff[Beta]|r"
+local new = "|cffff7fff[NEW]|r"
 
 local KTF = KT.frame
 
@@ -112,6 +112,7 @@ local function SetupTutorials()
 					cTitle.."Dynamic filter|r - automatically adding quests/achievements to tracker by criterion (e.g. \"|cff00ff00Auto|r Zone\") "..
 					"and continuously changing them. This type doesn't allow add/remove items by hand."..
 					"When is some Dynamic filter active, header button is green |T"..mediaPath.."UI-KT-HeaderButtons:14:14:-1:2:32:64:16:30:32:46:0:255:0|t.\n\n"..
+					"|cff009bffFavorites|r - Quests or Achievements now you can mark as favorites and then filter according to them.\n\n"..
 					"For Achievements can change searched categories, it will affect the outcome of the filter.\n\n"..
 					"This menu displays other options affecting the content of the tracker (e.g. options for addon PetTracker).",
 			textY = 16,
@@ -157,7 +158,7 @@ local function SetupTutorials()
 		},
 		{	-- 7
 			image = helpPath.."help_tracker-modules",
-			text = cTitle.."Order of Modules|r "..beta.."\n\n"..
+			text = cTitle.."Order of Modules|r\n\n"..
 					"Allows to change the order of modules inside the tracker. Supports all modules including external (e.g. PetTracker).",
 			shine = KTF,
 			shineTop = 5,
@@ -197,13 +198,22 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |r|cffffffff4.0.0|r\n\n"..
-					"- ADDED - Support for WoW 9.0\n"..
-					"- UPDATED - Addon support - TomTom v90001-1.1.5\n"..
-					"- UPDATED - Addon support - ElvUI 12.00, Tukui 20.00\n"..
-					"- Support for addon PetTracker is temporary disabled.\n"..
-					"- Support for UI addons updated partially.\n"..
-					"- Some Libs are modified - I'm waiting for an update.\n\n"..
+			text = cTitle.."         What's NEW in version |r|cffffffff4.1.0|r\n\n"..
+					"- FIXED - issue #452 - Error when activating Party Sync\n"..
+					"- FIXED - issue #457 - Map closes when switching zones\n"..
+					"- FIXED - Error inside the Arenas\n"..
+					"- FIXED - Quests - not showing tags for daily/weekly quests\n"..
+					"- FIXED - TomTom - error when Quest refreshed (empty title)\n"..
+					"- UPDATED - Addon support - Masque 9.0.2\n"..
+					"- UPDATED - Addon support - PetTracker 9.0.1\n"..
+					"- UPDATED - Addon support - ElvUI 12.06, Tukui 20.04, RealUI 2.2.3,"..
+					offs.."SpartanUI 6.0.10\n"..
+					"- REMOVED - Addon support - SuperVillain UI\n"..
+					"- UPDATED - Lib - MSA-DropDownMenu-1.0\n"..
+					"- ADDED - Filters - Favorites for Quests and Achievements (see Help page 4)\n"..
+					"- ADDED - Compatibility - addon Aurora\n"..
+					"- IMPROVED - Counting quests method\n"..
+					"- IMPROVED - Quest Item Active Button\n\n"..
 
                     cTitle.."WoW 9.0.1 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..

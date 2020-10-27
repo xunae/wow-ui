@@ -322,7 +322,7 @@ VelhariRaidFrameAdjust: enabled
 AshranBuddy: enabled
 AutoConfirmTalents: enabled
 CrossRealmAssist: disabled
-ExRT: disabled
+ExRT: enabled
 FreebTip: disabled
 FreebTipiLvl: disabled
 FreebTipSpec: disabled
@@ -635,7 +635,7 @@ AAP-WoD: enabled
 AAP-BfA: enabled
 AAP-Legion: enabled
 Myslot: disabled
-ClassicUI: disabled
+ClassicUI: enabled
 Neuron: disabled
 AzeriteTooltip: disabled
 BattleGroundEnemies: enabled
@@ -647,7 +647,7 @@ RaiderIO_DB_EU_A: disabled
 RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
 RaiderIO_DB_EU_H_R: enabled
-ATT: disabled
+ATT: enabled
 WeakAurasCompanion: enabled
 TomCats: enabled
 TomCats-Mechagon: enabled

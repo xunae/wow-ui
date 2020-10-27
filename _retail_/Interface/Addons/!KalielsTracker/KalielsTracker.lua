@@ -245,7 +245,7 @@ local function SetFrames()
 	KTF:SetFrameStrata(db.frameStrata)
 	KTF:SetFrameLevel(KTF:GetFrameLevel() + 25)
 
-	KTF:SetScript("OnEvent", function(_, event, ...)
+	KTF:SetScript("OnEvent", function(self, event, ...)
 		_DBG("Event - "..event)
 		if event == "PLAYER_ENTERING_WORLD" and not KT.stopUpdate then
 			KT.inWorld = true
@@ -290,7 +290,12 @@ local function SetFrames()
 		elseif event == "QUEST_AUTOCOMPLETE" then
 			KTF.Scroll.value = 0
 		elseif event == "QUEST_ACCEPTED" or event == "QUEST_REMOVED" then
+			dbChar.quests.num = KT.GetNumQuests()
 			KT:SetQuestsHeaderText()
+		elseif event == "QUEST_POI_UPDATE" then
+			dbChar.quests.num = KT.GetNumQuests()
+			ObjectiveTracker_Update(OBJECTIVE_TRACKER_UPDATE_QUEST)
+			self:UnregisterEvent(event)
 		elseif event == "ACHIEVEMENT_EARNED" then
 			KT:SetAchievsHeaderText()
 		elseif event == "PLAYER_REGEN_ENABLED" and combatLockdown then
@@ -304,6 +309,8 @@ local function SetFrames()
 		elseif event == "PLAYER_LEVEL_UP" then
 			local level = ...
 			KT.playerLevel = level
+		elseif event == "QUEST_SESSION_JOINED" then
+			self:RegisterEvent("QUEST_POI_UPDATE")
 		end
 	end)
 	KTF:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -315,6 +322,8 @@ local function SetFrames()
 	KTF:RegisterEvent("QUEST_AUTOCOMPLETE")
 	KTF:RegisterEvent("QUEST_ACCEPTED")
 	KTF:RegisterEvent("QUEST_REMOVED")
+	KTF:RegisterEvent("QUEST_SESSION_JOINED")
+	KTF:RegisterEvent("QUEST_POI_UPDATE")
 	KTF:RegisterEvent("ACHIEVEMENT_EARNED")
 	KTF:RegisterEvent("PLAYER_REGEN_ENABLED")
 	KTF:RegisterEvent("ZONE_CHANGED_NEW_AREA")
@@ -557,12 +566,11 @@ local function SetHooks()
 		bck_ObjectiveTracker_Update(reason, id, moduleWhoseCollapseChanged)
 		FixedButtonsReanchor()
 		if dbChar.collapsed then
-			local _, numQuests = C_QuestLog.GetNumQuestLogEntries()
 			local title = ""
 			if db.hdrCollapsedTxt == 2 then
-				title = "|T"..mediaPath.."KT_logo:22:22:0:0|t"..("%d/%d"):format(numQuests, MAX_QUESTS)
+				title = "|T"..mediaPath.."KT_logo:22:22:0:0|t"..("%d/%d"):format(dbChar.quests.num, MAX_QUESTS)
 			elseif db.hdrCollapsedTxt == 3 then
-				title = "|T"..mediaPath.."KT_logo:22:22:0:0|t"..("%d/%d Quests"):format(numQuests, MAX_QUESTS)
+				title = "|T"..mediaPath.."KT_logo:22:22:0:0|t"..("%d/%d Quests"):format(dbChar.quests.num, MAX_QUESTS)
 			end
 			OTFHeader.Title:SetText(title)
 		end
@@ -1053,7 +1061,7 @@ local function SetHooks()
 
 	local bck_QUEST_TRACKER_MODULE_SetBlockHeader = QUEST_TRACKER_MODULE.SetBlockHeader
 	function QUEST_TRACKER_MODULE:SetBlockHeader(block, text, questLogIndex, isQuestComplete, questID)
-		local questInfo = C_QuestLog.GetInfo(questLogIndex)
+		local questInfo = questLogIndex and C_QuestLog.GetInfo(questLogIndex) or {}
 		if db.questShowTags then
 			local tagInfo = KT.GetQuestTagInfo(questID)
 			text = KT:CreateQuestTag(questInfo.level, tagInfo.tagID, questInfo.frequency, questInfo.suggestedGroup)..text
@@ -1064,24 +1072,26 @@ local function SetHooks()
 		block.title = text
 		block.questCompleted = isQuestComplete
 
-		local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(questLogIndex)
-		if item and (not isQuestComplete or showItemWhenComplete) then
-			block.itemButton:Hide()
-			CreateFixedTag(block, 3, 4)
-			local button = CreateFixedButton(block)
-			if not InCombatLockdown() then
-				button:SetID(questLogIndex)
-				button.charges = charges
-				button.rangeTimer = -1
-				button.item = item
-				button.link = link
-				SetItemButtonTexture(button, item)
-				SetItemButtonCount(button, charges)
-				QuestObjectiveItem_UpdateCooldown(button)
-				button:SetAttribute("item", link)
+		if questLogIndex then
+			local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(questLogIndex)
+			if item and (not isQuestComplete or showItemWhenComplete) then
+				block.itemButton:Hide()
+				CreateFixedTag(block, 3, 4)
+				local button = CreateFixedButton(block)
+				if not InCombatLockdown() then
+					button:SetID(questLogIndex)
+					button.charges = charges
+					button.rangeTimer = -1
+					button.item = item
+					button.link = link
+					SetItemButtonTexture(button, item)
+					SetItemButtonCount(button, charges)
+					QuestObjectiveItem_UpdateCooldown(button)
+					button:SetAttribute("item", link)
+				end
+			else
+				KT:RemoveFixedButton(block)
 			end
-		else
-			KT:RemoveFixedButton(block)
 		end
 	end
 
@@ -1988,8 +1998,7 @@ end
 
 function KT:SetQuestsHeaderText(reset)
 	if db.hdrQuestsTitleAppend then
-		local _, numQuests = C_QuestLog.GetNumQuestLogEntries()
-		self:SetHeaderText(QUEST_TRACKER_MODULE, numQuests.."/"..MAX_QUESTS)
+		self:SetHeaderText(QUEST_TRACKER_MODULE, dbChar.quests.num.."/"..MAX_QUESTS)
 	elseif reset then
 		self:SetHeaderText(QUEST_TRACKER_MODULE)
 	end
@@ -2183,10 +2192,10 @@ function KT:CreateQuestTag(level, questTag, frequency, suggestedGroup)
 		end
 	end
 
-	if frequency == 2 then
-		tag = tag.."!"	-- daily quest
-	elseif frequency == 3 then
-		tag = tag.."!!"	-- weekly quest
+	if frequency == Enum.QuestFrequency.Daily then
+		tag = tag.."!"
+	elseif frequency == Enum.QuestFrequency.Weekly then
+		tag = tag.."!!"
 	end
 
 	if tag ~= "" then
@@ -2198,7 +2207,7 @@ function KT:CreateQuestTag(level, questTag, frequency, suggestedGroup)
 end
 
 function KT:IsTrackerEmpty(noaddon)
-	local result = (C_QuestLog.GetNumQuestWatches() == 0 and
+	local result = (KT.GetNumQuestWatches() == 0 and
 		GetNumAutoQuestPopUps() == 0 and
 		GetNumTrackedAchievements() == 0 and
 		self.IsTableEmpty(self.activeTasks) and

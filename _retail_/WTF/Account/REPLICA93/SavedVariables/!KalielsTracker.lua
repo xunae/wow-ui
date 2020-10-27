@@ -15,7 +15,14 @@ KalielsTrackerDB = {
 		},
 		["Xunay - Draenor"] = {
 			["collapsed"] = true,
+			["quests"] = {
+				["num"] = 1,
+			},
 		},
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.1.0",
 	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
@@ -25,17 +32,13 @@ KalielsTrackerDB = {
 		["Xã - Draenor"] = "Default",
 		["Xunaj - Draenor"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Xûñä - Stormscale"] = "Default",
-		["Dkuna - Draenor"] = "Default",
-		["Xuna - Stormscale"] = "Default",
-		["Xüñâ - Stormscale"] = "Default",
-		["Xñä - Draenor"] = "Default",
 		["Uñ - Draenor"] = "Default",
+		["Dkuna - Draenor"] = "Default",
+		["Xüñâ - Stormscale"] = "Default",
+		["Xuna - Stormscale"] = "Default",
+		["Xñä - Draenor"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.0.0",
 	},
 	["profiles"] = {
 		["Default"] = {

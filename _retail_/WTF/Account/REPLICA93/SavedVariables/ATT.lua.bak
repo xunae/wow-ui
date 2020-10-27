@@ -1,19 +1,24 @@
 
 ATTDB = {
-	["classSelected"] = "WARRIOR",
+	["classSelected"] = "SHAMAN",
 	["growLeft"] = true,
 	["dampening"] = true,
-	["showSelf"] = false,
+	["showSelf"] = true,
 	["flash"] = 1,
 	["maledict"] = false,
 	["tworows"] = true,
 	["offsetX"] = "-2",
 	["lock"] = true,
+	["Trinkets"] = {
+	},
 	["positions"] = {
 	},
 	["showTrinket"] = true,
 	["iconOffsetY"] = "1",
-	["attach"] = true,
+	["attach"] = 1,
+	["horizontal"] = false,
+	["Essence"] = {
+	},
 	["showIconBorders"] = true,
 	["abilities"] = {
 		["HUNTER"] = {
@@ -295,7 +300,7 @@ ATTDB = {
 	},
 	["glow"] = false,
 	["iconOffsetX"] = "1",
-	["offsetY"] = "-3",
 	["arena"] = true,
-	["scale"] = 0.527308762073517,
+	["offsetY"] = "-3",
+	["scale"] = 1,
 }

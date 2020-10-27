@@ -1,20 +1,34 @@
 
 ATTDB = {
 	["classSelected"] = "WARRIOR",
-	["growLeft"] = true,
+	["growLeft"] = false,
+	["showRacial"] = false,
 	["dampening"] = true,
-	["showSelf"] = false,
+	["showSelf"] = true,
 	["flash"] = 1,
 	["maledict"] = false,
 	["tworows"] = true,
-	["offsetX"] = "-2",
+	["offsetX"] = 2,
 	["lock"] = true,
+	["biggroup"] = true,
+	["Trinkets"] = {
+		["maledict"] = false,
+		["adapted"] = true,
+		["pvptrinket"] = true,
+	},
 	["positions"] = {
 	},
+	["scale"] = 0.5,
+	["scenarios"] = true,
 	["showTrinket"] = true,
-	["iconOffsetY"] = "1",
-	["attach"] = true,
-	["scale"] = 0.527308762073517,
+	["inraid"] = true,
+	["iconOffsetY"] = 0,
+	["attach"] = 1,
+	["outside"] = true,
+	["hidden"] = true,
+	["dungeons"] = true,
+	["offsetY"] = -6,
+	["arena"] = true,
 	["abilities"] = {
 		["HUNTER"] = {
 			["254"] = {
@@ -69,11 +83,6 @@ ATTDB = {
 					["cooldown"] = 90,
 					["id"] = 108271,
 				}, -- [1]
-				{
-					["ability"] = "Grounding Totem",
-					["cooldown"] = 30,
-					["id"] = 204336,
-				}, -- [2]
 			},
 		},
 		["MAGE"] = {
@@ -110,15 +119,22 @@ ATTDB = {
 			},
 			["ALL"] = {
 				{
-					["ability"] = "Greater Fade",
+					["spellStatus"] = "ENABLED",
+					["ability"] = "Mass Dispel",
+					["order"] = 1,
 					["cooldown"] = 45,
-					["id"] = 213602,
+					["id"] = 32375,
 				}, -- [1]
 				{
 					["ability"] = "Void Shift",
 					["cooldown"] = 300,
 					["id"] = 108968,
 				}, -- [2]
+				{
+					["ability"] = "Greater Fade",
+					["cooldown"] = 45,
+					["id"] = 213602,
+				}, -- [3]
 			},
 		},
 		["PALADIN"] = {
@@ -293,9 +309,10 @@ ATTDB = {
 			},
 		},
 	},
-	["arena"] = true,
-	["iconOffsetX"] = "1",
-	["offsetY"] = "-3",
 	["glow"] = false,
+	["iconOffsetX"] = 0,
+	["horizontal"] = false,
 	["showIconBorders"] = true,
+	["Essence"] = {
+	},
 }

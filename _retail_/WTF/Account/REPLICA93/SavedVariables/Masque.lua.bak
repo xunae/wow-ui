@@ -325,6 +325,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
+				["WeakAuras_5)VgieRc4ys"] = {
+					["Upgraded"] = true,
+					["Shadow"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["Bartender4_Vehicle"] = {
 					["SkinID"] = "Caith",
 				},
@@ -585,6 +591,10 @@ MasqueDB = {
 				["WeakAuras_05_loa's_pact"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
+				["OmniBar_Call Felhunter"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_wtzuhPE8rc2"] = {
 					["Upgraded"] = true,
 					["Shadow"] = true,
@@ -594,6 +604,12 @@ MasqueDB = {
 				["WeakAuras_04_high_energy"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
+				["WeakAuras_99o4N7C8LUG"] = {
+					["Upgraded"] = true,
+					["Shadow"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
 				["WeakAuras_01_terrifying_echo"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
@@ -601,6 +617,10 @@ MasqueDB = {
 					["SkinID"] = "Caith - No Shadow",
 				},
 				["OmniBar_Shadowstep"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["OmniBar_Aspect of the Eagle"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
@@ -673,12 +693,12 @@ MasqueDB = {
 				["WeakAuras_09_heart_of_frost"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["WeakAuras_04_wail_of_greed_channel"] = {
-					["SkinID"] = "Caith - No Shadow",
-				},
 				["OmniBar_Dire Beast: Basilisk"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_04_wail_of_greed_channel"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras"] = {
 					["Shadow"] = true,
@@ -740,10 +760,8 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["PitBull4 Aura_Normal"] = {
-					["Shadow"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
+				["WeakAuras_03_force_orb"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_07_crushed_(tank-only)"] = {
 					["SkinID"] = "Caith - No Shadow",
@@ -751,14 +769,14 @@ MasqueDB = {
 				["WeakAuras_04_flames_of_punishment_dot"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["WeakAuras_02_touch_of_the_end"] = {
-					["SkinID"] = "Caith - No Shadow",
-				},
 				["WeakAuras_PBvmgNBZ4n6"] = {
 					["Upgraded"] = true,
 					["Shadow"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
+				},
+				["WeakAuras_02_touch_of_the_end"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_01_visage_from_beyond"] = {
 					["SkinID"] = "Caith - No Shadow",
@@ -807,10 +825,8 @@ MasqueDB = {
 				["WeakAuras_04_crush"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["PitBull4 Aura"] = {
-					["Shadow"] = true,
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
+				["WeakAuras_07_toad_toxin"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_AeoJTd0HRs3"] = {
 					["Upgraded"] = true,
@@ -845,7 +861,9 @@ MasqueDB = {
 				["WeakAuras_07_plague_of_fire"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["OmniBar_Aspect of the Eagle"] = {
+				["WeakAuras_yQ(avR)Ky9r"] = {
+					["Upgraded"] = true,
+					["Shadow"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
@@ -1016,7 +1034,9 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["OmniBar_Call Felhunter"] = {
+				["WeakAuras_G5Au72S(7nf"] = {
+					["Upgraded"] = true,
+					["Shadow"] = true,
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
@@ -1114,11 +1134,12 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_05_akunda's_wrath"] = {
-					["SkinID"] = "Caith - No Shadow",
-				},
 				["WeakAuras_09_frost_nova_cast"] = {
 					["SkinID"] = "Caith - No Shadow",
+				},
+				["Masque"] = {
+					["Shadow"] = true,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_05_gift_of_wind_buff_on_you_(mage_only)"] = {
 					["SkinID"] = "Caith - No Shadow",
@@ -1130,9 +1151,8 @@ MasqueDB = {
 				["WeakAuras_04_coin_shower"] = {
 					["SkinID"] = "Caith - No Shadow",
 				},
-				["Masque"] = {
-					["Shadow"] = true,
-					["SkinID"] = "Caith",
+				["WeakAuras_05_akunda's_wrath"] = {
+					["SkinID"] = "Caith - No Shadow",
 				},
 				["WeakAuras_02_gift_of_n'zoth_lunacy"] = {
 					["SkinID"] = "Caith - No Shadow",
@@ -1286,8 +1306,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_07_toad_toxin"] = {
-					["SkinID"] = "Caith - No Shadow",
+				["PitBull4 Aura"] = {
+					["Shadow"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_04_quickened_pulse"] = {
 					["SkinID"] = "Caith - No Shadow",
@@ -1314,8 +1336,10 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_03_force_orb"] = {
-					["SkinID"] = "Caith - No Shadow",
+				["PitBull4 Aura_Normal"] = {
+					["Shadow"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_09_freezing_blood"] = {
 					["SkinID"] = "Caith - No Shadow",

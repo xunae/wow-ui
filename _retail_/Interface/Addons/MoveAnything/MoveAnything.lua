@@ -136,6 +136,8 @@ local MovAny = {
 		["ArenaPrepFrames"] = true,
 		--["ArenaEnemyFrames"] = true,
 		["PetBattleFrame"] = true,
+		["ExtraActionBarFrame"] = true,
+		["ZoneAbilityFrame"] = true,
 		["StoreFrame"] = true
 	},
 	lCreateVMs = {
@@ -283,6 +285,8 @@ local MovAny = {
 		BuffFrame = "BuffFrame",
 		ConsolidatedBuffFrame = "ConsolidatedBuffFrame",
 		TemporaryEnchantFrame = "TemporaryEnchantFrame",
+		ExtraActionBarFrame = "ExtraActionBarFrame",
+		ZoneAbilityFrame = "ZoneAbilityFrame",
 	},
 	rendered = nil,
 	nextFrameIdx = 1,
@@ -3139,7 +3143,7 @@ function MovAny:MoverOnSizeChanged(mover)
 			mover:SetWidth(w)
 			mover:SetHeight(h)
 			local label = _G[ mover:GetName().."BackdropInfoLabel"]
-			label:SetWidth(w+100)
+			label:SetWidth(w + 100)
 			label:SetHeight(h)
 		end
 		local label = _G[ mover:GetName().."BackdropInfoLabel"]

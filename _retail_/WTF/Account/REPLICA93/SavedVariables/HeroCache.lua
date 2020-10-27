@@ -1,0 +1,4 @@
+
+HeroCacheDB = {
+	["Enabled"] = true,
+}
