@@ -31,6 +31,7 @@ MADB = {
 					},
 					["name"] = "TalkingHeadFrame",
 					["scale"] = 0.75,
+					["orgScale"] = 1,
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
@@ -38,7 +39,6 @@ MADB = {
 						0.000152587890625, -- [4]
 						200.0000152587891, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["TargetFrame"] = {
 					["orgPos"] = {
@@ -50,7 +50,6 @@ MADB = {
 					},
 					["name"] = "TargetFrame",
 					["scale"] = 1.100000023841858,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -58,6 +57,7 @@ MADB = {
 						362.6588745117188, -- [4]
 						-136.3636334080342, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["PlayerFrame"] = {
 					["orgPos"] = {
@@ -69,7 +69,6 @@ MADB = {
 					},
 					["name"] = "PlayerFrame",
 					["scale"] = 1.100000023841858,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -77,6 +76,7 @@ MADB = {
 						136.3636334080342, -- [4]
 						-136.3636334080342, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
@@ -88,6 +88,7 @@ MADB = {
 					},
 					["name"] = "VehicleSeatIndicator",
 					["scale"] = 0.699999988079071,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPRIGHT", -- [1]
 						"MinimapCluster", -- [2]
@@ -95,7 +96,6 @@ MADB = {
 						-4.760985497730267, -- [4]
 						14.28596403160025, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["MicroButtonAndBagsBar"] = {
 					["orgPos"] = {
@@ -115,25 +115,6 @@ MADB = {
 						0, -- [5]
 					},
 				},
-				["FocusFrame"] = {
-					["orgPos"] = {
-						"LEFT", -- [1]
-						"UIParent", -- [2]
-						"LEFT", -- [3]
-						300, -- [4]
-						-7.999999523162842, -- [5]
-					},
-					["name"] = "FocusFrame",
-					["scale"] = 1,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						300, -- [4]
-						-438.0560607910156, -- [5]
-					},
-					["orgScale"] = 1,
-				},
 				["PetActionButtonsMover"] = {
 					["orgPos"] = {
 						"CENTER", -- [1]
@@ -144,13 +125,32 @@ MADB = {
 					},
 					["name"] = "PetActionButtonsMover",
 					["scale"] = 1,
-					["orgScale"] = 1,
 					["pos"] = {
 						"CENTER", -- [1]
 						"UIParent", -- [2]
 						"CENTER", -- [3]
 						20.62113952636719, -- [4]
 						418.4999881724456, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["FocusFrame"] = {
+					["orgPos"] = {
+						"LEFT", -- [1]
+						"UIParent", -- [2]
+						"LEFT", -- [3]
+						300, -- [4]
+						-7.999999523162842, -- [5]
+					},
+					["name"] = "FocusFrame",
+					["scale"] = 1,
+					["orgScale"] = 1,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						300, -- [4]
+						-438.0560607910156, -- [5]
 					},
 				},
 				["MicroButtonsMover"] = {
@@ -163,7 +163,6 @@ MADB = {
 					},
 					["name"] = "MicroButtonsMover",
 					["scale"] = 0.7999999523162842,
-					["orgScale"] = 1,
 					["pos"] = {
 						"TOP", -- [1]
 						"UIParent", -- [2]
@@ -171,6 +170,7 @@ MADB = {
 						0.0001235008142490546, -- [4]
 						-15.00002127887019, -- [5]
 					},
+					["orgScale"] = 1,
 				},
 				["TargetFrameSpellBar"] = {
 					["orgPos"] = {
@@ -199,11 +199,11 @@ MADB = {
 			},
 		},
 	},
-	["tooltips"] = true,
+	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
 	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["playSound"] = false,
+	["tooltips"] = true,
 }

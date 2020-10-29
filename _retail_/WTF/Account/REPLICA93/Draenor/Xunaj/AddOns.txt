@@ -322,7 +322,7 @@ VelhariRaidFrameAdjust: enabled
 AshranBuddy: enabled
 AutoConfirmTalents: enabled
 CrossRealmAssist: disabled
-ExRT: disabled
+ExRT: enabled
 FreebTip: disabled
 FreebTipiLvl: disabled
 FreebTipSpec: disabled

@@ -1,3 +1,0 @@
-
-LiteBag_OptionsDB = {
-}

@@ -1,8 +1,0 @@
-VER 3 0100000000000001 "hex" "INV_MISC_QUESTIONMARK"
-#showtooltip Hex
-/cast [@player,mod:alt,nocombat,nomounted]Water Walking
-/cast [mod:alt,nocombat]Enchanted Fey Dragon
-/stopmacro [nocombat,mod:alt]
-/cast [@cursor,talent:3/3] Hex
-/cast [nomod] Hex
-END

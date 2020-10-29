@@ -1,5 +1,0 @@
-
-TomCats_Character = {
-	["preferences"] = {
-	},
-}

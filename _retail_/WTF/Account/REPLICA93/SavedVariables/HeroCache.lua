@@ -1,4 +1,0 @@
-
-HeroCacheDB = {
-	["Enabled"] = true,
-}

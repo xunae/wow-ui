@@ -44,7 +44,7 @@ CorruptionTooltips: disabled
 Details: enabled
 Details_DataStorage: enabled
 eAlignUpdated: enabled
-ExRT: disabled
+ExRT: enabled
 Gladius: enabled
 ItemLevelDisplay: enabled
 ILD-Blizzard: disabled

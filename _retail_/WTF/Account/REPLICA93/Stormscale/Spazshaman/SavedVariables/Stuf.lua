@@ -1,2 +1,0 @@
-
-StufCharDB = nil

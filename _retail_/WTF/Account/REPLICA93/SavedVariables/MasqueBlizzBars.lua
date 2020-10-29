@@ -1,2 +1,0 @@
-
-MasqueSkin = nil

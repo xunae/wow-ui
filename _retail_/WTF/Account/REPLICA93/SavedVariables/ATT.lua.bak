@@ -10,26 +10,25 @@ ATTDB = {
 	["tworows"] = true,
 	["offsetX"] = 2,
 	["lock"] = true,
-	["biggroup"] = true,
+	["showIconBorders"] = true,
 	["Trinkets"] = {
 		["maledict"] = false,
-		["adapted"] = true,
 		["pvptrinket"] = true,
+		["adapted"] = true,
 	},
 	["positions"] = {
 	},
-	["scale"] = 0.5,
-	["offsetY"] = -6,
+	["attach"] = 1,
+	["horizontal"] = false,
 	["showTrinket"] = true,
-	["inraid"] = true,
-	["iconOffsetY"] = 0,
 	["Essence"] = {
 	},
+	["iconOffsetY"] = 0,
+	["inraid"] = true,
 	["outside"] = true,
 	["hidden"] = true,
 	["dungeons"] = true,
-	["arena"] = true,
-	["scenarios"] = true,
+	["glow"] = false,
 	["abilities"] = {
 		["HUNTER"] = {
 			["254"] = {
@@ -59,10 +58,6 @@ ATTDB = {
 					["id"] = 118038,
 				}, -- [1]
 			},
-			["72"] = {
-			},
-			["73"] = {
-			},
 			["ALL"] = {
 				{
 					["ability"] = "Rallying Cry",
@@ -70,14 +65,12 @@ ATTDB = {
 					["id"] = 97462,
 				}, -- [1]
 			},
+			["73"] = {
+			},
+			["72"] = {
+			},
 		},
 		["SHAMAN"] = {
-			["262"] = {
-			},
-			["264"] = {
-			},
-			["263"] = {
-			},
 			["ALL"] = {
 				{
 					["ability"] = "Astral Shift",
@@ -85,14 +78,14 @@ ATTDB = {
 					["id"] = 108271,
 				}, -- [1]
 			},
+			["264"] = {
+			},
+			["263"] = {
+			},
+			["262"] = {
+			},
 		},
 		["MAGE"] = {
-			["63"] = {
-			},
-			["64"] = {
-			},
-			["62"] = {
-			},
 			["ALL"] = {
 				{
 					["ability"] = "Temporal Shield",
@@ -105,26 +98,21 @@ ATTDB = {
 					["id"] = 45438,
 				}, -- [2]
 			},
+			["64"] = {
+			},
+			["62"] = {
+			},
+			["63"] = {
+			},
 		},
 		["PRIEST"] = {
-			["257"] = {
-			},
-			["258"] = {
-				{
-					["ability"] = "Dispersion",
-					["cooldown"] = 120,
-					["id"] = 47585,
-				}, -- [1]
-			},
-			["256"] = {
-			},
 			["ALL"] = {
 				{
 					["spellStatus"] = "ENABLED",
 					["ability"] = "Mass Dispel",
-					["order"] = 1,
-					["cooldown"] = 45,
 					["id"] = 32375,
+					["cooldown"] = 45,
+					["order"] = 1,
 				}, -- [1]
 				{
 					["ability"] = "Void Shift",
@@ -137,38 +125,50 @@ ATTDB = {
 					["id"] = 213602,
 				}, -- [3]
 			},
-		},
-		["PALADIN"] = {
-			["65"] = {
+			["256"] = {
 			},
-			["70"] = {
+			["258"] = {
 				{
-					["ability"] = "Divine Shield",
-					["cooldown"] = 300,
-					["id"] = 642,
+					["ability"] = "Dispersion",
+					["cooldown"] = 120,
+					["id"] = 47585,
 				}, -- [1]
-				{
-					["ability"] = "Blessing of Protection",
-					["cooldown"] = 300,
-					["id"] = 1022,
-				}, -- [2]
-				{
-					["ability"] = "Blessing of Sanctuary",
-					["cooldown"] = 45,
-					["id"] = 210256,
-				}, -- [3]
 			},
-			["66"] = {
+			["257"] = {
+			},
+		},
+		["ROGUE"] = {
+			["261"] = {
+				{
+					["ability"] = "Evasion",
+					["cooldown"] = 120,
+					["id"] = 5277,
+				}, -- [1]
+			},
+			["260"] = {
 			},
 			["ALL"] = {
+				{
+					["ability"] = "Cloak of Shadows",
+					["cooldown"] = 120,
+					["id"] = 31224,
+				}, -- [1]
+				{
+					["ability"] = "Vanish",
+					["cooldown"] = 120,
+					["id"] = 1856,
+				}, -- [2]
+			},
+			["259"] = {
+				{
+					["ability"] = "Evasion",
+					["cooldown"] = 120,
+					["id"] = 5277,
+				}, -- [1]
 			},
 		},
 		["WARLOCK"] = {
 			["265"] = {
-			},
-			["266"] = {
-			},
-			["267"] = {
 			},
 			["ALL"] = {
 				{
@@ -182,17 +182,12 @@ ATTDB = {
 					["id"] = 212295,
 				}, -- [2]
 			},
+			["267"] = {
+			},
+			["266"] = {
+			},
 		},
 		["DEMONHUNTER"] = {
-			["577"] = {
-				{
-					["ability"] = "Darkness",
-					["cooldown"] = 180,
-					["id"] = 196718,
-				}, -- [1]
-			},
-			["581"] = {
-			},
 			["ALL"] = {
 				{
 					["ability"] = "Blur",
@@ -200,13 +195,18 @@ ATTDB = {
 					["id"] = 198589,
 				}, -- [1]
 			},
+			["581"] = {
+			},
+			["577"] = {
+				{
+					["ability"] = "Darkness",
+					["cooldown"] = 180,
+					["id"] = 196718,
+				}, -- [1]
+			},
 		},
 		["DEATHKNIGHT"] = {
 			["252"] = {
-			},
-			["251"] = {
-			},
-			["250"] = {
 			},
 			["ALL"] = {
 				{
@@ -225,11 +225,25 @@ ATTDB = {
 					["id"] = 51052,
 				}, -- [3]
 			},
+			["250"] = {
+			},
+			["251"] = {
+			},
 		},
 		["DRUID"] = {
 			["105"] = {
 			},
 			["104"] = {
+			},
+			["ALL"] = {
+			},
+			["103"] = {
+				{
+					["maxcharges"] = 2,
+					["ability"] = "Survival Instincts",
+					["cooldown"] = 180,
+					["id"] = 61336,
+				}, -- [1]
 			},
 			["102"] = {
 				{
@@ -247,16 +261,6 @@ ATTDB = {
 					["cooldown"] = 90,
 					["id"] = 108238,
 				}, -- [3]
-			},
-			["103"] = {
-				{
-					["maxcharges"] = 2,
-					["id"] = 61336,
-					["cooldown"] = 180,
-					["ability"] = "Survival Instincts",
-				}, -- [1]
-			},
-			["ALL"] = {
 			},
 		},
 		["MONK"] = {
@@ -279,40 +283,36 @@ ATTDB = {
 			["ALL"] = {
 			},
 		},
-		["ROGUE"] = {
-			["261"] = {
-				{
-					["ability"] = "Evasion",
-					["cooldown"] = 120,
-					["id"] = 5277,
-				}, -- [1]
+		["PALADIN"] = {
+			["65"] = {
 			},
-			["260"] = {
-			},
-			["259"] = {
+			["70"] = {
 				{
-					["ability"] = "Evasion",
-					["cooldown"] = 120,
-					["id"] = 5277,
+					["ability"] = "Divine Shield",
+					["cooldown"] = 300,
+					["id"] = 642,
 				}, -- [1]
+				{
+					["ability"] = "Blessing of Protection",
+					["cooldown"] = 300,
+					["id"] = 1022,
+				}, -- [2]
+				{
+					["ability"] = "Blessing of Sanctuary",
+					["cooldown"] = 45,
+					["id"] = 210256,
+				}, -- [3]
 			},
 			["ALL"] = {
-				{
-					["ability"] = "Cloak of Shadows",
-					["cooldown"] = 120,
-					["id"] = 31224,
-				}, -- [1]
-				{
-					["ability"] = "Vanish",
-					["cooldown"] = 120,
-					["id"] = 1856,
-				}, -- [2]
+			},
+			["66"] = {
 			},
 		},
 	},
-	["glow"] = false,
+	["scenarios"] = true,
+	["arena"] = true,
 	["iconOffsetX"] = 0,
-	["horizontal"] = false,
-	["attach"] = 1,
-	["showIconBorders"] = true,
+	["offsetY"] = -6,
+	["scale"] = 0.5,
+	["biggroup"] = true,
 }

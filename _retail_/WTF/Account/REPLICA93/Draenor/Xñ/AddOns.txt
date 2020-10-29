@@ -47,3 +47,4 @@ Kui_Media: enabled
 Kui_Nameplates: enabled
 ClassicUI: enabled
 ATT: enabled
+ExRT: enabled
