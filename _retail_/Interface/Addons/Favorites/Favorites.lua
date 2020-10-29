@@ -74,11 +74,9 @@ local function FriendsList_UpdateFIX(forceUpdate)
 			end
 			local na = nil
 			if ( buttonType == FRIENDS_BUTTON_TYPE_BNET ) then
-				local friendinfo = C_BattleNet.GetFriendAccountInfo(id);
-				na = friendinfo.battleTag;
-				ca = friendinfo.gameAccountInfo.characterName;
+				_, _, na, _, ca, _, _, _ = BNGetFriendInfo(id);
 			elseif ( buttonType == FRIENDS_BUTTON_TYPE_WOW ) then
-				na = C_FriendList.GetFriendInfo(id).name;
+				na, _, _, _, _, _, _, _, _ = GetFriendInfo(id);
 			end
 			if (na and ca) and (not string.find(string.lower(na), string.lower(friendSearchValue)) and ca and not string.find(string.lower(ca), string.lower(friendSearchValue))) then
 				return
@@ -132,10 +130,7 @@ local function FriendsList_UpdateFIX(forceUpdate)
 		AddButtonInfo(BNET_HEADER_TEXT, nil, l)
 		-- favorite Battlenet friends
 		for i = 1 + numBNetFavorite, numBNetOffline+numBNetOnline-numBNetFavoriteOnline do
-			local friendinfo = C_BattleNet.GetFriendAccountInfo(i)
-			local id = friendinfo.bnetAccountID;
-			local battletag = friendinfo.battleTag;
-			local client = friendinfo.gameAccountInfo.clientProgram;
+			local id, _, battleTag , _, _, _, client = BNGetFriendInfo(i);
 			if s[id] then
 				s[id] = nil;
 				s[battleTag] = true
@@ -601,11 +596,7 @@ end
 function BNGetBTAG(t)
   local bTAG = nil
   for i=1, BNGetNumFriends() do
-		local friendinfo = C_BattleNet.GetFriendAccountInfo(i);
-		local bnetIDAccount = friendinfo.bnetAccountID;
-		local battleTag = friendinfo.battleTag;
-		local client = friendinfo.gameAccountInfo.clientProgram;
-		local o = friendinfo.gameAccountInfo.isOnline;
+		local bnetIDAccount, _, battleTag, _, _, _, client, o = BNGetFriendInfo(i);
 		if t == bnetIDAccount then
 		bTAG = battleTag
 		end
@@ -722,4 +713,22 @@ end
 function FriendSearch_OnEditFocusGained(self)
 	self.searchIcon:SetVertexColor(1.0, 1.0, 1.0);
 	self.clearButton:Show();
+end
+
+-- 9.0.1 Depricated Function Fix
+local function getDeprecatedAccountInfo(accountInfo)
+	if accountInfo then
+		local wowProjectID = accountInfo.gameAccountInfo.wowProjectID or 0;
+		local clientProgram = accountInfo.gameAccountInfo.clientProgram ~= "" and accountInfo.gameAccountInfo.clientProgram or nil;
+		return	accountInfo.bnetAccountID, accountInfo.accountName, accountInfo.battleTag, accountInfo.isBattleTagFriend,
+				accountInfo.gameAccountInfo.characterName, accountInfo.gameAccountInfo.gameAccountID, clientProgram,
+				accountInfo.gameAccountInfo.isOnline, accountInfo.lastOnlineTime, accountInfo.isAFK, accountInfo.isDND, accountInfo.customMessage, accountInfo.note, accountInfo.isFriend,
+				accountInfo.customMessageTime, wowProjectID, accountInfo.rafLinkType == Enum.RafLinkType.Recruit, accountInfo.gameAccountInfo.canSummon, accountInfo.isFavorite, accountInfo.gameAccountInfo.isWowMobile;
+	end
+end
+
+-- Use C_BattleNet.GetFriendAccountInfo instead.
+BNGetFriendInfo = function(friendIndex)
+	local accountInfo = C_BattleNet.GetFriendAccountInfo(friendIndex);
+	return getDeprecatedAccountInfo(accountInfo);
 end

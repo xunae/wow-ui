@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.01 (14th October 2020)
+-- 	Leatrix Plus 9.0.02 (28th October 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.01"
+	LeaPlusLC["AddonVer"] = "9.0.02"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -35,10 +35,6 @@
 				print(L["LEATRIX PLUS: WRONG VERSION INSTALLED!"])
 			end)
 			return
-		end
-		if gametocversion and gametocversion > 90000 then
-			LeaPlusLC.SL = true
-			LeaPlusLC.BackdropTemplate = "BackdropTemplate"
 		end
 	end
 
@@ -55,23 +51,6 @@
 	local LpEvt = CreateFrame("FRAME")
 	LpEvt:RegisterEvent("ADDON_LOADED")
 	LpEvt:RegisterEvent("PLAYER_LOGIN")
-
-	-- Shadowlands changed functions
-	local GetNumGossipAvailableQuests = GetNumGossipAvailableQuests or C_GossipInfo.GetNumAvailableQuests
-	local GetNumGossipActiveQuests = GetNumGossipActiveQuests or C_GossipInfo.GetNumActiveQuests
-	local GetNumGossipOptions = GetNumGossipOptions or C_GossipInfo.GetNumOptions
-
-	local GetGossipAvailableQuests = GetGossipAvailableQuests or C_GossipInfo.GetAvailableQuests
-	local GetGossipActiveQuests = GetGossipActiveQuests or C_GossipInfo.GetActiveQuests
-	local GetGossipOptions = GetGossipOptions or C_GossipInfo.GetOptions
-
-	local SelectGossipAvailableQuest = SelectGossipAvailableQuest or C_GossipInfo.SelectAvailableQuest
-	local SelectGossipActiveQuest = SelectGossipActiveQuest or C_GossipInfo.SelectActiveQuest
-	local SelectGossipOption = SelectGossipOption or C_GossipInfo.SelectOption
-
-	local CloseGossip = CloseGossip or C_GossipInfo.CloseGossip
-
-	local ActionStatus_DisplayMessage = ActionStatus_DisplayMessage or function(self) ActionStatus:DisplayMessage(self) end
 
 ----------------------------------------------------------------------
 --	L01: Functions
@@ -98,6 +77,11 @@
 		for k, v in pairs(LeaConfigList) do
 			v:Hide()
 		end
+	end
+
+	-- Display on-screen message
+	function LeaPlusLC:DisplayMessage(self)
+		ActionStatus:DisplayMessage(self)
 	end
 
 	-- Load a string variable or set it to default if it's not set to "On" or "Off"
@@ -1366,11 +1350,7 @@
 					questID = QuestMapFrame_GetDetailQuestID()
 				else
 					-- Get quest ID from currently selected quest on world map
-					if LeaPlusLC.SL then
-						questID = C_SuperTrack.GetSuperTrackedQuestID()
-					else
-						questID = GetSuperTrackedQuestID()
-					end
+					questID = C_SuperTrack.GetSuperTrackedQuestID()
 				end
 				if questID then
 					-- Hide editbox if quest ID is invalid
@@ -1392,11 +1372,7 @@
 			end
 
 			-- Set URL when super tracked quest changes and on startup
-			if LeaPlusLC.SL then
-				mEB:RegisterEvent("SUPER_TRACKING_CHANGED")
-			else
-				mEB:RegisterEvent("SUPER_TRACKED_QUEST_CHANGED")
-			end
+			mEB:RegisterEvent("SUPER_TRACKING_CHANGED")
 			mEB:SetScript("OnEvent", SetQuestInBox)
 			SetQuestInBox()
 
@@ -1605,16 +1581,9 @@
 			-- Function to skip gossip
 			local function SkipGossip()
 				if not IsAltKeyDown() then return end
-				if LeaPlusLC.SL then
-					local gossipInfoTable = GetGossipOptions()
-					if gossipInfoTable[1].type == "gossip" then
-						SelectGossipOption(1)
-					end
-				else
-					local void, gossipType = GetGossipOptions()
-					if gossipType and gossipType == "gossip" then
-						SelectGossipOption(1)
-					end
+				local gossipInfoTable = C_GossipInfo.GetOptions()
+				if gossipInfoTable[1].type == "gossip" then
+					C_GossipInfo.SelectOption(1)
 				end
 			end
 
@@ -1652,7 +1621,7 @@
 					end
 				end
 				-- Process gossip
-				if GetNumGossipOptions() == 1 and GetNumGossipAvailableQuests() == 0 and GetNumGossipActiveQuests() == 0 then
+				if C_GossipInfo.GetNumOptions() == 1 and C_GossipInfo.GetNumAvailableQuests() == 0 and C_GossipInfo.GetNumActiveQuests() == 0 then
 					SkipGossip()
 				end
 			end)
@@ -2263,12 +2232,15 @@
 
 				-- Show quest dialog for quests that use the objective tracker (it will be completed automatically)
 				if event == "QUEST_AUTOCOMPLETE" then
-					--if LeaPlusLC["AutoQuestCompleted"] == "On" then
-					--	local index = C_QuestLog.GetLogIndexForQuestID(arg1)
-					--	if GetQuestLogIsAutoComplete(index) then
-					--		ShowQuestComplete(index)
-					--	end
-					--end
+					if LeaPlusLC["AutoQuestCompleted"] == "On" then
+						local index = C_QuestLog.GetLogIndexForQuestID(arg1)
+						local info = C_QuestLog.GetInfo(index)
+						if info and info.isAutoComplete then
+							local questID = C_QuestLog.GetQuestIDForLogIndex(index)
+							C_QuestLog.SetSelectedQuest(questID)
+							ShowQuestComplete(C_QuestLog.GetSelectedQuest())
+						end
+					end
 				end
 
 				----------------------------------------------------------------------
@@ -2311,45 +2283,21 @@
 						else
 							-- Select gossip completed quests
 							if LeaPlusLC["AutoQuestCompleted"] == "On" then
-								if LeaPlusLC.SL then
-									local gossipQuests = C_GossipInfo.GetActiveQuests()
-									for titleIndex, questInfo in ipairs(gossipQuests) do
-										if questInfo.title and questInfo.isComplete then
-											return SelectGossipActiveQuest(titleIndex)
-										end
-									end
-								else
-									for i = 1, GetNumGossipActiveQuests() do
-										local title, level, isTrivial, isComplete, isLegendary, isIgnored, questID = select(i * 7 - 6, GetGossipActiveQuests())
-										if title and isComplete then
-											return SelectGossipActiveQuest(i)
-										end
+								local gossipQuests = C_GossipInfo.GetActiveQuests()
+								for titleIndex, questInfo in ipairs(gossipQuests) do
+									if questInfo.title and questInfo.isComplete then
+										return C_GossipInfo.SelectActiveQuest(titleIndex)
 									end
 								end
 							end
 							-- Select gossip available quests
 							if LeaPlusLC["AutoQuestAvailable"] == "On" then
-								if LeaPlusLC.SL then
-									local GossipQuests = C_GossipInfo.GetAvailableQuests()
-									for titleIndex, questInfo in ipairs(GossipQuests) do
-										if questInfo.frequency ~= 2 or LeaPlusLC["AutoQuestNoDaily"] == "Off" then
-											if questInfo.frequency ~= 3 or LeaPlusLC["AutoQuestNoWeekly"] == "Off" then
-												if not questInfo.questID or not IsQuestIDBlocked(questInfo.questID) then
-													return SelectGossipAvailableQuest(titleIndex)
-												end
-											end
-										end
-									end
-								else
-									for i = 1, GetNumGossipAvailableQuests() do
-										local title, level, isTrivial, frequency, isRepeatable, isLegendary, isIgnored, questID = select(i * 8 - 7, GetGossipAvailableQuests())
-										if title then
-											if frequency ~= 2 or LeaPlusLC["AutoQuestNoDaily"] == "Off" then
-												if frequency ~= 3 or LeaPlusLC["AutoQuestNoWeekly"] == "Off" then
-													if not questID or not IsQuestIDBlocked(questID) then
-														return SelectGossipAvailableQuest(i)
-													end
-												end
+								local GossipQuests = C_GossipInfo.GetAvailableQuests()
+								for titleIndex, questInfo in ipairs(GossipQuests) do
+									if questInfo.frequency ~= 2 or LeaPlusLC["AutoQuestNoDaily"] == "Off" then
+										if questInfo.frequency ~= 3 or LeaPlusLC["AutoQuestNoWeekly"] == "Off" then
+											if not questInfo.questID or not IsQuestIDBlocked(questInfo.questID) then
+												return C_GossipInfo.SelectAvailableQuest(titleIndex)
 											end
 										end
 									end
@@ -2386,7 +2334,7 @@
 					then
 						-- Close gossip window if it's for a cooperating (active) bodyguard
 						if UnitCanCooperate("target", "player") then
-							CloseGossip()
+							C_GossipInfo.CloseGossip()
 						end
 					end
 				end
@@ -2767,14 +2715,10 @@
 			if CompactRaidFrameManagerDisplayFrameHiddenModeToggle then
 
 				-- Create a border for the button
-				if LeaPlusLC.SL then
-					local cBackdrop = CreateFrame("Frame", nil, CompactRaidFrameManagerDisplayFrameHiddenModeToggle, "BackdropTemplate")
-					cBackdrop:SetAllPoints()
-					cBackdrop.backdropInfo = {edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}}
-					cBackdrop:ApplyBackdrop()
-				else
-					CompactRaidFrameManagerDisplayFrameHiddenModeToggle:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}})
-				end
+				local cBackdrop = CreateFrame("Frame", nil, CompactRaidFrameManagerDisplayFrameHiddenModeToggle, "BackdropTemplate")
+				cBackdrop:SetAllPoints()
+				cBackdrop.backdropInfo = {edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = {left = 0, right = 0, top = 0, bottom = 0}}
+				cBackdrop:ApplyBackdrop()
 
 				-- Move the button (function runs after PLAYER_ENTERING_WORLD and PARTY_LEADER_CHANGED)
 				hooksecurefunc("CompactRaidFrameManager_UpdateOptionsFlowContainer", function()
@@ -3882,10 +3826,10 @@
 							if name == MINIMAP_TRACKING_TARGET then
 								if active then
 									SetTracking(i, false)
-									ActionStatus_DisplayMessage(L["Target Tracking Disabled"], true);
+									LeaPlusLC:DisplayMessage(L["Target Tracking Disabled"], true);
 								else
 									SetTracking(i, true)
-									ActionStatus_DisplayMessage(L["Target Tracking Enabled"], true);
+									LeaPlusLC:DisplayMessage(L["Target Tracking Enabled"], true);
 								end
 							end
 						end
@@ -3923,10 +3867,10 @@
 						if LeaPlusDB["HideErrorMessages"] == "On" then -- Checks global
 							if LeaPlusLC["ShowErrorsFlag"] == 1 then 
 								LeaPlusLC["ShowErrorsFlag"] = 0
-								ActionStatus_DisplayMessage(L["Error messages will be shown"], true);
+								LeaPlusLC:DisplayMessage(L["Error messages will be shown"], true);
 							else
 								LeaPlusLC["ShowErrorsFlag"] = 1
-								ActionStatus_DisplayMessage(L["Error messages will be hidden"], true);
+								LeaPlusLC:DisplayMessage(L["Error messages will be hidden"], true);
 							end
 							return
 						end
@@ -4116,7 +4060,7 @@
 			end)
 
 			-- Create drag frame
-			local dragframe = CreateFrame("FRAME", nil, nil, LeaPlusLC.BackdropTemplate)
+			local dragframe = CreateFrame("FRAME", nil, nil, "BackdropTemplate")
 			dragframe:SetPoint("TOPRIGHT", BuffFrame, "TOPRIGHT", 0, 2.5)
 			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
 			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0 }})
@@ -4415,7 +4359,7 @@
 			-- Create drag frames
 			local function LeaPlusMakeDrag(dragframe,realframe)
 
-				local dragframe = CreateFrame("Frame", nil, nil, LeaPlusLC.BackdropTemplate)
+				local dragframe = CreateFrame("Frame", nil, nil, "BackdropTemplate")
 				LeaPlusLC[dragframe] = dragframe
 				dragframe:SetSize(realframe:GetSize())
 				dragframe:SetPoint("TOP", realframe, "TOP", 0, 2.5)
@@ -4594,7 +4538,7 @@
 			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
 
 			-- Create drag frame
-			local dragframe = CreateFrame("FRAME", nil, nil, LeaPlusLC.BackdropTemplate)
+			local dragframe = CreateFrame("FRAME", nil, nil, "BackdropTemplate")
 			dragframe:SetPoint("CENTER", topCenterHolder, "CENTER", 0, 1)
 			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
 			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0}})
@@ -4725,7 +4669,7 @@
 			PlayerPowerBarAlt:SetScale(LeaPlusLC["PowerBarScale"])
 
 			-- Create drag frame
-			local dragframe = CreateFrame("FRAME", nil, nil, LeaPlusLC.BackdropTemplate)
+			local dragframe = CreateFrame("FRAME", nil, nil, "BackdropTemplate")
 			dragframe:SetPoint("CENTER", PlayerPowerBarAlt, "CENTER", 0, 1)
 			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
 			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0}})
@@ -5571,7 +5515,7 @@
 			LT["ColorBlind"] = GetCVar("colorblindMode")
 
 			-- 	Create drag frame
-			local TipDrag = CreateFrame("Frame", nil, UIParent, LeaPlusLC.BackdropTemplate)
+			local TipDrag = CreateFrame("Frame", nil, UIParent, "BackdropTemplate")
 			TipDrag:SetToplevel(true);
 			TipDrag:SetClampedToScreen(false);
 			TipDrag:SetSize(130, 64);
@@ -7043,7 +6987,8 @@
 				"|Cffffffff" .. L["Siege of Dazar'alor"] .. " |r#2565179#128", -- interface/cinematics/bfa_810_akt.mp3
 				"|Cffffffff" .. L["Battle of Dazar'alor"] .. " |r#2543223#121", -- interface/cinematics/bfa_810_dor.mp3
 				"|Cffffffff" .. L["Warbringers Azshara"] .. " |r#2991597#425", -- interface/cinematics/bfa_820_awb.mp3
-				"|Cffffffff" .. L["Rise of Azshara"] .. " |r#3039647#133", -- interface/cinematics/bfa_820_enc_262_h.mp3
+				"|Cffffffff" .. L["Rise of Azshara (Horde)"] .. " |r#3039647#133", -- interface/cinematics/bfa_820_enc_262_h.mp3
+				"|Cffffffff" .. L["Rise of Azshara (Alliance)"] .. " |r#3039642#132", -- interface/cinematics/bfa_820_enc_262_a.mp3
 				"|Cffffffff" .. L["The Negotiation"] .. " |r#3075714#201", -- interface/cinematics/bfa_825_lh.mp3
 				"|Cffffffff" .. L["Reckoning"] .. " |r#3075719#379", -- interface/cinematics/bfa_825_os.mp3
 				"|Cffffffff" .. L["Azshara's Eternal Palace"] .. " |r#3022943#83", -- interface/cinematics/bfa_820_enc_261.mp3
@@ -7052,7 +6997,11 @@
 				-- Cinematic Music: Shadowlands (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Shadowlands"], 
 				"|Cffffffff" .. L["Shadowlands"] .. " |r#3727029#320", -- interface/cinematics/shadowlands_901_si.mp3#3727029
-
+				"|Cffffffff" .. L["Afterlives Bastion"] .. " |r#3809924#396", -- interface/cinematics/shadowlands_901_ba.mp3#3809924
+				"|Cffffffff" .. L["Afterlives Maldraxxus"] .. " |r#3814420#258", -- interface/cinematics/shadowlands_901_mx.mp3
+				"|Cffffffff" .. L["Exile's Reach (Horde)"] .. " |r#3755758#22", -- interface/cinematics/shadowlands_902_931.mp3#3755758
+				"|Cffffffff" .. L["Exile's Reach (Alliance)"] .. " |r#3260363#22", -- interface/cinematics/shadowlands_901_895.mp3#3260363
+				"|Cffffffff" .. L["Dark Abduction"] .. " |r#3755759#126", -- interface/cinematics/shadowlands_902_937.mp3#3755759
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
@@ -7113,13 +7062,20 @@
 				L["Siege of Dazar'alor"] .. " |r(876)", 
 				L["Battle of Dazar'alor"] .. " |r(875)", 
 				L["Warbringers Azshara"] .. " |r(884)", 
-				L["Rise of Azshara"] .. " |r(894)", L["The Negotiation"] .. " |r(903)", 
+				L["Rise of Azshara (Horde)"] .. " |r(894)", 
+				L["Rise of Azshara (Alliance)"] .. " |r(883)", 
+				L["The Negotiation"] .. " |r(903)", 
 				-- L["Reckoning"] .. " |r(904)", 
 				-- L["Azshara's Eternal Palace"] .. " |r(920)", 
 				L["Visions of N'Zoth"] .. " |r(928)",
 			})
 			Zn(L["Movies"], L["Movies"], L["Shadowlands"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Shadowlands"], prefol, 
 				L["Shadowlands"] .. " |r(936)", 
+				L["Afterlives Bastion"] .. " |r(932)", 
+				L["Afterlives Maldraxxus"] .. " |r(934)", 
+				L["Exile's Reach (Horde)"] .. " |r(931)", 
+				L["Exile's Reach (Alliance)"] .. " |r(895)", 
+				-- L["Dark Abduction"] .. " |r(937)", 
 			})
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList
@@ -8984,7 +8940,7 @@
 		eb:SetScript("OnEnterPressed", eb.ClearFocus)
 
 		-- Add editbox border and backdrop
-		eb.f = CreateFrame("FRAME", nil, eb, LeaPlusLC.BackdropTemplate)
+		eb.f = CreateFrame("FRAME", nil, eb, "BackdropTemplate")
 		eb.f:SetBackdrop({bgFile = "Interface\\Tooltips\\UI-Tooltip-Background", edgeFile = "Interface\\Tooltips\\UI-Tooltip-Border", tile = false, tileSize = 16, edgeSize = 16, insets = { left = 5, right = 5, top = 5, bottom = 5 }})
 		eb.f:SetPoint("LEFT", -6, 0)
 		eb.f:SetWidth(eb:GetWidth()+6)
@@ -9087,7 +9043,7 @@
 		dbtn:SetScript("OnLeave", GameTooltip_Hide)
 
 		-- Create dropdown list
-		local ddlist =  CreateFrame("Frame", nil, frame, LeaPlusLC.BackdropTemplate)
+		local ddlist =  CreateFrame("Frame", nil, frame, "BackdropTemplate")
 		LeaPlusCB["ListFrame"..ddname] = ddlist
 		ddlist:SetPoint("TOP",0, -42)
 		ddlist:SetWidth(frame:GetWidth())
@@ -9333,12 +9289,7 @@
 						LeaPlusLC.LoadQuestEventFrame:SetScript("OnEvent", function(self, event, questID, success)
 							if tonumber(questID) == tonumber(arg1) then
 								LeaPlusLC.LoadQuestEventFrame:UnregisterEvent("QUEST_DATA_LOAD_RESULT")
-								local tempGetQuestInfo
-								if LeaPlusLC.SL then
-									tempGetQuestInfo = C_QuestLog.GetTitleForQuestID
-								else
-									tempGetQuestInfo = C_QuestLog.GetQuestInfo
-								end
+								local tempGetQuestInfo = C_QuestLog.GetTitleForQuestID
 								local questCompleted = C_QuestLog.IsQuestFlaggedCompleted(arg1)
 								local questTitle = C_TaskQuest.GetQuestInfoByQuestID(arg1) or tempGetQuestInfo(arg1)
 								if questTitle then
@@ -9561,10 +9512,6 @@
 				-- Set most help plates to seen
 				for i = 1, 100 do
 					SetCVarBitfield("closedInfoFrames", i, true)
-				end
-				if not LeaPlusLC.SL then
-					TalentMicroButtonAlert:Hide()
-					TalentMicroButtonAlert:HookScript("OnShow", TalentMicroButtonAlert.Hide)
 				end
 				return
 			elseif str == "grid" then
@@ -9968,7 +9915,7 @@
 				if LeaPlusLC.MarkerFrame.Toggle == false then
 					-- Show markers
 					LeaPlusLC.MarkerFrame:SetScript("OnEvent", nil)
-					ActionStatus_DisplayMessage(L["Self Markers Allowed"], true)
+					LeaPlusLC:DisplayMessage(L["Self Markers Allowed"], true)
 					LeaPlusLC.MarkerFrame.Toggle = true
 				else
 					-- Hide markers
@@ -9980,7 +9927,7 @@
 						end
 						LeaPlusLC.MarkerFrame.Update = true
 					end)
-					ActionStatus_DisplayMessage(L["Self Markers Blocked"], true)
+					LeaPlusLC:DisplayMessage(L["Self Markers Blocked"], true)
 					LeaPlusLC.MarkerFrame.Toggle = false
 				end
 				return
@@ -10197,6 +10144,19 @@
 					LeaPlusLC:Print("Invalid target.")
 				else
 					C_ChatInfo.SendAddonMessage("Leatrix_Plus", "followme", "WHISPER", arg1)
+				end
+				return
+				-- Delete heirlooms from bags
+			elseif str == "deletelooms" then
+				for bag = 0, 4 do 
+					for slot = 1, GetContainerNumSlots(bag) do 
+						local name = GetContainerItemLink(bag, slot) 
+						if name and string.find(name, "00ccff") then 
+							print(name)
+							PickupContainerItem(bag, slot) 
+							DeleteCursorItem() 
+						end 
+					end 
 				end
 				return
 			elseif str == "admin" then
@@ -10730,11 +10690,7 @@
 
 	LeaPlusLC:MakeTx(LeaPlusLC[pg], "Graphics and Sound"		, 	146, -72)
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenGlow"				, 	"Disable screen glow"			, 	146, -92, 	false,	"If checked, the screen glow will be disabled.|n|nEnabling this option will also disable the drunken haze effect.")
-	if LeaPlusLC.SL then
-		LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"		, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the netherworld effect will be disabled.")
-	else
-		LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"		, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the grey screen of death and the netherworld effect will be disabled.")
-	end
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoScreenEffects"			, 	"Disable screen effects"		, 	146, -112, 	false,	"If checked, the netherworld effect will be disabled.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "SetWeatherDensity"			, 	"Set weather density"			, 	146, -132, 	false,	"If checked, you will be able to set the density of weather effects.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxCameraZoom"				, 	"Max camera zoom"				, 	146, -152, 	false,	"If checked, you will be able to zoom out to a greater distance.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoRestedEmotes"			, 	"Silence rested emotes"			,	146, -172, 	true,	"If checked, emote sounds will be silenced while your character is:|n|n- resting|n- in a pet battle|n- at the Halfhill Market|n- at the Grim Guzzler|n|nEmote sounds will be enabled when none of the above apply.")

@@ -1,13 +1,10 @@
-lightweight tag b04440ad08b94485b35588f1a14017debd16c013 v3.4
+lightweight tag 398efbe055cf0ba6beb7dc4f91d624edb4ffaab6 v3.5
 Author:	Kyle Keller <kskeller@live.com>
-Date:	Mon Oct 21 01:20:39 2019 -0400
+Date:	Wed Oct 28 14:09:41 2020 -0400
 
-commit b04440ad08b94485b35588f1a14017debd16c013
+commit 398efbe055cf0ba6beb7dc4f91d624edb4ffaab6
 Author: Kyle Keller <kskeller@live.com>
-Date:   Mon Oct 21 01:20:39 2019 -0400
+Date:   Wed Oct 28 14:09:41 2020 -0400
 
-    - Offline friends now show in the correct category
-    - Peformance Improvements
-    - Added show character level option
-    - Added show character class option - obeys class color settings
+    Ace Update
 

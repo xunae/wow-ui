@@ -13,13 +13,13 @@ Quartz3DB = {
 					["swingalpha"] = 0.5,
 				},
 				["Xüñâ - Ravencrest"] = {
+					["swingalpha"] = 0.5,
 					["barcolor"] = {
 						nil, -- [1]
 						nil, -- [2]
 						nil, -- [3]
 						1, -- [4]
 					},
-					["swingalpha"] = 0.5,
 				},
 			},
 		},
@@ -43,38 +43,7 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["Player"] = {
-			["profiles"] = {
-				["Default"] = {
-					["nametextx"] = 0,
-					["w"] = 350,
-					["y"] = 110,
-					["x"] = 674,
-					["iconalpha"] = 0.75,
-					["border"] = "Details BarBorder 3",
-					["fontsize"] = 12,
-					["hidetimetext"] = true,
-					["timetexty"] = -2,
-					["timefontsize"] = 13,
-					["timetextx"] = 5,
-					["nametextposition"] = "center",
-					["texture"] = "Blizzard Raid Bar",
-					["nametexty"] = -2,
-					["font"] = "Oswald",
-					["hideicon"] = true,
-					["hidecasttime"] = true,
-				},
-				["Xüñâ - Ravencrest"] = {
-					["y"] = 83,
-					["x"] = 714,
-					["fontsize"] = 11,
-					["iconalpha"] = 1,
-					["timetextx"] = 5,
-					["timefontsize"] = 11,
-					["showticks"] = false,
-					["nametextx"] = 5,
-				},
-			},
+		["Mirror"] = {
 		},
 		["EnemyCasts"] = {
 			["profiles"] = {
@@ -94,7 +63,7 @@ Quartz3DB = {
 					["nametextx"] = 5,
 					["w"] = 223,
 					["y"] = 248.111129760742,
-					["x"] = 231,
+					["font"] = "Oswald",
 					["iconalpha"] = 1,
 					["hideblizz"] = false,
 					["border"] = "None",
@@ -103,7 +72,7 @@ Quartz3DB = {
 					["noInterruptChangeBorder"] = false,
 					["timetextx"] = 5,
 					["noInterruptChangeColor"] = false,
-					["font"] = "Oswald",
+					["x"] = 231,
 					["hidecasttime"] = true,
 				},
 				["Xüñâ - Ravencrest"] = {
@@ -119,17 +88,17 @@ Quartz3DB = {
 					["nametextx"] = 5,
 					["w"] = 202,
 					["y"] = 828,
-					["x"] = 428,
+					["font"] = "Oswald",
 					["iconalpha"] = 1,
 					["iconposition"] = "left",
 					["border"] = "None",
 					["fontsize"] = 12,
 					["texture"] = "Blizzard Raid Bar",
-					["font"] = "Oswald",
+					["x"] = 428,
 					["timetextx"] = 5,
 					["nametexty"] = -3,
-					["timetexty"] = -3,
 					["hidecasttime"] = true,
+					["timetexty"] = -3,
 				},
 				["Xüñâ - Ravencrest"] = {
 					["x"] = 753.333374023438,
@@ -138,7 +107,38 @@ Quartz3DB = {
 		},
 		["Range"] = {
 		},
-		["Mirror"] = {
+		["Player"] = {
+			["profiles"] = {
+				["Default"] = {
+					["timefontsize"] = 13,
+					["w"] = 350,
+					["y"] = 110,
+					["x"] = 674,
+					["iconalpha"] = 0.75,
+					["border"] = "Details BarBorder 3",
+					["fontsize"] = 12,
+					["hidetimetext"] = true,
+					["hidecasttime"] = true,
+					["nametextx"] = 0,
+					["timetextx"] = 5,
+					["nametextposition"] = "center",
+					["texture"] = "Blizzard Raid Bar",
+					["nametexty"] = -2,
+					["hideicon"] = true,
+					["font"] = "Oswald",
+					["timetexty"] = -2,
+				},
+				["Xüñâ - Ravencrest"] = {
+					["y"] = 83,
+					["x"] = 714,
+					["fontsize"] = 11,
+					["iconalpha"] = 1,
+					["timefontsize"] = 11,
+					["nametextx"] = 5,
+					["showticks"] = false,
+					["timetextx"] = 5,
+				},
+			},
 		},
 		["Latency"] = {
 			["profiles"] = {
@@ -192,19 +192,19 @@ Quartz3DB = {
 		["Xñä - Draenor"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
 		["Xunaj - Draenor"] = "Default",
-		["Xunaw - Draenor"] = "Default",
-		["Xunae - Draenor"] = "Default",
-		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Níeze - Ravencrest"] = "Default",
+		["Xunapala - Arena Champions - EU"] = "Default",
+		["Xunalol - Stormscale"] = "Default",
+		["Xunadraenei - Arena Champions - EU"] = "Default",
+		["Xuna - Stormscale"] = "Default",
 		["Xüñå - Ravencrest"] = "Default",
 		["Ckablyatdvai - Ravencrest"] = "Default",
 		["Xùñâ - Outland"] = "Default",
 		["Xûñä - Ravencrest"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Xuna - Stormscale"] = "Default",
-		["Xunadraenei - Arena Champions - EU"] = "Default",
-		["Xunalol - Stormscale"] = "Default",
-		["Xunapala - Arena Champions - EU"] = "Default",
+		["Níeze - Ravencrest"] = "Default",
+		["Xunamonk - Arena Champions - EU"] = "Default",
+		["Xunae - Draenor"] = "Default",
+		["Xunaw - Draenor"] = "Default",
 		["Xüñâ - Ravencrest"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
@@ -217,15 +217,11 @@ Quartz3DB = {
 				0.1843137254901961, -- [3]
 				1, -- [4]
 			},
-			["modules"] = {
-				["Swing"] = false,
-				["Buff"] = false,
-				["Mirror"] = false,
-				["GCD"] = false,
-				["Focus"] = false,
-				["Target"] = false,
-				["Pet"] = false,
-				["Timer"] = false,
+			["spelltextcolor"] = {
+				0.882352941176471, -- [1]
+				0.882352941176471, -- [2]
+				0.882352941176471, -- [3]
+				1, -- [4]
 			},
 			["bordercolor"] = {
 				0.533333333333333, -- [1]
@@ -245,11 +241,15 @@ Quartz3DB = {
 				nil, -- [3]
 				1, -- [4]
 			},
-			["spelltextcolor"] = {
-				0.882352941176471, -- [1]
-				0.882352941176471, -- [2]
-				0.882352941176471, -- [3]
-				1, -- [4]
+			["modules"] = {
+				["Swing"] = false,
+				["Buff"] = false,
+				["Mirror"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Timer"] = false,
+				["Target"] = false,
+				["Pet"] = false,
 			},
 			["castingcolor"] = {
 				0.1098039215686275, -- [1]
@@ -285,14 +285,11 @@ Quartz3DB = {
 				1, -- [4]
 			},
 			["borderalpha"] = 0.25,
-			["modules"] = {
-				["Target"] = false,
-				["GCD"] = false,
-				["Buff"] = false,
-				["Timer"] = false,
-				["Mirror"] = false,
-				["Pet"] = false,
-				["Focus"] = false,
+			["sparkcolor"] = {
+				nil, -- [1]
+				nil, -- [2]
+				nil, -- [3]
+				1, -- [4]
 			},
 			["bordercolor"] = {
 				nil, -- [1]
@@ -301,11 +298,14 @@ Quartz3DB = {
 				1, -- [4]
 			},
 			["backgroundalpha"] = 0.5,
-			["sparkcolor"] = {
-				nil, -- [1]
-				nil, -- [2]
-				nil, -- [3]
-				1, -- [4]
+			["modules"] = {
+				["Buff"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Timer"] = false,
+				["Pet"] = false,
+				["Mirror"] = false,
+				["Target"] = false,
 			},
 		},
 	},

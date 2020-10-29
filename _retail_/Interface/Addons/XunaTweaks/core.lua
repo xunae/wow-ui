@@ -186,7 +186,13 @@ end
 
 function XunaTweaks:customHealthMana()
 	hooksecurefunc('TextStatusBar_UpdateTextStringWithValues', function(statusFrame, textString, value, valueMin, valueMax)
-		statusFrame.TextString:SetText(AbbreviateLargeNumbers(value) .. ' - ' .. format('%.0f', (value / valueMax) * 100) .. '%')
+		if statusFrame.TextString then
+			if valueMax > 0 then
+				statusFrame.TextString:SetText(AbbreviateLargeNumbers(value) .. ' - ' .. format('%.0f', (value / valueMax) * 100) .. '%')
+			else
+				statusFrame.TextString:SetText(AbbreviateLargeNumbers(value))
+			end
+		end
 	end)
 end
 
@@ -210,31 +216,25 @@ function XunaTweaks:beautifyActionBar()
 	  end
   end)
 
-	local Path, Height = NumberFontNormalSmall:GetFont();
-	NumberFontNormalSmall:SetFont(Path, 10, 'OUTLINE');
-
 	local bindAlpha = 1
 	if XunaTweaksDB.hideBinds then bindAlpha = 0 end
 
 	local macroAlpha = 1
 	if XunaTweaksDB.hideMacros then macroAlpha = 0 end
 
-	-- hide microbuttons & bags
-	MicroButtonAndBagsBar:Hide()
-	MicroButtonAndBagsBar.MicroBagBar:Hide()
-
 	for i = 1, 12 do
-		_G['ActionButton'..i..'HotKey']:SetAlpha(bindAlpha)
-		_G['MultiBarBottomRightButton'..i..'HotKey']:SetAlpha(bindAlpha)
-		_G['MultiBarBottomLeftButton'..i..'HotKey']:SetAlpha(bindAlpha)
-		_G['MultiBarRightButton'..i..'HotKey']:SetAlpha(bindAlpha)
-		_G['MultiBarLeftButton'..i..'HotKey']:SetAlpha(bindAlpha)
+		for j, v in ipairs({
+			'ActionButton', 'MultiBarBottomRightButton', 'MultiBarBottomLeftButton', 'MultiBarRightButton', 'MultiBarLeftButton'
+		}) do
+			_G[v..i..'HotKey']:SetAlpha(bindAlpha)
+			_G[v..i..'Name']:SetAlpha(macroAlpha)
 
-		_G['ActionButton'..i..'Name']:SetAlpha(macroAlpha)
-		_G['MultiBarBottomRightButton'..i..'Name']:SetAlpha(macroAlpha)
-		_G['MultiBarBottomLeftButton'..i..'Name']:SetAlpha(macroAlpha)
-		_G['MultiBarRightButton'..i..'Name']:SetAlpha(macroAlpha)
-		_G['MultiBarLeftButton'..i..'Name']:SetAlpha(macroAlpha)
+			_G[v..i..'HotKey']:ClearAllPoints()
+			_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
+
+			local Path, Height = _G[v..i..'HotKey']:GetFont();
+			_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE');
+    end
 	end
 end
 

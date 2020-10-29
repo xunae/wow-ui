@@ -4,6 +4,9 @@ KalielsTrackerDB = {
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
 		},
+		["Xunae - Draenor"] = {
+			["collapsed"] = true,
+		},
 		["Dkuna - Draenor"] = {
 			["collapsed"] = true,
 		},
@@ -14,9 +17,8 @@ KalielsTrackerDB = {
 			["collapsed"] = true,
 		},
 		["Xunay - Draenor"] = {
-			["collapsed"] = true,
 			["quests"] = {
-				["num"] = 1,
+				["num"] = 5,
 			},
 		},
 	},
