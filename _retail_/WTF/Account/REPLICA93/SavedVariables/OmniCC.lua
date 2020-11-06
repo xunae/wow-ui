@@ -1,7 +1,7 @@
 
 OmniCCDB = {
 	["global"] = {
-		["addonVersion"] = "9.0.1",
+		["addonVersion"] = "9.0.2",
 		["dbVersion"] = 5,
 	},
 	["profileKeys"] = {
@@ -9,13 +9,16 @@ OmniCCDB = {
 		["Zunae - Draenor"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xunac - Draenor"] = "Default",
+		["Mktja - Draenor"] = "Default",
 		["Xuna - Stormscale"] = "Default",
 		["Xunap - Draenor"] = "Default",
+		["Drmscp - Draenor"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Uñ - Draenor"] = "Default",
 		["Xunaw - Draenor"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
+		["Lightescp - Draenor"] = "Default",
 		["Xñæ - Draenor"] = "Default",
 		["Xunawl - Draenor"] = "Default",
 		["Wluna - Draenor"] = "Default",
@@ -86,7 +89,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -97,7 +99,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -147,17 +149,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = -1,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.74,
 			["minEffectDuration"] = 30,
-			["scaleText"] = true,
+			["yOff"] = -1,
 			["fontSize"] = 15,
 		},
 		["Ignore"] = {
@@ -165,17 +167,17 @@ OmniCC4Config = {
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["yOff"] = 0,
+			["minDuration"] = 2,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -222,4 +224,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

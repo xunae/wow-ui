@@ -1,5 +1,5 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("NameplateAuras", "koKR");
-L = L or {}
+local L = LibStub("AceLocale-3.0"):NewLocale("NameplateAuras", "koKR"); -- luacheck: ignore
+L = L or {} -- luacheck: ignore
 --@non-debug@
 L["< 1min"] = "< 1분"
 L["< 5sec"] = "< 5초"
@@ -182,6 +182,10 @@ L["options:size-and-position:icon-height"] = "Default icon height"
 L["options:size-and-position:icon-width"] = "Default icon width"
 --[[Translation missing --]]
 L["options:size-and-position:icon-zoom"] = "Icon zoom"
+--[[Translation missing --]]
+L["options:size-and-position:keep-aspect-ratio"] = "Keep aspect ratio of textures"
+--[[Translation missing --]]
+L["options:size-and-position:keep-aspect-ratio:tooltip"] = "If this option is checked and icon width and height are not equal, then texture of spell will be cropped in that way to save original image proportions"
 --[[Translation missing --]]
 L["options:size-and-position:non-target-strata"] = "Layer of icons on non-target nameplates"
 --[[Translation missing --]]

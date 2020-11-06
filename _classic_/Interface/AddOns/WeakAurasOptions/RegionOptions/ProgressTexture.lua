@@ -34,7 +34,13 @@ local function createOptions(id, data)
       width = WeakAuras.halfWidth,
       order = 12,
       func = function()
-        OptionsPrivate.OpenTexturePicker(data, data, "foregroundTexture", OptionsPrivate.Private.texture_types);
+        OptionsPrivate.OpenTexturePicker(data, {}, {
+          texture = "foregroundTexture",
+          color = "foregroundColor",
+          rotation = "rotation",
+          mirror = "mirror",
+          blendMode = "blendMode"
+        }, OptionsPrivate.Private.texture_types);
       end
     },
     sameTexture = {
@@ -49,7 +55,13 @@ local function createOptions(id, data)
       width = WeakAuras.halfWidth,
       order = 17,
       func = function()
-        OptionsPrivate.OpenTexturePicker(data, data, "backgroundTexture", OptionsPrivate.Private.texture_types);
+        OptionsPrivate.OpenTexturePicker(data, {}, {
+          texture = "backgroundTexture",
+          color = "backgroundColor",
+          rotation = "rotation",
+          mirror = "mirror",
+          blendMode = "blendMode"
+        }, OptionsPrivate.Private.texture_types);
       end,
       disabled = function() return data.sameTexture; end
     },
@@ -473,7 +485,7 @@ local function modifyThumbnail(parent, borderframe, data, fullModify, size)
   background:SetVertexColor(data.backgroundColor[1], data.backgroundColor[2], data.backgroundColor[3], data.backgroundColor[4]);
   background:SetBlendMode(data.blendMode);
 
-  backgroundSpinner:SetTexture(data.sameTexture and data.foregroundTexture or data.backgroundTexture);
+  backgroundSpinner:SetTextureOrAtlas(data.sameTexture and data.foregroundTexture or data.backgroundTexture);
   backgroundSpinner:SetDesaturated(data.desaturateBackground)
   backgroundSpinner:Color(data.backgroundColor[1], data.backgroundColor[2], data.backgroundColor[3], data.backgroundColor[4]);
   backgroundSpinner:SetBlendMode(data.blendMode);
@@ -482,7 +494,7 @@ local function modifyThumbnail(parent, borderframe, data, fullModify, size)
   foreground:SetVertexColor(data.foregroundColor[1], data.foregroundColor[2], data.foregroundColor[3], data.foregroundColor[4]);
   foreground:SetBlendMode(data.blendMode);
 
-  foregroundSpinner:SetTexture(data.foregroundTexture);
+  foregroundSpinner:SetTextureOrAtlas(data.foregroundTexture);
   foregroundSpinner:SetDesaturated(data.desaturateForeground);
   foregroundSpinner:Color(data.foregroundColor[1], data.foregroundColor[2], data.foregroundColor[3], data.foregroundColor[4])
   foregroundSpinner:SetBlendMode(data.blendMode);

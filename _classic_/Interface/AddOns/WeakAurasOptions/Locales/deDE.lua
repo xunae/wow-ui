@@ -104,8 +104,7 @@ local L = WeakAuras.L
 	L["Add to group %s"] = "Zu Gruppe %s hinzufügen"
 	L["Add to new Dynamic Group"] = "Neue dynamische Gruppe hinzufügen"
 	L["Add to new Group"] = "Neue Gruppe hinzufügen"
-	--[[Translation missing --]]
-	L["Add Trigger"] = "Add Trigger"
+	L["Add Trigger"] = "Auslöser hinzufügen"
 	--[[Translation missing --]]
 	L["Additional Events"] = "Additional Events"
 	L["Addon"] = "Addon"
@@ -127,8 +126,7 @@ local L = WeakAuras.L
 	L["and rotated left"] = "and rotated left"
 	--[[Translation missing --]]
 	L["and rotated right"] = "and rotated right"
-	--[[Translation missing --]]
-	L["and Trigger %s"] = "and Trigger %s"
+	L["and Trigger %s"] = "und Auslöser %s"
 	--[[Translation missing --]]
 	L["and with width |cFFFF0000%s|r and %s"] = "and with width |cFFFF0000%s|r and %s"
 	L["Angle"] = "Winkel"
@@ -180,13 +178,13 @@ Falls die Dauer der Animation auf |cFF00CC0010%|r gesetzt wurde und für die Anz
 	--[[Translation missing --]]
 	L["Background"] = "Background"
 	L["Background Color"] = "Hintergrundfarbe"
+	--[[Translation missing --]]
+	L["Background Inner"] = "Background Inner"
 	L["Background Offset"] = "Hintergrundversatz"
 	L["Background Texture"] = "Hintergrundtextur"
-	L["Bar"] = "Leiste"
 	L["Bar Alpha"] = "Balkentransparenz"
 	L["Bar Color"] = "Balkenfarbe"
 	L["Bar Color Settings"] = "Balkenfarbeneinstellungen"
-	L["Bar Inner"] = "Innere Leiste"
 	L["Bar Texture"] = "Balkentextur"
 	L["Big Icon"] = "Großes Symbol"
 	L["Blend Mode"] = "Blendmodus"
@@ -644,15 +642,11 @@ Falls die Zahl als Dezimalzahl (z.B. 0.5), Bruch (z.B. 1/2) oder Prozentsatz (z.
 	L["Model %s"] = "Model %s"
 	--[[Translation missing --]]
 	L["Model Settings"] = "Model Settings"
-	--[[Translation missing --]]
-	L["Move Above Group"] = "Move Above Group"
-	--[[Translation missing --]]
-	L["Move Below Group"] = "Move Below Group"
+	L["Move Above Group"] = "Über die Gruppe verschieben"
+	L["Move Below Group"] = "Unter die Gruppe verschieben"
 	L["Move Down"] = "Nach unten verschieben"
-	--[[Translation missing --]]
-	L["Move Entry Down"] = "Move Entry Down"
-	--[[Translation missing --]]
-	L["Move Entry Up"] = "Move Entry Up"
+	L["Move Entry Down"] = "Eintrag nach unten verschieben"
+	L["Move Entry Up"] = "Eintrag nach oben verschieben"
 	--[[Translation missing --]]
 	L["Move Into Above Group"] = "Move Into Above Group"
 	--[[Translation missing --]]
@@ -765,6 +759,8 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Preset"] = "Voreinstellung"
 	L["Press Ctrl+C to copy"] = "Drücke Strg+C zum kopieren"
 	--[[Translation missing --]]
+	L["Press Ctrl+C to copy the URL"] = "Press Ctrl+C to copy the URL"
+	--[[Translation missing --]]
 	L["Prevent Merging"] = "Prevent Merging"
 	--[[Translation missing --]]
 	L["Processed %i chars"] = "Processed %i chars"
@@ -789,7 +785,7 @@ Nur ein Wert kann ausgewählt werden.]=]
 	L["Repeat After"] = "Wiederholen nach"
 	L["Repeat every"] = "Wiederhole alle"
 	--[[Translation missing --]]
-	L["Report bugs our our issue tracker."] = "Report bugs our our issue tracker."
+	L["Report bugs on our issue tracker."] = "Report bugs on our issue tracker."
 	--[[Translation missing --]]
 	L["Require unit from trigger"] = "Require unit from trigger"
 	L["Required for Activation"] = "Benötigt zur Aktivierung"

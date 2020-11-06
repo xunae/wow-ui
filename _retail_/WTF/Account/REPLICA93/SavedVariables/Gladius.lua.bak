@@ -2,530 +2,51 @@
 Gladius2DB = {
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
-		["Thorag - Khadgar"] = "Thorag - Khadgar",
 		["Níeze - Ravencrest"] = "Default",
 		["Xüñâ - Stormscale"] = "Default",
 		["Xûñâ - Ravencrest"] = "Default",
-		["Xunac - Draenor"] = "Xunac - Draenor",
 		["Xûñá - Ravencrest"] = "Default",
 		["Buckfarry - Ravencrest"] = "Default",
 		["Ckablyatdvai - Ravencrest"] = "Default",
 		["Xunap - Draenor"] = "Default",
 		["Xunamonkh - Arena Champions - EU"] = "Default",
-		["Vapenaysh - Stormscale"] = "Vapenaysh - Stormscale",
 		["Uñ - Draenor"] = "Default",
 		["Xunaorc - Arena Champions - EU"] = "Default",
-		["Asddz - Defias Brotherhood"] = "Asddz - Defias Brotherhood",
-		["Xuna - Wildhammer"] = "Xuna - Wildhammer",
 		["Xñ - Draenor"] = "Default",
-		["Nakolx - Stormscale"] = "Nakolx - Stormscale",
-		["Enimos - Stormscale"] = "Enimos - Stormscale",
-		["Xunadwarf - Arena Champions - EU"] = "Default",
-		["Spazshaman - Stormscale"] = "Default",
-		["Vapenaysh - Anachronos"] = "Vapenaysh - Anachronos",
 		["Dkuna - Draenor"] = "Default",
-		["Ghrwetgf - Stormscale"] = "Ghrwetgf - Stormscale",
+		["Lightescp - Draenor"] = "Default",
+		["Xunadwarf - Arena Champions - EU"] = "Default",
+		["Xunamonk - Arena Champions - EU"] = "Default",
 		["Xüñå - Ravencrest"] = "Default",
 		["Xüñä - Ravencrest"] = "Default",
-		["Xunawl - Draenor"] = "Xunawl - Draenor",
-		["Xunadraenei - Arena Champions - EU"] = "Default",
 		["Wluna - Draenor"] = "Default",
-		["Zunae - Draenor"] = "Zunae - Draenor",
-		["Xûñà - Ravencrest"] = "Default",
-		["Xûñå - Ravencrest"] = "Xûñå - Ravencrest",
-		["Xunaj - Draenor"] = "Default",
-		["Asdsdadsa - Defias Brotherhood"] = "Asdsdadsa - Defias Brotherhood",
-		["Xã - Draenor"] = "Default",
+		["Xunapala - Arena Champions - EU"] = "Default",
 		["Xunae - Draenor"] = "Default",
-		["Xunapalah - Arena Champions - EU"] = "Default",
-		["Jungyuup - Stormscale"] = "Jungyuup - Stormscale",
-		["Asdxx - Defias Brotherhood"] = "Asdxx - Defias Brotherhood",
-		["Xuna - Valley of Heroes - EU"] = "Xuna - Valley of Heroes - EU",
-		["Xunaorc - Valley of Heroes - EU"] = "Xunaorc - Valley of Heroes - EU",
+		["Xã - Draenor"] = "Default",
+		["Mktja - Draenor"] = "Default",
+		["Xuna - Stormscale"] = "Default",
 		["Hãllàáhø - Stormscale"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
-		["Xunadwarf - Valley of Heroes - EU"] = "Xunadwarf - Valley of Heroes - EU",
-		["Asdwetr - Stormscale"] = "Asdwetr - Stormscale",
-		["Delimn - Dunemaul"] = "Delimn - Dunemaul",
-		["Xunz - Stormscale"] = "Xunz - Stormscale",
-		["Xunalol - Stormscale"] = "Xunalol - Stormscale",
-		["Xùñâ - Outland"] = "Xùñâ - Outland",
-		["Xuna - Stormscale"] = "Default",
-		["Xúñä - Ravencrest"] = "Xúñä - Ravencrest",
+		["Drmscp - Draenor"] = "Default",
+		["Spazshaman - Stormscale"] = "Default",
+		["Xunadraenei - Arena Champions - EU"] = "Default",
 		["Xûñä - Ravencrest"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Xunapala - Arena Champions - EU"] = "Default",
-		["Asddx - Defias Brotherhood"] = "Asddx - Defias Brotherhood",
+		["Xunaj - Draenor"] = "Default",
+		["Xunapalah - Arena Champions - EU"] = "Default",
+		["Xûñà - Ravencrest"] = "Default",
 		["Xunaw - Draenor"] = "Default",
 		["Xüñâ - Ravencrest"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
 	},
 	["profiles"] = {
-		["Xunay - Draenor"] = {
-			["y"] = {
-				["arena1"] = 471.766845703125,
-			},
-			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
-			["x"] = {
-				["arena1"] = 927.2005004882812,
-			},
-		},
-		["Thorag - Khadgar"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 444.62228795157,
-			},
-			["x"] = {
-				["arena1"] = 1161.24514562814,
-			},
-		},
-		["Níeze - Ravencrest"] = {
+		["Drmscp - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Xüñâ - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xûñâ - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-		},
-		["Xunac - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xûñá - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-		},
-		["Buckfarry - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Ckablyatdvai - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 888.177974404214,
-			},
-			["y"] = {
-				["arena1"] = 488.711250167413,
-			},
-		},
-		["Xunap - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Spazshaman - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunamonkh - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xùñâ - Outland"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 404.088867515988,
-			},
-			["x"] = {
-				["arena1"] = 1135.6446588728,
-			},
-		},
-		["Uñ - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunaorc - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Asddz - Defias Brotherhood"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 411.911108260683,
-			},
-			["x"] = {
-				["arena1"] = 1139.2006156921,
-			},
-		},
-		["Xuna - Wildhammer"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1082.31165423919,
-			},
-			["y"] = {
-				["arena1"] = 608.889026207384,
-			},
-		},
-		["Nakolx - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 443.911155181457,
-			},
-			["x"] = {
-				["arena1"] = 1102.2227858649,
-			},
-		},
-		["Xñ - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Dkuna - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Enimos - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 962.844571516238,
-			},
-			["y"] = {
-				["arena1"] = 466.666622575125,
-			},
-		},
-		["Xunadwarf - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunaj - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Vapenaysh - Anachronos"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Ghrwetgf - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 370.733263950122,
-			},
-			["x"] = {
-				["arena1"] = 1073.60054324013,
-			},
-		},
-		["Xunawl - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunz - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 942.933830515511,
-			},
-			["y"] = {
-				["arena1"] = 544.177897251968,
-			},
-		},
-		["Xüñä - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-		},
-		["Xunadraenei - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 340.333316347713,
-			},
-			["x"] = {
-				["arena1"] = 900.266976856045,
-			},
-		},
-		["Xunamonk - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 371.799926529613,
-			},
-			["x"] = {
-				["arena1"] = 1073.60037234169,
-			},
-		},
-		["Wluna - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xûñå - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1033.24505560129,
-			},
-			["y"] = {
-				["arena1"] = 432.5333726565,
-			},
-		},
-		["Xûñà - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-			["y"] = {
-				["arena1"] = 454.5778049363,
-			},
-			["x"] = {
-				["arena1"] = 753.777835930712,
-			},
-		},
-		["Zunae - Draenor"] = {
-			["y"] = {
-				["arena1"] = 445.6334381103516,
-			},
-			["x"] = {
-				["arena1"] = 851.4669799804688,
-			},
-			["locked"] = true,
-			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
-		},
-		["Asdsdadsa - Defias Brotherhood"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunae - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 987.733730188978,
-			},
-			["y"] = {
-				["arena1"] = 417.600023937222,
-			},
-		},
-		["Xã - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunaorc - Valley of Heroes - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 405.93338542098,
-			},
-			["x"] = {
-				["arena1"] = 1049.0671330134,
-			},
-		},
-		["Xunapalah - Arena Champions - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xuna - Stormscale"] = {
-			["drTrackerAttachTo"] = "Frame",
-			["tagsVersion"] = 4,
-		},
-		["Xuna - Valley of Heroes - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1036.26692571185,
-			},
-			["y"] = {
-				["arena1"] = 395.266631452243,
-			},
-		},
-		["Asdxx - Defias Brotherhood"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 406.933325354257,
-			},
-			["x"] = {
-				["arena1"] = 915.911273532431,
-			},
-		},
-		["Xunadwarf - Valley of Heroes - EU"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 381.933306483996,
-			},
-			["x"] = {
-				["arena1"] = 1065.60010392325,
-			},
-		},
-		["Hãllàáhø - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 978.133772404981,
-			},
-			["y"] = {
-				["arena1"] = 429.400047619001,
-			},
-		},
-		["Xñä - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xuna - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-			["tagEvents"] = {
-				["maxhealth"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["class:short"] = "UNIT_NAME_UPDATE",
-				["health:short"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["class"] = "UNIT_NAME_UPDATE",
-				["power:short"] = "UNIT_POWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["race"] = "UNIT_NAME_UPDATE",
-				["maxpower:short"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["power"] = "UNIT_POWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["name:status"] = "UNIT_NAME_UPDATE UNIT_HEALTH",
-				["spec"] = "UNIT_NAME_UPDATE GLADIUS_SPEC_UPDATE",
-				["power:percentage"] = "UNIT_POWER UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["name"] = "UNIT_NAME_UPDATE",
-				["spec:short"] = "UNIT_NAME_UPDATE GLADIUS_SPEC_UPDATE",
-				["health:percentage"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["maxpower"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["maxhealth:short"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["health"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-			},
-			["tags"] = {
-				["maxhealth"] = "function(unit)\nreturn not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nend",
-				["class:short"] = "function(unit)\nreturn not Gladius.test and Gladius.L[UnitClass(unit)..\":short\"] or Gladius.L[LOCALIZED_CLASS_NAMES_MALE[Gladius.testing[unit].unitClass]..\":short\"]\nend",
-				["health:short"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
-				["class"] = "function(unit)\nreturn not Gladius.test and UnitClass(unit) or LOCALIZED_CLASS_NAMES_MALE[Gladius.testing[unit].unitClass]\nend",
-				["power:short"] = "function(unit)\nlocal power = not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nif (power > 999) then\nreturn strformat(\"%.1fk\", (power / 1000))\nelse\nreturn power\nend\nend",
-				["race"] = "function(unit)\nreturn not Gladius.test and UnitRace(unit) or Gladius.testing[unit].unitRace\nend",
-				["maxpower:short"] = "function(unit)\nlocal power = not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nif (power > 999) then\nreturn strformat(\"%.1fk\", (power / 1000))\nelse\nreturn power\nend\nend",
-				["power"] = "function(unit)\nreturn not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nend",
-				["name:status"] = "function(unit)\nreturn UnitIsDeadOrGhost(unit) and Gladius.L[\"DEAD\"] or (UnitName(unit) or unit)\nend",
-				["spec"] = "function(unit)\nreturn Gladius.test and Gladius.testing[unit].unitSpec or Gladius.buttons[unit].spec\nend",
-				["power:percentage"] = "function(unit)\nlocal power = not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nlocal maxPower = not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nreturn strformat(\"%.1f%%\", (power / maxPower * 100))\nend",
-				["name"] = "function(unit)\nreturn UnitName(unit) or unit\nend",
-				["spec:short"] = "function(unit)\nlocal spec = Gladius.test and Gladius.testing[unit].unitSpec or Gladius.buttons[unit].spec\nif (spec == nil or spec == \"\") then\nreturn \"\"\nend\nreturn Gladius.L[spec..\":short\"]\nend",
-				["health:percentage"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
-				["maxpower"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-				["maxhealth:short"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
-				["health"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-			},
-		},
-		["Xunalol - Stormscale"] = {
-			["tagsVersion"] = 4,
-			["drTrackerAttachTo"] = "Frame",
-		},
-		["Vapenaysh - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 942.222502432909,
-			},
-			["y"] = {
-				["arena1"] = 468.800069713587,
-			},
-		},
-		["Jungyuup - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 458.844503900735,
-			},
-			["x"] = {
-				["arena1"] = 885.333345667517,
-			},
-		},
-		["Xüñå - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Delimn - Dunemaul"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1109.33342997232,
-			},
-			["y"] = {
-				["arena1"] = 399.111133437684,
-			},
-		},
-		["Xúñä - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 443.911155181457,
-			},
-			["x"] = {
-				["arena1"] = 1042.48909801905,
-			},
-		},
-		["Asdwetr - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 486.466837418644,
-			},
-			["x"] = {
-				["arena1"] = 150.933118157163,
-			},
-		},
-		["DRUID"] = {
-			["y"] = {
-				["arena1"] = 481.600264263136,
-			},
-			["x"] = {
-				["arena1"] = 992.000526809657,
-			},
-			["tagEvents"] = {
-				["maxhealth"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["class:short"] = "UNIT_NAME_UPDATE",
-				["health:short"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["class"] = "UNIT_NAME_UPDATE",
-				["power:short"] = "UNIT_POWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["race"] = "UNIT_NAME_UPDATE",
-				["maxpower:short"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["power"] = "UNIT_POWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["name:status"] = "UNIT_NAME_UPDATE UNIT_HEALTH",
-				["spec"] = "UNIT_NAME_UPDATE GLADIUS_SPEC_UPDATE",
-				["power:percentage"] = "UNIT_POWER UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-				["name"] = "UNIT_NAME_UPDATE",
-				["spec:short"] = "UNIT_NAME_UPDATE GLADIUS_SPEC_UPDATE",
-				["health:percentage"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["health"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["maxhealth:short"] = "UNIT_HEALTH UNIT_MAXHEALTH UNIT_NAME_UPDATE",
-				["maxpower"] = "UNIT_MAXPOWER UNIT_DISPLAYPOWER UNIT_NAME_UPDATE",
-			},
-			["tags"] = {
-				["maxhealth"] = "function(unit)\nreturn not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nend",
-				["class:short"] = "function(unit)\nreturn not Gladius.test and Gladius.L[UnitClass(unit)..\":short\"] or Gladius.L[LOCALIZED_CLASS_NAMES_MALE[Gladius.testing[unit].unitClass]..\":short\"]\nend",
-				["health:short"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
-				["class"] = "function(unit)\nreturn not Gladius.test and UnitClass(unit) or LOCALIZED_CLASS_NAMES_MALE[Gladius.testing[unit].unitClass]\nend",
-				["power:short"] = "function(unit)\nlocal power = not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nif (power > 999) then\nreturn strformat(\"%.1fk\", (power / 1000))\nelse\nreturn power\nend\nend",
-				["race"] = "function(unit)\nreturn not Gladius.test and UnitRace(unit) or Gladius.testing[unit].unitRace\nend",
-				["maxpower:short"] = "function(unit)\nlocal power = not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nif (power > 999) then\nreturn strformat(\"%.1fk\", (power / 1000))\nelse\nreturn power\nend\nend",
-				["power"] = "function(unit)\nreturn not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nend",
-				["name:status"] = "function(unit)\nreturn UnitIsDeadOrGhost(unit) and Gladius.L[\"DEAD\"] or (UnitName(unit) or unit)\nend",
-				["spec"] = "function(unit)\nreturn Gladius.test and Gladius.testing[unit].unitSpec or Gladius.buttons[unit].spec\nend",
-				["power:percentage"] = "function(unit)\nlocal power = not Gladius.test and UnitPower(unit) or Gladius.testing[unit].power\nlocal maxPower = not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nreturn strformat(\"%.1f%%\", (power / maxPower * 100))\nend",
-				["name"] = "function(unit)\nreturn UnitName(unit) or unit\nend",
-				["spec:short"] = "function(unit)\nlocal spec = Gladius.test and Gladius.testing[unit].unitSpec or Gladius.buttons[unit].spec\nif (spec == nil or spec == \"\") then\nreturn \"\"\nend\nreturn Gladius.L[spec..\":short\"]\nend",
-				["health:percentage"] = "function(unit)\nlocal health = not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nlocal maxHealth = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nreturn strformat(\"%.1f%%\", (health / maxHealth * 100))\nend",
-				["health"] = "function(unit)\nreturn not Gladius.test and UnitHealth(unit) or Gladius.testing[unit].health\nend",
-				["maxhealth:short"] = "function(unit)\nlocal health = not Gladius.test and UnitHealthMax(unit) or Gladius.testing[unit].maxHealth\nif (health > 999) then\nreturn strformat(\"%.1fk\", (health / 1000))\nelse\nreturn health\nend\nend",
-				["maxpower"] = "function(unit)\nreturn not Gladius.test and UnitPowerMax(unit) or Gladius.testing[unit].maxPower\nend",
-			},
-		},
-		["Xûñä - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-		},
-		["Xñæ - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xunapala - Arena Champions - EU"] = {
+		["Lightescp - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -760,38 +281,6 @@ Gladius2DB = {
 			["backgroundPadding"] = 2,
 			["castBarHeight"] = 25,
 			["targetBarRelativePoint"] = "TOPLEFT",
-		},
-		["Asddx - Defias Brotherhood"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1033.95609071516,
-			},
-			["y"] = {
-				["arena1"] = 428.266673692066,
-			},
-		},
-		["Xunaw - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
-		["Xüñâ - Ravencrest"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 2,
-		},
-		["Xûñä - Stormscale"] = {
-			["y"] = {
-				["arena1"] = 421.155541303422,
-			},
-			["tagsVersion"] = 4,
-			["auraVersion"] = 1,
-			["x"] = {
-				["arena1"] = 918.755804612883,
-			},
-		},
-		["Æñ - Draenor"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
 		},
 	},
 }

@@ -1,9 +1,17 @@
 # BigWigs
 
-## [v15-classic](https://github.com/BigWigsMods/BigWigs/tree/v15-classic) (2020-08-10)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v14-classic...v15-classic) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v15.1-classic](https://github.com/BigWigsMods/BigWigs/tree/v15.1-classic) (2020-10-17)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v15-classic...v15.1-classic) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
+- Rename the workflow file  
+    skip ci  
+- Add a workflow for Classic  
 - bump version  
-- Cthun: Fix format errors  
-    Fixes #827  
-- Proximity: Add some range check items  
+- Fix warmup icons  
+- Update zhCN (#834)  
+- Bars: Fix an error when clicks are enabled and Button4/5 is used  
+    Closes #831  
+- Fankriss: Fix Summon Worm message  
+    Closes #829  
+- Viscidus: Tweak triggers, update zhTW  
+    Closes #828  

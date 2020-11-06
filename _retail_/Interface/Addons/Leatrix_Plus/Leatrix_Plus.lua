@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.02 (28th October 2020)
+-- 	Leatrix Plus 9.0.05 (4th November 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.02"
+	LeaPlusLC["AddonVer"] = "9.0.05"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -879,6 +879,110 @@
 					"sound/interface/levelup2.ogg#567478",
 				},
 
+
+				-- Aerial Unit R-21X (sound/creature/hunterkiller/)
+				["MuteR21X"] = {
+					"mon_hunterkiller_creature_exertion_01.ogg#2906076",
+					"mon_hunterkiller_creature_exertion_02.ogg#2906075",
+					"mon_hunterkiller_creature_exertion_03.ogg#2906074",
+					"mon_hunterkiller_creatureloop.ogg#2909111",
+				},
+
+				-- Events
+				["MuteEvents"] = {
+
+					-- Headless Horseman (sound/creature/headlesshorseman/)
+					"horseman_beckon_01.ogg#551670", 
+					"horseman_bodydefeat_01.ogg#551706", 
+					"horseman_bomb_01.ogg#551705", 
+					"horseman_conflag_01.ogg#551686", 
+					"horseman_death_01.ogg#551695", 
+					"horseman_failing_01.ogg#551684", 
+					"horseman_failing_02.ogg#551700", 
+					"horseman_fire_01.ogg#551673", 
+					"horseman_laugh_01.ogg#551703", 
+					"horseman_laugh_02.ogg#551682", 
+					"horseman_out_01.ogg#551680", 
+					"horseman_request_01.ogg#551687", 
+					"horseman_return_01.ogg#551698", 
+					"horseman_slay_01.ogg#551676", 
+					"horseman_special_01.ogg#551696", 
+
+				},
+
+				-- Gyrocopters
+				["MuteGyrocopters"] = {
+
+					-- Mimiron's Head (sound/creature/mimironheadmount/)
+					"mimironheadmount_jumpend.ogg#595097", 
+					"mimironheadmount_jumpstart.ogg#595103", 
+					"mimironheadmount_run.ogg#555364", 
+					"mimironheadmount_walk.ogg#595100", 
+
+					-- Gyrocopter (such as Mecha-Mogul MK2) (sound/creature/gyrocopter/)
+					"gyrocopterfly.ogg#551390", 
+					"gyrocopterflyidle.ogg#551398", 
+					"gyrocopterflyup.ogg#551389", 
+					"gyrocoptergearshift1.ogg#551384", 
+					"gyrocoptergearshift2.ogg#551391", 
+					"gyrocoptergearshift3.ogg#551387", 
+					"gyrocopterjumpend.ogg#551396", 
+					"gyrocopterjumpstart.ogg#551399", 
+					"gyrocopterrun.ogg#551386", 
+					"gyrocoptershuffleleftorright1.ogg#551385", 
+					"gyrocoptershuffleleftorright2.ogg#551382", 
+					"gyrocoptershuffleleftorright3.ogg#551392", 
+					"gyrocopterstallinair.ogg#551395", 
+					"gyrocopterstallinairlong.ogg#551394", 
+					"gyrocopterstallongroundlong.ogg#551393", 
+					"gyrocopterstand.ogg#551383", 
+					"gyrocopterstandvar1_a.ogg#551388", 
+					"gyrocopterstandvar1_b.ogg#551397", 
+					"gyrocopterstandvar1_bnew.ogg#551400", 
+					"gyrocopterstandvar1_bnew.ogg#551400",
+
+					-- Gear shift sounds (sound/vehicles/)
+					"vehicle_airplane_gearshift_1.ogg#569846", 
+					"vehicle_airplane_gearshift_2.ogg#598739", 
+					"vehicle_airplane_gearshift_3.ogg#569851", 
+					"vehicle_airplane_gearshift_4.ogg#598742", 
+					"vehicle_airplane_gearshift_5.ogg#598733", 
+					"vehicle_airplane_gearshift_6.ogg#569850", 
+
+					-- Gyrocopter summon (also used with bikes)
+					-- "sound/spells/summongyrocopter.ogg#568252", 
+
+				},
+
+				-- Horned Horses (sound/creature/hornedhorse/)
+				["MuteHorned"] = {
+					"mon_hornedhorse_chuff_01.ogg#1489497",
+					"mon_hornedhorse_chuff_02.ogg#1489498",
+					"mon_hornedhorse_chuff_03.ogg#1489499",
+					"mon_hornedhorse_mountspecial_01.ogg#1489503",
+					"mon_hornedhorse_mountspecial_02.ogg#1489504",
+					"mon_hornedhorse_mountspecial_03.ogg#1489505",
+					"mon_hornedhorse_preaggro_01.ogg#1489506",
+					"mon_hornedhorse_preaggro_02.ogg#1489507",
+					"mon_hornedhorse_preaggro_03.ogg#1489508",
+					"mon_hornedhorse_preaggro_04.ogg#1489509",
+					"mon_hornedhorse_aggro_01.ogg#1489484",
+					"mon_hornedhorse_aggro_02.ogg#1489485",
+					"mon_hornedhorse_aggro_03.ogg#1489486",
+					"mon_hornedhorse_wound_01.ogg#1489510", 
+					"mon_hornedhorse_wound_02.ogg#1489511", 
+					"mon_hornedhorse_wound_03.ogg#1489512", 
+					"mon_hornedhorse_wound_04.ogg#1489513", 
+					"mon_hornedhorse_wound_05.ogg#1489514", 
+					"mon_hornedhorse_wound_06.ogg#1489515", 
+					"mon_hornedhorse_wound_07.ogg#1489516", 
+					"mon_hornedhorse_woundcrit_01.ogg#1489517", 
+					"mon_hornedhorse_woundcrit_02.ogg#1489518", 
+					"mon_hornedhorse_woundcrit_03.ogg#1489519", 
+					"mon_hornedhorse_woundcrit_04.ogg#1489520", 
+
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -904,18 +1008,22 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteSniffing", "Sniffing", 16, -132, false, "If checked, the worgen sniffing sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTrains", "Trains", 16, -152, false, "If checked, train sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBalls", "Balls", 16, -172, false, "If checked, the Foot Ball sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -192, false, "If checked, the mechanical guild vault idle sound will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -212, false, "If checked, the ready check sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteEvents", "Events", 16, -192, false, "If checked, holiday event sounds will be muted.|n|nThis applies to Headless Horseman.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -212, false, "If checked, the mechanical guild vault idle sound will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -232, false, "If checked, the ready check sound will be muted.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Combat", 140, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 140, -92, false, "If checked, battle shouts heard when casting specific spells will be muted.")
+			LeaPlusLC:MakeTx(SoundPanel, "Combat", 264, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 264, -92, false, "If checked, battle shouts heard when casting specific spells will be muted.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -132)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -152, false, "If checked, most of the bike mount sounds will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -172, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 140, -192, false, "If checked, Ban-Lu will no longer talk to you.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteATV", "ATV", 140, -212, false, "If checked, Xiwyllag ATV will be muted.")
-			LeaPlusLC:MakeCB(SoundPanel, "MuteGolem", "Golem", 140, -232, false, "If checked, the Sky Golem mount will be muted.")
+			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -92, false, "If checked, most of the bike mount sounds will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -112, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBanLu", "Ban-Lu", 140, -132, false, "If checked, Ban-Lu will no longer talk to you.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteATV", "ATV", 140, -152, false, "If checked, Xiwyllag ATV will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteR21X", "R21X", 140, -172, false, "If checked, the Aerial Unit R-21X will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteGolem", "Golem", 140, -192, false, "If checked, the Sky Golem mount will be muted.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteHorned", "Horned", 140, -212, false, "If checked, horned horses will be muted.|n|nThis applies to Lucid Nightmare, Wild Dreamrunner and Pureheart Courser.")
+			LeaPlusLC:MakeCB(SoundPanel, "MuteGyrocopters", "Gyrocopters", 140, -232, false, "If checked, gyrocopters will be muted.|n|nThis applies to Mimiron's Head, Mecha-Mogul MK2 and other gyrocopter mounts.|n|nEnabling this option will also mute airplane gear shift sounds.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -6712,6 +6820,22 @@
 			Zn(L["Zones"], L["Zandalar"], L["Vol'dun"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Vol'dun"], prefol, "MUS_80_Vol'dun_GeneralWalk_Day#116281", --[["MUS_80_Vol'dun_GeneralWalk_Night#116284",]] "MUS_80_Vol'dun_Ashvane#116538", "MUS_80_Vol'dun_Azerite#116567", "MUS_80_Vol'dun_Distorted#116561", "MUS_80_Vol'dun_Naga#116486", "MUS_80_Vol'dun_Sethrak#116484", "MUS_80_Vol'dun_Tortollan#116485", "MUS_80_Nazmir_Necropolis#116108",})
 			Zn(L["Zones"], L["Zandalar"], L["Zuldazar"]									, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Zuldazar"], prefol, "MUS_80_Zuldazar_GeneralWalk_Day#116611", --[["MUS_80_Zuldazar_GeneralWalk_Night#116629",]] "MUS_80_Zuldazar_Atal'Dazar#117049", "MUS_80_Zuldazar_Azerite#116609", "MUS_80_Zuldazar_BloodMagic#117025", "MUS_80_Zuldazar_Dazar'alor_Day#116674", "MUS_80_Zuldazar_Dazar'alor_Night#116986", --[["MUS_80_Zuldazar_Gral'sGrotto#117011",]] "MUS_80_Zuldazar_Naga#116962", "MUS_80_Zuldazar_Sethrak#116951", "MUS_80_Zuldazar_Tortollan#116964", "MUS_80_DGN_CityofGold_Grand#93663",})
 
+			-- Zones: Shadowlands
+			Zn(L["Zones"], L["Shadowlands"], "|cffffd800", {""})
+			Zn(L["Zones"], L["Shadowlands"], "|cffffd800" .. L["Shadowlands"], {""})
+			Zn(L["Zones"], L["Shadowlands"], L["Exile's Reach"]							, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Exile's Reach"], prefol, "MUS_NPE_GeneralWalk#136278", "MUS_NPE_BattleIntro#136271", "MUS_NPE_BoatIntro#136272", "MUS_NPE_BoatWalk#136273", "MUS_NPE_Camp#136274", "MUS_NPE_DarkmaulCitadel#136277", "MUS_NPE_Harpy#136279", "MUS_NPE_OnFire#136276", "MUS_NPE_Outro#136270", "MUS_NPE_Quillboar#136280", "MUS_NPE_RTC_Attack(NYI)#136297",})
+
+			-- Shadowlands Beta
+			local void, void, void, gametocversion = GetBuildInfo()
+			if gametocversion and gametocversion == 90002 then
+
+				Zn(L["Zones"], L["Shadowlands"], L["Ardenweald"]							, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Ardenweald"], prefol, "ZONE_90_AW_Tree_Withered#173914", "ZONE_90_AW_Tree_WinterQueenRoom#173966", "ZONE_90_AW_Tree_InDanger#173913", "ZONE_90_AW_Tree_Healthy#173969", "ZONE_90_AW_Tree_Drust#173912", "ZONE_90_AW_Serene#173964", "ZONE_90_AW_Mischief_GossamerCliffs#173977", "ZONE_90_AW_Mischief#173976", "ZONE_90_AW_MelancholyDream_GeneralWalk#173962", "ZONE_90_AW_Hunger#173909", "ZONE_90_AW_Hollow_Drust#173911", "ZONE_90_AW_Hollow#173908", "ZONE_90_AW_HeartofTheForest#174034", "ZONE_90_AW_GroveofAwakening#173967", "ZONE_90_AW_Dreamer#173968", "ZONE_90_AW_Devious#173975", "ZONE_90_AW_Amphitheater#173970",})
+				Zn(L["Zones"], L["Shadowlands"], L["Bastion"]								, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Bastion"], prefol, "ZONE_90_BA_Broker_Walk#173825", "ZONE_90_BA_ElysianHold_Kyrian_Walk#173691", "ZONE_90_BA_Forsworn_HEAVY_Walk#173688", "ZONE_90_BA_Forsworn_LIGHT_Walk#173687", "ZONE_90_BA_Forsworn_MEDIUM_Walk#173686", "ZONE_90_BA_Garden_Walk#173684", "ZONE_90_BA_General_Walk#173683", "ZONE_90_BA_Kyrian_Meditative_Walk#173685", "ZONE_90_BA_Kyrian_Temple_Walk#173758", "ZONE_90_BA_Kyrian_Training_GardenWalk#173826", "ZONE_90_BA_Kyrian_Training_Walk#173689", "ZONE_90_BA_Maldraxxus_Walk#173847", "ZONE_90_BA_MirisChapel#173850",})
+				Zn(L["Zones"], L["Shadowlands"], L["Oribos"]								, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Oribos"], prefol, "ZONE_90_OR_RingofFates#173954", "ZONE_90_OR_RingofTransference#173953",})
+				Zn(L["Zones"], L["Shadowlands"], L["Revendreth"]							, {	"|cffffd800" .. L["Zones"] .. ": " .. L["Revendreth"], prefol, "Zone_90_RD_EmberCourt_GeneralWalk#172764", "ZONE_90_RD_Forest_GeneralWalk#174072", "ZONE_90_RD_Ruins#174073", "ZONE_90_RD_Courtyard#174074", "ZONE_90_RD_Decadence#174075", "ZONE_90_RD_Sinister#174077", "ZONE_90_RD_Swamp#174078", "ZONE_90_RD_Sinfall#174079", --[["ZONE_90_RD_Interior#174080",]] "ZONE_90_RD_Scortched#174076",})
+
+			end
+
 			-- Dungeons: World of Warcraft
 			Zn(L["Dungeons"], L["World of Warcraft"], "|cffffd800" .. L["World of Warcraft"], {""})
 			Zn(L["Dungeons"], L["World of Warcraft"], L["Blackfathom Deeps"]			, {	"|cffffd800" .. L["Dungeons"] .. ": " .. L["Blackfathom Deeps"], prefol, "Zone-Desert Day#4754", "Zone-Desert Night#4755",})
@@ -7017,7 +7141,7 @@
 				"|cffffd800", "|cffffd800" .. L["Havenswood"], "MUS_81_Islands_Havenswood_Walk#125908", 
 				"|cffffd800", "|cffffd800" .. L["Jorundall"], "MUS_81_Islands_Jorundall_Walk#126149",
 			})
-			Zn(L["Various"], L["Various"], L["Main Titles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Main Titles"], prefol, "GS_Retail#10924", "GS_BurningCrusade#10925", "GS_LichKing#12765", "GS_Cataclysm#23640", "MUS_50_HeartofPandaria_MainTitle#28509", "MUS_60_MainTitle#40169", "MUS_70_MainTitle#56353", "MUS_80_MainTitle#113559", "mus_90_throughtheroofoftheworld_maintitle.mp3#3850553"}) -- "MUS_1.0_MainTitle_Original#47598"
+			Zn(L["Various"], L["Various"], L["Main Titles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Main Titles"], prefol, "GS_Retail#10924", "GS_BurningCrusade#10925", "GS_LichKing#12765", "GS_Cataclysm#23640", "MUS_50_HeartofPandaria_MainTitle#28509", "MUS_60_MainTitle#40169", "MUS_70_MainTitle#56353", "MUS_80_MainTitle#113559", "MUS_90_MainTitle#170711",}) -- "MUS_1.0_MainTitle_Original#47598"
 			Zn(L["Various"], L["Various"], L["Music Rolls"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Music Rolls"], prefol, "MUS_61_GarrisonMusicBox_01#49511", "MUS_61_GarrisonMusicBox_02#49512", "MUS_61_GarrisonMusicBox_03#49513", "MUS_61_GarrisonMusicBox_04#49514", "MUS_61_GarrisonMusicBox_05#49515", "MUS_61_GarrisonMusicBox_06#49516", "MUS_61_GarrisonMusicBox_07#49529", "MUS_61_GarrisonMusicBox_08#49530", "MUS_61_GarrisonMusicBox_09#49531", "MUS_61_GarrisonMusicBox_10#49533", "MUS_61_GarrisonMusicBox_11#49535", "MUS_61_GarrisonMusicBox_12#49536", "MUS_61_GarrisonMusicBox_13#49538", "MUS_61_GarrisonMusicBox_14#49539", "MUS_61_GarrisonMusicBox_15#49540", "MUS_61_GarrisonMusicBox_16#49541", "MUS_61_GarrisonMusicBox_17#49543", "MUS_61_GarrisonMusicBox_18#49544", "MUS_61_GarrisonMusicBox_19#49545", "MUS_61_GarrisonMusicBox_20#49546", "MUS_61_GarrisonMusicBox_21#49526", "MUS_61_GarrisonMusicBox_22#49528", "MUS_61_GarrisonMusicBox_23_Alliance#49517", "MUS_61_GarrisonMusicBox_24_Alliance#49518", "MUS_61_GarrisonMusicBox_25_Alliance#49519", "MUS_61_GarrisonMusicBox_26_Alliance#49520", "MUS_61_GarrisonMusicBox_27_Alliance#49521", "MUS_61_GarrisonMusicBox_28_Alliance#49522", "MUS_61_GarrisonMusicBox_29_Alliance#49523", "MUS_61_GarrisonMusicBox_30_Alliance#49524", "MUS_61_GarrisonMusicBox_31_Alliance#49525", "MUS_61_GarrisonMusicBox_23_Horde#49555", "MUS_61_GarrisonMusicBox_24_Horde#49554", "MUS_61_GarrisonMusicBox_25_Horde#49553", "MUS_61_GarrisonMusicBox_26_Horde#49552", "MUS_61_GarrisonMusicBox_27_Horde#49551", "MUS_61_GarrisonMusicBox_28_Horde#49550", "MUS_61_GarrisonMusicBox_29_Horde#49549", "MUS_61_GarrisonMusicBox_30_Horde#49548", "MUS_61_GarrisonMusicBox_31_Horde#49547",})
 			Zn(L["Various"], L["Various"], L["Narration"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Narration"], prefol, "BloodElfFlybyNarration#9156", "DeathKnightFlybyNarration#12938", "DraeneiFlybyNarration#9155", "DwarfFlyByNarration#3740", "GnomeFlyByNarration#3841", "GoblinFlybyNarration#23106", "HumanFlyByNarration#3840", "NightElfFlyByNarration#3800", "OrcFlyByNarration#3760", "PandarenFlybyNarration#31699", "TaurenFlyByNarration#4122", "TrollFlyByNarration#4080", "WorgenFlybyNarration#23105", "UndeadFlybyNarration#3358",})
 			Zn(L["Various"], L["Various"], L["Pet Battles"]								, {	"|cffffd800" .. L["Various"] .. ": " .. L["Pet Battles"], prefol, "MUS_50_PetBattles_01#28753", "MUS_50_PetBattles_02#28754",})

@@ -40,6 +40,25 @@ MADB = {
 					},
 					["orgScale"] = 1,
 				},
+				["PlayerPowerBarAltMover"] = {
+					["orgPos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						155, -- [5]
+					},
+					["name"] = "PlayerPowerBarAltMover",
+					["scale"] = 0.7999999523162842,
+					["orgScale"] = 1,
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						300, -- [5]
+					},
+				},
 				["TargetFrame"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -201,7 +220,6 @@ MADB = {
 	},
 	["tooltips"] = true,
 	["closeGUIOnEscape"] = false,
-	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,

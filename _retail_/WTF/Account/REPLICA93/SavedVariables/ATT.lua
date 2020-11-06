@@ -1,41 +1,43 @@
 
 ATTDB = {
 	["classSelected"] = "WARRIOR",
-	["growLeft"] = false,
-	["showRacial"] = false,
-	["dampening"] = true,
+	["growLeft"] = true,
+	["scale"] = 0.6,
 	["showSelf"] = true,
-	["flash"] = 1,
-	["maledict"] = false,
 	["tworows"] = true,
-	["offsetX"] = 2,
+	["offsetX"] = 0,
 	["lock"] = true,
-	["biggroup"] = true,
 	["Trinkets"] = {
-		["maledict"] = false,
-		["adapted"] = true,
 		["pvptrinket"] = true,
+		["adapted"] = false,
 	},
 	["positions"] = {
 	},
-	["scale"] = 0.5,
-	["offsetY"] = -6,
-	["showTrinket"] = true,
-	["inraid"] = true,
-	["iconOffsetY"] = 0,
-	["showIconBorders"] = true,
-	["outside"] = true,
-	["hidden"] = true,
-	["dungeons"] = true,
+	["iconOffsetY"] = 2,
+	["Essence"] = {
+	},
+	["outside"] = false,
+	["hidden"] = false,
+	["attach"] = 1,
+	["version"] = 8.86,
 	["arena"] = true,
-	["scenarios"] = true,
 	["abilities"] = {
 		["HUNTER"] = {
 			["254"] = {
+				{
+					["ability"] = "Counter Shot",
+					["cooldown"] = 24,
+					["id"] = 147362,
+				}, -- [1]
 			},
 			["255"] = {
 			},
 			["253"] = {
+				{
+					["ability"] = "Counter Shot",
+					["cooldown"] = 24,
+					["id"] = 147362,
+				}, -- [1]
 			},
 			["ALL"] = {
 				{
@@ -48,6 +50,11 @@ ATTDB = {
 					["cooldown"] = 60,
 					["id"] = 53480,
 				}, -- [2]
+				{
+					["ability"] = "Exhilaration",
+					["cooldown"] = 120,
+					["id"] = 109304,
+				}, -- [3]
 			},
 		},
 		["WARRIOR"] = {
@@ -64,18 +71,38 @@ ATTDB = {
 			},
 			["ALL"] = {
 				{
-					["ability"] = "Rallying Cry",
-					["cooldown"] = 180,
-					["id"] = 97462,
+					["ability"] = "Pummel",
+					["cooldown"] = 15,
+					["id"] = 6552,
 				}, -- [1]
+				{
+					["ability"] = "Spell Reflection",
+					["cooldown"] = 25,
+					["id"] = 23920,
+				}, -- [2]
 			},
 		},
 		["SHAMAN"] = {
 			["262"] = {
 			},
 			["264"] = {
+				{
+					["ability"] = "Spirit Link Totem",
+					["cooldown"] = 180,
+					["id"] = 98008,
+				}, -- [1]
+				{
+					["ability"] = "Earthen Wall Totem",
+					["cooldown"] = 60,
+					["id"] = 198838,
+				}, -- [2]
 			},
 			["263"] = {
+				{
+					["ability"] = "Ethereal Form",
+					["cooldown"] = 60,
+					["id"] = 210918,
+				}, -- [1]
 			},
 			["ALL"] = {
 				{
@@ -83,6 +110,11 @@ ATTDB = {
 					["cooldown"] = 90,
 					["id"] = 108271,
 				}, -- [1]
+				{
+					["ability"] = "Wind Shear",
+					["cooldown"] = 12,
+					["id"] = 57994,
+				}, -- [2]
 			},
 		},
 		["MAGE"] = {
@@ -99,31 +131,55 @@ ATTDB = {
 					["id"] = 198111,
 				}, -- [1]
 				{
+					["ability"] = "Counterspell",
+					["cooldown"] = 24,
+					["id"] = 2139,
+				}, -- [2]
+				{
 					["ability"] = "Ice Block",
 					["cooldown"] = 240,
 					["id"] = 45438,
-				}, -- [2]
+				}, -- [3]
 			},
 		},
 		["PRIEST"] = {
 			["257"] = {
+				{
+					["ability"] = "Holy Word: Serenity",
+					["cooldown"] = 60,
+					["id"] = 2050,
+				}, -- [1]
+				{
+					["ability"] = "Holy Word: Sanctify",
+					["cooldown"] = 60,
+					["id"] = 34861,
+				}, -- [2]
+				{
+					["ability"] = "Holy Word: Concentration",
+					["cooldown"] = 45,
+					["id"] = 289657,
+				}, -- [3]
+				{
+					["ability"] = "Greater Fade",
+					["cooldown"] = 45,
+					["id"] = 213602,
+				}, -- [4]
+				{
+					["ability"] = "Ray of Hope",
+					["cooldown"] = 60,
+					["id"] = 197268,
+				}, -- [5]
+				{
+					["ability"] = "Guardian Spirit",
+					["cooldown"] = 180,
+					["id"] = 47788,
+				}, -- [6]
 			},
 			["258"] = {
 				{
 					["ability"] = "Dispersion",
 					["cooldown"] = 120,
 					["id"] = 47585,
-				}, -- [1]
-			},
-			["256"] = {
-			},
-			["ALL"] = {
-				{
-					["spellStatus"] = "ENABLED",
-					["ability"] = "Mass Dispel",
-					["order"] = 1,
-					["cooldown"] = 45,
-					["id"] = 32375,
 				}, -- [1]
 				{
 					["ability"] = "Void Shift",
@@ -136,9 +192,63 @@ ATTDB = {
 					["id"] = 213602,
 				}, -- [3]
 			},
+			["256"] = {
+				{
+					["ability"] = "Psychic Scream",
+					["cooldown"] = 60,
+					["id"] = 8122,
+				}, -- [1]
+				{
+					["ability"] = "Pain Suppression",
+					["cooldown"] = 180,
+					["id"] = 33206,
+				}, -- [2]
+				{
+					["ability"] = "Power Word: Barrier",
+					["cooldown"] = 180,
+					["id"] = 62618,
+				}, -- [3]
+				{
+					["ability"] = "Luminous Barrier",
+					["cooldown"] = 180,
+					["id"] = 271466,
+				}, -- [4]
+			},
+			["ALL"] = {
+			},
 		},
 		["PALADIN"] = {
 			["65"] = {
+				{
+					["ability"] = "Divine Shield",
+					["cooldown"] = 300,
+					["id"] = 642,
+				}, -- [1]
+				{
+					["ability"] = "Avenging Crusader",
+					["cooldown"] = 120,
+					["id"] = 216331,
+				}, -- [2]
+				{
+					["ability"] = "Blessing of Protection",
+					["cooldown"] = 300,
+					["id"] = 1022,
+				}, -- [3]
+				{
+					["ability"] = "Blessing of Freedom",
+					["cooldown"] = 25,
+					["id"] = 1044,
+				}, -- [4]
+				{
+					["ability"] = "Repentance",
+					["cooldown"] = 15,
+					["id"] = 20066,
+				}, -- [5]
+				{
+					["ability"] = "Avenging Wrath",
+					["cooldown"] = 180,
+					["id"] = 31884,
+				}, -- [6]
 			},
 			["70"] = {
 				{
@@ -147,17 +257,27 @@ ATTDB = {
 					["id"] = 642,
 				}, -- [1]
 				{
+					["ability"] = "Rebuke",
+					["cooldown"] = 15,
+					["id"] = 96231,
+				}, -- [2]
+				{
 					["ability"] = "Blessing of Protection",
 					["cooldown"] = 300,
 					["id"] = 1022,
-				}, -- [2]
+				}, -- [3]
 				{
 					["ability"] = "Blessing of Sanctuary",
 					["cooldown"] = 45,
 					["id"] = 210256,
-				}, -- [3]
+				}, -- [4]
 			},
 			["66"] = {
+				{
+					["ability"] = "Rebuke",
+					["cooldown"] = 15,
+					["id"] = 96231,
+				}, -- [1]
 			},
 			["ALL"] = {
 			},
@@ -171,15 +291,25 @@ ATTDB = {
 			},
 			["ALL"] = {
 				{
+					["ability"] = "Spell Lock",
+					["cooldown"] = 24,
+					["id"] = 19647,
+				}, -- [1]
+				{
 					["ability"] = "Unending Resolve",
 					["cooldown"] = 180,
 					["id"] = 104773,
-				}, -- [1]
+				}, -- [2]
+				{
+					["ability"] = "Dark Pact",
+					["cooldown"] = 60,
+					["id"] = 108416,
+				}, -- [3]
 				{
 					["ability"] = "Nether Ward",
 					["cooldown"] = 45,
 					["id"] = 212295,
-				}, -- [2]
+				}, -- [4]
 			},
 		},
 		["DEMONHUNTER"] = {
@@ -189,6 +319,11 @@ ATTDB = {
 					["cooldown"] = 180,
 					["id"] = 196718,
 				}, -- [1]
+				{
+					["ability"] = "Netherwalk",
+					["cooldown"] = 180,
+					["id"] = 196555,
+				}, -- [2]
 			},
 			["581"] = {
 			},
@@ -198,10 +333,20 @@ ATTDB = {
 					["cooldown"] = 60,
 					["id"] = 198589,
 				}, -- [1]
+				{
+					["ability"] = "Disrupt",
+					["cooldown"] = 15,
+					["id"] = 183752,
+				}, -- [2]
 			},
 		},
 		["DEATHKNIGHT"] = {
 			["252"] = {
+				{
+					["ability"] = "Anti-Magic Zone",
+					["cooldown"] = 120,
+					["id"] = 51052,
+				}, -- [1]
 			},
 			["251"] = {
 			},
@@ -209,26 +354,36 @@ ATTDB = {
 			},
 			["ALL"] = {
 				{
+					["ability"] = "Mind Freeze",
+					["cooldown"] = 15,
+					["id"] = 47528,
+				}, -- [1]
+				{
 					["ability"] = "Anti-Magic Shell",
 					["cooldown"] = 60,
 					["id"] = 48707,
-				}, -- [1]
+				}, -- [2]
 				{
 					["ability"] = "Icebound Fortitude",
 					["cooldown"] = 180,
 					["id"] = 48792,
-				}, -- [2]
-				{
-					["ability"] = "Anti-Magic Zone",
-					["cooldown"] = 120,
-					["id"] = 51052,
 				}, -- [3]
 			},
 		},
 		["DRUID"] = {
 			["105"] = {
+				{
+					["ability"] = "Ironbark",
+					["cooldown"] = 90,
+					["id"] = 102342,
+				}, -- [1]
 			},
 			["104"] = {
+				{
+					["ability"] = "Skull Bash",
+					["cooldown"] = 15,
+					["id"] = 106839,
+				}, -- [1]
 			},
 			["102"] = {
 				{
@@ -236,44 +391,63 @@ ATTDB = {
 					["cooldown"] = 60,
 					["id"] = 78675,
 				}, -- [1]
+			},
+			["103"] = {
+				{
+					["ability"] = "Skull Bash",
+					["cooldown"] = 15,
+					["id"] = 106839,
+				}, -- [1]
+				{
+					["ability"] = "Survival Instincts",
+					["cooldown"] = 180,
+					["id"] = 61336,
+				}, -- [2]
+			},
+			["ALL"] = {
 				{
 					["ability"] = "Barkskin",
 					["cooldown"] = 60,
 					["id"] = 22812,
-				}, -- [2]
-				{
-					["ability"] = "Renewal",
-					["cooldown"] = 90,
-					["id"] = 108238,
-				}, -- [3]
-			},
-			["103"] = {
-				{
-					["maxcharges"] = 2,
-					["id"] = 61336,
-					["cooldown"] = 180,
-					["ability"] = "Survival Instincts",
 				}, -- [1]
-			},
-			["ALL"] = {
 			},
 		},
 		["MONK"] = {
 			["270"] = {
+				{
+					["ability"] = "Life Cocoon",
+					["cooldown"] = 120,
+					["id"] = 116849,
+				}, -- [1]
+				{
+					["ability"] = "Fortifying Brew",
+					["cooldown"] = 420,
+					["id"] = 243435,
+				}, -- [2]
 			},
 			["269"] = {
+				{
+					["ability"] = "Spear Hand Strike",
+					["cooldown"] = 15,
+					["id"] = 116705,
+				}, -- [1]
 				{
 					["ability"] = "Touch of Karma",
 					["cooldown"] = 90,
 					["id"] = 122470,
-				}, -- [1]
+				}, -- [2]
 				{
 					["ability"] = "Fortifying Brew",
-					["cooldown"] = 90,
-					["id"] = 201318,
-				}, -- [2]
+					["cooldown"] = 420,
+					["id"] = 243435,
+				}, -- [3]
 			},
 			["268"] = {
+				{
+					["ability"] = "Spear Hand Strike",
+					["cooldown"] = 15,
+					["id"] = 116705,
+				}, -- [1]
 			},
 			["ALL"] = {
 			},
@@ -287,6 +461,16 @@ ATTDB = {
 				}, -- [1]
 			},
 			["260"] = {
+				{
+					["ability"] = "Crimson Vial",
+					["cooldown"] = 30,
+					["id"] = 185311,
+				}, -- [1]
+				{
+					["ability"] = "Riposte",
+					["cooldown"] = 120,
+					["id"] = 199754,
+				}, -- [2]
 			},
 			["259"] = {
 				{
@@ -297,22 +481,26 @@ ATTDB = {
 			},
 			["ALL"] = {
 				{
+					["ability"] = "Kick",
+					["cooldown"] = 15,
+					["id"] = 1766,
+				}, -- [1]
+				{
 					["ability"] = "Cloak of Shadows",
 					["cooldown"] = 120,
 					["id"] = 31224,
-				}, -- [1]
+				}, -- [2]
 				{
 					["ability"] = "Vanish",
 					["cooldown"] = 120,
 					["id"] = 1856,
-				}, -- [2]
+				}, -- [3]
 			},
 		},
 	},
-	["glow"] = false,
-	["iconOffsetX"] = 0,
-	["horizontal"] = false,
-	["Essence"] = {
-	},
-	["attach"] = 1,
+	["glow"] = true,
+	["iconOffsetX"] = 2,
+	["offsetY"] = 0,
+	["showIconBorders"] = true,
+	["biggroup"] = true,
 }

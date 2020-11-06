@@ -29,7 +29,7 @@ local GetInventoryItemID = GetInventoryItemID
 local GetInspectSelectedPvpTalent = C_SpecializationInfo.GetInspectSelectedPvpTalent
 local LGlow = LibStub("LibButtonGlow-1.0")
 local ChatPrefix  = "ATT-Check"
-local ATTversion = 8.82
+local ATTversion = 8.86
 local ATTnewversion
 local db
 local dbModif = ATTdefault.dbModif
@@ -42,6 +42,7 @@ local dbReplace = ATTdefault.dbReplace
 local dbEssences = ATTdefault.dbEssences
 local dbCharge = ATTdefault.dbCharge
 local dbModifCharge = ATTdefault.dbModifCharge
+local dbRanks = ATTdefault.dbRanks
 local ATT = CreateFrame("Frame","ATT",UIParent)
 local ATTIcons = CreateFrame("Frame",nil,UIParent)
 local ATTAnchor = CreateFrame("Frame",nil,UIParent)
@@ -137,7 +138,7 @@ local dbExtra = {
   {	["ability"] = Emblem, ["id"] = 277187, ["cooldown"] = 90, ["sname"] = "emblem",},
  }
 
-  local dbVisibility = {
+local dbVisibility = {
  {	["ability"] = "arena" , ["atexture"] = "Show in Arena",}, 
  {	["ability"] = "dungeons" , ["atexture"] = "Show in Dungeons",}, 
  {	["ability"] = "scenarios" , ["atexture"] = "Show in Scenarios",}, 
@@ -725,13 +726,20 @@ function ATT:UpdateAnchor(unit, i)
             local modif = self:FindAbilityByName(dbModif, id)
             local mcharge = self:FindAbilityByName(dbModifCharge, id)
             local replace = self:FindAbilityByName(dbReplace, id)
-
+            local spellrank = self:FindAbilityByName(dbRanks, id)
+            
+            if modif and GetSpellSubtext(modif.mod) == ("PvP Talent") and not pvpactive then modif.mod = nil end 
             if useClonflict and SpellText == ("PvP Talent") then if self:FindAbilityByName(dbConflict, id) then SpellText = nil end end
             if replace and (self:FindAbilityByName(dbInspect, replace.mod) or self:FindAbilityByName(dbInspect, replace.mod2)) then ability = nil end
-            if spellStatus == "DISABLED" or self:FindAbilityByName(dbInspect, ability) or (tcheck and tcheck.isPVP and not pvpactive) or (SpellText == ("PvP Talent") and not tcheck) then ability = nil;  end
+            if spellStatus == "DISABLED" or self:FindAbilityByName(dbInspect, ability) or (tcheck and tcheck.isPVP and not pvpactive) or (SpellText == ("PvP Talent") and not tcheck) then ability = nil; end
             if ability and self:FindAbilityByName(dbEssVoP, id) and dbInspect[41] and dbInspect[41].VoP then cooldown = cooldown - (cooldown/4)  end
             if modif and dbInspect[40] and dbInspect[40].azzmod and modif.azTid == dbInspect[40].azzmod then cooldown = cooldown - modif.azCD end
-            if ability and modif and modif.cooldown and self:FindAbilityByName(dbInspect, modif.mod) then cooldown = modif.cooldown end
+            if ability and spellrank and spellrank.lvl <= UnitLevel(unit) then cooldown = cooldown - spellrank.cooldown end
+            if ability and spellrank and spellrank.lvl2 and spellrank.lvl2 <= UnitLevel(unit) then cooldown = cooldown - spellrank.cooldown2 end
+           
+            if ability and modif and self:FindAbilityByName(dbInspect, modif.mod) then
+            if modif.cooldown then cooldown = cooldown - modif.cooldown end
+            if modif.cooldownexp then cooldown = cooldown * modif.cooldownexp end end
 
             icon.texture:SetTexture(self:FindAbilityIcon(ability, id))
             icon.GUID = anchor.GUID
@@ -771,14 +779,21 @@ function ATT:UpdateAnchor(unit, i)
             local modif = self:FindAbilityByName(dbModif, id)
             local mcharge = self:FindAbilityByName(dbModifCharge, id)
             local replace = self:FindAbilityByName(dbReplace, id)
-
+            local spellrank = self:FindAbilityByName(dbRanks, id)
+            
+            if modif and GetSpellSubtext(modif.mod) == ("PvP Talent") and not pvpactive then modif.mod = nil end 
             if useClonflict and SpellText == ("PvP Talent") then if self:FindAbilityByName(dbConflict, id) then SpellText = nil end end
-            if replace and (self:FindAbilityByName(dbInspect, replace.mod) or self:FindAbilityByName(dbInspect, replace.mod2)) then ability = nil end
+            if replace and (self:FindAbilityByName(dbInspect, replace.mod) or self:FindAbilityByName(dbInspect, replace.mod2)) then ability = nil  end
             if spellStatus == "DISABLED" or self:FindAbilityByName(dbInspect, ability) or (tcheck and tcheck.isPVP and not pvpactive) or (SpellText == ("PvP Talent") and not tcheck) then ability = nil end
             if ability and self:FindAbilityByName(dbEssVoP, id) and dbInspect[41] and dbInspect[41].VoP then cooldown = cooldown - (cooldown/4) end
             if modif and dbInspect[40] and dbInspect[40].azzmod and modif.azTid == dbInspect[40].azzmod then cooldown = cooldown - modif.azCD end
-            if ability and modif and modif.cooldown and self:FindAbilityByName(dbInspect, modif.mod) then cooldown = modif.cooldown end
+            if ability and spellrank and spellrank.lvl <= UnitLevel(unit) then cooldown = cooldown - spellrank.cooldown; end
+            if ability and spellrank and spellrank.lvl2 and spellrank.lvl2 <= UnitLevel(unit) then cooldown = cooldown - spellrank.cooldown2 end
 
+            if ability and modif and self:FindAbilityByName(dbInspect, modif.mod) then
+            if modif.cooldown then cooldown = cooldown - modif.cooldown end
+            if modif.cooldownexp then cooldown = cooldown * modif.cooldownexp end end
+            
             icon.texture:SetTexture(self:FindAbilityIcon(ability, id))
             icon.GUID = anchor.GUID
             icon.ability = ability
@@ -1157,6 +1172,7 @@ function ATT:COMBAT_LOG_EVENT_UNFILTERED()
     local _, event, _, sourceGUID, sourceName, _, _, destGUID, destName, _, _, SentID, spellName, _, auraType,test,test2,test3 = CombatLogGetCurrentEventInfo()
     
     if SentID == 277179 then spellName = GetItemInfo(172846) end -- blizz spellname overlap
+    if SentID == 204362 or SentID == 204361 then SentID = 193876; spellName = GetSpellInfo(193876) end  --bl fix
     if self:GetUnitByGUID(sourceGUID) and ((event == "SPELL_CAST_SUCCESS") or ((event == "SPELL_AURA_APPLIED") and (spellName == Stoneform or spellName == Fireblood or spellName == Safeguard))) then
         self:StartCooldown(spellName, self:GetUnitByGUID(sourceGUID), SentID)
     end
@@ -1302,21 +1318,18 @@ local function ATT_OnLoad(self)
     if C_ChatInfo.RegisterAddonMessagePrefix(ChatPrefix) then self.useCrossAddonCommunication = true end
     if self.useCrossAddonCommunication then self:RegisterEvent("CHAT_MSG_ADDON") end
     self:SetScript("OnEvent",function(self,event, ...) if self[event] then self[event](self, ...) end end);
-    ATTDB = ATTDB or { abilities = ATTdefaultAbilities, scale = 1, iconOffsetX = 5 , iconOffsetY = 2 , offsetX = 0, offsetY = 0, attach = 0, showSelf = true, outside = true, glow = true}
+    if ATTDB and (not ATTDB.version or (ATTDB.version and ATTDB.version < 8.85)) then 
+    ATTDB = { abilities = ATTdefaultAbilities, scale = 1, iconOffsetX = 5 , iconOffsetY = 2 , offsetX = 0, offsetY = 0, attach = 0, showSelf = true, outside = true, arena = true, glow = true, Trinkets = {} , Essence = {} } end
+    ATTDB = ATTDB or { abilities = ATTdefaultAbilities, scale = 1, iconOffsetX = 5 , iconOffsetY = 2 , offsetX = 0, offsetY = 0, attach = 0, showSelf = true, outside = true, arena = true, glow = true, Trinkets = {} , Essence = {} }
     db = ATTDB
+    db.version = ATTversion
     db.classSelected = "WARRIOR"
-    
-    --upd 8.3+ db fix
-    if not tonumber(db.iconOffsetX or db.iconOffsetY or db.offsetX or db.offsetY) then db.iconOffsetX = 5 ; db.iconOffsetY = 2 ; db.offsetX = 0; db.offsetY = 0  end
-    if db.attach == true then db.attach = 1 elseif db.attach == false then db.attach = 0 end
-    if not db.Essence then db.Essence = {} end
-    if not db.Trinkets then db.Trinkets = {} end
-    ---
+
     self:CreateAnchors()
     self:CreateOptions()
     self:UpdateScrollBar()
  -- self:CheckProfile()
-    print("|cff33ff99A|rrena |cff33ff99T|ream |cff33ff99T|rracker by |cff33ff99Izy|r. Type |cffFF4500/att|r to open options.")
+    print("|cff33ff99A|rrena |cff33ff99T|ream |cff33ff99T|rracker by |cff33ff99Izy|r |cffFF4500(SL beta 2)|r. Type |cffFF4500/att|r to open options.")
 end
 
 function ATT:FindAbilityIcon(ability, id)
@@ -1495,7 +1508,7 @@ function ATT:CreateOptions()
     iconOffsetY:SetPoint("LEFT", iconOffsetX, "RIGHT", 15, 0)
 
     local lock = panel:MakeToggle(
-        'name', 'Lock anchor',
+        'name', 'Hide anchor',
         'description', 'Hide/Lock anchors',
         'default', false,
         'getFunc', function() return db.lock end,
@@ -1528,7 +1541,7 @@ function ATT:CreateOptions()
 
     local dampening = panel:MakeToggle(
         'name', 'Dampening',
-        'description', 'Show dampening procent ( % )\nunder remaining time in arena',
+        'description', 'Show dampening percent ( % )\nunder remaining time in arena',
         'default', false,
         'getFunc', function() return db.dampening end,
         'setFunc', function(value) db.dampening = value; ATT:UNIT_AURA("player"); self:ApplyAnchorSettings() end)
@@ -1900,7 +1913,6 @@ function ATT:CreateAbilityEditor()
         'func', function()
             local title =  "Trinkets Tab"
             CreateListFrame(title)
-
             local isFrame = CreateFrame("ScrollFrame", "ATC", iFrame, "UIPanelScrollFrameTemplate");
             isFrame:SetSize(210, 175);
             isFrame:SetPoint("TOPLEFT", iFrame, "TOPLEFT", 10, -35)
@@ -2029,10 +2041,20 @@ function ATT:CreateAbilityEditor()
             childiF:SetSize(1,1);
             isFrame:SetScrollChild(childiF)
             self.isFrame = childiF
-       local desc =  iFrame:CreateFontString(nil,"ARTWORK","GameFontNormal")
+        local desc =  iFrame:CreateFontString(nil,"ARTWORK","GameFontNormal")
         desc:SetText("work in progress")
         desc:SetJustifyH("CENTER")
         desc:SetPoint("TOP", iFrame, "TOP", 0, -50)
+        
+        local reset = CreateFrame("button","resetbtn", iFrame, "UIPanelButtonTemplate")
+        reset:SetHeight(25)
+        reset:SetWidth(100)
+        reset:SetPoint("BOTTOM", desc, "BOTTOM", 0, -50)
+        reset:SetText("Reset Addon")
+        reset:SetScript("OnClick", function(self) 
+        ATTDB = {}
+        ReloadUI();
+        self:GetParent():Hide() end)
         end)
     showProfiles:SetPoint("LEFT", showTrinkets, "RIGHT", 370, 0)
 

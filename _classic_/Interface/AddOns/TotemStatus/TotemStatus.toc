@@ -1,7 +1,7 @@
 ## Interface: 11305
 ## Title: TotemStatus
 ## Author: Seidhr@US/Oceanic-Yojamba 
-## Version: 2.8.0
+## Version: 2.8.2
 ## SavedVariablesPerCharacter: TS_Settings, TS_ActiveTotems
 
 SettingsUI.lua

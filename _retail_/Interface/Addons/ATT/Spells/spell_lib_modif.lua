@@ -1,75 +1,151 @@
 local addon, ATTdefault = ...
 
 ATTdefault.dbModif = {
-    {	["ability"] = 62618, ["mod"]= 197590, ["cooldown"] = 90 }, 
-    {	["ability"] = 275699, ["mod"]= 288848, ["cooldown"] = 45 },
-    {	["ability"] = 47568, ["mod"]= 233394, ["cooldown"] = 60 },
-    {	["ability"] = 49028, ["mod"]= 233412, ["cooldown"] = 60 },
-    {	["ability"] = 48707, ["mod"]= 205727, ["cooldown"] = 40 },--
-    {	["ability"] = 108199, ["mod"]= 206970, ["cooldown"] = 90 },
-    {	["ability"] = 200166, ["mod"]= 235893, ["cooldown"] = 120 },
-    {	["ability"] = 179057, ["mod"]= 206477, ["cooldown"] = 40 },
-    {	["ability"] = 207684, ["mod"]= 209281, ["cooldown"] = 72 },
-    {	["ability"] = 202137, ["mod"]= 209281, ["cooldown"] = 48 },
-    {	["ability"] = 204596, ["mod"]= 209281, ["cooldown"] = 24 },
+    {	["ability"] = 62618, ["mod"]= 197590, ["cooldown"] = 90 }, -- 90
+    {	["ability"] = 275699, ["mod"]= 288848, ["cooldown"] = 45 }, -- 45
+    {	["ability"] = 47568, ["mod"]= 233394, ["cooldownexp"] = .50 }, --50%
+    {	["ability"] = 49028, ["mod"]= 233412, ["cooldownexp"] = .50 }, --50%
+    {	["ability"] = 48707, ["mod"]= 205727, ["cooldown"] = 20 },-- 20
+    {	["ability"] = 108199, ["mod"]= 206970, ["cooldown"] = 30 }, -- 30
+    {	["ability"] = 200166, ["mod"]= 235893, ["cooldown"] = 120 }, -- 120
+    {	["ability"] = 179057, ["mod"]= 206477, ["cooldown"] = 20 }, -- 20
+    {	["ability"] = 207684, ["mod"]= 209281, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 202137, ["mod"]= 209281, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 204596, ["mod"]= 209281, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 186257, ["mod"]= 203235, ["cooldownexp"] = .50 }, -- 50%
+    {	["ability"] = 204596, ["mod"]= 211489, ["cooldownexp"] = .75 }, -- 25%
+    {	["ability"] = 202138, ["mod"]= 211489, ["cooldownexp"] = .75 }, -- 25%
+    {	["ability"] = 202137, ["mod"]= 211489, ["cooldownexp"] = .75 }, -- 25%
+    {	["ability"] = 207684, ["mod"]= 211489, ["cooldownexp"] = .75 }, -- 25%
  --   {	["ability"] = 102342, ["mod"]= 197061, ["cooldown"] = 45 }, --removed cd
-    {	["ability"] = 22812, ["mod"]= 203965, ["cooldown"] = 60 },
-    {	["ability"] = 61336, ["mod"]= 203965, ["cooldown"] = 160 },
-    {	["ability"] = 186289, ["mod"]= 266921, ["cooldown"] = 72 },
-    {	["ability"] = 186257, ["mod"]= 266921, ["cooldown"] = 144 },
-    {	["ability"] = 186265, ["mod"]= 266921, ["cooldown"] = 144 },
-    {	["ability"] = 288613, ["mod"]= 203129, ["cooldown"] = 100 },
-    {	["ability"] = 110960, ["mod"]= 210476, ["cooldown"] = 75 },
-    {	["ability"] = 109132, ["mod"]= 115173, ["cooldown"] = 15 },
-    {	["ability"] = 119381, ["mod"]= 264348, ["cooldown"] = 50},
-    {	["ability"] = 116849, ["mod"]= 202424, ["cooldown"] = 95, ["azTid"] = 277667, ["azCD"] = 20},
-    {	["ability"] = 119996, ["mod"]= 216255, ["cooldown"] = 25 },
-    {	["ability"] = 115203, ["mod"]= 202107, ["cooldown"] = 180 },
-    {	["ability"] = 115176, ["mod"]= 202200, ["cooldown"] = 75 },
-    {	["ability"] = 642, ["mod"]= 114154, ["cooldown"] = 210 },
-    {	["ability"] = 498, ["mod"]= 114154, ["cooldown"] = 42 },
-    {	["ability"] = 633, ["mod"]= 114154, ["cooldown"] = 420 },
-    {	["ability"] = 184662, ["mod"]= 114154, ["cooldown"] = 84 },
-    {	["ability"] = 31850, ["mod"]= 114154, ["cooldown"] = 84 },
-    {	["ability"] = 204018, ["mod"]= 216853, ["cooldown"] = 120 },
-    {	["ability"] = 1022, ["mod"]= 216853, ["cooldown"] = 200 },
-    {	["ability"] = 6940, ["mod"]= 216853, ["cooldown"] = 80 },
-    {	["ability"] = 47788, ["mod"]= 196602, ["cooldown"] = 120 },
-    {	["ability"] = 8122, ["mod"]= 196704, ["cooldown"] = 30 },
-    {	["ability"] = 15487, ["mod"]= 263716, ["cooldown"] = 30 },
-    {	["ability"] = 73325, ["mod"]= 196611, ["cooldown"] = 45 },
-    {	["ability"] = 15286, ["mod"]= 199855, ["cooldown"] = 75 },
-    {	["ability"] = 47585, ["mod"]= 288733, ["cooldown"] = 90 },
-    {	["ability"] = 195457, ["mod"]= 256188, ["cooldown"] = 45 },
-    {	["ability"] = 1856, ["mod"]= 212081, ["cooldown"] = 75 },
-    {	["ability"] = 2094, ["mod"]= 256165, ["cooldown"] = 90 },
-    {	["ability"] = 51490, ["mod"]= 204403, ["cooldown"] = 30 },
-    {	["ability"] = 51533, ["mod"]= 262624, ["cooldown"] = 90 },
-    {	["ability"] = 51514, ["mod"]= 204268, ["cooldown"] = 10 },
-    {	["ability"] = 79206, ["mod"]= 192088, ["cooldown"] = 60 },
-    {	["ability"] = 30283, ["mod"]= 264874, ["cooldown"] = 45 },
-    {	["ability"] = 227847, ["mod"]= 236308, ["cooldown"] = 60 },
-    {	["ability"] = 97462, ["mod"]= 235941, ["cooldown"] = 60 },
-    {	["ability"] = 1160, ["mod"]= 199023, ["cooldown"] = 30 },
-    {	["ability"] = 6544, ["mod"]= 202163, ["cooldown"] = 30 },
-    {	["ability"] = 18562, ["mod"]= 200383, ["cooldown"] = 12 }, --unused modified
-    {	["ability"] = 740, ["mod"]= 197073, ["cooldown"] = 120 },
-    {	["ability"] = 235450, ["mod"]= 235463, ["cooldown"] = 0 },
-    {	["ability"] = 108853, ["mod"]= 205029, ["cooldown"] = 10 },
-    {	["ability"] = 217832, ["mod"]= 205596, ["cooldown"] = 60 },
-    {	["ability"] = 196770, ["mod"]= 287250, ["cooldown"] = 45 },
-    {	["ability"] = 204361, ["mod"]= 193876, ["cooldown"] = 60 },
-    {	["ability"] = 32182, ["mod"]= 193876, ["cooldown"] = 60 },
-    {	["ability"] = 109304, ["azTid"] = 287938, ["azCD"] = 15 },
-    {	["ability"] = 48265, ["azTid"] = 280011, ["azCD"] = 5 },
-    {  ["ability"] = 48792, ["azTid"] = 288424, ["azCD"] = 15 },
-    {  ["ability"] = 190784, ["azTid"] = 280017, ["azCD"] = 5 },
- --   {  ["ability"] = 108271, ["azTid"] = 280203, ["azCD"] = 20 },--
-    {	["ability"] = 108978, ["mod"]= 342249, ["cooldown"] = 30 }, --mage
- --Light Brewing has been redesigned – Reduces the cooldown of Purifying Brew and Celestial Brew by 20%.
-   { ["ability"] = 205180, ["mod"]= 334183, ["cooldown"] = 120 }, --affli
-   --Massacre now has an additional effect – Reduces the cooldown of Execute by 1.5 seconds.
-  
+    {	["ability"] = 22812, ["mod"]= 203965, ["cooldownexp"] = .66 }, -- 33%
+    {	["ability"] = 61336, ["mod"]= 203965, ["cooldownexp"] = .66 }, -- 33%
+    {	["ability"] = 186289, ["mod"]= 266921, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 186257, ["mod"]= 266921, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 186265, ["mod"]= 266921, ["cooldownexp"] = .80 }, -- 20%
+    {	["ability"] = 288613, ["mod"]= 203129, ["cooldown"] = 20 }, -- 20
+    {	["ability"] = 110960, ["mod"]= 210476, ["cooldown"] = 45 }, -- 45
+    {	["ability"] = 109132, ["mod"]= 115173, ["cooldown"] = 5 }, -- 5
+    {	["ability"] = 119381, ["mod"]= 264348, ["cooldown"] = 10 }, -- 10
+    {	["ability"] = 116849, ["mod"]= 202424, ["cooldown"] = 25, ["azTid"] = 277667, ["azCD"] = 20}, -- 25
+    {	["ability"] = 119996, ["mod"]= 216255, ["cooldown"] = 20 }, -- 20
+    {	["ability"] = 115203, ["mod"]= 202107, ["cooldownexp"] = .50 }, -- 50%
+    {	["ability"] = 115176, ["mod"]= 202200, ["cooldownexp"] = .25 }, -- 75%
+    {	["ability"] = 642, ["mod"]= 114154, ["cooldownexp"] = .70 }, -- 30%
+    {	["ability"] = 498, ["mod"]= 114154, ["cooldownexp"] = .70 }, -- 30%
+    {	["ability"] = 633, ["mod"]= 114154, ["cooldownexp"] = .70 }, -- 30%
+    {	["ability"] = 184662, ["mod"]= 114154, ["cooldownexp"] = .70 }, -- 30%
+    {	["ability"] = 31850, ["mod"]= 114154, ["cooldownexp"] = .70 }, -- 30%
+    {	["ability"] = 204018, ["mod"]= 216853, ["cooldownexp"] = .66 }, -- 33%
+    {	["ability"] = 1022, ["mod"]= 216853, ["cooldownexp"] = .66 }, --  33%
+    {	["ability"] = 6940, ["mod"]= 216853, ["cooldownexp"] = .66 }, --  33%
+    {	["ability"] = 47788, ["mod"]= 196602, ["cooldown"] = 60 }, -- 60
+    {	["ability"] = 8122, ["mod"]= 196704, ["cooldown"] = 30 }, -- 30
+    {	["ability"] = 15487, ["mod"]= 263716, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 73325, ["mod"]= 196611, ["cooldown"] = 45 }, -- 45 (removed 9.0.2)
+    {	["ability"] = 15286, ["mod"]= 199855, ["cooldown"] = 45 }, -- 45
+    {	["ability"] = 47585, ["mod"]= 288733, ["cooldown"] = 30 }, -- 30
+    {	["ability"] = 195457, ["mod"]= 256188, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 1856, ["mod"]= 212081, ["cooldown"] = 45 }, -- 45
+    {	["ability"] = 2094, ["mod"]= 256165, ["cooldown"] = 30 }, -- 30
+    {	["ability"] = 51490, ["mod"]= 204403, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 51533, ["mod"]= 262624, ["cooldown"] = 30 }, -- 30
+    {	["ability"] = 51514, ["mod"]= 204268, ["cooldown"] = 20 }, -- 20
+    {	["ability"] = 79206, ["mod"]= 192088, ["cooldown"] = 60 }, -- 60
+    {	["ability"] = 30283, ["mod"]= 264874, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 227847, ["mod"]= 236308, ["cooldownexp"] = .66 }, -- 33%
+    {	["ability"] = 97462, ["mod"]= 235941, ["cooldown"] = 120 }, -- 120
+    {	["ability"] = 1160, ["mod"]= 199023, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 6544, ["mod"]= 202163, ["cooldown"] = 15 }, -- 15
+    {	["ability"] = 18562, ["mod"]= 200383, ["cooldown"] = 3 }, --unused modified 3
+    {	["ability"] = 740, ["mod"]= 197073, ["cooldown"] = 60 }, -- 60
+    {	["ability"] = 235450, ["mod"]= 235463, ["cooldown"] = 0 }, -- 0
+    {	["ability"] = 108853, ["mod"]= 205029, ["cooldown"] = 2 }, -- 2
+    {	["ability"] = 217832, ["mod"]= 205596, ["cooldown"] = -15 }, -- +15 
+    {	["ability"] = 196770, ["mod"]= 287250, ["cooldown"] = -25 }, -- +25
+    {	["ability"] = 2825, ["mod"]= 193876, ["cooldown"] = 240 }, -- 240
+    {	["ability"] = 32182, ["mod"]= 193876, ["cooldown"] = 240 }, -- 240
+    {	["ability"] = 109304, ["azTid"] = 287938, ["azCD"] = 15 }, --
+    {	["ability"] = 48265, ["azTid"] = 280011, ["azCD"] = 5 }, --
+    {  ["ability"] = 48792, ["azTid"] = 288424, ["azCD"] = 15 }, --
+    {  ["ability"] = 190784, ["azTid"] = 280017, ["azCD"] = 5 }, --
+    {	["ability"] = 191427, ["mod"]= 235893, ["cooldown"] = 120 }, --dh meta 120
+    { ["ability"] = 205180, ["mod"]= 334183, ["cooldown"] = 60 }, --affli talent 60
+    { ["ability"] = 108978, ["mod"]= 342249, ["cooldown"] = 30 }, --mage talent 30    
+}
+
+ATTdefault.dbRanks = {
+  --Shaman
+  --- spell=334033/lava-lash (Lava Lash cooldown reduced by 6.0 sec.) - Requires level 22 - 60103
+      {	["ability"] = 60103, ["lvl"]= 22, ["cooldown"] = 6 }, 
+      {	["ability"] = 51514, ["lvl"]= 56, ["cooldown"] = 10 }, 
+  --DK
+  --- spell=316961/apocalypse (Reduces the cooldown by 15) - Requires level 49 - 275699
+  --- spell=317230/empower-rune-weapon (Reduces the cooldown by 15 sec.) - Requires level 56 - 47568
+      {	["ability"] = 275699, ["lvl"]= 49, ["cooldown"] = 15 }, 
+      {	["ability"] = 47568, ["lvl"]= 56, ["cooldown"] = 15 }, 
+  --DH
+  --- spell=320402/blade-dance (Reduces the cooldown of Blade Dance by 6 sec.) dps - Requires level 22 - 188499
+  --- spell=320420/darkness --Reduces the cooldown of Darkness by 120 sec. Requires level 47 - 196718
+  --- spell=320421/metamorphosis -- Reduces the cooldown of Metamorphosis by 60 sec. - Requires level 48 - 191427
+      {	["ability"] = 188499, ["lvl"]= 22, ["cooldown"] = 6 }, 
+      {	["ability"] = 196718, ["lvl"]= 47, ["cooldown"] = 120 }, 
+      {	["ability"] = 191427, ["lvl"]= 48, ["cooldown"] = 60 }, 
+      {	["ability"] = 188501, ["lvl"]= 42, ["cooldown"] = 30 },    
+  --- spell=320378/immolation-aura  -- Reduces the cooldown of Immolation Aura by 15 sec. -Requires level 27 - 258920
+  --- spell=320387/throw-glaive -- Reduces the cooldown of Throw Glaive by 6 sec. -- Requires level 32 - 204157
+  --- spell=320417/sigil-of-silence -- Reduces the cooldown of Sigil of Silence by 60 sec. -- Requires level 48 - 202137
+  --- spell=320418/sigil-of-misery -- Reduces the cooldown of Sigil of Misery by 90 sec. - Requires level 33 - 207684
+  --- spell=321067/metamorphosis (Reduces the cooldown of Metamorphosis by 60 sec.) -- Requires level 20 - 187827
+  --- spell=321068/metamorphosis -- The cooldown of Metamorphosis is reduced by 60 sec. Requires level 48 - 187827
+      {	["ability"] = 258920, ["lvl"]= 27, ["cooldown"] = 15 }, 
+      {	["ability"] = 204157, ["lvl"]= 32, ["cooldown"] = 6 }, 
+      {	["ability"] = 202137, ["lvl"]= 48, ["cooldown"] = 60 }, 
+      {	["ability"] = 207684, ["lvl"]= 33, ["cooldown"] = 90 }, 
+      {	["ability"] = 187827, ["lvl"]= 20, ["cooldown"] = 60,  ["lvl2"]= 48, ["cooldown2"] = 60 }, 
+  --Drood
+  --bersek
+  --- spell=288826/stampeding-roar -- Cooldown reduced by 60 sec. - Requires level 49 - 106898
+      {	["ability"] = 106898, ["lvl"]= 49, ["cooldown"] = 60 }, 
+  --Hunter
+   {["ability"] = 187650, ["lvl"]= 56, ["cooldown"] = 5 }, 
+   {["ability"] = 187698, ["lvl"]= 56, ["cooldown"] = 5 }, 
+  --Mage
+  --- spell=321707/dragons-breath -- Cooldown reduced by 2 sec. - Requires level 38 - 31661
+  --- spell=321699/cold-snap -- Cooldown reduced by 30 sec. -Requires level 54 - 235219
+      {	["ability"] = 31661, ["lvl"]= 38, ["cooldown"] = 2 }, 
+      {	["ability"] = 235219, ["lvl"]= 54, ["cooldown"] = 30 }, 
+  --Monk
+  --- spell=344487/flying-serpent-kick -- Reduces the cooldown of Flying Serpent Kick by 5 sec. - Requires level 54 - 101545
+  --- spell=325208/fortifying-brew -- Cooldown reduced by 4 min. - Requires level 48 - 243435
+  --- spell=322102/expel-harm -- Cooldown is reduced by  10 sec. - Requires level 43 - 322101
+      {	["ability"] = 101545, ["lvl"]= 54, ["cooldown"] = 5 }, 
+      {	["ability"] = 243435, ["lvl"]= 48, ["cooldown"] = 240 },
+     -- {	["ability"] = 322101, ["lvl"]= 43, ["cooldown"] = 10 }, only tank
+      {	["ability"] = 115078, ["lvl"]= 56, ["cooldown"] = 15 }, 
+  --Paladin
+  --- spell=327980/consecration -- Cooldown reduced by 50%. - Requires level 23 - 26573
+      {	["ability"] = 26573, ["lvl"]= 23, ["cooldown"] = 4.5 }, -- 50%
+      {	["ability"] = 31884, ["lvl"]= 43, ["cooldown"] = 60 }, -- AW
+      {	["ability"] = 190784, ["lvl"]= 49, ["cooldown"] = 15 }, -- DS
+
+  --Warlock
+  --Warrior
+  --- spell=316432/sweeping-strikes -- Cooldown reduced by 15 sec. - Requires level 42 - 260708
+  --- spell=316474/enraged-regeneration -- Cooldown reduced by 60 sec. - Requires level 32 - 184364
+  --- spell=316411/colossus-smash -- Cooldown reduced by 45 sec. - Requires level 37 - 167105
+  --- spell=315948/die-by-the-sword -- Cooldown reduced by 60 sec. - Requires level 52 - 118038
+  --- spell=316778/ignore-pain -- Cooldown reduced by 11 sec. - Requires level 29 - 190456
+      {	["ability"] = 316432, ["lvl"]= 42, ["cooldown"] = 15 }, 
+      {	["ability"] = 316474, ["lvl"]= 32, ["cooldown"] = 60 }, 
+      {	["ability"] = 316411, ["lvl"]= 37, ["cooldown"] = 45 },
+      {	["ability"] = 315948, ["lvl"]= 52, ["cooldown"] = 60 }, 
+      {	["ability"] = 316778, ["lvl"]= 29, ["cooldown"] = 11 },
+  --Rogue
+   { ["ability"] = 2983, ["lvl"]= 31, ["cooldown"] = 60 },
+   { ["ability"] = 195457, ["lvl"]= 56, ["cooldown"] = 15 },
+  --Priest
+   { ["ability"] = 32379, ["lvl"]= 46, ["cooldown"] = 10 },
 }
 
 ATTdefault.dbReduce = {
@@ -110,27 +186,28 @@ ATTdefault.dbReduce = {
 }
 
 ATTdefault.dbModifCharge = {
-    {	["ability"] = 49576, ["mod"]= 202727 },
-    {	["ability"] = 122, ["mod"]= 205036 },
-    {	["ability"] = 109132, ["mod"]= 115173 },
+    {	["ability"] = 122, ["mod"]= 205036 }, --
+    {	["ability"] = 109132, ["mod"]= 115173 },-- +1 lvl >9
+    {	["ability"] = 190784, ["mod"]= 230332 }, --
+    {	["ability"] = 185313, ["mod"]= 238104 }, --
+    {	["ability"] = 18562, ["mod"]= 200383 }, --? removed
+    {	["ability"] = 100, ["mod"]= 103827 }, --
+    {	["ability"] = 7384, ["mod"]= 262150 }, --
+    {	["ability"] = 275779, ["mod"]= 204023 }, --
+    {	["ability"] = 259489, ["mod"]= 269737 }, --
+    {	["ability"] = 259495, ["mod"]= 264332 }, --
+    {	["ability"] = 51505, ["mod"]= 108283 }, --
+    {	["ability"] = 5394, ["mod"]= 108283 }, --
+    {	["ability"] = 61295, ["mod"]= 108283 }, --
+    {	["ability"] = 108853, ["mod"]= 205029 }, --
+    -- new
+    {	["ability"] = 53351, ["mod"]= 321460 }, --
+    {	["ability"] = 185123, ["mod"]= 203556 }, -- new dh
+   -- pvp ? 
+    { ["ability"] = 2050, ["mod"]= 235587 },
+    {	["ability"] = 527, ["mod"]= 196162 },
     {	["ability"] = 1044, ["mod"]= 199454 },
     {	["ability"] = 1022, ["mod"]= 199454 },
-    {	["ability"] = 190784, ["mod"]= 230332 },
-    {	["ability"] = 2050, ["mod"]= 235587 },
-    {	["ability"] = 527, ["mod"]= 196162 },
-    {	["ability"] = 185313, ["mod"]= 238104 },
-    {	["ability"] = 18562, ["mod"]= 200383 }, --? removed
-    {	["ability"] = 100, ["mod"]= 103827 },
-    {	["ability"] = 7384, ["mod"]= 262150 },
-    {	["ability"] = 275779, ["mod"]= 204023 },
-    {	["ability"] = 259489, ["mod"]= 269737 },
-    {	["ability"] = 259495, ["mod"]= 264332 },
-    {	["ability"] = 51505, ["mod"]= 108283 },
-    {	["ability"] = 5394, ["mod"]= 108283 },
-    {	["ability"] = 61295, ["mod"]= 108283 },
-    {	["ability"] = 108853, ["mod"]= 205029 },
-    --
-    {	["ability"] = 53351, ["mod"]= 321460 },
 }
 
 ATTdefault.dbCharge = {
@@ -141,23 +218,30 @@ ATTdefault.dbCharge = {
 --    {	["ability"] = 115008 },
  --   {	["ability"] = 109132 },
   --  {	["ability"] = 195072 },
-    { ["ability"] = 137639 },
-    { ["ability"] = 212653 },
-    { ["ability"] = 295373 },
-    { ["ability"] = 257541 }, -- new +1 rank3 343222
-    { ["ability"] = 17877 }, -- new
+    { ["ability"] = 137639 , ["lvl"]= 0},
+    { ["ability"] = 212653 , ["lvl"]= 0}, --?
+    { ["ability"] = 295373 , ["lvl"]= 0},
+    { ["ability"] = 17877 ,  ["lvl"]= 0 }, -- new
+    { ["ability"] = 257541 , ["lvl"]= 0}, -- new +1 rank3 343222
     ---rank2 test
-   { ["ability"] = 231627 },
-   { ["ability"] = 231847 },
-   { ["ability"] = 316453 },
-   { ["ability"] = 328767 },
-   { ["ability"] = 320416 },
-   { ["ability"] = 320791 },
-   { ["ability"] = 322115 },
-   { ["ability"] = 316634 },
-   { ["ability"] = 316616 },
-   { ["ability"] = 317854 },
-   { ["ability"] = 231667 }, -- rank 3 pala
+   { ["ability"] = 137639 , ["lvl"]= 47}, --
+   { ["ability"] = 2565 , ["lvl"]= 22},--
+   { ["ability"] = 85288 , ["lvl"]= 42}, --
+ --  { ["ability"] = 328767 , ["lvl"]= 47}, -- only guardian
+   { ["ability"] = 195072 , ["lvl"]= 28}, --
+   { ["ability"] = 189110 , ["lvl"]= 28},--
+   { ["ability"] = 194509 , ["lvl"]= 39}, --
+   { ["ability"] = 50842 , ["lvl"]= 24},--
+   { ["ability"] = 194679 , ["lvl"]= 44}, --
+   { ["ability"] = 53595 , ["lvl"]= 33}, --
+   { ["ability"] = 109132 , ["lvl"]= 9}, --
+   { ["ability"] = 17962 , ["lvl"]= 23}, --
+   { ["ability"] = 115151 , ["lvl"]= 29}, --
+   { ["ability"] = 259496 , ["lvl"]= 32}, --
+   { ["ability"] = 319836 , ["lvl"]= 37}, --
+   { ["ability"] = 22842 , ["lvl"]= 39}, --
+   { ["ability"] = 119582 , ["lvl"]= 47}, -- 
+   { ["ability"] = 35395 , ["lvl"]= 33}, -- rank 3 pala
 }
 
 ATTdefault.dbRacial = {

@@ -161,13 +161,13 @@ Si la durée de l'animation est définie à |cFF00CC0010%|r, et le déclencheur 
 	--[[Translation missing --]]
 	L["Background"] = "Background"
 	L["Background Color"] = "Couleur de fond"
+	--[[Translation missing --]]
+	L["Background Inner"] = "Background Inner"
 	L["Background Offset"] = "Décalage du Fond "
 	L["Background Texture"] = "Texture d'arrière plan"
-	L["Bar"] = "Barre"
 	L["Bar Alpha"] = "Opacité de la barre"
 	L["Bar Color"] = "Couleur de barre"
 	L["Bar Color Settings"] = "Paramètres de la barre de couleur"
-	L["Bar Inner"] = "Barre intérieure"
 	L["Bar Texture"] = "Texture de barre"
 	L["Big Icon"] = "Grande icône"
 	L["Blend Mode"] = "Mode du fusion"
@@ -679,6 +679,8 @@ Seule une unique valeur peut être choisie]=]
 	--[[Translation missing --]]
 	L["Press Ctrl+C to copy"] = "Press Ctrl+C to copy"
 	--[[Translation missing --]]
+	L["Press Ctrl+C to copy the URL"] = "Press Ctrl+C to copy the URL"
+	--[[Translation missing --]]
 	L["Prevent Merging"] = "Prevent Merging"
 	L["Processed %i chars"] = "%i caractères traité "
 	L["Progress Bar"] = "Barre de progression"
@@ -699,7 +701,7 @@ Seule une unique valeur peut être choisie]=]
 	L["Repeat After"] = "Répéter Après"
 	L["Repeat every"] = "Répéter tous les"
 	--[[Translation missing --]]
-	L["Report bugs our our issue tracker."] = "Report bugs our our issue tracker."
+	L["Report bugs on our issue tracker."] = "Report bugs on our issue tracker."
 	--[[Translation missing --]]
 	L["Require unit from trigger"] = "Require unit from trigger"
 	L["Required for Activation"] = "Requis pour l'activation"

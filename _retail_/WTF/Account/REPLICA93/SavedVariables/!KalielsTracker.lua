@@ -1,22 +1,39 @@
 
 KalielsTrackerDB = {
 	["char"] = {
+		["Xunay - Draenor"] = {
+			["quests"] = {
+				["num"] = 1,
+			},
+		},
+		["Xunaj - Draenor"] = {
+			["collapsed"] = true,
+			["quests"] = {
+				["num"] = 1,
+			},
+		},
+		["Xã - Draenor"] = {
+			["collapsed"] = true,
+		},
+		["Mktja - Draenor"] = {
+			["collapsed"] = true,
+		},
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
 		},
 		["Dkuna - Draenor"] = {
 			["collapsed"] = true,
 		},
-		["Xunae - Draenor"] = {
+		["Drmscp - Draenor"] = {
 			["collapsed"] = true,
 		},
-		["Xã - Draenor"] = {
+		["Xunae - Draenor"] = {
 			["collapsed"] = true,
 		},
 		["Xûñä - Stormscale"] = {
 			["collapsed"] = true,
 		},
-		["Xunay - Draenor"] = {
+		["Lightescp - Draenor"] = {
 			["quests"] = {
 				["num"] = 5,
 			},
@@ -25,17 +42,20 @@ KalielsTrackerDB = {
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
 		["Zunae - Draenor"] = "Default",
-		["Xñ - Draenor"] = "Default",
+		["Xüñâ - Stormscale"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xã - Draenor"] = "Default",
-		["Xunaj - Draenor"] = "Default",
-		["Xñæ - Draenor"] = "Default",
-		["Xûñä - Stormscale"] = "Default",
-		["Dkuna - Draenor"] = "Default",
+		["Mktja - Draenor"] = "Default",
 		["Xuna - Stormscale"] = "Default",
-		["Xüñâ - Stormscale"] = "Default",
+		["Drmscp - Draenor"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Uñ - Draenor"] = "Default",
+		["Xñ - Draenor"] = "Default",
+		["Dkuna - Draenor"] = "Default",
+		["Lightescp - Draenor"] = "Default",
+		["Xñæ - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
 	},
 	["global"] = {

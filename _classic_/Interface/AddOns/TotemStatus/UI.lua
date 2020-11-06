@@ -49,25 +49,25 @@ local function CreateSubFrame(parentFrame, x)
 	frame:EnableMouse(false)
 	frame:Disable()
 	
+	local texture = nil
 	--if Masque is present we'll use the button's icon field with masque skins
-	if (LibStub("Masque", true) ~= nil)
+	if (LibStub ~= nil and LibStub("Masque", true) ~= nil)
 	then
 		Masque = LibStub("Masque", true)
 		MasqueGroup = Masque:Group("TotemStatus")
 		MasqueGroup:AddButton(frame)
-		frame.MasqueSkinned = true
-		
-		return frame.icon
+		frame.MasqueSkinned = true		
+		texture = frame.icon
+	else	
+		--if not we'll use a separate texture so the frame can be made invisible but the texture remains visible
+		texture = parentFrame:CreateTexture(nil, "OVERLAY")
+		texture:SetAllPoints(frame)
+		frame.texture = texture
+		frame:SetFrameStrata("BACKGROUND")
+		frame:SetWidth(36)
+		frame:SetHeight(36)
 	end
 	
-	--if not we'll use a separate texture so the frame can be made invisible but the texture remains visible
-	local texture = parentFrame:CreateTexture(nil, "OVERLAY")
-	texture:SetAllPoints(frame)
-	frame.texture = texture
-	frame:SetFrameStrata("BACKGROUND")
-	frame:SetWidth(36)
-	frame:SetHeight(36)
-
 	--create a smaller frame within the frame for totem suggestions
 	local subFrame = CreateFrame("Frame", nil, frame)
 	subFrame:SetPoint("TOPRIGHT", frame, "TOPRIGHT", 0, 0) 

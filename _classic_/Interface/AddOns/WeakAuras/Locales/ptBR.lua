@@ -204,8 +204,6 @@ L["Back and Forth"] = "Back and Forth"
 L["Background"] = "Background"
 --[[Translation missing --]]
 L["Background Color"] = "Background Color"
---[[Translation missing --]]
-L["Bar"] = "Bar"
 L["Bar Color"] = "Cor da Barra"
 --[[Translation missing --]]
 L["Baron Geddon"] = "Baron Geddon"
@@ -608,6 +606,8 @@ L["From"] = "From"
 L["Frost Resistance"] = "Frost Resistance"
 --[[Translation missing --]]
 L["Full"] = "Full"
+--[[Translation missing --]]
+L["Full Bar"] = "Full Bar"
 --[[Translation missing --]]
 L["Full/Empty"] = "Full/Empty"
 --[[Translation missing --]]
@@ -1115,6 +1115,8 @@ L["Player"] = "Jogador"
 L["Player Character"] = "Personagem do jogador"
 L["Player Class"] = "Classe do jogador"
 --[[Translation missing --]]
+L["Player Covenant"] = "Player Covenant"
+--[[Translation missing --]]
 L["Player Effective Level"] = "Player Effective Level"
 --[[Translation missing --]]
 L["Player Experience"] = "Player Experience"
@@ -1493,6 +1495,8 @@ L["Third"] = "Third"
 L["Third Value of Tooltip Text"] = "Third Value of Tooltip Text"
 --[[Translation missing --]]
 L["This aura contains custom Lua code."] = "This aura contains custom Lua code."
+--[[Translation missing --]]
+L["This aura has legacy aura trigger(s), which are no longer supported."] = "This aura has legacy aura trigger(s), which are no longer supported."
 --[[Translation missing --]]
 L["This aura was created with a newer version of WeakAuras."] = "This aura was created with a newer version of WeakAuras."
 --[[Translation missing --]]

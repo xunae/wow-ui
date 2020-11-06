@@ -1,5 +1,5 @@
-local L = LibStub("AceLocale-3.0"):NewLocale("NameplateAuras", "deDE");
-L = L or {}
+local L = LibStub("AceLocale-3.0"):NewLocale("NameplateAuras", "deDE"); -- luacheck: ignore
+L = L or {} -- luacheck: ignore
 --@non-debug@
 L["< 1min"] = "< 1 Min."
 L["< 5sec"] = "< 5 Sek."
@@ -152,6 +152,10 @@ L["options:size-and-position:icon-height"] = "Standardsymbolhöhe"
 L["options:size-and-position:icon-width"] = "Standardsymbolbreite"
 --[[Translation missing --]]
 L["options:size-and-position:icon-zoom"] = "Icon zoom"
+--[[Translation missing --]]
+L["options:size-and-position:keep-aspect-ratio"] = "Keep aspect ratio of textures"
+--[[Translation missing --]]
+L["options:size-and-position:keep-aspect-ratio:tooltip"] = "If this option is checked and icon width and height are not equal, then texture of spell will be cropped in that way to save original image proportions"
 --[[Translation missing --]]
 L["options:size-and-position:non-target-strata"] = "Layer of icons on non-target nameplates"
 L["options:size-and-position:scale-target"] = "Skalierung der Symbole auf der Namensplakette deines Ziels"
