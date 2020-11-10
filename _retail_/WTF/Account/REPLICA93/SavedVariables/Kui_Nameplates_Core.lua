@@ -24,29 +24,29 @@ KuiNameplatesCoreSaved = {
 			},
 			["cvar_occluded_mult"] = 0.400000005960465,
 			["name_vertical_offset"] = 1,
-			["bar_texture"] = "Blizzard Raid Bar",
+			["nameonly_no_font_style"] = true,
 			["nameonly"] = false,
-			["castbar_colour"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
+			["font_style"] = 3,
 			["fade_all"] = true,
 			["frame_height"] = 12,
 			["frame_width_minus"] = 98,
-			["cvar_enable"] = true,
+			["fade_conditional_alpha"] = 0.300000011920929,
 			["auras_enabled"] = false,
-			["bar_animation"] = 2,
+			["clickthrough_friend"] = true,
 			["font_size_normal"] = 12,
 			["cvar_personal_show_combat"] = false,
 			["cvar_disable_alpha"] = false,
 			["fade_non_target_alpha"] = 0.699999988079071,
 			["font_face"] = "Oswald",
-			["clickthrough_friend"] = true,
-			["fade_conditional_alpha"] = 0.300000011920929,
+			["bar_animation"] = 2,
+			["cvar_enable"] = true,
 			["execute_enabled"] = false,
-			["font_style"] = 3,
-			["nameonly_no_font_style"] = true,
+			["castbar_colour"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
+			["bar_texture"] = "Blizzard Raid Bar",
 		},
 	},
 }

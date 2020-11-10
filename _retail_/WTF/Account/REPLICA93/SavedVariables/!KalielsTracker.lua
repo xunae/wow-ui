@@ -21,10 +21,11 @@ KalielsTrackerDB = {
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
 		},
-		["Lightescp - Draenor"] = {
+		["Dkuna - Draenor"] = {
 			["quests"] = {
-				["num"] = 4,
+				["num"] = 1,
 			},
+			["collapsed"] = true,
 		},
 		["Drmscp - Draenor"] = {
 			["collapsed"] = true,
@@ -35,16 +36,11 @@ KalielsTrackerDB = {
 		["Xûñä - Stormscale"] = {
 			["collapsed"] = true,
 		},
-		["Dkuna - Draenor"] = {
+		["Lightescp - Draenor"] = {
 			["quests"] = {
-				["num"] = 1,
+				["num"] = 4,
 			},
-			["collapsed"] = true,
 		},
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.1.0",
 	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
@@ -64,6 +60,10 @@ KalielsTrackerDB = {
 		["Xunaj - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.1.0",
 	},
 	["profiles"] = {
 		["Default"] = {
