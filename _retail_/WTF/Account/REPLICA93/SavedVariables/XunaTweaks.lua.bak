@@ -13,5 +13,5 @@ XunaTweaksDB = {
 	["classColorFrames"] = true,
 	["customHealthMana"] = true,
 	["bottomRaidFrame"] = true,
-	["dfc"] = 0.5000008344650269,
+	["dfc"] = 0.5448723435401917,
 }

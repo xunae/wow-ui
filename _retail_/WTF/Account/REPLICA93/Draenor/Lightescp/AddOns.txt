@@ -3,3 +3,7 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+LittleWigs: enabled
+!KalielsTracker: enabled
+Kui_Media: enabled
+Kui_Nameplates: enabled

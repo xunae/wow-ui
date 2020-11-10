@@ -5,4 +5,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
-ATT: enabled
+ATT: disabled
+Quartz: enabled
+ClassicUI: disabled
+XunaTweaks: enabled

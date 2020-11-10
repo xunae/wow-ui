@@ -25,15 +25,15 @@ KalielsTrackerDB = {
 			["sort"] = "level",
 		},
 	},
+	["profileKeys"] = {
+		["Xuna - Stormscale"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
+		["Xuna - Gehennas"] = "Default",
+		["Xüñâ - Stormscale"] = "Default",
+	},
 	["global"] = {
 		["helpTutorial"] = 8,
 		["version"] = "0.3.1",
-	},
-	["profileKeys"] = {
-		["Xuna - Stormscale"] = "Default",
-		["Xuna - Gehennas"] = "Default",
-		["Xûñä - Stormscale"] = "Default",
-		["Xüñâ - Stormscale"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

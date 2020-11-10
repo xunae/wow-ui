@@ -186,7 +186,7 @@ end
 
 function XunaTweaks:customHealthMana()
 	hooksecurefunc('TextStatusBar_UpdateTextStringWithValues', function(statusFrame, textString, value, valueMin, valueMax)
-		if statusFrame.TextString then
+		if statusFrame and statusFrame.TextString and value then
 			if valueMax > 0 then
 				statusFrame.TextString:SetText(AbbreviateLargeNumbers(value) .. ' - ' .. format('%.0f', (value / valueMax) * 100) .. '%')
 			else
@@ -224,16 +224,18 @@ function XunaTweaks:beautifyActionBar()
 
 	for i = 1, 12 do
 		for j, v in ipairs({
-			'ActionButton', 'MultiBarBottomRightButton', 'MultiBarBottomLeftButton', 'MultiBarRightButton', 'MultiBarLeftButton'
+			'ActionButton', 'MultiBarBottomRightButton', 'MultiBarBottomLeftButton', 'MultiBarRightButton', 'MultiBarLeftButton', 'PetActionButton'
 		}) do
-			_G[v..i..'HotKey']:SetAlpha(bindAlpha)
-			_G[v..i..'Name']:SetAlpha(macroAlpha)
+			if (v == 'PetActionButton' and i <= 9) or v ~= 'PetActionButton' then
+				_G[v..i..'HotKey']:SetAlpha(bindAlpha)
+				_G[v..i..'Name']:SetAlpha(macroAlpha)
 
-			_G[v..i..'HotKey']:ClearAllPoints()
-			_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
+				_G[v..i..'HotKey']:ClearAllPoints()
+				_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
 
-			local Path, Height = _G[v..i..'HotKey']:GetFont();
-			_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE');
+				local Path, Height = _G[v..i..'HotKey']:GetFont()
+				_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE')
+			end
     end
 	end
 end

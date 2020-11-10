@@ -12,7 +12,7 @@ ClassicLFG_DB = {
 				["Y"] = -443.607666015625,
 				["X"] = 681.293762207031,
 			},
-			["BroadcastDungeonGroupChannel"] = 1,
+			["BroadcastDungeonGroupChannel"] = 0,
 		},
 	},
 }
