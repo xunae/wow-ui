@@ -34,8 +34,8 @@ Details_StreamerDB = {
 		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
 		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
-		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
+		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Xñä - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Ravencrest"] = "Xûñä - Ravencrest",
 		["Vapenaysh - Stormscale"] = "Xûñä - Ravencrest",
@@ -84,19 +84,9 @@ Details_StreamerDB = {
 			["row_texture"] = "Details Serenity",
 			["arrow_anchor_y"] = 0,
 			["main_frame_locked"] = true,
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["y"] = -28.9441528320313,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -108,16 +98,26 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["font_size"] = 12,
-			["x"] = 4.38843965530396,
-			["font_face"] = "Friz Quadrata TT",
-			["use_spark"] = true,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
 			["row_color"] = {
 				0.101960784313725, -- [1]
 				0.101960784313725, -- [2]
 				0.101960784313725, -- [3]
 				0.777777433395386, -- [4]
 			},
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 12,
+			["use_spark"] = true,
+			["x"] = 4.38843965530396,
+			["font_face"] = "Friz Quadrata TT",
+			["y"] = -28.9441528320313,
+			["main_frame_strata"] = "LOW",
 			["point"] = "TOPLEFT",
 			["row_height"] = 20,
 			["scale"] = 1,

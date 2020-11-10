@@ -2264,7 +2264,7 @@ NameplateAurasAceDB = {
 		},
 		["Default"] = {
 			["TimerTextUseRelativeScale"] = false,
-			["StacksFont"] = "Accidental Presidency",
+			["TimerTextYOffset"] = -1,
 			["TimerTextSize"] = 12,
 			["BorderThickness"] = 1,
 			["ShowBuffBorders"] = false,
@@ -2399,7 +2399,7 @@ NameplateAurasAceDB = {
 			},
 			["InterruptsGlowType"] = 1,
 			["DBVersion"] = 18,
-			["TimerTextYOffset"] = -1,
+			["StacksFont"] = "Accidental Presidency",
 		},
 		["Xunaj - Draenor"] = {
 			["CustomSpells2"] = {

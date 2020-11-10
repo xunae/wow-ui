@@ -89,23 +89,24 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
 			["fontSize"] = 15,
 			["effect"] = "pulse",
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.74,
 			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
+			["yOff"] = -1,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["yOff"] = -1,
+			["scaleText"] = true,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -199,22 +200,20 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1,
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
 			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
+			["yOff"] = 0,
 			["fontSize"] = 18,
 		},
 	},
-	["engine"] = "AniUpdater",
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -225,4 +224,5 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
+	["version"] = "8.2.3",
 }
