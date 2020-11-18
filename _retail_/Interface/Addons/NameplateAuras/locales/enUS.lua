@@ -59,6 +59,9 @@ L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Alpha"
 L["options:apps:dispellable-spells"] = "Show dispellable/stealable auras on enemy nameplates"
 L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
 L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+L["options:apps:dr:pve"] = "PvE (stun only)"
+L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
 L["options:auras:enabled-state:tooltip"] = [=[%s: aura will not be shown
@@ -89,6 +92,7 @@ L["options:general:icon-grow-direction"] = "Icon growing direction"
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
 L["options:general:show-cooldown-animation"] = "Show cooldown animation"
 L["options:general:show-cooldown-text"] = "Show aura's remaining time"
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 L["options:general:show-stacks"] = "Show aura's stacks"
 L["options:general:test-mode"] = "Test mode"
 L["options:glow-type"] = "Glow type"
@@ -369,5 +373,9 @@ Built-in sorting functions:
 L["icon-sort-mode:custom"] = "Custom";
 L["options:size-and-position:keep-aspect-ratio"] = "Keep aspect ratio of textures";
 L["options:size-and-position:keep-aspect-ratio:tooltip"] = "If this option is checked and icon width and height are not equal, then texture of spell will be cropped in that way to save original image proportions";
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+L["options:apps:dr:pvp"] = "PvP"
+L["options:apps:dr:pve"] = "PvE (stun only)"
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 
 --@end-debug@]===]

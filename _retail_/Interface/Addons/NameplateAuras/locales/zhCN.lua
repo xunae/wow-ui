@@ -56,6 +56,12 @@ L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "透明度"
 L["options:apps:dispellable-spells"] = "在敌方姓名板上显示可驱散/可偷取的光环"
 L["options:apps:dispellable-spells:black-list-button"] = "打开黑名单"
 L["options:apps:dispellable-spells:tooltip"] = "在敌方姓名板上显示可驱散/可偷取的光环，这些光环边缘微亮并且是默认大小"
+--[[Translation missing --]]
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+--[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (stun only)"
+--[[Translation missing --]]
+L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = [=[在邪能爆炸球的姓名版上方显示一个特殊光环（大秘境易爆词缀）
 
 这个光环将会发亮并且是默认大小]=]
@@ -84,6 +90,8 @@ L["options:general:icon-grow-direction"] = "图标增长方向"
 L["options:general:show-aura-tooltip"] = "当鼠标在光环图标上悬停时显示光环名称"
 L["options:general:show-cooldown-animation"] = "显示冷却动画"
 L["options:general:show-cooldown-text"] = "显示光环的剩余时间"
+--[[Translation missing --]]
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 L["options:general:show-stacks"] = "显示光环的层数"
 L["options:general:test-mode"] = "测试模式"
 L["options:glow-type"] = "发光类型"

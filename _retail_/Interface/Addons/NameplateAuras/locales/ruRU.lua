@@ -59,6 +59,12 @@ L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Прозрачност�
 L["options:apps:dispellable-spells"] = "Показывать ауры, которые можно развеять/украсть"
 L["options:apps:dispellable-spells:black-list-button"] = "Открыть чёрный список"
 L["options:apps:dispellable-spells:tooltip"] = "Показывать ауры, которые можно развеять/украсть, на неймплейтах врагов. Эти ауры будут иметь тусклое свечение и размер по умолчанию"
+--[[Translation missing --]]
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+--[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (stun only)"
+--[[Translation missing --]]
+L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = [=[Показывать специальную иконку над неймлэйтами Взрывных Сфер (М+ Взрывной)
 Эта иконка будет иметь размер по умолчанию и будет подсвечена]=]
 L["options:auras:enabled-state:tooltip"] = [=[%s: аура не будет показываться
@@ -88,6 +94,8 @@ L["options:general:icon-grow-direction"] = "Направление роста и
 L["options:general:show-aura-tooltip"] = "Показывать имя ауры при наведении мышью на иконку"
 L["options:general:show-cooldown-animation"] = "Показывать анимацию кулдауна"
 L["options:general:show-cooldown-text"] = "Показывать оставшееся время ауры"
+--[[Translation missing --]]
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 L["options:general:show-stacks"] = "Показывать стаки ауры"
 L["options:general:test-mode"] = "Тестовый режим"
 L["options:glow-type"] = "Тип свечения"

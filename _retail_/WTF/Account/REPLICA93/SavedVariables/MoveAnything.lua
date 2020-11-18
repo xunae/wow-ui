@@ -93,6 +93,7 @@ MADB = {
 					},
 					["name"] = "PlayerFrame",
 					["scale"] = 1.100000023841858,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -100,7 +101,6 @@ MADB = {
 						136.3636334080342, -- [4]
 						-136.3636334080342, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["TargetFrame"] = {
 					["orgPos"] = {
@@ -112,6 +112,7 @@ MADB = {
 					},
 					["name"] = "TargetFrame",
 					["scale"] = 1.100000023841858,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -119,7 +120,6 @@ MADB = {
 						362.6588745117188, -- [4]
 						-136.3636334080342, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["FocusFrameSpellBar"] = {
 					["orgPos"] = {
@@ -143,6 +143,7 @@ MADB = {
 					},
 					["name"] = "PlayerPowerBarAltMover",
 					["scale"] = 0.7999999523162842,
+					["orgScale"] = 1,
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
@@ -150,7 +151,6 @@ MADB = {
 						0, -- [4]
 						300, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["MicroButtonAndBagsBar"] = {
 					["orgPos"] = {
@@ -180,6 +180,7 @@ MADB = {
 					},
 					["name"] = "PartyMemberFrame1",
 					["scale"] = 1.199999928474426,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"CompactRaidFrameManager", -- [2]
@@ -187,7 +188,6 @@ MADB = {
 						56.66666368643425, -- [4]
 						-139.4447664088865, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["FocusFrame"] = {
 					["orgPos"] = {
@@ -213,7 +213,7 @@ MADB = {
 						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
 						"BOTTOMLEFT", -- [3]
-						1414.666748046875, -- [4]
+						1414.666625976563, -- [4]
 						2.999999761581421, -- [5]
 					},
 					["name"] = "MicroButtonsMover",
@@ -254,9 +254,10 @@ MADB = {
 		},
 	},
 	["playSound"] = false,
-	["closeGUIOnEscape"] = false,
+	["tooltips"] = true,
+	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["tooltips"] = true,
+	["closeGUIOnEscape"] = false,
 }

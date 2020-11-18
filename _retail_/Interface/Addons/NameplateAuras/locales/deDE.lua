@@ -61,6 +61,12 @@ L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
 --[[Translation missing --]]
 L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
 --[[Translation missing --]]
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+--[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (stun only)"
+--[[Translation missing --]]
+L["options:apps:dr:pvp"] = "PvP"
+--[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
 L["options:auras:enabled-state:tooltip"] = [=[Aktiviert/Deaktiviert die Aura
@@ -101,6 +107,8 @@ L["options:general:show-aura-tooltip"] = "Zeigt den Namen der Aura, wenn die Mau
 L["options:general:show-cooldown-animation"] = "Abklingzeitanimation anzeigen"
 --[[Translation missing --]]
 L["options:general:show-cooldown-text"] = "Show aura's remaining time"
+--[[Translation missing --]]
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 --[[Translation missing --]]
 L["options:general:show-stacks"] = "Show aura's stacks"
 L["options:general:test-mode"] = "Testmodus"

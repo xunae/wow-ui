@@ -5,7 +5,7 @@
 --- This file is part of addon Kaliel's Tracker.
 
 local addonName, addon = ...
-local KT = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "LibSink-2.0")
+local KT = LibStub("AceAddon-3.0"):NewAddon(addon, addonName, "LibSink-2.0", "MSA-ProtRouter-1.0")
 KT:SetDefaultModuleState(false)
 KT.title = GetAddOnMetadata(addonName, "Title")
 KT.version = GetAddOnMetadata(addonName, "Version")
@@ -311,6 +311,14 @@ local function SetFrames()
 			KT.playerLevel = level
 		elseif event == "QUEST_SESSION_JOINED" then
 			self:RegisterEvent("QUEST_POI_UPDATE")
+		elseif event == "PET_BATTLE_OPENING_START" then
+			KT:prot(KTF, "Hide")
+			KT:prot(KTF.Buttons, "Hide")
+			KT.locked = true
+		elseif event == "PET_BATTLE_CLOSE" then
+			KT:prot(KTF, "Show")
+			KT:prot(KTF.Buttons, "Show")
+			KT.locked = false
 		end
 	end)
 	KTF:RegisterEvent("PLAYER_ENTERING_WORLD")
@@ -330,6 +338,8 @@ local function SetFrames()
 	KTF:RegisterEvent("ZONE_CHANGED")
 	KTF:RegisterEvent("UPDATE_BINDINGS")
 	KTF:RegisterEvent("PLAYER_LEVEL_UP")
+	KTF:RegisterEvent("PET_BATTLE_OPENING_START")
+	KTF:RegisterEvent("PET_BATTLE_CLOSE")
 
 	-- DropDown frame
 	KT.DropDown = MSA_DropDownMenu_Create(addonName.."DropDown", KTF)
@@ -348,7 +358,7 @@ local function SetFrames()
 	button:SetScript("OnClick", function(self, btn)
 		if IsAltKeyDown() then
 			KT:OpenOptions()
-		elseif not KT:IsTrackerEmpty() then
+		elseif not KT:IsTrackerEmpty() and not KT.locked then
 			ObjectiveTracker_MinimizeButton_OnClick()
 		end
 	end)
@@ -440,12 +450,6 @@ local function SetFrames()
 	Buttons.num = 0
 	Buttons.reanchor = false
 	KTF.Buttons = Buttons
-
-	-- Frame locks
-	if FRAMELOCK_STATES and FRAMELOCK_STATES.PETBATTLES then
-		FRAMELOCK_STATES.PETBATTLES[addonName.."Frame"] = "hidden"
-		FRAMELOCK_STATES.PETBATTLES[addonName.."Buttons"] = "hidden"
-	end
 end
 
 -- Hooks ---------------------------------------------------------------------------------------------------------------
@@ -994,7 +998,7 @@ local function SetHooks()
 
 				button.Count = button:CreateFontString(name.."Count", "BORDER", "NumberFontNormal")
 				button.Count:SetJustifyH("RIGHT")
-				button.Count:SetPoint("BOTTOMRIGHT", button.icon, -3, 2)
+				button.Count:SetPoint("BOTTOMRIGHT", button.icon, 0, 2)
 
 				button.Cooldown = CreateFrame("Cooldown", name.."Cooldown", button, "CooldownFrameTemplate")
 				button.Cooldown:SetAllPoints()
@@ -1005,7 +1009,7 @@ local function SetHooks()
 				button.HotKey:SetText(RANGE_INDICATOR)
 				button.HotKey:SetPoint("TOPRIGHT", button.icon, 2, -2)
 
-				button.text = button:CreateFontString(name.."Text", "ARTWORK", "NumberFontNormalSmall")
+				button.text = button:CreateFontString(name.."Text", "ARTWORK", "NumberFontNormal")
 				button.text:SetSize(29, 10)
 				button.text:SetJustifyH("LEFT")
 				button.text:SetPoint("TOPLEFT", button.icon, 1, -3)
@@ -1048,10 +1052,36 @@ local function SetHooks()
 		end
 		button.block = block
 		button:SetAlpha(1)
-		if db.qiActiveButton and KTF.ActiveButton.questID == questID then
-			KT.ActiveButton:Update(questID)
-		end
 		return button
+	end
+
+	local function QuestItemButton_Add(block, x, y)
+		local questLogIndex = C_QuestLog.GetLogIndexForQuestID(block.id)
+		if not questLogIndex then return end
+
+		local link, item, charges, showItemWhenComplete = KT.GetQuestLogSpecialItemInfo(questLogIndex)
+		if item and (not block.questCompleted or showItemWhenComplete) then
+			block.itemButton:Hide()
+			CreateFixedTag(block, x, y)
+			local button = CreateFixedButton(block)
+			if not InCombatLockdown() then
+				button:SetID(questLogIndex)
+				button.charges = charges
+				button.rangeTimer = -1
+				button.item = item
+				button.link = link
+				SetItemButtonTexture(button, item)
+				SetItemButtonCount(button, charges)
+				QuestObjectiveItem_UpdateCooldown(button)
+				button:SetAttribute("item", link)
+
+				if db.qiActiveButton and KTF.ActiveButton.questID == block.id then
+					KT.ActiveButton:Update(block.id)
+				end
+			end
+		else
+			KT:RemoveFixedButton(block)
+		end
 	end
 
 	hooksecurefunc(DEFAULT_OBJECTIVE_TRACKER_MODULE, "SetBlockHeader", function(self, block, text)
@@ -1072,27 +1102,7 @@ local function SetHooks()
 		block.title = text
 		block.questCompleted = isQuestComplete
 
-		if questLogIndex then
-			local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(questLogIndex)
-			if item and (not isQuestComplete or showItemWhenComplete) then
-				block.itemButton:Hide()
-				CreateFixedTag(block, 3, 4)
-				local button = CreateFixedButton(block)
-				if not InCombatLockdown() then
-					button:SetID(questLogIndex)
-					button.charges = charges
-					button.rangeTimer = -1
-					button.item = item
-					button.link = link
-					SetItemButtonTexture(button, item)
-					SetItemButtonCount(button, charges)
-					QuestObjectiveItem_UpdateCooldown(button)
-					button:SetAttribute("item", link)
-				end
-			else
-				KT:RemoveFixedButton(block)
-			end
-		end
+		QuestItemButton_Add(block, 3, 4)
 	end
 
 	function QUEST_TRACKER_MODULE:OnFreeBlock(block)  -- R
@@ -1109,32 +1119,6 @@ local function SetHooks()
 	end
 	CAMPAIGN_QUEST_TRACKER_MODULE.OnFreeBlock = QUEST_TRACKER_MODULE.OnFreeBlock
 
-	local function SetQuestItemButton(block)
-		local questLogIndex = C_QuestLog.GetLogIndexForQuestID(block.id)
-		if questLogIndex == nil then
-			return
-		end
-		local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(questLogIndex)
-		if item and (not isQuestComplete or showItemWhenComplete) then
-			block.itemButton:Hide()
-			CreateFixedTag(block, 0, 2)
-			local button = CreateFixedButton(block)
-			if not InCombatLockdown() then
-				button:SetID(questLogIndex)
-				button.charges = charges
-				button.rangeTimer = -1
-				button.item = item
-				button.link = link
-				SetItemButtonTexture(button, item)
-				SetItemButtonCount(button, charges)
-				QuestObjectiveItem_UpdateCooldown(button)
-				button:SetAttribute("item", link)
-			end
-		else
-			KT:RemoveFixedButton(block)
-		end
-	end
-
 	hooksecurefunc(WORLD_QUEST_TRACKER_MODULE, "Update", function(self)
 		local block, questID
 		local tasksTable = GetTasksTable()
@@ -1144,7 +1128,7 @@ local function SetHooks()
 				block = self:GetExistingBlock(questID)
 				if block then
 					block.TrackedQuest:SetPoint("TOPLEFT", -2, 0)
-					SetQuestItemButton(block)
+					QuestItemButton_Add(block, 0, 2)
 				end
 			end
 		end
@@ -1154,7 +1138,7 @@ local function SetHooks()
 				block = self:GetExistingBlock(questID)
 				if block then
 					block.TrackedQuest:SetPoint("TOPLEFT", -2, 0)
-					SetQuestItemButton(block)
+					QuestItemButton_Add(block, 0, 2)
 				end
 			end
 		end
@@ -1350,6 +1334,10 @@ local function SetHooks()
 				button.spellID = spellInfo[i].spellID
 				button.Icon:SetTexture(spellInfo[i].spellIcon)
 				button:SetAttribute("spell", spellInfo[i].spellID)
+
+				if db.qiActiveButton and KTF.ActiveButton.questID == block.id then
+					KT.ActiveButton:Update(block.id)
+				end
 			end
 		end
 		for i = objectiveBlock.numSpells + 1, #objectiveBlock.spells do
@@ -1507,7 +1495,7 @@ local function SetHooks()
 		if rangeTimer then
 			rangeTimer = rangeTimer - elapsed
 			if rangeTimer <= 0 then
-				local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(self:GetID())
+				local link, item, charges, showItemWhenComplete = KT.GetQuestLogSpecialItemInfo(self:GetID())
 				if charges and charges ~= self.charges then
 					ObjectiveTracker_Update(OBJECTIVE_TRACKER_UPDATE_MODULE_QUEST)
 					return
@@ -2212,7 +2200,8 @@ function KT:IsTrackerEmpty(noaddon)
 		GetNumTrackedAchievements() == 0 and
 		self.IsTableEmpty(self.activeTasks) and
 		C_QuestLog.GetNumWorldQuestWatches() == 0 and
-		not self.inScenario)
+		not self.inScenario and
+		not self.IcecrownRares:IsShown())
 	if not noaddon then
 		result = (result and not self.AddonPetTracker:IsShown())
 	end
@@ -2319,6 +2308,7 @@ function KT:OnInitialize()
 	self.inScenario = C_Scenario.IsInScenario()
 	self.stopUpdate = true
 	self.questStateStopUpdate = false
+	self.locked = false
 	self.wqInitialized = false
 	self.initialized = false
 
@@ -2346,8 +2336,6 @@ function KT:OnInitialize()
 	OTF.KTSetPoint = OTF.SetPoint
 	OTF.SetPoint = function() end
 	OTF:Show()
-	OTF.Show = function() end
-	OTF.Hide = function() end
 	OTF.SetShown = function() end
 end
 
@@ -2358,10 +2346,11 @@ function KT:OnEnable()
 
 	self.QuestLog:Enable()
 	self.Filters:Enable()
+	if db.qiActiveButton then self.ActiveButton:Enable() end
+	if db.sIcecrownRares then self.IcecrownRares:Enable() end
 	if self.AddonPetTracker.isLoaded then self.AddonPetTracker:Enable() end
 	if self.AddonTomTom.isLoaded then self.AddonTomTom:Enable() end
 	self.AddonOthers:Enable()
-	if db.qiActiveButton then self.ActiveButton:Enable() end
 	self.Help:Enable()
 
 	if self.db.global.version ~= self.version then

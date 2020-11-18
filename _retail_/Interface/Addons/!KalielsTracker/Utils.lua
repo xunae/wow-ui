@@ -231,6 +231,14 @@ function KT.GetQuestTagInfo(questID)
     return C_QuestLog.GetQuestTagInfo(questID) or {}
 end
 
+function KT.GetQuestLogSpecialItemInfo(questLogIndex)
+    local link, item, charges, showItemWhenComplete = GetQuestLogSpecialItemInfo(questLogIndex)
+    if charges and charges <= 0 then
+        charges = GetItemCount(link)
+    end
+    return link, item, charges, showItemWhenComplete
+end
+
 function KT.GetNumQuests()
     local numQuests = 0
     local numEntries = C_QuestLog.GetNumQuestLogEntries()
@@ -255,6 +263,58 @@ function KT.GetNumQuestWatches()
         end
     end
     return numWatches
+end
+
+-- Time
+function KT.SecondsToTime(seconds, noSeconds, maxCount, roundUp)
+    local time = "";
+    local count = 0;
+    local tempTime;
+    seconds = roundUp and ceil(seconds) or floor(seconds);
+    maxCount = maxCount or 2;
+    if ( seconds >= 86400  ) then
+        count = count + 1;
+        if ( count == maxCount and roundUp ) then
+            tempTime = ceil(seconds / 86400);
+        else
+            tempTime = floor(seconds / 86400);
+        end
+        time = tempTime.." Day";
+        seconds = mod(seconds, 86400);
+    end
+    if ( count < maxCount and seconds >= 3600  ) then
+        count = count + 1;
+        if ( time ~= "" ) then
+            time = time..TIME_UNIT_DELIMITER;
+        end
+        if ( count == maxCount and roundUp ) then
+            tempTime = ceil(seconds / 3600);
+        else
+            tempTime = floor(seconds / 3600);
+        end
+        time = time..tempTime.." Hr";
+        seconds = mod(seconds, 3600);
+    end
+    if ( count < maxCount and seconds >= 60  ) then
+        count = count + 1;
+        if ( time ~= "" ) then
+            time = time..TIME_UNIT_DELIMITER;
+        end
+        if ( count == maxCount and roundUp ) then
+            tempTime = ceil(seconds / 60);
+        else
+            tempTime = floor(seconds / 60);
+        end
+        time = time..tempTime.." Min";
+        seconds = mod(seconds, 60);
+    end
+    if ( count < maxCount and seconds > 0 and not noSeconds ) then
+        if ( time ~= "" ) then
+            time = time..TIME_UNIT_DELIMITER;
+        end
+        time = time..seconds.." Sec";
+    end
+    return time;
 end
 
 -- =====================================================================================================================
@@ -296,11 +356,28 @@ StaticPopupDialogs[addonName.."_ReloadUI"] = {
     whileDead = 1
 }
 
+StaticPopupDialogs[addonName.."_LockUI"] = {
+    text = "|T"..mediaPath.."KT_logo:22:22:0:0|t"..NORMAL_FONT_COLOR_CODE..KT.title.."|r",
+    subText = "...",
+    button1 = LOCK,
+    OnShow = StatiPopup_OnShow,
+    OnAccept = function()
+        local overlay = KT.frame.ActiveFrame.overlay
+        overlay:Hide()
+    end,
+    timeout = 0,
+    whileDead = 1
+}
+
 StaticPopupDialogs[addonName.."_WowheadURL"] = {
     text = "|T"..mediaPath.."KT_logo:22:22:0:-1|t"..NORMAL_FONT_COLOR_CODE..KT.title.."|r - Wowhead URL",
     button2 = CLOSE,
     hasEditBox = 1,
     editBoxWidth = 300,
+    EditBoxOnTextChanged = function(self)
+        self:SetText(self.text)
+        self:HighlightText()
+    end,
     EditBoxOnEnterPressed = function(self)
         self:GetParent():Hide()
     end,
@@ -317,9 +394,9 @@ StaticPopupDialogs[addonName.."_WowheadURL"] = {
         local www = KT.locale:sub(1, 2)
         if www == "zh" then www = "cn" end
         self.text:SetText(self.text:GetText().."\n|cffff7f00"..name.."|r")
-        self.editBox:SetText("http://"..www..".wowhead.com/"..self.text.text_arg1.."="..self.text.text_arg2)
+        self.editBox.text = "http://"..www..".wowhead.com/"..self.text.text_arg1.."="..self.text.text_arg2
+        self.editBox:SetText(self.editBox.text)
         self.editBox:SetFocus()
-        self.editBox:HighlightText()
     end,
     timeout = 0,
     whileDead = 1,

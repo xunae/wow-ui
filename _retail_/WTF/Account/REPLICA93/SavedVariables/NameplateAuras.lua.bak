@@ -2266,22 +2266,20 @@ NameplateAurasAceDB = {
 			["TimerTextUseRelativeScale"] = false,
 			["TimerTextYOffset"] = -1,
 			["TimerTextSize"] = 12,
-			["BorderThickness"] = 1,
-			["ShowBuffBorders"] = false,
+			["DefaultIconSizeHeight"] = 32,
 			["FontScale"] = 0.6,
-			["DefaultIconSizeWidth"] = 32,
 			["Font"] = "Oswald",
 			["HidePlayerBlizzardFrame"] = true,
+			["DBVersion"] = 18,
 			["IconAnchor"] = 3,
 			["IconZoom"] = 0,
 			["BuffBordersColor"] = {
 				1, -- [1]
 				[3] = 1,
 			},
-			["DefaultIconSizeHeight"] = 32,
 			["DefaultSpellsLastSetImported"] = 2,
 			["ShowStacks"] = false,
-			["ShowDebuffBorders"] = false,
+			["StacksFont"] = "Accidental Presidency",
 			["IconYOffset"] = 36,
 			["CustomSpells2"] = {
 				{
@@ -2398,8 +2396,8 @@ NameplateAurasAceDB = {
 				}, -- [8]
 			},
 			["InterruptsGlowType"] = 1,
-			["DBVersion"] = 18,
-			["StacksFont"] = "Accidental Presidency",
+			["BorderThickness"] = 1,
+			["DefaultIconSizeWidth"] = 32,
 		},
 		["Xunaj - Draenor"] = {
 			["CustomSpells2"] = {
@@ -11405,9 +11403,9 @@ NameplateAurasAceDB = {
 			},
 			["InterruptsGlowType"] = 1,
 			["IconAnchor"] = 3,
-			["DefaultSpellsLastSetImported"] = 2,
-			["HidePlayerBlizzardFrame"] = true,
 			["DBVersion"] = 18,
+			["HidePlayerBlizzardFrame"] = true,
+			["DefaultSpellsLastSetImported"] = 2,
 		},
 	},
 }

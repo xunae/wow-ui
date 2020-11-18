@@ -5,9 +5,11 @@ KuiNameplatesCoreSaved = {
 	["profiles"] = {
 		["default"] = {
 			["fade_speed"] = 0.100000001490116,
+			["nameonly_no_font_style"] = true,
 			["auras_show_purge"] = false,
-			["target_arrows_size"] = 32,
-			["target_arrows"] = true,
+			["bot_vertical_offset"] = 0,
+			["font_style"] = 3,
+			["font_size_normal"] = 14,
 			["target_glow_colour"] = {
 				0.3019607843137255, -- [1]
 				0.7019607843137254, -- [2]
@@ -23,23 +25,23 @@ KuiNameplatesCoreSaved = {
 				0, -- [3]
 			},
 			["cvar_occluded_mult"] = 0.400000005960465,
-			["name_vertical_offset"] = 1,
-			["nameonly_no_font_style"] = true,
+			["name_vertical_offset"] = 2,
+			["fade_conditional_alpha"] = 0.300000011920929,
 			["nameonly"] = false,
-			["font_style"] = 3,
+			["bar_animation"] = 2,
 			["fade_all"] = true,
 			["frame_height"] = 12,
-			["frame_width_minus"] = 98,
-			["fade_conditional_alpha"] = 0.300000011920929,
+			["font_size_small"] = 12,
+			["cvar_enable"] = true,
 			["auras_enabled"] = false,
+			["target_arrows_size"] = 32,
 			["clickthrough_friend"] = true,
-			["font_size_normal"] = 12,
+			["frame_width_minus"] = 98,
+			["target_arrows"] = true,
+			["fade_non_target_alpha"] = 0.699999988079071,
+			["font_face"] = "Accidental Presidency",
 			["cvar_personal_show_combat"] = false,
 			["cvar_disable_alpha"] = false,
-			["fade_non_target_alpha"] = 0.699999988079071,
-			["font_face"] = "Oswald",
-			["bar_animation"] = 2,
-			["cvar_enable"] = true,
 			["execute_enabled"] = false,
 			["castbar_colour"] = {
 				1, -- [1]

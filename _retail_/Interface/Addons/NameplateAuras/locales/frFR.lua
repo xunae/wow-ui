@@ -56,6 +56,12 @@ L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Transparence"
 L["options:apps:dispellable-spells"] = "Afficher les auras révocables/volables sur les barres d'identification des ennemis"
 L["options:apps:dispellable-spells:black-list-button"] = "Ouvrir la liste noire"
 L["options:apps:dispellable-spells:tooltip"] = "Afficher les auras révocables/volables sur les barres d'identification des ennemis. Ces auras ont une brillance et une taille par défaut"
+--[[Translation missing --]]
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+--[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (stun only)"
+--[[Translation missing --]]
+L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = "Afficher une aura spéciale au dessus des barres d'identification avec Explosif (M+ Affixe Explosif). Cette aura apparait en surbrillance et a une taille par défaut"
 L["options:auras:enabled-state:tooltip"] = [=[%s : l'aura ne sera pas affichée
 %s : l'aura sera affichée si vous la lancez
@@ -83,6 +89,8 @@ L["options:general:icon-grow-direction"] = "Sens d'ajout des icônes"
 L["options:general:show-aura-tooltip"] = "Afficher le nom de l'aura lorsque la souris passe au dessus son icône"
 L["options:general:show-cooldown-animation"] = "Afficher l'animation de rechargement"
 L["options:general:show-cooldown-text"] = "Afficher le temps restant avant expiration des auras"
+--[[Translation missing --]]
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 L["options:general:show-stacks"] = "Afficher la valeur des piles des auras"
 L["options:general:test-mode"] = "Mode de test"
 L["options:glow-type"] = "Type de surbrillance"

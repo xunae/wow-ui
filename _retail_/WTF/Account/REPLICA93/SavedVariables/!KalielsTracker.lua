@@ -16,7 +16,9 @@ KalielsTrackerDB = {
 			["collapsed"] = true,
 		},
 		["Mktja - Draenor"] = {
-			["collapsed"] = true,
+			["quests"] = {
+				["num"] = 1,
+			},
 		},
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,
@@ -63,18 +65,19 @@ KalielsTrackerDB = {
 	},
 	["global"] = {
 		["helpTutorial"] = 11,
-		["version"] = "4.1.0",
+		["version"] = "4.2.4",
 	},
 	["profiles"] = {
 		["Default"] = {
+			["maxHeight"] = 626,
 			["hdrOtherButtons"] = false,
+			["hideEmptyTracker"] = true,
+			["fontSize"] = 11,
+			["progressBar"] = "Blizzard Raid Bar",
 			["bgrColor"] = {
 				["a"] = 0.5,
 			},
 			["bgr"] = "None",
-			["fontSize"] = 11,
-			["progressBar"] = "Blizzard Raid Bar",
-			["maxHeight"] = 626,
 		},
 	},
 }

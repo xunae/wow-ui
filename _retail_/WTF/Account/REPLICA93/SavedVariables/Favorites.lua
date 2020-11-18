@@ -39,6 +39,8 @@ favsDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["classColorOppositeFaction"] = true,
+			["showLevel"] = true,
 		},
 	},
 }

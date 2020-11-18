@@ -2,7 +2,7 @@
 -- L00: Leatrix Maps Library
 ----------------------------------------------------------------------
 
-	-- LibDBIcon 8.2.0 by funkehdude
+	-- LibDBIcon 9.0.0 by funkehdude
 	-- 11: LibStub: (?s)-- LibStubStart\R?\K.*?(?=-- LibStubEnd)
 	-- 12: LibCallbackHandler: (?s)-- CallbackStart\R?\K.*?(?=-- CallbackEnd)
 	-- 13: LibDataBroker: (?s)-- DataBrokerStart\R?\K.*?(?=-- DataBrokerEnd)
@@ -290,6 +290,7 @@ end
 -- CallbackHandler purposefully does NOT do explicit embedding. Nor does it
 -- try to upgrade old implicit embeds since the system is selfcontained and
 -- relies on closures to work.
+
 -- CallbackEnd
 end
 
@@ -412,7 +413,7 @@ local function LeaLibDBIcon()
 --
 
 local DBICON10 = "LibDBIcon-1.0"
-local DBICON10_MINOR = 43 -- Bump on changes
+local DBICON10_MINOR = 44 -- Bump on changes
 if not LibStub then error(DBICON10 .. " requires LibStub.") end
 local ldb = LibStub("LibDataBroker-1.1", true)
 if not ldb then error(DBICON10 .. " requires LibDataBroker-1.1.") end
@@ -424,8 +425,8 @@ lib.callbackRegistered = lib.callbackRegistered or nil
 lib.callbacks = lib.callbacks or LibStub("CallbackHandler-1.0"):New(lib)
 lib.notCreated = lib.notCreated or {}
 lib.radius = lib.radius or 5
+local next, Minimap, CreateFrame = next, Minimap, CreateFrame
 lib.tooltip = lib.tooltip or CreateFrame("GameTooltip", "LibDBIconTooltip", UIParent, "GameTooltipTemplate")
-local next, Minimap = next, Minimap
 local isDraggingButton = false
 
 function lib:IconCallback(event, name, key, value)
@@ -624,8 +625,14 @@ local function createButton(name, object, db)
 	button.dataObject = object
 	button.db = db
 	button:SetFrameStrata("MEDIUM")
-	button:SetSize(31, 31)
+	if button.SetFixedFrameStrata then -- Classic support
+		button:SetFixedFrameStrata(true)
+	end
 	button:SetFrameLevel(8)
+	if button.SetFixedFrameLevel then -- Classic support
+		button:SetFixedFrameLevel(true)
+	end
+	button:SetSize(31, 31)
 	button:RegisterForClicks("anyUp")
 	button:RegisterForDrag("LeftButton")
 	button:SetHighlightTexture(136477) --"Interface\\Minimap\\UI-Minimap-ZoomButton-Highlight"
@@ -906,33 +913,7 @@ do
 
 	-- UIDropDownMenu_SetSelectedValue/_Refresh can taint execution
 	-- https://www.townlong-yak.com/bugs/YhgQma-SetValueRefreshTaint
-	if (COMMUNITY_UIDD_REFRESH_PATCH_VERSION or 0) < 2 then
-		COMMUNITY_UIDD_REFRESH_PATCH_VERSION = 2
-		if select(4, GetBuildInfo()) > 8e4 then
-			local function CleanDropdowns()
-				if COMMUNITY_UIDD_REFRESH_PATCH_VERSION ~= 2 then
-					return
-				end
-				local f, f2 = FriendsFrame, FriendsTabHeader
-				local s = f:IsShown()
-				f:Hide()
-				f:Show()
-				if not f2:IsShown() then
-					f2:Show()
-					f2:Hide()
-				end
-				if not s then
-					f:Hide()
-				end
-			end
-			hooksecurefunc("Communities_LoadUI", CleanDropdowns)
-			hooksecurefunc("SetCVar", function(n)
-				if n == "lastSelectedClubId" then
-					CleanDropdowns()
-				end
-			end)
-		end
-	end
+	-- Mitigated by 8.3.0.33775
 
 	-- UIDropDownMenu_GetSelectedID taints dropdown initialization
 	-- https://www.townlong-yak.com/bugs/afKy4k-HonorFrameLoadTaint

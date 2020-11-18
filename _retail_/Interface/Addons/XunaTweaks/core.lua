@@ -156,6 +156,19 @@ function XunaTweaks:classColorFrames()
 		end
 	end
 
+	local function colorStatusBar(statusbar, unit)
+		if UnitIsPlayer(unit) and unit == statusbar.unit then
+			local _, class = UnitClass(unit)
+			local c = CUSTOM_CLASS_COLORS and CUSTOM_CLASS_COLORS[class] or RAID_CLASS_COLORS[class]
+			if c then
+				statusbar:SetStatusBarColor(c.r, c.g, c.b)
+			end
+		end
+	end
+	
+	hooksecurefunc("UnitFrameHealthBar_Update", colorStatusBar)
+	hooksecurefunc("HealthBar_OnValueChanged", function(self) colorStatusBar(self, self.unit) end)
+
 	setTargetFrameColor()
 	--setPlayerFrameColor()
 
@@ -166,19 +179,19 @@ function XunaTweaks:classColorFrames()
 end
 
 function XunaTweaks:classIconPortraits()
-	hooksecurefunc('UnitFramePortrait_Update', function(self)
-		local portrait = self.portrait
-		local unit = self.unit
-
-		if portrait then
-			if UnitIsPlayer(unit) then                         
-				local t = CLASS_ICON_TCOORDS[select(2, UnitClass(unit))]
+	hooksecurefunc("UnitFramePortrait_Update",function(self)
+		if self.unit == "player" or self.unit == "pet" then
+			return
+		end
+		if self.portrait then
+			if UnitIsPlayer(self.unit) then
+				local t = CLASS_ICON_TCOORDS[select(2,UnitClass(self.unit))]
 				if t then
-					portrait:SetTexture('Interface\\TargetingFrame\\UI-Classes-Circles')
-					portrait:SetTexCoord(unpack(t))
+					self.portrait:SetTexture("Interface\\TargetingFrame\\UI-Classes-Circles")
+					self.portrait:SetTexCoord(unpack(t))
 				end
 			else
-				portrait:SetTexCoord(0, 1, 0, 1)
+				self.portrait:SetTexCoord(0, 1, 0, 1)
 			end
 		end
 	end)

@@ -85,6 +85,12 @@ L["options:apps:dispellable-spells"] = "Show dispellable/stealable auras on enem
 L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
 --[[Translation missing --]]
 L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
+--[[Translation missing --]]
+L["options:apps:dr"] = "Enable display of diminishing return (beta)"
+--[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (stun only)"
+--[[Translation missing --]]
+L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = "Mostrar aura especial em cima das placas de Explosivos(M+ Explosivo). Essa aura possui um brilho leve e tamanho padrão"
 --[[Translation missing --]]
 L["options:auras:enabled-state:tooltip"] = [=[%s: aura will not be shown
@@ -135,6 +141,8 @@ L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over aura
 L["options:general:show-cooldown-animation"] = "Show cooldown animation"
 --[[Translation missing --]]
 L["options:general:show-cooldown-text"] = "Show aura's remaining time"
+--[[Translation missing --]]
+L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
 --[[Translation missing --]]
 L["options:general:show-stacks"] = "Show aura's stacks"
 --[[Translation missing --]]

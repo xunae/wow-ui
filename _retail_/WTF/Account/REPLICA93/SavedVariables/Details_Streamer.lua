@@ -35,7 +35,7 @@ Details_StreamerDB = {
 		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
-		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
+		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Xñä - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Ravencrest"] = "Xûñä - Ravencrest",
 		["Spazshaman - Stormscale"] = "Xûñä - Ravencrest",
@@ -50,7 +50,7 @@ Details_StreamerDB = {
 		["Xñæ - Draenor"] = "Xûñä - Ravencrest",
 		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
 		["Vapenaysh - Stormscale"] = "Xûñä - Ravencrest",
-		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
+		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
 		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
 		["Xüñâ - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xûñä - Stormscale"] = "Xûñä - Ravencrest",
@@ -82,12 +82,12 @@ Details_StreamerDB = {
 			},
 			["arrow_anchor_x"] = 0,
 			["row_texture"] = "Details Serenity",
-			["scale"] = 1,
-			["row_height"] = 20,
-			["point"] = "TOPLEFT",
+			["arrow_anchor_y"] = 0,
+			["main_frame_locked"] = true,
+			["author"] = "Details! Team",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["main_frame_strata"] = "LOW",
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -95,7 +95,12 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -28.9441528320313,
 			["per_second"] = {
@@ -105,22 +110,17 @@ Details_StreamerDB = {
 				["font_shadow"] = true,
 				["y"] = 1.52587890625e-05,
 				["x"] = 0.0001373291015625,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
-			["use_spark"] = true,
 			["font_size"] = 12,
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["main_frame_strata"] = "LOW",
+			["point"] = "TOPLEFT",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 	},
 }

@@ -198,22 +198,13 @@ local function SetupTutorials()
 			shineRight = 11,
 		},
 		{	-- 11
-			text = cTitle.."         What's NEW in version |r|cffffffff4.1.0|r\n\n"..
-					"- FIXED - issue #452 - Error when activating Party Sync\n"..
-					"- FIXED - issue #457 - Map closes when switching zones\n"..
-					"- FIXED - Error inside the Arenas\n"..
-					"- FIXED - Quests - not showing tags for daily/weekly quests\n"..
-					"- FIXED - TomTom - error when Quest refreshed (empty title)\n"..
-					"- UPDATED - Addon support - Masque 9.0.2\n"..
-					"- UPDATED - Addon support - PetTracker 9.0.1\n"..
-					"- UPDATED - Addon support - ElvUI 12.06, Tukui 20.04, RealUI 2.2.3,"..
-					offs.."SpartanUI 6.0.10\n"..
-					"- REMOVED - Addon support - SuperVillain UI\n"..
-					"- UPDATED - Lib - MSA-DropDownMenu-1.0\n"..
-					"- ADDED - Filters - Favorites for Quests and Achievements (see Help page 4)\n"..
-					"- ADDED - Compatibility - addon Aurora\n"..
-					"- IMPROVED - Counting quests method\n"..
-					"- IMPROVED - Quest Item Active Button\n\n"..
+			text = cTitle.."         What's NEW in version |r|cffffffff4.2.4|r\n\n"..
+					"|TInterface\\Scenarios\\LegionInvasion:41:42:-4:0:512:512:314:373:144:206|t Special gift - |cffff7fffIcecrown Rare Monitor|r\n\n"..
+					"- UPDATED - Icecrown Rare Monitor - Rares now spawn every 10 minutes"..
+					offs.."(update for EU / NA zones)\n\n"..
+
+					"|cffff0000Take a look Options and configure Rare Monitor correctly!|r\n"..
+					"Now you don't need add UTC offset to field \"Timer Correction\". This field now use only for cosmetic time correction.\n\n"..
 
                     cTitle.."WoW 9.0.1 - Known issues w/o solution|r\n"..
                     "- Clicking on tracked quests or achievements has no response during combat.\n"..
@@ -250,8 +241,6 @@ local function SetupTutorials()
 				end
 			elseif i == 5 then
 				self[i].shine = KTF.Buttons
-			elseif i == 6 then
-				self[i].shine = KTF.ActiveButton
 			elseif i == 10 then
 				for j=1, C_QuestLog.GetNumQuestWatches() do
 					local questID = C_QuestLog.GetQuestIDForQuestWatchIndex(j)

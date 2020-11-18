@@ -29,6 +29,7 @@ local strata = { "LOW", "MEDIUM", "HIGH" }
 local flags = { [""] = "None", ["OUTLINE"] = "Outline", ["OUTLINE, MONOCHROME"] = "Outline Monochrome" }
 local textures = { "None", "Default (Blizzard)", "One line", "Two lines" }
 local modifiers = { [""] = "None", ["ALT"] = "Alt", ["CTRL"] = "Ctrl", ["ALT-CTRL"] = "Alt + Ctrl" }
+local realmZones = { ["EU"] = "Europe", ["NA"] = "North America" }
 
 local cTitle = " "..NORMAL_FONT_COLOR_CODE
 local cBold = "|cff00ffe3"
@@ -106,6 +107,11 @@ local defaults = {
 		sink20Sticky = false,
 		soundQuest = true,
 		soundQuestComplete = "KT - Default",
+
+		sIcecrownRares = true,
+		sIcecrownRaresRealmZone = "EU",
+		sIcecrownRaresTimerCorrection = 0,
+		sIcecrownRaresOnlyInZone = false,
 
 		modulesOrder = KT.BLIZZARD_MODULES,
 
@@ -277,9 +283,9 @@ local options = {
 							order = 1.5,
 						},
 						maxHeightNote = {
-							name = cBold.."\n Max. height is related with value Y offset.\n"..
-								" Content is lesser ... tracker height is automatically increases.\n"..
-								" Content is greater ... tracker enables scrolling.",
+							name = cBold.."\n  Max. height is related with value Y offset.\n"..
+								"  Content is lesser ... tracker height is automatically increases.\n"..
+								"  Content is greater ... tracker enables scrolling.",
 							type = "description",
 							order = 1.6,
 						},
@@ -948,15 +954,27 @@ local options = {
 						qiActiveButtonSpacer = {
 							name = " ",
 							type = "description",
-							width = "normal+half",
+							width = "half",
 							order = 5.51,
+						},
+						qiActiveButtonUnlock = {
+							name = UNLOCK,
+							type = "execute",
+							disabled = function()
+								return not db.qiActiveButton
+							end,
+							func = function()
+								KTF.ActiveFrame.overlay:Show()
+								StaticPopup_Show(addonName.."_LockUI", nil, "Addon UI elements unlocked.\nMove them and click Lock when you are done.\n\n"..cBold.."Right Click|r on mover restore the default position.")
+							end,
+							order = 5.6,
 						},
 						addonMasqueLabel = {
 							name = " Skin options - for Quest item buttons or Active button",
 							type = "description",
 							width = "double",
 							fontSize = "medium",
-							order = 5.6,
+							order = 5.7,
 						},
 						addonMasqueOptions = {
 							name = "Masque",
@@ -968,7 +986,7 @@ local options = {
 								SlashCmdList["MASQUE"]()
 								SlashCmdList["MASQUE"]()
 							end,
-							order = 5.61,
+							order = 5.71,
 						},
 					},
 				},
@@ -1158,6 +1176,124 @@ local options = {
 						},
 					},
 				},
+				sec9 = {
+					name = "Special",
+					type = "group",
+					inline = true,
+					order = 0.5,
+					args = {
+						sIcecrownRaresImg = {
+							name = "",
+							type = "description",
+							width = 0.3,
+							image = "Interface\\Scenarios\\LegionInvasion",
+							imageCoords = { 0.61328125, 0.728515625, 0.28125, 0.40234375 },
+							imageWidth = 39,
+							imageHeight = 42,
+							order = 9.11,
+						},
+						sIcecrownRares = {
+							name = "Icecrown Rare Monitor "..beta,
+							desc = "Shows Shadowlands Pre-Patch Rares, which are spawns. "..cWarning.."This feature has not been tested much!|r",
+							descStyle = "inline",
+							type = "toggle",
+							width = 2.1,
+							confirm = true,
+							confirmText = warning,
+							set = function()
+								db.sIcecrownRares = not db.sIcecrownRares
+								if db.sIcecrownRares then
+									db.collapsed = false
+								end
+								db.modulesOrder = nil
+								ReloadUI()
+							end,
+							order = 9.12,
+						},
+						sIcecrownRaresSpacer2 = {
+							name = " ",
+							type = "description",
+							width = 0.6,
+							order = 9.13,
+						},
+						sIcecrownRaresSpacer1 = {
+							name = " ",
+							type = "description",
+							width = 0.3,
+							order = 9.21,
+						},
+						sIcecrownRaresRealmZone = {
+							name = "Realm Zone",
+							desc = "Select the Realm Zone where you are connecting for the correct Rares order.",
+							type = "select",
+							width = 0.8,
+							values = realmZones,
+							disabled = function()
+								return not db.sIcecrownRares
+							end,
+							get = function()
+								for k, v in pairs(realmZones) do
+									if db.sIcecrownRaresRealmZone == k then
+										return k
+									end
+								end
+							end,
+							set = function(_, value)
+								db.sIcecrownRaresRealmZone = value
+								KT.IcecrownRares:SetUserUtcOffset()
+								ObjectiveTracker_Update(OBJECTIVE_TRACKER_UPDATE_MODULE_ICECROWN_RARES)
+							end,
+							order = 9.22,
+						},
+						sIcecrownRaresTimerCorrection = {
+							name = "Timer Correction",
+							desc = "Rare timer correction in seconds. Positive and negative numbers are allowed.\n"..cWarning.."Use it when Rare spawns sooner or later than the timer shows.",
+							type = "input",
+							width = 0.8,
+							disabled = function()
+								return not db.sIcecrownRares
+							end,
+							get = function(info)
+								return tostring(db[info[#info]] or 0)
+							end,
+							set = function(_, value)
+								db.sIcecrownRaresTimerCorrection = tonumber(value) or 0
+								ObjectiveTracker_Update(OBJECTIVE_TRACKER_UPDATE_MODULE_ICECROWN_RARES)
+							end,
+							order = 9.23,
+						},
+						sIcecrownRaresOnlyInZone = {
+							name = "Show only in Icecrown",
+							descStyle = "inline",
+							type = "toggle",
+							width = 1.1,
+							disabled = function()
+								return not db.sIcecrownRares
+							end,
+							set = function()
+								db.sIcecrownRaresOnlyInZone = not db.sIcecrownRaresOnlyInZone
+								KT.IcecrownRares:SetUsed()
+								ObjectiveTracker_Update(OBJECTIVE_TRACKER_UPDATE_MODULE_ICECROWN_RARES)
+							end,
+							order = 9.24,
+						},
+						sIcecrownRaresSpacer3 = {
+							name = " ",
+							type = "description",
+							width = 0.3,
+							order = 9.31,
+						},
+						sIcecrownRaresDesc = {
+							name = "  Available actions:\n"..
+									"  - "..cBold.."Left Click|r - add waypoint (Blizzard or TomTom)\n"..
+									"  - "..cBold.."Right Click|r - remove waypoint (Blizzard or TomTom)\n"..
+									"  - "..cBold.."Shift + Left Click|r - send Rare info to General chat channel",
+							type = "description",
+							width = "double",
+							order = 9.32,
+						},
+					},
+				},
 			},
 		},
 		modules = {
@@ -1228,6 +1364,7 @@ local options = {
 								if PetTracker.sets then
 									PetTracker.sets.trackPets = db.addonPetTracker
 								end
+								db.modulesOrder = nil
 								ReloadUI()
 							end,
 							order = 1.21,

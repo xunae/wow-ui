@@ -1,6 +1,6 @@
 
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 9.0.05 (4th November 2020)
+	-- 	Leatrix Maps 9.0.08 (18th November 2020)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaConfigList = {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "9.0.05"
+	LeaMapsLC["AddonVer"] = "9.0.08"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -1387,9 +1387,9 @@
 			end
 
 			-- Create minimap button using LibDBIcon
-			local ldb = LibStub("LibDataBroker-1.1", true)
-			local miniButton = ldb:NewDataObject("Leatrix_Maps", {
-				type = "launcher",
+			local miniButton = LibStub("LibDataBroker-1.1"):NewDataObject("Leatrix_Maps", {
+				type = "data source",
+				text = "Leatrix Maps",
 				icon = "Interface\\Worldmap\\UI-World-Icon",
 				OnClick = function(self, btn)
 					MiniBtnClickFunc(btn)
@@ -1399,14 +1399,17 @@
 					tooltip:AddLine("Leatrix Maps")
 				end,
 			})
+
 			local icon = LibStub("LibDBIcon-1.0", true)
 			icon:Register("Leatrix_Maps", miniButton, LeaMapsDB)
 
 			-- Function to toggle LibDBIcon
 			local function SetLibDBIconFunc()
 				if LeaMapsLC["ShowMinimapIcon"] == "On" then
+					LeaMapsDB["hide"] = false
 					icon:Show("Leatrix_Maps")
 				else
+					LeaMapsDB["hide"] = true
 					icon:Hide("Leatrix_Maps")
 				end
 			end
