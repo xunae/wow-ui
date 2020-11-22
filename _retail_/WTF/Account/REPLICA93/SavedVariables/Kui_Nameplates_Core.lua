@@ -5,10 +5,14 @@ KuiNameplatesCoreSaved = {
 	["profiles"] = {
 		["default"] = {
 			["fade_speed"] = 0.100000001490116,
-			["nameonly_no_font_style"] = true,
+			["bar_texture"] = "Blizzard Raid Bar",
 			["auras_show_purge"] = false,
 			["bot_vertical_offset"] = 0,
-			["font_style"] = 3,
+			["castbar_colour"] = {
+				1, -- [1]
+				1, -- [2]
+				0, -- [3]
+			},
 			["font_size_normal"] = 14,
 			["target_glow_colour"] = {
 				0.3019607843137255, -- [1]
@@ -26,29 +30,25 @@ KuiNameplatesCoreSaved = {
 			},
 			["cvar_occluded_mult"] = 0.400000005960465,
 			["name_vertical_offset"] = 2,
-			["cvar_disable_alpha"] = false,
-			["nameonly"] = false,
 			["fade_conditional_alpha"] = 0.300000011920929,
+			["nameonly"] = false,
+			["bar_animation"] = 2,
 			["fade_all"] = true,
 			["frame_height"] = 12,
 			["font_size_small"] = 12,
-			["cvar_enable"] = true,
+			["cvar_personal_show_combat"] = false,
 			["auras_enabled"] = false,
 			["target_arrows_size"] = 32,
 			["clickthrough_friend"] = true,
-			["frame_width_minus"] = 98,
 			["target_arrows"] = true,
+			["frame_width_minus"] = 98,
 			["fade_non_target_alpha"] = 0.699999988079071,
 			["font_face"] = "Accidental Presidency",
-			["cvar_personal_show_combat"] = false,
-			["bar_animation"] = 2,
+			["cvar_enable"] = true,
+			["cvar_disable_alpha"] = false,
 			["execute_enabled"] = false,
-			["castbar_colour"] = {
-				1, -- [1]
-				1, -- [2]
-				0, -- [3]
-			},
-			["bar_texture"] = "Blizzard Raid Bar",
+			["font_style"] = 3,
+			["nameonly_no_font_style"] = true,
 		},
 	},
 }
