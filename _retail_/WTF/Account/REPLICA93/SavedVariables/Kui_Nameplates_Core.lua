@@ -26,9 +26,9 @@ KuiNameplatesCoreSaved = {
 			},
 			["cvar_occluded_mult"] = 0.400000005960465,
 			["name_vertical_offset"] = 2,
-			["fade_conditional_alpha"] = 0.300000011920929,
+			["cvar_disable_alpha"] = false,
 			["nameonly"] = false,
-			["bar_animation"] = 2,
+			["fade_conditional_alpha"] = 0.300000011920929,
 			["fade_all"] = true,
 			["frame_height"] = 12,
 			["font_size_small"] = 12,
@@ -41,7 +41,7 @@ KuiNameplatesCoreSaved = {
 			["fade_non_target_alpha"] = 0.699999988079071,
 			["font_face"] = "Accidental Presidency",
 			["cvar_personal_show_combat"] = false,
-			["cvar_disable_alpha"] = false,
+			["bar_animation"] = 2,
 			["execute_enabled"] = false,
 			["castbar_colour"] = {
 				1, -- [1]

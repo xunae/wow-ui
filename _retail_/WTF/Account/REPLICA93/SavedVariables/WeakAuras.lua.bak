@@ -359,8 +359,8 @@ WeakAurasSaved = {
 		["Maalus"] = {
 			[187620] = "Interface\\Icons\\inv_jewelry_ring_89",
 		},
-		["Unstable Orb"] = {
-			[182001] = "Interface\\Icons\\Spell_Fire_FelFlameRing",
+		["Lunar Beacon"] = {
+			[236712] = 429383,
 		},
 		["Tailwind Totem"] = {
 			[210659] = 136046,
@@ -368,8 +368,8 @@ WeakAurasSaved = {
 		["Serenity"] = {
 			[152173] = 988197,
 		},
-		["Lunar Beacon"] = {
-			[236712] = 429383,
+		["Devour Magic"] = {
+			[238583] = 136131,
 		},
 		["Permeliative Torment"] = {
 			[211261] = "Interface\\Icons\\ability_socererking_arcanemines",
@@ -561,11 +561,11 @@ WeakAurasSaved = {
 		["Jealous Kiss"] = {
 			[170852] = "Interface\\Icons\\Spell_Shadow_SoothingKiss",
 		},
-		["Burning Soul"] = {
-			[216040] = "Interface\\Icons\\spell_fel_incinerate",
-		},
 		["Silence"] = {
 			[15487] = 458230,
+		},
+		["Void Haze"] = {
+			[184473] = "Interface\\Icons\\ability_priest_voidentropy",
 		},
 		["Tidal Force"] = {
 			[246729] = 136052,
@@ -588,9 +588,9 @@ WeakAurasSaved = {
 		["Lifecycles (Vivify)"] = {
 			[197916] = 628675,
 		},
-		["Fel Chakram"] = {
-			[182178] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
-			[182200] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
+		["Venomous Pool"] = {
+			[213124] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
+			[215489] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
 		},
 		["Rot"] = {
 			[203096] = "Interface\\Icons\\Spell_Shadow_CreepingPlague",
@@ -625,9 +625,8 @@ WeakAurasSaved = {
 		["Spirit Rain"] = {
 			[246771] = 136052,
 		},
-		["Venomous Pool"] = {
-			[213124] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
-			[215489] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
+		["Knock down"] = {
+			[217621] = "Interface\\Icons\\Ability_ThunderClap",
 		},
 		["Astral Shift"] = {
 			[108271] = 538565,
@@ -659,15 +658,14 @@ WeakAurasSaved = {
 		["Bellowing Roar"] = {
 			[204078] = "Interface\\Icons\\Spell_Shadow_Charm",
 		},
-		["Valarjar's Bond"] = {
-			[228018] = "Interface\\Icons\\Spell_Nature_LightningShield",
-			[229529] = "Interface\\Icons\\Spell_Nature_LightningShield",
+		["Sigil of Silence"] = {
+			[204490] = 1418288,
 		},
 		["Slippery"] = {
 			[239420] = 463570,
 		},
-		["Sigil of Silence"] = {
-			[204490] = 1418288,
+		["Nightmare Corruption"] = {
+			[212886] = "Interface\\Icons\\Spell_DeathKnight_BloodBoil",
 		},
 		["Feltouched"] = {
 			[186134] = "Interface\\Icons\\spell_fel_elementaldevastation",
@@ -729,8 +727,8 @@ WeakAurasSaved = {
 		["Mark of Taerar"] = {
 			[203121] = "Interface\\Icons\\inv_misc_head_dragon_black_nightmare",
 		},
-		["Sanguine Ichor"] = {
-			[226512] = "Interface\\Icons\\Spell_Shadow_BloodBoil",
+		["Lightning Shield"] = {
+			[192106] = 136051,
 		},
 		["Incorporeal Shot"] = {
 			[236305] = 959793,
@@ -756,8 +754,9 @@ WeakAurasSaved = {
 		["Mark of Lethon"] = {
 			[203124] = "Interface\\Icons\\inv_misc_head_dragon_bronze_nightmare",
 		},
-		["Lightning Shield"] = {
-			[192106] = 136051,
+		["Warbringer"] = {
+			[7922] = "Interface\\Icons\\Spell_Frost_Stun",
+			[213427] = "Interface\\Icons\\Spell_Frost_Stun",
 		},
 		["Ring of Frost"] = {
 			[82691] = 464484,
@@ -778,9 +777,8 @@ WeakAurasSaved = {
 			[204448] = "Interface\\Icons\\inv_shield_24",
 			[206947] = "Interface\\Icons\\inv_shield_24",
 		},
-		["Warbringer"] = {
-			[7922] = "Interface\\Icons\\Spell_Frost_Stun",
-			[213427] = "Interface\\Icons\\Spell_Frost_Stun",
+		["Sanguine Ichor"] = {
+			[226512] = "Interface\\Icons\\Spell_Shadow_BloodBoil",
 		},
 		["Freezing Arrow"] = {
 			[209790] = "Interface\\Icons\\spell_hunter_exoticmunitions_frozen",
@@ -858,8 +856,8 @@ WeakAurasSaved = {
 			[227597] = "Interface\\Icons\\boss_odunrunes_orange",
 			[227594] = "Interface\\Icons\\boss_odunrunes_green",
 		},
-		["Unstable Decay"] = {
-			[221028] = "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
+		["Howling Axe"] = {
+			[184369] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
 		},
 		["Earthquake"] = {
 			[77505] = 451165,
@@ -879,8 +877,8 @@ WeakAurasSaved = {
 		["Demonic Bindings"] = {
 			[214298] = "Interface\\Icons\\spell_fel_incinerate",
 		},
-		["Howling Axe"] = {
-			[184369] = "Interface\\Icons\\Ability_Hunter_MarkedForDeath",
+		["Toxic Wound"] = {
+			[191855] = "INTERFACE\\ICONS\\ability_rogue_venomouswounds",
 		},
 		["Fiery Phlegm"] = {
 			[228758] = "Interface\\Icons\\INV_SummerFest_FireSpirit",
@@ -959,14 +957,14 @@ WeakAurasSaved = {
 		["Frostbitten"] = {
 			[212647] = 135845,
 		},
-		["Shield Smash"] = {
-			[241774] = 132357,
+		["Accelerando"] = {
+			[225719] = "Interface\\Icons\\Spell_Holy_BorrowedTime",
 		},
 		["Fetid Rot"] = {
 			[193367] = "Interface\\Icons\\Ability_Creature_Disease_03",
 		},
-		["Accelerando"] = {
-			[225719] = "Interface\\Icons\\Spell_Holy_BorrowedTime",
+		["Mark of the Heavy Hide"] = {
+			[228399] = "Interface\\Icons\\inv_misc_leatherstonehide",
 		},
 		["Light of the Naaru"] = {
 			[183963] = "Interface\\Icons\\Spell_Holy_SurgeOfLight",
@@ -999,8 +997,8 @@ WeakAurasSaved = {
 		["Unstable Affliction"] = {
 			[196364] = 135975,
 		},
-		["Mark of the Heavy Hide"] = {
-			[228399] = "Interface\\Icons\\inv_misc_leatherstonehide",
+		["Shield Smash"] = {
+			[241774] = 132357,
 		},
 		["Mark of Thassarian"] = {
 			[222317] = "INTERFACE\\ICONS\\spell_deathvortex",
@@ -1062,8 +1060,8 @@ WeakAurasSaved = {
 		["Reality Tear"] = {
 			[274904] = 1022950,
 		},
-		["Deafening Roar"] = {
-			[224703] = 589118,
+		["Gift of the Man'ari"] = {
+			[184124] = "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
 		},
 		["Time Warp"] = {
 			[80353] = 458224,
@@ -1074,8 +1072,8 @@ WeakAurasSaved = {
 		["Sin and Punishment"] = {
 			[87204] = 135945,
 		},
-		["Gouge"] = {
-			[1776] = 132155,
+		["Deafening Roar"] = {
+			[224703] = 589118,
 		},
 		["Felsinged"] = {
 			[186073] = "Interface\\Icons\\Spell_Fire_FelImmolation",
@@ -1090,8 +1088,8 @@ WeakAurasSaved = {
 		["Blinding Sleet"] = {
 			[207167] = 135836,
 		},
-		["Wyvern Sting"] = {
-			[19386] = 135125,
+		["Gouge"] = {
+			[1776] = 132155,
 		},
 		["Mass Repentance"] = {
 			[227508] = 135942,
@@ -1109,11 +1107,11 @@ WeakAurasSaved = {
 		["Calming Waters"] = {
 			[221677] = 538567,
 		},
-		["Repentance"] = {
-			[20066] = 135942,
-		},
 		["Mark of Doom"] = {
 			[181099] = "Interface\\Icons\\Spell_Shadow_AuraOfDarkness",
+		},
+		["Digest"] = {
+			[181295] = "Interface\\Icons\\Spell_Shadow_DeathCoil",
 		},
 		["Paralysis"] = {
 			[115078] = 629534,
@@ -1124,8 +1122,8 @@ WeakAurasSaved = {
 		["Creator's Grace"] = {
 			[235534] = 135939,
 		},
-		["Digest"] = {
-			[181295] = "Interface\\Icons\\Spell_Shadow_DeathCoil",
+		["Repentance"] = {
+			[20066] = 135942,
 		},
 		["Fists of Fury"] = {
 			[120086] = "Interface\\Icons\\Spell_Frost_Stun",
@@ -1199,11 +1197,11 @@ WeakAurasSaved = {
 		["Icefury"] = {
 			[210714] = "Interface\\Icons\\Spell_Frost_IceShard",
 		},
-		["Gift of the Man'ari"] = {
-			[184124] = "Interface\\Icons\\Spell_Shadow_AntiMagicShell",
-		},
 		["Toxic Spores"] = {
 			[219235] = "Interface\\Icons\\INV_Misc_Herb_Ragveil",
+		},
+		["Wyvern Sting"] = {
+			[19386] = 135125,
 		},
 		["Nightmare Brambles"] = {
 			[210315] = "Interface\\Icons\\spell_druid_massentanglement_nightmare",
@@ -1273,8 +1271,8 @@ WeakAurasSaved = {
 		["Touch of Doom"] = {
 			[179977] = "Interface\\Icons\\ability_bossgorefiend_touchofdoom",
 		},
-		["Toxic Wound"] = {
-			[191855] = "INTERFACE\\ICONS\\ability_rogue_venomouswounds",
+		["Unstable Decay"] = {
+			[221028] = "Interface\\Icons\\Spell_Nature_NatureTouchDecay",
 		},
 		["Volatile Rot"] = {
 			[204463] = "Interface\\Icons\\Ability_Rogue_DeviousPoisons",
@@ -1354,8 +1352,9 @@ WeakAurasSaved = {
 		["Parasitic Fixate"] = {
 			[218342] = 841383,
 		},
-		["Nightmare Corruption"] = {
-			[212886] = "Interface\\Icons\\Spell_DeathKnight_BloodBoil",
+		["Valarjar's Bond"] = {
+			[228018] = "Interface\\Icons\\Spell_Nature_LightningShield",
+			[229529] = "Interface\\Icons\\Spell_Nature_LightningShield",
 		},
 		["Font of Corruption"] = {
 			[180526] = "Interface\\Icons\\Spell_Shadow_TwistedFaith",
@@ -1372,8 +1371,9 @@ WeakAurasSaved = {
 		["Nightmare Bloom"] = {
 			[207681] = "Interface\\Icons\\ability_priest_voidentropy",
 		},
-		["Knock down"] = {
-			[217621] = "Interface\\Icons\\Ability_ThunderClap",
+		["Fel Chakram"] = {
+			[182178] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
+			[182200] = "Interface\\Icons\\ability_arakkoa_spinning_blade",
 		},
 		["Sudden Intuition"] = {
 			[183929] = "Interface\\Icons\\Spell_Shadow_SpectralSight",
@@ -1393,8 +1393,8 @@ WeakAurasSaved = {
 		["Unbound Chaos"] = {
 			[234059] = 135795,
 		},
-		["Void Haze"] = {
-			[184473] = "Interface\\Icons\\ability_priest_voidentropy",
+		["Burning Soul"] = {
+			[216040] = "Interface\\Icons\\spell_fel_incinerate",
 		},
 		["Phantasmal Wounds"] = {
 			[182325] = "Interface\\Icons\\Spell_Shadow_DevouringPlague",
@@ -1467,8 +1467,8 @@ WeakAurasSaved = {
 		["Time Bomb"] = {
 			[206617] = 609814,
 		},
-		["Devour Magic"] = {
-			[238583] = 136131,
+		["Unstable Orb"] = {
+			[182001] = "Interface\\Icons\\Spell_Fire_FelFlameRing",
 		},
 		["Time Dilation"] = {
 			[210339] = "Interface\\Icons\\ability_socererking_arcanefortification",
@@ -1518,10 +1518,10 @@ WeakAurasSaved = {
 			[233983] = 136181,
 		},
 		["Fixate"] = {
-			[210099] = "Interface\\Icons\\ability_fixated_state_red",
 			[155196] = "Interface\\Icons\\ability_fixated_state_red",
-			[157763] = "Interface\\Icons\\ability_fixated_state_red",
 			[269936] = 841382,
+			[157763] = "Interface\\Icons\\ability_fixated_state_red",
+			[210099] = "Interface\\Icons\\ability_fixated_state_red",
 		},
 		["Wither"] = {
 			[236138] = 136135,
@@ -2299,7 +2299,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["scalex"] = 1.3,
 					["scaleType"] = "pulse",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["rotate"] = 0,
 					["scaley"] = 1.3,
 					["colorA"] = 1,
@@ -2361,7 +2361,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -2398,16 +2398,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -2418,17 +2418,23 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["selfPoint"] = "CENTER",
-			["regionType"] = "icon",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["authorOptions"] = {
-			},
+			["regionType"] = "icon",
 			["stickyDuration"] = false,
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["selfPoint"] = "CENTER",
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["config"] = {
@@ -2443,20 +2449,14 @@ WeakAurasSaved = {
 			["parent"] = "Buffs",
 			["uid"] = "u9HX9bRQbHs",
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
+			["useTooltip"] = false,
 		},
 		["Revival"] = {
 			["iconSource"] = -1,
@@ -2468,14 +2468,14 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["custom"] = "aura_env.triggered = true",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = true",
 				},
 				["finish"] = {
-					["custom"] = "aura_env.triggered = false",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
 				},
 				["init"] = {
 					["do_custom"] = true,
@@ -2494,13 +2494,13 @@ WeakAurasSaved = {
 						["spellName"] = "Revival",
 						["custom_type"] = "status",
 						["use_unit"] = true,
-						["spellIds"] = {
-						},
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["event"] = "Combat Log",
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
-						["use_spellName"] = true,
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unevent"] = "timed",
 						["debuffType"] = "HELPFUL",
@@ -2560,7 +2560,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -2577,12 +2577,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -2590,6 +2585,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -2621,16 +2621,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -2640,7 +2630,7 @@ WeakAurasSaved = {
 					["scaleType"] = "pulse",
 					["type"] = "custom",
 					["easeType"] = "none",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaley"] = 1.3,
 					["alpha"] = 0,
 					["rotate"] = 0,
@@ -2667,6 +2657,11 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "hzwtvTQKYYK",
@@ -2681,12 +2676,17 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Tranq"] = {
@@ -2699,18 +2699,18 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["triggers"] = {
@@ -2725,13 +2725,13 @@ WeakAurasSaved = {
 						["custom_hide"] = "timed",
 						["custom_type"] = "status",
 						["type"] = "event",
-						["spellIds"] = {
-						},
-						["unevent"] = "timed",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["unevent"] = "timed",
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["use_spellName"] = true,
 						["event"] = "Combat Log",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["spellIds"] = {
+						},
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["use_spellId"] = false,
 						["name"] = "Avenging Wrath",
@@ -2794,7 +2794,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -2811,19 +2811,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -2855,11 +2855,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["parent"] = "Raid cds",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -2867,7 +2862,7 @@ WeakAurasSaved = {
 					["colorB"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeType"] = "none",
 					["scaleType"] = "pulse",
 					["scaley"] = 1.3,
@@ -2896,6 +2891,16 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "vsXEa7EOleU",
@@ -2910,18 +2915,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Raid cds",
 		},
 		["hunter: beast cleave"] = {
 			["iconSource"] = -1,
@@ -3016,7 +3016,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -3051,19 +3051,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "HUNTER",
 					["multi"] = {
@@ -3075,11 +3075,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["icon"] = true,
-			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
-			["xOffset"] = 0,
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -3095,7 +3093,7 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaleType"] = "pulse",
 					["colorA"] = 1,
 					["rotate"] = 0,
@@ -3116,6 +3114,8 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["stickyDuration"] = false,
+			["icon"] = true,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "yQ(avR)Ky9r",
@@ -3135,13 +3135,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["internalVersion"] = 40,
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["stickyDuration"] = false,
+			["internalVersion"] = 40,
 		},
 		["bop"] = {
 			["iconSource"] = -1,
@@ -3210,7 +3210,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["colorA"] = 1,
 					["type"] = "custom",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeStrength"] = 3,
 					["scaley"] = 1.3,
 					["duration"] = "0.3",
@@ -3271,7 +3271,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -3328,12 +3328,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
+			["regionType"] = "icon",
 			["icon"] = true,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["config"] = {
@@ -3348,18 +3352,14 @@ WeakAurasSaved = {
 			["stickyDuration"] = false,
 			["uid"] = "3hlRuZEM6ZD",
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["SWG: Aura Mastery"] = {
 			["iconSource"] = -1,
@@ -3413,7 +3413,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["duration"] = "0.3",
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -3490,7 +3490,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -3526,13 +3526,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3859,7 +3859,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -3885,7 +3885,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -3895,11 +3895,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -3918,16 +3918,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["icon"] = true,
+			["authorOptions"] = {
+			},
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["desaturate"] = false,
-			["icon"] = true,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["config"] = {
@@ -3977,14 +3978,13 @@ WeakAurasSaved = {
 			},
 			["uid"] = "wtzuhPE8rc2",
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["desaturate"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["useTooltip"] = false,
 		},
 		["TW"] = {
 			["iconSource"] = -1,
@@ -4081,7 +4081,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -4118,16 +4118,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_class"] = true,
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -4138,6 +4138,11 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["stickyDuration"] = false,
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -4146,10 +4151,6 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["regionType"] = "icon",
-			["stickyDuration"] = false,
-			["parent"] = "Buffs",
-			["xOffset"] = 0,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = ")yqKWE9tp0c",
@@ -4176,7 +4177,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["use_scale"] = true,
@@ -4199,14 +4200,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["parent"] = "Buffs",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["useTooltip"] = false,
 		},
 		["CoL"] = {
 			["iconSource"] = -1,
@@ -4254,7 +4254,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -4331,7 +4331,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -4368,16 +4368,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -4388,10 +4388,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["xOffset"] = 0,
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -4400,6 +4398,13 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "m796PbGI(Sh",
@@ -4414,18 +4419,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["Wings Pala"] = {
 			["iconSource"] = -1,
@@ -4450,12 +4450,12 @@ WeakAurasSaved = {
 						["spellName"] = "Darkness",
 						["subeventPrefix"] = "SPELL",
 						["type"] = "event",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
-						["subeventSuffix"] = "_CAST_SUCCESS",
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["subeventSuffix"] = "_CAST_SUCCESS",
+						["name"] = "Avenging Wrath",
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["event"] = "Combat Log",
-						["name"] = "Avenging Wrath",
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["use_spellId"] = true,
 						["use_spellName"] = false,
 						["spellIds"] = {
@@ -4480,7 +4480,7 @@ WeakAurasSaved = {
 					["colorB"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeType"] = "none",
 					["scaleType"] = "pulse",
 					["scaley"] = 1.3,
@@ -4552,7 +4552,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -4569,19 +4569,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -4613,17 +4613,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["parent"] = "Raid cds",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "1(zakwI0AdP",
@@ -4636,14 +4631,14 @@ WeakAurasSaved = {
 			["width"] = 48,
 			["actions"] = {
 				["start"] = {
-					["custom"] = "aura_env.triggered = true",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = true",
 				},
 				["finish"] = {
-					["custom"] = "aura_env.triggered = false",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
 				},
 				["init"] = {
 					["do_custom"] = true,
@@ -4653,12 +4648,17 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Raid cds",
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["Guild Battle Standard"] = {
@@ -4757,7 +4757,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_offset"] = 3,
 				}, -- [2]
@@ -4823,7 +4823,7 @@ WeakAurasSaved = {
 			},
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["use_scale"] = true,
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -4900,7 +4900,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["space"] = 2,
+			["space"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -4973,19 +4973,19 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["authorOptions"] = {
-			},
-			["animate"] = false,
+			["useLimit"] = true,
+			["animate"] = true,
 			["sort"] = "ascending",
 			["scale"] = 1,
-			["fullCircle"] = true,
+			["gridType"] = "RD",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
+			["authorOptions"] = {
+			},
 			["selfPoint"] = "LEFT",
-			["useLimit"] = false,
 			["constantFactor"] = "RADIUS",
 			["borderInset"] = 0,
 			["borderOffset"] = 16,
@@ -4999,13 +4999,13 @@ WeakAurasSaved = {
 			["rowSpace"] = 1,
 			["uid"] = "CSsAQo6r7H(",
 			["stagger"] = 0,
-			["arcLength"] = 360,
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["arcLength"] = 360,
 		},
 		["ASC"] = {
 			["iconSource"] = -1,
@@ -5073,7 +5073,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["use_scale"] = true,
@@ -5136,7 +5136,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -5193,12 +5193,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
 			["authorOptions"] = {
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "VhAWHEphgu6",
@@ -5213,18 +5218,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["Raid cds"] = {
 			["grow"] = "RIGHT",
@@ -5252,7 +5252,7 @@ WeakAurasSaved = {
 				0, -- [3]
 				1, -- [4]
 			},
-			["space"] = 3,
+			["space"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -5339,18 +5339,18 @@ WeakAurasSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["xOffset"] = 148,
+			["useLimit"] = false,
 			["animate"] = true,
 			["sort"] = "none",
 			["scale"] = 1,
-			["fullCircle"] = true,
+			["gridType"] = "RD",
 			["border"] = false,
 			["borderEdge"] = "Square Full White",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 2,
 			["limit"] = 5,
+			["xOffset"] = 148,
 			["rotation"] = 0,
-			["useLimit"] = false,
 			["constantFactor"] = "RADIUS",
 			["radius"] = 200,
 			["borderOffset"] = 16,
@@ -5383,13 +5383,13 @@ WeakAurasSaved = {
 					["easeType"] = "none",
 				},
 			},
-			["arcLength"] = 360,
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["arcLength"] = 360,
 		},
 		["SW"] = {
 			["iconSource"] = -1,
@@ -5444,7 +5444,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["duration"] = "0.3",
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -5521,7 +5521,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -5555,19 +5555,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["class"] = {
 					["single"] = "SHAMAN",
 					["multi"] = {
@@ -5578,11 +5578,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["icon"] = true,
-			["desaturate"] = false,
+			["regionType"] = "icon",
 			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "8GwdFUZHUCX",
@@ -5597,18 +5602,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["desaturate"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["SWG"] = {
 			["iconSource"] = -1,
@@ -5698,7 +5698,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -5732,12 +5732,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -5745,6 +5740,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -5755,13 +5755,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -5770,6 +5763,29 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["parent"] = "Buffs",
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["cooldown"] = true,
+			["zoom"] = 0,
+			["uid"] = "Kv3Ei)cYeWa",
+			["cooldownTextDisabled"] = false,
+			["auto"] = true,
+			["alpha"] = 1,
+			["id"] = "SWG",
+			["anchorFrameType"] = "SCREEN",
+			["frameStrata"] = 1,
+			["width"] = 36,
+			["desaturate"] = false,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -5786,7 +5802,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["use_scale"] = true,
@@ -5806,28 +5822,12 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["xOffset"] = 0,
-			["cooldown"] = true,
-			["zoom"] = 0,
-			["uid"] = "Kv3Ei)cYeWa",
-			["cooldownTextDisabled"] = false,
-			["auto"] = true,
-			["alpha"] = 1,
-			["id"] = "SWG",
-			["anchorFrameType"] = "SCREEN",
-			["frameStrata"] = 1,
-			["width"] = 36,
-			["desaturate"] = false,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["useTooltip"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Buffs",
+			["useTooltip"] = false,
 		},
 		["Innervate"] = {
 			["iconSource"] = -1,
@@ -5918,7 +5918,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -6144,15 +6144,15 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
 				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["use_combat"] = true,
 				["talent2"] = {
 					["multi"] = {
@@ -6343,10 +6343,10 @@ WeakAurasSaved = {
 			["selfPoint"] = "BOTTOMLEFT",
 			["frameStrata"] = 1,
 			["anchorFrameType"] = "SCREEN",
-			["config"] = {
-			},
 			["borderInset"] = 11,
 			["uid"] = "zOrFXHSGZa2",
+			["config"] = {
+			},
 			["scale"] = 1,
 			["conditions"] = {
 			},
@@ -6452,7 +6452,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -6478,14 +6478,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
-				["use_talent"] = true,
-				["use_class"] = true,
-				["role"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_talent"] = true,
+				["use_class"] = true,
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -6493,6 +6492,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -6511,16 +6511,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["icon"] = true,
+			["regionType"] = "icon",
+			["parent"] = "Buffs",
+			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["icon"] = true,
-			["desaturate"] = false,
-			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["config"] = {
@@ -6570,13 +6570,13 @@ WeakAurasSaved = {
 			},
 			["uid"] = "KKMS82(njKR",
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["desaturate"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["CW"] = {
 			["iconSource"] = -1,
@@ -6665,7 +6665,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -6724,52 +6724,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["authorOptions"] = {
+			},
+			["regionType"] = "icon",
+			["desaturate"] = false,
+			["parent"] = "Buffs",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["authorOptions"] = {
-			},
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["scaleType"] = "pulse",
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1.3,
-					["preset"] = "slideleft",
-					["alpha"] = 0,
-					["rotate"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
-					["scalex"] = 1.3,
-					["easeStrength"] = 3,
-					["use_scale"] = true,
-					["duration"] = "0.3",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-					["easeStrength"] = 3,
-				},
-			},
-			["desaturate"] = false,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "qJ9sDaSxK3L",
@@ -6791,13 +6756,48 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["scaleType"] = "pulse",
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1.3,
+					["preset"] = "slideleft",
+					["alpha"] = 0,
+					["rotate"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["colorA"] = 1,
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["scalex"] = 1.3,
+					["easeStrength"] = 3,
+					["use_scale"] = true,
+					["duration"] = "0.3",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+					["easeStrength"] = 3,
+				},
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Buffs",
+			["useTooltip"] = false,
 		},
 		["Ankh cd"] = {
 			["outline"] = "None",
@@ -6890,7 +6890,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -6956,10 +6956,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = true,
-			["useTooltip"] = false,
-			["anchorFrameFrame"] = "PlayerFrame",
-			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -6968,14 +6964,18 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
-			["cooldown"] = true,
-			["displayIcon"] = 451167,
+			["useTooltip"] = false,
+			["anchorFrameFrame"] = "PlayerFrame",
+			["regionType"] = "icon",
 			["color"] = {
 				0.925490196078432, -- [1]
 				0.992156862745098, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["cooldown"] = true,
+			["displayIcon"] = 451167,
+			["xOffset"] = -35,
 			["anchorFrameParent"] = true,
 			["uid"] = "FrtnEP3ShRN",
 			["zoom"] = 0,
@@ -6990,6 +6990,12 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
+			["desaturate"] = true,
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -7006,15 +7012,15 @@ WeakAurasSaved = {
 					["use_alpha"] = false,
 					["type"] = "none",
 					["scaleType"] = "straightScale",
-					["scaley"] = 1.3,
+					["use_color"] = false,
 					["easeType"] = "none",
 					["translateFunc"] = "function(progress, startX, startY, deltaX, deltaY)\n      local prog\n      if(progress < 0.25) then\n        prog = progress * 4\n      elseif(progress < .75) then\n        prog = 2 - (progress * 4)\n      else\n        prog = (progress - 1) * 4\n      end\n      return startX + (prog * deltaX), startY + (prog * deltaY)\n    end\n  ",
-					["use_color"] = false,
+					["preset"] = "fade",
 					["alpha"] = 0,
 					["x"] = 1.3,
 					["y"] = 1.3,
 					["colorType"] = "pulseColor",
-					["preset"] = "fade",
+					["scaley"] = 1.3,
 					["colorA"] = 1,
 					["colorFunc"] = "function(progress, r1, g1, b1, a1, r2, g2, b2, a2)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      local newProgress = ((math.sin(angle) + 1)/2);\n      return r1 + (newProgress * (r2 - r1)),\n           g1 + (newProgress * (g2 - g1)),\n           b1 + (newProgress * (b2 - b1)),\n           a1 + (newProgress * (a2 - a1))\n    end\n  ",
 					["easeStrength"] = 3,
@@ -7035,12 +7041,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["xOffset"] = -35,
 		},
 		["Devo Aura"] = {
 			["iconSource"] = -1,
@@ -7052,18 +7052,18 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["triggers"] = {
@@ -7080,13 +7080,13 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unevent"] = "timed",
 						["custom_type"] = "status",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["event"] = "Combat Log",
 						["use_spellName"] = true,
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["spellIds"] = {
 						},
+						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["unit"] = "player",
 						["debuffType"] = "HELPFUL",
 						["use_unit"] = true,
@@ -7144,7 +7144,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -7161,19 +7161,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -7205,16 +7205,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -7222,7 +7212,7 @@ WeakAurasSaved = {
 					["colorB"] = 1,
 					["colorG"] = 1,
 					["type"] = "custom",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeType"] = "none",
 					["scaleType"] = "pulse",
 					["scaley"] = 1.3,
@@ -7251,6 +7241,11 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["parent"] = "Raid cds",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "AeoJTd0HRs3",
@@ -7265,12 +7260,17 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["parent"] = "Raid cds",
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["GT"] = {
@@ -7367,7 +7367,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -7400,16 +7400,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -7441,7 +7441,7 @@ WeakAurasSaved = {
 					["rotate"] = 0,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["colorA"] = 1,
 					["type"] = "custom",
 					["easeStrength"] = 3,
@@ -7578,7 +7578,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -7615,13 +7615,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["use_spec"] = true,
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["pvptalent"] = {
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -7635,47 +7635,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["stickyDuration"] = false,
+			["regionType"] = "icon",
+			["xOffset"] = 0,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
-			["stickyDuration"] = false,
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["duration_type"] = "seconds",
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["scaleType"] = "pulse",
-					["type"] = "custom",
-					["easeType"] = "none",
-					["scaley"] = 1.3,
-					["preset"] = "slideleft",
-					["alpha"] = 0,
-					["rotate"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
-					["scalex"] = 1.3,
-					["easeStrength"] = 3,
-					["use_scale"] = true,
-					["duration"] = "0.3",
-				},
-				["main"] = {
-					["duration_type"] = "seconds",
-					["type"] = "none",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["duration_type"] = "seconds",
-					["preset"] = "fade",
-					["easeStrength"] = 3,
-				},
-			},
-			["xOffset"] = 0,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "R83kmHL5pTM",
@@ -7697,18 +7667,48 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["duration_type"] = "seconds",
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["scaleType"] = "pulse",
+					["type"] = "custom",
+					["easeType"] = "none",
+					["scaley"] = 1.3,
+					["preset"] = "slideleft",
+					["alpha"] = 0,
+					["rotate"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["colorA"] = 1,
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["scalex"] = 1.3,
+					["easeStrength"] = 3,
+					["use_scale"] = true,
+					["duration"] = "0.3",
+				},
+				["main"] = {
+					["duration_type"] = "seconds",
+					["type"] = "none",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["duration_type"] = "seconds",
+					["preset"] = "fade",
+					["easeStrength"] = 3,
+				},
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["FF"] = {
 			["iconSource"] = -1,
@@ -7773,7 +7773,7 @@ WeakAurasSaved = {
 					["rotate"] = 0,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["colorA"] = 1,
 					["type"] = "custom",
 					["easeStrength"] = 3,
@@ -7836,7 +7836,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -7873,16 +7873,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -7893,10 +7893,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -7905,6 +7903,8 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["xOffset"] = 0,
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "o)eOdz5UT8u",
@@ -7920,13 +7920,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["Spirit Link"] = {
 			["iconSource"] = -1,
@@ -7949,13 +7949,13 @@ WeakAurasSaved = {
 						["custom_type"] = "status",
 						["unevent"] = "timed",
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["spellIds"] = {
-						},
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["event"] = "Combat Log",
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
-						["use_spellName"] = true,
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["use_spellName"] = true,
+						["spellIds"] = {
+						},
 						["names"] = {
 							"Rallying Cry", -- [1]
 						},
@@ -7980,7 +7980,7 @@ WeakAurasSaved = {
 					["type"] = "custom",
 					["duration_type"] = "seconds",
 					["easeType"] = "none",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaley"] = 1.3,
 					["alpha"] = 0,
 					["rotate"] = 0,
@@ -8050,7 +8050,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -8067,12 +8067,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -8080,6 +8075,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
 				["faction"] = {
 					["multi"] = {
 					},
@@ -8111,17 +8111,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
-			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "iQvo1cQJyGn",
@@ -8134,29 +8129,34 @@ WeakAurasSaved = {
 			["width"] = 48,
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["FB"] = {
@@ -8205,7 +8205,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -8282,7 +8282,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -8319,16 +8319,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -8339,10 +8339,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["xOffset"] = 0,
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -8351,6 +8349,13 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "iaQza7oBq3c",
@@ -8365,18 +8370,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["skyfury totem"] = {
 			["outline"] = "OUTLINE",
@@ -8616,7 +8616,7 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaleType"] = "pulse",
 					["colorA"] = 1,
 					["rotate"] = 0,
@@ -8680,7 +8680,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -8737,12 +8737,18 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
 			["selfPoint"] = "CENTER",
-			["authorOptions"] = {
-			},
+			["regionType"] = "icon",
 			["parent"] = "Buffs",
+			["actions"] = {
+				["start"] = {
+				},
+				["finish"] = {
+				},
+				["init"] = {
+				},
+			},
+			["desaturate"] = false,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "fYDsvnoRjhH",
@@ -8762,20 +8768,14 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["actions"] = {
-				["start"] = {
-				},
-				["finish"] = {
-				},
-				["init"] = {
-				},
-			},
+			["useTooltip"] = false,
 		},
 		["Devout spirit (essence)"] = {
 			["iconSource"] = -1,
@@ -8869,7 +8869,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -8906,16 +8906,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -8926,15 +8926,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
 			["parent"] = "Buffs",
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -8952,7 +8945,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["scalex"] = 1.3,
 					["scaleType"] = "pulse",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["rotate"] = 0,
 					["scaley"] = 1.3,
 					["colorA"] = 1,
@@ -8971,6 +8964,8 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["internalVersion"] = 40,
+			["desaturate"] = false,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["config"] = {
@@ -8986,6 +8981,17 @@ WeakAurasSaved = {
 			},
 			["uid"] = "99o4N7C8LUG",
 			["inverse"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["conditions"] = {
+			},
+			["information"] = {
+				["ignoreOptionsEventErrors"] = true,
+			},
 			["actions"] = {
 				["start"] = {
 				},
@@ -8994,12 +9000,6 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
-			["conditions"] = {
-			},
-			["information"] = {
-				["ignoreOptionsEventErrors"] = true,
-			},
-			["internalVersion"] = 40,
 		},
 		["PW: Barrier"] = {
 			["iconSource"] = -1,
@@ -9022,13 +9022,13 @@ WeakAurasSaved = {
 						["spellName"] = "Power Word: Barrier",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unit"] = "player",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["event"] = "Combat Log",
-						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["event"] = "Combat Log",
+						["use_spellName"] = true,
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["custom_type"] = "status",
 						["unevent"] = "timed",
 						["debuffType"] = "HELPFUL",
@@ -9088,7 +9088,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -9105,16 +9105,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["use_zone"] = false,
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -9149,19 +9149,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["duration_type"] = "seconds",
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -9195,6 +9185,26 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_message"] = false,
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = true",
+				},
+				["finish"] = {
+					["do_message"] = false,
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
+				},
+			},
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Jn(tS6BEko1",
@@ -9209,27 +9219,17 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["custom"] = "aura_env.triggered = true",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["custom"] = "aura_env.triggered = false",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-					["do_custom"] = true,
-					["custom"] = "aura_env.triggered = false",
-				},
+			["authorOptions"] = {
 			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
 		},
 		["ironbark"] = {
@@ -9330,7 +9330,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -9387,11 +9387,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["regionType"] = "icon",
 			["icon"] = true,
-			["authorOptions"] = {
-			},
+			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -9407,7 +9404,7 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaleType"] = "pulse",
 					["colorA"] = 1,
 					["rotate"] = 0,
@@ -9428,6 +9425,8 @@ WeakAurasSaved = {
 					["preset"] = "fade",
 				},
 			},
+			["parent"] = "Buffs",
+			["stickyDuration"] = false,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "2dCc7Et9(uS",
@@ -9442,13 +9441,14 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["authorOptions"] = {
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Buffs",
+			["useTooltip"] = false,
 		},
 		["Darkness"] = {
 			["iconSource"] = -1,
@@ -9465,18 +9465,18 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["triggers"] = {
@@ -9491,13 +9491,13 @@ WeakAurasSaved = {
 						["custom_type"] = "status",
 						["unevent"] = "timed",
 						["subeventSuffix"] = "_CAST_SUCCESS",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["event"] = "Combat Log",
-						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["spellIds"] = {
 						},
-						["use_spellName"] = true,
+						["event"] = "Combat Log",
+						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["use_spellName"] = true,
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["use_unit"] = true,
 						["debuffType"] = "HELPFUL",
 						["subeventPrefix"] = "SPELL",
@@ -9515,7 +9515,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["colorA"] = 1,
 					["colorG"] = 1,
@@ -9592,7 +9592,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -9609,16 +9609,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["use_zone"] = false,
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -9653,12 +9653,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
+			["parent"] = "Raid cds",
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["icon"] = true,
-			["parent"] = "Raid cds",
+			["stickyDuration"] = false,
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "9hF)BixTcSd",
@@ -9673,13 +9673,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["icon"] = true,
 		},
 		["BL"] = {
 			["iconSource"] = -1,
@@ -9771,7 +9771,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -9805,19 +9805,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -9828,51 +9828,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["desaturate"] = false,
+			["regionType"] = "icon",
+			["parent"] = "Buffs",
+			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["desaturate"] = false,
-			["animation"] = {
-				["start"] = {
-					["colorR"] = 1,
-					["use_scale"] = true,
-					["colorB"] = 1,
-					["colorG"] = 1,
-					["type"] = "custom",
-					["duration_type"] = "seconds",
-					["easeType"] = "none",
-					["scaleType"] = "pulse",
-					["scaley"] = 1.3,
-					["alpha"] = 0,
-					["rotate"] = 0,
-					["y"] = 0,
-					["x"] = 0,
-					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
-					["scalex"] = 1.3,
-					["easeStrength"] = 3,
-					["preset"] = "slideleft",
-					["duration"] = "0.3",
-				},
-				["main"] = {
-					["type"] = "none",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-					["easeType"] = "none",
-				},
-				["finish"] = {
-					["type"] = "preset",
-					["easeType"] = "none",
-					["preset"] = "fade",
-					["duration_type"] = "seconds",
-					["easeStrength"] = 3,
-				},
-			},
-			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "0dPfLdG8dcF",
@@ -9894,13 +9859,48 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["animation"] = {
+				["start"] = {
+					["colorR"] = 1,
+					["use_scale"] = true,
+					["colorB"] = 1,
+					["colorG"] = 1,
+					["type"] = "custom",
+					["duration_type"] = "seconds",
+					["easeType"] = "none",
+					["scaleType"] = "pulse",
+					["scaley"] = 1.3,
+					["alpha"] = 0,
+					["rotate"] = 0,
+					["y"] = 0,
+					["x"] = 0,
+					["colorA"] = 1,
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
+					["scalex"] = 1.3,
+					["easeStrength"] = 3,
+					["preset"] = "slideleft",
+					["duration"] = "0.3",
+				},
+				["main"] = {
+					["type"] = "none",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+					["easeType"] = "none",
+				},
+				["finish"] = {
+					["type"] = "preset",
+					["easeType"] = "none",
+					["preset"] = "fade",
+					["duration_type"] = "seconds",
+					["easeStrength"] = 3,
+				},
+			},
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["Commanding Shout"] = {
 			["iconSource"] = -1,
@@ -9928,13 +9928,13 @@ WeakAurasSaved = {
 						["debuffType"] = "HELPFUL",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["type"] = "event",
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
-						["unevent"] = "timed",
 						["name"] = "Avenging Wrath",
-						["customName"] = "function()\n    return aura_env.name:upper()\nend",
-						["event"] = "Combat Log",
+						["unevent"] = "timed",
 						["spellIds"] = {
 						},
+						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["event"] = "Combat Log",
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["use_spellName"] = true,
 						["use_spellId"] = false,
 						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
@@ -9962,7 +9962,7 @@ WeakAurasSaved = {
 					["type"] = "custom",
 					["use_scale"] = true,
 					["easeType"] = "none",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaley"] = 1.3,
 					["alpha"] = 0,
 					["rotate"] = 0,
@@ -10032,7 +10032,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -10049,12 +10049,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["role"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -10062,6 +10057,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_zone"] = false,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -10093,12 +10093,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["parent"] = "Raid cds",
-			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "Hezzru0qtvA",
@@ -10111,30 +10111,30 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Raid cds",
 		},
 		["SoP"] = {
 			["iconSource"] = -1,
@@ -10203,7 +10203,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["scaleType"] = "pulse",
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeStrength"] = 3,
 					["preset"] = "slideleft",
 					["scalex"] = 1.3,
@@ -10265,7 +10265,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -10291,10 +10291,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
+				["use_spec"] = true,
 				["use_talent"] = true,
 				["difficulty"] = {
 					["multi"] = {
@@ -10304,8 +10301,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
+				["faction"] = {
 					["multi"] = {
 					},
 				},
@@ -10324,16 +10324,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["icon"] = true,
+			["regionType"] = "icon",
+			["authorOptions"] = {
+			},
+			["parent"] = "Buffs",
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
-			},
-			["regionType"] = "icon",
-			["icon"] = true,
-			["desaturate"] = false,
-			["authorOptions"] = {
 			},
 			["cooldown"] = true,
 			["zoom"] = 0,
@@ -10349,13 +10349,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["desaturate"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["parent"] = "Buffs",
+			["useTooltip"] = false,
 		},
 		["Ancestral Guidance"] = {
 			["iconSource"] = -1,
@@ -10367,18 +10367,18 @@ WeakAurasSaved = {
 			["cooldownEdge"] = false,
 			["actions"] = {
 				["start"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = true",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 				["init"] = {
 					["do_custom"] = true,
 					["custom"] = "aura_env.triggered = false",
 				},
 				["finish"] = {
-					["do_message"] = false,
 					["custom"] = "aura_env.triggered = false",
 					["do_custom"] = true,
+					["do_message"] = false,
 				},
 			},
 			["triggers"] = {
@@ -10393,13 +10393,13 @@ WeakAurasSaved = {
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unevent"] = "timed",
 						["custom_type"] = "status",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["event"] = "Combat Log",
-						["use_spellName"] = true,
 						["spellIds"] = {
 						},
-						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["event"] = "Combat Log",
+						["use_spellName"] = true,
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["customName"] = "function()\n    return aura_env.name:upper()\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["spellName"] = "Ancestral Guidance",
 						["debuffType"] = "HELPFUL",
 						["names"] = {
@@ -10424,7 +10424,7 @@ WeakAurasSaved = {
 					["type"] = "custom",
 					["scalex"] = 1.3,
 					["easeType"] = "none",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaley"] = 1.3,
 					["alpha"] = 0,
 					["rotate"] = 0,
@@ -10494,7 +10494,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -10511,16 +10511,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["use_zone"] = false,
+				["race"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["role"] = {
 					["multi"] = {
 					},
 				},
@@ -10555,17 +10555,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["stickyDuration"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["icon"] = true,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["stickyDuration"] = false,
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "QWyr5mjtEgR",
@@ -10580,13 +10580,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["xOffset"] = 0,
+			["authorOptions"] = {
+			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["icon"] = true,
 		},
 		["hunter: frenzy"] = {
 			["iconSource"] = -1,
@@ -10680,7 +10680,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -10718,13 +10718,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -10738,6 +10738,18 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+			},
+			["xOffset"] = 0,
+			["regionType"] = "icon",
+			["actions"] = {
+				["start"] = {
+				},
+				["init"] = {
+				},
+				["finish"] = {
+				},
+			},
+			["authorOptions"] = {
 			},
 			["animation"] = {
 				["start"] = {
@@ -10756,7 +10768,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["colorA"] = 1,
 					["type"] = "custom",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeStrength"] = 3,
 					["scaley"] = 1.3,
 					["duration_type"] = "seconds",
@@ -10775,17 +10787,6 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["regionType"] = "icon",
-			["xOffset"] = 0,
-			["parent"] = "Buffs",
-			["actions"] = {
-				["start"] = {
-				},
-				["init"] = {
-				},
-				["finish"] = {
-				},
-			},
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["config"] = {
@@ -10800,14 +10801,13 @@ WeakAurasSaved = {
 			["internalVersion"] = 40,
 			["uid"] = "5)VgieRc4ys",
 			["inverse"] = false,
-			["stickyDuration"] = false,
+			["parent"] = "Buffs",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["stickyDuration"] = false,
 		},
 		["forbidden obsidian claw highlight"] = {
 			["outline"] = "None",
@@ -10833,11 +10833,11 @@ WeakAurasSaved = {
 						["unit"] = "player",
 						["custom_type"] = "event",
 						["event"] = "Combat Log",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["custom"] = "function(_, ...)\n    local timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName = select(1, ...)\n    \n    if event == 'SPELL_CAST_SUCCESS' then\n        if bit.band(sourceFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY) > 0 then\n            return false\n        end\n        \n        for i=1, #aura_env.spells do\n            if aura_env.spells[i] == spellId then\n                return true\n            end\n        end\n    end\nend",
+						["customName"] = "\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["customName"] = "\n\n\n\n\n\n\n\n\n\n\n\n",
-						["custom"] = "function(_, ...)\n    local timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName = select(1, ...)\n    \n    if event == 'SPELL_CAST_SUCCESS' then\n        if bit.band(sourceFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY) > 0 then\n            return false\n        end\n        \n        for i=1, #aura_env.spells do\n            if aura_env.spells[i] == spellId then\n                return true\n            end\n        end\n    end\nend",
 						["dynamicDuration"] = false,
 						["custom_hide"] = "timed",
 						["unevent"] = "timed",
@@ -11018,11 +11018,11 @@ WeakAurasSaved = {
 						["custom_hide"] = "timed",
 						["unevent"] = "timed",
 						["event"] = "Combat Log",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["custom"] = "function(_, ...)\n    local timeStamp, event, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, spellId, spellName = select(1, ...)\n    \n    if event == 'SPELL_CAST_SUCCESS' then\n        if bit.band(sourceFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY) > 0 then\n            return false\n        end\n        \n        for i=1, #aura_env.spells do\n            if aura_env.spells[i] == spellId then\n                return true\n            end\n        end\n    end\nend",
-						["customName"] = "\n\n\n\n\n\n\n\n\n\n\n\n",
 						["spellIds"] = {
 						},
+						["customName"] = "\n\n\n\n\n\n\n\n\n\n\n\n",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["custom_type"] = "event",
 						["names"] = {
 						},
@@ -11248,7 +11248,7 @@ WeakAurasSaved = {
 			["keepAspectRatio"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -11325,7 +11325,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -11362,16 +11362,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -11382,10 +11382,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["xOffset"] = 0,
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -11394,6 +11392,13 @@ WeakAurasSaved = {
 				["init"] = {
 				},
 			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "pRoSxYNsr8U",
@@ -11408,18 +11413,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["xOffset"] = 0,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["water shield"] = {
 			["outline"] = "OUTLINE",
@@ -11671,7 +11671,7 @@ WeakAurasSaved = {
 					["rotate"] = 0,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["colorA"] = 1,
 					["type"] = "custom",
 					["easeStrength"] = 3,
@@ -11735,7 +11735,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -11772,16 +11772,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
-					["multi"] = {
-					},
-				},
 				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
-				["use_class"] = true,
 				["use_spec"] = true,
+				["use_class"] = true,
+				["faction"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -11792,10 +11792,8 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["parent"] = "Buffs",
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -11804,6 +11802,8 @@ WeakAurasSaved = {
 				["finish"] = {
 				},
 			},
+			["xOffset"] = 0,
+			["parent"] = "Buffs",
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "VnuRIWgoqrU",
@@ -11819,13 +11819,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["Buffs"] = {
 			["grow"] = "RIGHT",
@@ -11870,7 +11870,7 @@ WeakAurasSaved = {
 				0.4980392156862745, -- [3]
 				1, -- [4]
 			},
-			["space"] = 3,
+			["space"] = 1,
 			["actions"] = {
 				["start"] = {
 				},
@@ -11976,18 +11976,18 @@ WeakAurasSaved = {
 				0, -- [3]
 				0.5, -- [4]
 			},
-			["xOffset"] = -395.9996032714844,
+			["useLimit"] = true,
 			["animate"] = true,
 			["sort"] = "ascending",
 			["scale"] = 1,
-			["fullCircle"] = true,
+			["gridType"] = "RD",
 			["border"] = false,
 			["borderEdge"] = "Details BarBorder 3",
 			["regionType"] = "dynamicgroup",
 			["borderSize"] = 12,
 			["limit"] = 5,
+			["xOffset"] = -395.9996032714844,
 			["radius"] = 200,
-			["useLimit"] = true,
 			["constantFactor"] = "RADIUS",
 			["selfPoint"] = "LEFT",
 			["borderOffset"] = 12,
@@ -12001,13 +12001,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["rotation"] = 0,
-			["arcLength"] = 360,
+			["fullCircle"] = true,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["gridType"] = "RD",
+			["arcLength"] = 360,
 		},
 		["UL"] = {
 			["iconSource"] = -1,
@@ -12073,7 +12073,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["preset"] = "slideleft",
@@ -12135,7 +12135,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -12172,13 +12172,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -12192,11 +12192,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 0,
-			["regionType"] = "icon",
 			["stickyDuration"] = false,
-			["selfPoint"] = "CENTER",
+			["regionType"] = "icon",
 			["parent"] = "Buffs",
+			["authorOptions"] = {
+			},
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "gwydyUir0Iq",
@@ -12218,14 +12219,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["selfPoint"] = "CENTER",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["useTooltip"] = false,
 		},
 		["Healing Tide"] = {
 			["iconSource"] = -1,
@@ -12250,13 +12250,13 @@ WeakAurasSaved = {
 						["names"] = {
 							"Rallying Cry", -- [1]
 						},
-						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["event"] = "Combat Log",
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["use_spellName"] = true,
 						["spellIds"] = {
 						},
+						["use_spellName"] = true,
+						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
 						["subeventSuffix"] = "_CAST_SUCCESS",
 						["unevent"] = "timed",
 						["debuffType"] = "HELPFUL",
@@ -12279,7 +12279,7 @@ WeakAurasSaved = {
 					["scaleType"] = "pulse",
 					["type"] = "custom",
 					["easeType"] = "none",
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scaley"] = 1.3,
 					["alpha"] = 0,
 					["rotate"] = 0,
@@ -12349,7 +12349,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -12366,19 +12366,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
-					["multi"] = {
-					},
-				},
 				["race"] = {
 					["multi"] = {
 					},
 				},
+				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
+				["role"] = {
+					["multi"] = {
+					},
+				},
 				["faction"] = {
 					["multi"] = {
 					},
@@ -12410,12 +12410,17 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
+			["selfPoint"] = "CENTER",
 			["regionType"] = "icon",
 			["conditions"] = {
 			},
-			["parent"] = "Raid cds",
-			["selfPoint"] = "CENTER",
+			["desaturate"] = false,
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "PBvmgNBZ4n6",
@@ -12428,14 +12433,14 @@ WeakAurasSaved = {
 			["anchorFrameType"] = "SCREEN",
 			["actions"] = {
 				["start"] = {
-					["custom"] = "aura_env.triggered = true",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = true",
 				},
 				["finish"] = {
-					["custom"] = "aura_env.triggered = false",
 					["do_message"] = false,
 					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
 				},
 				["init"] = {
 					["do_custom"] = true,
@@ -12445,18 +12450,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["authorOptions"] = {
 			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Raid cds",
 		},
 		["PVP CDs"] = {
 			["iconSource"] = -1,
@@ -12490,11 +12490,11 @@ WeakAurasSaved = {
 						["unevent"] = "timed",
 						["event"] = "Combat Log",
 						["subeventPrefix"] = "SPELL",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
-						["customName"] = "function()\n    return aura_env.name\nend",
 						["spellIds"] = {
 						},
+						["customName"] = "function()\n    return aura_env.name\nend",
 						["custom"] = "function (_, _, subEvent, _, sourceGUID, sourceName, sourceFlags, _, _, _, _, _, spellId, spellName)\n    \n    if subEvent == \"SPELL_CAST_SUCCESS\" and bit.band(sourceFlags, COMBATLOG_OBJECT_REACTION_FRIENDLY) == 0 then\n        \n        for i=1, #aura_env.spells do\n            if aura_env.spells[i] == spellId then\n                PlaySoundFile('Interface\\\\Addons\\\\XunaTweaks\\\\IM.ogg', 'Master')\n                \n                classFilename = select(2, GetPlayerInfoByGUID(sourceGUID))\n                color = RAID_CLASS_COLORS[classFilename].colorStr\n                \n                aura_env.icon = GetSpellTexture(spellId)\n                aura_env.name = '|c'..color..''..Ambiguate(sourceName, 'short'):upper()..': '..spellName:upper()..'|r'\n                \n                return true\n            end\n        end\n    end\nend",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["check"] = "event",
 						["custom_type"] = "event",
 						["names"] = {
@@ -12553,7 +12553,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -12574,9 +12574,11 @@ WeakAurasSaved = {
 				},
 			},
 			["regionType"] = "icon",
+			["icon"] = true,
+			["cooldown"] = false,
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["duration_type"] = "seconds",
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -12610,14 +12612,12 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["cooldown"] = false,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["icon"] = true,
 			["stickyDuration"] = false,
 			["cooldownTextDisabled"] = false,
 			["zoom"] = 0,
@@ -12726,7 +12726,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -12760,12 +12760,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["faction"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -12773,6 +12768,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -12802,7 +12802,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["use_scale"] = true,
@@ -12880,13 +12880,13 @@ WeakAurasSaved = {
 							"Rallying Cry", -- [1]
 						},
 						["type"] = "event",
-						["spellIds"] = {
-						},
-						["custom_type"] = "status",
 						["name"] = "Avenging Wrath",
+						["custom_type"] = "status",
+						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
 						["use_spellName"] = true,
 						["event"] = "Combat Log",
-						["events"] = "COMBAT_LOG_EVENT_UNFILTERED",
+						["spellIds"] = {
+						},
 						["use_spellId"] = false,
 						["customName"] = "function()\n    return aura_env.name:upper()\nend",
 						["custom"] = "function(event, timestamp, message, hideCaster, sourceGUID, sourceName, sourceFlags, sourceRaidFlags, destGUID, destName, destFlags, destRaidFlags, ...)  \n    if message == \"SPELL_CAST_SUCCESS\" and not aura_env.triggered then\n        local spellId =  ...\n        if spellId == 108281 then   \n            aura_env.name = Ambiguate(sourceName, \"short\")\n            return true\n        end\n    end\nend",
@@ -12947,7 +12947,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["border_size"] = 12,
 				}, -- [2]
@@ -12964,16 +12964,16 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["race"] = {
+				["use_zone"] = false,
+				["role"] = {
 					["multi"] = {
 					},
 				},
-				["use_zone"] = false,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["role"] = {
+				["race"] = {
 					["multi"] = {
 					},
 				},
@@ -13008,14 +13008,9 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["desaturate"] = false,
-			["regionType"] = "icon",
-			["conditions"] = {
-			},
-			["parent"] = "Raid cds",
 			["animation"] = {
 				["start"] = {
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["use_scale"] = true,
 					["colorB"] = 1,
 					["colorG"] = 1,
@@ -13049,6 +13044,26 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
+			["regionType"] = "icon",
+			["conditions"] = {
+			},
+			["desaturate"] = false,
+			["actions"] = {
+				["start"] = {
+					["do_message"] = false,
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = true",
+				},
+				["finish"] = {
+					["do_message"] = false,
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
+				},
+				["init"] = {
+					["do_custom"] = true,
+					["custom"] = "aura_env.triggered = false",
+				},
+			},
 			["cooldown"] = true,
 			["cooldownTextDisabled"] = false,
 			["uid"] = "B3)qTZ(lnQJ",
@@ -13068,28 +13083,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["actions"] = {
-				["start"] = {
-					["custom"] = "aura_env.triggered = true",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["finish"] = {
-					["custom"] = "aura_env.triggered = false",
-					["do_message"] = false,
-					["do_custom"] = true,
-				},
-				["init"] = {
-					["do_custom"] = true,
-					["custom"] = "aura_env.triggered = false",
-				},
+			["authorOptions"] = {
 			},
 			["displayIcon"] = "Interface\\Icons\\ability_shaman_ancestralguidance",
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["parent"] = "Raid cds",
 		},
 		["HT"] = {
 			["iconSource"] = -1,
@@ -13189,7 +13189,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -13215,7 +13215,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -13225,11 +13225,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["race"] = {
 					["multi"] = {
 					},
@@ -13248,16 +13248,16 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["parent"] = "Buffs",
+			["regionType"] = "icon",
+			["icon"] = true,
+			["xOffset"] = 0,
 			["color"] = {
 				1, -- [1]
 				1, -- [2]
 				1, -- [3]
 				1, -- [4]
 			},
-			["regionType"] = "icon",
-			["parent"] = "Buffs",
-			["stickyDuration"] = false,
-			["icon"] = true,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "iw0xuNfNb1V",
@@ -13283,7 +13283,7 @@ WeakAurasSaved = {
 					["rotate"] = 0,
 					["y"] = 0,
 					["x"] = 0,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["colorA"] = 1,
 					["type"] = "custom",
 					["easeStrength"] = 3,
@@ -13307,13 +13307,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["stickyDuration"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["HR"] = {
 			["iconSource"] = -1,
@@ -13386,7 +13386,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["preset"] = "slideleft",
@@ -13449,7 +13449,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -13483,19 +13483,19 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
 				["faction"] = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["difficulty"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
+				["pvptalent"] = {
+					["multi"] = {
+					},
+				},
 				["spec"] = {
 					["single"] = 3,
 					["multi"] = {
@@ -13506,11 +13506,12 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["xOffset"] = 0,
-			["regionType"] = "icon",
 			["icon"] = true,
-			["stickyDuration"] = false,
+			["regionType"] = "icon",
 			["parent"] = "Buffs",
+			["authorOptions"] = {
+			},
+			["xOffset"] = 0,
 			["cooldown"] = true,
 			["zoom"] = 0,
 			["uid"] = "tfhCByxW4n6",
@@ -13525,14 +13526,13 @@ WeakAurasSaved = {
 			["config"] = {
 			},
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["stickyDuration"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["authorOptions"] = {
-			},
+			["useTooltip"] = false,
 		},
 		["FT"] = {
 			["iconSource"] = -1,
@@ -13621,7 +13621,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -13655,12 +13655,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["pvptalent"] = {
-					["multi"] = {
-					},
-				},
-				["difficulty"] = {
 					["multi"] = {
 					},
 				},
@@ -13668,6 +13663,11 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["difficulty"] = {
+					["multi"] = {
+					},
+				},
+				["use_spec"] = true,
 				["spec"] = {
 					["single"] = 2,
 					["multi"] = {
@@ -13678,9 +13678,6 @@ WeakAurasSaved = {
 					},
 				},
 			},
-			["authorOptions"] = {
-			},
-			["regionType"] = "icon",
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -13698,7 +13695,7 @@ WeakAurasSaved = {
 					["x"] = 0,
 					["scaleType"] = "pulse",
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["easeStrength"] = 3,
 					["scaley"] = 1.3,
 					["use_scale"] = true,
@@ -13717,7 +13714,7 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["parent"] = "Buffs",
+			["regionType"] = "icon",
 			["actions"] = {
 				["start"] = {
 				},
@@ -13725,6 +13722,14 @@ WeakAurasSaved = {
 				},
 				["finish"] = {
 				},
+			},
+			["color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
+			},
+			["authorOptions"] = {
 			},
 			["cooldown"] = true,
 			["zoom"] = 0,
@@ -13740,18 +13745,13 @@ WeakAurasSaved = {
 			["desaturate"] = false,
 			["uid"] = "H(NZYA9mDQi",
 			["inverse"] = false,
-			["useTooltip"] = false,
+			["parent"] = "Buffs",
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
-			},
+			["useTooltip"] = false,
 		},
 		["AG"] = {
 			["iconSource"] = -1,
@@ -13852,7 +13852,7 @@ WeakAurasSaved = {
 						0.4980392156862745, -- [3]
 						1, -- [4]
 					},
-					["border_visible"] = true,
+					["border_visible"] = false,
 					["border_edge"] = "Details BarBorder 3",
 					["type"] = "subborder",
 				}, -- [2]
@@ -13889,13 +13889,13 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["pvptalent"] = {
+				["use_spec"] = true,
+				["faction"] = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["use_class"] = true,
-				["faction"] = {
+				["pvptalent"] = {
 					["multi"] = {
 					},
 				},
@@ -13909,10 +13909,26 @@ WeakAurasSaved = {
 					},
 				},
 			},
+			["desaturate"] = false,
+			["regionType"] = "icon",
+			["parent"] = "Buffs",
+			["xOffset"] = 0,
 			["authorOptions"] = {
 			},
-			["regionType"] = "icon",
-			["desaturate"] = false,
+			["cooldown"] = true,
+			["cooldownTextDisabled"] = false,
+			["uid"] = "k53)FwLQBZv",
+			["zoom"] = 0,
+			["auto"] = true,
+			["alpha"] = 1,
+			["id"] = "AG",
+			["width"] = 36,
+			["frameStrata"] = 1,
+			["anchorFrameType"] = "SCREEN",
+			["icon"] = true,
+			["config"] = {
+			},
+			["inverse"] = false,
 			["animation"] = {
 				["start"] = {
 					["colorR"] = 1,
@@ -13929,7 +13945,7 @@ WeakAurasSaved = {
 					["y"] = 0,
 					["x"] = 0,
 					["colorA"] = 1,
-					["scaleFunc"] = "    function(progress, startX, startY, scaleX, scaleY)\n      local angle = (progress * 2 * math.pi) - (math.pi / 2)\n      return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\n    end\n  ",
+					["scaleFunc"] = "function(progress, startX, startY, scaleX, scaleY)\n    local angle = (progress * 2 * math.pi) - (math.pi / 2)\n    return startX + (((math.sin(angle) + 1)/2) * (scaleX - 1)), startY + (((math.sin(angle) + 1)/2) * (scaleY - 1))\nend\n",
 					["scalex"] = 1.3,
 					["easeStrength"] = 3,
 					["preset"] = "slideleft",
@@ -13949,28 +13965,12 @@ WeakAurasSaved = {
 					["easeStrength"] = 3,
 				},
 			},
-			["parent"] = "Buffs",
-			["cooldown"] = true,
-			["cooldownTextDisabled"] = false,
-			["uid"] = "k53)FwLQBZv",
-			["zoom"] = 0,
-			["auto"] = true,
-			["alpha"] = 1,
-			["id"] = "AG",
-			["width"] = 36,
-			["frameStrata"] = 1,
-			["anchorFrameType"] = "SCREEN",
-			["icon"] = true,
-			["config"] = {
-			},
-			["inverse"] = false,
-			["useTooltip"] = false,
 			["conditions"] = {
 			},
 			["information"] = {
 				["ignoreOptionsEventErrors"] = true,
 			},
-			["xOffset"] = 0,
+			["useTooltip"] = false,
 		},
 		["hst"] = {
 			["outline"] = "OUTLINE",
@@ -14095,7 +14095,6 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
-				["use_spec"] = true,
 				["pvptalent"] = {
 					["multi"] = {
 					},
@@ -14104,6 +14103,7 @@ WeakAurasSaved = {
 					["multi"] = {
 					},
 				},
+				["use_spec"] = true,
 				["use_combat"] = true,
 				["class"] = {
 					["single"] = "SHAMAN",

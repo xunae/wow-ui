@@ -77,3 +77,4 @@ TitanClock: disabled
 TitanGold: disabled
 TitanLootType: disabled
 TitanPerformance: enabled
+Masque: enabled

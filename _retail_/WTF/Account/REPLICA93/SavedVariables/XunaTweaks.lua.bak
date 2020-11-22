@@ -1,12 +1,12 @@
 
 XunaTweaksDB = {
-	["darkFrames"] = false,
+	["darkFrames"] = true,
 	["hideMacros"] = true,
 	["db_version"] = 1,
 	["hideGryphons"] = true,
 	["classIconPortraits"] = false,
 	["shamanColor"] = false,
-	["dfc"] = 0.5448723435401917,
+	["dfc"] = 0.4807699024677277,
 	["bottomRaidFrame"] = true,
 	["outOfRangeIcons"] = false,
 	["eliteFrame"] = false,

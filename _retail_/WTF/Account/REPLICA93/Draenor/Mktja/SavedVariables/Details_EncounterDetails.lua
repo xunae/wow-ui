@@ -478,14 +478,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "General Erodus",
 		},
-		[245098] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[246368] = {
+			["school"] = 1,
+			["type"] = "BUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Shatug",
+			["source"] = "Garothi Worldbreaker",
 		},
 		[246082] = {
 			["school"] = 8,
@@ -501,14 +501,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Koralon the Flame Watcher",
 		},
-		[246368] = {
-			["school"] = 1,
+		[251448] = {
+			["school"] = 4,
 			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Garothi Worldbreaker",
+			["source"] = "F'harg",
 		},
 		[240277] = {
 			["school"] = 4,
@@ -582,13 +581,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Decimator",
 		},
-		[251448] = {
-			["school"] = 4,
-			["type"] = "BUFF",
+		[245098] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
+				["SPELL_CAST_SUCCESS"] = true,
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "F'harg",
+			["source"] = "Shatug",
 		},
 		[244131] = {
 			["school"] = 32,

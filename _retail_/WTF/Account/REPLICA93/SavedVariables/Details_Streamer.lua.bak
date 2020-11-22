@@ -87,12 +87,7 @@ Details_StreamerDB = {
 			["point"] = "TOPLEFT",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
+			["main_frame_strata"] = "LOW",
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -100,7 +95,7 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
@@ -118,7 +113,12 @@ Details_StreamerDB = {
 			["font_face"] = "Friz Quadrata TT",
 			["y"] = -28.9441528320313,
 			["use_spark"] = true,
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},

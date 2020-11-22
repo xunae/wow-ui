@@ -1,7 +1,6 @@
 
 MADB = {
 	["noMMMW"] = false,
-	["autoShowNext"] = true,
 	["characters"] = {
 	},
 	["alwaysShowNudger"] = false,
@@ -162,6 +161,7 @@ MADB = {
 						0, -- [5]
 					},
 					["name"] = "MicroButtonAndBagsBar",
+					["hidden"] = true,
 					["pos"] = {
 						"BOTTOMRIGHT", -- [1]
 						"UIParent", -- [2]
