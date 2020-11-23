@@ -98,7 +98,8 @@ function XunaTweaks:darkFrames()
 		MainMenuXPBarTexture0, MainMenuXPBarTexture1, MainMenuXPBarTexture2, MainMenuXPBarTexture3, MainMenuBarArtFrame.LeftEndCap, MainMenuBarArtFrame.RightEndCap, MainMenuBarArtFrameBackground.BackgroundLarge, MainMenuBarArtFrameBackground.BackgroundLarge2,
 		MainMenuBarArtFrameBackground.BackgroundSmall, 	MainMenuBarArtFrameBackground.BagsArt,	MainMenuBarArtFrameBackground.MicroButtonArt,	StatusTrackingBarManager.SingleBarLarge, StatusTrackingBarManager.SingleBarLargeUpper,	StatusTrackingBarManager.SingleBarSmall,
 		SlidingActionBarTexture0,	SlidingActionBarTexture1,	MainMenuXPBarTextureLeftCap,	MainMenuXPBarTextureRightCap,	MainMenuXPBarTextureMid,
-		ReputationWatchBarTexture0,	ReputationWatchBarTexture1,	ReputationWatchBarTexture2,	ReputationWatchBarTexture3,	ReputationXPBarTexture0,	ReputationXPBarTexture1,	ReputationXPBarTexture2, ReputationXPBarTexture3, MicroButtonAndBagsBar.MicroBagBar
+		ReputationWatchBarTexture0,	ReputationWatchBarTexture1,	ReputationWatchBarTexture2,	ReputationWatchBarTexture3,	ReputationXPBarTexture0,	ReputationXPBarTexture1,	ReputationXPBarTexture2, ReputationXPBarTexture3, MicroButtonAndBagsBar.MicroBagBar,
+		PlayerFrameAlternateManaBarBorder, PlayerFrameAlternateManaBarRightBorder ,PlayerFrameAlternateManaBarBackground
 	}) do
 		v:SetVertexColor(c, c, c)
 	end

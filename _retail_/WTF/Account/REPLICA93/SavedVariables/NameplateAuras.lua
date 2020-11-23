@@ -3,6 +3,7 @@ NameplateAurasAceDB = {
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Dkuna - Draenor",
+		["Zunae - Draenor"] = "Zunae - Draenor",
 		["Xñ - Draenor"] = "Default",
 		["Xunaj - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
@@ -2398,6 +2399,2258 @@ NameplateAurasAceDB = {
 			["InterruptsGlowType"] = 1,
 			["BorderThickness"] = 1,
 			["DefaultIconSizeWidth"] = 32,
+		},
+		["Dkuna - Draenor"] = {
+			["CustomSpells2"] = {
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shield Wall",
+				}, -- [1]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Smoke Bomb",
+				}, -- [2]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Imprison",
+				}, -- [3]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Avenger's Shield",
+				}, -- [4]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Pillar of Frost",
+				}, -- [5]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ice Block",
+				}, -- [6]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Pain Suppression",
+				}, -- [7]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Innervate",
+				}, -- [8]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Polymorph",
+				}, -- [9]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Unending Resolve",
+				}, -- [10]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Alter Time",
+				}, -- [11]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Horde Flag",
+				}, -- [12]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Survival Instincts",
+				}, -- [13]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mind Bomb",
+				}, -- [14]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Diffuse Magic",
+				}, -- [15]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Repentance",
+				}, -- [16]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Touch of Karma",
+				}, -- [17]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Tracker's Net",
+				}, -- [18]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Netherstorm Flag",
+				}, -- [19]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Kidney Shot",
+				}, -- [20]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blind",
+				}, -- [21]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ice Floes",
+				}, -- [22]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Serenity",
+				}, -- [23]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mending Bandage",
+				}, -- [24]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Storm, Earth, and Fire",
+				}, -- [25]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Roar of Sacrifice",
+				}, -- [26]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Soul Harvest",
+				}, -- [27]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Dragon's Breath",
+				}, -- [28]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Binding Shot",
+				}, -- [29]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mighty Bash",
+				}, -- [30]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Anti-Magic Shell",
+				}, -- [31]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Combat Readiness",
+				}, -- [32]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ascendance",
+				}, -- [33]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Incapacitating Roar",
+				}, -- [34]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Barkskin",
+				}, -- [35]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Howl of Terror",
+				}, -- [36]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Icy Veins",
+				}, -- [37]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Fortifying Brew",
+				}, -- [38]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Sap",
+				}, -- [39]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blur",
+				}, -- [40]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Fel Eruption",
+				}, -- [41]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shadowfury",
+				}, -- [42]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Aura Mastery",
+				}, -- [43]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Spell Reflection",
+				}, -- [44]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Celestial Alignment",
+				}, -- [45]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Gnaw",
+				}, -- [46]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Dampen Harm",
+				}, -- [47]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mortal Coil",
+				}, -- [48]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Cheap Shot",
+				}, -- [49]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Wyvern Sting",
+				}, -- [50]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Dispersion",
+				}, -- [51]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shackle Undead",
+				}, -- [52]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blinding Sleet",
+				}, -- [53]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Fear",
+				}, -- [54]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Guardian of Ancient Kings",
+				}, -- [55]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Hex",
+				}, -- [56]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Evasion",
+				}, -- [57]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Casting Circle",
+				}, -- [58]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ironbark",
+				}, -- [59]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Leap",
+				}, -- [60]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Solar Beam",
+				}, -- [61]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Astral Shift",
+				}, -- [62]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Gouge",
+				}, -- [63]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Garrote - Silence",
+				}, -- [64]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Netherwalk",
+				}, -- [65]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Archangel",
+				}, -- [66]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Alliance Flag",
+				}, -- [67]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Nature's Vigil",
+				}, -- [68]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Deterrence",
+				}, -- [69]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Master's Call",
+				}, -- [70]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Killing Spree",
+				}, -- [71]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Chaos Nova",
+				}, -- [72]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Meteor Strike",
+				}, -- [73]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Power Infusion",
+				}, -- [74]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Guardian of the Forgotten Queen",
+				}, -- [75]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ranger's Net",
+				}, -- [76]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Earthgrab",
+				}, -- [77]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blessing of Freedom",
+				}, -- [78]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Intimidating Shout",
+				}, -- [79]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ice Form",
+				}, -- [80]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Predatory Swiftness",
+				}, -- [81]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Dark Pact",
+				}, -- [82]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Freezing Trap",
+				}, -- [83]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Paralysis",
+				}, -- [84]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Sharpen Blade",
+				}, -- [85]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Recklessness",
+				}, -- [86]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Nether Bond",
+				}, -- [87]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Psychic Scream",
+				}, -- [88]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mesmerize",
+				}, -- [89]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Darkness",
+				}, -- [90]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Charge",
+				}, -- [91]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Spectral Sight",
+				}, -- [92]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Narrow Escape",
+				}, -- [93]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Sin and Punishment",
+				}, -- [94]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Last Word",
+				}, -- [95]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Unstable Affliction",
+				}, -- [96]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ring of Frost",
+				}, -- [97]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Eye for an Eye",
+				}, -- [98]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Asphyxiate",
+				}, -- [99]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Voidform",
+				}, -- [100]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blinding Light",
+				}, -- [101]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blessing of Protection",
+				}, -- [102]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Metamorphosis",
+				}, -- [103]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Entangling Roots",
+				}, -- [104]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mind Control",
+				}, -- [105]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Aspect of the Turtle",
+				}, -- [106]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Leg Sweep",
+				}, -- [107]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Freezing Arrow",
+				}, -- [108]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Seduction",
+				}, -- [109]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Nether Ward",
+				}, -- [110]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Die by the Sword",
+				}, -- [111]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Storm Bolt",
+				}, -- [112]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Entrapment",
+				}, -- [113]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Divine Shield",
+				}, -- [114]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Static Charge",
+				}, -- [115]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shadow Blades",
+				}, -- [116]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Axe Toss",
+				}, -- [117]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Temporal Shield",
+				}, -- [118]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Arcane Power",
+				}, -- [119]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Zen Meditation",
+				}, -- [120]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shadow Reflection",
+				}, -- [121]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Strangulate",
+				}, -- [122]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Avatar",
+				}, -- [123]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ardent Defender",
+				}, -- [124]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Cyclone",
+				}, -- [125]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Silence",
+				}, -- [126]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["animationTimer"] = 10,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["glowType"] = 3,
+					["checkSpellID"] = {
+						[163505] = true,
+					},
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Rake",
+				}, -- [127]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Berserker Rage",
+				}, -- [128]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Bladestorm",
+				}, -- [129]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Adrenaline Rush",
+				}, -- [130]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Life Cocoon",
+				}, -- [131]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Dark Archangel",
+				}, -- [132]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Vampiric Embrace",
+				}, -- [133]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Hammer of Justice",
+				}, -- [134]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Ethereal Form",
+				}, -- [135]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Cloak of Shadows",
+				}, -- [136]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Freeze",
+				}, -- [137]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Mass Entanglement",
+				}, -- [138]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Fists of Fury",
+				}, -- [139]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Shockwave",
+				}, -- [140]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Grounding Totem Effect",
+				}, -- [141]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Scatter Shot",
+				}, -- [142]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Master of the Elements",
+				}, -- [143]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Maim",
+				}, -- [144]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Banish",
+				}, -- [145]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Between the Eyes",
+				}, -- [146]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Bloodlust",
+				}, -- [147]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Holy Word: Chastise",
+				}, -- [148]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Corpse Shield",
+				}, -- [149]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Icebound Fortitude",
+				}, -- [150]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Frost Nova",
+				}, -- [151]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Guardian Spirit",
+				}, -- [152]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 3,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blessing of Sacrifice",
+				}, -- [153]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Cheat Death",
+				}, -- [154]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 2,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Disarm",
+				}, -- [155]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Prismatic Barrier",
+				}, -- [156]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 2,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Duel",
+				}, -- [157]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 2,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "War Banner",
+				}, -- [158]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 2,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Intimidating Roar",
+				}, -- [159]
+				{
+					["enabledState"] = 2,
+					["auraType"] = 1,
+					["showOnEnemies"] = true,
+					["animationDisplayMode"] = 1,
+					["showOnFriends"] = true,
+					["pvpCombat"] = 1,
+					["animationType"] = 2,
+					["iconSizeWidth"] = 45,
+					["animationTimer"] = 10,
+					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
+					["spellName"] = "Blazing Barrier",
+				}, -- [160]
+			},
+			["InterruptsGlowType"] = 1,
+			["IconAnchor"] = 3,
+			["DBVersion"] = 18,
+			["HidePlayerBlizzardFrame"] = true,
+			["DefaultSpellsLastSetImported"] = 2,
 		},
 		["Xunaj - Draenor"] = {
 			["CustomSpells2"] = {
@@ -6903,7 +9156,7 @@ NameplateAurasAceDB = {
 			["HidePlayerBlizzardFrame"] = true,
 			["DBVersion"] = 18,
 		},
-		["Dkuna - Draenor"] = {
+		["Drmscp - Draenor"] = {
 			["CustomSpells2"] = {
 				{
 					["enabledState"] = 2,
@@ -9155,7 +11408,7 @@ NameplateAurasAceDB = {
 			["HidePlayerBlizzardFrame"] = true,
 			["DefaultSpellsLastSetImported"] = 2,
 		},
-		["Drmscp - Draenor"] = {
+		["Zunae - Draenor"] = {
 			["CustomSpells2"] = {
 				{
 					["enabledState"] = 2,
@@ -9167,8 +11420,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shield Wall",
 				}, -- [1]
 				{
@@ -9181,8 +11434,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Smoke Bomb",
 				}, -- [2]
 				{
@@ -9195,8 +11448,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Imprison",
 				}, -- [3]
 				{
@@ -9209,8 +11462,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Avenger's Shield",
 				}, -- [4]
 				{
@@ -9223,8 +11476,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Pillar of Frost",
 				}, -- [5]
 				{
@@ -9237,8 +11490,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ice Block",
 				}, -- [6]
 				{
@@ -9251,8 +11504,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Pain Suppression",
 				}, -- [7]
 				{
@@ -9265,8 +11518,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Innervate",
 				}, -- [8]
 				{
@@ -9279,8 +11532,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Polymorph",
 				}, -- [9]
 				{
@@ -9293,8 +11546,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Unending Resolve",
 				}, -- [10]
 				{
@@ -9307,8 +11560,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Alter Time",
 				}, -- [11]
 				{
@@ -9321,8 +11574,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Horde Flag",
 				}, -- [12]
 				{
@@ -9335,8 +11588,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Survival Instincts",
 				}, -- [13]
 				{
@@ -9349,8 +11602,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mind Bomb",
 				}, -- [14]
 				{
@@ -9363,8 +11616,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Diffuse Magic",
 				}, -- [15]
 				{
@@ -9377,8 +11630,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Repentance",
 				}, -- [16]
 				{
@@ -9391,8 +11644,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Touch of Karma",
 				}, -- [17]
 				{
@@ -9405,8 +11658,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Tracker's Net",
 				}, -- [18]
 				{
@@ -9419,8 +11672,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Netherstorm Flag",
 				}, -- [19]
 				{
@@ -9433,8 +11686,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Kidney Shot",
 				}, -- [20]
 				{
@@ -9447,8 +11700,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blind",
 				}, -- [21]
 				{
@@ -9461,8 +11714,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ice Floes",
 				}, -- [22]
 				{
@@ -9475,8 +11728,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Serenity",
 				}, -- [23]
 				{
@@ -9489,8 +11742,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mending Bandage",
 				}, -- [24]
 				{
@@ -9503,8 +11756,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Storm, Earth, and Fire",
 				}, -- [25]
 				{
@@ -9517,8 +11770,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Roar of Sacrifice",
 				}, -- [26]
 				{
@@ -9531,8 +11784,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Soul Harvest",
 				}, -- [27]
 				{
@@ -9545,8 +11798,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Dragon's Breath",
 				}, -- [28]
 				{
@@ -9559,8 +11812,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Binding Shot",
 				}, -- [29]
 				{
@@ -9573,8 +11826,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mighty Bash",
 				}, -- [30]
 				{
@@ -9587,8 +11840,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Anti-Magic Shell",
 				}, -- [31]
 				{
@@ -9601,8 +11854,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Combat Readiness",
 				}, -- [32]
 				{
@@ -9615,8 +11868,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ascendance",
 				}, -- [33]
 				{
@@ -9629,8 +11882,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Incapacitating Roar",
 				}, -- [34]
 				{
@@ -9643,8 +11896,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Barkskin",
 				}, -- [35]
 				{
@@ -9657,8 +11910,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Howl of Terror",
 				}, -- [36]
 				{
@@ -9671,8 +11924,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Icy Veins",
 				}, -- [37]
 				{
@@ -9685,8 +11938,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Fortifying Brew",
 				}, -- [38]
 				{
@@ -9699,8 +11952,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Sap",
 				}, -- [39]
 				{
@@ -9713,8 +11966,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blur",
 				}, -- [40]
 				{
@@ -9727,8 +11980,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Fel Eruption",
 				}, -- [41]
 				{
@@ -9741,8 +11994,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shadowfury",
 				}, -- [42]
 				{
@@ -9755,8 +12008,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Aura Mastery",
 				}, -- [43]
 				{
@@ -9769,8 +12022,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Spell Reflection",
 				}, -- [44]
 				{
@@ -9783,8 +12036,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Celestial Alignment",
 				}, -- [45]
 				{
@@ -9797,8 +12050,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Gnaw",
 				}, -- [46]
 				{
@@ -9811,8 +12064,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Dampen Harm",
 				}, -- [47]
 				{
@@ -9825,8 +12078,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mortal Coil",
 				}, -- [48]
 				{
@@ -9839,8 +12092,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Cheap Shot",
 				}, -- [49]
 				{
@@ -9853,8 +12106,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Wyvern Sting",
 				}, -- [50]
 				{
@@ -9867,8 +12120,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Dispersion",
 				}, -- [51]
 				{
@@ -9881,8 +12134,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shackle Undead",
 				}, -- [52]
 				{
@@ -9895,8 +12148,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blinding Sleet",
 				}, -- [53]
 				{
@@ -9909,8 +12162,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Fear",
 				}, -- [54]
 				{
@@ -9923,8 +12176,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Guardian of Ancient Kings",
 				}, -- [55]
 				{
@@ -9937,8 +12190,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Hex",
 				}, -- [56]
 				{
@@ -9951,8 +12204,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Evasion",
 				}, -- [57]
 				{
@@ -9965,8 +12218,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Casting Circle",
 				}, -- [58]
 				{
@@ -9979,8 +12232,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ironbark",
 				}, -- [59]
 				{
@@ -9993,8 +12246,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Leap",
 				}, -- [60]
 				{
@@ -10007,8 +12260,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Solar Beam",
 				}, -- [61]
 				{
@@ -10021,8 +12274,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Astral Shift",
 				}, -- [62]
 				{
@@ -10035,8 +12288,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Gouge",
 				}, -- [63]
 				{
@@ -10049,8 +12302,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Garrote - Silence",
 				}, -- [64]
 				{
@@ -10063,8 +12316,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Netherwalk",
 				}, -- [65]
 				{
@@ -10077,8 +12330,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Archangel",
 				}, -- [66]
 				{
@@ -10091,8 +12344,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Alliance Flag",
 				}, -- [67]
 				{
@@ -10105,8 +12358,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Nature's Vigil",
 				}, -- [68]
 				{
@@ -10119,8 +12372,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Deterrence",
 				}, -- [69]
 				{
@@ -10133,8 +12386,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Master's Call",
 				}, -- [70]
 				{
@@ -10147,8 +12400,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Killing Spree",
 				}, -- [71]
 				{
@@ -10161,8 +12414,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Chaos Nova",
 				}, -- [72]
 				{
@@ -10175,8 +12428,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Meteor Strike",
 				}, -- [73]
 				{
@@ -10189,8 +12442,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Power Infusion",
 				}, -- [74]
 				{
@@ -10203,8 +12456,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Guardian of the Forgotten Queen",
 				}, -- [75]
 				{
@@ -10217,8 +12470,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ranger's Net",
 				}, -- [76]
 				{
@@ -10231,8 +12484,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Earthgrab",
 				}, -- [77]
 				{
@@ -10245,8 +12498,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blessing of Freedom",
 				}, -- [78]
 				{
@@ -10259,8 +12512,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Intimidating Shout",
 				}, -- [79]
 				{
@@ -10273,8 +12526,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ice Form",
 				}, -- [80]
 				{
@@ -10287,8 +12540,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Predatory Swiftness",
 				}, -- [81]
 				{
@@ -10301,8 +12554,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Dark Pact",
 				}, -- [82]
 				{
@@ -10315,8 +12568,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Freezing Trap",
 				}, -- [83]
 				{
@@ -10329,8 +12582,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Paralysis",
 				}, -- [84]
 				{
@@ -10343,8 +12596,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Sharpen Blade",
 				}, -- [85]
 				{
@@ -10357,8 +12610,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Recklessness",
 				}, -- [86]
 				{
@@ -10371,8 +12624,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Nether Bond",
 				}, -- [87]
 				{
@@ -10385,8 +12638,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Psychic Scream",
 				}, -- [88]
 				{
@@ -10399,8 +12652,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mesmerize",
 				}, -- [89]
 				{
@@ -10413,8 +12666,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Darkness",
 				}, -- [90]
 				{
@@ -10427,8 +12680,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Charge",
 				}, -- [91]
 				{
@@ -10441,8 +12694,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Spectral Sight",
 				}, -- [92]
 				{
@@ -10455,8 +12708,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Narrow Escape",
 				}, -- [93]
 				{
@@ -10469,8 +12722,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Sin and Punishment",
 				}, -- [94]
 				{
@@ -10483,8 +12736,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Last Word",
 				}, -- [95]
 				{
@@ -10497,8 +12750,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Unstable Affliction",
 				}, -- [96]
 				{
@@ -10511,8 +12764,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ring of Frost",
 				}, -- [97]
 				{
@@ -10525,8 +12778,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Eye for an Eye",
 				}, -- [98]
 				{
@@ -10539,8 +12792,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Asphyxiate",
 				}, -- [99]
 				{
@@ -10553,8 +12806,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Voidform",
 				}, -- [100]
 				{
@@ -10567,8 +12820,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blinding Light",
 				}, -- [101]
 				{
@@ -10581,8 +12834,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blessing of Protection",
 				}, -- [102]
 				{
@@ -10595,8 +12848,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Metamorphosis",
 				}, -- [103]
 				{
@@ -10609,8 +12862,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Entangling Roots",
 				}, -- [104]
 				{
@@ -10623,8 +12876,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mind Control",
 				}, -- [105]
 				{
@@ -10637,8 +12890,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Aspect of the Turtle",
 				}, -- [106]
 				{
@@ -10651,8 +12904,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Leg Sweep",
 				}, -- [107]
 				{
@@ -10665,8 +12918,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Freezing Arrow",
 				}, -- [108]
 				{
@@ -10679,8 +12932,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Seduction",
 				}, -- [109]
 				{
@@ -10693,8 +12946,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Nether Ward",
 				}, -- [110]
 				{
@@ -10707,8 +12960,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Die by the Sword",
 				}, -- [111]
 				{
@@ -10721,8 +12974,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Storm Bolt",
 				}, -- [112]
 				{
@@ -10735,8 +12988,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Entrapment",
 				}, -- [113]
 				{
@@ -10749,8 +13002,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Divine Shield",
 				}, -- [114]
 				{
@@ -10763,8 +13016,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Static Charge",
 				}, -- [115]
 				{
@@ -10777,8 +13030,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shadow Blades",
 				}, -- [116]
 				{
@@ -10791,8 +13044,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Axe Toss",
 				}, -- [117]
 				{
@@ -10805,8 +13058,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Temporal Shield",
 				}, -- [118]
 				{
@@ -10819,8 +13072,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Arcane Power",
 				}, -- [119]
 				{
@@ -10833,8 +13086,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Zen Meditation",
 				}, -- [120]
 				{
@@ -10847,8 +13100,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shadow Reflection",
 				}, -- [121]
 				{
@@ -10861,8 +13114,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Strangulate",
 				}, -- [122]
 				{
@@ -10875,8 +13128,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Avatar",
 				}, -- [123]
 				{
@@ -10889,8 +13142,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ardent Defender",
 				}, -- [124]
 				{
@@ -10903,8 +13156,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Cyclone",
 				}, -- [125]
 				{
@@ -10917,8 +13170,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Silence",
 				}, -- [126]
 				{
@@ -10927,15 +13180,15 @@ NameplateAurasAceDB = {
 					["showOnEnemies"] = true,
 					["animationDisplayMode"] = 1,
 					["showOnFriends"] = true,
-					["animationTimer"] = 10,
-					["pvpCombat"] = 1,
 					["animationType"] = 2,
+					["pvpCombat"] = 1,
+					["animationTimer"] = 10,
 					["iconSizeWidth"] = 45,
-					["glowType"] = 3,
+					["iconSizeHeight"] = 45,
 					["checkSpellID"] = {
 						[163505] = true,
 					},
-					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Rake",
 				}, -- [127]
 				{
@@ -10948,8 +13201,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Berserker Rage",
 				}, -- [128]
 				{
@@ -10962,8 +13215,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Bladestorm",
 				}, -- [129]
 				{
@@ -10976,8 +13229,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Adrenaline Rush",
 				}, -- [130]
 				{
@@ -10990,8 +13243,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Life Cocoon",
 				}, -- [131]
 				{
@@ -11004,8 +13257,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Dark Archangel",
 				}, -- [132]
 				{
@@ -11018,8 +13271,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Vampiric Embrace",
 				}, -- [133]
 				{
@@ -11032,8 +13285,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Hammer of Justice",
 				}, -- [134]
 				{
@@ -11046,8 +13299,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Ethereal Form",
 				}, -- [135]
 				{
@@ -11060,8 +13313,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Cloak of Shadows",
 				}, -- [136]
 				{
@@ -11074,8 +13327,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Freeze",
 				}, -- [137]
 				{
@@ -11088,8 +13341,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Mass Entanglement",
 				}, -- [138]
 				{
@@ -11102,8 +13355,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Fists of Fury",
 				}, -- [139]
 				{
@@ -11116,8 +13369,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Shockwave",
 				}, -- [140]
 				{
@@ -11130,8 +13383,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Grounding Totem Effect",
 				}, -- [141]
 				{
@@ -11144,8 +13397,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Scatter Shot",
 				}, -- [142]
 				{
@@ -11158,8 +13411,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Master of the Elements",
 				}, -- [143]
 				{
@@ -11172,8 +13425,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Maim",
 				}, -- [144]
 				{
@@ -11186,8 +13439,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Banish",
 				}, -- [145]
 				{
@@ -11200,8 +13453,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Between the Eyes",
 				}, -- [146]
 				{
@@ -11214,8 +13467,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Bloodlust",
 				}, -- [147]
 				{
@@ -11228,8 +13481,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Holy Word: Chastise",
 				}, -- [148]
 				{
@@ -11242,8 +13495,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Corpse Shield",
 				}, -- [149]
 				{
@@ -11256,8 +13509,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Icebound Fortitude",
 				}, -- [150]
 				{
@@ -11270,8 +13523,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Frost Nova",
 				}, -- [151]
 				{
@@ -11284,8 +13537,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Guardian Spirit",
 				}, -- [152]
 				{
@@ -11298,8 +13551,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blessing of Sacrifice",
 				}, -- [153]
 				{
@@ -11312,8 +13565,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Cheat Death",
 				}, -- [154]
 				{
@@ -11326,8 +13579,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Disarm",
 				}, -- [155]
 				{
@@ -11340,8 +13593,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Prismatic Barrier",
 				}, -- [156]
 				{
@@ -11354,8 +13607,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Duel",
 				}, -- [157]
 				{
@@ -11368,8 +13621,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "War Banner",
 				}, -- [158]
 				{
@@ -11382,8 +13635,8 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Intimidating Roar",
 				}, -- [159]
 				{
@@ -11396,14 +13649,14 @@ NameplateAurasAceDB = {
 					["animationType"] = 2,
 					["iconSizeWidth"] = 45,
 					["animationTimer"] = 10,
-					["glowType"] = 3,
 					["iconSizeHeight"] = 45,
+					["glowType"] = 3,
 					["spellName"] = "Blazing Barrier",
 				}, -- [160]
 			},
-			["InterruptsGlowType"] = 1,
-			["IconAnchor"] = 3,
 			["DBVersion"] = 18,
+			["IconAnchor"] = 3,
+			["InterruptsGlowType"] = 1,
 			["HidePlayerBlizzardFrame"] = true,
 			["DefaultSpellsLastSetImported"] = 2,
 		},

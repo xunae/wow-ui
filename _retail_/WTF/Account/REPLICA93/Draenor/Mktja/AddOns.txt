@@ -78,3 +78,4 @@ TitanGold: disabled
 TitanLootType: disabled
 TitanPerformance: enabled
 Masque: enabled
+LittleWigs_Legion: enabled

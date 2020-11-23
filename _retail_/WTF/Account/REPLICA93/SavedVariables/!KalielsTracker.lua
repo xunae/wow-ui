@@ -6,6 +6,11 @@ KalielsTrackerDB = {
 				["num"] = 1,
 			},
 		},
+		["Zunae - Draenor"] = {
+			["quests"] = {
+				["num"] = 4,
+			},
+		},
 		["Xunaj - Draenor"] = {
 			["collapsed"] = true,
 			["quests"] = {
@@ -14,11 +19,6 @@ KalielsTrackerDB = {
 		},
 		["Xã - Draenor"] = {
 			["collapsed"] = true,
-		},
-		["Mktja - Draenor"] = {
-			["quests"] = {
-				["num"] = 1,
-			},
 		},
 		["Xuna - Stormscale"] = {
 			["collapsed"] = true,

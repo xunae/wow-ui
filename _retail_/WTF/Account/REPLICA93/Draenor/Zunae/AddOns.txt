@@ -50,3 +50,4 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 XunaTweaks: enabled
 REFlex: enabled
+WeakAurasCompanion: enabled
