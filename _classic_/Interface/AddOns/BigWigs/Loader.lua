@@ -26,7 +26,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "51d1f1b" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "f647c97" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -597,7 +597,6 @@ do
 		BigWigs_SSC = "BigWigs",
 		BigWigs_Outland = "BigWigs",
 		BigWigs_Northrend = "BigWigs",
-		BigWigs_Naxxramas = "BigWigs",
 		BigWigs_MC = "BigWigs",
 		BigWigs_Karazhan = "BigWigs",
 		BigWigs_Hyjal = "BigWigs",

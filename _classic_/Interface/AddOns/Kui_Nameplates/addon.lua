@@ -10,7 +10,7 @@ local addon = KuiNameplates
 local kui = LibStub('Kui-1.0')
 addon.MAJOR,addon.MINOR = 2,5
 
---[===[@debug@
+--[==[@debug@
 addon.debug = true
 --addon.debug_config = true
 --addon.debug_units = true
@@ -18,7 +18,7 @@ addon.debug = true
 --addon.debug_events = true
 --addon.debug_callbacks = true
 --addon.draw_frames = true
---@end-debug@]===]
+--@end-debug@]==]
 addon.DEBUG_IGNORE = {
     ['m:Create'] = true,
     ['m:Show'] = true,
@@ -203,11 +203,11 @@ local function OnEvent(self,event,...)
     if NamePlateDriverFrame and not kui.CLASSIC then
         if not self.USE_BLIZZARD_PERSONAL then
             NamePlateDriverFrame:SetClassNameplateManaBar(nil)
-            NamePlateDriverFrame:SetClassNameplateBar(nil)
             --luacheck:globals ClassNameplateManaBarFrame
             ClassNameplateManaBarFrame:UnregisterAllEvents()
         end
         if not self.USE_BLIZZARD_PERSONAL and not self.USE_BLIZZARD_POWERS then
+            NamePlateDriverFrame:SetClassNameplateBar(nil)
             --luacheck:globals DeathKnightResourceOverlayFrame
             DeathKnightResourceOverlayFrame:UnregisterAllEvents()
             --luacheck:globals ClassNameplateBarMageFrame
@@ -223,6 +223,10 @@ local function OnEvent(self,event,...)
             --luacheck:globals ClassNameplateBrewmasterBarFrame
             ClassNameplateBrewmasterBarFrame:UnregisterAllEvents()
         end
+    end
+    -- hide default unit frames
+    if NamePlateDriverFrame and NamePlateDriverFrame.AcquireUnitFrame then
+        hooksecurefunc(NamePlateDriverFrame,'AcquireUnitFrame',self.NamePlateDriverFrame_AcquireUnitFrame)
     end
 end
 ------------------------------------------- initialise addon scripts & events --

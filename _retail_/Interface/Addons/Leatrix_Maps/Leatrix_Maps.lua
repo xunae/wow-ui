@@ -1,6 +1,6 @@
 
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 9.0.08 (18th November 2020)
+	-- 	Leatrix Maps 9.0.10 (25th November 2020)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaConfigList = {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "9.0.08"
+	LeaMapsLC["AddonVer"] = "9.0.10"
 
 	-- Get locale table
 	local void, Leatrix_Maps = ...
@@ -746,22 +746,28 @@
 				LeaMapsLC:SaveZoomLevel()
 			end)
 
+			-- Set button position from left of map
+			local buttonLeftMax, buttonLeftWin = 154, 560
+			if IsAddOnLoaded("HandyNotes") and IsAddOnLoaded("HandyNotes_Shadowlands") then
+				buttonLeftMax, buttonLeftWin = buttonLeftMax + 32, buttonLeftWin - 32
+			end
+
 			-- Set close button and maximise minimise toggle button
 			hooksecurefunc(WorldMapFrame, "SynchronizeDisplayState", function()
 				if WorldMapFrame.isMaximized then
 					maxBtn:SetNormalTexture("Interface\\BUTTONS\\UI-Panel-SmallerButton-Up")
 					maxBtn:SetHighlightTexture("Interface\\BUTTONS\\UI-Panel-SmallerButton-Up")
 					maxBtn:ClearAllPoints()
-					maxBtn:SetPoint("CENTER", WorldMapFrame, "TOPRIGHT", -154, -84)
+					maxBtn:SetPoint("CENTER", WorldMapFrame, "TOPRIGHT", -buttonLeftMax, -84)
 					closeBox:ClearAllPoints()
-					closeBox:SetPoint("CENTER", WorldMapFrame, "TOPRIGHT", -110, -84)
+					closeBox:SetPoint("CENTER", WorldMapFrame, "TOPRIGHT", -buttonLeftMax + 44, -84)
 				else
 					maxBtn:SetNormalTexture("Interface\\BUTTONS\\UI-Panel-BiggerButton-Up")
 					maxBtn:SetHighlightTexture("Interface\\BUTTONS\\UI-Panel-BiggerButton-Up")
 					maxBtn:ClearAllPoints()
-					maxBtn:SetPoint("CENTER", WorldMapFrame, "TOPLEFT", 560, -84)
+					maxBtn:SetPoint("CENTER", WorldMapFrame, "TOPLEFT", buttonLeftWin, -84)
 					closeBox:ClearAllPoints()
-					closeBox:SetPoint("CENTER", WorldMapFrame, "TOPLEFT", 600, -84)
+					closeBox:SetPoint("CENTER", WorldMapFrame, "TOPLEFT", buttonLeftWin + 40, -84)
 				end
 			end)
 

@@ -1,5 +1,9 @@
 
 OmniCCDB = {
+	["global"] = {
+		["addonVersion"] = "9.0.4",
+		["dbVersion"] = 5,
+	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
 		["Zunae - Draenor"] = "Default",
@@ -8,6 +12,7 @@ OmniCCDB = {
 		["Mktja - Draenor"] = "Default",
 		["Xuna - Stormscale"] = "Default",
 		["Xunap - Draenor"] = "Default",
+		["Mktja - Stormreaver"] = "Default",
 		["Drmscp - Draenor"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Uñ - Draenor"] = "Default",
@@ -16,15 +21,13 @@ OmniCCDB = {
 		["Dkuna - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Xunawl - Draenor"] = "Default",
-		["Æñ - Draenor"] = "Default",
-		["Xunaj - Draenor"] = "Default",
-		["Xã - Draenor"] = "Default",
 		["Wluna - Draenor"] = "Default",
-	},
-	["global"] = {
-		["addonVersion"] = "9.0.4",
-		["dbVersion"] = 5,
+		["Xunawl - Draenor"] = "Default",
+		["Xunae - Stormreaver"] = "Default",
+		["Xã - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
+		["Æñ - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -74,9 +77,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["minutes"] = {
+						},
+						["seconds"] = {
 						},
 						["soon"] = {
 						},
@@ -89,23 +92,22 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.2.3",
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
-			["fontSize"] = 15,
-			["effect"] = "pulse",
-			["scaleText"] = true,
-			["minEffectDuration"] = 30,
-			["minSize"] = 0.74,
-			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["mmSSDuration"] = 0,
-			["yOff"] = -1,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -150,10 +152,36 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["mmSSDuration"] = 0,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.74,
+			["minEffectDuration"] = 30,
+			["yOff"] = -1,
+			["fontSize"] = 15,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
+			["fontSize"] = 18,
+			["effect"] = "pulse",
+			["yOff"] = 0,
+			["minEffectDuration"] = 30,
+			["minSize"] = 0.5,
+			["spiralOpacity"] = 1,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 0,
+			["minDuration"] = 2,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -198,31 +226,6 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
-			["effect"] = "pulse",
-			["yOff"] = 0,
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.5,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["fontSize"] = 18,
 		},
-	},
-	["engine"] = "AniUpdater",
-	["version"] = "8.2.3",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
 	},
 }

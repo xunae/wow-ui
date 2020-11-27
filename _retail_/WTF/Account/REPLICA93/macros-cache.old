@@ -25,6 +25,10 @@ VER 3 0000000000000141 "3SHEAR" "INV_MISC_QUESTIONMARK"
 /stopcasting
 /cast [@arena3] Wind Shear
 END
+VER 3 0000000000000189 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/click ExtraActionButton1
+END
 VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Purify Spirit
 /cast [@mouseover,exists]Purify Spirit; Purify Spirit
@@ -58,8 +62,8 @@ VER 3 0000000000000180 "RSHAM_HR" "INV_MISC_QUESTIONMARK"
 /use [@cursor]Healing Rain
 END
 VER 3 0000000000000188 "RSHAM_HST" "INV_MISC_QUESTIONMARK"
-#showtooltip [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
-/cast [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem
+#showtooltip [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem;Cloudburst Totem
+/cast [talent:6/1]Healing Stream Totem;[talent:6/2]Healing Stream Totem;Cloudburst Totem
 END
 VER 3 0000000000000182 "RSHAM_TIER_3" "INV_MISC_QUESTIONMARK"
 /showtooltip
