@@ -38,8 +38,8 @@ MADB = {
 						"TOPRIGHT", -- [1]
 						"MinimapCluster", -- [2]
 						"BOTTOMRIGHT", -- [3]
-						-100, -- [4]
-						0, -- [5]
+						40, -- [4]
+						15, -- [5]
 					},
 					["name"] = "VehicleSeatIndicator",
 					["scale"] = 0.699999988079071,

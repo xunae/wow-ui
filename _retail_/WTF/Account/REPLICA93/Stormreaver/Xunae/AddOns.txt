@@ -80,3 +80,21 @@ TitanPerformance: enabled
 Masque: enabled
 LittleWigs_Legion: enabled
 AAP-Core: disabled
+ILD-Onebag3: disabled
+ILD-Litebag: disabled
+ILD-Combuctor: disabled
+ILD-Baudbag: disabled
+ILD-Bagnon: disabled
+ILD-Baggins: disabled
+ILD-Arkinventory: disabled
+AutoTurnIn: enabled
+!BugGrabber: enabled
+BugSack: enabled
+LittleWigs_BurningCrusade: enabled
+LittleWigs_Cataclysm: enabled
+LittleWigs_Classic: enabled
+LittleWigs_MistsOfPandaria: enabled
+LittleWigs_WarlordsOfDraenor: enabled
+LittleWigs_WrathOfTheLichKing: enabled
+Screen Overlay Enhanced: enabled
+WorldQuestsList: enabled
