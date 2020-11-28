@@ -18,3 +18,6 @@ _retail_/*
 !_retail_/WTF/**
 !_retail_/fonts
 !_retail_/fonts/**
+
+_retail_/Interface/Addons/RaiderIO/
+RaiderIO*.*
