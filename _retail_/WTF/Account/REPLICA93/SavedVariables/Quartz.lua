@@ -43,6 +43,15 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["EnemyCasts"] = {
+			["profiles"] = {
+				["Default"] = {
+					["instanceonly"] = false,
+					["y"] = 630.666625976563,
+					["x"] = 1255.55541992188,
+				},
+			},
+		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -53,12 +62,12 @@ Quartz3DB = {
 					["iconalpha"] = 0.75,
 					["border"] = "Details BarBorder 3",
 					["fontsize"] = 12,
-					["hidetimetext"] = true,
+					["nametextposition"] = "center",
 					["timetexty"] = -2,
 					["timefontsize"] = 13,
 					["timetextx"] = 5,
-					["nametextposition"] = "center",
 					["texture"] = "Blizzard Raid Bar",
+					["hidetimetext"] = true,
 					["nametexty"] = -2,
 					["font"] = "Oswald",
 					["hideicon"] = true,
@@ -70,18 +79,9 @@ Quartz3DB = {
 					["fontsize"] = 11,
 					["iconalpha"] = 1,
 					["timetextx"] = 5,
-					["timefontsize"] = 11,
-					["showticks"] = false,
 					["nametextx"] = 5,
-				},
-			},
-		},
-		["EnemyCasts"] = {
-			["profiles"] = {
-				["Default"] = {
-					["instanceonly"] = false,
-					["y"] = 630.666625976563,
-					["x"] = 1255.55541992188,
+					["showticks"] = false,
+					["timefontsize"] = 11,
 				},
 			},
 		},
@@ -188,13 +188,13 @@ Quartz3DB = {
 		["Vapenaysh - Stormscale"] = "Default",
 		["Xunadwarf - Valley of Heroes - EU"] = "Default",
 		["Xã - Draenor"] = "Default",
-		["Mktja - Draenor"] = "Default",
 		["Xunapalah - Arena Champions - EU"] = "Default",
+		["Mktja - Draenor"] = "Default",
 		["Jungyuup - Stormscale"] = "Default",
 		["Dkuna - Draenor"] = "Default",
 		["Xuna - Valley of Heroes - EU"] = "Default",
-		["Drmscp - Draenor"] = "Default",
 		["Hãllàáhø - Stormscale"] = "Default",
+		["Drmscp - Draenor"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
 		["Xunaj - Draenor"] = "Default",
@@ -229,9 +229,9 @@ Quartz3DB = {
 				["Mirror"] = false,
 				["GCD"] = false,
 				["Focus"] = false,
-				["Target"] = false,
-				["Pet"] = false,
 				["Timer"] = false,
+				["Pet"] = false,
+				["Target"] = false,
 			},
 			["bordercolor"] = {
 				0.533333333333333, -- [1]
@@ -292,13 +292,13 @@ Quartz3DB = {
 			},
 			["borderalpha"] = 0.25,
 			["modules"] = {
-				["Target"] = false,
-				["GCD"] = false,
-				["Buff"] = false,
 				["Timer"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Target"] = false,
 				["Mirror"] = false,
 				["Pet"] = false,
-				["Focus"] = false,
+				["Buff"] = false,
 			},
 			["bordercolor"] = {
 				nil, -- [1]

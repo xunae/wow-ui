@@ -1,4 +1,11 @@
 Version: 1
+Frame: MicroButtonsMover
+FrameLevel: 1
+Anchor: BOTTOMLEFT
+X: 26
+Y: 225
+W: 287
+H: 37
 Frame: PlayerPowerBarAltMover
 FrameLevel: 1
 Anchor: CENTER
@@ -111,10 +118,3 @@ X: 0
 Y: 0
 W: 298
 H: 88
-Frame: MicroButtonsMover
-FrameLevel: 1
-Anchor: BOTTOMRIGHT
-X: -13
-Y: 3
-W: 287
-H: 37

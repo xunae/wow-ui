@@ -217,13 +217,14 @@ MADB = {
 						2.999999761581421, -- [5]
 					},
 					["name"] = "MicroButtonsMover",
-					["hidden"] = true,
+					["scale"] = 0.7999999523162842,
+					["orgScale"] = 1,
 					["pos"] = {
 						"BOTTOMLEFT", -- [1]
 						"UIParent", -- [2]
 						"BOTTOMLEFT", -- [3]
-						1406.58837890625, -- [4]
-						3.000000715255737, -- [5]
+						26, -- [4]
+						225, -- [5]
 					},
 				},
 				["TargetFrameSpellBar"] = {

@@ -244,8 +244,8 @@ function XunaTweaks:beautifyActionBar()
 				_G[v..i..'HotKey']:SetAlpha(bindAlpha)
 				_G[v..i..'Name']:SetAlpha(macroAlpha)
 
-				_G[v..i..'HotKey']:ClearAllPoints()
-				_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
+				--_G[v..i..'HotKey']:ClearAllPoints()
+				--_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
 
 				local Path, Height = _G[v..i..'HotKey']:GetFont()
 				_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE')
