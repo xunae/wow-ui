@@ -1465,7 +1465,7 @@ do
 		header:SetShadowOffset(1, -1)
 		header:SetTextColor(1,0.82,0,1)
 		header:SetText(title)
-		header:SetAllPoints(display)
+		header:SetPoint("CENTER", display, "CENTER")
 		header:SetJustifyH("CENTER")
 		header:SetJustifyV("MIDDLE")
 		local drag = CreateFrame("Frame", nil, display)
@@ -1595,6 +1595,9 @@ function plugin:OnPluginEnable()
 	-- custom bars
 	self:RegisterMessage("BigWigs_PluginComm")
 	self:RegisterMessage("DBM_AddonMessage")
+
+	-- XXX temporary workaround for wow custom font loading issues, start a dummy bar to force load the selected font into memory
+	self:SendMessage("BigWigs_StartBar", self, nil, "test", 0.01, 134376)
 
 	local tbl = BigWigs3DB.breakTime
 	if tbl then -- Break time present, resume it

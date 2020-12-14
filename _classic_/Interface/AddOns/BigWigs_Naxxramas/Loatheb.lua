@@ -58,8 +58,8 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_SUCCESS", "Doom", 29204)
 	self:Log("SPELL_CAST_SUCCESS", "Decurse", 30281)
 	self:Log("SPELL_CAST_SUCCESS", "Spore", 29234)
-	self:Log("SPELL_AURA_APPLIED", "CorruptedMind", 29185)
-	self:Log("SPELL_AURA_REMOVED", "CorruptedMindRemoved", 29185)
+	self:Log("SPELL_AURA_APPLIED", "CorruptedMind", 29185, true)
+	self:Log("SPELL_AURA_REMOVED", "CorruptedMindRemoved", 29185, true)
 
 	self:Death("Win", 16011)
 end
@@ -85,6 +85,7 @@ function mod:OnEngage()
 	self:DelayedMessage(29204, 295, "red", L.doomtime_warn:format(5))
 	self:DelayedMessage(29204, 300, "red", L.doomtime_now, "Alarm")
 
+	-- Corrupted Mind
 	self:OpenInfo(29185, self:SpellName(29185), 2)
 	self:ScheduleTimer("UpdateHealerList", 0.1)
 end
@@ -117,8 +118,11 @@ function mod:Spore(args)
 end
 
 function mod:CorruptedMind(args)
+	-- the debuff that prevents healing is self-applied
+	if args.sourceGUID ~= args.destGUID then return end
+
 	if self:Me(args.destGUID) then
-		self:Bar(29185, 60, 29185)
+		self:Bar(29185, 60, args.spellName, 29184) -- 29184 = spell_shadow_auraofdarkness
 	end
 	tDeleteItem(healerList, args.destName)
 	healerList[#healerList + 1] = args.destName
@@ -126,8 +130,10 @@ function mod:CorruptedMind(args)
 end
 
 function mod:CorruptedMindRemoved(args)
+	if args.sourceGUID ~= args.destGUID then return end
+
 	if self:Me(args.destGUID) then
-		self:Message(29185, "green", CL.removed:format(args.spellName), 29185)
+		self:Message(29185, "green", CL.removed:format(args.spellName), 29184)
 		self:PlaySound(29185, "info")
 	end
 end

@@ -38,7 +38,7 @@ if L then
 	L.adddeath_desc = "当增援死亡时发出警报。"
 
 	L.starttrigger1 = "你们这些蠢货已经主动步入了陷阱。"
-	L.starttrigger2 = "Teamanare shi rikk mannor rikk lok karkun"
+	L.starttrigger2 = "你们正在挑战一个无比强大的存在。"
 	L.startwarn = "收割者戈提克已激活 - 4:30后，进入房间！"
 
 	L.rider = "冷酷的骑兵"
@@ -225,8 +225,8 @@ if L then
 
 	L.deepbreath_trigger = "%s深深地吸了一口气……"
 
-	-- L.air_phase = "Air phase"
-	-- L.ground_phase = "Ground phase"
+	L.air_phase = "空中阶段"
+	L.ground_phase = "地面阶段"
 
 	L.deepbreath = "寒冰炸弹"
 	L.deepbreath_warning = "即将 寒冰炸弹！"

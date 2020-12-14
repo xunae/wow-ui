@@ -54,6 +54,22 @@ function XunaTweaks:Initialize()
 	MinimapZoomOut:Hide()
 	MinimapZoomIn:Hide()
 
+	MicroButtonAndBagsBar:Hide()
+	CharacterMicroButton:Hide()
+	SpellbookMicroButton:Hide()
+	TalentMicroButton:Hide()
+	AchievementMicroButton:Hide()
+	QuestLogMicroButton:Hide()
+	GuildMicroButton:Hide()
+	LFDMicroButton:Hide()
+	CollectionsMicroButton:Hide()
+	EJMicroButton:Hide()
+	StoreMicroButton:Hide()
+	MainMenuMicroButton:Hide()
+
+	StoreMicroButton:SetScript("OnShow",StoreMicroButton.Hide)
+	StoreMicroButton.Show = function() end
+
 	if not initialSetupDone then
 		initialSetupDone = true
 		self:hideGroupTitles()
@@ -99,7 +115,8 @@ function XunaTweaks:darkFrames()
 		MainMenuBarArtFrameBackground.BackgroundSmall, 	MainMenuBarArtFrameBackground.BagsArt,	MainMenuBarArtFrameBackground.MicroButtonArt,	StatusTrackingBarManager.SingleBarLarge, StatusTrackingBarManager.SingleBarLargeUpper,	StatusTrackingBarManager.SingleBarSmall,
 		SlidingActionBarTexture0,	SlidingActionBarTexture1,	MainMenuXPBarTextureLeftCap,	MainMenuXPBarTextureRightCap,	MainMenuXPBarTextureMid,
 		ReputationWatchBarTexture0,	ReputationWatchBarTexture1,	ReputationWatchBarTexture2,	ReputationWatchBarTexture3,	ReputationXPBarTexture0,	ReputationXPBarTexture1,	ReputationXPBarTexture2, ReputationXPBarTexture3, MicroButtonAndBagsBar.MicroBagBar,
-		PlayerFrameAlternateManaBarBorder, PlayerFrameAlternateManaBarRightBorder ,PlayerFrameAlternateManaBarBackground
+		PlayerFrameAlternateManaBarBorder, PlayerFrameAlternateManaBarRightBorder ,PlayerFrameAlternateManaBarBackground,
+		TotemFrameTotem1Background, TotemFrameTotem2Background, TotemFrameTotem3Background, TotemFrameTotem4Background
 	}) do
 		v:SetVertexColor(c, c, c)
 	end
@@ -244,8 +261,8 @@ function XunaTweaks:beautifyActionBar()
 				_G[v..i..'HotKey']:SetAlpha(bindAlpha)
 				_G[v..i..'Name']:SetAlpha(macroAlpha)
 
-				--_G[v..i..'HotKey']:ClearAllPoints()
-				--_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
+				_G[v..i..'HotKey']:ClearAllPoints()
+				_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
 
 				local Path, Height = _G[v..i..'HotKey']:GetFont()
 				_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE')

@@ -1025,7 +1025,7 @@ MasqueDB = {
 						},
 					},
 				},
-				["OmniBar_Muzzle"] = {
+				["OmniBar_Silence"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1047,7 +1047,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Aspect of the Eagle"] = {
+				["WeakAuras_lx6Q6oUJ09D"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1058,7 +1059,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Shield of Vengeance"] = {
+				["WeakAuras_PBvmgNBZ4n6"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1114,7 +1116,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Blind"] = {
+				["WeakAuras_99o4N7C8LUG"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1148,7 +1151,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Berserk"] = {
+				["OmniBar_Paralysis"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1182,7 +1185,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Soul Harvest"] = {
+				["OmniBar_Mortal Coil"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1204,7 +1207,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_9hF)BixTcSd"] = {
+				["WeakAuras_tfhCByxW4n6"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1216,7 +1219,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Ascendance"] = {
+				["OmniBar_Mind Bomb"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1227,8 +1230,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_Kgm)vcSXULu"] = {
-					["Upgraded"] = true,
+				["OmniBar_Grounding Totem"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1239,7 +1241,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_FTkRac)9TXa"] = {
+				["WeakAuras_bEkovIdSuEc"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1286,7 +1288,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Icy Veins"] = {
+				["OmniBar_Smoke Bomb"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1297,8 +1299,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_Krtf)P(110b"] = {
-					["Upgraded"] = true,
+				["OmniBar"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1333,7 +1334,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_UgHxUTR6oP9"] = {
+				["WeakAuras_o)eOdz5UT8u"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1345,7 +1346,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_o)eOdz5UT8u"] = {
+				["WeakAuras_UgHxUTR6oP9"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1368,7 +1369,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar"] = {
+				["WeakAuras_Krtf)P(110b"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1379,7 +1381,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Smoke Bomb"] = {
+				["OmniBar_Icy Veins"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1414,7 +1416,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_bEkovIdSuEc"] = {
+				["WeakAuras_FTkRac)9TXa"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1426,29 +1428,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Grounding Totem"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.7568627450980392, -- [1]
-							0.7568627450980392, -- [2]
-							0.7568627450980392, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["OmniBar_Mind Bomb"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.7568627450980392, -- [1]
-							0.7568627450980392, -- [2]
-							0.7568627450980392, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_tfhCByxW4n6"] = {
+				["WeakAuras_Kgm)vcSXULu"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Normal"] = {
@@ -1460,7 +1440,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Mortal Coil"] = {
+				["OmniBar_Ascendance"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1471,19 +1451,41 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Paralysis"] = {
-					["Colors"] = {
-						["Normal"] = {
-							0.7568627450980392, -- [1]
-							0.7568627450980392, -- [2]
-							0.7568627450980392, -- [3]
-							1, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_99o4N7C8LUG"] = {
+				["WeakAuras_9hF)BixTcSd"] = {
 					["Upgraded"] = true,
+					["Colors"] = {
+						["Normal"] = {
+							0.7568627450980392, -- [1]
+							0.7568627450980392, -- [2]
+							0.7568627450980392, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["OmniBar_Soul Harvest"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.7568627450980392, -- [1]
+							0.7568627450980392, -- [2]
+							0.7568627450980392, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["OmniBar_Berserk"] = {
+					["Colors"] = {
+						["Normal"] = {
+							0.7568627450980392, -- [1]
+							0.7568627450980392, -- [2]
+							0.7568627450980392, -- [3]
+							1, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["OmniBar_Blind"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1505,8 +1507,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_PBvmgNBZ4n6"] = {
-					["Upgraded"] = true,
+				["OmniBar_Shield of Vengeance"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1517,8 +1518,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_lx6Q6oUJ09D"] = {
-					["Upgraded"] = true,
+				["OmniBar_Aspect of the Eagle"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]
@@ -1529,7 +1529,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Silence"] = {
+				["OmniBar_Muzzle"] = {
 					["Colors"] = {
 						["Normal"] = {
 							0.7568627450980392, -- [1]

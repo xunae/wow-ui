@@ -5,7 +5,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
-ATT: disabled
+ATT: enabled
 Quartz: enabled
 ClassicUI: disabled
 XunaTweaks: enabled
@@ -98,3 +98,8 @@ LittleWigs_WarlordsOfDraenor: enabled
 LittleWigs_WrathOfTheLichKing: enabled
 Screen Overlay Enhanced: enabled
 WorldQuestsList: enabled
+RaiderIO: enabled
+RaiderIO_DB_EU_A: disabled
+RaiderIO_DB_EU_H: enabled
+RaiderIO_DB_EU_A_R: disabled
+RaiderIO_DB_EU_H_R: enabled

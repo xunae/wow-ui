@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.10 (25th November 2020)
+-- 	Leatrix Plus 9.0.11 (9th December 2020)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.10"
+	LeaPlusLC["AddonVer"] = "9.0.11"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -1024,6 +1024,16 @@
 
 				},
 
+				-- Singing Sunflower (sound/event/)
+				["MuteSunflower"] = {
+					"event_pvz_babbling.ogg#567354",
+					"event_pvz_dadadoo.ogg#567327",
+					"event_pvz_doobeedoo.ogg#567317",
+					"event_pvz_lalala.ogg#567338",
+					"event_pvz_sunflower.ogg#567374",
+					"event_pvz_zombieonyourlawn.ogg#567295",
+				},
+
 			}
 
 			-- Give table file level scope (its used during logout and for wipe and admin commands)
@@ -1053,9 +1063,6 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteVaults", "Vaults", 16, -212, false, "If checked, the mechanical guild vault idle sound will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteReady", "Ready", 16, -232, false, "If checked, the ready check sound will be muted.")
 
-			LeaPlusLC:MakeTx(SoundPanel, "Combat", 264, -72)
-			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 264, -92, false, "If checked, battle shouts heard when casting specific spells will be muted.")
-
 			LeaPlusLC:MakeTx(SoundPanel, "Mounts", 140, -72)
 			LeaPlusLC:MakeCB(SoundPanel, "MuteBikes", "Bikes", 140, -92, false, "If checked, most of the bike mount sounds will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteTravelers", "Travelers", 140, -112, false, "If checked, traveling merchant greetings and farewells will be muted.|n|nThis applies to Traveler's Tundra Mammoth, Grand Expedition Yak and Mighty Caravan Brutosaur.")
@@ -1065,6 +1072,12 @@
 			LeaPlusLC:MakeCB(SoundPanel, "MuteGolem", "Golem", 140, -192, false, "If checked, the Sky Golem mount will be muted.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteHorned", "Horned", 140, -212, false, "If checked, horned horses will be muted.|n|nThis applies to Lucid Nightmare, Wild Dreamrunner and Pureheart Courser.")
 			LeaPlusLC:MakeCB(SoundPanel, "MuteGyrocopters", "Gyrocopters", 140, -232, false, "If checked, gyrocopters will be muted.|n|nThis applies to Mimiron's Head, Mecha-Mogul MK2 and other gyrocopter mounts.|n|nEnabling this option will also mute airplane gear shift sounds.")
+
+			LeaPlusLC:MakeTx(SoundPanel, "Pets", 264, -72)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteSunflower", "Sunflower", 264, -92, false, "If checked, the Singing Sunflower pet will be muted.")
+
+			LeaPlusLC:MakeTx(SoundPanel, "Combat", 264, -132)
+			LeaPlusLC:MakeCB(SoundPanel, "MuteBattleShouts", "Shouts", 264, -152, false, "If checked, battle shouts heard when casting specific spells will be muted.")
 
 			-- Set click width for sounds checkboxes
 			for k, v in pairs(muteTable) do
@@ -7193,12 +7206,20 @@
 				-- Cinematic Music: Shadowlands (movie.dbc)
 				"|cffffd800", "|cffffd800" .. L["Shadowlands"], 
 				"|Cffffffff" .. L["Shadowlands"] .. " |r#3727029#320", -- interface/cinematics/shadowlands_901_si.mp3
+				"|Cffffffff" .. L["Afterlives Ardenweald"] .. " |r#3814425#362", -- interface/cinematics/shadowlands_901_aw.mp3
 				"|Cffffffff" .. L["Afterlives Bastion"] .. " |r#3809924#396", -- interface/cinematics/shadowlands_901_ba.mp3
 				"|Cffffffff" .. L["Afterlives Maldraxxus"] .. " |r#3814420#258", -- interface/cinematics/shadowlands_901_mx.mp3
+				"|Cffffffff" .. L["Afterlives Revendreth"] .. " |r#3814415#224", -- interface/cinematics/shadowlands_901_rd.mp3
 				"|Cffffffff" .. L["Exile's Reach (Horde)"] .. " |r#3755758#22", -- interface/cinematics/shadowlands_902_931.mp3
 				"|Cffffffff" .. L["Exile's Reach (Alliance)"] .. " |r#3260363#22", -- interface/cinematics/shadowlands_901_895.mp3
 				"|Cffffffff" .. L["Dark Abduction"] .. " |r#3755759#126", -- interface/cinematics/shadowlands_902_937.mp3
+				-- "|Cffffffff" .. L["Ysera Reborn"] .. " |r#3756095#144", -- interface/cinematics/shadowlands_902_941.mp3
 				"|Cffffffff" .. L["For Teldrassil"] .. " |r#3755760#148", -- interface/cinematics/shadowlands_902_942.mp3
+				"|Cffffffff" .. L["Beyond The Veil"] .. " |r#3851149#104", -- interface/cinematics/shadowlands_901_lc.mp3
+				"|Cffffffff" .. L["Remember This Lesson"] .. " |r#3756096#197", -- interface/cinematics/shadowlands_901_rme.mp3
+				"|Cffffffff" .. L["Breaking The Arbiter"] .. " |r#3756093#95", -- interface/cinematics/shadowlands_901_bta.mp3
+				"|Cffffffff" .. L["A Glimpse Into Darkness"] .. " |r#3756092#66", -- interface/cinematics/shadowlands_901_etm.mp3
+				"|Cffffffff" .. L["No More Lies"] .. " |r#3756094#206", -- interface/cinematics/shadowlands_901_pim.mp3
 			})
 			Zn(L["Various"], L["Various"], L["Class Trials"]							, {	"|cffffd800" .. L["Various"] .. ": " .. L["Class Trials"], prefol, "MUS_70_ClassTrial_Horde_BattleWalk#71954", "MUS_70_ClassTrial_Alliance_BattleWalk#71959",})
 			Zn(L["Various"], L["Various"], L["Credits"]									, {	"|cffffd800" .. L["Various"] .. ": " .. L["Credits"], prefol, "Menu-Credits01#10763", "Menu-Credits02#10804", "Menu-Credits03#13822", "Menu-Credits04#23812", "Menu-Credits05#32015", "Menu-Credits06#34020", "Menu-Credits07#56354", "Menu-Credits08#113560"})
@@ -7263,17 +7284,25 @@
 				L["Rise of Azshara (Alliance)"] .. " |r(883)", 
 				L["The Negotiation"] .. " |r(903)", 
 				-- L["Reckoning"] .. " |r(904)", 
-				-- L["Azshara's Eternal Palace"] .. " |r(920)", 
+				L["Azshara's Eternal Palace"] .. " |r(920)", 
 				L["Visions of N'Zoth"] .. " |r(928)",
 			})
 			Zn(L["Movies"], L["Movies"], L["Shadowlands"]						, {	"|cffffd800" .. L["Movies"] .. ": " .. L["Shadowlands"], prefol, 
-				L["Shadowlands"] .. " |r(936)", 
-				L["Afterlives Bastion"] .. " |r(932)", 
-				L["Afterlives Maldraxxus"] .. " |r(934)", 
-				L["Exile's Reach (Horde)"] .. " |r(931)", 
-				L["Exile's Reach (Alliance)"] .. " |r(895)", 
-				L["Dark Abduction"] .. " |r(937)", 
-				L["For Teldrassil"] .. " |r(942)", 
+				L["Shadowlands"] .. " |r(936)",
+				L["Afterlives Ardenweald"] .. " |r(935)",
+				L["Afterlives Bastion"] .. " |r(932)",
+				L["Afterlives Maldraxxus"] .. " |r(934)",
+				L["Afterlives Revendreth"] .. " |r(933)",
+				L["Exile's Reach (Horde)"] .. " |r(931)",
+				L["Exile's Reach (Alliance)"] .. " |r(895)",
+				L["Dark Abduction"] .. " |r(937)",
+				-- L["Ysera Reborn"] .. " |r(941)",
+				L["For Teldrassil"] .. " |r(942)",
+				L["Beyond The Veil"] .. " |r(943)",
+				L["Remember This Lesson"] .. " |r(944)",
+				L["Breaking The Arbiter"] .. " |r(945)",
+				L["A Glimpse Into Darkness"] .. " |r(946)",
+				L["No More Lies"] .. " |r(947)",
 			})
 			-- Give zone table a file level scope so slash command function can access it
 			LeaPlusLC["ZoneList"] = ZoneList

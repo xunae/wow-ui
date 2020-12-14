@@ -11,6 +11,8 @@ BigWigs:AddSounds("Shriekwing", {
 	[342074] = "warning",
 	[342863] = "alert",
 	[343005] = "alert",
+	[345397] = "alarm",
+	[345936] = "long",
 	["stages"] = "info",
 })
 
@@ -94,13 +96,19 @@ BigWigs:AddSounds("The Council of Blood", {
 	[327497] = "alarm",
 	[330848] = "info",
 	[330959] = "long",
+	[330965] = "info",
+	[330978] = "long",
 	[331634] = {"info","warning"},
 	[337110] = "alarm",
+	[346303] = "warning",
 	[346651] = "alarm",
 	[346657] = "warning",
+	[346681] = {"alert","info"},
 	[346690] = "alarm",
-	[346698] = "long",
+	[346698] = "warning",
+	[346790] = "alarm",
 	[346800] = "long",
+	[346945] = "alarm",
 	[347350] = "warning",
 })
 
@@ -141,6 +149,7 @@ BigWigs:AddSounds("Stone Legion Generals", {
 })
 
 BigWigs:AddSounds("Sire Denathrius", {
+	[-22131] = "alert",
 	[326699] = {"alarm","info","warning"},
 	[326707] = "alert",
 	[326851] = "alarm",
@@ -151,14 +160,13 @@ BigWigs:AddSounds("Sire Denathrius", {
 	[329181] = {"alert","warning"},
 	[329906] = "alarm",
 	[329951] = "warning",
-	[330042] = "alarm",
+	[330068] = "alarm",
 	[332585] = "alert",
 	[332619] = "alert",
 	[332794] = "warning",
-	[332937] = "alert",
-	[333111] = "alarm",
+	[332849] = "alert",
 	[333932] = "warning",
-	[333979] = "alert",
+	[333980] = "alarm",
 	[335873] = "alarm",
 	["stages"] = "long",
 })

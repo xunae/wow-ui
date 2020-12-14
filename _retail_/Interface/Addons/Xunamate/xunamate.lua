@@ -60,7 +60,7 @@ function Xunamate:updatePartyMembers()
 end
 
 function Xunamate:updateSpecHandler(event, guid, unit, info)
-  if matchData ~= nil then self:updatePartyMembers() end
+  if matchData ~= nil and C_PvP.IsArena() then self:updatePartyMembers() end
 end
 LGIST.RegisterCallback(Xunamate, "GroupInSpecT_Update", "updateSpecHandler")
 
@@ -92,16 +92,39 @@ function Xunamate:ARENA_OPPONENT_UPDATE(eventName, unitToken, updateReason)
   end
 end
 
+function Xunamate:saveGame()
+  if matchData ~= nil then
+    if not matchData.endTime then matchData.endTime = time() end
+    if not matchData.startTime then matchData.startTime = matchData.endTime end -- Left before gates opened
+
+    if matchData.bracket then
+      local ratedInfo = GetPersonalRatedInfo(matchData.bracket)
+      if ratedInfo then
+        matchData.players.player.ratingNew = select(1,  ratedInfo)
+        matchData.players.player.rankingNew = select(11,  ratedInfo)
+      end
+    end
+
+    table.insert(self.db.global.matches, matchData)
+    self:Print("Match recorded!")
+
+    matchData = nil
+    self:UnregisterEvent("ZONE_CHANGED_NEW_AREA")
+  end
+end
+
 function Xunamate:ZONE_CHANGED_NEW_AREA(eventName, ...)
   if matchData ~= nil and C_PvP.IsArena() then
     matchData.season = GetCurrentArenaSeason()
     matchData.bracket = C_PvP.GetActiveMatchBracket()
     matchData.zone = GetAreaText()
 
-    local ratedInfo = GetPersonalRatedInfo(matchData.bracket)
-    if ratedInfo then
-      matchData.players.player.rating = select(1,  ratedInfo)
-      matchData.players.player.ranking = select(11,  ratedInfo)
+    if matchData.bracket then
+      local ratedInfo = GetPersonalRatedInfo(matchData.bracket)
+      if ratedInfo then
+        matchData.players.player.rating = select(1,  ratedInfo)
+        matchData.players.player.ranking = select(11,  ratedInfo)
+      end
     end
 
     LGIST:Rescan(nil)
@@ -117,20 +140,7 @@ function Xunamate:ZONE_CHANGED_NEW_AREA(eventName, ...)
   end
 
   if matchData ~= nil and not C_PvP.IsArena() then
-    if not matchData.endTime then matchData.endTime = time() end
-    if not matchData.startTime then matchData.startTime = matchData.endTime end -- Left before gates opened
-
-    local ratedInfo = GetPersonalRatedInfo(matchData.bracket)
-    if ratedInfo then
-      matchData.players.player.ratingNew = select(1,  ratedInfo)
-      matchData.players.player.rankingNew = select(11,  ratedInfo)
-    end
-
-    table.insert(self.db.global.matches, matchData)
-    self:Print("Match recorded!")
-
-    matchData = nil
-    self:UnregisterEvent("ZONE_CHANGED_NEW_AREA")
+    self:saveGame()
   end
 end
 
@@ -164,13 +174,15 @@ function Xunamate:PVP_MATCH_COMPLETE(eventName, ...)
     end
   end
   
-  for i = 1, 2 do
+  for i = 0, 1 do
     local info = C_PvP.GetTeamInfo(i)
     if info then
       if not matchData.teamInfo then matchData.teamInfo = {} end
       matchData.teamInfo[i] = info
     end
   end
+
+  self:saveGame()
 end
 
 ----------------------------------------------------------------------------------------
@@ -179,10 +191,10 @@ AceGUI = LibStub("AceGUI-3.0")
 
 Xunamate:RegisterChatCommand("xm", "toggleMatches")
 
-local frame, tooltip
+local frame
 local ROW_HEIGHT = 32
 local ROWS_VISIBLE = 14
-local ICON_SIZE = 24
+local ICON_SIZE = 22
 
 local function updateScrollFrame()
   local offset = FauxScrollFrame_GetOffset(frame.sf)
@@ -247,6 +259,8 @@ function Xunamate:initiateDialogFrame()
   frame.sf:SetScript('OnShow', updateScrollFrame)
   frame.sf.matches = {}
 
+  frame.tooltip = CreateFrame("GameTooltip", "XunamateTooltip", frame, "GameTooltipTemplate")
+
   frame:Hide()
   --self:toggleMatches()
 end
@@ -293,8 +307,8 @@ function Xunamate:toggleMatches()
           return fs
         end
 
-        pTeam = {}
-        eTeam = {}
+        local pTeam = {}
+        local eTeam = {}
         for i, v in pairs(v.players) do
           if tContains({"player", "party1", "party2"}, i) then
             tinsert(pTeam, v)
@@ -310,23 +324,25 @@ function Xunamate:toggleMatches()
         --else
         --  insertText(v.players.player.rating):SetPoint("LEFT", f, 80, 0)
         --end
-        if getn(pTeam) == 3 or getn(eTeam) == 3 then
-          insertText("3v3"):SetPoint("LEFT", f, 10, 0)
-        else
-          insertText("2v2"):SetPoint("LEFT", f, 10, 0)
+        if v.players.player.bgRating and v.players.player.ratingChange then
+          insertText(string.format("%s (%s)", v.players.player.bgRating, v.players.player.ratingChange)):SetPoint("RIGHT", f, -140, 0)
         end
-        insertText(string.format("%s (%s)", v.players.player.bgRating, v.players.player.ratingChange)):SetPoint("LEFT", f, 50, 0)
-        insertText(v.zone):SetPoint("LEFT", f, 130, 0)
+        insertText(v.zone):SetPoint("LEFT", f, 10, 0)
         insertText(date("%d.%m.%Y %H:%M", v.startTime)):SetPoint("RIGHT", f, -10, 0)
-        insertText("vs"):SetPoint("CENTER", f)
-        insertText(self:parseDuration(v.endTime - v.startTime)):SetPoint("RIGHT", f, -100, 0)
+        insertText(self:parseDuration(v.endTime - v.startTime)):SetPoint("RIGHT", f, -105, 0)
+
+        f.teamContainer = CreateFrame("Frame", nil, f)
+        f.teamContainer:SetPoint("CENTER", 0, 0)
+        f.teamContainer:SetWidth(220)
+        f.teamContainer:SetHeight(ROW_HEIGHT)
+        insertText("vs"):SetPoint("CENTER", f.teamContainer)
 
         local function insertPlayerIcons(team, offset, growDirection)
           for i, v in ipairs(team) do
             if v.specId or v.classId then
               local icon = f:CreateTexture()
               icon:SetSize(ICON_SIZE, ICON_SIZE)
-              icon:SetPoint("CENTER", f, offset, -1)
+              icon:SetPoint("CENTER", f.teamContainer, offset, -1)
               if growDirection == 'LEFT' then offset = offset - ICON_SIZE - 2 end
               if growDirection == 'RIGHT' then offset = offset + ICON_SIZE + 2 end
               if v.specId and v.specId ~= 0 then
@@ -342,12 +358,67 @@ function Xunamate:toggleMatches()
         insertPlayerIcons(pTeam, -ICON_SIZE, 'LEFT')
         insertPlayerIcons(eTeam, ICON_SIZE, 'RIGHT')
 
+        local function createtooltip()
+          frame.tooltip:SetOwner(f, "ANCHOR_CURSOR")
+          self:sortPlayers(pTeam, false)
+          self:sortPlayers(eTeam, false)
+
+          local function insertTeam(team)
+            for i, v in ipairs(team) do
+              local ratingChange = "-"
+              if v.bgRating and not v.ratingChange then
+                ratingChange = v.bgRating
+              elseif v.bgRating and v.ratingChange then
+                if v.ratingChange > 0 then
+                  ratingChange = string.format("%s (+%s)", v.bgRating, v.ratingChange)
+                else
+                  ratingChange = string.format("%s (%s)", v.bgRating, v.ratingChange)
+                end
+              end
+
+              local c = C_ClassColor.GetClassColor(select(2, GetClassInfo(v.classId)))
+              local rcc = { r = 0.5, g = 0.5, b = 0.5 }
+              if v.ratingChange and v.ratingChange > 0 then
+                rcc.r = 0.3
+                rcc.g = 1
+              elseif v.ratingChange and v.ratingChange < 0 then
+                rcc.r = 1
+                rcc.g = 0.3
+              end
+
+              frame.tooltip:AddDoubleLine(string.format("%s-%s", v.name, v.realm), ratingChange, c.r, c.g, c.b, rcc.r, rcc.g, rcc.b)
+
+              --if v.damageDone and v.healingDone then
+              --  frame.tooltip:AddLine(string.format("    %s / %s", AbbreviateNumbers(v.damageDone), AbbreviateNumbers(v.healingDone)), 0.5, 0.5, 0.5)
+              --end
+            end
+          end
+
+          local playerTeam = self:getPlayerFaction(v.players);
+          local playerTeamInfo = v.teamInfo[playerTeam]
+          local enemyTeamInfo
+          if playerTeam == 0 then
+            enemyTeamInfo = v.teamInfo[1]
+          else
+            enemyTeamInfo = v.teamInfo[0]
+          end
+
+          frame.tooltip:AddDoubleLine("Team 1", playerTeamInfo.ratingMMR)   
+          insertTeam(pTeam)
+          frame.tooltip:AddLine(" ")
+          frame.tooltip:AddDoubleLine("Team 2", enemyTeamInfo.ratingMMR)
+          insertTeam(eTeam)
+        end
+
         -- Tooltip stuff
         f:SetScript('OnEnter', function(self)
           f.highlight:Show()
+          createtooltip()
+          frame.tooltip:Show()
         end)
         f:SetScript('OnLeave', function()
           f.highlight:Hide()
+          frame.tooltip:Hide()
         end)
       end
     end

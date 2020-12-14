@@ -94,7 +94,7 @@ function mod:OnEngage()
 	self:CloseProximity("proximity")
 
 	self:Message("stages", "yellow", L.start_warning, false) -- CL.custom_start:format(L.bossName, _G.ACTIVE_PETS, 5)
-	self:Bar("stages", 310, CL.phase:format(2), "Spell_Fire_FelImmolation")
+	self:Bar("stages", 310, CL.phase:format(2), "spell_shadow_chilltouch")
 end
 
 --------------------------------------------------------------------------------
@@ -166,9 +166,9 @@ function mod:UNIT_HEALTH_FREQUENT(event, unit)
 	if self:MobId(UnitGUID(unit)) == 15990 then
 		local hp = UnitHealth(unit) / UnitHealthMax(unit) * 100
 		if hp < 46 then
+			self:UnregisterUnitEvent(event, "target", "focus")
 			self:Message("stages", "cyan", L.phase3_soon_warning, false)
 			self:PlaySound("stages", "info")
-			self:UnregisterEvent(event, "target", "focus")
 		end
 	end
 end
