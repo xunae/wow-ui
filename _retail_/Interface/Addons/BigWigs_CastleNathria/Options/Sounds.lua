@@ -33,7 +33,7 @@ BigWigs:AddSounds("Hungering Destroyer", {
 	[329298] = "alarm",
 	[329455] = "alert",
 	[329725] = "warning",
-	[329774] = "alert",
+	[329774] = "warning",
 	[332295] = "alert",
 	[334266] = "warning",
 	[334522] = "long",
@@ -88,6 +88,7 @@ BigWigs:AddSounds("Lady Inerva Darkvein", {
 	[331573] = "alarm",
 	[331870] = "long",
 	[332664] = "alarm",
+	[340452] = "warning",
 	[341621] = "alert",
 	["anima_tracking"] = "info",
 })
@@ -130,7 +131,6 @@ BigWigs:AddSounds("Stone Legion Generals", {
 	[332406] = "info",
 	[332683] = "warning",
 	[333387] = "warning",
-	[334009] = "warning",
 	[334498] = "long",
 	[334765] = "alarm",
 	[334929] = "info",
@@ -146,6 +146,7 @@ BigWigs:AddSounds("Stone Legion Generals", {
 	[342733] = "warning",
 	[342985] = "alert",
 	[343063] = "alarm",
+	[344496] = "warning",
 })
 
 BigWigs:AddSounds("Sire Denathrius", {

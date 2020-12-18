@@ -41,7 +41,7 @@ end
 function mod:OnEngage()
 	self:Message(28785, "yellow", CL.custom_start_s:format(L.bossName, self:SpellName(28785), 90), false)
 	self:DelayedMessage(28785, 80, "red", L.gainwarn10sec)
-	self:Bar(28785, L.gainincbar, 90, 28785)
+	self:CDBar(28785, 90, L.gainincbar, 28785)
 end
 
 --------------------------------------------------------------------------------
@@ -54,7 +54,7 @@ end
 
 function mod:GainSwarm(args)
 	self:Bar(28785, 20)
-	self:DelayedMessage(28785, 20, "red", L.over:format(args.spellName))
+	self:DelayedMessage(28785, 20, "red", CL.over:format(args.spellName))
 	self:Bar(28785, 85, L.gainincbar)
 	self:DelayedMessage(28785, 75, "red", L.gainwarn10sec)
 end

@@ -53,7 +53,7 @@ WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-Xunamate: enabled
+Xunamate: disabled
 REFlex: disabled
 Favorites: disabled
 sArena: disabled

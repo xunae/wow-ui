@@ -29,13 +29,13 @@ VER 3 0000000000000189 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /click ExtraActionButton1
 END
-VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
-#showtooltip Purify Spirit
-/cast [@mouseover,exists]Purify Spirit; Purify Spirit
-END
 VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Cleanse Spirit
 /cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
+END
+VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Purify Spirit
+/cast [@mouseover,exists]Purify Spirit; Purify Spirit
 END
 VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 #showtooltip Hex
@@ -84,12 +84,12 @@ VER 3 0000000000000184 "RSHAM_TIER_8" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000185 "RSHAM_TRINK_LINK" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
-/use Gladiator's Medallion
+/use 14
 /use [@player]Spirit Link Totem
 END
 VER 3 0000000000000186 "RSHAM_TRINKLINKC" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
-/use Gladiator's Medallion
+/use 14
 /use [@cursor]Spirit Link Totem
 END
 VER 3 0000000000000139 "SHEAR" "INV_MISC_QUESTIONMARK"

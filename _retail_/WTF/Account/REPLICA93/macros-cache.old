@@ -29,13 +29,13 @@ VER 3 0000000000000189 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /click ExtraActionButton1
 END
-VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
-#showtooltip Cleanse Spirit
-/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
-END
 VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Purify Spirit
 /cast [@mouseover,exists]Purify Spirit; Purify Spirit
+END
+VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Spirit
+/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
 END
 VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 #showtooltip Hex

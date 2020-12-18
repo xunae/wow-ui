@@ -47,15 +47,17 @@ function Xunamate:PVP_RATED_STATS_UPDATE(eventName, ...)
 end
 
 function Xunamate:updatePartyMembers()
-  for i = 1, GetNumSubgroupMembers() do
-    if not matchData.players["party" .. i] then matchData.players["party" .. i] = {} end
-    matchData.players["party" .. i].guid = UnitGUID("party" .. i)
-    matchData.players["party" .. i].name = select(1, UnitName("party" .. i))
-    matchData.players["party" .. i].realm = select(2, UnitName("party" .. i)) or GetRealmName()
-    matchData.players["party" .. i].classId = select(3, UnitClass("party" .. i))
-    matchData.players["party" .. i].gender = UnitSex("party" .. i)
-    lgistInfo = LGIST:GetCachedInfo(UnitGUID("party" .. i))
-    if lgistInfo ~= nil then matchData.players["party" .. i].specId = lgistInfo.global_spec_id end
+  if C_PvP.IsArena() then
+    for i = 1, GetNumSubgroupMembers() do
+      if not matchData.players["party" .. i] then matchData.players["party" .. i] = {} end
+      matchData.players["party" .. i].guid = UnitGUID("party" .. i)
+      matchData.players["party" .. i].name = select(1, UnitName("party" .. i))
+      matchData.players["party" .. i].realm = select(2, UnitName("party" .. i)) or GetRealmName()
+      matchData.players["party" .. i].classId = select(3, UnitClass("party" .. i))
+      matchData.players["party" .. i].gender = UnitSex("party" .. i)
+      lgistInfo = LGIST:GetCachedInfo(UnitGUID("party" .. i))
+      if lgistInfo ~= nil then matchData.players["party" .. i].specId = lgistInfo.global_spec_id end
+    end
   end
 end
 
@@ -183,6 +185,7 @@ function Xunamate:PVP_MATCH_COMPLETE(eventName, ...)
   end
 
   self:saveGame()
+  LeaveBattlefield()
 end
 
 ----------------------------------------------------------------------------------------

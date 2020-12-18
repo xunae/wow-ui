@@ -31,6 +31,7 @@ MADB = {
 					},
 					["name"] = "TalkingHeadFrame",
 					["scale"] = 0.75,
+					["orgScale"] = 1,
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
@@ -38,7 +39,6 @@ MADB = {
 						0.000152587890625, -- [4]
 						200.0000152587891, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["PartyMemberFrame4"] = {
 					["orgPos"] = {
@@ -62,6 +62,7 @@ MADB = {
 					},
 					["name"] = "PlayerPowerBarAltMover",
 					["scale"] = 0.7999999523162842,
+					["orgScale"] = 1,
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
@@ -69,7 +70,6 @@ MADB = {
 						0, -- [4]
 						300, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["PlayerFrame"] = {
 					["orgPos"] = {
@@ -81,6 +81,7 @@ MADB = {
 					},
 					["name"] = "PlayerFrame",
 					["scale"] = 1.100000023841858,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -88,7 +89,6 @@ MADB = {
 						136.3636334080342, -- [4]
 						-136.3636334080342, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["PartyMemberFrame3"] = {
 					["orgPos"] = {
@@ -102,24 +102,24 @@ MADB = {
 					["scale"] = 1.199999928474426,
 					["orgScale"] = 1,
 				},
-				["VehicleSeatIndicator"] = {
+				["TargetFrame"] = {
 					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						40, -- [4]
-						15, -- [5]
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-297, -- [4]
+						-136, -- [5]
 					},
-					["name"] = "VehicleSeatIndicator",
-					["scale"] = 0.699999988079071,
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-4.760985497730267, -- [4]
-						14.28596403160025, -- [5]
-					},
+					["name"] = "TargetFrame",
+					["scale"] = 1.100000023841858,
 					["orgScale"] = 1,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						362.6588745117188, -- [4]
+						-136.3636334080342, -- [5]
+					},
 				},
 				["FocusFrameSpellBar"] = {
 					["orgPos"] = {
@@ -143,6 +143,7 @@ MADB = {
 					},
 					["name"] = "PartyMemberFrame1",
 					["scale"] = 1.199999928474426,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"CompactRaidFrameManager", -- [2]
@@ -150,7 +151,6 @@ MADB = {
 						56.66666368643425, -- [4]
 						-139.4447664088865, -- [5]
 					},
-					["orgScale"] = 1,
 				},
 				["FocusFrame"] = {
 					["orgPos"] = {
@@ -162,6 +162,7 @@ MADB = {
 					},
 					["name"] = "FocusFrame",
 					["scale"] = 1,
+					["orgScale"] = 1,
 					["pos"] = {
 						"TOPLEFT", -- [1]
 						"UIParent", -- [2]
@@ -169,26 +170,25 @@ MADB = {
 						300, -- [4]
 						-438.0560607910156, -- [5]
 					},
-					["orgScale"] = 1,
 				},
-				["TargetFrame"] = {
+				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-297, -- [4]
-						-136, -- [5]
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						40, -- [4]
+						15, -- [5]
 					},
-					["name"] = "TargetFrame",
-					["scale"] = 1.100000023841858,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						362.6588745117188, -- [4]
-						-136.3636334080342, -- [5]
-					},
+					["name"] = "VehicleSeatIndicator",
+					["scale"] = 0.699999988079071,
 					["orgScale"] = 1,
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-4.760985497730267, -- [4]
+						14.28596403160025, -- [5]
+					},
 				},
 				["TargetFrameSpellBar"] = {
 					["orgPos"] = {
@@ -217,11 +217,11 @@ MADB = {
 			},
 		},
 	},
-	["tooltips"] = true,
+	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
 	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["playSound"] = false,
+	["tooltips"] = true,
 }
