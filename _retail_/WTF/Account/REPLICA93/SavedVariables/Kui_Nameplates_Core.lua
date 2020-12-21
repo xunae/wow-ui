@@ -8,7 +8,7 @@ KuiNameplatesCoreSaved = {
 	["profiles"] = {
 		["default"] = {
 			["fade_speed"] = 0.100000001490116,
-			["nameonly_no_font_style"] = true,
+			["bar_texture"] = "Blizzard Raid Bar",
 			["auras_show_purge"] = false,
 			["bot_vertical_offset"] = 0,
 			["castbar_colour"] = {
@@ -16,7 +16,7 @@ KuiNameplatesCoreSaved = {
 				1, -- [2]
 				0, -- [3]
 			},
-			["font_size_normal"] = 12,
+			["target_arrows"] = true,
 			["target_glow_colour"] = {
 				0.3019607843137255, -- [1]
 				0.7019607843137254, -- [2]
@@ -31,27 +31,27 @@ KuiNameplatesCoreSaved = {
 				0, -- [2]
 				0, -- [3]
 			},
-			["cvar_occluded_mult"] = 0.400000005960465,
+			["cvar_occluded_mult"] = 0.8,
 			["name_vertical_offset"] = 2,
 			["frame_target_size"] = false,
 			["nameonly"] = false,
-			["target_arrows"] = true,
+			["frame_width_minus"] = 98,
 			["fade_all"] = true,
 			["frame_height"] = 12,
 			["fade_conditional_alpha"] = 0.300000011920929,
-			["bar_animation"] = 2,
+			["font_size_normal"] = 12,
 			["auras_enabled"] = false,
-			["frame_width_minus"] = 98,
-			["cvar_enable"] = true,
-			["clickthrough_friend"] = true,
-			["target_arrows_size"] = 32,
-			["fade_non_target_alpha"] = 0.699999988079071,
-			["font_face"] = "Arial Narrow",
+			["ignore_uiscale"] = true,
 			["cvar_personal_show_combat"] = false,
-			["cvar_disable_alpha"] = false,
+			["target_arrows_size"] = 32,
+			["global_scale"] = 1.5,
+			["fade_non_target_alpha"] = 0.75,
+			["font_face"] = "Arial Narrow",
+			["bar_animation"] = 2,
+			["cvar_enable"] = true,
 			["execute_enabled"] = false,
 			["font_style"] = 3,
-			["bar_texture"] = "Blizzard Raid Bar",
+			["nameonly_no_font_style"] = true,
 		},
 	},
 }

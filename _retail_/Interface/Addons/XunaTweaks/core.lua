@@ -188,11 +188,11 @@ function XunaTweaks:classColorFrames()
 	hooksecurefunc("HealthBar_OnValueChanged", function(self) colorStatusBar(self, self.unit) end)
 
 	setTargetFrameColor()
-	--setPlayerFrameColor()
+	setPlayerFrameColor()
 
 	classColorFrame:SetScript('OnEvent', function(...)
 			setTargetFrameColor()
-			--setPlayerFrameColor()
+			setPlayerFrameColor()
 	end)
 end
 
@@ -244,7 +244,7 @@ function XunaTweaks:beautifyActionBar()
 	hooksecurefunc("CooldownFrame_Set", function(self)
 	  if self.currentCooldownType == COOLDOWN_TYPE_LOSS_OF_CONTROL then
 	    self:SetCooldown(0, 0)
-	  end
+		end
   end)
 
 	local bindAlpha = 1
@@ -279,4 +279,18 @@ function XunaTweaks:hideGryphons()
 		MainMenuBarArtFrame.LeftEndCap:Show()
 		MainMenuBarArtFrame.RightEndCap:Show()
 	end
+end
+
+-- /afk surrender fix
+SlashCmdList["CHAT_AFK"] = function(msg)
+    if IsActiveBattlefieldArena() then
+        if CanSurrenderArena() then
+            print("Successfully surrendered arena.")
+            SurrenderArena();
+        else
+            print("Failed to surrender arena. Partners still alive.")
+        end
+    else
+        SendChatMessage(msg, "AFK");
+    end
 end

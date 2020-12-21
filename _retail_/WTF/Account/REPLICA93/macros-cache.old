@@ -37,6 +37,9 @@ VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Cleanse Spirit
 /cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
 END
+VER 3 000000000000018A "Great Vault" "Ability_Crown_of_the_Heavens_Icon."
+/run LoadAddOn("Blizzard_WeeklyRewards"); if WeeklyRewardsFrame:IsVisible() then WeeklyRewardsFrame:Hide() else WeeklyRewardsFrame:Show() end
+END
 VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 #showtooltip Hex
 /cast [@player,mod:alt,nocombat,nomounted]Water Walking
@@ -84,12 +87,12 @@ VER 3 0000000000000184 "RSHAM_TIER_8" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000185 "RSHAM_TRINK_LINK" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
-/use Gladiator's Medallion
+/use 14
 /use [@player]Spirit Link Totem
 END
 VER 3 0000000000000186 "RSHAM_TRINKLINKC" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
-/use Gladiator's Medallion
+/use 14
 /use [@cursor]Spirit Link Totem
 END
 VER 3 0000000000000139 "SHEAR" "INV_MISC_QUESTIONMARK"

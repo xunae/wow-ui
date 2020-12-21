@@ -9,10 +9,35 @@ function Xunamate:OnInitialize()
     self.db.global.matches = {}
   end
   self:RegisterEvent("PVP_MATCH_ACTIVE")
-  self:RegisterEvent("PVP_MATCH_COMPLETE")
   self:RegisterEvent("PVP_RATED_STATS_UPDATE")
   self:RegisterEvent("PLAYER_ENTERING_WORLD") 
+  --self:RegisterEvent("COMBAT_LOG_EVENT_UNFILTERED")
   self:initiateDialogFrame()
+end
+
+function Xunamate:COMBAT_LOG_EVENT_UNFILTERED()
+  local _, event = CombatLogGetCurrentEventInfo()
+
+  if event == 'ARENA_MATCH_START' then
+    self:Print(event)
+    matchData = {
+      players = {
+        player = {
+          isPlayer = true,
+          guid = UnitGUID("player"),
+          name = select(1, UnitName("player")),
+          realm = GetRealmName(),
+          classId = select(3, UnitClass("player")),
+          gender=  UnitSex("player"),
+          specId = select(1, GetSpecializationInfo(GetSpecialization())),
+        }
+    }}
+  end
+
+  if event == 'ARENA_MATCH_END' then
+    self:Print(event)
+    self:saveGame()
+  end
 end
 
 function Xunamate:PLAYER_ENTERING_WORLD(eventName, ...)
@@ -22,7 +47,7 @@ function Xunamate:PLAYER_ENTERING_WORLD(eventName, ...)
 end
 
 function Xunamate:PVP_MATCH_ACTIVE(eventName, ...)
-  if not C_PvP.IsArena() then return end -- Only track rated arena
+  if not IsActiveBattlefieldArena() then return end -- Only track rated arena
 
   matchData = {
     players = {
@@ -36,6 +61,7 @@ function Xunamate:PVP_MATCH_ACTIVE(eventName, ...)
         specId = select(1, GetSpecializationInfo(GetSpecialization())),
       }
   }}
+  self:RegisterEvent("PVP_MATCH_COMPLETE")
   self:RegisterEvent("GROUP_ROSTER_UPDATE")
   self:RegisterEvent("UNIT_NAME_UPDATE")
   self:RegisterEvent("ARENA_PREP_OPPONENT_SPECIALIZATIONS")
@@ -111,6 +137,7 @@ function Xunamate:saveGame()
     self:Print("Match recorded!")
 
     matchData = nil
+    self:UnregisterEvent("PVP_MATCH_COMPLETE")
     self:UnregisterEvent("ZONE_CHANGED_NEW_AREA")
   end
 end

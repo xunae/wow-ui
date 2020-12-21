@@ -1,10 +1,9 @@
 # BigWigs
 
-## [v195](https://github.com/BigWigsMods/BigWigs/tree/v195) (2020-12-17)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v194.1...v195) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v198.1](https://github.com/BigWigsMods/BigWigs/tree/v198.1) (2020-12-21)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v198...v198.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- bump version  
-- CastleNathria/InervaDarkvein: Fix early shared suffering detection  
-- CastleNathria/StoneLegionGenerals: Improve the Wicked Blade implementation  
-- CastleNathria/SunKingsSalvation: Target scan for the Ember Blast player instead of waiting for the emote.  
-- Core/BossPrototype: Add :GetNextBossTarget() API  
+- Plugins/Bars: Add some more sanity checks  
+- Plugins/Bars: Let bar styles define the default font outline using `fontOutline`  
+- Update zhCN (#891)  
+- Update zhTW (#889)  

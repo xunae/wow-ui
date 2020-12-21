@@ -5,7 +5,7 @@ WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
-ATT: enabled
+ATT: disabled
 Quartz: enabled
 ClassicUI: disabled
 XunaTweaks: enabled
@@ -53,7 +53,7 @@ WeakAuras: enabled
 WeakAurasModelPaths: enabled
 WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
-Xunamate: disabled
+Xunamate: enabled
 REFlex: disabled
 Favorites: disabled
 sArena: disabled
@@ -77,7 +77,7 @@ TitanClock: disabled
 TitanGold: disabled
 TitanLootType: disabled
 TitanPerformance: enabled
-Masque: enabled
+Masque: disabled
 LittleWigs_Legion: enabled
 AAP-Core: disabled
 ILD-Onebag3: disabled

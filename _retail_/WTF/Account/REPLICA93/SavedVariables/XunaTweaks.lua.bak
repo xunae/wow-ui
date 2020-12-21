@@ -1,6 +1,6 @@
 
 XunaTweaksDB = {
-	["darkFrames"] = true,
+	["darkFrames"] = false,
 	["hideMacros"] = true,
 	["db_version"] = 1,
 	["hideGryphons"] = true,
@@ -11,7 +11,7 @@ XunaTweaksDB = {
 	["outOfRangeIcons"] = false,
 	["eliteFrame"] = false,
 	["classColorFrames"] = true,
-	["customHealthMana"] = true,
+	["customHealthMana"] = false,
 	["bottomRaidFrame"] = true,
-	["dfc"] = 0.4807699024677277,
+	["dfc"] = 0.2756418883800507,
 }

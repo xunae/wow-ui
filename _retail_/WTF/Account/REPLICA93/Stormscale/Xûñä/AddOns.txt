@@ -16,4 +16,5 @@ RaiderIO_DB_KR_H: disabled
 RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_A: disabled
 LittleWigs: enabled
-Xunamate: disabled
+Xunamate: enabled
+Kui_Media: disabled
