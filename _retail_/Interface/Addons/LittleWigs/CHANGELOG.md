@@ -1,8 +1,7 @@
 # LittleWigs
 
-## [v9.0.11](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.11) (2020-12-17)
-[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.10...v9.0.11) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
+## [v9.0.16](https://github.com/BigWigsMods/LittleWigs/tree/v9.0.16) (2020-12-24)
+[Full Changelog](https://github.com/BigWigsMods/LittleWigs/compare/v9.0.15...v9.0.16) [Previous Releases](https://github.com/BigWigsMods/LittleWigs/releases)
 
-- Update option files  
-- SpiresOfAscension/Devos: Change Abyssal Detonation sound and emphasize it by default.  
-- Plaguefall/Trash: Remove Venompiercer ability (december 15th hotfix)  
+- Shadowlands/DeOtherSide/Trash: Warn about stacks of "Gushing Wound" less often  
+- Shadowlands/DeOtherSide/Trash: Fix timers and countdown for "W-00F"  

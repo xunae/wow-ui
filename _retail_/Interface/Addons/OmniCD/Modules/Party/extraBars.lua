@@ -31,17 +31,16 @@ local function CreateBar(key)
 	f:SetScript("OnHide", OmniCD_ExBarOnHide)
 
 	local anchor = f.anchor
+	---[[ remove this and set from anchor settings
 	anchor:ClearAllPoints()
 	anchor:SetPoint("BOTTOMLEFT", f, "TOPLEFT")
+	--]]
 	anchor.background:SetColorTexture(0, 0, 0, 1)
 	anchor.background:SetGradientAlpha("Horizontal", 1, 1, 1, 1, 1, 1, 1, 0)
 	local name = key == "interruptBar" and L["Interrupts"] or L["Raid CD"]
 	anchor.text:SetText(name)
 	anchor:EnableMouse(true)
 	E.SetWidth(f.anchor)
-
-	--f.container:ClearAllPoints()
-	--f.container:SetPoint("TOPLEFT", f)
 
 	return f
 end
@@ -177,6 +176,12 @@ do
 		end,
 	}
 
+	--[[
+	local reverseSortInterrupts = function(b, a)
+		return sorters[E.db.extraBars.interruptBar.sortBy](a, b)
+	end
+	]]
+
 	local updateLayout = function(key, noDelay, sortOrder, updateSettings)
 		local f = P.extraBars[key]
 		local db = E.db.extraBars[key]
@@ -198,6 +203,12 @@ do
 		end
 		f.numIcons = f.numIcons - n
 
+		--[[
+		local sortFunc = db.growUpward and reverseSortInterrupts or sorters[db.sortBy]
+		if sortOrder then
+			sort(f.icons, sortFunc)
+		end
+		]]
 		if sortOrder then
 			sort(f.icons, sorters[db.sortBy])
 		end
@@ -223,7 +234,7 @@ do
 		end
 
 		if not noDelay or updateSettings then -- [88]
-			P:ApplyExSettings(key) -- TODO:
+			P:ApplyExSettings(key) -- TODO: ?
 		end
 
 		timers[key] = nil
@@ -245,6 +256,14 @@ function P:SetExAnchor(key)
 	if E.db.extraBars[key].locked then
 		f.anchor:Hide()
 	else
+		--[[
+		f.anchor:ClearAllPoints()
+		if E.db.extraBars[key].growUpward then
+			f.anchor:SetPoint("TOPLEFT", f, "BOTTOMLEFT")
+		else
+			f.anchor:SetPoint("BOTTOMLEFT", f, "TOPLEFT")
+		end
+		]]
 		f.anchor:Show()
 	end
 end
@@ -290,6 +309,10 @@ function P:SetExBorder(icon, key)
 
 		icon.icon:SetTexCoord(0, 1, 0, 1)
 	end
+	--[[
+	icon:SetHeight(36)
+	icon.isCropped = nil
+	]]
 
 	if isProgressBarShown then
 		local statusBar = icon.statusBar

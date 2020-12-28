@@ -47,7 +47,7 @@ do
 end
 
 local isFound
-local changelog = C.changelog:gsub("^[ \t\n]*","|cff99cdff"):gsub("v(%d[^\n%s]+)",function(ver)
+local changelog = C.changelog:gsub("^[ \t\n]*", E.HEX_C.PERFORMANCE_BLUE):gsub("v(%d[^\n%s]+)",function(ver)
 	if not isFound and ver ~= E.Version then
 		isFound = true
 		return "|cff9d9d9dv"..ver
@@ -126,13 +126,13 @@ local function GetOptions()
 								d1 = {name = "/oc <command> <value:optional>", order = 2, type = "description"},
 								lb = {name = "\n\n", order = 3, type = "description"},
 								H2 = {name = L["Commands:"], order = 4, type = "description"},
-								f1 = {name = "|cff99cdff/oc t:", order = 5, type = "description", width = 0.6},
+								f1 = {name = E.HEX_C.PERFORMANCE_BLUE .. "/oc t:", order = 5, type = "description", width = 0.6},
 								v1 = {name = L["Toggle test frames for current zone."], order = 6, type = "description", width = 3.5},
-								f2 = {name = "|cff99cdff/oc rl:", order = 7, type = "description", width = 0.6},
+								f2 = {name = E.HEX_C.PERFORMANCE_BLUE .. "/oc rl:", order = 7, type = "description", width = 0.6},
 								v2 = {name = L["Reload addon."], order = 8, type = "description", width = 3.5},
-								f3 = {name = "|cff99cdff/oc rt:", order = 9, type = "description", width = 0.6},
+								f3 = {name = E.HEX_C.PERFORMANCE_BLUE .. "/oc rt:", order = 9, type = "description", width = 0.6},
 								v3 = {name = L["Reset all cooldown timers."], order = 10, type = "description", width = 3.5},
-								f4 = {name = "|cff99cdff/oc rt db:", order = 11, type = "description", width = 0.6},
+								f4 = {name = E.HEX_C.PERFORMANCE_BLUE .. "/oc rt db:", order = 11, type = "description", width = 0.6},
 								v4 = {name = L["Clean wipe the savedvariable file. |cffff2020Warning|r: This can not be undone!"], order = 12, type = "description", width = 3.5},
 							}
 						},

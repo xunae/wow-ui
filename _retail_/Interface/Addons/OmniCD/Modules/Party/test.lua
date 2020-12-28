@@ -54,7 +54,8 @@ local callback = function()
 	local f = P.groupInfo[E.userGUID].bar
 
 	indicator.anchor:ClearAllPoints()
-	indicator.anchor:SetPoint("BOTTOMLEFT", f, P.point2)
+	indicator.anchor:SetPoint("BOTTOMLEFT", f.anchor, "BOTTOMRIGHT")
+	indicator.anchor:SetPoint("TOPLEFT", f.anchor, "TOPRIGHT")
 	indicator:Show()
 
 	for i = 1, f.numIcons do
@@ -65,7 +66,7 @@ local callback = function()
 			flash:Stop();
 			newItemAnim:Stop();
 		end
-		if icon:IsVisible() then
+		if icon:IsVisible() and not icon.isCropped then
 			flash:Play();
 			newItemAnim:Play();
 		end

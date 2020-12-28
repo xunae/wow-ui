@@ -90,19 +90,17 @@ do
 		end
 	end
 
-	function P:ConfigSize(key, slider)
+	function P:ConfigSize(key, slider, force) --[[ force from secondRow ]]
 		if key and E.db ~= E.DB.profile.Party[key] then
 			return
 		end
 
-		local scale = E.db.icons.scale
 		for _, info in pairs(self.groupInfo) do
 			local f = info.bar
-			f.anchor:SetScale(math.min(scale, 1))
-			f.container:SetScale(scale)
+			self:SetIconScale(f)
 		end
 
-		if E.db.icons.displayBorder then
+		if E.db.icons.displayBorder or force then
 			if slider then
 				if not timer then
 					timer = E.TimerAfter(0.5, updatePixelObj)
@@ -130,7 +128,7 @@ function P:ConfigBars(key, arg)
 		if arg == "preset" or arg == "anchor" or arg == "attach" then
 			if not E.db.position.detached then
 				local _, relativeTo = f:GetPoint()
-				if relativeTo ~= "UIParent" then
+				if relativeTo ~= UIParent then
 					f:ClearAllPoints()
 					f:SetPoint(self.point, relativeTo, self.relativePoint)
 				end
@@ -145,6 +143,11 @@ function P:ConfigBars(key, arg)
 			self:SetAnchor(f)
 		elseif arg == "reset" then
 			E.LoadPosition(f)
+		--[[
+		elseif arg == "layout" then
+			self:SetBarBackdrop(f)
+			self:SetIconLayout(f)
+		]]
 		else -- [20]
 			self:SetIconLayout(f, arg == "priority")
 		end
@@ -170,6 +173,12 @@ function P:ConfigIconSettings(f, arg, key)
 			else
 				self:SetBorder(icon)
 			end
+		--[[
+		elseif arg == "secondRowCropped" then
+			if E.db.icons.displayBorder then
+				self:SetBorder(icon)
+			end
+		]]
 		elseif arg == "borderColor" then
 			local r, g, b = E.db.icons.borderColor.r, E.db.icons.borderColor.g, E.db.icons.borderColor.b
 			if key then

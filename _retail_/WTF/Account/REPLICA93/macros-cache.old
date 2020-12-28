@@ -29,6 +29,9 @@ VER 3 0000000000000189 "AAP_MACRO" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /click ExtraActionButton1
 END
+VER 3 000000000000018B "Details toggle" "Ability_Bastion_Priest."
+/details toggle
+END
 VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Purify Spirit
 /cast [@mouseover,exists]Purify Spirit; Purify Spirit
@@ -74,7 +77,7 @@ VER 3 0000000000000182 "RSHAM_TIER_3" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000000000183 "RSHAM_TIER_4" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast [@cursor,talent:4/2]Earthen Wall Totem;[@cursor,talent:4/3]Ancestral Protection Totem 
+/cast [@cursor,talent:4/2]Earthen Wall Totem;[@cursor,talent:4/3]Ancestral Protection Totem
 END
 VER 3 0000000000000187 "RSHAM_TIER_7" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -124,4 +127,7 @@ END
 VER 3 000000000000017E "TRINKET_USE2" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /use [@cursor]14;14
+END
+VER 3 000000000000018C "xm" "132366"
+/xm
 END

@@ -65,10 +65,6 @@ function OmniCD_BarOnHide(self)
 		P:SetExIconLayout(key)
 	end
 
-	if self.timer_inCombatTicker then
-		self.timer_inCombatTicker:Cancel()
-	end
-
 	self:UnregisterEvent("UNIT_AURA")
 	self:UnregisterEvent("UNIT_SPELLCAST_SUCCEEDED")
 	self:UnregisterEvent("PLAYER_SPECIALIZATION_CHANGED")
@@ -88,6 +84,10 @@ local function CooldownBarFrame_OnEvent(self, event, ...)
 		end
 	elseif event == "UNIT_AURA" then
 		local unit = ...
+		if unit ~= info.unit then
+			return
+		end
+
 		if info.glowIcons[TOUCH_OF_KARMA] then
 			if not P:GetBuffDuration(unit, TOUCH_OF_KARMA) then
 				local icon = info.glowIcons[TOUCH_OF_KARMA] -- [40]
@@ -111,6 +111,10 @@ local function CooldownBarFrame_OnEvent(self, event, ...)
 		end
 	elseif event == "PLAYER_SPECIALIZATION_CHANGED" then
 		local unit = ...
+		if unit ~= info.unit then
+			return
+		end
+
 		if guid == E.userGUID then
 			E.Comms:InspectPlayer()
 			E.Comms:SendSync()
@@ -126,6 +130,14 @@ local function GetBar()
 	if not f then
 		numBars = numBars + 1
 		f = CreateFrame("Frame", "OmniCD" .. numBars, UIParent, "OmniCDTemplate")
+		f.bottomRow = CreateFrame("Frame", nil, f.container)
+		--f.bottomRow:SetParent(f.container)
+		f.bottomRow:SetSize(1, 1)
+		f.bottomRow:SetPoint("TOPLEFT", f.container, 0, -36)
+		f.bottomRow.container = CreateFrame("Frame", nil, f.bottomRow)
+		--f.bottomRow.container:SetParent(f.bottomRow)
+		f.bottomRow.container:SetSize(1, 1)
+		f.bottomRow.container:SetAllPoints(f.bottomRow)
 	end
 	f.modname = "Party"
 	f.icons = {}
@@ -148,7 +160,7 @@ local function GetIcon(f, iconIndex)
 	local icon = tremove(unusedIcons)
 	if not icon then
 		numIcons = numIcons + 1
-		icon = CreateFrame("Button", nil, UIParent, "OmniCDButtonTemplate")
+		icon = CreateFrame("Button", "OmniCDIcon" .. numIcons, UIParent, "OmniCDButtonTemplate")
 		icon.counter = icon.cooldown:GetRegions()
 	end
 	icon:SetParent(f.container)

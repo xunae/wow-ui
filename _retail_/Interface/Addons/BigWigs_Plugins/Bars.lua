@@ -46,7 +46,6 @@ local empUpdate = nil -- emphasize updater frame
 local nameplateEmpUpdate = nil
 local rearrangeBars
 local rearrangeNameplateBars
-local UnitGUID = UnitGUID
 local GetNamePlateForUnit = C_NamePlate.GetNamePlateForUnit
 
 local clickHandlers = {}
@@ -63,7 +62,7 @@ do
 	findUnitByGUID = function(id)
 		for i = 1, unitTableCount do
 			local unit = unitTable[i]
-			local guid = UnitGUID(unit)
+			local guid = plugin:UnitGUID(unit)
 			if guid == id then
 				return unit
 			end
@@ -932,6 +931,18 @@ do
 						end,
 						disabled = function() return not db.icon end,
 					},
+					header3 = {
+						type = "header",
+						name = "",
+						order = 18,
+					},
+					reset = {
+						type = "execute",
+						name = L.resetAll,
+						desc = L.resetBarsDesc,
+						func = function() plugin.db:ResetProfile() end,
+						order = 19,
+					},
 				},
 			},
 			normal = {
@@ -1499,13 +1510,6 @@ do
 		display:SetScript("OnDragStart", onDragStart)
 		display:SetScript("OnDragStop", onDragStop)
 		display.bars = {}
-		display.Reset = function(self)
-			db[self.x] = nil
-			db[self.y] = nil
-			db[self.w] = nil
-			db[self.h] = nil
-			self:RefixPosition()
-		end
 		display.RefixPosition = function(self)
 			self:ClearAllPoints()
 			if db[self.x] and db[self.y] then
@@ -1533,11 +1537,6 @@ end
 local function hideAnchors()
 	normalAnchor:Hide()
 	emphasizeAnchor:Hide()
-end
-
-local function resetAnchors()
-	normalAnchor:Reset()
-	emphasizeAnchor:Reset()
 end
 
 local function updateProfile()
@@ -1580,7 +1579,6 @@ function plugin:OnPluginEnable()
 	self:RegisterMessage("BigWigs_OnPluginDisable", "StopModuleBars")
 	self:RegisterMessage("BigWigs_StartConfigureMode", showAnchors)
 	self:RegisterMessage("BigWigs_StopConfigureMode", hideAnchors)
-	self:RegisterMessage("BigWigs_ResetPositions", resetAnchors)
 	self:RegisterMessage("BigWigs_ProfileUpdate", updateProfile)
 
 	self:RefixClickIntercepts()
@@ -2288,7 +2286,7 @@ end
 --
 
 function plugin:NAME_PLATE_UNIT_ADDED(_, unit)
-	local guid = UnitGUID(unit)
+	local guid = plugin:UnitGUID(unit)
 	local unitBars = nameplateBars[guid]
 	if not unitBars then return end
 	for _, barInfo in next, unitBars do
@@ -2320,7 +2318,7 @@ function plugin:NAME_PLATE_UNIT_ADDED(_, unit)
 end
 
 function plugin:NAME_PLATE_UNIT_REMOVED(_, unit)
-	local guid = UnitGUID(unit)
+	local guid = plugin:UnitGUID(unit)
 	local unitBars = nameplateBars[guid]
 	if not unitBars then return end
 

@@ -11,7 +11,7 @@ local function GetOverlayGlow()
 	local overlay = tremove(unusedOverlayGlows)
 	if not overlay then
 		numOverlays = numOverlays + 1
-		overlay = CreateFrame("Frame", "OmniCDOverlayGlow"..numOverlays, UIParent, "OmniCDButtonSpellActivationAlert") -- [65]
+		overlay = CreateFrame("Frame", "OmniCDOverlayGlow".. numOverlays, UIParent, "OmniCDButtonSpellActivationAlert") -- [65]
 	end
 
 	return overlay
@@ -122,7 +122,7 @@ function P:RemoveHighlight(icon)
 		end
 
 		self:SetCooldownElements(icon, active.charges)
-		if E.OmniCC then
+		if E.OmniCC then -- [91]
 			icon.cooldown:SetCooldown(active.startTime, active.duration, info.modRate)
 		end
 		icon.icon:SetDesaturated(E.db.icons.desaturateActive and (not active.charges or active.charges == 0))
@@ -130,6 +130,11 @@ function P:RemoveHighlight(icon)
 end
 
 function P:HighlightIcon(icon, isRefresh)
+	--[[
+	if icon.isCropped or not E.db.highlight.glowBuffs or not E.db.highlight.glowBuffTypes[icon.type] then
+		return
+	end
+	]]
 	if not E.db.highlight.glowBuffs or not E.db.highlight.glowBuffTypes[icon.type] then
 		return
 	end

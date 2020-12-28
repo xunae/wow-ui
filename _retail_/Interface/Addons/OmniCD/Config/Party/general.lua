@@ -3,7 +3,7 @@ local E, L, C = select(2, ...):unpack()
 local P = E["Party"]
 
 local general = {
-	name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t" ..  GENERAL,
+	name = GENERAL,
 	order = 10,
 	type = "group",
 	get = function(info) return E.DB.profile.Party[info[2]].general[info[#info]] end,
@@ -72,7 +72,7 @@ local general = {
 			type = "toggle",
 		},
 		showPlayerEx = {
-			name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t" .. L["Show Player in Extra Bars"],
+			name = L["Show Player in Extra Bars"],
 			desc = L["Show player spells in the Extra Bars regardless of 'Show Player' setting."],
 			order = 12,
 			type = "toggle",

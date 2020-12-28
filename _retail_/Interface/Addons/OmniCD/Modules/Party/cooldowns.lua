@@ -24,8 +24,8 @@ function OmniCD_CooldownOnHide(self)
 		return
 	end
 
-	local charges = active.charges
 	local maxcharges = icon.maxcharges
+	local charges = active.charges
 	if maxcharges and charges then -- [10]
 		if charges + 1 < maxcharges then
 			P:StartCooldown(icon, icon.duration, true)
@@ -92,7 +92,6 @@ function P:ResetCooldown(icon)
 		active.charges = charges
 	else
 		icon.cooldown:Clear()
-
 		local statusBar = icon.statusBar
 		if statusBar then
 			self.OmniCDCastingBarFrame_OnEvent(statusBar.CastingBar, "UNIT_SPELLCAST_FAILED")
@@ -111,7 +110,6 @@ function P:ResetAllIcons()
 				if maxcharges then
 					icon.Count:SetText(maxcharges)
 				end
-
 				icon.cooldown:Clear()
 				if statusBar then
 					self.OmniCDCastingBarFrame_OnEvent(statusBar.CastingBar, "UNIT_SPELLCAST_FAILED")
@@ -142,7 +140,7 @@ function P:SetCooldownElements(icon, charges, highlight)
 	icon.cooldown:SetDrawSwipe( not icon.statusBar and not highlight and (not charges or charges < 1) )
 	icon.cooldown:SetHideCountdownNumbers(noCount)
 	if E.OmniCC then
-		icon.cooldown.noCooldownCount = noCount
+		icon.cooldown.noCooldownCount = noCount -- [91]
 	end
 end
 
@@ -179,6 +177,7 @@ function P:UpdateCooldown(icon, reducedTime, updateUnitBarCharges, mult)
 		if not statusBar or E.db.extraBars[statusBar.key].useIconAlpha then
 			icon:SetAlpha(E.db.icons.activeAlpha)
 		end
+
 		icon.cooldown:SetCooldown(startTime, duration, modRate) -- [22]
 		icon.active = true
 		return
@@ -196,12 +195,14 @@ function P:UpdateCooldown(icon, reducedTime, updateUnitBarCharges, mult)
 	end
 
 	startTime = startTime - reducedTime
+
 	if active.charges then
 		local overTime = GetTime() - startTime - duration
 		if overTime > 0 and active.charges + 1 < icon.maxcharges then
 			active.overTime = overTime
 		end
 	end
+
 	icon.cooldown:SetCooldown(startTime, duration, modRate)
 	active.startTime = startTime
 	active.duration = duration
@@ -212,9 +213,7 @@ function P:UpdateCooldown(icon, reducedTime, updateUnitBarCharges, mult)
 end
 
 function P:StartCooldown(icon, cd, recharge, noGlow)
-	local guid = icon.guid
-	local info = self.groupInfo[guid]
-
+	local info = self.groupInfo[icon.guid]
 	if not info then -- [1]
 		return
 	end
@@ -262,7 +261,7 @@ function P:StartCooldown(icon, cd, recharge, noGlow)
 		else
 			charges = charges - 1
 			now = active.startTime
-			if E.OmniCC and charges == 0 or auraMult then
+			if E.OmniCC and charges == 0 or auraMult then -- [90]
 				SetActiveIcon(icon, now, cd, charges, modRate)
 			end
 		end
@@ -304,12 +303,15 @@ function P:StartCooldown(icon, cd, recharge, noGlow)
 		end
 	end
 
+	--[[
+	noGlow = noGlow or icon.isCropped
+	]]
 	if E.OmniCC and not icon.overlay or (not E.OmniCC and not self:HighlightIcon(icon)) then
 		if not recharge and not noGlow then
 			self:SetGlow(icon)
 		end
 
-		if not E.OmniCC then
+		if not E.OmniCC then -- [13]
 			self:SetCooldownElements(icon, charges)
 		end
 		icon.icon:SetDesaturated(E.db.icons.desaturateActive and (not charges or charges == 0))

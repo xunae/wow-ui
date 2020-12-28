@@ -1,2 +1,2 @@
 Xunamate: enabled
-Kui_Media: disabled
+Kui_Media: enabled

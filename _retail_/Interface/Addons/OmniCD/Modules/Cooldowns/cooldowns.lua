@@ -51,10 +51,26 @@ local isHighlightEnabled
 local totemGUIDS = {}
 local petGUIDS = {}
 
-local registeredEvents = setmetatable({}, {__index = function(t, k)
-	t[k] = {}
-	return t[k]
-end})
+local registeredEvents = setmetatable({}, {
+	__index = function(t, k)
+		t[k] = {}
+		return t[k]
+	end
+})
+
+local registeredUserEvents = setmetatable({}, {
+	__index = function(t, k)
+		t[k] = {}
+		return t[k]
+	end
+})
+
+local registeredHostileEvents = setmetatable({}, {
+	__index = function(t, k)
+		t[k] = {}
+		return t[k]
+	end
+})
 
 function CD:UpdateCombatLogVar()
 	isUserDisabled = P.isUserDisabled -- [82]
@@ -626,6 +642,7 @@ do
 			E.TimerAfter(15.1, removeBerserk, nil, srcGUID, spellID, destGUID)
 		end
 	end
+
 end
 
 
@@ -1141,7 +1158,7 @@ end
 
 registeredEvents.SPELL_AURA_REMOVED[285514] = function(info) info.auras.isSurgeOfPower = nil end
 registeredEvents.SPELL_AURA_APPLIED[285514] = function(info)
-	if info.spellIcons[198067] or info.spellicons[192249] then
+	if info.spellIcons[198067] or info.spellIcons[192249] then
 		info.auras.isSurgeOfPower = true
 	end
 end
@@ -1255,8 +1272,11 @@ do
 		stacks = (tonumber(stacks) or 3) - 1
 
 		if not UnitAffectingCombat(info.unit) then
-			P:StartCooldown(icon, icon.duration)
+			info.preActiveIcons[PURIFY_SOUL] = nil
+			icon.icon:SetVertexColor(1, 1, 1)
 			icon.Count:SetText(stacks)
+
+			P:StartCooldown(icon, icon.duration)
 			return
 		end
 
@@ -1309,11 +1329,6 @@ do
 		registeredEvents.SPELL_DISPEL[k] = StartDispelCD
 	end
 end
-
-local registeredUserEvents = setmetatable({}, {__index = function(t, k)
-	t[k] = {}
-	return t[k]
-end})
 
 
 do
@@ -1413,10 +1428,6 @@ do
 					local newTime = now - elapsed
 					local cd = (active.duration * modRate)
 
-					if E.OmniCC then
-						icon.cooldown:SetCooldown(0, 0)
-					end
-
 					local majorCD = spell_benevolentFaeMajorCD[spellID]
 					if benevolent and (majorCD == true or majorCD == info.spec) then
 						newRate = benevolent * modRate
@@ -1449,10 +1460,6 @@ do
 					local newTime = now - elapsed
 					local cd = (active.duration * modRate)
 
-					if E.OmniCC then
-						icon.cooldown:SetCooldown(0, 0)
-					end
-
 					icon.cooldown:SetCooldown(newTime, cd, newRate)
 					active.startTime = newTime
 					active.duration = cd
@@ -1468,8 +1475,8 @@ do
 		info.auras.benevolent = newRate
 	end
 
-	local function RemoveModRate(info, srcGUID, spellID, destGUID)
-		info = groupInfo[destGUID]
+	local function RemoveModRate(_, srcGUID, spellID, destGUID)
+		local info = groupInfo[destGUID]
 		if not info then
 			return
 		end
@@ -1486,8 +1493,8 @@ do
 		end
 	end
 
-	local function UpdateModRate(info, srcGUID, spellID, destGUID)
-		info = groupInfo[destGUID]
+	local function UpdateModRate(_, srcGUID, spellID, destGUID)
+		local info = groupInfo[destGUID]
 		if not info then
 			return
 		end
@@ -1506,7 +1513,7 @@ do
 	registeredEvents.SPELL_AURA_REMOVED[BENEVOLENT_FAERIE] = RemoveModRate
 	registeredEvents.SPELL_AURA_REMOVED[THUNDERCHARGE] = RemoveModRate
 	registeredEvents.SPELL_CAST_SUCCESS[THUNDERCHARGE] = function(info, srcGUID, spellID, destGUID)
-		if srcGUID == destGUID then
+		if srcGUID == destGUID then -- never userevent
 			info.auras.isThunderChargeSelfCast = true
 			UpdateCDRR(info, 1/1.7)
 		else
@@ -1524,16 +1531,11 @@ do
 	registeredUserEvents.SPELL_AURA_REMOVED[BENEVOLENT_FAERIE] = RemoveModRate
 	registeredUserEvents.SPELL_AURA_REMOVED[THUNDERCHARGE] = RemoveModRate
 	registeredUserEvents.SPELL_CAST_SUCCESS[THUNDERCHARGE] = registeredEvents.SPELL_CAST_SUCCESS[THUNDERCHARGE]
+
+
+	registeredHostileEvents.SPELL_AURA_APPLIED[DEBUFF_HEARTSTOP_AURA] = UpdateModRate
+	registeredHostileEvents.SPELL_AURA_REMOVED[DEBUFF_HEARTSTOP_AURA] = RemoveModRate
 end
-
-local registeredHostileEvents = setmetatable({}, {__index = function(t, k)
-	t[k] = {}
-	return t[k]
-end})
-
-
-registeredHostileEvents.SPELL_AURA_APPLIED[DEBUFF_HEARTSTOP_AURA] = UpdateModRate
-registeredHostileEvents.SPELL_AURA_REMOVED[DEBUFF_HEARTSTOP_AURA] = RemoveModRate
 
 
 local function ReduceEvasionCD(destInfo, _, missType, spellID)
@@ -1658,8 +1660,8 @@ function CD:COMBAT_LOG_EVENT_UNFILTERED()
 	elseif band(srcFlags, player) > 0 then
 		if band(srcFlags, mine) > 0 and isUserDisabled then -- [82]
 			local func = registeredUserEvents[event] and registeredUserEvents[event][spellID]
-			if func and destGUID == userGUID then
-				func(info, srcGUID, spellID, destGUID)
+			if func and destGUID ~= userGUID then
+				func(nil, srcGUID, spellID, destGUID)
 			end
 			return
 		end

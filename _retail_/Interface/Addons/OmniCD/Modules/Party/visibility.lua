@@ -36,8 +36,8 @@ do
 		end
 	end
 
-	local function updateRosterInfo(refresh)
-		if not refresh then
+	local function updateRosterInfo(force)
+		if not force then
 			timer = nil
 		end
 
@@ -57,6 +57,7 @@ do
 		elseif oldDisabled ~= false then
 			E.Comms:Enable()
 			E.Cooldowns:Enable()
+			force = true
 		end
 
 		for guid, info in pairs(P.groupInfo) do -- [42]
@@ -94,13 +95,15 @@ do
 				end
 			end
 
-			if info and not refresh then
+			if info and not force then
 				if info.unit ~= unit then
 					info.index = index
 					info.unit = unit
 					info.bar.key = index
 					info.bar.unit = unit
 					info.bar.anchor.text:SetText(index)
+					info.bar:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", unit, unit == "player" and "pet" or unit .. "pet") -- [41]*
+					info.bar:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", unit)
 				end
 			elseif guid == E.userGUID then
 				if not P.isUserDisabled then -- [82]
@@ -143,17 +146,17 @@ do
 			end
 		end
 
-		if P.groupJoined then
-			SendRequestSync()
-		end
 		P:UpdatePosition()
 		P:UpdateExPosition()
 		E.Comms:EnqueueInspect()
+		if P.groupJoined or force then
+			SendRequestSync()
+		end
 	end
 
-	function P:GROUP_ROSTER_UPDATE(refresh) -- [50]
+	function P:GROUP_ROSTER_UPDATE(force) -- [50]
 		local n = GetNumGroupMembers()
-		if refresh or n == 0 then
+		if force or n == 0 then
 			updateRosterInfo(true)
 		elseif not timer then
 			timer = E.TimerAfter(2, updateRosterInfo) -- TODO: custom UI delays

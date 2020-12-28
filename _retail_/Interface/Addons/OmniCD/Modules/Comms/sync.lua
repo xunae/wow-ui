@@ -101,13 +101,6 @@ function Comms:CHAT_MSG_ADDON(prefix, message, dist, sender) -- [29]
 		return
 	elseif header == MSG_INFO_REQUEST then
 		self:SendSync(sender)
-		if isSyncedUnit then
-			return
-		end
-	elseif header == MSG_INFO then
-		if isSyncedUnit then
-			return
-		end
 	end
 
 	info.talentData = {}

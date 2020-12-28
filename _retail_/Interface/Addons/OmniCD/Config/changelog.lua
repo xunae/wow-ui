@@ -1,6 +1,13 @@
 local E, L, C = select(2, ...):unpack()
 
 C.changelog = [=[
+v2.5.6
+    Bug Fixes
+        Fixed an issue that caused spell detection to stop working when a group member's unit ID changed.
+        Heartstop Aura (Frost DK - PvP Talent) will corectly apply reduced CD recovery rate.
+        Surge of Power procs will correctly register instead of throwing a lua error.
+        Primal Rage (Hunter pet ability) will correctly start it's CD when used from the pet bar.
+
 v2.5.5
     Bug Fixes
         Custom spells without an Item ID will no longer cause an error.

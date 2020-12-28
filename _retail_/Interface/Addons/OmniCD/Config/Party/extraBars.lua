@@ -391,7 +391,7 @@ local extraBarsInfo = {
 }
 
 local extraBars = {
-	name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t" .. L["Extra Bars"],
+	name = L["Extra Bars"],
 	type = "group",
 	childGroups = "tab",
 	order = 70,

@@ -51,6 +51,7 @@ function P:ResetModule()
 	E.Cooldowns:Disable()
 
 	wipe(self.groupInfo)
+
 	self:HideAllBars()
 	self:HideExBars()
 end

@@ -2,8 +2,15 @@ local E, L, C = select(2, ...):unpack()
 
 local P = E["Party"]
 
+local setScale = function(info, value)
+	local key = info[2]
+	local option = info[#info]
+	E.DB.profile.Party[key].icons[option] = value
+	P:ConfigSize(key, option == "scale" or option == "secondRowScale", option == "secondRowEnabled")
+end
+
 local icons = {
-	name = L["Icons"],
+	name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t" .. L["Icons"],
 	order = 30,
 	type = "group",
 	get = P.getIcons,
@@ -36,11 +43,7 @@ local icons = {
 			order = 10,
 			type = "range",
 			min = 0.2, max = 2.0, step = 0.01, isPercent = true,
-			set = function(info, value)
-				local key = info[2]
-				E.DB.profile.Party[key].icons.scale = value
-				P:ConfigSize(key, true)
-			end,
+			set = setScale,
 		},
 		chargeScale = {
 			name = L["Charge Size"],
@@ -121,6 +124,39 @@ local icons = {
 				},
 			}
 		},
+		--[==[
+		secondRowIcons = {
+			disabled = function(info) return not E.DB.profile.Party[info[2]].icons.secondRowEnabled end,
+			name = "|TInterface\\OptionsFrame\\UI-OptionsFrame-NewFeatureIcon:0:0:0:-1|t" .. "2nd Row Icons (Double Row Layout)",
+			order = 30,
+			type = "group",
+			inline = true,
+			args = {
+				secondRowEnabled = {
+					disabled = false,
+					name = ENABLE,
+					desc = "Enable to customize the 2nd row icons when using 'Double Row' layout.",
+					order = 0,
+					type = "toggle",
+					set = setScale,
+				},
+				secondRowCropped = {
+					name = "Crop",
+					desc = "Crop Icon 1.5:1",
+					order = 1,
+					type = "toggle",
+				},
+				secondRowScale = {
+					name = L["Icon Size"],
+					desc = L["Set the size of icons"],
+					order = 2,
+					type = "range",
+					min = 0.2, max = 2.0, step = 0.01, isPercent = true,
+					set = setScale,
+				},
+			}
+		},
+		]==]
 	}
 }
 

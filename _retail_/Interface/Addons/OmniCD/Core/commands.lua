@@ -98,11 +98,12 @@ E.SlashHandler = function(msg)
 			for _, v in pairs(E.spell_db) do
 				for i = 1, #v do
 					local spell = v[i]
-					local sid = tostring(spell.spellID)
+					local spellID = spell.spellID
+					local sid = tostring(spellID)
 					if not spell.hide and (value == "all" or value == spell.type) then
 						E.DB.profile.Party[zone].spells[sid] = true
 					elseif val == spell.type then
-						E.DB.profile.Party[zone].spells[sid] = nil
+						E.DB.profile.Party[zone].spells[sid] = false
 					end
 				end
 			end
@@ -126,11 +127,12 @@ E.SlashHandler = function(msg)
 			for _, v in pairs(E.spell_db) do
 				for i = 1, #v do
 					local spell = v[i]
-					local sid = tostring(spell.spellID)
+					local spellID = spell.spellID
+					local sid = tostring(spellID)
 					if not spell.hide and (value == "all" or value == spell.type) then
 						E.DB.profile.Party[zone].raidCDS[sid] = true
 					elseif val == spell.type then
-						E.DB.profile.Party[zone].raidCDS[sid] = nil
+						E.DB.profile.Party[zone].raidCDS[sid] = false
 					end
 				end
 			end
