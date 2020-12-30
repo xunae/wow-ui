@@ -43,15 +43,6 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["EnemyCasts"] = {
-			["profiles"] = {
-				["Default"] = {
-					["instanceonly"] = false,
-					["y"] = 630.666625976563,
-					["x"] = 1255.55541992188,
-				},
-			},
-		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -79,9 +70,18 @@ Quartz3DB = {
 					["fontsize"] = 11,
 					["iconalpha"] = 1,
 					["timetextx"] = 5,
-					["nametextx"] = 5,
-					["showticks"] = false,
 					["timefontsize"] = 11,
+					["showticks"] = false,
+					["nametextx"] = 5,
+				},
+			},
+		},
+		["EnemyCasts"] = {
+			["profiles"] = {
+				["Default"] = {
+					["instanceonly"] = false,
+					["y"] = 630.666625976563,
+					["x"] = 1255.55541992188,
 				},
 			},
 		},
@@ -188,13 +188,13 @@ Quartz3DB = {
 		["Vapenaysh - Stormscale"] = "Default",
 		["Xunadwarf - Valley of Heroes - EU"] = "Default",
 		["Xã - Draenor"] = "Default",
-		["Xunapalah - Arena Champions - EU"] = "Default",
 		["Mktja - Draenor"] = "Default",
+		["Xunapalah - Arena Champions - EU"] = "Default",
 		["Jungyuup - Stormscale"] = "Default",
 		["Dkuna - Draenor"] = "Default",
 		["Xuna - Valley of Heroes - EU"] = "Default",
-		["Hãllàáhø - Stormscale"] = "Default",
 		["Drmscp - Draenor"] = "Default",
+		["Hãllàáhø - Stormscale"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
 		["Xunaj - Draenor"] = "Default",
@@ -229,9 +229,9 @@ Quartz3DB = {
 				["Mirror"] = false,
 				["GCD"] = false,
 				["Focus"] = false,
-				["Timer"] = false,
-				["Pet"] = false,
 				["Target"] = false,
+				["Pet"] = false,
+				["Timer"] = false,
 			},
 			["bordercolor"] = {
 				0.533333333333333, -- [1]
@@ -292,13 +292,13 @@ Quartz3DB = {
 			},
 			["borderalpha"] = 0.25,
 			["modules"] = {
-				["Timer"] = false,
-				["GCD"] = false,
-				["Focus"] = false,
 				["Target"] = false,
+				["GCD"] = false,
+				["Buff"] = false,
+				["Timer"] = false,
 				["Mirror"] = false,
 				["Pet"] = false,
-				["Buff"] = false,
+				["Focus"] = false,
 			},
 			["bordercolor"] = {
 				nil, -- [1]

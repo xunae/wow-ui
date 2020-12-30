@@ -4,8 +4,8 @@ AdvancedInterfaceOptionsSaved = {
 		["alternateResourceText"] = true,
 		["partyStatusText"] = true,
 		["targetStatusText"] = true,
-		["playerStatusText"] = true,
 		["petStatusText"] = true,
+		["playerStatusText"] = true,
 	},
 	["DBVersion"] = 3,
 	["ModifiedCVars"] = {

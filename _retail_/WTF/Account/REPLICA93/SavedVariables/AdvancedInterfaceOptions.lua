@@ -3,8 +3,8 @@ AdvancedInterfaceOptionsSaved = {
 	["CustomVars"] = {
 		["alternateResourceText"] = true,
 		["partyStatusText"] = true,
-		["petStatusText"] = true,
 		["playerStatusText"] = true,
+		["petStatusText"] = true,
 		["targetStatusText"] = true,
 	},
 	["DBVersion"] = 3,

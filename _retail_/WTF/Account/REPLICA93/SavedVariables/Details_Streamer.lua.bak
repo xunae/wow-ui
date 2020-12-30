@@ -32,12 +32,12 @@ Details_StreamerDB = {
 		["Xunadwarf - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xã - Draenor"] = "Xûñä - Ravencrest",
 		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
-		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Mktja - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
 		["Vapenaysh - Stormscale"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
-		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
+		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Xñä - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
@@ -53,7 +53,7 @@ Details_StreamerDB = {
 		["Spazshaman - Stormscale"] = "Xûñä - Ravencrest",
 		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
-		["Mktja - Draenor"] = "Xûñä - Ravencrest",
+		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xüñâ - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xûñä - Stormscale"] = "Xûñä - Ravencrest",
 		["Æñ - Draenor"] = "Xûñä - Ravencrest",
@@ -89,7 +89,7 @@ Details_StreamerDB = {
 			["main_frame_strata"] = "LOW",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["font_size"] = 12,
+			["use_spark"] = true,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -99,10 +99,7 @@ Details_StreamerDB = {
 			},
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = true,
 			["y"] = -28.9441528320313,
-			["x"] = 4.38843965530396,
-			["font_face"] = "Friz Quadrata TT",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -114,6 +111,9 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
+			["x"] = 4.38843965530396,
+			["font_face"] = "Friz Quadrata TT",
+			["font_size"] = 12,
 			["row_color"] = {
 				0.101960784313725, -- [1]
 				0.101960784313725, -- [2]

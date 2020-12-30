@@ -88,25 +88,6 @@ MADB = {
 					["scale"] = 1.199999928474426,
 					["orgScale"] = 1,
 				},
-				["PlayerFrame"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136, -- [4]
-						-136, -- [5]
-					},
-					["name"] = "PlayerFrame",
-					["scale"] = 1.100000023841858,
-					["orgScale"] = 1,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136.3636334080342, -- [4]
-						-136.3636334080342, -- [5]
-					},
-				},
 				["TargetFrame"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -123,6 +104,25 @@ MADB = {
 						"UIParent", -- [2]
 						"TOPLEFT", -- [3]
 						362.6588745117188, -- [4]
+						-136.3636334080342, -- [5]
+					},
+				},
+				["PlayerFrame"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136, -- [4]
+						-136, -- [5]
+					},
+					["name"] = "PlayerFrame",
+					["scale"] = 1.100000023841858,
+					["orgScale"] = 1,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136.3636334080342, -- [4]
 						-136.3636334080342, -- [5]
 					},
 				},
