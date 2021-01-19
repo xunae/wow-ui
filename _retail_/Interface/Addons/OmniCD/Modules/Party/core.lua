@@ -113,6 +113,17 @@ function P:UpdatePositionValues()
 		self.ofsY = growY * (E.BASE_ICON_SIZE + db.paddingY * px)
 		self.ofsX2 = growX * db.paddingX * px
 		self.ofsY2 = 0
+		--[[ xml
+		if growUpward then
+			self.point3 = growLeft and "BOTTOMRIGHT" or "BOTTOMLEFT"
+		else
+			self.point3 = self.point2
+		end
+		self.relativePoint3 = self.point2
+		self.modRowOfsX = E.db.icons.modRowOfsX * growX
+		self.modRowOfsY = growUpward and db.paddingY * px or -E.BASE_ICON_SIZE - db.paddingY * px
+		self.ofsX4 = growX * db.paddingX * px / E.db.icons.modRowScale
+		--]]
 	end
 end
 
@@ -202,6 +213,9 @@ end
 function P:UI_SCALE_CHANGED() -- [61]
 	E:SetNumPixels()
 	self:ConfigSize(nil, true)
+	for key in pairs(self.extraBars) do
+		self:ConfigExSize(key, true)
+	end
 end
 
 E["Party"] = P

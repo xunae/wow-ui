@@ -259,7 +259,7 @@ function plugin:RestyleWindow()
 		proxAnchor:SetPoint("TOPLEFT", UIParent, "BOTTOMLEFT", x / s, y / s)
 	else
 		proxAnchor:ClearAllPoints()
-		proxAnchor:SetPoint("CENTER", UIParent, "CENTER", 400, 0)
+		proxAnchor:SetPoint("CENTER", UIParent, "CENTER", 450, -20)
 	end
 end
 
@@ -918,7 +918,7 @@ do
 		abilityName:SetFont(plugin:GetDefaultFont(12))
 		abilityName:SetShadowOffset(1, -1)
 		abilityName:SetTextColor(1,0.82,0,1)
-		abilityName:SetFormattedText("|T136015:20:20:-5:0:64:64:4:60:4:60|t%s", L.abilityName) -- Interface\\Icons\\spell_nature_chainlightning
+		abilityName:SetFormattedText("|T136015:20:20:-5:0:64:64:4:60:4:60|t%s", L.proximity) -- Interface\\Icons\\spell_nature_chainlightning
 		abilityName:SetPoint("BOTTOM", header, "TOP", 0, 4)
 		proxAnchor.ability = abilityName
 
@@ -1142,9 +1142,11 @@ do
 			fontSize = {
 				type = "range",
 				name = L.fontSize,
+				desc = L.fontSizeDesc,
 				order = 4,
-				max = 40,
+				max = 200,
 				min = 8,
+				softMax = 40,
 				step = 1,
 				width = "full",
 			},
@@ -1232,7 +1234,7 @@ do
 						type = "range",
 						name = L.positionX,
 						desc = L.positionDesc,
-						min = 0,
+						min = -2048,
 						max = 2048,
 						step = 1,
 						order = 1,
@@ -1242,7 +1244,7 @@ do
 						type = "range",
 						name = L.positionY,
 						desc = L.positionDesc,
-						min = 0,
+						min = -2048,
 						max = 2048,
 						step = 1,
 						order = 2,
@@ -1311,7 +1313,7 @@ function plugin:Close(noReopen)
 	wipe(proximityPlayerTable)
 
 	proxTitle:SetFormattedText(L_proximityTitle, 5, 3)
-	proxAnchor.ability:SetFormattedText("|T136015:20:20:-5:0:64:64:4:60:4:60|t%s", L.abilityName) -- Interface\\Icons\\spell_nature_chainlightning
+	proxAnchor.ability:SetFormattedText("|T136015:20:20:-5:0:64:64:4:60:4:60|t%s", L.proximity) -- Interface\\Icons\\spell_nature_chainlightning
 	-- Just in case we were the last target of configure mode, reset the background color.
 	proxAnchor.background:SetColorTexture(0, 0, 0, 0.3)
 	proxPulseIn:Stop()

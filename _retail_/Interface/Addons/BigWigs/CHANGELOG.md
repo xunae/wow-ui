@@ -1,11 +1,20 @@
 # BigWigs
 
-## [v199.2](https://github.com/BigWigsMods/BigWigs/tree/v199.2) (2020-12-26)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v199.1...v199.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v205.1](https://github.com/BigWigsMods/BigWigs/tree/v205.1) (2021-01-17)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v205...v205.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Shadowlands/NurgashMuckformed: Import module  
-- CastleNathria/Xymox: Filter Stasis Trap messages for Normal and below  
-- CastleNathria/TheCouncilofBlood: Improve timers on Duelist Riposte and Evasive Lunge when you leave Frieda alive (#894)  
-- CastleNathria/Denathrius: Update and fix some options and localization  
-- CastleNathria/TheCouncilofBlood: Update normal/heroic timers for Drain Essence & Prideful Eruption (#902)  
-- CastleNathria: Add missing strings to locale files (#901)  
+- Plugins/AltPower: Fix some resizing issues  
+- CastleNathria/Denathrius: Consistent Massacre icon  
+- CastleNathria/Sludgefist: Chain Slam should be yell not say.  
+- Update zhCN (#957)  
+- CastleNathria/Trash: Initial import  
+- parser: Move the "false" key check up  
+- CastleNathria/InervaDarkvein: Remove unused locale string  
+- parser: Error on setting a foreign locale key that doesn't exist in the base module  
+- parser: Check GetOptions keys for duplicates  
+- parser: Add check for calling API via table notation  
+- parser: Add check for Message vs TargetMessage  
+- parser: Check module EJ id for duplicates  
+- CastleNathria/Denathrius: Update initial Normal timers for stage 3  
+- CastleNathria/Denathrius: Delay start of stage 3 timers and fix some possible stage 2 and 3 errors  
+- Update deDE (#956)  

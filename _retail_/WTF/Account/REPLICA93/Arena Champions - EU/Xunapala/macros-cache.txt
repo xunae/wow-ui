@@ -1,0 +1,35 @@
+VER 3 0100000000000005 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@mouseover,exists]Cleanse;Cleanse
+END
+VER 3 0100000000000007 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2]Hammer of Justice
+END
+VER 3 0100000000000008 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3]Hammer of Justice
+END
+VER 3 0100000000000006 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1]Hammer of Justice
+END
+VER 3 0100000000000002 "ele" "INV_Misc_QuestionMark"
+#showtooltip Stormkeeper
+/cast Stormkeeper
+/cast [talent:6/2] Eye of the Storm
+/cast [talent:6/2] Meteor
+END
+VER 3 0100000000000001 "ele" "INV_Misc_QuestionMark"
+#showtooltip Fire Elemental
+/cast Blood Fury(Racial)
+/cast Fire Elemental
+END
+VER 3 0100000000000003 "ELE_LMT" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@cursor]Liquid Magma Totem
+END
+VER 3 0100000000000004 "EQ" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@cursor]Earthquake
+END

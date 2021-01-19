@@ -30,17 +30,12 @@ local function CreateBar(key)
 	f:SetScript("OnShow", nil)
 	f:SetScript("OnHide", OmniCD_ExBarOnHide)
 
-	local anchor = f.anchor
-	---[[ remove this and set from anchor settings
-	anchor:ClearAllPoints()
-	anchor:SetPoint("BOTTOMLEFT", f, "TOPLEFT")
-	--]]
-	anchor.background:SetColorTexture(0, 0, 0, 1)
-	anchor.background:SetGradientAlpha("Horizontal", 1, 1, 1, 1, 1, 1, 1, 0)
 	local name = key == "interruptBar" and L["Interrupts"] or L["Raid CD"]
-	anchor.text:SetText(name)
-	anchor:EnableMouse(true)
+	f.anchor.text:SetText(name)
 	E.SetWidth(f.anchor)
+	f.anchor.background:SetColorTexture(0, 0, 0, 1)
+	f.anchor.background:SetGradientAlpha("Horizontal", 1, 1, 1, 1, 1, 1, 1, 0)
+	f.anchor:EnableMouse(true)
 
 	return f
 end
@@ -96,23 +91,27 @@ function P:UpdateExPositionValues()
 		local db = E.db.extraBars[key]
 		local px = E.NumPixels / db.scale
 		local isProgressBarShown = db.enabled and db.progressBar
+		local growUpward = db.growUpward
+		local growY = growUpward and 1 or -1
+
+		f.startPoint = growUpward and "BOTTOMLEFT" or "TOPLEFT"
 		if db.layout == "horizontal" then
 			f.point = "TOPLEFT"
 			f.relat = "TOPRIGHT"
 			f.ofsX1 = 0
-			f.ofsY1 = -E.BASE_ICON_SIZE - (db.paddingY * px)
+			f.ofsY1 = growY * (E.BASE_ICON_SIZE + db.paddingY * px)
 			f.ofsX2 = db.paddingX * px
 			f.ofsY2 = 0
 			if key == "interruptBar" then
 				self.rearrangeInterrupts = nil
 			end
 		else
-			f.point = "TOPLEFT"
-			f.relat = "BOTTOMLEFT"
+			f.point = growUpward and "BOTTOMLEFT" or "TOPLEFT"
+			f.relat = growUpward and "TOPLEFT" or "BOTTOMLEFT"
 			f.ofsX1 = E.BASE_ICON_SIZE + (db.paddingX  * px) + (isProgressBarShown and db.statusBarWidth or 0)
 			f.ofsY1 = 0
 			f.ofsX2 = 0
-			f.ofsY2 = -db.paddingY * px
+			f.ofsY2 = growY * db.paddingY * px
 			if key == "interruptBar" then
 				self.rearrangeInterrupts = isProgressBarShown and db.sortBy == 2
 			end
@@ -176,11 +175,9 @@ do
 		end,
 	}
 
-	--[[
-	local reverseSortInterrupts = function(b, a)
+	local reverseSort = function(b, a)
 		return sorters[E.db.extraBars.interruptBar.sortBy](a, b)
 	end
-	]]
 
 	local updateLayout = function(key, noDelay, sortOrder, updateSettings)
 		local f = P.extraBars[key]
@@ -203,14 +200,9 @@ do
 		end
 		f.numIcons = f.numIcons - n
 
-		--[[
-		local sortFunc = db.growUpward and reverseSortInterrupts or sorters[db.sortBy]
+		local sortFunc = db.sortDirection == "dsc" and reverseSort or sorters[db.sortBy]
 		if sortOrder then
 			sort(f.icons, sortFunc)
-		end
-		]]
-		if sortOrder then
-			sort(f.icons, sorters[db.sortBy])
 		end
 
 		local count, rows = 0, 1
@@ -220,14 +212,14 @@ do
 			if i > 1 then
 				count = count + 1
 				if count == columns then
-					icon:SetPoint("TOPLEFT", f.container, f.ofsX1 * rows, f.ofsY1 * rows)
+					icon:SetPoint(f.startPoint, f.container, f.ofsX1 * rows, f.ofsY1 * rows)
 					count = 0
 					rows = rows + 1
 				else
 					icon:SetPoint(f.point, f.icons[i-1], f.relat, f.ofsX2, f.ofsY2)
 				end
 			else
-				icon:SetPoint("TOPLEFT", f.container)
+				icon:SetPoint(f.startPoint, f.container)
 			end
 
 			icon:Show()
@@ -256,14 +248,12 @@ function P:SetExAnchor(key)
 	if E.db.extraBars[key].locked then
 		f.anchor:Hide()
 	else
-		--[[
 		f.anchor:ClearAllPoints()
 		if E.db.extraBars[key].growUpward then
 			f.anchor:SetPoint("TOPLEFT", f, "BOTTOMLEFT")
 		else
 			f.anchor:SetPoint("BOTTOMLEFT", f, "TOPLEFT")
 		end
-		]]
 		f.anchor:Show()
 	end
 end
@@ -309,10 +299,11 @@ function P:SetExBorder(icon, key)
 
 		icon.icon:SetTexCoord(0, 1, 0, 1)
 	end
-	--[[
+
+	--[[ xml
 	icon:SetHeight(36)
 	icon.isCropped = nil
-	]]
+	--]]
 
 	if isProgressBarShown then
 		local statusBar = icon.statusBar

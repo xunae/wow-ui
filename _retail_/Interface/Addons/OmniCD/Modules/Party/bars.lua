@@ -130,14 +130,13 @@ local function GetBar()
 	if not f then
 		numBars = numBars + 1
 		f = CreateFrame("Frame", "OmniCD" .. numBars, UIParent, "OmniCDTemplate")
+		--[[ xml
 		f.bottomRow = CreateFrame("Frame", nil, f.container)
-		--f.bottomRow:SetParent(f.container)
 		f.bottomRow:SetSize(1, 1)
-		f.bottomRow:SetPoint("TOPLEFT", f.container, 0, -36)
 		f.bottomRow.container = CreateFrame("Frame", nil, f.bottomRow)
-		--f.bottomRow.container:SetParent(f.bottomRow)
 		f.bottomRow.container:SetSize(1, 1)
 		f.bottomRow.container:SetAllPoints(f.bottomRow)
+		--]]
 	end
 	f.modname = "Party"
 	f.icons = {}
@@ -418,7 +417,7 @@ function P:UpdateUnitBar(guid)
 
 				info.spellIcons[spellID] = icon -- [40]
 
-				if i == 2 then
+				if i == 2 and race ~= 37 then
 					break
 				end
 			end
@@ -431,8 +430,8 @@ function P:UpdateUnitBar(guid)
 	self:UpdateExBars(f) -- [26]
 
 	if guid ~= E.userGUID or not self.isUserHidden then -- [82]
-		self:SetIconLayout(f, true)
 		self:ApplySettings(f)
+		self:SetIconLayout(f, true)
 	end
 end
 

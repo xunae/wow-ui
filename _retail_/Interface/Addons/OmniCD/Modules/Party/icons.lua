@@ -10,6 +10,7 @@ local sortPriority = function(a, b)
 	return aprio > bprio
 end
 
+---[[
 function P:SetIconLayout(f, sortOrder)
 	if sortOrder then
 		sort(f.icons, sortPriority)
@@ -48,8 +49,9 @@ function P:SetIconLayout(f, sortOrder)
 		end
 	end
 end
+--]]
 
---[[
+--[[ xml
 function P:SetIconLayout(f, sortOrder)
 	if sortOrder then
 		sort(f.icons, sortPriority)
@@ -58,11 +60,7 @@ function P:SetIconLayout(f, sortOrder)
 	local count, rows, numActive, lastActiveIndex = 0, 1, 1
 
 	local isDoubleRow = self.doubleRow
-	local isDoubleRowOpt = isDoubleRow and E.db.icons.secondRowEnabled
-	if isDoubleRow then
-		f.bottomRow:ClearAllPoints()
-		f.bottomRow:SetPoint(self.point, f.container, 0, self.ofsY)
-	end
+	local isModRowEnabled = isDoubleRow and E.db.icons.modRowEnabled
 
 	for i = 1, f.numIcons do
 		local icon = f.icons[i]
@@ -73,9 +71,9 @@ function P:SetIconLayout(f, sortOrder)
 			if numActive > 1 then
 				count = count + 1
 				if not isDoubleRow and count == self.columns or (isDoubleRow and rows == 1 and E.db.priority[icon.type] <= self.breakPoint) then
-					if isDoubleRowOpt then
+					if isModRowEnabled then
 						icon:SetParent(f.bottomRow.container)
-						icon:SetPoint(self.point, f.bottomRow.container)
+						icon:SetPoint(self.point3, f.bottomRow.container, self.relativePoint3)
 					else
 						icon:SetParent(f.container)
 						icon:SetPoint(self.point, f.container, self.ofsX * rows, self.ofsY * rows)
@@ -83,18 +81,19 @@ function P:SetIconLayout(f, sortOrder)
 					count = 0
 					rows = rows + 1
 				else
-					if isDoubleRowOpt and rows > 1 then
+					if isModRowEnabled and rows > 1 then
 						icon:SetParent(f.bottomRow.container)
+						icon:SetPoint(self.point2, f.icons[lastActiveIndex], self.relativePoint2, self.ofsX4, 0)
 					else
 						icon:SetParent(f.container)
+						icon:SetPoint(self.point2, f.icons[lastActiveIndex], self.relativePoint2, self.ofsX2, self.ofsY2)
 					end
-					icon:SetPoint(self.point2, f.icons[lastActiveIndex], self.relativePoint2, self.ofsX2, self.ofsY2)
 				end
 			else
 				if isDoubleRow and E.db.priority[icon.type] <= self.breakPoint then
-					if isDoubleRowOpt then
+					if isModRowEnabled then
 						icon:SetParent(f.bottomRow.container)
-						icon:SetPoint(self.point, f.bottomRow.container)
+						icon:SetPoint(self.point3, f.bottomRow.container, self.relativePoint3)
 					else
 						icon:SetParent(f.container)
 						icon:SetPoint(self.point, f.container, self.ofsX * rows, self.ofsY * rows)
@@ -112,7 +111,7 @@ function P:SetIconLayout(f, sortOrder)
 		end
 	end
 end
-]]
+--]]
 
 function P:SetAnchor(f)
 	if E.db.general.showAnchor or (E.db.position.detached and not E.db.position.locked) then
@@ -136,39 +135,47 @@ function P:SetIconScale(f)
 	f.anchor:SetScale(math.min(math.max(0.7, scale), 1))
 	f.container:SetScale(scale)
 
-	--[[
-	if self.doubleRow and db.secondRowEnabled then
-		f.bottomRow.container:SetScale(db.secondRowScale)
+	--[[ xml
+	if self.doubleRow and db.modRowEnabled then
+		f.bottomRow.container:SetScale(db.modRowScale)
 	end
-	]]
+	--]]
 end
 
 function P:SetBorder(icon)
 	local db = E.db.icons
 	if db.displayBorder then
-		--[[
-		local isModRow = self.doubleRow and db.secondRowEnabled and E.db.priority[icon.type] <= self.breakPoint
-		if isModRow and db.secondRowCropped then
-			icon:SetHeight(24)
-			icon.icon:SetTexCoord(0.05, 0.95, 0.1, 0.6)
-			icon.isCropped = true
-		else
-			icon:SetHeight(36)
-			icon.icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
-			icon.isCropped = nil
-		end
-		]]
 		icon.icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
+		--[[ xml
+		local isModRow = self.doubleRow and db.modRowEnabled and E.db.priority[icon.type] <= self.breakPoint
+		if isModRow and db.modRowCropped then
+			if icon.overlay then
+				P:RemoveHighlight(icon)
+			end
+
+			if not icon.isCropped then
+				icon:SetHeight(24)
+				icon.icon:SetTexCoord(0.05, 0.95, 0.1, 0.6)
+				icon.isCropped = true
+			end
+		else
+			if icon.isCropped then
+				icon:SetHeight(36)
+				icon.isCropped = nil
+			end
+			icon.icon:SetTexCoord(0.07, 0.93, 0.07, 0.93)
+		end
+		--]]
 
 		icon.borderTop:ClearAllPoints()
 		icon.borderBottom:ClearAllPoints()
 		icon.borderRight:ClearAllPoints()
 		icon.borderLeft:ClearAllPoints()
 
-		--[[
-		local edgeSize = db.borderPixels * E.NumPixels / (isModRow and db.secondRowScale * db.scale or db.scale)
-		]]
 		local edgeSize = db.borderPixels * E.NumPixels / db.scale
+		--[[ xml
+		local edgeSize = db.borderPixels * E.NumPixels / (isModRow and db.modRowScale * db.scale or db.scale)
+		--]]
 		icon.borderTop:SetPoint("TOPLEFT", icon, "TOPLEFT")
 		icon.borderTop:SetPoint("BOTTOMRIGHT", icon, "TOPRIGHT", 0, -edgeSize)
 		icon.borderBottom:SetPoint("BOTTOMLEFT", icon, "BOTTOMLEFT")
@@ -194,11 +201,12 @@ function P:SetBorder(icon)
 		icon.borderRight:Hide()
 		icon.borderLeft:Hide()
 
-		--[[
-		icon:SetHeight(36)
-		icon.icon:SetTexCoord(0, 1, 0, 1)
-		icon.isCropped = nil
-		]]
+		--[[ xml
+		if icon.isCropped then
+			icon:SetHeight(36)
+			icon.isCropped = nil
+		end
+		--]]
 		icon.icon:SetTexCoord(0, 1, 0, 1)
 	end
 end
@@ -210,7 +218,7 @@ function P:SetMarker(icon)
 		local mark = E.spell_marked[spellID] or E.db.highlight.markedSpells[spellID]
 		if mark and (mark == true or self:IsTalent(mark, icon.guid)) then
 			hotkey:SetText(RANGE_INDICATOR)
-			hotkey:SetTextColor(0, 0.8, 0) -- 2.5.6
+			hotkey:SetTextColor(0, 0.8, 0) -- 2.5.6+
 			hotkey:Show()
 		else
 			hotkey:Hide()

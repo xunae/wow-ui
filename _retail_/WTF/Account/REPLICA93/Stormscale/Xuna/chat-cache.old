@@ -4,7 +4,6 @@ ADDEDVERSION 21
 
 CHANNELS
 General 0 1 0
-Trade 1 2 0
 LocalDefense 0 3 0
 cyatuesday 1 5 0
 END
@@ -160,7 +159,7 @@ CHANNELS
 cyatuesday
 END
 
-ZONECHANNELS 2149580803
+ZONECHANNELS 2149580801
 
 END
 

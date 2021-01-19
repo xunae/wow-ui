@@ -49,31 +49,30 @@ BigWigs3DB = {
 			},
 		},
 		["BigWigs_Plugins_Alt Power"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 14.48922795717544,
-					["fontSize"] = 11,
-					["disabled"] = true,
-					["posy"] = 225.7341418186334,
-					["font"] = "Friz Quadrata TT",
-				},
-			},
 		},
 		["LibDualSpec-1.0"] = {
 		},
 		["BigWigs_Plugins_Sounds"] = {
 		},
-		["BigWigs_Plugins_AutoReply"] = {
-			["profiles"] = {
-				["Default"] = {
-					["exitCombatOther"] = 3,
-					["modeOther"] = 2,
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
+		},
+		["BigWigs_Plugins_Countdown"] = {
+		},
+		["BigWigs_Plugins_AltPower"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 			["profiles"] = {
 				["Default"] = {
+					["barBackground"] = {
+						["BigWigs_Plugins_Colors"] = {
+							["default"] = {
+								0.109803921568627, -- [1]
+								0.149019607843137, -- [2]
+								0.184313725490196, -- [3]
+								0.5, -- [4]
+							},
+						},
+					},
 					["barColor"] = {
 						["BigWigs_Plugins_Colors"] = {
 							["default"] = {
@@ -92,20 +91,10 @@ BigWigs3DB = {
 							},
 						},
 					},
-					["barBackground"] = {
-						["BigWigs_Plugins_Colors"] = {
-							["default"] = {
-								0.109803921568627, -- [1]
-								0.149019607843137, -- [2]
-								0.184313725490196, -- [3]
-								0.5, -- [4]
-							},
-						},
-					},
 				},
 			},
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 			["profiles"] = {
@@ -119,36 +108,21 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsEmphasizeAnchor_y"] = 271.4221504454545,
-					["fill"] = false,
 					["BigWigsEmphasizeAnchor_height"] = 17.60788536071777,
 					["BigWigsAnchor_width"] = 183.9999694824219,
-					["growup"] = false,
-					["monochrome"] = false,
+					["BigWigsAnchor_y"] = 602.8219367252605,
 					["fontName"] = "Arial Narrow",
 					["BigWigsAnchor_height"] = 15.37248802185059,
-					["BigWigsAnchor_y"] = 602.8219367252605,
-					["emphasizeGrowup"] = false,
 					["BigWigsAnchor_x"] = 926.6226986752299,
 					["emphasizeTime"] = 10,
-					["fontSizeEmph"] = 12,
 					["BigWigsEmphasizeAnchor_x"] = 588.5112545359298,
+					["fontSizeEmph"] = 12,
 					["BigWigsEmphasizeAnchor_width"] = 221.6538848876953,
 					["texture"] = "Blizzard Raid Bar",
 				},
 			},
 		},
 		["BigWigs_Plugins_Super Emphasize"] = {
-			["profiles"] = {
-				["Default"] = {
-					["fontSize"] = 32,
-					["fontName"] = "Arial Narrow",
-					["font"] = "Friz Quadrata TT",
-				},
-			},
-		},
-		["BigWigs_Plugins_BossBlock"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Bosses_Ingra Maloch"] = {
 			["profiles"] = {
@@ -157,24 +131,26 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_AutoReply"] = {
+			["profiles"] = {
+				["Default"] = {
+					["modeOther"] = 2,
+					["exitCombatOther"] = 3,
+				},
+			},
+		},
 		["BigWigs_Plugins_Respawn"] = {
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
 				["Default"] = {
-					["BWEmphasizeMessageAnchor_x"] = 601.9555753760869,
-					["BWEmphasizeCountdownMessageAnchor_x"] = 662.400155830372,
+					["fontSize"] = 18,
 					["emphasizedMessages"] = {
 						["sink20OutputSink"] = "BigWigs",
 					},
-					["BWMessageAnchor_x"] = 602.1334562381126,
+					["font"] = "Friz Quadrata TT",
 					["fontName"] = "Arial Narrow",
 					["growUpwards"] = false,
-					["BWEmphasizeCountdownMessageAnchor_y"] = 404.444311830739,
-					["font"] = "Friz Quadrata TT",
-					["BWEmphasizeMessageAnchor_y"] = 446.8442937678738,
-					["BWMessageAnchor_y"] = 595.9113370047708,
-					["fontSize"] = 18,
 				},
 			},
 		},
@@ -196,9 +172,11 @@ BigWigs3DB = {
 				},
 			},
 		},
+		["BigWigs_Plugins_Wipe"] = {
+		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Plugins_Statistics"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 	},
 	["wipe80"] = true,
@@ -327,24 +305,24 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1447] = {
+		[1372] = {
 			["heroic"] = {
 				["kills"] = 10,
-				["wipes"] = 4,
-				["best"] = 4.50300000000016,
+				["wipes"] = 2,
+				["best"] = 12.3090000000002,
 			},
 			["mythic"] = {
-				["kills"] = 23,
-				["wipes"] = 171,
-				["best"] = 80.875,
+				["kills"] = 19,
+				["wipes"] = 153,
+				["best"] = 143.099000000002,
 			},
 			["normal"] = {
-				["kills"] = 2,
-				["wipes"] = 15,
-				["best"] = 213.914999999994,
+				["kills"] = 3,
+				["wipes"] = 6,
+				["best"] = 323.129000000001,
 			},
 			["LFR"] = {
-				["best"] = 92.2440000000061,
+				["best"] = 107.861000000004,
 				["kills"] = 1,
 			},
 		},
@@ -390,24 +368,23 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1372] = {
+		[1432] = {
 			["heroic"] = {
-				["kills"] = 10,
-				["wipes"] = 2,
-				["best"] = 12.3090000000002,
-			},
-			["mythic"] = {
-				["kills"] = 19,
-				["wipes"] = 153,
-				["best"] = 143.099000000002,
+				["kills"] = 11,
+				["best"] = 14.0140000000001,
+				["wipes"] = 1,
 			},
 			["normal"] = {
+				["best"] = 180.401999999987,
 				["kills"] = 3,
-				["wipes"] = 6,
-				["best"] = 323.129000000001,
+			},
+			["mythic"] = {
+				["kills"] = 22,
+				["wipes"] = 69,
+				["best"] = 124.292000000001,
 			},
 			["LFR"] = {
-				["best"] = 107.861000000004,
+				["best"] = 77.5360000000073,
 				["kills"] = 1,
 			},
 		},
@@ -492,23 +469,24 @@ BigWigsStatsDB = {
 				["kills"] = 1,
 			},
 		},
-		[1432] = {
+		[1447] = {
 			["heroic"] = {
-				["kills"] = 11,
-				["best"] = 14.0140000000001,
-				["wipes"] = 1,
-			},
-			["normal"] = {
-				["best"] = 180.401999999987,
-				["kills"] = 3,
+				["kills"] = 10,
+				["wipes"] = 4,
+				["best"] = 4.50300000000016,
 			},
 			["mythic"] = {
-				["kills"] = 22,
-				["wipes"] = 69,
-				["best"] = 124.292000000001,
+				["kills"] = 23,
+				["wipes"] = 171,
+				["best"] = 80.875,
+			},
+			["normal"] = {
+				["kills"] = 2,
+				["wipes"] = 15,
+				["best"] = 213.914999999994,
 			},
 			["LFR"] = {
-				["best"] = 77.5360000000073,
+				["best"] = 92.2440000000061,
 				["kills"] = 1,
 			},
 		},

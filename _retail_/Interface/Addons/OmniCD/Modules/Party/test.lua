@@ -50,6 +50,10 @@ addOnTestMode.Aptechka = function(enabledTest)
 	Aptechka:ReconfigureProtected()
 end
 
+addOnTestMode.HealBot = function(enabledTest) -- player frame always shown ?
+	--HealBot_TestBars(enabledTest and 5) -- doesnt work. has test-names for unit key
+end
+
 local callback = function()
 	local f = P.groupInfo[E.userGUID].bar
 
@@ -66,7 +70,10 @@ local callback = function()
 			flash:Stop();
 			newItemAnim:Stop();
 		end
+		if icon:IsVisible() then
+		--[[ xml
 		if icon:IsVisible() and not icon.isCropped then
+		--]]
 			flash:Play();
 			newItemAnim:Play();
 		end
@@ -75,14 +82,15 @@ end
 
 function TestMod:Test(key)
 	local active = E.customUF.active or "blizz"
-
-	if not addOnTestMode[active] and active ~= "blizz" then
-		E.Write(string.format(E.STR.UNSUPPORTED_ADDON, active))
-	end
+	local groupSize = GetNumGroupMembers()
 
 	P.test = not P.test
 
 	if P.test then
+		if groupSize < 2 and not addOnTestMode[active] and active ~= "blizz" then
+			E.Write(string.format(E.STR.UNSUPPORTED_ADDON, active))
+		end
+
 		if InCombatLockdown() then
 			P.test = false
 			return E.Write(ERR_NOT_IN_COMBAT)
@@ -128,7 +136,7 @@ function TestMod:Test(key)
 				E.Write(L["Test frames will be hidden once player is out of combat"])
 
 				self:RegisterEvent("PLAYER_REGEN_ENABLED")
-			elseif GetNumGroupMembers() == 0 and IsAddOnLoaded("Blizzard_CompactRaidFrames") and IsAddOnLoaded("Blizzard_CUFProfiles") then
+			elseif IsAddOnLoaded("Blizzard_CompactRaidFrames") and IsAddOnLoaded("Blizzard_CUFProfiles") and (groupSize == 0 or not P:IsCRFActive()) then
 				CompactRaidFrameManager:Hide()
 				CompactRaidFrameContainer:Hide()
 			end
@@ -145,7 +153,7 @@ function TestMod:Test(key)
 end
 
 function TestMod:PLAYER_REGEN_ENABLED()
-	if P:GetEffectiveNumGroupMembers() == 0 then
+	if IsAddOnLoaded("Blizzard_CompactRaidFrames") and IsAddOnLoaded("Blizzard_CUFProfiles") and (P:GetEffectiveNumGroupMembers() == 0 or not P:IsCRFActive()) then
 		CompactRaidFrameManager:Hide()
 		CompactRaidFrameContainer:Hide()
 	end

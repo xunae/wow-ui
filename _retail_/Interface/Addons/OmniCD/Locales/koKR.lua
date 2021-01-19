@@ -3,7 +3,11 @@ local L = LibStub("AceLocale-3.0"):NewLocale("OmniCD", "koKR")
 L = L or {}
 L["%d: spellID.\n%d-%d: spellID-talentID (Mark spell if talent is selected)."] = "%d: 주문ID.\n%d-%d: 주문ID-특성ID (특성 선택시에만 표기)."
 L["|cff9d9d9d * Scenarios and Outdoor Zones will use Arena settings."] = "|cff9d9d9d * 시나리오와 야외에서는 투기장 설정을 사용."
+--[[Translation missing --]]
+L["|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."] = "|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."
 L["|cffff2020Important!|r Covenant and Soulbind Conduit data can only be acquired from group members with OmniCD installed."] = "|cffff2020Important!|r 성소주문과 영혼결속 전도체 정보는 OmniCD를 설치한 그룹 구성원에게서만 가져 올 수 있습니다."
+--[[Translation missing --]]
+L["2nd Row Icons (Double Row Layout)"] = "2nd Row Icons (Double Row Layout)"
 L["2px Border"] = "2픽셀 테두리"
 L["A new update is available. (|cff99cdff%s)"] = "업데이트 가능. (|cff99cdff%s)"
 L["Active"] = "활성"
@@ -65,6 +69,10 @@ L["Counter Size"] = "재사용 대기시간 숫자 크기"
 L["Covenant"] = "성소"
 L["Create Bar"] = "바 생성"
 L["Credits"] = "크레딧"
+--[[Translation missing --]]
+L["Crop"] = "Crop"
+--[[Translation missing --]]
+L["Crop Icons 1.5:1."] = "Crop Icons 1.5:1."
 L["Crowd Control"] = "군중 제어"
 L["Current Unit Frame Addon"] = "사용 중인 유닛프레임 애드온"
 L["Custom Priority"] = "우선순위 사용자 설정"
@@ -90,6 +98,8 @@ L["Enable if the spell is a base ability for this specialization"] = "주문이 
 L["Enable in automated instance groups"] = "자동으로 구성된 인스턴스 그룹에서 활성화"
 L["Enable initial spark and marching-ants animation"] = "초기 스파크 효과와 테두리 애니메이션  활성화"
 L["Enable spell for this specialization"] = "현 직업 특성에 주문 활성화"
+--[[Translation missing --]]
+L["Enable to customize the 2nd row icons when using 'Double Row' layout."] = "Enable to customize the 2nd row icons when using 'Double Row' layout."
 L["Enter buff ID if it differs from spell ID for Highlights to work"] = "\"강화 효과와 주문 ID가 다른 경우 강조 효과가 작동하도록 강화 효과 ID를 입력하십시오\""
 L["Enter item ID to enable spell when the item is equipped only"] = "아이템 ID를 입력하면 아이템을 착용 중인 파티원만 주문이 표시됩니다"
 L["Enter Spell ID to Add/Edit"] = "추가 또는 편집할 주문 ID 입력"
@@ -221,6 +231,8 @@ L["Show timer on spells while under the effect of Forbearance or Hypothermia. Sp
 L["Show Tooltip"] = "툴팁 표시"
 L["Show Trinket Only"] = "급장만 표시"
 L["Slash Commands"] = "/ 명령어"
+--[[Translation missing --]]
+L["Sort Direction"] = "Sort Direction"
 L["Sort Order"] = "정렬 순서"
 L["Spacing"] = "간격"
 L["Spell Editor"] = "주문 편집기"

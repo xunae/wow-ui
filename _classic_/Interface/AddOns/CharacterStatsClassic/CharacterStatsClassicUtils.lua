@@ -8,6 +8,7 @@ local CSC_ScanTooltipPrefix = "CSC_ScanTooltip";
 
 local g_lastSeenBaseManaRegen = 0;
 local g_lastSeenCastingManaRegen = 0;
+g_APFromADItems = 0;
 
 -- GENERAL UTIL FUNCTIONS --
 local function CSC_GetAppropriateDamage(unit, category)
@@ -311,6 +312,42 @@ function CSC_GetSpellkPowerFromArgentDawnItems(unit)
 
 	return spVsUndead;
 end
+
+function CSC_CacheAPFromADItems(unit)
+	g_APFromADItems = CSC_GetAttackPowerFromArgentDawnItems(unit);
+end
+
+function CSC_GetDefense(unit)
+	local numSkills = GetNumSkillLines();
+	local skillIndex = 0;
+	local currentHeader = nil;
+	local playerLevel = UnitLevel(unit);
+
+	for i = 1, numSkills do
+		local skillName = select(1, GetSkillLineInfo(i));
+		local isHeader = select(2, GetSkillLineInfo(i));
+
+		if isHeader ~= nil and isHeader then
+			currentHeader = skillName;
+		else
+			if (currentHeader == CSC_WEAPON_SKILLS_HEADER and skillName == CSC_DEFENSE) then
+				skillIndex = i;
+				break;
+			end
+		end
+	end
+
+	local skillRank, skillModifier;
+	if (skillIndex > 0) then
+		skillRank = select(4, GetSkillLineInfo(skillIndex));
+		skillModifier = select(6, GetSkillLineInfo(skillIndex));
+	else
+		-- Use this as a backup, just in case something goes wrong
+		skillRank, skillModifier = UnitDefense(unit); --Not working properly
+	end
+
+	return skillRank, skillModifier, playerLevel;
+end
 -- GENERAL UTIL FUNCTIONS END --
 
 -- PRIMARY STATS --
@@ -405,13 +442,20 @@ function CSC_PaperDollFrame_SetDamage(statFrame, unit, category)
 	if speed == nil or speed == 0 then
 		speed = 1;
 	end
+
+	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+		local bonusDPS = g_APFromADItems / ATTACK_POWER_MAGIC_NUMBER;
+		local bonusDmgMainHand = speed * bonusDPS;
+		minDamage = minDamage + bonusDmgMainHand;
+		maxDamage = maxDamage + bonusDmgMainHand;
+	end
     
     local displayMin = max(floor(minDamage),1);
-    local displayMax = max(ceil(maxDamage),1);
+	local displayMax = max(ceil(maxDamage),1);
     
     minDamage = (minDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
-    maxDamage = (maxDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
-    
+	maxDamage = (maxDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
+	
     local baseDamage = (minDamage + maxDamage) * 0.5;
 	local fullDamage = (baseDamage + physicalBonusPos + physicalBonusNeg) * percentMod;
 	local totalBonus = (fullDamage - baseDamage);
@@ -478,6 +522,13 @@ function CSC_PaperDollFrame_SetDamage(statFrame, unit, category)
 			offhandSpeed = 1;
 		end
 
+		if (UISettingsCharacter.showStatsFromArgentDawnItems) then
+			local bonusDPS = g_APFromADItems / ATTACK_POWER_MAGIC_NUMBER;
+			local bonusDmgOffHand = offhandSpeed * bonusDPS;
+			minOffHandDamage = minOffHandDamage + bonusDmgOffHand;
+			maxOffHandDamage = maxOffHandDamage + bonusDmgOffHand;
+		end
+
 		minOffHandDamage = (minOffHandDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
 		maxOffHandDamage = (maxOffHandDamage / percentMod) - physicalBonusPos - physicalBonusNeg;
 
@@ -536,8 +587,7 @@ function CSC_PaperDollFrame_SetMeleeAttackPower(statFrame, unit)
 	local base, posBuff, negBuff = UnitAttackPower(unit);
 
 	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
-		local apFromAD = CSC_GetAttackPowerFromArgentDawnItems(unit);
-		posBuff = posBuff + apFromAD;
+		posBuff = posBuff + g_APFromADItems;
 	end
     
     local valueText, tooltipText = CSC_PaperDollFormatStat(MELEE_ATTACK_POWER, base, posBuff, negBuff);
@@ -566,8 +616,7 @@ function CSC_PaperDollFrame_SetRangedAttackPower(statFrame, unit)
 	local base, posBuff, negBuff = UnitRangedAttackPower(unit);
 
 	if (UISettingsCharacter.showStatsFromArgentDawnItems) then
-		local apFromAD = CSC_GetAttackPowerFromArgentDawnItems(unit);
-		posBuff = posBuff + apFromAD;
+		posBuff = posBuff + g_APFromADItems;
 	end
 	
     local valueText, tooltipText = CSC_PaperDollFormatStat(RANGED_ATTACK_POWER, base, posBuff, negBuff);
@@ -856,32 +905,12 @@ end
 
 function CSC_PaperDollFrame_SetDefense(statFrame, unit)
 
-	local numSkills = GetNumSkillLines();
-	local skillIndex = 0;
-	local currentHeader = nil;
+	statFrame:SetScript("OnEnter", CSC_CharacterDefenseFrame_OnEnter)
+	statFrame:SetScript("OnLeave", function()
+		GameTooltip:Hide()
+	end)
 
-	for i = 1, numSkills do
-		local skillName = select(1, GetSkillLineInfo(i));
-		local isHeader = select(2, GetSkillLineInfo(i));
-
-		if isHeader ~= nil and isHeader then
-			currentHeader = skillName;
-		else
-			if (currentHeader == CSC_WEAPON_SKILLS_HEADER and skillName == CSC_DEFENSE) then
-				skillIndex = i;
-				break;
-			end
-		end
-	end
-
-	local skillRank, skillModifier;
-	if (skillIndex > 0) then
-		skillRank = select(4, GetSkillLineInfo(skillIndex));
-		skillModifier = select(6, GetSkillLineInfo(skillIndex));
-	else
-		-- Use this as a backup, just in case something goes wrong
-		skillRank, skillModifier = UnitDefense(unit); --Not working properly
-	end
+	local  skillRank, skillModifier, playerLevel = CSC_GetDefense(unit);
 
 	local posBuff = 0;
 	local negBuff = 0;
@@ -890,14 +919,10 @@ function CSC_PaperDollFrame_SetDefense(statFrame, unit)
 	elseif ( skillModifier < 0 ) then
 		negBuff = skillModifier;
 	end
-	local valueText, tooltipText = CSC_PaperDollFormatStat(DEFENSE_COLON, skillRank, posBuff, negBuff);
+	local valueText, defenseText = CSC_PaperDollFormatStat(DEFENSE_COLON, skillRank, posBuff, negBuff);
 	local valueNum = max(0, skillRank + posBuff + negBuff);
 	CSC_PaperDollFrame_SetLabelAndText(statFrame, CSC_DEFENSE, valueText, false, valueNum);
-	statFrame.tooltip = tooltipText;
-	tooltipText = format(DEFAULT_STATDEFENSE_TOOLTIP, valueNum, 0, valueNum*0.04, valueNum*0.04);
-	tooltipText = tooltipText:gsub('.-\n', '', 1);
-	tooltipText = tooltipText:gsub('\n|cff888888%b()|r', '');
-	statFrame.tooltip2 = tooltipText;
+	statFrame.defense = defenseText;
 	statFrame:Show();
 end
 

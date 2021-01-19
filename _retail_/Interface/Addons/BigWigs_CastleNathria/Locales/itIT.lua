@@ -10,10 +10,18 @@ if L then
 	-- L.killed = "%s Killed"
 end
 
+L = BigWigs:NewBossLocale("Hungering Destroyer", "itIT")
+if L then
+	L.miasma = "Miasma" -- Short for Gluttonous Miasma
+end
+
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "itIT")
 if L then
 	-- L.stage2_yell = "The anticipation to use this relic is killing me! Though, it will more likely kill you."
 	-- L.stage3_yell = "I hope this wondrous item is as lethal as it looks!"
+	L.tear = "Squarcio" -- Short for Dimensional Tear
+	L.spirits = "Spiriti" -- Short for Fleeting Spirits
+	L.seeds = "Semi" -- Short for Seeds of Extinction
 end
 
 L = BigWigs:NewBossLocale("Lady Inerva Darkvein", "itIT")
@@ -22,8 +30,6 @@ if L then
 
 	-- L.level = "%s (Level |cffffff00%d|r)"
 	-- L.full = "%s (|cffff0000FULL|r)"
-
-	-- L.container_active = "Enable Container: %s"
 
 	-- L.anima_adds = "Concentrate Anima Adds"
 	-- L.anima_adds_desc = "Show a timer for when adds spawn from the Concentrate Anima debuffs."
@@ -73,6 +79,11 @@ end
 L = BigWigs:NewBossLocale("Sludgefist", "itIT")
 if L then
 	-- L.stomp_shift = "Stomp & Shift" -- Destructive Stomp + Seismic Shift
+
+	-- L.fun_info = "Damage Info"
+	-- L.fun_info_desc = "Display a message showing how much health the boss lost during Destructive Impact."
+
+	-- L.health_lost = "Sludgefist went down %.1f%%!"
 end
 
 L = BigWigs:NewBossLocale("Stone Legion Generals", "itIT")
@@ -107,4 +118,18 @@ if L then
 
 	-- L.no_mirror = "No Mirror: %d" -- Player amount that does not have the Through the Mirror
 	-- L.mirror = "Mirror: %d" -- Player amount that does have the Through the Mirror
+end
+
+L = BigWigs:NewBossLocale("Castle Nathria Trash", "itIT")
+if L then
+	--[[ Pre Shriekwing ]]--
+	L.moldovaak = "Moldovaak"
+	L.caramain = "Caramain"
+	L.sindrel = "Sindrel"
+	L.hargitas = "Hargitas"
+
+	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
+	L.feaster = "Divoratore di Terrore"
+	L.rat = "Ratto di Dimensioni Anormali"
+	L.miasma = "Miasma" -- Short for Gluttonous Miasma
 end

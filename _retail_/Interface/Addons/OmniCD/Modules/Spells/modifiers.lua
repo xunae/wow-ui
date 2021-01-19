@@ -309,6 +309,10 @@ E.spell_sharedCDwTrinkets = {
 	[265221] = { 336126, 336135 },
 }
 
+E.spell_noReset = {
+	[20608] = true, -- Reincarnation
+}
+
 E.cd_reset_cast = {
 	[235219] = { nil,   45438, 11426, 120, 122  },
 	[122]    = { 206431,    120 },
@@ -605,6 +609,7 @@ E.cd_start_aura_applied = {
 	[113942] = 113942,
 	[283167] = 336135,
 	[344907] = 344907,
+	[313015] = 312916,
 }
 
 E.cd_start_dispels = {

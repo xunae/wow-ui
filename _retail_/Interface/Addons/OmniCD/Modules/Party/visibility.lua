@@ -78,7 +78,7 @@ do
 			end
 		end
 
-		local isInRaid = IsInRaid()
+		local isInRaid = IsInRaid() -- [89]
 		for i = 1, size do
 			local index = not isInRaid and i == size and 5 or i
 			local unit = isInRaid and E.RAID_UNIT[index] or E.PARTY_UNIT[index]
@@ -95,7 +95,7 @@ do
 				end
 			end
 
-			if info and not force then
+			if info then
 				if info.unit ~= unit then
 					info.index = index
 					info.unit = unit
@@ -104,6 +104,10 @@ do
 					info.bar.anchor.text:SetText(index)
 					info.bar:RegisterUnitEvent("UNIT_SPELLCAST_SUCCEEDED", unit, unit == "player" and "pet" or unit .. "pet") -- [41]*
 					info.bar:RegisterUnitEvent("PLAYER_SPECIALIZATION_CHANGED", unit)
+				end
+				if force then -- [37]*
+					P.pendingQueue[#P.pendingQueue + 1] = guid
+					P:UpdateUnitBar(guid)
 				end
 			elseif guid == E.userGUID then
 				if not P.isUserDisabled then -- [82]
@@ -121,7 +125,7 @@ do
 				if level == 0 then
 					level = 200
 				end
-				P.groupInfo[guid] = P.groupInfo[guid] or { -- [89]
+				P.groupInfo[guid] = {
 					class = class,
 					raceID = race,
 					name = name,
@@ -186,6 +190,7 @@ function P:PLAYER_ENTERING_WORLD(isInitialLogin, isReloadingUi, refresh)
 	if self.disabledzone then
 		self:UnregisterEvent("PLAYER_FLAGS_CHANGED")
 		self:UnregisterEvent("CHALLENGE_MODE_START")
+		self:UnregisterEvent("ENCOUNTER_END")
 
 		self:ResetModule()
 		self.disabled = true
@@ -205,23 +210,37 @@ function P:PLAYER_ENTERING_WORLD(isInitialLogin, isReloadingUi, refresh)
 
 	if instanceType == "none" then
 		self:UnregisterEvent("CHALLENGE_MODE_START")
+		self:UnregisterEvent("ENCOUNTER_END")
 
 		self:RegisterEvent("PLAYER_FLAGS_CHANGED")
 		self.isPvP = C_PvP.IsWarModeDesired()
 	elseif self.isInArena or self.isInBG then
 		self:UnregisterEvent("PLAYER_FLAGS_CHANGED")
+		self:UnregisterEvent("CHALLENGE_MODE_START")
+		self:UnregisterEvent("ENCOUNTER_END")
 
 		self:RegisterEvent("PLAYER_REGEN_DISABLED")
 		self:RegisterEvent("CHAT_MSG_BG_SYSTEM_NEUTRAL")
 		self:RegisterEvent("UPDATE_UI_WIDGET")
 		self:ResetAllIcons()
 		self.isPvP = true
+	elseif instanceType == "party" then
+		self:UnregisterEvent("PLAYER_FLAGS_CHANGED")
+		self:UnregisterEvent("ENCOUNTER_END")
+
+		self:RegisterEvent("CHALLENGE_MODE_START")
+		self.isPvP = false
+	elseif instanceType == "raid" then
+		self:UnregisterEvent("PLAYER_FLAGS_CHANGED")
+		self:UnregisterEvent("CHALLENGE_MODE_START")
+
+		self:RegisterEvent("ENCOUNTER_END")
+		self.isPvP = false
 	else
 		self:UnregisterEvent("PLAYER_FLAGS_CHANGED")
+		self:UnregisterEvent("CHALLENGE_MODE_START")
+		self:UnregisterEvent("ENCOUNTER_END")
 
-		if instanceType == "party" then
-			self:RegisterEvent("CHALLENGE_MODE_START")
-		end
 		self.isPvP = false
 	end
 
@@ -276,4 +295,10 @@ function P:CHALLENGE_MODE_START()
 	E.Comms:EnqueueInspect(true)
 	self:ResetAllIcons()
 	self:UnregisterEvent("CHALLENGE_MODE_START")
+end
+
+function P:ENCOUNTER_END(encounterID, encounterName, difficultyID, groupSize, success)
+	if groupSize > 5 then
+		self:ResetAllIcons(true)
+	end
 end

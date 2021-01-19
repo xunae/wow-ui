@@ -111,8 +111,9 @@ E.SlashHandler = function(msg)
 		E.UpdateEnabledSpells(P)
 		P:Refresh()
 		AceRegistry:NotifyChange("OmniCD")
-	elseif (command == "r" or command == "raidcd" or E.CFG_ZONE[command]) then
-		local zone = E.CFG_ZONE[value] or "arena"
+	elseif (command == "r" or command == "raidcd" or E.CFG_ZONE[gsub(command, "^r", "")]) then
+		local zone = gsub(command, "^r", "")
+		zone = E.CFG_ZONE[zone] and zone or "arena"
 		if value == "clear" then
 			wipe(E.DB.profile.Party[zone].raidCDS)
 			for i = 1, #E.raidDefaults do

@@ -81,6 +81,9 @@ do
 		P:UpdatePositionValues()
 		for _, info in pairs(P.groupInfo) do
 			local f = info.bar
+			--[[ xml
+			P:SetOffset(f) -- after UpdatePositionValues
+			--]]
 			P:SetBarBackdrop(f)
 			P:SetIconLayout(f)
 		end
@@ -90,7 +93,7 @@ do
 		end
 	end
 
-	function P:ConfigSize(key, slider, force) --[[ force from secondRow ]]
+	function P:ConfigSize(key, slider, force)
 		if key and E.db ~= E.DB.profile.Party[key] then
 			return
 		end
@@ -138,18 +141,29 @@ function P:ConfigBars(key, arg)
 			self:SetOffset(f)
 			self:SetIconLayout(f)
 		elseif arg == "offsetX" or arg == "offsetY" then
+		--[[ xml
+		elseif arg == "offsetX" or arg == "offsetY" or arg == "modRowOfsX" then
+		--]]
 			self:SetOffset(f)
 		elseif arg == "showAnchor" or arg == "locked" or arg == "detached" then
 			self:SetAnchor(f)
 		elseif arg == "reset" then
 			E.LoadPosition(f)
-		--[[
-		elseif arg == "layout" then
+		--[[ xml
+		elseif arg == "layout" or arg == "breakPoint" or arg == "priority" then
+			if self.doubleRow and E.db.icons.modRowEnabled and arg == "layout" then
+				self:ConfigSize(key)
+			end
 			self:SetBarBackdrop(f)
-			self:SetIconLayout(f)
-		]]
-		else -- [20]
 			self:SetIconLayout(f, arg == "priority")
+		--]]
+		else -- [20]
+			--[[ xml
+			if self.doubleRow and E.db.icons.modRowEnabled and (arg == "paddingY" or arg == "growUpward") then
+				self:SetOffset(f)
+			end
+			--]]
+			self:SetIconLayout(f)
 		end
 	end
 end
@@ -173,12 +187,12 @@ function P:ConfigIconSettings(f, arg, key)
 			else
 				self:SetBorder(icon)
 			end
-		--[[
-		elseif arg == "secondRowCropped" then
-			if E.db.icons.displayBorder then
+		--[[ xml
+		elseif arg == "modRowCropped" then
+			if E.db.icons.displayBorder and not key then -- main unit bar border only
 				self:SetBorder(icon)
 			end
-		]]
+		--]]
 		elseif arg == "borderColor" then
 			local r, g, b = E.db.icons.borderColor.r, E.db.icons.borderColor.g, E.db.icons.borderColor.b
 			if key then
@@ -235,8 +249,8 @@ function P:ResetOptions(key, tab, subtab)
 	end
 end
 
-P.UpdateExecuteNames = function() -- [2]
-	if not E.options then
+P.UpdateExecuteNames = function()
+	if not E.options then -- [2]
 		return
 	end
 

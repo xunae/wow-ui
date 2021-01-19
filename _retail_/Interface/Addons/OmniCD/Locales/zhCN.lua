@@ -6,7 +6,11 @@ L["%d: spellID.\n%d-%d: spellID-talentID (Mark spell if talent is selected)."] =
 --[[Translation missing --]]
 L["|cff9d9d9d * Scenarios and Outdoor Zones will use Arena settings."] = "|cff9d9d9d * Scenarios and Outdoor Zones will use Arena settings."
 --[[Translation missing --]]
+L["|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."] = "|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."
+--[[Translation missing --]]
 L["|cffff2020Important!|r Covenant and Soulbind Conduit data can only be acquired from group members with OmniCD installed."] = "|cffff2020Important!|r Covenant and Soulbind Conduit data can only be acquired from group members with OmniCD installed."
+--[[Translation missing --]]
+L["2nd Row Icons (Double Row Layout)"] = "2nd Row Icons (Double Row Layout)"
 L["2px Border"] = "2px边框"
 --[[Translation missing --]]
 L["A new update is available. (|cff99cdff%s)"] = "A new update is available. (|cff99cdff%s)"
@@ -87,6 +91,10 @@ L["Counter Size"] = "框体尺寸"
 L["Covenant"] = "Covenant"
 L["Create Bar"] = "创建法术条"
 L["Credits"] = "制作"
+--[[Translation missing --]]
+L["Crop"] = "Crop"
+--[[Translation missing --]]
+L["Crop Icons 1.5:1."] = "Crop Icons 1.5:1."
 L["Crowd Control"] = "群体控制"
 L["Current Unit Frame Addon"] = "目前所使用的单位框体插件"
 --[[Translation missing --]]
@@ -116,6 +124,8 @@ L["Enable in automated instance groups"] = "在自动创建的队伍中启用"
 --[[Translation missing --]]
 L["Enable initial spark and marching-ants animation"] = "Enable initial spark and marching-ants animation"
 L["Enable spell for this specialization"] = "启用这个专精的技能"
+--[[Translation missing --]]
+L["Enable to customize the 2nd row icons when using 'Double Row' layout."] = "Enable to customize the 2nd row icons when using 'Double Row' layout."
 L["Enter buff ID if it differs from spell ID for Highlights to work"] = "如果buff ID与法术ID不一样，请输入buff ID，这样就能工作"
 L["Enter item ID to enable spell when the item is equipped only"] = "输入物品 ID 来启用法术 (只在已装备该物品时)"
 --[[Translation missing --]]
@@ -288,6 +298,8 @@ L["Show Tooltip"] = "显示提示"
 L["Show Trinket Only"] = "只显示饰品"
 --[[Translation missing --]]
 L["Slash Commands"] = "Slash Commands"
+--[[Translation missing --]]
+L["Sort Direction"] = "Sort Direction"
 L["Sort Order"] = "排列顺序"
 L["Spacing"] = "间距"
 L["Spell Editor"] = "技能编辑"

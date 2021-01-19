@@ -19,15 +19,15 @@ ClassicUI_DB = {
 				["LeftGargoyleFrame"] = {
 					["hide"] = true,
 				},
-				["DoubleUpperStatusBar"] = {
+				["PossessBarFrame"] = {
 				},
-				["BottomMultiActionBars"] = {
+				["DoubleUpperStatusBar"] = {
 				},
 				["PetActionBarFrame"] = {
 				},
 				["StanceBarFrame"] = {
 				},
-				["PossessBarFrame"] = {
+				["BottomMultiActionBars"] = {
 				},
 			},
 		},

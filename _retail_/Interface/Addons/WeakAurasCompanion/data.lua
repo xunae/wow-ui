@@ -1,0 +1,20 @@
+-- file generated automatically
+WeakAurasCompanion = {
+  slugs = {
+    ["Wi5b8_TmZ"] = {
+      name = [=[Arena - Night Fae - Podtender - KILL THE POD]=],
+      author = [=[Vonn]=],
+      encoded = [=[!vNvBVjoss4Fl3hoPD(WWGngi5KUtccKjCdbyt7mjZQitASBGEhJBF2TZBFi)2VQ6U9BGjjR0Es3MrkJD5URUQQR6PEjEwEUEKDEKapsQhPtlRwo4laXNNVEDkt6nZU3PTAd)0ZQDNUw98ipWss5IiVzD9i8O1IKDuj(URN0JKW2ap7(Cmd4ZZr0DC)njISypcnIxSqYokx9)s1cJer4YZsuFFPMykZxefasfJMYCRSo8DImHfTrU1Bwh8utL0e5FI8BnpINU9ppgcSmKVJlv2Suw46fcEeq0D(cpswsOhzRugN(p(YxEKUr0Il(Yn8URozP7UF7lWoOj(tZ5wV2WosztvSBL65br(BfjlyjxhPPTsKeWsoteksaDyML3S2W9O63Du)2bjkZx44GnGut(pz0e2R3FEwy4R3FZwUKLFPXqMsZKWPmpgTaP6l7Nk8r62f9rSSTB3VDhlWnGgWZsHp0gexWmTMVrVLmo4QT4x(3oF9IUF9t9YYLbc)fgkJK1WXFgpXpK5ne8VGv)TjtN(69Uxm(17xmFeCLi8lCbpfovytPzRUs54zeSvu)FgKiIRAcSuMalLjWszcA3QlUy4MGLerd)EotDANlvOEd(wB2apc2nsAm1xlM6Vp0CoEKHH8xEHMeacQqek5aPuFkOeWzzwCUXYrzra2gjpN6lbbKC1GrtUMGUg7avZJy3QDRoWRcWR24uToHUd9QOsQINjIhjAPr9IuhAntBUd4vULGZW8cOQCPMyEetvNDLFkv7mP9ppB8m3XxLRatIuYVfEeHz7Ikp)qbvbA4hstvh0UmWgKZYu8U9aIXm)9jIhFiFtu5blt4OXpvFhclplYqsl7LVGmmmCsGrP1HOuiI1g3eO2K4q6ZOXL9ad1Tly0qiIIeWwLTETo(9IXtxC(1tvouQLrGpXFYJS8Sbe3Le3bx5w(Xfjm1hjlgpf2da2Xsl0e4e2KWd089Qr63UHhGbXDX3ep6rgn)Mz5M8ZXly9YjND14XZqw8aO2o2OfVWcuamdx1Imzih9oMFT70jZg)oGZPBPbIh)rod(S1Xp7MHRJty4oHBP4T0fzHPnG2zm95l9dcA(xdq8kq3dN76o)Ypc69tvUW2paFpCR3muLeiwMkYIcqGr9dKji21Aim8UbbbZJsV7gg9Ndavm9UlzbC6DeCDP3nKgb)BbJfcjIIBj2S5Wi)gWvd4PyuJl7j5sTV0Y4Ls(o2s461NRxl4f9iGpCtcfa9UP4j)QPFAz1ZPF7UNCIDNU2N6ubkg(KTv3EN0ZUVt32NEszYj)SuPyhE2xhhGjHYJCBeWgIez5XxQSo)oSD(6N9ithFUBUV)hiNOkd1VC(5F6Lr7wS(tFsNeAqilr(3oegUIf6Wmvh38zkncZVCaCDtaWnYj9dWfhWXavcAbgY6RTcKbW7nM2ohTgkDy5dSTCmx7QMrKpa7Me)qm6)bLkerHhulQcJUMBkkzzmtUIkLAEJeuSA1rssGEJcuJhjs4Plwuh63(DH(95R5(Q6F0IwbQ)o2UvyexJW8y(HCyB82SJDBBBhK77LKOw6K3m5aOPZaoQIrBmpHmpq)bMRwfUueWq0yLR4FufTZ)xROFGK27RqwLy0EelTRJsdhEeDdxaDfuR0kLHCynrllYOGut0WXSd1nI1md7zIos6)30yvwBq96uuodqW9VNfP8iWW)N3VpkPcCPAv0AWSBZtSyPdEm1qJQJoIHd7bc7cWkqM81lWuiSuQeTU6iEmRpW8Se91ymn5N5Vxj1YzuajnAZqAYDxp5ZLV9zcUH3OgczoViIqeenneQ5fGQwPRqhBmmkOOhIdYowkSNla7HA14EBirvTcGv6Xvhqzyilkq5IqgmAKH4f8Gag4OnB83rC2AB1S2RDNJYB9(PADIjFv7oNAdDfxjvslBNowD6B31502wN2RmZIYfCO(Ar7nNRFdlSgnLrWygX0QAr6SPdUCH78HthC23avzI7KVpgtlIwf1fBveEmaq3iZhfkVgYDcwJV7EO8nLUa0XHOzyOoTr0MqvNsOVSiS(bpAWLd(kyURU0cIY6zloi3YbPpiKlGToRo3m0KvWBAUjctGpgGczyLS9aOAeCzz6wXJduurkBnadwLFCsKVyhikiMr(MmlByn0GAqD6vSueZaIyFH)R)zD8VOy)jqCeumv3to9aWT6Da9M91Sh2vJjbG6oLqp8VBwGLAPAytMYJNQRrupv43B30UvEPcA0ol76DevVNhc0mjaDyQ(zmQfJtseGRWWYkoopH)YR3)Rz0aSQoO(nTAniaRGKfWcUeA(rfwUdBQjv9m00)YNXGDh4EdWvgO931JN5DBjyhhLcKriwauJEc2iDBdFFkNV1Apq76Q7eFP)hD2olzQH7ybvKcfihwq(bO49v6zSyUTZwzM5r(s0W6kOVcAIslTHsQzWn55CqWQLYk1PgvuNQUXk13AUwvfkotxl9S5y7SAz42kxWgwhj1E2Zk5zdD3QxCLod650GeA1Ye41GGUFrP50mEF5SRPgG0cvzhJMuWkYvn)5IJh5VNlj5k(p2xX)WDXOTYvBLO6X7)(HyfEfArRc)UT0cxxSQwpIICrlyM2y2Vh68UBu1fOtTnzgzYOXyOzEg)dHdGmSfDsAz1V37K2fILtuXQialFZw0tDVPsQWD0s)pulSAp7pwPPs1cZh7Ajab9jKw1zVO6I8BJU97x2Bf)7O7GsmEsh6uKUVEnfT7FsPoyB019j2PjIQPzEs)(DofuEBhNEo6wjFJz4e)MJV5p0Ws(RXWBkDPAOg3Jm(eZktVtpD8L4WXnJgxPXgy)2MrIPC9pCioMrz4ruZWX8YQMNTZQ)NmBNvL1(oC64zq1VViazaCA64CKroS)Koqh6yrWR3VnUyEetWkzN1RBphCemv7zjorSbtww0cGQxKpaUtzSrZ3sIAgIfIhzjQh1Menv83DoYCI0v9BWb6GZqfcBbvPif7X(Bf40w9tNU97z3)uTzfslaLuykG7I5xn53MpZDawN1oHqUDHXiOQY(W5WOeftIjekvbdQMiwnePBr)l1XH1smbU7kQLai69F)d]=],
+      wagoVersion = [=[5]=],
+      wagoSemver = [=[2.0.3-5]=],
+      versionNote = [=[]=],
+    },
+  },
+  uids = {
+    ["lKv)OQuWpV2"] = [=[Wi5b8_TmZ]=],
+  },
+  ids = {
+    ["KILL THE POD"] = [=[Wi5b8_TmZ]=],
+  },
+  stash = { }
+}

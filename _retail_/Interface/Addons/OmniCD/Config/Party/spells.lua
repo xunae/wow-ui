@@ -451,7 +451,7 @@ function P:AddSpellPickerSpells()
 						t[vtype].args[sId].desc = FormatSpellDesc(spellID, v.spec, vtype, desc, icon, v.duration, v.charges, v.parent, v.class)
 					end)
 
-					if v.item then -- TODO: SpellMixin isn't working for Covenant and Trinket spellIDs
+					if v.item then -- SpellMixin not working for Covenant and Trinkets has been Hotfixed
 						local item = Item:CreateFromItemID(v.item)
 						item:ContinueOnItemLoad(function()
 							local itemName = item:GetItemName()

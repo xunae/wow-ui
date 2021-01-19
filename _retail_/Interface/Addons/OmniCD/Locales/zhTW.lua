@@ -3,7 +3,11 @@ local L = LibStub("AceLocale-3.0"):NewLocale("OmniCD", "zhTW")
 L = L or {}
 L["%d: spellID.\n%d-%d: spellID-talentID (Mark spell if talent is selected)."] = "%d: 法術 ID。\n%d-%d: 法術 ID-天賦 ID (選擇天賦後標記法術)。"
 L["|cff9d9d9d * Scenarios and Outdoor Zones will use Arena settings."] = "|cff9d9d9d * 事件和戶外區域會使用競技場的設定。"
+--[[Translation missing --]]
+L["|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."] = "|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."
 L["|cffff2020Important!|r Covenant and Soulbind Conduit data can only be acquired from group members with OmniCD installed."] = "|cffff2020重要!|r 只有安裝隊友技能冷卻插件 OmniCD 的隊友才能取得誓盟和靈印資料。"
+--[[Translation missing --]]
+L["2nd Row Icons (Double Row Layout)"] = "2nd Row Icons (Double Row Layout)"
 L["2px Border"] = "2px 邊框"
 L["A new update is available. (|cff99cdff%s)"] = "有新版本可以使用。(|cff99cdff%s)"
 L["Active"] = "啟動"
@@ -65,6 +69,10 @@ L["Counter Size"] = "數字大小"
 L["Covenant"] = "誓盟"
 L["Create Bar"] = "建立技能列"
 L["Credits"] = "製作群"
+--[[Translation missing --]]
+L["Crop"] = "Crop"
+--[[Translation missing --]]
+L["Crop Icons 1.5:1."] = "Crop Icons 1.5:1."
 L["Crowd Control"] = "控場"
 L["Current Unit Frame Addon"] = "目前使用的單位框架插件"
 L["Custom Priority"] = "自訂排序"
@@ -90,6 +98,8 @@ L["Enable if the spell is a base ability for this specialization"] = "法術是�
 L["Enable in automated instance groups"] = "在自動組成的隨機隊伍中啟用"
 L["Enable initial spark and marching-ants animation"] = "啟用開頭的亮點和螞蟻路徑動畫"
 L["Enable spell for this specialization"] = "啟用這個專精的法術"
+--[[Translation missing --]]
+L["Enable to customize the 2nd row icons when using 'Double Row' layout."] = "Enable to customize the 2nd row icons when using 'Double Row' layout."
 L["Enter buff ID if it differs from spell ID for Highlights to work"] = "請輸入增益效果 ID，如果它和法術 ID 不同的話，以便讓顯著標示能夠運作"
 L["Enter item ID to enable spell when the item is equipped only"] = "輸入物品 ID 來啟用法術 (只在已裝備該物品時)"
 L["Enter Spell ID to Add/Edit"] = "輸入法術 ID 來新增 / 編輯"
@@ -221,6 +231,8 @@ L["Show timer on spells while under the effect of Forbearance or Hypothermia. Sp
 L["Show Tooltip"] = "顯示滑鼠提示"
 L["Show Trinket Only"] = "只顯示飾品"
 L["Slash Commands"] = "聊天指令"
+--[[Translation missing --]]
+L["Sort Direction"] = "Sort Direction"
 L["Sort Order"] = "排列順序"
 L["Spacing"] = "間距"
 L["Spell Editor"] = "法術編輯器"

@@ -18,3 +18,6 @@ RaiderIO_DB_KR_A: disabled
 LittleWigs: enabled
 Xunamate: enabled
 Kui_Media: enabled
+LittleWigs_WrathOfTheLichKing: enabled
+BigWigs: enabled
+BigWigs_Shadowlands: enabled

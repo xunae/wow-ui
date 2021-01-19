@@ -149,7 +149,9 @@ function Comms:EnqueueInspect(force, guid)
 
 		for i = #P.pendingQueue, 1, -1 do
 			local guid = P.pendingQueue[i]
-			queueEntries[guid] = added
+			if guid ~= E.userGUID then
+				queueEntries[guid] = added
+			end
 			P.pendingQueue[i] = nil
 		end
 	end
@@ -285,7 +287,7 @@ function Comms:InspectUnit(guid)
 								end
 							end
 						end
-						break -- baseItem is unique. break if found
+						break
 					end
 				else
 					info.invSlotData[itemID] = true
@@ -328,7 +330,7 @@ local function GetCovenantSoulbindData()
 	local soulbindData = C_Soulbinds.GetSoulbindData(soulbindID);
 	local nodes = soulbindData.tree and soulbindData.tree.nodes
 	if not nodes then
-		return
+		return covenantID .. "," .. soulbindID
 	end
 
 	local t = { covenantID, soulbindID }

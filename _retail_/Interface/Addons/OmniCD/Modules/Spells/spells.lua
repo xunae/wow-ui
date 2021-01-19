@@ -685,6 +685,7 @@ E.spell_db = {
 		{ spellID = 312411, duration = 90,  type = "racial",    race = 35   },
 		{ spellID = 274738, duration = 120, type = "racial",    race = 36   },
 		{ spellID = 312924, duration = 180, type = "racial",    race = 37   },
+		{ spellID = 312916, duration = 150, type = "racial",    race = 37   },
 	},
 	["TRINKET"] = {
 		{ spellID = 344384, duration = 120, type = "trinket",   item = 184017   },

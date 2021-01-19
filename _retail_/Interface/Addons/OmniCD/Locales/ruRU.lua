@@ -3,7 +3,11 @@ local L = LibStub("AceLocale-3.0"):NewLocale("OmniCD", "ruRU")
 L = L or {}
 L["%d: spellID.\n%d-%d: spellID-talentID (Mark spell if talent is selected)."] = "%d: ID способности.\n%d-%d: ID способности - ID таланта (Помечает способность если выбран талант)."
 L["|cff9d9d9d * Scenarios and Outdoor Zones will use Arena settings."] = "|cff9d9d9d * Сценарии и Зоны Мира будут использовать настройки Арены."
+--[[Translation missing --]]
+L["|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."] = "|cffff2020Glow and Highlights are never applied on cropped icons. \"Border\" must be enabled."
 L["|cffff2020Important!|r Covenant and Soulbind Conduit data can only be acquired from group members with OmniCD installed."] = "|cffff2020Важно!|r Данные Ковенанта и Медиума членов группы могут быть получены только если эти члены группы используют OmniCD."
+--[[Translation missing --]]
+L["2nd Row Icons (Double Row Layout)"] = "2nd Row Icons (Double Row Layout)"
 L["2px Border"] = "Граница в два пикселя"
 L["A new update is available. (|cff99cdff%s)"] = "Доступно новое обновление. (|cff99cdff%s)"
 L["Active"] = "Активно"
@@ -65,6 +69,10 @@ L["Counter Size"] = "Размер времени перезарядки"
 L["Covenant"] = "Ковенант"
 L["Create Bar"] = "Создать полосу"
 L["Credits"] = "Авторы"
+--[[Translation missing --]]
+L["Crop"] = "Crop"
+--[[Translation missing --]]
+L["Crop Icons 1.5:1."] = "Crop Icons 1.5:1."
 L["Crowd Control"] = "Контроль"
 L["Current Unit Frame Addon"] = "Текущий аддон юнит фреймов"
 L["Custom Priority"] = "Модифицированный Приоритет"
@@ -90,6 +98,8 @@ L["Enable if the spell is a base ability for this specialization"] = "Включ
 L["Enable in automated instance groups"] = "Включить в автоматически собранных группах"
 L["Enable initial spark and marching-ants animation"] = "Включить анимации стартового свечения и двигающихся шариков"
 L["Enable spell for this specialization"] = "Включить заклинание для этой специализации"
+--[[Translation missing --]]
+L["Enable to customize the 2nd row icons when using 'Double Row' layout."] = "Enable to customize the 2nd row icons when using 'Double Row' layout."
 L["Enter buff ID if it differs from spell ID for Highlights to work"] = "Введите ID баффа если он отличается от ID заклинания для того, чтобы Подсвечивание работало"
 L["Enter item ID to enable spell when the item is equipped only"] = "Введите ID предмета для того, чтобы заклинание отслеживалось только при надетом предмете"
 L["Enter Spell ID to Add/Edit"] = "Введите ID Способности чтобы добавить/изменить"
@@ -224,6 +234,8 @@ L["Show timer on spells while under the effect of Forbearance or Hypothermia. Sp
 L["Show Tooltip"] = "Показывать всплывающие подсказки"
 L["Show Trinket Only"] = "Показывать только PvP-аксессуар"
 L["Slash Commands"] = "Команды, доступные через '/'"
+--[[Translation missing --]]
+L["Sort Direction"] = "Sort Direction"
 L["Sort Order"] = "Направление сортировки"
 L["Spacing"] = "Расстояние между"
 L["Spell Editor"] = "Редактор заклинаний"

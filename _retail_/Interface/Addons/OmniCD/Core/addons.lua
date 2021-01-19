@@ -37,6 +37,11 @@ local unitFrameData = {
 		[3] = "unit",
 		[4] = 1,
 	},
+	{   [1] = "HealBot",
+		[2] = "HealBot_Action_HealUnit",
+		[3] = "unit",
+		[4] = 1,
+	},
 	{   [1] = "ElvUI",
 		[2] = "ElvUF_PartyGroup1UnitButton",
 		[3] = "unit",
@@ -115,9 +120,11 @@ function E:UnitFrames()
 	end
 
 	if self.customUF.enabled then
-		local uf = self.db.position.uf
-		if uf ~= "blizz" and not self.customUF.enabled[uf] then
-			self.db.position.uf = "auto"
+		for zone in pairs(E.CFG_ZONE) do
+			local uf = E.DB.profile.Party[zone].position.uf
+			if uf ~= "blizz" and not self.customUF.enabled[uf] then
+				E.DB.profile.Party[zone].position.uf = "auto"
+			end
 		end
 		E:SetActiveUnitFrameData()
 

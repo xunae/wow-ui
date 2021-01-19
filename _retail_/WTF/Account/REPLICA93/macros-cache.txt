@@ -51,9 +51,9 @@ VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 /use [nomod]Hex
 END
 VER 3 00000000000000AE "HS" "INV_MISC_QUESTIONMARK"
-#showtooltip Abyssal Healing Potion
+#showtooltip Spiritual Healing Potion
 /use Healthstone
-/use Abyssal Healing Potion
+/use Spiritual Healing Potion
 END
 VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 #showtooltip Purge
@@ -96,7 +96,7 @@ END
 VER 3 0000000000000186 "RSHAM_TRINKLINKC" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
 /use 14
-/use [@cursor]Spirit Link Totem
+/use Spirit Link Totem
 END
 VER 3 0000000000000139 "SHEAR" "INV_MISC_QUESTIONMARK"
 #showtooltip Wind Shear
@@ -121,8 +121,10 @@ VER 3 0000000000000178 "TOTEM_WW" "INV_MISC_QUESTIONMARK"
 /cast [@cursor]Wind Rush Totem
 END
 VER 3 000000000000017B "TRINKET_USE" "INV_MISC_QUESTIONMARK"
-#showtooltip
+#showtooltip 13
 /use [@cursor]13;13
+/use Healthstone
+/use Phial of Serenity
 END
 VER 3 000000000000017E "TRINKET_USE2" "INV_MISC_QUESTIONMARK"
 #showtooltip

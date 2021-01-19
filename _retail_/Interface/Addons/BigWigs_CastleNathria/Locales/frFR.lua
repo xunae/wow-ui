@@ -10,10 +10,18 @@ if L then
 	L.killed = "%s tué"
 end
 
+L = BigWigs:NewBossLocale("Hungering Destroyer", "frFR")
+if L then
+	L.miasma = "Miasme" -- Short for Gluttonous Miasma
+end
+
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "frFR")
 if L then
 	L.stage2_yell = "Oh, celle-là, je meurs d'envie de la voir en action. Mais c'est plutôt vous qui allez mourir."
 	L.stage3_yell = "J'espère que cette petite merveille sera aussi meurtrière qu'elle en a l'air."
+	L.tear = "Déchirure" -- Short for Dimensional Tear
+	L.spirits = "Esprits" -- Short for Fleeting Spirits
+	L.seeds = "Graines" -- Short for Seeds of Extinction
 end
 
 L = BigWigs:NewBossLocale("Lady Inerva Darkvein", "frFR")
@@ -22,8 +30,6 @@ if L then
 
 	L.level = "%s (niveau |cffffff00%d|r)"
 	L.full = "%s (|cffff0000PLEIN|r)"
-
-	L.container_active = "Active conteneur : %s"
 
 	L.anima_adds = "Adds de l'Anima concentré"
 	L.anima_adds_desc = "Affiche un délai indiquant quand les adds apparaissent des affaiblissements de Anima concentré."
@@ -46,9 +52,9 @@ L = BigWigs:NewBossLocale("The Council of Blood", "frFR")
 if L then
 	L.macabre_start_emote = "Prenez place pour la danse macabre !" -- [RAID_BOSS_EMOTE] Take your places for the Danse Macabre!#Dance Controller#4#false"
 	L.custom_on_repeating_dark_recital = "Répéter Sombre Recital"
-	L.custom_on_repeating_dark_recital_desc = "Répéter Sombre Recital en /dire avec les icones {rt1}, {rt2} pendant la danse."
+	L.custom_on_repeating_dark_recital_desc = "Répéter Sombre Recital en /dire avec les icônes {rt1}, {rt2} pendant la danse."
 
-	L.custom_off_select_boss_order = "Mark Boss Kill Order"
+	L.custom_off_select_boss_order = "Marquage Ordre de kill des boss"
 	L.custom_off_select_boss_order_desc = "Marque dans quel ordre le raid tuera les boss avec la croix {rt7}. Nécessite d'être assistant ou chef de raid."
 	L.custom_off_select_boss_order_value1 = "Niklaus -> Frieda -> Stavros"
 	L.custom_off_select_boss_order_value2 = "Frieda -> Niklaus -> Stavros"
@@ -72,7 +78,12 @@ end
 
 L = BigWigs:NewBossLocale("Sludgefist", "frFR")
 if L then
-	-- L.stomp_shift = "Stomp & Shift" -- Destructive Stomp + Seismic Shift
+	L.stomp_shift = "Piétinement & Transfert" -- Destructive Stomp + Seismic Shift
+
+	L.fun_info = "Info des dégâts"
+	L.fun_info_desc = "Affiche un message indiquant combien de vie le boss a perdu durant Impact destructeur."
+
+	L.health_lost = "Fangepoing a perdu %.1f%% !"
 end
 
 L = BigWigs:NewBossLocale("Stone Legion Generals", "frFR")
@@ -88,23 +99,38 @@ end
 
 L = BigWigs:NewBossLocale("Sire Denathrius", "frFR")
 if L then
-	L.add_spawn = "La Cabale cramoisie entend l'appel de Denathrius." -- [RAID_BOSS_EMOTE] Crimson Cabalists answer the call of Denathrius.#Sire Denathrius#4#true"
+	-- La Cabale cramoisie entend l'appel de Denathrius. - need to double check real logs, it seems to not match properly
+	L.add_spawn = "La Cabale cramoisie entend" -- [RAID_BOSS_EMOTE] Crimson Cabalists answer the call of Denathrius.#Sire Denathrius#4#true"
 
 	L.infobox_stacks = "%d |4cumul:cumuls; : %d |4joueur:joueurs;" -- 4 Stacks: 5 players // 1 Stack: 1 player
 
-	--L.custom_on_repeating_nighthunter = "Repeating Night Hunter Yell"
-	--L.custom_on_repeating_nighthunter_desc = "Repeating yell messages for the Night Hunter ability using icons {rt1} or {rt2} or {rt3} to find your line easier if you have to soak."
+	L.custom_on_repeating_nighthunter = "Répéter Chasseur nocture en /cri"
+	L.custom_on_repeating_nighthunter_desc = "Répète des messages en /cri pour Chasseur nocture en utilisant les icônes {rt1}, {rt2} ou {rt3} afin de trouver plus facilement votre ligne si vous devez soak."
 
-	--L.custom_on_repeating_impale = "Repeating Impale Say"
-	--L.custom_on_repeating_impale_desc = "Repeating say messages for the Impale ability using '1' or '22' or '333' or '4444' to make it clear in what order you will be hit."
+	L.custom_on_repeating_impale = "Répéter Empaler en /dire"
+	L.custom_on_repeating_impale_desc = "Répète des messages en /dire pour Empaler en utilisant '1', '22', '333' ou '4444' afin d'indiquer dans quel ordre vous serez touché."
 
-	-- L.hymn_stacks = "Nathrian Hymn"
-	-- L.hymn_stacks_desc = "Alerts for the amount of Nathrian Hymn stacks currently on you."
+	L.hymn_stacks = "Hymne nathrian"
+	L.hymn_stacks_desc = "Alertes indiquant les cumuls de Hymne nathrian que vous avez sur vous."
 
-	-- L.ravage_target = "Reflection: Ravage Target Cast Bar"
-	-- L.ravage_target_desc = "Cast bar showing the time until the reflection targets a location for Ravage."
-	-- L.ravage_targeted = "Ravage Targeted" -- Text on the bar for when Ravage picks its location to target in stage 3
+	L.ravage_target = "Barre d'incantation cible de Reflet : Ravage"
+	L.ravage_target_desc = "Barre d'incantation indiquant le temps avant que le reflet ne cible un emplacement pour Ravage."
+	L.ravage_targeted = "Ravage ciblé" -- Text on the bar for when Ravage picks its location to target in stage 3
 
-	-- L.no_mirror = "No Mirror: %d" -- Player amount that does not have the Through the Mirror
-	-- L.mirror = "Mirror: %d" -- Player amount that does have the Through the Mirror
+	L.no_mirror = "Sans Miroir : %d" -- Player amount that does not have the Through the Mirror
+	L.mirror = "Miroir : %d" -- Player amount that does have the Through the Mirror
+end
+
+L = BigWigs:NewBossLocale("Castle Nathria Trash", "frFR")
+if L then
+	--[[ Pre Shriekwing ]]--
+	L.moldovaak = "Moldovaak"
+	L.caramain = "Caramain"
+	L.sindrel = "Sindrel"
+	L.hargitas = "Hargitas"
+
+	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
+	L.feaster = "Festoyeur de l'effroi"
+	L.rat = "Rat de taille inhabituelle"
+	L.miasma = "Miasme" -- Short for Gluttonous Miasma
 end

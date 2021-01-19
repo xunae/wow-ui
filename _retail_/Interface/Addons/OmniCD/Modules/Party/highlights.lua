@@ -130,12 +130,10 @@ function P:RemoveHighlight(icon)
 end
 
 function P:HighlightIcon(icon, isRefresh)
-	--[[
-	if icon.isCropped or not E.db.highlight.glowBuffs or not E.db.highlight.glowBuffTypes[icon.type] then
-		return
-	end
-	]]
 	if not E.db.highlight.glowBuffs or not E.db.highlight.glowBuffTypes[icon.type] then
+	--[[ xml
+	if icon.isCropped or not E.db.highlight.glowBuffs or not E.db.highlight.glowBuffTypes[icon.type] then
+	--]]
 		return
 	end
 

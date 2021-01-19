@@ -24,6 +24,8 @@ function OmniCD_CooldownOnHide(self)
 		return
 	end
 
+	-- End ResetAllIcons
+
 	local maxcharges = icon.maxcharges
 	local charges = active.charges
 	if maxcharges and charges then -- [10]
@@ -99,38 +101,52 @@ function P:ResetCooldown(icon)
 	end
 end
 
-function P:ResetAllIcons()
+function P:ResetAllIcons(isEncounterEnd)
 	for _, info in pairs(self.groupInfo) do
-		wipe(info.active)
-
 		for spellID, icon in pairs(info.spellIcons) do -- [70]
-			local statusBar = icon.statusBar
-			if icon.active then
-				local maxcharges = icon.maxcharges
-				if maxcharges then
-					icon.Count:SetText(maxcharges)
-				end
-				icon.cooldown:Clear()
-				if statusBar then
-					self.OmniCDCastingBarFrame_OnEvent(statusBar.CastingBar, "UNIT_SPELLCAST_FAILED")
+			if not isEncounterEnd or (not E.spell_noReset[spellID] and icon.duration >= 180) then
+				local statusBar = icon.statusBar
+				if icon.active then
+					local maxcharges = icon.maxcharges
+					if maxcharges then
+						icon.Count:SetText(maxcharges)
+					end
+
+					info.active[spellID] = nil -- [71]
+					icon.active = nil
+					icon.icon:SetDesaturated(false)
+					icon.cooldown:Clear()
+					if icon.overlay then
+						self:RemoveHighlight(icon)
+					end
+
+					local bar = icon:GetParent():GetParent()
+					local key = bar.key
+					if statusBar then
+						icon:SetAlpha(E.db.extraBars[key].useIconAlpha and E.db.icons.inactiveAlpha or 1.0)
+						self.OmniCDCastingBarFrame_OnEvent(statusBar.CastingBar, "UNIT_SPELLCAST_FAILED")
+					else
+						icon:SetAlpha(E.db.icons.inactiveAlpha)
+					end
 				end
 
-				icon.active = nil -- [71]
-				self:RemoveHighlight(icon)
-			end
-
-			if info.preActiveIcons[spellID] then
-				info.preActiveIcons[spellID] = nil
-				icon.icon:SetVertexColor(1, 1, 1)
-				if statusBar then
-					self:SetExStatusBarColor(icon, statusBar.key)
+				if info.preActiveIcons[spellID] then
+					info.preActiveIcons[spellID] = nil
+					if statusBar then
+						self:SetExStatusBarColor(icon, statusBar.key)
+					end
+					icon.icon:SetVertexColor(1, 1, 1)
 				end
 			end
 		end
+
+		if not self.displayInactive then -- isEncounterEnd can have active icons
+			self:SetIconLayout(info.bar)
+		end
 	end
 
-	if self.rearrangeInterrupts then
-		self:SetExIconLayout("interruptBar", nil, true)
+	if E.db.extraBars.interruptBar.enabled and self.rearrangeInterrupts then
+		self:SetExIconLayout("interruptBar", true, true)
 	end
 end
 
@@ -303,9 +319,9 @@ function P:StartCooldown(icon, cd, recharge, noGlow)
 		end
 	end
 
-	--[[
+	--[[ xml
 	noGlow = noGlow or icon.isCropped
-	]]
+	--]]
 	if E.OmniCC and not icon.overlay or (not E.OmniCC and not self:HighlightIcon(icon)) then
 		if not recharge and not noGlow then
 			self:SetGlow(icon)

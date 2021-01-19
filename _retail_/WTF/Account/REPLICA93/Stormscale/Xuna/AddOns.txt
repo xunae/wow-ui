@@ -7,7 +7,7 @@ OmniBar: enabled
 OmniCC: enabled
 ATT: disabled
 Quartz: enabled
-ClassicUI: disabled
+ClassicUI: enabled
 XunaTweaks: enabled
 AdvancedInterfaceOptions: enabled
 AngryKeystones: disabled
@@ -103,3 +103,4 @@ RaiderIO_DB_EU_A: disabled
 RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
 RaiderIO_DB_EU_H_R: enabled
+BigWigs_Shadowlands: enabled

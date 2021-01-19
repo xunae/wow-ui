@@ -1,11 +1,8 @@
 
 OmniCCDB = {
-	["global"] = {
-		["addonVersion"] = "9.0.5",
-		["dbVersion"] = 5,
-	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
+		["Xunapala - Arena Champions - EU"] = "Default",
 		["Zunae - Draenor"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xunac - Draenor"] = "Default",
@@ -17,17 +14,25 @@ OmniCCDB = {
 		["Xñä - Draenor"] = "Default",
 		["Uñ - Draenor"] = "Default",
 		["Xunaw - Draenor"] = "Default",
+		["Æñ - Draenor"] = "Default",
+		["Xûñá - Ravencrest"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
+		["Xuna - Arena Champions - EU"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Wluna - Draenor"] = "Default",
+		["Xunamonk - Arena Champions - EU"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Xunawl - Draenor"] = "Default",
 		["Xunae - Stormreaver"] = "Default",
+		["Xunan - Arena Champions - EU"] = "Default",
 		["Xã - Draenor"] = "Default",
-		["Xunaj - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Æñ - Draenor"] = "Default",
+		["Wluna - Draenor"] = "Default",
+	},
+	["global"] = {
+		["addonVersion"] = "9.0.5",
+		["dbVersion"] = 5,
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -77,9 +82,9 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 						["soon"] = {
 						},
@@ -92,22 +97,24 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
 	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
+			["fontSize"] = 15,
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["minEffectDuration"] = 30,
+			["minSize"] = 0.74,
+			["spiralOpacity"] = 1.00999997742474,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 0,
+			["yOff"] = -1,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -152,36 +159,10 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
-			["effect"] = "pulse",
-			["yOff"] = -1,
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.74,
-			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
-			["fontSize"] = 15,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
-			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["minEffectDuration"] = 30,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1,
-			["yOff"] = 0,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["mmSSDuration"] = 0,
-			["scaleText"] = true,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -226,6 +207,30 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
+			["effect"] = "pulse",
+			["yOff"] = 0,
+			["mmSSDuration"] = 0,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1,
+			["scaleText"] = true,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["minEffectDuration"] = 30,
+			["minDuration"] = 2,
+			["fontSize"] = 18,
 		},
 	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["version"] = "8.2.3",
 }
