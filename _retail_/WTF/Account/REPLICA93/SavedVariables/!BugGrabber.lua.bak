@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 594,
 	["lastSanitation"] = 3,
-	["session"] = 581,
 	["errors"] = {
 		{
 			["message"] = "[ADDON_ACTION_FORBIDDEN] AddOn 'Leatrix_Maps' tried to call the protected function 'UseQuestLogSpecialItem()'.",
@@ -77,8 +77,8 @@ BugGrabberDB = {
 			["time"] = "2021/01/04 17:55:29",
 			["locals"] = "Skipped (In Encounter)",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:574: in function `CompactRaidFrameManager_LockContainer'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:567: in function `CompactRaidFrameManager_UpdateContainerLockVisibility'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:56: in function <...mpactRaidFrames\\Blizzard_CompactRaidFrameManager.lua:49>",
-			["session"] = 576,
-			["counter"] = 26,
+			["session"] = 591,
+			["counter"] = 29,
 		}, -- [10]
 	},
 }

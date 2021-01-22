@@ -19,7 +19,7 @@ local ldbi = LibStub("LibDBIcon-1.0")
 -- Generate our version variables
 --
 
-local BIGWIGS_VERSION = 205
+local BIGWIGS_VERSION = 207
 local BIGWIGS_RELEASE_STRING, BIGWIGS_VERSION_STRING = "", ""
 local versionQueryString, versionResponseString = "Q^%d^%s^%d^%s", "V^%d^%s^%d^%s"
 local customGuildName = false
@@ -34,7 +34,7 @@ do
 	local RELEASE = "RELEASE"
 
 	local releaseType = RELEASE
-	local myGitHash = "73b6279" -- The ZIP packager will replace this with the Git hash.
+	local myGitHash = "70b04fe" -- The ZIP packager will replace this with the Git hash.
 	local releaseString = ""
 	--[=[@alpha@
 	-- The following code will only be present in alpha ZIPs.
@@ -98,6 +98,8 @@ public.CTimerNewTicker = CTimerNewTicker
 public.UnitName = UnitName
 public.UnitGUID = UnitGUID
 public.SetRaidTarget = SetRaidTarget
+public.UnitHealth = UnitHealth
+public.UnitHealthMax = UnitHealthMax
 
 -- Version
 local usersHash = {}
@@ -411,7 +413,7 @@ end
 --
 
 local dataBroker = ldb:NewDataObject("BigWigs",
-	{type = "launcher", label = "BigWigs", icon = "Interface\\AddOns\\BigWigs\\Media\\Textures\\icons\\core-disabled"}
+	{type = "launcher", label = "BigWigs", icon = "Interface\\AddOns\\BigWigs\\Media\\Icons\\core-disabled"}
 )
 
 function dataBroker.OnClick(self, button)
@@ -1019,9 +1021,9 @@ end
 --
 
 do
-	local DBMdotRevision = "20210108022347" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
-	local DBMdotDisplayVersion = "9.0.17" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
-	local DBMdotReleaseRevision = "20210107000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
+	local DBMdotRevision = "20210119152747" -- The changing version of the local client, changes with every new zip using the project-date-integer packager replacement.
+	local DBMdotDisplayVersion = "9.0.18" -- "N.N.N" for a release and "N.N.N alpha" for the alpha duration.
+	local DBMdotReleaseRevision = "20210119000000" -- Hardcoded time, manually changed every release, they use it to track the highest release version, a new DBM release is the only time it will change.
 
 	local timer, prevUpgradedUser = nil, nil
 	local function sendMsg()
@@ -1439,7 +1441,7 @@ end
 public.RegisterMessage(mod, "BigWigs_BossModuleRegistered")
 
 function mod:BigWigs_CoreEnabled()
-	dataBroker.icon = "Interface\\AddOns\\BigWigs\\Media\\Textures\\icons\\core-enabled"
+	dataBroker.icon = "Interface\\AddOns\\BigWigs\\Media\\Icons\\core-enabled"
 
 	-- Send a version query on enable, should fix issues with joining a group then zoning into an instance,
 	-- which kills your ability to receive addon comms during the loading process.
@@ -1456,7 +1458,7 @@ end
 public.RegisterMessage(mod, "BigWigs_CoreEnabled")
 
 function mod:BigWigs_CoreDisabled()
-	dataBroker.icon = "Interface\\AddOns\\BigWigs\\Media\\Textures\\icons\\core-disabled"
+	dataBroker.icon = "Interface\\AddOns\\BigWigs\\Media\\Icons\\core-disabled"
 end
 public.RegisterMessage(mod, "BigWigs_CoreDisabled")
 

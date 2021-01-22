@@ -13,6 +13,12 @@ end
 L = BigWigs:NewBossLocale("Hungering Destroyer", "zhTW")
 if L then
 	L.miasma = "瘴氣" -- Short for Gluttonous Miasma
+
+	L.custom_on_repeating_yell_miasma = "重覆貪食瘴氣喊話"
+	L.custom_on_repeating_yell_miasma_desc = "當你中了貪食瘴氣，會在生命值低於 75% 時持續喊話。"
+
+	L.custom_on_repeating_say_laser = "重覆猛烈噴射說話"
+	L.custom_on_repeating_say_laser_desc = "當你你被標記為猛烈噴射的目標時，重覆發送說話訊息，以便接近你的玩家可以立刻看見並避開。"
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "zhTW")
@@ -123,13 +129,23 @@ end
 L = BigWigs:NewBossLocale("Castle Nathria Trash", "zhTW")
 if L then
 	--[[ Pre Shriekwing ]]--
-	--L.moldovaak = "Moldovaak"
-	--L.caramain = "Caramain"
-	--L.sindrel = "Sindrel"
-	--L.hargitas = "Hargitas"
+	L.moldovaak = "魔多瓦克"
+	L.caramain = "卡拉曼"
+	L.sindrel = "辛德雷"
+	L.hargitas = "哈吉塔斯"
+
+	--[[ Shriekwing -> Huntsman Altimor ]]--
+	L.gargon = "笨重的石獸"
+	L.hawkeye = "納撒亞追蹤者"
+	--L.overseer = "Kennel Overseer"
 
 	--[[ Huntsman Altimor -> Hungering Destroyer ]]--
-	--L.feaster = "Dread Feaster"
-	--L.rat = "Rat of Unusual Size"
+	L.feaster = "噬懼者"
+	L.rat = "大得離譜的老鼠"
 	L.miasma = "瘴氣" -- Short for Gluttonous Miasma
+
+	--[[ Hungering Destroyer -> Lady Inerva Darkvein ]]--
+	L.deplina = "戴普琳娜"
+	L.dragost = "德苟斯特"
+	L.kullan = "庫倫"
 end

@@ -79,7 +79,7 @@ function mod:GetOptions()
 		{346790, "TANK"}, -- Sintouched Blade
 
 		--[[ Baroness Frieda ]]--
-		346651, -- Drain Essence
+		{346651, "ME_ONLY"}, -- Drain Essence
 		337110, -- Dreadbolt Volley
 		346657, -- Prideful Eruption
 		346945, -- Manifest Pain
@@ -99,7 +99,7 @@ function mod:GetOptions()
 		{330848, "ME_ONLY"}, -- Wrong Moves
 
 		--[[ Mythic ]]--
-		{347350, "SAY", "SAY_COUNTDOWN"},
+		{347350, "SAY", "SAY_COUNTDOWN"}, -- Dancing Fever
 	}, {
 		["stages"] = "general",
 		[346690] = -22147, -- Castellan Niklaus
@@ -485,16 +485,18 @@ do
 			end
 		elseif args.spellId == 331637 and firstDarkRecitalTargetGUID then -- 2nd Dark Recital Target
 			if self:Me(args.destGUID) then -- We got 2nd debuff, so print last name
-				self:PersonalMessage(331634, false, CL.link_with:format(self:ColorName(lastDarkRecitalName)))
-				self:Yell(331634, "{rt"..darkrecitalPairCount.."}", true)
+				self:PersonalMessage(331634, false, CL.link_with_icon:format(darkrecitalPairCount, self:ColorName(lastDarkRecitalName)))
+				local icon = ("{rt%d}"):format(darkrecitalPairCount)
+				self:Yell(331634, icon, true)
 				if self:GetOption("custom_on_repeating_dark_recital") then
-					sayTimer = self:ScheduleRepeatingTimer(SendChatMessage, 1.5, "{rt"..darkrecitalPairCount.."}", "YELL")
+					sayTimer = self:ScheduleRepeatingTimer("Yell", 1.5, false, icon, true)
 				end
 			elseif self:Me(firstDarkRecitalTargetGUID) then -- We got 1st debuff so this is our partner
-				self:PersonalMessage(331634, false, CL.link_with:format(self:ColorName(args.destName)))
-				self:Yell(331634, "{rt"..darkrecitalPairCount.."}", true)
+				self:PersonalMessage(331634, false, CL.link_with_icon:format(darkrecitalPairCount, self:ColorName(args.destName)))
+				local icon = ("{rt%d}"):format(darkrecitalPairCount)
+				self:Yell(331634, icon, true)
 				if self:GetOption("custom_on_repeating_dark_recital") then
-					sayTimer = self:ScheduleRepeatingTimer(SendChatMessage, 1.5, "{rt"..darkrecitalPairCount.."}", "YELL")
+					sayTimer = self:ScheduleRepeatingTimer("Yell", 1.5, false, icon, true)
 				end
 			end
 			firstDarkRecitalTargetGUID = nil

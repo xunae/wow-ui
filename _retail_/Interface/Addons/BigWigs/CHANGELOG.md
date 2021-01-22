@@ -1,20 +1,14 @@
 # BigWigs
 
-## [v205.1](https://github.com/BigWigsMods/BigWigs/tree/v205.1) (2021-01-17)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v205...v205.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v207.1](https://github.com/BigWigsMods/BigWigs/tree/v207.1) (2021-01-22)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v207...v207.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Plugins/AltPower: Fix some resizing issues  
-- CastleNathria/Denathrius: Consistent Massacre icon  
-- CastleNathria/Sludgefist: Chain Slam should be yell not say.  
-- Update zhCN (#957)  
-- CastleNathria/Trash: Initial import  
-- parser: Move the "false" key check up  
-- CastleNathria/InervaDarkvein: Remove unused locale string  
-- parser: Error on setting a foreign locale key that doesn't exist in the base module  
-- parser: Check GetOptions keys for duplicates  
-- parser: Add check for calling API via table notation  
-- parser: Add check for Message vs TargetMessage  
-- parser: Check module EJ id for duplicates  
-- CastleNathria/Denathrius: Update initial Normal timers for stage 3  
-- CastleNathria/Denathrius: Delay start of stage 3 timers and fix some possible stage 2 and 3 errors  
-- Update deDE (#956)  
+- CastleNathria: Update option files  
+- CastleNathria/Trash: Fix typo  
+- CastleNathria/StoneLegionGenerals: Add InfoBox for Wicked Laceration.  
+- CastleNathria/Trash: Add more spells  
+- Update zhTW (#967)  
+- Update zhTW (#966)  
+- CastleNathria/Xymox: Add 4th Annihilate combo timers for Mythic  
+- CastleNathria/Xymox: Minor fix to the lastStaged variable  
+- CastleNathria/Xymox: Avoid timers from starting if you stage while cystals are activating in Mythic, fix spark bar and fleeting spirits not stopping their bars when changing stage.  
