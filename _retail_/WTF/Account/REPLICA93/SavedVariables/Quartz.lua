@@ -43,6 +43,15 @@ Quartz3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["EnemyCasts"] = {
+			["profiles"] = {
+				["Default"] = {
+					["instanceonly"] = false,
+					["y"] = 630.666625976563,
+					["x"] = 1255.55541992188,
+				},
+			},
+		},
 		["Player"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -70,18 +79,9 @@ Quartz3DB = {
 					["fontsize"] = 11,
 					["iconalpha"] = 1,
 					["timetextx"] = 5,
-					["timefontsize"] = 11,
-					["showticks"] = false,
 					["nametextx"] = 5,
-				},
-			},
-		},
-		["EnemyCasts"] = {
-			["profiles"] = {
-				["Default"] = {
-					["instanceonly"] = false,
-					["y"] = 630.666625976563,
-					["x"] = 1255.55541992188,
+					["showticks"] = false,
+					["timefontsize"] = 11,
 				},
 			},
 		},
@@ -178,6 +178,7 @@ Quartz3DB = {
 		["Enimos - Stormscale"] = "Default",
 		["Xunadwarf - Arena Champions - EU"] = "Default",
 		["Vapenaysh - Anachronos"] = "Default",
+		["Xunalol - Stormscale"] = "Default",
 		["Ghrwetgf - Stormscale"] = "Default",
 		["Xunz - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
@@ -190,13 +191,13 @@ Quartz3DB = {
 		["Vapenaysh - Stormscale"] = "Default",
 		["Xunadwarf - Valley of Heroes - EU"] = "Default",
 		["Xã - Draenor"] = "Default",
-		["Mktja - Draenor"] = "Default",
 		["Xunapalah - Arena Champions - EU"] = "Default",
+		["Mktja - Draenor"] = "Default",
 		["Jungyuup - Stormscale"] = "Default",
 		["Dkuna - Draenor"] = "Default",
 		["Xuna - Valley of Heroes - EU"] = "Default",
-		["Drmscp - Draenor"] = "Default",
 		["Hãllàáhø - Stormscale"] = "Default",
+		["Drmscp - Draenor"] = "Default",
 		["Xñä - Draenor"] = "Default",
 		["Xuna - Ravencrest"] = "Default",
 		["Xunaj - Draenor"] = "Default",
@@ -211,7 +212,7 @@ Quartz3DB = {
 		["Xñæ - Draenor"] = "Default",
 		["Xuna - Stormscale"] = "Default",
 		["Xunadraenei - Arena Champions - EU"] = "Default",
-		["Xunalol - Stormscale"] = "Default",
+		["Wñä - Stormscale"] = "Default",
 		["Xunapala - Arena Champions - EU"] = "Default",
 		["Xüñâ - Ravencrest"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
@@ -231,9 +232,9 @@ Quartz3DB = {
 				["Mirror"] = false,
 				["GCD"] = false,
 				["Focus"] = false,
-				["Target"] = false,
-				["Pet"] = false,
 				["Timer"] = false,
+				["Pet"] = false,
+				["Target"] = false,
 			},
 			["bordercolor"] = {
 				0.533333333333333, -- [1]
@@ -294,13 +295,13 @@ Quartz3DB = {
 			},
 			["borderalpha"] = 0.25,
 			["modules"] = {
-				["Target"] = false,
-				["GCD"] = false,
-				["Buff"] = false,
 				["Timer"] = false,
+				["GCD"] = false,
+				["Focus"] = false,
+				["Target"] = false,
 				["Mirror"] = false,
 				["Pet"] = false,
-				["Focus"] = false,
+				["Buff"] = false,
 			},
 			["bordercolor"] = {
 				nil, -- [1]

@@ -61,10 +61,10 @@ VER 3 0100000000000008 "rop" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [talent:4/2]Song of Chi-ji;[talent:4/3]Ring of Peace
 END
-VER 3 0100000000000017 "tft" "INV_MISC_QUESTIONMARK"
+VER 3 0100000000000017 "rsk" "INV_MISC_QUESTIONMARK"
 #showtooltip
-/cast Thunder Focus Tea
-/cast Soothing Mist
+/cast Rising Sun Kick
+/cast Provoke
 END
 VER 3 0100000000000016 "zft" "INV_MISC_QUESTIONMARK"
 #showtooltip Zen Focus Tea

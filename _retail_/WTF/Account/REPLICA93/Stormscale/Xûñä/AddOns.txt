@@ -16,8 +16,12 @@ RaiderIO_DB_KR_H: disabled
 RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_A: disabled
 LittleWigs: enabled
-Xunamate: enabled
+Xunamate: disabled
 Kui_Media: enabled
 LittleWigs_WrathOfTheLichKing: enabled
 BigWigs: enabled
 BigWigs_Shadowlands: enabled
+Neuron: disabled
+Myslot: disabled
+Masque_Caith: disabled
+REFlex: enabled

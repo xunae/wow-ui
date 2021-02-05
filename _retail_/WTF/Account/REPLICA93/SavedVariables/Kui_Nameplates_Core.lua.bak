@@ -18,7 +18,7 @@ KuiNameplatesCoreSaved = {
 				1, -- [3]
 				0.5, -- [4]
 			},
-			["castbar_height"] = 12,
+			["frame_width_minus"] = 98,
 			["castbar_colour"] = {
 				1, -- [1]
 				1, -- [2]
@@ -34,19 +34,19 @@ KuiNameplatesCoreSaved = {
 			["name_vertical_offset"] = 2,
 			["frame_target_size"] = false,
 			["nameonly"] = false,
-			["frame_width_minus"] = 98,
+			["cvar_personal_show_combat"] = false,
 			["fade_all"] = true,
 			["frame_height"] = 12,
 			["fade_conditional_alpha"] = 0.300000011920929,
-			["cvar_occluded_mult"] = 0.8,
+			["bar_animation"] = 2,
 			["auras_enabled"] = false,
-			["cvar_personal_show_combat"] = false,
+			["castbar_height"] = 12,
 			["font_size_normal"] = 12,
 			["bot_vertical_offset"] = 0,
 			["global_scale"] = 1.5,
 			["fade_non_target_alpha"] = 0.6,
 			["font_face"] = "Arial Narrow",
-			["bar_animation"] = 2,
+			["cvar_occluded_mult"] = 0.8,
 			["cvar_enable"] = true,
 			["execute_enabled"] = false,
 			["font_style"] = 3,

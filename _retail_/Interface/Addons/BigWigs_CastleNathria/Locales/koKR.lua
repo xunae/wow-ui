@@ -19,6 +19,8 @@ if L then
 
 	L.custom_on_repeating_say_laser = "반복적으로 순간 방출 알리기"
 	L.custom_on_repeating_say_laser_desc = "순간 방출 걸렸을때 반복적으로 말을 해서 혹시나 처음 메세지를 보지 못한 사람들에게 알리기."
+
+	--L.tempPrint = "We've added health yells for Miasma. If you previously used a WeakAura for this, you might want to delete it to prevent double yells."
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "koKR")
@@ -101,6 +103,12 @@ if L then
 
 	-- L.custom_on_stop_timers = "Always show ability bars"
 	-- L.custom_on_stop_timers_desc = "Just for testing right now"
+
+	--L.goliath_short = "Goliath"
+	--L.goliath_desc = "Show warnings and timers for when the Stone Legion Goliath is going to spawn."
+
+	--L.commando_short = "Commando"
+	--L.commando_desc = "Show warnings when a Stone Legion Commando is killed."
 end
 
 L = BigWigs:NewBossLocale("Sire Denathrius", "koKR")

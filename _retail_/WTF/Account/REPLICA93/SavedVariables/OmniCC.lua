@@ -20,6 +20,7 @@ OmniCCDB = {
 		["Xunaw - Draenor"] = "Default",
 		["Wluna - Draenor"] = "Default",
 		["Xûñá - Ravencrest"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
@@ -28,7 +29,7 @@ OmniCCDB = {
 		["Xñæ - Draenor"] = "Default",
 		["Xunae - Stormreaver"] = "Default",
 		["Xunawl - Draenor"] = "Default",
-		["Xunaj - Draenor"] = "Default",
+		["Wñä - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
 		["Xuna - Arena Champions - EU"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
@@ -48,8 +49,28 @@ OmniCCDB = {
 					["priority"] = 1,
 					["theme"] = "Ignore",
 				}, -- [1]
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 2,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [2]
 			},
 			["themes"] = {
+				["Plater Nameplates Theme"] = {
+					["textStyles"] = {
+						["seconds"] = {
+						},
+						["soon"] = {
+						},
+						["minutes"] = {
+						},
+					},
+				},
 				["Default"] = {
 					["textStyles"] = {
 						["soon"] = {
@@ -97,7 +118,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -108,7 +128,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -233,4 +253,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

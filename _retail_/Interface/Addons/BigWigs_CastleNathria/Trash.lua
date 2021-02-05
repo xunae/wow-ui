@@ -83,7 +83,7 @@ function mod:GetOptions()
 		341735, -- Restore Stone
 
 		--[[ Huntsman Altimor -> Hungering Destroyer ]]--
-		340630, -- Rotting
+		{340630, "DISPEL"}, -- Rotting
 		{329298, "SAY"}, -- Gluttonous Miasma
 
 		--[[ Hungering Destroyer -> Lady Inerva Darkvein ]]--
@@ -206,15 +206,15 @@ end
 --[[ Huntsman Altimor -> Hungering Destroyer ]]--
 function mod:Rotting(args)
 	local amount = args.amount or 1
-	if amount % 4 == 0 then
+	if amount % 5 == 0 then
 		if self:Me(args.destGUID) then
 			self:StackMessage(args.spellId, args.destName, amount, "blue")
-			if amount > 11 then
+			if amount > 14 then
 				self:PlaySound(args.spellId, "info")
 			end
-		elseif (self:Tank() or self:Healer()) and self:Tank(args.destName) then
+		elseif (self:Tank() or self:Dispeller("disease", nil, args.spellId)) and self:Tank(args.destName) then
 			self:StackMessage(args.spellId, args.destName, amount, "purple")
-			if amount > 11 then
+			if amount > 14 then
 				self:PlaySound(args.spellId, "info")
 			end
 		end
@@ -239,7 +239,7 @@ do
 			local t = args.time
 			if t-prev > 2 then
 				prev = t
-				self:PlaySound(args.spellId, "alarm")
+				self:PlaySound(args.spellId, "underyou")
 				self:PersonalMessage(args.spellId, "underyou")
 			end
 		end
@@ -264,13 +264,17 @@ function mod:WarpedDesiresApplied(args)
 	end
 end
 
-function mod:ConcentrateAnimaApplied(args)
-	self:TargetMessage(args.spellId, "orange", args.destName)
-	self:TargetBar(args.spellId, 10, args.destName)
-	if self:Me(args.destGUID) then
-		self:PlaySound(args.spellId, "alarm")
-		self:Say(args.spellId)
-		self:SayCountdown(args.spellId, 10)
+do
+	local playerList = mod:NewTargetList()
+	function mod:ConcentrateAnimaApplied(args)
+		playerList[#playerList+1] = args.destName
+		self:TargetsMessage(args.spellId, "orange", playerList)
+		self:TargetBar(args.spellId, 10, args.destName)
+		if self:Me(args.destGUID) then
+			self:PlaySound(args.spellId, "alarm")
+			self:Say(args.spellId)
+			self:SayCountdown(args.spellId, 10)
+		end
 	end
 end
 

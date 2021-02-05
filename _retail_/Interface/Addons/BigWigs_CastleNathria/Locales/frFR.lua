@@ -19,6 +19,8 @@ if L then
 
 	L.custom_on_repeating_say_laser = "Répéter Expulsion instable en /dire"
 	L.custom_on_repeating_say_laser_desc = "Répète des messages en /dire pour Expulsion instable afin de vous aider quand vous vous déplacez à portée de discussion des joueurs qui n'ont pas vu votre premier message."
+
+	L.tempPrint = "Nous avons ajouté les /crier des points de vie durant le Miasme. Si vous utilisiez récemment un WeakAura pour cela, vous devriez l'enlever afin d'éviter les /crier en double."
 end
 
 L = BigWigs:NewBossLocale("Artificer Xy'mox", "frFR")
@@ -101,6 +103,12 @@ if L then
 
 	L.custom_on_stop_timers = "Toujours montrer les barres de techniques"
 	L.custom_on_stop_timers_desc = "En cours de test"
+
+	L.goliath_short = "Goliath"
+	L.goliath_desc = "Affiche des alertes et des délais indiquant quand le Goliath vive-pierre est sur le point d'apparaître."
+
+	L.commando_short = "Commando"
+	L.commando_desc = "Affiche des alertes quand un Commando de la Légion de pierre est tué."
 end
 
 L = BigWigs:NewBossLocale("Sire Denathrius", "frFR")

@@ -32,13 +32,13 @@ END
 VER 3 000000000000018B "Details toggle" "Ability_Bastion_Priest."
 /details toggle
 END
-VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
-#showtooltip Cleanse Spirit
-/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
-END
 VER 3 0000000000000143 "DISPEL" "INV_MISC_QUESTIONMARK"
 #showtooltip Purify Spirit
 /cast [@mouseover,exists]Purify Spirit; Purify Spirit
+END
+VER 3 0000000000000171 "DISPEL" "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Spirit
+/cast [@mouseover,exists]Cleanse Spirit;Cleanse Spirit
 END
 VER 3 000000000000018A "Great Vault" "Ability_Crown_of_the_Heavens_Icon."
 /run LoadAddOn("Blizzard_WeeklyRewards"); if WeeklyRewardsFrame:IsVisible() then WeeklyRewardsFrame:Hide() else WeeklyRewardsFrame:Show() end
@@ -96,7 +96,7 @@ END
 VER 3 0000000000000186 "RSHAM_TRINKLINKC" "INV_MISC_QUESTIONMARK"
 #showtooltip Spirit Link Totem
 /use 14
-/use Spirit Link Totem
+/use [@cursor]Spirit Link Totem
 END
 VER 3 0000000000000139 "SHEAR" "INV_MISC_QUESTIONMARK"
 #showtooltip Wind Shear

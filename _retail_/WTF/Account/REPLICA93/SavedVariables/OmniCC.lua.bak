@@ -16,17 +16,18 @@ OmniCCDB = {
 		["Xunaw - Draenor"] = "Default",
 		["Æñ - Draenor"] = "Default",
 		["Xûñá - Ravencrest"] = "Default",
-		["Xñ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
-		["Lightescp - Draenor"] = "Default",
+		["Xñ - Draenor"] = "Default",
 		["Xuna - Arena Champions - EU"] = "Default",
+		["Lightescp - Draenor"] = "Default",
+		["Xã - Draenor"] = "Default",
 		["Xñæ - Draenor"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Xunaj - Draenor"] = "Default",
-		["Xunawl - Draenor"] = "Default",
 		["Xunae - Stormreaver"] = "Default",
+		["Xunawl - Draenor"] = "Default",
+		["Wñä - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
-		["Xã - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Wluna - Draenor"] = "Default",
 	},
@@ -48,8 +49,28 @@ OmniCCDB = {
 					["priority"] = 1,
 					["theme"] = "Ignore",
 				}, -- [1]
+				{
+					["patterns"] = {
+						"PlaterMainAuraIcon", -- [1]
+						"PlaterSecondaryAuraIcon", -- [2]
+						"ExtraIconRowIcon", -- [3]
+					},
+					["id"] = "Plater Nameplates Rule",
+					["priority"] = 2,
+					["theme"] = "Plater Nameplates Theme",
+				}, -- [2]
 			},
 			["themes"] = {
+				["Plater Nameplates Theme"] = {
+					["textStyles"] = {
+						["soon"] = {
+						},
+						["seconds"] = {
+						},
+						["minutes"] = {
+						},
+					},
+				},
 				["Default"] = {
 					["textStyles"] = {
 						["soon"] = {
@@ -97,7 +118,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -222,6 +242,8 @@ OmniCC4Config = {
 			["fontSize"] = 18,
 		},
 	},
+	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -232,5 +254,4 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.2.3",
 }
