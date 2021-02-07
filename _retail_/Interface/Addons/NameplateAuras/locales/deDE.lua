@@ -54,21 +54,22 @@ L["Magic"] = "Magie"
 L["Options are not available in combat!"] = "Optionen sind im Kampf nicht verfügbar!"
 L["options:alpha:alpha"] = "Deckkraft der Symbole (außer der Namensplakette deines Ziels)"
 L["options:alpha:alpha-target"] = "Deckkraft der Symbole auf der Namensplakette deines Ziels"
+--[[Translation missing --]]
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with target's alpha if no target selected"
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Deckkraft"
 L["options:apps:dispellable-spells"] = "Bannbare/stehlbare Auras auf Namensplaketten von Feinden"
---[[Translation missing --]]
-L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
+L["options:apps:dispellable-spells:black-list-button"] = "Ausschlussliste öffnen"
 --[[Translation missing --]]
 L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
 --[[Translation missing --]]
 L["options:apps:dr"] = "Enable display of diminishing return (beta)"
---[[Translation missing --]]
-L["options:apps:dr:pve"] = "PvE (stun only)"
---[[Translation missing --]]
+L["options:apps:dr:pve"] = "PvE (nur betäuben)"
 L["options:apps:dr:pvp"] = "PvP"
 --[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
+--[[Translation missing --]]
+L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)"
 L["options:auras:enabled-state:tooltip"] = [=[Aktiviert/Deaktiviert die Aura
 
 %s: Aura wird nicht gezeigt
@@ -76,17 +77,14 @@ L["options:auras:enabled-state:tooltip"] = [=[Aktiviert/Deaktiviert die Aura
 %s: Alle Auren zeigen]=]
 L["options:auras:enabled-state-all"] = "Aktiviert, Alle Auren zeigen"
 L["options:auras:enabled-state-mineonly"] = "Aktiviert, nur meine Auren zeigen"
-L["options:auras:pvp-state-dontshowinpvp"] = "Diese Aura während eines PvP-Kampfes nicht zeigen"
-L["options:auras:pvp-state-indefinite"] = "Diese Aura während eines PvP-Kampfes zeigen"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "Diese Aura nur während eines PvP-Kampfes zeigen"
+L["options:auras:show-on-npcs"] = "Diese Aura nur auf NSCs anzeigen"
+L["options:auras:show-on-npcs-and-players"] = "Diese Aura auf Spielern und NSCs anzeigen"
+L["options:auras:show-on-players"] = "Diese Aura nur auf Spielern anzeigen"
 --[[Translation missing --]]
 L["options:borders:BORDER_TYPE_BUILTIN"] = "Built-in"
---[[Translation missing --]]
-L["options:borders:BORDER_TYPE_CUSTOM"] = "Custom"
---[[Translation missing --]]
-L["options:borders:border-file-path"] = "Border texture file path (starts with 'Interface\\')"
---[[Translation missing --]]
-L["options:borders:border-type"] = "Border type"
+L["options:borders:BORDER_TYPE_CUSTOM"] = "Benutzerdefiniert"
+L["options:borders:border-file-path"] = "Speicherort der Rahmentextur (beginnt mit 'Interface\\')"
+L["options:borders:border-type"] = "Rahmenart"
 L["options:category:alpha"] = "Deckkraft"
 L["options:category:apps"] = "Erweiterungen"
 --[[Translation missing --]]
@@ -105,24 +103,18 @@ L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on p
 L["options:general:icon-grow-direction"] = "Icon growing direction"
 L["options:general:show-aura-tooltip"] = "Zeigt den Namen der Aura, wenn die Maus sich auf dem Aurasymbol befindet."
 L["options:general:show-cooldown-animation"] = "Abklingzeitanimation anzeigen"
---[[Translation missing --]]
-L["options:general:show-cooldown-text"] = "Show aura's remaining time"
---[[Translation missing --]]
-L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
---[[Translation missing --]]
-L["options:general:show-stacks"] = "Show aura's stacks"
+L["options:general:show-cooldown-text"] = "Die verbleibende Zeit der Aura anzeigen"
+L["options:general:show-on-target-only"] = "Auren nur auf der Namensplakette des Ziels anzeigen"
+L["options:general:show-stacks"] = "Aurastapel anzeigen"
 L["options:general:test-mode"] = "Testmodus"
---[[Translation missing --]]
-L["options:glow-type"] = "Glow type"
---[[Translation missing --]]
-L["options:glow-type:GLOW_TYPE_ACTIONBUTTON"] = "Action button"
+L["options:glow-type"] = "Leuchttyp"
+L["options:glow-type:GLOW_TYPE_ACTIONBUTTON"] = "Aktionsbutton"
 --[[Translation missing --]]
 L["options:glow-type:GLOW_TYPE_ACTIONBUTTON_DIM"] = "Action button (dim)"
 --[[Translation missing --]]
 L["options:glow-type:GLOW_TYPE_AUTOUSE"] = "Auto-use button"
 --[[Translation missing --]]
 L["options:glow-type:GLOW_TYPE_NONE"] = "None"
---[[Translation missing --]]
 L["options:glow-type:GLOW_TYPE_PIXEL"] = "Pixel"
 L["options:interrupts:enable-interrupts"] = "Unterbrechungsverfolgung aktivieren"
 L["options:interrupts:enable-only-during-pvp-battles"] = "Nur während PvP-Kämpfen aktivieren"
@@ -131,26 +123,25 @@ L["options:interrupts:use-shared-icon-texture"] = "Die gleiche Textur für alle 
 L["options:size-and-position:anchor-point-of-frame"] = "Anchor point to group of icons"
 --[[Translation missing --]]
 L["options:size-and-position:anchor-point-of-frame:tooltip"] = "'Group of icons' is collection of icons per nameplate"
---[[Translation missing --]]
-L["options:size-and-position:anchor-point-to-nameplate"] = "Anchor point to nameplate"
+L["options:size-and-position:anchor-point-to-nameplate"] = "Ankerpunkt an Namensplakette"
 --[[Translation missing --]]
 L["options:size-and-position:custom-sorting:tooltip"] = [=[Rules:
   - code must be an unnamed function with 2 arguments. These arguments are tables, representing auras to compare
-  - this function must return 'true' if the first aura should be placed before the second aura, and vice versa
+  - this function must return true if the first aura should be placed before the second aura, and false otherwise
   - sorting is done quite often, so don't make sorting function too heavy
   - don't modify content of aura's table unless you REALLY know what you are doing
   - double-check any code you got from strangers
 
 Aura's table content:
-  - .duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
-  - .expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
-  - .stacks - number of stacks (type: number)
-  - .spellID - ID of aura (type: number)
-  - .spellName - name of aura (type: string)
+  - aura.duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
+  - aura.expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
+  - aura.stacks - number of stacks (type: number)
+  - aura.spellID - ID of aura (type: number)
+  - aura.spellName - name of aura (type: string)
 
-Built-in sorting functions:
-  - sort_time(aura1, aura2) - sort by aura's remaining time
-  - sort_size(aura1, aura2) - sort by icon's size
+Built-in sorting functions (result is a boolean value):
+  - local result = sort_time(aura1, aura2) - sort by aura's remaining time
+  - local result = sort_size(aura1, aura2) - sort by icon's size
 ]=]
 L["options:size-and-position:icon-align"] = "Anordnung der Symbole"
 L["options:size-and-position:icon-align:bottom-left"] = "Horizontal: unten / Vertikal: links"
@@ -158,19 +149,13 @@ L["options:size-and-position:icon-align:center"] = "Mittig"
 L["options:size-and-position:icon-align:top-right"] = "Horizontal: oben / Vertikal: rechts"
 L["options:size-and-position:icon-height"] = "Standardsymbolhöhe"
 L["options:size-and-position:icon-width"] = "Standardsymbolbreite"
---[[Translation missing --]]
-L["options:size-and-position:icon-zoom"] = "Icon zoom"
---[[Translation missing --]]
-L["options:size-and-position:keep-aspect-ratio"] = "Keep aspect ratio of textures"
---[[Translation missing --]]
-L["options:size-and-position:keep-aspect-ratio:tooltip"] = "If this option is checked and icon width and height are not equal, then texture of spell will be cropped in that way to save original image proportions"
---[[Translation missing --]]
-L["options:size-and-position:non-target-strata"] = "Layer of icons on non-target nameplates"
+L["options:size-and-position:icon-zoom"] = "Symbolzoom"
+L["options:size-and-position:keep-aspect-ratio"] = "Seitenverhältnis von Texturen beibehalten"
+L["options:size-and-position:keep-aspect-ratio:tooltip"] = "Fall diese Option aktiviert ist und die Symbolbreite und -höhe nicht gleich sind, wird die Textur des Zaubers so beschnitten, dass das ursprüngliche Seitenverhältnis des Bildes beibehalten wird."
+L["options:size-and-position:non-target-strata"] = "Schicht der Symbole auf Nicht-Ziel-Namensplaketten"
 L["options:size-and-position:scale-target"] = "Skalierung der Symbole auf der Namensplakette deines Ziels"
---[[Translation missing --]]
-L["options:size-and-position:target-strata"] = "Layer of icons on target nameplate"
---[[Translation missing --]]
-L["options:spells:add-new-spell"] = "Click to add new spell"
+L["options:size-and-position:target-strata"] = "Schicht der Symbole auf der Ziel-Namensplakette"
+L["options:spells:add-new-spell"] = "Klicke, um neuen Zauber hinzuzufügen"
 --[[Translation missing --]]
 L["options:spells:animation-relative:tooltip"] = [=[This option changes the meaning of slider on the left.
 
@@ -181,8 +166,7 @@ L["options:spells:animation-type"] = "Animationsart"
 L["options:spells:appropriate-spell-ids"] = "Passende Zauber-IDs:"
 L["options:spells:disable-all-spells"] = "Alle Zauber deaktivieren"
 L["options:spells:enable-all-spells"] = "Alle Zauber aktivieren"
---[[Translation missing --]]
-L["options:spells:glow-relative"] = "Use relative time"
+L["options:spells:glow-relative"] = "Relative Zeit verwenden"
 --[[Translation missing --]]
 L["options:spells:glow-relative:tooltip"] = [=[This option changes the meaning of slider on the left.
 

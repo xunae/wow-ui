@@ -1,8 +1,12 @@
 # BigWigs
 
-## [v211.1](https://github.com/BigWigsMods/BigWigs/tree/v211.1) (2021-02-02)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v211...v211.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v211.2](https://github.com/BigWigsMods/BigWigs/tree/v211.2) (2021-02-04)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v211.1...v211.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- CastleNathria/Denathrius: Don't show Crescendo warning when dead  
-- CastleNathria/Xymox: Don't show bars for traps on LFR  
-- Core/BossPrototype: Fix an error in :NewTargetsMessage  
+- Plugins/Sound: Add warning when disabling  
+- Plugins/AltPower: Add warning when disabling  
+- Plugins/Messages: Re-arrange options layout, add temporary checkbox to disable messages until we can implement a better solution.  
+- Media: Remove old icons  
+- Update koKR (#985)  
+- Update koKR (#983)  
+- Update zhCN (#981)  

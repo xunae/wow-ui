@@ -74,6 +74,8 @@ L["options:alpha:alpha"] = "Alpha of the icons (except the nameplate of your tar
 --[[Translation missing --]]
 L["options:alpha:alpha-target"] = "Alpha of the icons on the nameplate of your target"
 --[[Translation missing --]]
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with target's alpha if no target selected"
+--[[Translation missing --]]
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Alpha"
 --[[Translation missing --]]
 L["options:apps:dispellable-spells"] = "Show dispellable/stealable auras on enemy nameplates"
@@ -90,15 +92,20 @@ L["options:apps:dr:pvp"] = "PvP"
 --[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
+--[[Translation missing --]]
+L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)"
 L["options:auras:enabled-state:tooltip"] = [=[사용/비사용 오라
 %s: 오라 보지 않기
 %s: 내가 시전한 오라만 보기 
 %s: 모두 보기]=]
 L["options:auras:enabled-state-all"] = "사용, 모든 오라 표시"
 L["options:auras:enabled-state-mineonly"] = "사용, 내 오라만 표시"
-L["options:auras:pvp-state-dontshowinpvp"] = "PVP 전투중 오라 표시 안함."
-L["options:auras:pvp-state-indefinite"] = "PVP 전투중 오라 표시"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "PVP 전투에서만 오라 표시"
+--[[Translation missing --]]
+L["options:auras:show-on-npcs"] = "Show this aura on NPC only"
+--[[Translation missing --]]
+L["options:auras:show-on-npcs-and-players"] = "Show this aura on players and NPC"
+--[[Translation missing --]]
+L["options:auras:show-on-players"] = "Show this aura on players only"
 --[[Translation missing --]]
 L["options:borders:BORDER_TYPE_BUILTIN"] = "Built-in"
 --[[Translation missing --]]
@@ -160,21 +167,21 @@ L["options:size-and-position:anchor-point-to-nameplate"] = "Anchor point to name
 --[[Translation missing --]]
 L["options:size-and-position:custom-sorting:tooltip"] = [=[Rules:
   - code must be an unnamed function with 2 arguments. These arguments are tables, representing auras to compare
-  - this function must return 'true' if the first aura should be placed before the second aura, and vice versa
+  - this function must return true if the first aura should be placed before the second aura, and false otherwise
   - sorting is done quite often, so don't make sorting function too heavy
   - don't modify content of aura's table unless you REALLY know what you are doing
   - double-check any code you got from strangers
 
 Aura's table content:
-  - .duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
-  - .expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
-  - .stacks - number of stacks (type: number)
-  - .spellID - ID of aura (type: number)
-  - .spellName - name of aura (type: string)
+  - aura.duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
+  - aura.expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
+  - aura.stacks - number of stacks (type: number)
+  - aura.spellID - ID of aura (type: number)
+  - aura.spellName - name of aura (type: string)
 
-Built-in sorting functions:
-  - sort_time(aura1, aura2) - sort by aura's remaining time
-  - sort_size(aura1, aura2) - sort by icon's size
+Built-in sorting functions (result is a boolean value):
+  - local result = sort_time(aura1, aura2) - sort by aura's remaining time
+  - local result = sort_size(aura1, aura2) - sort by icon's size
 ]=]
 --[[Translation missing --]]
 L["options:size-and-position:icon-align"] = "Alignment of icons"

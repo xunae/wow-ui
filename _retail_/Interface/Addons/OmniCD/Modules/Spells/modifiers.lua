@@ -687,6 +687,11 @@ E.cd_reduce_interrupts = {
 	[1766]   = { 341535,    0,      31224,  2   }
 }
 
+-- TODO: cba...
+E.cdrr_heartStopAura_blackList = {
+	[320137] = true,    -- Stormkeeper
+}
+
 E.runeforge_bonusToDescID = {
 	[6948] = 334724,
 	[6941] = 334525,

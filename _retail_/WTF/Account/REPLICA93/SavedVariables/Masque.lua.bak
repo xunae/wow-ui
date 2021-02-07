@@ -447,15 +447,8 @@ MasqueDB = {
 				["OmniBar_Intimidation"] = {
 					["Inherit"] = false,
 				},
-				["Masque"] = {
-					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
-					},
+				["OmniBar_Pummel"] = {
+					["Inherit"] = false,
 				},
 				["WeakAuras_jDexK7ayhMy"] = {
 					["Upgraded"] = true,
@@ -529,8 +522,17 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Grounding Totem"] = {
+				["Neuron_Action Bar 3"] = {
+					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
+					},
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_hzwtvTQKYYK"] = {
 					["Upgraded"] = true,
@@ -562,7 +564,8 @@ MasqueDB = {
 				["OmniBar_Blind"] = {
 					["Inherit"] = false,
 				},
-				["Neuron_Vehicle Exit Bar 1"] = {
+				["WeakAuras_pO0R2J7JCYC"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -572,7 +575,6 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["OmniBar_Psychic Scream"] = {
 					["Inherit"] = false,
@@ -648,7 +650,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_PfFKMIorfLD"] = {
+				["WeakAuras_JHegUq(qwEI"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Cooldown"] = {
@@ -666,13 +668,14 @@ MasqueDB = {
 				["OmniBar_Leg Sweep"] = {
 					["Inherit"] = false,
 				},
-				["OmniBar_Howl of Terror"] = {
+				["OmniBar_Mortal Coil"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Spell Lock"] = {
 					["Inherit"] = false,
 				},
-				["Neuron_Zone Action Bar 1"] = {
+				["WeakAuras_PfFKMIorfLD"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -681,13 +684,6 @@ MasqueDB = {
 							0.8500000089406967, -- [4]
 						},
 					},
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["OmniBar_Chaos Nova"] = {
-					["Inherit"] = false,
-				},
-				["OmniBar_Muzzle"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_PBvmgNBZ4n6"] = {
@@ -700,6 +696,12 @@ MasqueDB = {
 							0.8500000089406967, -- [4]
 						},
 					},
+					["Inherit"] = false,
+				},
+				["OmniBar_Howl of Terror"] = {
+					["Inherit"] = false,
+				},
+				["OmniBar_Chaos Nova"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Rebuke"] = {
@@ -720,7 +722,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Solar Beam"] = {
+				["OmniBar_Silence"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_UgHxUTR6oP9"] = {
@@ -741,10 +743,10 @@ MasqueDB = {
 				["OmniBar_Mind Bomb"] = {
 					["Inherit"] = false,
 				},
-				["OmniBar_Silence"] = {
+				["OmniBar_Solar Beam"] = {
 					["Inherit"] = false,
 				},
-				["OmniBar_Mortal Coil"] = {
+				["OmniBar_Spear Hand Strike"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_0exdH)K9nS0"] = {
@@ -759,8 +761,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_JHegUq(qwEI"] = {
-					["Upgraded"] = true,
+				["Neuron_Zone Action Bar 1"] = {
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -770,8 +771,9 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["OmniBar_Spear Hand Strike"] = {
+				["OmniBar_Muzzle"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Wind Shear"] = {
@@ -819,8 +821,7 @@ MasqueDB = {
 				["OmniBar_Wyvern Sting"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_pO0R2J7JCYC"] = {
-					["Upgraded"] = true,
+				["Neuron_Vehicle Exit Bar 1"] = {
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -830,6 +831,7 @@ MasqueDB = {
 						},
 					},
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["WeakAuras_Kv3Ei)cYeWa"] = {
 					["Upgraded"] = true,
@@ -849,7 +851,10 @@ MasqueDB = {
 				["OmniBar_Asphyxiate"] = {
 					["Inherit"] = false,
 				},
-				["Neuron_Action Bar 3"] = {
+				["OmniBar_Grounding Totem"] = {
+					["Inherit"] = false,
+				},
+				["Masque"] = {
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -858,11 +863,6 @@ MasqueDB = {
 							0.8500000089406967, -- [4]
 						},
 					},
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["OmniBar_Pummel"] = {
-					["Inherit"] = false,
 				},
 				["OmniBar_Cloak of Shadows"] = {
 					["Inherit"] = false,

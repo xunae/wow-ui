@@ -124,7 +124,6 @@ VER 3 000000000000017B "TRINKET_USE" "INV_MISC_QUESTIONMARK"
 #showtooltip 13
 /use [@cursor]13;13
 /use Healthstone
-/use Phial of Serenity
 END
 VER 3 000000000000017E "TRINKET_USE2" "INV_MISC_QUESTIONMARK"
 #showtooltip

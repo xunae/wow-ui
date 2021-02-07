@@ -52,6 +52,8 @@ L["Magic"] = "Magie"
 L["Options are not available in combat!"] = "Les options sont indisponibles en combat !"
 L["options:alpha:alpha"] = "Transparence des icônes (à l'exception de la barre d'identification de vôtre cible)"
 L["options:alpha:alpha-target"] = "Transparence des icônes sur la barre d'identification de vôtre cible"
+--[[Translation missing --]]
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with target's alpha if no target selected"
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Transparence"
 L["options:apps:dispellable-spells"] = "Afficher les auras révocables/volables sur les barres d'identification des ennemis"
 L["options:apps:dispellable-spells:black-list-button"] = "Ouvrir la liste noire"
@@ -63,14 +65,19 @@ L["options:apps:dr:pve"] = "PvE (stun only)"
 --[[Translation missing --]]
 L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = "Afficher une aura spéciale au dessus des barres d'identification avec Explosif (M+ Affixe Explosif). Cette aura apparait en surbrillance et a une taille par défaut"
+--[[Translation missing --]]
+L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)"
 L["options:auras:enabled-state:tooltip"] = [=[%s : l'aura ne sera pas affichée
 %s : l'aura sera affichée si vous la lancez
 %s : afficher toutes les auras]=]
 L["options:auras:enabled-state-all"] = "Activé, affiche toutes les auras"
 L["options:auras:enabled-state-mineonly"] = "Activé, montre uniquement mes auras"
-L["options:auras:pvp-state-dontshowinpvp"] = "Ne pas afficher cette aura en combat JcJ"
-L["options:auras:pvp-state-indefinite"] = "Afficher cette aura en combat JcJ"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "Afficher cette aura uniquement en combat JcJ"
+--[[Translation missing --]]
+L["options:auras:show-on-npcs"] = "Show this aura on NPC only"
+--[[Translation missing --]]
+L["options:auras:show-on-npcs-and-players"] = "Show this aura on players and NPC"
+--[[Translation missing --]]
+L["options:auras:show-on-players"] = "Show this aura on players only"
 L["options:borders:BORDER_TYPE_BUILTIN"] = "Intégré"
 L["options:borders:BORDER_TYPE_CUSTOM"] = "Personnalisé"
 L["options:borders:border-file-path"] = "Chemin d'accès vers la texture de cette bordure (commence par 'Interface\\')"

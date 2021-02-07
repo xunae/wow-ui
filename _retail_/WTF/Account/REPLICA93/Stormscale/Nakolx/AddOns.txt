@@ -3,3 +3,4 @@ Kui_Media: enabled
 Neuron: disabled
 Masque_Caith: disabled
 REFlex: enabled
+Masque: enabled

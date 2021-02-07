@@ -1,6 +1,14 @@
 local E, L, C = select(2, ...):unpack()
 
 E.changelog = [=[
+v2.5.11a
+    Bug Fixes
+        Fixed sync failing in queued instances when character data isn't ready from the server.
+        Fixed Purify Soul prematurely starting it's CD and stack# resetting.
+        Fixed CDS not resetting upon entering Arena.
+    Feature Updates
+        VuhDo (Panel 2-5), RUF, KkthnxUI support added.
+
 v2.5.10
     Bug Fixes
         Fixed talent info not updating when a synced unit had show-player disabled.

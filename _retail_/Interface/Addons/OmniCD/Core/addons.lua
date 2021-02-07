@@ -17,6 +17,26 @@ local unitFrameData = {
 		[3] = "raidid",
 		[4] = 2, -- idc if it doesn't anchor properly on /reload
 	},
+	{   [1] = "VuhDo-Panel2",
+		[2] = "Vd2H",
+		[3] = "raidid",
+		[4] = 2,
+	},
+	{   [1] = "VuhDo-Panel3",
+		[2] = "Vd3H",
+		[3] = "raidid",
+		[4] = 2,
+	},
+	{   [1] = "VuhDo-Panel4",
+		[2] = "Vd4H",
+		[3] = "raidid",
+		[4] = 2,
+	},
+	{   [1] = "VuhDo-Panel5",
+		[2] = "Vd5H",
+		[3] = "raidid",
+		[4] = 2,
+	},
 	{   [1] = "Grid2",
 		[2] = "Grid2LayoutHeader1UnitButton",
 		[3] = "unit",
@@ -82,6 +102,17 @@ local unitFrameData = {
 		[3] = "unit",
 		[4] = 1,
 	},
+	{   [1] = "KkthnxUI",
+		[2] = "oUF_PartyUnitButton",
+		[3] = "unit",
+		[4] = 1,
+	},
+	{
+		[1] = "RUF",
+		[2] = "oUF_RUF_PartyUnitButton",
+		[3] = "unit",
+		[4] = 1,
+	},
 }
 
 function E:SetActiveUnitFrameData()
@@ -109,7 +140,7 @@ function E:UnitFrames()
 	for i = 1, #unitFrameData do
 		local unitFrame = unitFrameData[i]
 		local name = unitFrame[1]
-		local addonName = name:gsub("-Raid1", "")
+		local addonName = name:gsub("-.+", "")
 		if _G[addonName] or IsAddOnLoaded(addonName) then
 			self.customUF.enabled = self.customUF.enabled or {}
 			self.customUF.enabled[name] = {

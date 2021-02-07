@@ -55,6 +55,8 @@ L["Magic"] = "Магия"
 L["Options are not available in combat!"] = "Настройки недоступны в бою!"
 L["options:alpha:alpha"] = "Прозрачность иконок (исключая те, что на полоске ХП вашей цели)"
 L["options:alpha:alpha-target"] = "Прозрачность иконок на полоске ХП вашей цели"
+--[[Translation missing --]]
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with target's alpha if no target selected"
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Прозрачность"
 L["options:apps:dispellable-spells"] = "Показывать ауры, которые можно развеять/украсть"
 L["options:apps:dispellable-spells:black-list-button"] = "Открыть чёрный список"
@@ -67,6 +69,8 @@ L["options:apps:dr:pve"] = "PvE (stun only)"
 L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = [=[Показывать специальную иконку над неймлэйтами Взрывных Сфер (М+ Взрывной)
 Эта иконка будет иметь размер по умолчанию и будет подсвечена]=]
+--[[Translation missing --]]
+L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)"
 L["options:auras:enabled-state:tooltip"] = [=[%s: аура не будет показываться
 
 %s: аура будет показываться только если вы применили ее
@@ -74,9 +78,9 @@ L["options:auras:enabled-state:tooltip"] = [=[%s: аура не будет по�
 %s: показывать все ауры]=]
 L["options:auras:enabled-state-all"] = "Включено, показывать все ауры"
 L["options:auras:enabled-state-mineonly"] = "Включено, показывать только мои ауры"
-L["options:auras:pvp-state-dontshowinpvp"] = "Не отображать эту ауру в PvP битвах"
-L["options:auras:pvp-state-indefinite"] = "Отображать эту ауру в PvP битвах"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "Отображать эту ауру только в PvP битвах"
+L["options:auras:show-on-npcs"] = "Показывать эту ауру только на НПС"
+L["options:auras:show-on-npcs-and-players"] = "Показывать эту ауру на игроках и НПС"
+L["options:auras:show-on-players"] = "Показывать эту ауру только на игроках"
 L["options:borders:BORDER_TYPE_BUILTIN"] = "Встроенный"
 L["options:borders:BORDER_TYPE_CUSTOM"] = "Пользовательский"
 L["options:borders:border-file-path"] = "Путь до файла текстуры границы (начинается с 'Interface\\')"
@@ -113,21 +117,21 @@ L["options:size-and-position:anchor-point-to-nameplate"] = "Точка креп�
 --[[Translation missing --]]
 L["options:size-and-position:custom-sorting:tooltip"] = [=[Rules:
   - code must be an unnamed function with 2 arguments. These arguments are tables, representing auras to compare
-  - this function must return 'true' if the first aura should be placed before the second aura, and vice versa
+  - this function must return true if the first aura should be placed before the second aura, and false otherwise
   - sorting is done quite often, so don't make sorting function too heavy
   - don't modify content of aura's table unless you REALLY know what you are doing
   - double-check any code you got from strangers
 
 Aura's table content:
-  - .duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
-  - .expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
-  - .stacks - number of stacks (type: number)
-  - .spellID - ID of aura (type: number)
-  - .spellName - name of aura (type: string)
+  - aura.duration - contains duration of aura in seconds. If aura is permanent, value of this field is 0. (type: number)
+  - aura.expires - time when aura will finish. You can compare it with GetTime(). If aura is permanent, value of this field is 0. (type: number)
+  - aura.stacks - number of stacks (type: number)
+  - aura.spellID - ID of aura (type: number)
+  - aura.spellName - name of aura (type: string)
 
-Built-in sorting functions:
-  - sort_time(aura1, aura2) - sort by aura's remaining time
-  - sort_size(aura1, aura2) - sort by icon's size
+Built-in sorting functions (result is a boolean value):
+  - local result = sort_time(aura1, aura2) - sort by aura's remaining time
+  - local result = sort_size(aura1, aura2) - sort by icon's size
 ]=]
 L["options:size-and-position:icon-align"] = "Выравнивание иконок"
 L["options:size-and-position:icon-align:bottom-left"] = "Горизонтально: вниз / Вертикально: влево"
@@ -243,9 +247,6 @@ L["options:auras:enabled-state:tooltip"] =
 %s: показывать все ауры]=]
 L["options:auras:enabled-state-all"] = "Включено, показывать все ауры"
 L["options:auras:enabled-state-mineonly"] = "Включено, показывать только мои ауры"
-L["options:auras:pvp-state-dontshowinpvp"] = "Не отображать эту ауру в PvP битвах"
-L["options:auras:pvp-state-indefinite"] = "Отображать эту ауру в PvP битвах"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "Отображать эту ауру только в PvP битвах"
 L["options:category:apps"] = "Дополнения"
 L["options:category:interrupts"] = "Прерывания"
 L["options:general:always-show-my-auras:tooltip"] = "Это высший по приоритету фильтр. Если он включен, ваши ауры будут отображаться вне зависимости от других фильтров"
@@ -359,5 +360,8 @@ L["options:spells:animation-relative:tooltip"] =
 Если эта опция выключена, то анимация будет появляться когда оставшееся время ауры меньше, чем абсолютное значение на слайдере (в секундах).]];
 L["options:size-and-position:icon-zoom"] = "Увеличение иконок";
 L["icon-sort-mode:custom"] = "Пользовательский";
+L["options:auras:show-on-npcs-and-players"] = "Показывать эту ауру на игроках и НПС"
+L["options:auras:show-on-players"] = "Показывать эту ауру только на игроках"
+L["options:auras:show-on-npcs"] = "Показывать эту ауру только на НПС"
 
 --@end-debug@]===]

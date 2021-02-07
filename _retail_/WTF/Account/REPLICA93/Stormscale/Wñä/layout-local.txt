@@ -34,6 +34,13 @@ X: -15
 Y: 0
 W: 192
 H: 192
+Frame: TargetFrameSpellBar
+FrameLevel: 1
+Anchor: CENTER
+X: -195
+Y: 145
+W: 150
+H: 10
 Frame: FocusFrameSpellBar
 FrameLevel: 1
 Anchor: LEFT
@@ -111,13 +118,6 @@ X: 0
 Y: 200
 W: 570
 H: 155
-Frame: TargetFrameSpellBar
-FrameLevel: 1
-Anchor: CENTER
-X: -195
-Y: 145
-W: 150
-H: 10
 Frame: VehicleSeatIndicator
 FrameLevel: 1
 Anchor: TOPRIGHT

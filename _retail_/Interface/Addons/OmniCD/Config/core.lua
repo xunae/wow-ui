@@ -48,7 +48,9 @@ do
 
 	for i = 1, #E.unitFrameData do
 		local uf = E.unitFrameData[i][1]
-		t[i] = uf
+		if not strfind(uf, "-") then
+			t[#t + 1] = uf
+		end
 	end
 
 	fields["Supported UI"] = E.FormatConcat(t, "%s, ")

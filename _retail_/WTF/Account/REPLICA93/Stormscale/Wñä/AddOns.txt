@@ -107,3 +107,4 @@ BigWigs_Shadowlands: enabled
 Myslot: disabled
 Neuron: disabled
 Masque_Caith: disabled
+FriendListColors: disabled

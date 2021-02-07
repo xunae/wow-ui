@@ -52,27 +52,26 @@ L["Magic"] = "魔法"
 L["Options are not available in combat!"] = "选项在战斗中不可用!"
 L["options:alpha:alpha"] = "图标透明度（不包括目标姓名板）"
 L["options:alpha:alpha-target"] = "图标透明度（目标姓名板）"
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "如果没有选择目标，使用目标的透明度显示光环。"
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "透明度"
 L["options:apps:dispellable-spells"] = "在敌方姓名板上显示可驱散/可偷取的光环"
 L["options:apps:dispellable-spells:black-list-button"] = "打开黑名单"
 L["options:apps:dispellable-spells:tooltip"] = "在敌方姓名板上显示可驱散/可偷取的光环，这些光环边缘微亮并且是默认大小"
---[[Translation missing --]]
-L["options:apps:dr"] = "Enable display of diminishing return (beta)"
---[[Translation missing --]]
-L["options:apps:dr:pve"] = "PvE (stun only)"
---[[Translation missing --]]
+L["options:apps:dr"] = "启用收益递减显示 (beta)"
+L["options:apps:dr:pve"] = "PvE（仅限眩晕）"
 L["options:apps:dr:pvp"] = "PvP"
 L["options:apps:explosive-orbs:tooltip"] = [=[在邪能爆炸球的姓名版上方显示一个特殊光环（大秘境易爆词缀）
 
 这个光环将会发亮并且是默认大小]=]
+L["options:apps:spiteful"] = "高亮显示怨毒（怨毒大秘境词缀）"
 L["options:auras:enabled-state:tooltip"] = [=[%s：不显示光环
 %s：如果是你施放的法术则显示光环
 %s：显示全部光环]=]
 L["options:auras:enabled-state-all"] = "开启，显示全部光环"
 L["options:auras:enabled-state-mineonly"] = "打开,仅显示我的光环"
-L["options:auras:pvp-state-dontshowinpvp"] = "在PVP时不显示这个光环"
-L["options:auras:pvp-state-indefinite"] = "在PvP战斗中显示此光环"
-L["options:auras:pvp-state-onlyduringpvpbattles"] = "仅在PVP时显示这个光环"
+L["options:auras:show-on-npcs"] = "仅在NPC上显示这个光环"
+L["options:auras:show-on-npcs-and-players"] = "在玩家和NPC上显示这个光环"
+L["options:auras:show-on-players"] = "仅在玩家上显示这个光环"
 L["options:borders:BORDER_TYPE_BUILTIN"] = "内置"
 L["options:borders:BORDER_TYPE_CUSTOM"] = "自定义"
 L["options:borders:border-file-path"] = "边框材质文件路径 (始于 'Interface\\')"
@@ -90,8 +89,7 @@ L["options:general:icon-grow-direction"] = "图标增长方向"
 L["options:general:show-aura-tooltip"] = "当鼠标在光环图标上悬停时显示光环名称"
 L["options:general:show-cooldown-animation"] = "显示冷却动画"
 L["options:general:show-cooldown-text"] = "显示光环的剩余时间"
---[[Translation missing --]]
-L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
+L["options:general:show-on-target-only"] = "仅在目标姓名板上显示光环"
 L["options:general:show-stacks"] = "显示光环的层数"
 L["options:general:test-mode"] = "测试模式"
 L["options:glow-type"] = "发光类型"
