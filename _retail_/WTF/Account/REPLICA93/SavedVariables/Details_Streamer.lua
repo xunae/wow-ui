@@ -28,35 +28,35 @@ Details_StreamerDB = {
 		["Xunz - Stormscale"] = "Xûñä - Ravencrest",
 		["Xunae - Stormreaver"] = "Xûñä - Ravencrest",
 		["Wluna - Draenor"] = "Xûñä - Ravencrest",
-		["Lightescp - Draenor"] = "Xûñä - Ravencrest",
+		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
 		["Xûñà - Ravencrest"] = "Xûñä - Ravencrest",
 		["Zunae - Draenor"] = "Xûñä - Ravencrest",
 		["Xunawl - Draenor"] = "Xûñä - Ravencrest",
 		["Xunadwarf - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xã - Draenor"] = "Xûñä - Ravencrest",
-		["Mktja - Draenor"] = "Xûñä - Ravencrest",
+		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
 		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
-		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
-		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
+		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
 		["Xñä - Draenor"] = "Xûñä - Ravencrest",
 		["Xuna - Ravencrest"] = "Xûñä - Ravencrest",
 		["Spazshaman - Stormscale"] = "Xûñä - Ravencrest",
-		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
-		["Xunae - Draenor"] = "Xûñä - Ravencrest",
+		["Xunapala - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Níeze - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xunaw - Draenor"] = "Xûñä - Ravencrest",
 		["Delimn - Dunemaul"] = "Xûñä - Ravencrest",
 		["Xuna - Arena Champions - EU"] = "Xûñä - Ravencrest",
-		["Níeze - Ravencrest"] = "Xûñä - Ravencrest",
-		["Xunapala - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Xunae - Draenor"] = "Xûñä - Ravencrest",
+		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
 		["Xûñä - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xñæ - Draenor"] = "Xûñä - Ravencrest",
-		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
-		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
+		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Mktja - Draenor"] = "Xûñä - Ravencrest",
 		["Wñä - Stormscale"] = "Xûñä - Ravencrest",
-		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
+		["Lightescp - Draenor"] = "Xûñä - Ravencrest",
 		["Xüñâ - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xûñä - Stormscale"] = "Xûñä - Ravencrest",
 		["Æñ - Draenor"] = "Xûñä - Ravencrest",
@@ -91,6 +91,27 @@ Details_StreamerDB = {
 			["main_frame_locked"] = true,
 			["row_texture"] = "Details Serenity",
 			["main_frame_strata"] = "LOW",
+			["font_size"] = 12,
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 15,
+			["y"] = -28.9441528320313,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["use_spark"] = true,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -102,27 +123,6 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 15,
-			["use_spark"] = true,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["y"] = -28.9441528320313,
-			["font_size"] = 12,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,

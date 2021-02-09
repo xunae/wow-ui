@@ -372,7 +372,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c4f0"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -391,7 +391,7 @@ PremadeGroupsFilterState = {
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "heals<=0 and warriors == 1",
+		["expression"] = "warriors == 1 and members == 2",
 		["difficulty"] = {
 			["act"] = false,
 			["val"] = 3,

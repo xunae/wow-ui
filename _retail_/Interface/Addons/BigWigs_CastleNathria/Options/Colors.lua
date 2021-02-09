@@ -106,7 +106,7 @@ BigWigs:AddColors("The Council of Blood", {
 	[331634] = {"blue","green","orange"},
 	[337110] = "yellow",
 	[346303] = "orange",
-	[346651] = {"blue","cyan"},
+	[346651] = {"blue","orange"},
 	[346657] = "red",
 	[346681] = {"blue","cyan","orange"},
 	[346690] = {"blue","purple"},

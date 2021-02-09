@@ -26,18 +26,18 @@ REFlexSettings = {
 REFlexDatabase = {
 	{
 		["Map"] = 617,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 67,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 6,
 		["Time"] = 1612355550,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Daq", -- [1]
@@ -275,16 +275,16 @@ REFlexDatabase = {
 		},
 		["PlayersNum"] = 6,
 		["Duration"] = 45,
-		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
+		["Season"] = 30,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612533373,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
 		["PlayerNum"] = 6,
-		["Season"] = 30,
+		["Hidden"] = false,
 	}, -- [2]
 	{
 		["Map"] = 1505,
@@ -406,31 +406,31 @@ REFlexDatabase = {
 		},
 		["PlayersNum"] = 6,
 		["Duration"] = 204,
-		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
+		["Season"] = 30,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612533708,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
 		["PlayerNum"] = 6,
-		["Season"] = 30,
+		["Hidden"] = false,
 	}, -- [3]
 	{
 		["Map"] = 980,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 48,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 5,
 		["Time"] = 1612683001,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Smygiz-TheMaelstrom", -- [1]
@@ -550,18 +550,18 @@ REFlexDatabase = {
 	}, -- [4]
 	{
 		["Map"] = 1504,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 130,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 3,
 		["Time"] = 1612683322,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Endstationx-Blackhand", -- [1]
@@ -681,18 +681,18 @@ REFlexDatabase = {
 	}, -- [5]
 	{
 		["Map"] = 572,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 27,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 6,
 		["Time"] = 1612683500,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Marypopwings-Blackhand", -- [1]
@@ -812,18 +812,18 @@ REFlexDatabase = {
 	}, -- [6]
 	{
 		["Map"] = 1825,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 104,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 3,
 		["Time"] = 1612683818,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Droker", -- [1]
@@ -943,18 +943,18 @@ REFlexDatabase = {
 	}, -- [7]
 	{
 		["Map"] = 2167,
-		["Season"] = 30,
+		["Hidden"] = false,
 		["PlayersNum"] = 6,
 		["Duration"] = 104,
-		["Hidden"] = false,
+		["Season"] = 30,
 		["PlayerNum"] = 2,
 		["Time"] = 1612684076,
-		["isBrawl"] = false,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
-		["isArena"] = true,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Kakdela", -- [1]
@@ -1074,11 +1074,6 @@ REFlexDatabase = {
 	}, -- [8]
 	{
 		["Map"] = 980,
-		["PlayerSide"] = 0,
-		["PlayersNum"] = 6,
-		["Duration"] = 147,
-		["Hidden"] = false,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Lumornial-Eredar", -- [1]
@@ -1195,21 +1190,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 147,
+		["Season"] = 30,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612684383,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
 		["PlayerNum"] = 6,
-		["Season"] = 30,
+		["Hidden"] = false,
 	}, -- [9]
 	{
 		["Map"] = 572,
-		["PlayerSide"] = 0,
-		["PlayersNum"] = 6,
-		["Duration"] = 39,
-		["Hidden"] = false,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Rãddy-Ravencrest", -- [1]
@@ -1326,21 +1321,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 39,
+		["Season"] = 30,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612684634,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
 		["PlayerNum"] = 6,
-		["Season"] = 30,
+		["Hidden"] = false,
 	}, -- [10]
 	{
 		["Map"] = 1552,
-		["PlayerSide"] = 1,
-		["PlayersNum"] = 6,
-		["Duration"] = 119,
-		["Hidden"] = false,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Oulfarran", -- [1]
@@ -1457,13 +1452,18 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 119,
+		["Season"] = 30,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612685031,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
 		["PlayerNum"] = 6,
-		["Season"] = 30,
+		["Hidden"] = false,
 	}, -- [11]
 }
 REFlexHonorDatabase = {

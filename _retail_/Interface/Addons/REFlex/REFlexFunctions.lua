@@ -102,7 +102,7 @@ function RE:GetArenaTeamCSV(databaseID, player)
 	local team = {}
 	for i=1, #RE.Database[databaseID].Players do
 		if RE.Database[databaseID].Players[i][6] == faction then
-			tinsert(team, RE.Database[databaseID].Players[i][9].."-"..RE.Database[databaseID].Players[i][16])
+			tinsert(team, RE.Database[databaseID].Players[i][9].."-"..RE.Database[databaseID].Players[i][16].."-"..RE.Database[databaseID].Players[i][1])
 		end
 	end
 	tsort(team)
@@ -268,7 +268,7 @@ function RE:GetBGPlace(matchData, onlyFaction)
 	local placeKB, placeHK, placeHonor, placeDamage, placeHealing = 1, 1, 1, 1, 1
 	local playerData = matchData.Players[matchData.PlayerNum]
 	for i=1, #matchData.Players do
-		if matchData.Players[i][1] ~= RE.PlayerName and (not onlyFaction or (onlyFaction and matchData.Players[i][6] == matchData.PlayerSide)) then
+		if matchData.Players[i][1]:lower() ~= RE.PlayerName and (not onlyFaction or (onlyFaction and matchData.Players[i][6] == matchData.PlayerSide)) then
 			if playerData[2] < matchData.Players[i][2] then
 				placeKB = placeKB + 1
 			end
@@ -489,7 +489,7 @@ end
 
 function RE:DateClean(timeRaw)
 	-- Barbarian friendly
-	if RE.PlayerZone == "US" then
+	if RE.PlayerZone == "US" and not RE.Settings.ForceCivilisedClock then
 		return date("%I:%M %p %m/%d/%y", timeRaw + (RE.PlayerTimezone * 3600))
 	else
 		return date("%H:%M %d.%m.%y", timeRaw + (RE.PlayerTimezone * 3600))
