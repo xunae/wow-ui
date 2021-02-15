@@ -10,6 +10,12 @@ if L then
 	L.killed = "%s 죽음"
 end
 
+L = BigWigs:NewBossLocale("Sun King's Salvation", "koKR")
+if L then
+	--L.shield_removed = "%s removed after %.1fs" -- "Shield removed after 1.1s" s = seconds
+	--L.shield_remaining = "%s remaining: %s (%.1f%%)" -- "Shield remaining: 2.1K (5.3%)"
+end
+
 L = BigWigs:NewBossLocale("Hungering Destroyer", "koKR")
 if L then
 	L.miasma = "독기" -- Short for Gluttonous Miasma
@@ -156,4 +162,12 @@ if L then
 	L.deplina = "디플리나"
 	L.dragost = "드래고스트"
 	L.kullan = "쿨란"
+
+	--[[ Shriekwing -> Xy'mox ]]--
+	L.antiquarian = "사악한 골동품 수집가"
+	L.conservator = "나스리아 정원지기"
+	L.archivist = "나스리아 기록관"
+
+	--[[ Sludgefist -> Stone Legion Generals ]]--
+	L.goliath = "돌 군단 거수"
 end

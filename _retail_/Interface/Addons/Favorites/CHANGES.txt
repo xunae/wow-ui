@@ -1,10 +1,13 @@
-lightweight tag 398efbe055cf0ba6beb7dc4f91d624edb4ffaab6 v3.5
+lightweight tag a168a15c32aa8b10893397f635250253109ca3f3 3.6
 Author:	Kyle Keller <kskeller@live.com>
-Date:	Wed Oct 28 14:09:41 2020 -0400
+Date:	Fri Feb 12 22:42:06 2021 -0500
 
-commit 398efbe055cf0ba6beb7dc4f91d624edb4ffaab6
+commit a168a15c32aa8b10893397f635250253109ca3f3
 Author: Kyle Keller <kskeller@live.com>
-Date:   Wed Oct 28 14:09:41 2020 -0400
+Date:   Fri Feb 12 22:42:06 2021 -0500
 
-    Ace Update
+    Bug fix and add class earch
+    
+    - Now can search by class name
+    - Bug fixed with searching
 

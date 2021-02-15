@@ -1864,12 +1864,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Echelon",
 		},
-		[328667] = {
-			["school"] = 16,
+		[341442] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Reanimated Mage",
+			["source"] = "Erupting Ooze",
 		},
 		[323393] = {
 			["school"] = 1,
@@ -2257,12 +2257,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tred'ova",
 		},
-		[341442] = {
-			["school"] = 8,
+		[328667] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Erupting Ooze",
+			["source"] = "Reanimated Mage",
 		},
 		[320012] = {
 			["school"] = 1,

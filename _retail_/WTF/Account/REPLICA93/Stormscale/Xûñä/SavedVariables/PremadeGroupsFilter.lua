@@ -349,7 +349,7 @@ PremadeGroupsFilterState = {
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "heals < 1 and members == 2",
+		["expression"] = "heals < 1 and shamans == 1",
 		["difficulty"] = {
 			["val"] = 3,
 			["act"] = false,

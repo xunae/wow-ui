@@ -55,10 +55,10 @@ if L then
 	L.dance_assist_down = "|T450905:0:0:0:0:64:64:4:60:4:60|t Dance Down |T450905:0:0:0:0:64:64:4:60:4:60|t"
 	L.dance_assist_left = "|T450906:0:0:0:0:64:64:4:60:4:60|t Dance Left |T450906:0:0:0:0:64:64:4:60:4:60|t"
 	-- These need to match the in-game boss yells
-	L.dance_yell_up = "Forward" -- Prance Forward!
-	L.dance_yell_right = "right" -- Shimmy right!
-	L.dance_yell_down = "down" -- Boogie down!
-	L.dance_yell_left = "left" -- Sashay left!
+	L.dance_yell_up = "Prance Forward" -- Prance Forward!
+	L.dance_yell_right = "Shimmy right" -- Shimmy right!
+	L.dance_yell_down = "Boogie down" -- Boogie down!
+	L.dance_yell_left = "Sashay left" -- Sashay left!
 end
 
 --------------------------------------------------------------------------------
@@ -356,7 +356,7 @@ function mod:DuelistsRiposte(args)
 end
 
 function mod:DuelistsRiposteApplied(args)
-	self:StackMessage(args.spellId, args.destName, args.amount, "purple")
+	self:NewStackMessage(args.spellId, "purple", args.destName, args.amount, 2)
 end
 
 do
@@ -455,7 +455,7 @@ end
 
 function mod:SoulSpikesApplied(args)
 	local amount = args.amount or 1
-	self:StackMessage(args.spellId, args.destName, amount, "cyan")
+	self:NewStackMessage(args.spellId, "orange", args.destName, amount)
 	self:PlaySound(args.spellId, "info")
 end
 
@@ -477,10 +477,10 @@ end
 function mod:EvasiveLungeApplied(args)
 	local amount = args.amount or 1
 	if self:Me(args.destGUID) and not self:Tank() then
-		self:StackMessage(327497, args.destName, amount, "blue")
+		self:NewStackMessage(327497, "blue", args.destName, amount)
 		self:PlaySound(327497, "alarm")
 	elseif self:Tank() and self:Tank(args.destName) then
-		self:StackMessage(327497, args.destName, amount, "purple")
+		self:NewStackMessage(327497, "purple", args.destName, amount, 2)
 	end
 end
 

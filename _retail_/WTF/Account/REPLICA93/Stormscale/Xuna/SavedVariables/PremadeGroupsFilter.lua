@@ -83,7 +83,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c6f0"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -372,7 +372,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c4f0"] = {
-		["enabled"] = false,
+		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -391,7 +391,7 @@ PremadeGroupsFilterState = {
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "warriors == 1 and members == 2",
+		["expression"] = " members == 2 and healers < 1",
 		["difficulty"] = {
 			["act"] = false,
 			["val"] = 3,
@@ -402,9 +402,9 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 		["heals"] = {
-			["max"] = "0",
+			["max"] = "",
 			["min"] = "",
-			["act"] = true,
+			["act"] = false,
 		},
 		["defeated"] = {
 			["max"] = "",

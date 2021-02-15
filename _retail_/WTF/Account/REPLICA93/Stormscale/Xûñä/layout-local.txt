@@ -135,8 +135,8 @@ H: 155
 Frame: TargetFrameSpellBar
 FrameLevel: 1
 Anchor: CENTER
-X: -196
-Y: 131
+X: -195
+Y: 145
 W: 150
 H: 10
 Frame: TargetFrame

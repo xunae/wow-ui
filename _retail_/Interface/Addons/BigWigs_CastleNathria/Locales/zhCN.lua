@@ -10,6 +10,12 @@ if L then
 	L.killed = "%s 已击杀"
 end
 
+L = BigWigs:NewBossLocale("Sun King's Salvation", "zhCN")
+if L then
+	L.shield_removed = "%s在%.1f秒后移除" -- "Shield removed after 1.1s" s = seconds
+	L.shield_remaining = "%s剩余：%s（%.1f%%）" -- "Shield remaining: 2.1K (5.3%)"
+end
+
 L = BigWigs:NewBossLocale("Hungering Destroyer", "zhCN")
 if L then
 	L.miasma = "瘴气" -- Short for Gluttonous Miasma
@@ -156,4 +162,12 @@ if L then
 	L.deplina = "德普莉娜"
 	L.dragost = "德拉苟斯特"
 	L.kullan = "库兰"
+
+	--[[ Shriekwing -> Xy'mox ]]--
+	L.antiquarian = "阴险的古董收藏家"
+	L.conservator = "纳斯利亚管理员"
+	L.archivist = "纳斯利亚档案员"
+
+	--[[ Sludgefist -> Stone Legion Generals ]]--
+	L.goliath = "顽石军团巨怪"
 end

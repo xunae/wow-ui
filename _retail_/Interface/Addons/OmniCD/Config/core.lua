@@ -121,6 +121,11 @@ local function GetOptions()
 									order = 0,
 									type = "description",
 								},
+								notice2 = {
+									name = "|cffff2020None of the CD counter skins support modrate. Timers will fluctuate erratically whenever CD recovery rate is modulated.",
+									order = 1,
+									type = "description",
+								},
 								lb1 = {
 									name = "\n", order = 2, type = "description",
 								},

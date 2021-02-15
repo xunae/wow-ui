@@ -1,6 +1,18 @@
 local E, L, C = select(2, ...):unpack()
 
 E.changelog = [=[
+v2.5.12
+    Blizzard PvP Hotfixes
+        FEBRUARY 1
+            Warrior
+                Master and Commander reduces the cooldown of Rallying Cry by 60 seconds (was 120 seconds).
+        FEBRUARY 9
+            Mage
+                Pyrokinesis reduces Combustion’s cooldown by 3 seconds (was 5 seconds).
+            Monk
+                Chrysalis reduces Life Cocoon’s cooldown by 40 seconds (was 25 seconds).
+    Fixed borders on some UF addons.
+
 v2.5.11a
     Bug Fixes
         Fixed sync failing in queued instances when character data isn't ready from the server.
@@ -15,7 +27,6 @@ v2.5.10
         Combustion's CD reduction fixed.
         Cooldown reduction by spending resources will correctly apply to synced players.
         Heartstop Aura (Frost DK - PvP Talent) will correctly apply reduced CD recovery rate. (Arena only)
-        |cffff2020None of the CD counter skins support modrate. Timers will fluctuate erratically whenever CD recovery rate is modulated.|r
     Feature Updates
         New Font and Texture option added.
         Highlighting: Added a weaker glow effect and removed Animate option.
