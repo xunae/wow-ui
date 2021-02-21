@@ -9,7 +9,7 @@ local _, addonTable = ...;
 
 local buildTimestamp = "DEVELOPER COPY";
 --@non-debug@
-buildTimestamp = "90002.6-release";
+buildTimestamp = "90002.7-release";
 --@end-non-debug@
 
 local LBG_ShowOverlayGlow, LBG_HideOverlayGlow = NAuras_LibButtonGlow.ShowOverlayGlow, NAuras_LibButtonGlow.HideOverlayGlow;
@@ -220,12 +220,7 @@ do
 					order = 1,
 					name = 'Open config dialog',
 					desc = nil,
-					func = function()
-						addonTable.ShowGUI();
-						if (addonTable.GUIFrame) then
-							InterfaceOptionsFrameCancel:Click();
-						end
-					end,
+					func = addonTable.ShowGUI,
 				},
 			},
 		});

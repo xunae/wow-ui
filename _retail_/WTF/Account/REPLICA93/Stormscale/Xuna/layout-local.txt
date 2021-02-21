@@ -38,7 +38,7 @@ Frame: TargetFrameSpellBar
 FrameLevel: 1
 Anchor: CENTER
 X: -195
-Y: 145
+Y: 133
 W: 150
 H: 10
 Frame: FocusFrameSpellBar
@@ -69,13 +69,6 @@ X: 0
 Y: 160
 W: 195
 H: 13
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: TOP
-X: -297
-Y: -136
-W: 232
-H: 100
 Frame: FocusFrame
 FrameLevel: 1
 Anchor: LEFT
@@ -120,9 +113,9 @@ W: 256
 H: 58
 Frame: MAOptions
 FrameLevel: 1
-Anchor: CENTER
-X: 167
-Y: -20
+Anchor: RIGHT
+X: -258
+Y: 31
 W: 497
 H: 513
 Frame: BagSync_MinimapButton
@@ -139,3 +132,10 @@ X: 0
 Y: 200
 W: 570
 H: 155
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: TOP
+X: -297
+Y: -136
+W: 232
+H: 100

@@ -1,7 +1,7 @@
 
 OmniCCDB = {
 	["global"] = {
-		["addonVersion"] = "9.0.2",
+		["addonVersion"] = "9.0.5",
 		["dbVersion"] = 5,
 	},
 	["profileKeys"] = {
@@ -68,7 +68,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -79,7 +78,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -129,17 +128,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["yOff"] = -1,
+			["scaleText"] = true,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.74,
 			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
+			["yOff"] = -1,
 			["fontSize"] = 15,
 		},
 		["Ignore"] = {
@@ -147,17 +146,17 @@ OmniCC4Config = {
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["minDuration"] = 2,
+			["yOff"] = 0,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -204,4 +203,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

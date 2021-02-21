@@ -26,3 +26,4 @@ Myslot: disabled
 Masque_Caith: disabled
 REFlex: enabled
 Masque: enabled
+Favorites: enabled

@@ -8,29 +8,20 @@ L["Add spell"] = "Agregar hechizo"
 L["Always show auras cast by myself"] = "Siempre mostrar auras lanzadas por mí"
 L["Anchor point"] = "Punto de anclaje"
 L["Anchor to icon"] = "Anclar al icono"
---[[Translation missing --]]
-L["anchor-point:bottom"] = "Bottom"
---[[Translation missing --]]
-L["anchor-point:bottomleft"] = "Bottom left"
---[[Translation missing --]]
-L["anchor-point:bottomright"] = "Bottom right"
---[[Translation missing --]]
-L["anchor-point:center"] = "Center"
---[[Translation missing --]]
-L["anchor-point:left"] = "Left"
---[[Translation missing --]]
-L["anchor-point:right"] = "Right"
---[[Translation missing --]]
-L["anchor-point:top"] = "Top"
---[[Translation missing --]]
-L["anchor-point:topleft"] = "Top left"
---[[Translation missing --]]
-L["anchor-point:topright"] = "Top right"
+L["anchor-point:bottom"] = "Inferior"
+L["anchor-point:bottomleft"] = "Inferior izquierda"
+L["anchor-point:bottomright"] = "Inferior derecha"
+L["anchor-point:center"] = "Centro"
+L["anchor-point:left"] = "Izquierda"
+L["anchor-point:right"] = "Derecha"
+L["anchor-point:top"] = "Arriba"
+L["anchor-point:topleft"] = "Arriba izquierda"
+L["anchor-point:topright"] = "Arriba derecha"
 L["Any"] = "Cualquiera"
 L["Aura type"] = "Tipo de aura"
 L["Border thickness"] = "Grosor del borde"
 L["Buff"] = "Beneficio"
-L["Check spell ID"] = [=[Comprobar ID de hechizo
+L["Check spell ID"] = [=[Comprobar ID del hechizo
 (comma-separated)]=]
 L["Click to select spell"] = "Haz click para elegir el hechizo"
 L["Curse"] = "Maldición"
@@ -39,63 +30,42 @@ L["Delete all spells"] = "Eliminar todos los hechizos"
 L["Delete spell"] = "Eliminar hechizo"
 L["Disabled"] = "Desactivado"
 L["Disease"] = "Enfermedad"
-L["Display auras on nameplates of friendly units"] = "Mostrar auras en los nombres de las unidades aliadas"
-L["Display auras on player's nameplate"] = "Mostrar auras en el nombre del jugador"
+L["Display auras on nameplates of friendly units"] = "Mostrar auras en las placas de nombre de las unidades amistosas"
+L["Display auras on player's nameplate"] = "Mostrar auras en la placa de nombre del jugador"
 L["Do you really want to delete ALL spells?"] = "¿Seguro que quieres eliminar TODOS los hechizos?"
 L["Font"] = "Fuente de letra"
-L["Font scale"] = "Tamaño de la fuente"
+L["Font scale"] = "Escala de la fuente"
 L["Font size"] = "Tamaño de fuente"
 L["General"] = "General"
 L["Icon borders"] = "Bordes del icono"
---[[Translation missing --]]
-L["Icon X-coord offset"] = "Icon X-coord offset"
---[[Translation missing --]]
-L["Icon Y-coord offset"] = "Icon Y-coord offset"
---[[Translation missing --]]
-L["icon-grow-direction:down"] = "Down"
---[[Translation missing --]]
-L["icon-grow-direction:left"] = "Left"
---[[Translation missing --]]
-L["icon-grow-direction:right"] = "Right"
---[[Translation missing --]]
-L["icon-grow-direction:up"] = "Up"
---[[Translation missing --]]
-L["icon-sort-mode:by-aura-type+by-expire-time"] = "By aura type + by expiration time"
---[[Translation missing --]]
-L["icon-sort-mode:by-expire-time"] = "By expiration time"
---[[Translation missing --]]
-L["icon-sort-mode:by-icon-size"] = "By icon size"
---[[Translation missing --]]
-L["icon-sort-mode:custom"] = "Custom"
---[[Translation missing --]]
-L["icon-sort-mode:none"] = "Without sorting"
+L["Icon X-coord offset"] = "Desplazamiento de la coordenada X del icono"
+L["Icon Y-coord offset"] = "Desplazamiento de la coordenada Y del icono"
+L["icon-grow-direction:down"] = "Abajo"
+L["icon-grow-direction:left"] = "Izquierda"
+L["icon-grow-direction:right"] = "Derecha"
+L["icon-grow-direction:up"] = "Arriba"
+L["icon-sort-mode:by-aura-type+by-expire-time"] = "Por tipo de aura + por duración restante"
+L["icon-sort-mode:by-expire-time"] = "Por duración restante"
+L["icon-sort-mode:by-icon-size"] = "Por tamaño del icono"
+L["icon-sort-mode:custom"] = "Personalizado"
+L["icon-sort-mode:none"] = "Sin ordenar"
 L["Magic"] = "Magia"
-L["Options are not available in combat!"] = "¡Las opciones no están disponibles en combate!"
---[[Translation missing --]]
-L["options:alpha:alpha"] = "Alpha of the icons (except the nameplate of your target)"
---[[Translation missing --]]
-L["options:alpha:alpha-target"] = "Alpha of the icons on the nameplate of your target"
---[[Translation missing --]]
-L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with target's alpha if no target selected"
---[[Translation missing --]]
-L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Alpha"
---[[Translation missing --]]
-L["options:apps:dispellable-spells"] = "Show dispellable/stealable auras on enemy nameplates"
---[[Translation missing --]]
-L["options:apps:dispellable-spells:black-list-button"] = "Open blacklist"
+L["Options are not available in combat!"] = "¡La configuración no está disponible en combate!"
+L["options:alpha:alpha"] = "Transparencia de los iconos (excepto los de la placa de nombre del objetivo)"
+L["options:alpha:alpha-target"] = "Transparencia de los iconos de la placa de nombre del objetivo"
+L["options:alpha:use-target-alpha-if-not-target-selected"] = "Si no hay objetivo seleccionado, usar la configuración de transparencia de las auras del objetivo en todas las auras."
+L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Transparencia"
+L["options:apps:dispellable-spells"] = "Mostrar auras que se pueden disipar/robar en las placas de nombre de los enemigos"
+L["options:apps:dispellable-spells:black-list-button"] = "Lista Negra"
 --[[Translation missing --]]
 L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
---[[Translation missing --]]
-L["options:apps:dr"] = "Enable display of diminishing return (beta)"
---[[Translation missing --]]
-L["options:apps:dr:pve"] = "PvE (stun only)"
---[[Translation missing --]]
-L["options:apps:dr:pvp"] = "PvP"
+L["options:apps:dr"] = "Mostrar rendimiento decreciente (beta)"
+L["options:apps:dr:pve"] = "JcE (sólo aturdir)"
+L["options:apps:dr:pvp"] = "JcJ"
 --[[Translation missing --]]
 L["options:apps:explosive-orbs:tooltip"] = [=[Show special aura above Fel Explosive's nameplates (M+ Explosive Affix)
 This aura have a bright glow and default size]=]
---[[Translation missing --]]
-L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)"
+L["options:apps:spiteful"] = "Resaltar Rencorosa (Afijo M+)"
 L["options:auras:enabled-state:tooltip"] = [=[Activar/desactivar aura
 
 %s: el aura no se mostrará
@@ -103,51 +73,34 @@ L["options:auras:enabled-state:tooltip"] = [=[Activar/desactivar aura
 %s: mostrar todas las auras]=]
 L["options:auras:enabled-state-all"] = "Activado, mostrar todas las auras"
 L["options:auras:enabled-state-mineonly"] = "Activado, mostrar solo mis auras"
---[[Translation missing --]]
-L["options:auras:show-on-npcs"] = "Show this aura on NPC only"
---[[Translation missing --]]
-L["options:auras:show-on-npcs-and-players"] = "Show this aura on players and NPC"
---[[Translation missing --]]
-L["options:auras:show-on-players"] = "Show this aura on players only"
+L["options:auras:show-on-npcs"] = "Sólo mostrar esta aura en PNJ"
+L["options:auras:show-on-npcs-and-players"] = "Mostrar esta aura en jugadores y PNJ"
+L["options:auras:show-on-players"] = "Sólo mostrar esta aura en jugadores"
 --[[Translation missing --]]
 L["options:borders:BORDER_TYPE_BUILTIN"] = "Built-in"
---[[Translation missing --]]
-L["options:borders:BORDER_TYPE_CUSTOM"] = "Custom"
---[[Translation missing --]]
-L["options:borders:border-file-path"] = "Border texture file path (starts with 'Interface\\')"
---[[Translation missing --]]
-L["options:borders:border-type"] = "Border type"
---[[Translation missing --]]
-L["options:category:alpha"] = "Alpha"
+L["options:borders:BORDER_TYPE_CUSTOM"] = "Personalizado"
+L["options:borders:border-file-path"] = "Ruta del archivo de texturas de contorno (empieza con 'Interface\\')"
+L["options:borders:border-type"] = "Tipo de contorno"
+L["options:category:alpha"] = "Transparencia"
 --[[Translation missing --]]
 L["options:category:apps"] = "Apps"
---[[Translation missing --]]
-L["options:category:dispel"] = "Purge/steal"
---[[Translation missing --]]
-L["options:category:interrupts"] = "Interrupts"
---[[Translation missing --]]
-L["options:category:size-and-position"] = "Size & position"
---[[Translation missing --]]
-L["options:general:always-show-my-auras:tooltip"] = "This is top priority filter. If you enable this feature, your auras will be shown regardless of other filters"
+L["options:category:dispel"] = "Purgar/robar"
+L["options:category:interrupts"] = "Interrupciones"
+L["options:category:size-and-position"] = "Tamaño y posición"
+L["options:general:always-show-my-auras:tooltip"] = "Este filtro tiene máxima prioridad. Si activas esta opción, tus auras se mostrarán siempre, sin tener en cuenta los demás filtros."
 --[[Translation missing --]]
 L["options:general:full-opacity-always"] = ""
 L["options:general:hide-blizz-frames"] = "Ocultar los marcos de aura de Blizzard (es necesario recargar la UI)"
 --[[Translation missing --]]
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
---[[Translation missing --]]
-L["options:general:icon-grow-direction"] = "Icon growing direction"
---[[Translation missing --]]
-L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
---[[Translation missing --]]
-L["options:general:show-cooldown-animation"] = "Show cooldown animation"
---[[Translation missing --]]
-L["options:general:show-cooldown-text"] = "Show aura's remaining time"
---[[Translation missing --]]
-L["options:general:show-on-target-only"] = "Show auras on target's nameplate only"
+L["options:general:icon-grow-direction"] = "Dirección de crecimiento de los iconos"
+L["options:general:show-aura-tooltip"] = "Mostrar el nombre del aura al pasar el ratón sobre su icono"
+L["options:general:show-cooldown-animation"] = "Mostrar animación de tiempo de enfriamiento"
+L["options:general:show-cooldown-text"] = "Mostrar el tiempo restante del aura"
+L["options:general:show-on-target-only"] = "Solamente mostrar auras en las placas de nombre del objetivo"
 --[[Translation missing --]]
 L["options:general:show-stacks"] = "Show aura's stacks"
---[[Translation missing --]]
-L["options:general:test-mode"] = "Test mode"
+L["options:general:test-mode"] = "Modo de prueba"
 --[[Translation missing --]]
 L["options:glow-type"] = "Glow type"
 --[[Translation missing --]]
@@ -156,16 +109,11 @@ L["options:glow-type:GLOW_TYPE_ACTIONBUTTON"] = "Action button"
 L["options:glow-type:GLOW_TYPE_ACTIONBUTTON_DIM"] = "Action button (dim)"
 --[[Translation missing --]]
 L["options:glow-type:GLOW_TYPE_AUTOUSE"] = "Auto-use button"
---[[Translation missing --]]
-L["options:glow-type:GLOW_TYPE_NONE"] = "None"
---[[Translation missing --]]
-L["options:glow-type:GLOW_TYPE_PIXEL"] = "Pixel"
---[[Translation missing --]]
-L["options:interrupts:enable-interrupts"] = "Enable interrupt tracking"
---[[Translation missing --]]
-L["options:interrupts:enable-only-during-pvp-battles"] = "Enable during PvP battles only"
---[[Translation missing --]]
-L["options:interrupts:use-shared-icon-texture"] = "Use the same texture for all interrupt spells"
+L["options:glow-type:GLOW_TYPE_NONE"] = "Ninguno"
+L["options:glow-type:GLOW_TYPE_PIXEL"] = "Píxel"
+L["options:interrupts:enable-interrupts"] = "Activar rastreo de interrupciones"
+L["options:interrupts:enable-only-during-pvp-battles"] = "Activar solamente en combates JcJ"
+L["options:interrupts:use-shared-icon-texture"] = "Usar la misma textura para todos los hechizos de interrupción"
 --[[Translation missing --]]
 L["options:size-and-position:anchor-point-of-frame"] = "Anchor point to group of icons"
 --[[Translation missing --]]
@@ -191,18 +139,14 @@ Built-in sorting functions (result is a boolean value):
   - local result = sort_time(aura1, aura2) - sort by aura's remaining time
   - local result = sort_size(aura1, aura2) - sort by icon's size
 ]=]
---[[Translation missing --]]
-L["options:size-and-position:icon-align"] = "Alignment of icons"
+L["options:size-and-position:icon-align"] = "Alineamiento de los iconos"
 --[[Translation missing --]]
 L["options:size-and-position:icon-align:bottom-left"] = "Horizontal: bottom / Vertical: left"
---[[Translation missing --]]
-L["options:size-and-position:icon-align:center"] = "Center"
+L["options:size-and-position:icon-align:center"] = "Centro"
 --[[Translation missing --]]
 L["options:size-and-position:icon-align:top-right"] = "Horizontal: top / Vertical: right"
---[[Translation missing --]]
-L["options:size-and-position:icon-height"] = "Default icon height"
---[[Translation missing --]]
-L["options:size-and-position:icon-width"] = "Default icon width"
+L["options:size-and-position:icon-height"] = "Altura de iconos por defecto"
+L["options:size-and-position:icon-width"] = "Anchura de iconos por defecto"
 --[[Translation missing --]]
 L["options:size-and-position:icon-zoom"] = "Icon zoom"
 --[[Translation missing --]]
@@ -215,8 +159,7 @@ L["options:size-and-position:non-target-strata"] = "Layer of icons on non-target
 L["options:size-and-position:scale-target"] = "Scale of the icons on the nameplate of your target"
 --[[Translation missing --]]
 L["options:size-and-position:target-strata"] = "Layer of icons on target nameplate"
---[[Translation missing --]]
-L["options:spells:add-new-spell"] = "Click to add new spell"
+L["options:spells:add-new-spell"] = "Click para añadir un nuevo hechizo"
 --[[Translation missing --]]
 L["options:spells:animation-relative:tooltip"] = [=[This option changes the meaning of slider on the left.
 
@@ -243,27 +186,19 @@ If this option is unchecked, glow will appear when aura's remaining duration is 
 L["options:spells:icon-animation"] = "Icon animation"
 --[[Translation missing --]]
 L["options:spells:icon-animation-always"] = "Show animation all the time"
---[[Translation missing --]]
-L["options:spells:icon-animation-threshold"] = "Show animation if aura's remaining time is less than"
+L["options:spells:icon-animation-threshold"] = "Mostrar animación si el tiempo restante del aura es inferior a"
 --[[Translation missing --]]
 L["options:spells:icon-glow"] = "Show glow"
 --[[Translation missing --]]
 L["options:spells:icon-glow-always"] = "Show glow all the time"
 --[[Translation missing --]]
 L["options:spells:icon-glow-threshold"] = "Show glow if aura's remaining time is less than"
---[[Translation missing --]]
-L["options:spells:icon-height"] = "Icon height"
---[[Translation missing --]]
-L["options:spells:icon-width"] = "Icon width"
---[[Translation missing --]]
-L["options:spells:please-push-once-more"] = "Please push once more"
---[[Translation missing --]]
-L["options:spells:show-on-friends:warning0"] = [=[Please pay attention:
-You will not see this aura on friendly nameplates until you enable this option: <General> --> <Display auras on nameplates of friendly units>]=]
+L["options:spells:icon-height"] = "Altura del icono"
+L["options:spells:icon-width"] = "Anchura del icono"
+L["options:spells:please-push-once-more"] = "Por favor pulsa otra vez"
+L["options:spells:show-on-friends:warning0"] = "Atención: Esta aura no se mostrará en las placas de nombre amistosas hasta que se active la siguiente opción: <General> --> <Mostrar auras en las placas de nombre de las unidades amistosas>"
 L["options:timer-text:min-duration-to-display-tenths-of-seconds"] = "Duración mínima para mostrar décimas de segundo"
-L["options:timer-text:scale-font-size"] = [=[Modificar el tamaño de fuente
-de acuerdo con
-el tamaño del icono]=]
+L["options:timer-text:scale-font-size"] = "Escalar el tamaño de la fuente en relación al tamaño del icono"
 L["options:timer-text:text-color-note"] = [=[El color de texto cambiará
 de acuerdo con el tiempo restante:]=]
 L["Other"] = "Otras"
@@ -271,25 +206,19 @@ L["Please reload UI to apply changes"] = "Por favor, recargue la UI para aplicar
 L["Poison"] = "Veneno"
 L["Profiles"] = "Perfiles"
 L["Reload UI"] = "Recargar UI"
---[[Translation missing --]]
-L["Show border around buff icons"] = "Show border around buff icons"
---[[Translation missing --]]
-L["Show border around debuff icons"] = "Show border around debuff icons"
+L["Show border around buff icons"] = "Mostrar contorno en los iconos de beneficios"
+L["Show border around debuff icons"] = "Mostrar contorno en los iconos de perjuicios"
 L["Show this aura on nameplates of allies"] = "Mostrar este aura en los nombres de los aliados"
 L["Show this aura on nameplates of enemies"] = "Mostrar este aura en los nombres de los enemigos"
 L["Sort mode:"] = "Ordenar por:"
 L["Space between icons"] = "Espacio entre iconos"
 L["Spell seems to be nonexistent"] = "El hechizo no existe"
 L["Spells"] = "Hechizos"
---[[Translation missing --]]
-L["Stack text"] = "Stack text"
+L["Stack text"] = "Apilar texto"
 L["Text color"] = "Color de texto"
---[[Translation missing --]]
-L["Timer text"] = "Timer text"
+L["Timer text"] = "Texto de temporizador"
 L["Value must be a number"] = "El valor debe ser numérico"
---[[Translation missing --]]
-L["X offset"] = "X offset"
---[[Translation missing --]]
-L["Y offset"] = "Y offset"
+L["X offset"] = "Desplazamiento X"
+L["Y offset"] = "Desplazamiento Y"
 
 --@end-non-debug@

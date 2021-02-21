@@ -9,22 +9,15 @@ GlobalIgnoreDB = {
 		0, -- [6]
 		339, -- [7]
 		0, -- [8]
-		1419, -- [9]
+		1424, -- [9]
 		0, -- [10]
 		299, -- [11]
 	},
 	["typeList"] = {
 	},
-	["syncInfo"] = {
-	},
+	["openWithFriends"] = false,
 	["invertSpam"] = false,
 	["skipPrivate"] = true,
-	["ignoreList"] = {
-	},
-	["trackChanges"] = true,
-	["autoCount"] = 3,
-	["notes"] = {
-	},
 	["filterList"] = {
 		"([word=anal] or [contains=analan]) and ([link] or [words=2])", -- [1]
 		"[item=19019]", -- [2]
@@ -38,19 +31,27 @@ GlobalIgnoreDB = {
 		"[nonlatin]", -- [10]
 		"[contains=enchant] or [contains=boost]", -- [11]
 	},
-	["autoUpdate"] = true,
+	["autoTime"] = 600,
+	["autoCount"] = 3,
+	["delList"] = {
+		"Ambisumdmt-Gehennas", -- [1]
+	},
+	["syncInfo"] = {
+	},
+	["trackChanges"] = true,
 	["autoIgnore"] = true,
 	["factionList"] = {
 	},
-	["skipGuild"] = true,
+	["defexpire"] = 0,
 	["sameserver"] = true,
 	["attachFriends"] = true,
-	["revision"] = 1,
+	["notes"] = {
+	},
 	["expList"] = {
 	},
-	["skipParty"] = true,
+	["skipGuild"] = true,
 	["chatmsg"] = true,
-	["filterTotal"] = 2295,
+	["filterTotal"] = 2300,
 	["dateList"] = {
 	},
 	["filterDesc"] = {
@@ -66,7 +67,7 @@ GlobalIgnoreDB = {
 		"Filter Chinese/Korean/Japanese", -- [10]
 		"enchant", -- [11]
 	},
-	["asknote"] = true,
+	["spamFilter"] = true,
 	["filterActive"] = {
 		true, -- [1]
 		true, -- [2]
@@ -80,12 +81,11 @@ GlobalIgnoreDB = {
 		true, -- [10]
 		true, -- [11]
 	},
-	["spamFilter"] = true,
-	["defexpire"] = 0,
-	["delList"] = {
-		"Ambisumdmt-Gehennas", -- [1]
-	},
-	["autoTime"] = 600,
+	["asknote"] = true,
+	["skipParty"] = true,
+	["revision"] = 1,
+	["autoUpdate"] = true,
 	["samefaction"] = true,
-	["openWithFriends"] = false,
+	["ignoreList"] = {
+	},
 }

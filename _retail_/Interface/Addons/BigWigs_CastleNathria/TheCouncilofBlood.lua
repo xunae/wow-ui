@@ -132,7 +132,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "SintouchedBlade", 346790)
 
 	--[[ Baroness Frieda ]]--
-	self:Log("SPELL_CAST_SUCCESS", "DrainEssence", 346654)
+	self:Log("SPELL_CAST_START", "DrainEssence", 346654)
 	self:Log("SPELL_AURA_APPLIED", "DrainEssenceApplied", 346651)
 	self:Log("SPELL_CAST_START", "DreadboltVolley", 337110)
 	self:Log("SPELL_CAST_START", "PridefulEruption", 346657)
@@ -144,10 +144,10 @@ function mod:OnBossEnable()
 	self:Log("SPELL_CAST_START", "EvasiveLunge", 327497)
 	self:Log("SPELL_AURA_APPLIED", "EvasiveLungeApplied", 327610)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "EvasiveLungeApplied", 327610)
-	self:Log("SPELL_CAST_SUCCESS", "DarkRecital", 331634)
+	self:Log("SPELL_CAST_START", "DarkRecital", 331634)
 	self:Log("SPELL_AURA_APPLIED", "DarkRecitalApplied", 331637, 331636)
 	self:Log("SPELL_AURA_REMOVED", "DarkRecitalRemoved", 331637, 331636)
-	self:Log("SPELL_CAST_SUCCESS", "WaltzOfBlood", 346800)
+	self:Log("SPELL_CAST_START", "WaltzOfBlood", 346800)
 	self:Log("SPELL_CAST_START", "ViolentUproar", 346303)
 
 	--[[ Intermission: The Danse Macabre ]]--
@@ -603,7 +603,9 @@ function mod:DanseMacabreBegins(args)
 	self:PauseBar(330978) -- Dredger Servants
 	self:PauseBar(330965) -- Castellans Cadre
 	self:PauseBar(346303) -- Violent Uproar
-	self:PauseBar(347350, CL.count:format(self:SpellName(347350), dancingFeverCount)) -- Dancing Fever
+	if self:Mythic() then -- Dancing Fever does not pause but has a timer reset when dancing (Can it go below 60s? Unconfirmed.)
+		self:CDBar(347350, 43, CL.count:format(self:SpellName(347350), dancingFeverCount)) -- Dancing Fever
+	end
 end
 
 function mod:DanseMacabreOver(args)
@@ -619,7 +621,6 @@ function mod:DanseMacabreOver(args)
 	self:ResumeBar(330978) -- Dredger Servants
 	self:ResumeBar(330965) -- Castellans Cadre
 	self:ResumeBar(346303) -- Violent Uproar
-	self:ResumeBar(347350, CL.count:format(self:SpellName(347350), dancingFeverCount)) -- Dancing Fever
 end
 
 function mod:WrongMovesApplied(args)

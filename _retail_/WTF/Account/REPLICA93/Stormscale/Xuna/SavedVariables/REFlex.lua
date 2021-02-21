@@ -7,10 +7,6 @@ REFlexSettings = {
 	["ShowServerName"] = false,
 	["CurrentTab"] = 4,
 	["LDBMode"] = 3,
-	["LDBSide"] = "A",
-	["ArenaStatsLimit"] = 3,
-	["ConfigVersion"] = 302,
-	["FirstTime"] = false,
 	["Filters"] = {
 		["Map"] = 1,
 		["Bracket"] = 1,
@@ -22,6 +18,10 @@ REFlexSettings = {
 		["Season"] = 0,
 		["DateMode"] = 1,
 	},
+	["ArenaStatsLimit"] = 3,
+	["FirstTime"] = false,
+	["ConfigVersion"] = 302,
+	["LDBSide"] = "A",
 }
 REFlexDatabase = {
 	{
@@ -146,9 +146,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 552,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612104108,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -293,9 +293,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 127,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612104315,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -440,9 +440,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 365,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612104794,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -587,9 +587,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 46,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612104971,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -734,9 +734,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 88,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612105172,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -881,9 +881,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 290,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612105542,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -1028,9 +1028,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 243,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612105998,
 		["isBrawl"] = false,
+		["Time"] = 1612105998,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -1175,9 +1175,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 117,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612106258,
 		["isBrawl"] = false,
+		["Time"] = 1612106258,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -1322,9 +1322,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 239,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612106649,
 		["isBrawl"] = false,
+		["Time"] = 1612106649,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -1469,9 +1469,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 135,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612106867,
 		["isBrawl"] = false,
+		["Time"] = 1612106867,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -1616,9 +1616,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 33,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612107007,
 		["isBrawl"] = false,
+		["Time"] = 1612107007,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -1763,9 +1763,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 216,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612107297,
 		["isBrawl"] = false,
+		["Time"] = 1612107297,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -1910,9 +1910,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 96,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612107505,
 		["isBrawl"] = false,
+		["Time"] = 1612107505,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -2057,9 +2057,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 167,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612107751,
 		["isBrawl"] = false,
+		["Time"] = 1612107751,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -2204,9 +2204,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 168,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612108069,
 		["isBrawl"] = false,
+		["Time"] = 1612108069,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -2351,9 +2351,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 76,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612108258,
 		["isBrawl"] = false,
+		["Time"] = 1612108258,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -2498,9 +2498,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 189,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612108521,
 		["isBrawl"] = false,
+		["Time"] = 1612108521,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -2645,9 +2645,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 211,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612108810,
 		["isBrawl"] = false,
+		["Time"] = 1612108810,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -2792,9 +2792,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 223,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612109134,
 		["isBrawl"] = false,
+		["Time"] = 1612109134,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -2939,9 +2939,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 173,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612109565,
 		["isBrawl"] = false,
+		["Time"] = 1612109565,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3086,9 +3086,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 63,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612109709,
 		["isBrawl"] = false,
+		["Time"] = 1612109709,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3233,9 +3233,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 70,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612109857,
 		["isBrawl"] = false,
+		["Time"] = 1612109857,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3380,9 +3380,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 150,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612110110,
 		["isBrawl"] = false,
+		["Time"] = 1612110110,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3527,9 +3527,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 159,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612110349,
 		["isBrawl"] = false,
+		["Time"] = 1612110349,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3674,9 +3674,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 179,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612110608,
 		["isBrawl"] = false,
+		["Time"] = 1612110608,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -3821,9 +3821,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 132,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612110865,
 		["isBrawl"] = false,
+		["Time"] = 1612110865,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -3968,9 +3968,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 225,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612111171,
 		["isBrawl"] = false,
+		["Time"] = 1612111171,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -4115,9 +4115,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 174,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612111440,
 		["isBrawl"] = false,
+		["Time"] = 1612111440,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -4262,9 +4262,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 122,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612111673,
 		["isBrawl"] = false,
+		["Time"] = 1612111673,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -4409,9 +4409,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 104,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612111882,
 		["isBrawl"] = false,
+		["Time"] = 1612111882,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -4556,9 +4556,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 42,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612112025,
 		["isBrawl"] = false,
+		["Time"] = 1612112025,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -4703,9 +4703,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 429,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612112626,
 		["isBrawl"] = false,
+		["Time"] = 1612112626,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -4850,9 +4850,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 214,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612113045,
 		["isBrawl"] = false,
+		["Time"] = 1612113045,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -4997,9 +4997,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 25,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612113171,
 		["isBrawl"] = false,
+		["Time"] = 1612113171,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -5144,9 +5144,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 258,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612113506,
 		["isBrawl"] = false,
+		["Time"] = 1612113506,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -5291,9 +5291,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 41,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612113663,
 		["isBrawl"] = false,
+		["Time"] = 1612113663,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -5438,9 +5438,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 35,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612113830,
 		["isBrawl"] = false,
+		["Time"] = 1612113830,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -5585,9 +5585,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 113,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612114054,
 		["isBrawl"] = false,
+		["Time"] = 1612114054,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -5732,9 +5732,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 169,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612114324,
 		["isBrawl"] = false,
+		["Time"] = 1612114324,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -5759,18 +5759,6 @@ REFlexDatabase = {
 	}, -- [39]
 	{
 		["Map"] = 1825,
-		["Season"] = 30,
-		["PlayersNum"] = 6,
-		["Duration"] = 46,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1612350492,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 0,
-		["isArena"] = true,
 		["Players"] = {
 			{
 				"Lhuu", -- [1]
@@ -5887,21 +5875,21 @@ REFlexDatabase = {
 				122, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 46,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1612350492,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
 	}, -- [40]
 	{
 		["Map"] = 1134,
-		["Hidden"] = false,
-		["PlayersNum"] = 6,
-		["Duration"] = 57,
-		["Season"] = 30,
-		["PlayerNum"] = 3,
-		["Time"] = 1612351623,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 1,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Närrae-Ysondre", -- [1]
@@ -6018,21 +6006,21 @@ REFlexDatabase = {
 				321, -- [17]
 			}, -- [6]
 		},
-	}, -- [41]
-	{
-		["Map"] = 1504,
-		["Hidden"] = false,
 		["PlayersNum"] = 6,
-		["Duration"] = 94,
-		["Season"] = 30,
-		["PlayerNum"] = 2,
-		["Time"] = 1612351856,
-		["isArena"] = true,
+		["Duration"] = 57,
+		["Hidden"] = false,
+		["isBrawl"] = false,
 		["PlayerSide"] = 1,
+		["isArena"] = true,
+		["Time"] = 1612351623,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 1,
-		["isBrawl"] = false,
+		["PlayerNum"] = 3,
+		["Season"] = 30,
+	}, -- [41]
+	{
+		["Map"] = 1504,
 		["Players"] = {
 			{
 				"Nøøpain-Ysondre", -- [1]
@@ -6149,21 +6137,21 @@ REFlexDatabase = {
 				37, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 94,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 1,
+		["isArena"] = true,
+		["Time"] = 1612351856,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 1,
+		["PlayerNum"] = 2,
+		["Season"] = 30,
 	}, -- [42]
 	{
 		["Map"] = 2373,
-		["Hidden"] = false,
-		["PlayersNum"] = 5,
-		["Duration"] = 210,
-		["Season"] = 30,
-		["PlayerNum"] = 5,
-		["Time"] = 1612352431,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 0,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Frogex", -- [1]
@@ -6261,21 +6249,21 @@ REFlexDatabase = {
 				122, -- [17]
 			}, -- [5]
 		},
+		["PlayersNum"] = 5,
+		["Duration"] = 210,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 0,
+		["isArena"] = true,
+		["Time"] = 1612352431,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 0,
+		["PlayerNum"] = 5,
+		["Season"] = 30,
 	}, -- [43]
 	{
 		["Map"] = 1672,
-		["Hidden"] = false,
-		["PlayersNum"] = 6,
-		["Duration"] = 33,
-		["Season"] = 30,
-		["PlayerNum"] = 6,
-		["Time"] = 1612352645,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 1,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Jastha", -- [1]
@@ -6392,21 +6380,21 @@ REFlexDatabase = {
 				122, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 33,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 1,
+		["isArena"] = true,
+		["Time"] = 1612352645,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["Season"] = 30,
 	}, -- [44]
 	{
 		["Map"] = 572,
-		["Hidden"] = false,
-		["PlayersNum"] = 6,
-		["Duration"] = 157,
-		["Season"] = 30,
-		["PlayerNum"] = 6,
-		["Time"] = 1612352962,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 0,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Kermatorttu", -- [1]
@@ -6523,6 +6511,18 @@ REFlexDatabase = {
 				122, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 157,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 1,
+		["isArena"] = true,
+		["Time"] = 1612352962,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["Season"] = 30,
 	}, -- [45]
 	{
 		["Map"] = 1134,
@@ -6646,9 +6646,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 196,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612371902,
 		["isArena"] = true,
+		["Time"] = 1612371902,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -6793,9 +6793,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 91,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612372174,
 		["isArena"] = true,
+		["Time"] = 1612372174,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -6940,9 +6940,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 79,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612372377,
 		["isArena"] = true,
+		["Time"] = 1612372377,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -7087,9 +7087,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 177,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612372647,
 		["isArena"] = true,
+		["Time"] = 1612372647,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -7234,9 +7234,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 359,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612373139,
 		["isArena"] = true,
+		["Time"] = 1612373139,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -7381,9 +7381,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 198,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612373491,
 		["isArena"] = true,
+		["Time"] = 1612373491,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -7528,9 +7528,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 80,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612373722,
 		["isArena"] = true,
+		["Time"] = 1612373722,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -7675,9 +7675,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 109,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612373916,
 		["isArena"] = true,
+		["Time"] = 1612373916,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -7822,9 +7822,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 481,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612374515,
 		["isArena"] = true,
+		["Time"] = 1612374515,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -7969,9 +7969,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 455,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612375068,
 		["isArena"] = true,
+		["Time"] = 1612375068,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -8116,9 +8116,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 32,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612375283,
 		["isArena"] = true,
+		["Time"] = 1612375283,
+		["isBrawl"] = false,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -8263,9 +8263,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 23,
 		["PlayerNum"] = 4,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612375417,
@@ -8410,9 +8410,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 138,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612375674,
@@ -8557,9 +8557,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 72,
 		["PlayerNum"] = 2,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612375845,
@@ -8704,9 +8704,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 257,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612376178,
@@ -8851,9 +8851,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 644,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612376903,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -8998,9 +8998,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 71,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612377051,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -9145,9 +9145,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 456,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612377677,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -9172,18 +9172,6 @@ REFlexDatabase = {
 	}, -- [63]
 	{
 		["Map"] = 572,
-		["Season"] = 30,
-		["PlayersNum"] = 6,
-		["Duration"] = 110,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1612548835,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 302,
-		["Winner"] = 0,
-		["isArena"] = true,
 		["Players"] = {
 			{
 				"Gàià-Eredar", -- [1]
@@ -9300,21 +9288,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
-	}, -- [64]
-	{
-		["Map"] = 1505,
-		["Season"] = 30,
 		["PlayersNum"] = 6,
-		["Duration"] = 127,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1612549106,
+		["Duration"] = 110,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
 		["isBrawl"] = false,
-		["PlayerSide"] = 0,
+		["Time"] = 1612548835,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
+	}, -- [64]
+	{
+		["Map"] = 1505,
 		["Players"] = {
 			{
 				"Scread", -- [1]
@@ -9431,21 +9419,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
-	}, -- [65]
-	{
-		["Map"] = 1825,
-		["Season"] = 30,
 		["PlayersNum"] = 6,
-		["Duration"] = 215,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1612601344,
+		["Duration"] = 127,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
 		["isBrawl"] = false,
-		["PlayerSide"] = 1,
+		["Time"] = 1612549106,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
+	}, -- [65]
+	{
+		["Map"] = 1825,
 		["Players"] = {
 			{
 				"Dynarien-Antonidas", -- [1]
@@ -9562,21 +9550,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
-	}, -- [66]
-	{
-		["Map"] = 1911,
-		["Season"] = 30,
 		["PlayersNum"] = 6,
-		["Duration"] = 174,
-		["Hidden"] = false,
-		["PlayerNum"] = 1,
-		["Time"] = 1612601778,
+		["Duration"] = 215,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
 		["isBrawl"] = false,
-		["PlayerSide"] = 0,
+		["Time"] = 1612601344,
 		["isRated"] = false,
 		["Version"] = 302,
 		["Winner"] = 0,
-		["isArena"] = true,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
+	}, -- [66]
+	{
+		["Map"] = 1911,
 		["Players"] = {
 			{
 				"Xuna", -- [1]
@@ -9693,6 +9681,18 @@ REFlexDatabase = {
 				51, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 174,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1612601778,
+		["isRated"] = false,
+		["Version"] = 302,
+		["Winner"] = 0,
+		["PlayerNum"] = 1,
+		["Hidden"] = false,
 	}, -- [67]
 	{
 		["Map"] = 1134,
@@ -9816,9 +9816,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 48,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612626175,
@@ -9963,9 +9963,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 34,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612626282,
@@ -10110,9 +10110,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 106,
 		["PlayerNum"] = 5,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612626465,
@@ -10257,9 +10257,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 255,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612626813,
@@ -10404,9 +10404,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 105,
 		["PlayerNum"] = 3,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612626992,
@@ -10551,9 +10551,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 176,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612627248,
@@ -10698,9 +10698,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 213,
 		["PlayerNum"] = 3,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612627543,
@@ -10845,9 +10845,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 156,
 		["PlayerNum"] = 4,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612627785,
@@ -10992,9 +10992,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 303,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612628216,
@@ -11139,9 +11139,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 156,
 		["PlayerNum"] = 5,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612628489,
@@ -11286,9 +11286,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 54,
 		["PlayerNum"] = 3,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612628643,
@@ -11433,9 +11433,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 39,
 		["PlayerNum"] = 2,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612628773,
@@ -11580,9 +11580,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 135,
 		["PlayerNum"] = 5,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612628984,
@@ -11727,9 +11727,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 181,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612629246,
@@ -11874,9 +11874,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 96,
 		["PlayerNum"] = 2,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612629871,
@@ -12021,9 +12021,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 46,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612630029,
@@ -12168,9 +12168,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 112,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612630259,
@@ -12315,9 +12315,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 234,
 		["PlayerNum"] = 2,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612630567,
@@ -12462,9 +12462,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 35,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612630753,
@@ -12609,9 +12609,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 124,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612630975,
@@ -12756,9 +12756,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 127,
 		["PlayerNum"] = 5,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612631185,
@@ -12903,9 +12903,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 131,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612631446,
@@ -13050,9 +13050,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 257,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612631824,
@@ -13197,9 +13197,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 263,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612632178,
@@ -13344,9 +13344,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 179,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612632438,
@@ -13491,9 +13491,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 75,
 		["PlayerNum"] = 6,
-		["isArena"] = true,
-		["Version"] = 302,
 		["isBrawl"] = false,
+		["Version"] = 302,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612632592,
@@ -13638,9 +13638,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 166,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612632878,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -13785,9 +13785,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 275,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612633268,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -13932,9 +13932,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 348,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612633710,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14079,9 +14079,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 144,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612633999,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14188,9 +14188,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 313,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612802590,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14297,9 +14297,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 35,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612802781,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14406,9 +14406,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 442,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612803316,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14515,9 +14515,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 139,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1612803616,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14624,9 +14624,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 207,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612803975,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14771,9 +14771,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 38,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1612805153,
 		["isRated"] = true,
 		["Version"] = 302,
@@ -14918,9 +14918,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 239,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612805502,
 		["isBrawl"] = false,
+		["Time"] = 1612805502,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -15046,9 +15046,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 5,
 		["Duration"] = 39,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612805728,
 		["isBrawl"] = false,
+		["Time"] = 1612805728,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -15193,9 +15193,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 73,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612806052,
 		["isBrawl"] = false,
+		["Time"] = 1612806052,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -15340,9 +15340,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 324,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612806537,
 		["isBrawl"] = false,
+		["Time"] = 1612806537,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -15487,9 +15487,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 222,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612807218,
 		["isBrawl"] = false,
+		["Time"] = 1612807218,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -15634,9 +15634,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 205,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612807539,
 		["isBrawl"] = false,
+		["Time"] = 1612807539,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -15781,9 +15781,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 40,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612807666,
 		["isBrawl"] = false,
+		["Time"] = 1612807666,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -15928,9 +15928,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 17,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612807769,
 		["isBrawl"] = false,
+		["Time"] = 1612807769,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -16075,9 +16075,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 198,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612808071,
 		["isBrawl"] = false,
+		["Time"] = 1612808071,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -16222,9 +16222,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 82,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612808234,
 		["isBrawl"] = false,
+		["Time"] = 1612808234,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -16369,9 +16369,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 40,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612808354,
 		["isBrawl"] = false,
+		["Time"] = 1612808354,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -16516,9 +16516,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 90,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1612808523,
 		["isBrawl"] = false,
+		["Time"] = 1612808523,
+		["isArena"] = true,
 		["Version"] = 302,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -16663,9 +16663,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 134,
 		["PlayerNum"] = 6,
-		["isBrawl"] = false,
-		["Version"] = 302,
 		["isArena"] = true,
+		["Version"] = 302,
+		["isBrawl"] = false,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612808789,
@@ -16810,9 +16810,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 158,
 		["PlayerNum"] = 5,
-		["isBrawl"] = false,
-		["Version"] = 302,
 		["isArena"] = true,
+		["Version"] = 302,
+		["isBrawl"] = false,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1612809032,
@@ -16957,9 +16957,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 105,
 		["PlayerNum"] = 6,
-		["isBrawl"] = false,
-		["Version"] = 302,
 		["isArena"] = true,
+		["Version"] = 302,
+		["isBrawl"] = false,
 		["PlayerSide"] = 0,
 		["isRated"] = true,
 		["Time"] = 1612809250,
@@ -16984,6 +16984,18 @@ REFlexDatabase = {
 	}, -- [118]
 	{
 		["Map"] = 1504,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 62,
+		["Season"] = 30,
+		["PlayerNum"] = 5,
+		["Time"] = 1612868108,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Wingsdown-Blackhand", -- [1]
@@ -17100,21 +17112,21 @@ REFlexDatabase = {
 				61, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 62,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1612868108,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 1,
-		["PlayerNum"] = 5,
-		["Hidden"] = false,
 	}, -- [119]
 	{
 		["Map"] = 572,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 69,
+		["Season"] = 30,
+		["PlayerNum"] = 2,
+		["Time"] = 1612868485,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Fléxit-Blackhand", -- [1]
@@ -17231,21 +17243,21 @@ REFlexDatabase = {
 				85, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 69,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1612868485,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 1,
-		["PlayerNum"] = 2,
-		["Hidden"] = false,
 	}, -- [120]
 	{
 		["Map"] = 1504,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 78,
+		["Season"] = 30,
+		["PlayerNum"] = 5,
+		["Time"] = 1612868913,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Änkho-Ysondre", -- [1]
@@ -17362,21 +17374,21 @@ REFlexDatabase = {
 				43, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 78,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1612868913,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 0,
-		["PlayerNum"] = 5,
-		["Hidden"] = false,
 	}, -- [121]
 	{
 		["Map"] = 1504,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 167,
+		["Season"] = 30,
+		["PlayerNum"] = 1,
+		["Time"] = 1612869502,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Xuna", -- [1]
@@ -17493,21 +17505,21 @@ REFlexDatabase = {
 				71, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 167,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1612869502,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 0,
-		["PlayerNum"] = 1,
-		["Hidden"] = false,
 	}, -- [122]
 	{
 		["Map"] = 1504,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 166,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1612869920,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Esphexia-Blackhand", -- [1]
@@ -17624,21 +17636,21 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 166,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1612869920,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [123]
 	{
 		["Map"] = 2167,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 93,
+		["Season"] = 30,
+		["PlayerNum"] = 2,
+		["Time"] = 1612870192,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Gglelelele-Ravencrest", -- [1]
@@ -17755,21 +17767,21 @@ REFlexDatabase = {
 				105, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 93,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1612870192,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 0,
-		["PlayerNum"] = 2,
-		["Hidden"] = false,
 	}, -- [124]
 	{
 		["Map"] = 980,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 143,
+		["Season"] = 30,
+		["PlayerNum"] = 1,
+		["Time"] = 1612870554,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Xuna", -- [1]
@@ -17886,21 +17898,21 @@ REFlexDatabase = {
 				51, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 143,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1612870554,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 0,
-		["PlayerNum"] = 1,
-		["Hidden"] = false,
 	}, -- [125]
 	{
 		["Map"] = 1134,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 94,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1612870861,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 303,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Nilessa", -- [1]
@@ -18017,18 +18029,6 @@ REFlexDatabase = {
 				123, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 94,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1612870861,
-		["isRated"] = false,
-		["Version"] = 303,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [126]
 	{
 		["Map"] = 2167,
@@ -18114,9 +18114,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 255,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1612962186,
 		["isArena"] = true,
+		["Time"] = 1612962186,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -18141,6 +18141,18 @@ REFlexDatabase = {
 	}, -- [127]
 	{
 		["Map"] = 1911,
+		["Season"] = 30,
+		["PlayersNum"] = 6,
+		["Duration"] = 93,
+		["Hidden"] = false,
+		["PlayerNum"] = 6,
+		["Time"] = 1612962484,
+		["isBrawl"] = false,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["isArena"] = true,
 		["Players"] = {
 			{
 				"Ebully", -- [1]
@@ -18257,18 +18269,6 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 93,
-		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
-		["isArena"] = true,
-		["Time"] = 1612962484,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Season"] = 30,
 	}, -- [128]
 	{
 		["Map"] = 617,
@@ -18392,9 +18392,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 233,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613065967,
 		["isBrawl"] = false,
+		["Time"] = 1613065967,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -18539,9 +18539,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 591,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613066636,
 		["isBrawl"] = false,
+		["Time"] = 1613066636,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -18686,9 +18686,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 204,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613066944,
 		["isBrawl"] = false,
+		["Time"] = 1613066944,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -18833,9 +18833,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 106,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613067153,
 		["isBrawl"] = false,
+		["Time"] = 1613067153,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -18980,9 +18980,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 149,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613067424,
 		["isBrawl"] = false,
+		["Time"] = 1613067424,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -19127,9 +19127,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 104,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613067642,
 		["isBrawl"] = false,
+		["Time"] = 1613067642,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -19274,9 +19274,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 100,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613067830,
 		["isBrawl"] = false,
+		["Time"] = 1613067830,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -19421,9 +19421,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 69,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613068002,
 		["isBrawl"] = false,
+		["Time"] = 1613068002,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -19568,9 +19568,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 82,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613068165,
 		["isBrawl"] = false,
+		["Time"] = 1613068165,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -19715,9 +19715,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 104,
 		["Season"] = 30,
-		["isArena"] = true,
-		["Time"] = 1613068351,
 		["isBrawl"] = false,
+		["Time"] = 1613068351,
+		["isArena"] = true,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -19824,9 +19824,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 291,
 		["PlayerNum"] = 2,
-		["isBrawl"] = false,
-		["Version"] = 310,
 		["isArena"] = true,
+		["Version"] = 310,
+		["isBrawl"] = false,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1613070164,
@@ -19933,9 +19933,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 4,
 		["Duration"] = 94,
 		["PlayerNum"] = 2,
-		["isBrawl"] = false,
-		["Version"] = 310,
 		["isArena"] = true,
+		["Version"] = 310,
+		["isBrawl"] = false,
 		["PlayerSide"] = 1,
 		["isRated"] = true,
 		["Time"] = 1613070348,
@@ -19960,6 +19960,18 @@ REFlexDatabase = {
 	}, -- [140]
 	{
 		["Map"] = 1825,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 27,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1613144269,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Pyroó-Blackhand", -- [1]
@@ -20076,21 +20088,21 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 27,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1613144269,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [141]
 	{
 		["Map"] = 1672,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 46,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1613144492,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Greg-Eredar", -- [1]
@@ -20207,21 +20219,21 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 46,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1613144492,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 0,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [142]
 	{
 		["Map"] = 1505,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 54,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1613144699,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Cellendyl-Ysondre", -- [1]
@@ -20338,21 +20350,21 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 54,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1613144699,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [143]
 	{
 		["Map"] = 617,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 65,
+		["Season"] = 30,
+		["PlayerNum"] = 3,
+		["Time"] = 1613144901,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Cellendyl-Ysondre", -- [1]
@@ -20469,21 +20481,21 @@ REFlexDatabase = {
 				48, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 65,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1613144901,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 0,
-		["PlayerNum"] = 3,
-		["Hidden"] = false,
 	}, -- [144]
 	{
 		["Map"] = 617,
+		["Hidden"] = false,
+		["PlayersNum"] = 5,
+		["Duration"] = 98,
+		["Season"] = 30,
+		["PlayerNum"] = 5,
+		["Time"] = 1613145146,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Cellendyl-Ysondre", -- [1]
@@ -20581,21 +20593,21 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [5]
 		},
-		["PlayersNum"] = 5,
-		["Duration"] = 98,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1613145146,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 0,
-		["PlayerNum"] = 5,
-		["Hidden"] = false,
 	}, -- [145]
 	{
 		["Map"] = 1505,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 54,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1613145443,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Suqarhunt", -- [1]
@@ -20712,21 +20724,21 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 54,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isBrawl"] = false,
-		["Time"] = 1613145443,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 0,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [146]
 	{
 		["Map"] = 1134,
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 191,
+		["Season"] = 30,
+		["PlayerNum"] = 6,
+		["Time"] = 1613145796,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Shäby", -- [1]
@@ -20843,33 +20855,9 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-		["PlayersNum"] = 6,
-		["Duration"] = 191,
-		["Season"] = 30,
-		["isArena"] = true,
-		["PlayerSide"] = 1,
-		["isBrawl"] = false,
-		["Time"] = 1613145796,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["PlayerNum"] = 6,
-		["Hidden"] = false,
 	}, -- [147]
 	{
 		["Map"] = 980,
-		["Season"] = 30,
-		["PlayersNum"] = 6,
-		["Duration"] = 54,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1613147241,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["isArena"] = true,
 		["Players"] = {
 			{
 				"Splarky-Mal'Ganis", -- [1]
@@ -20986,39 +20974,19 @@ REFlexDatabase = {
 				124, -- [17]
 			}, -- [6]
 		},
-	}, -- [148]
-	{
-		["Map"] = 980,
+		["PlayersNum"] = 6,
+		["Duration"] = 54,
 		["Season"] = 30,
-		["PlayersNum"] = 0,
-		["Duration"] = 190635,
-		["Hidden"] = true,
-		["isBrawl"] = false,
-		["Time"] = 1613153827,
 		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613147241,
+		["isRated"] = false,
 		["Version"] = 310,
-		["Winner"] = 0,
-		["Players"] = {
-		},
-		["TeamData"] = {
-			{
-				"", -- [1]
-				-1, -- [2]
-				-13, -- [3]
-				2305, -- [4]
-				0, -- [5]
-			}, -- [1]
-			{
-				"", -- [1]
-				-1, -- [2]
-				-13, -- [3]
-				2294, -- [4]
-				0, -- [5]
-			}, -- [2]
-		},
-	}, -- [149]
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
+	}, -- [148]
 	{
 		["Map"] = 1672,
 		["Players"] = {
@@ -21141,9 +21109,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 38,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613153940,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21165,7 +21133,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [150]
+	}, -- [149]
 	{
 		["Map"] = 572,
 		["Players"] = {
@@ -21288,9 +21256,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 73,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613154091,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21312,7 +21280,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [151]
+	}, -- [150]
 	{
 		["Map"] = 1552,
 		["Players"] = {
@@ -21435,9 +21403,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 56,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613154222,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21459,7 +21427,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [152]
+	}, -- [151]
 	{
 		["Map"] = 572,
 		["Players"] = {
@@ -21582,9 +21550,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 99,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613154408,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21606,7 +21574,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [153]
+	}, -- [152]
 	{
 		["Map"] = 2167,
 		["Players"] = {
@@ -21729,9 +21697,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 121,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613154631,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21753,7 +21721,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [154]
+	}, -- [153]
 	{
 		["Map"] = 572,
 		["Players"] = {
@@ -21876,9 +21844,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 89,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613154810,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -21900,7 +21868,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [155]
+	}, -- [154]
 	{
 		["Map"] = 1672,
 		["Players"] = {
@@ -22023,9 +21991,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 304,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613155222,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22047,7 +22015,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [156]
+	}, -- [155]
 	{
 		["Map"] = 617,
 		["Players"] = {
@@ -22170,9 +22138,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 124,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613155463,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22194,7 +22162,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [157]
+	}, -- [156]
 	{
 		["Map"] = 1825,
 		["Players"] = {
@@ -22317,9 +22285,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 87,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613155640,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22341,7 +22309,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [158]
+	}, -- [157]
 	{
 		["Map"] = 2373,
 		["Players"] = {
@@ -22464,9 +22432,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 171,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 0,
 		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
 		["Time"] = 1613155956,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22488,7 +22456,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [159]
+	}, -- [158]
 	{
 		["Map"] = 1505,
 		["Players"] = {
@@ -22611,9 +22579,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 291,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613156324,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22635,7 +22603,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [160]
+	}, -- [159]
 	{
 		["Map"] = 2167,
 		["Players"] = {
@@ -22758,9 +22726,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 72,
 		["Hidden"] = false,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
 		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
 		["Time"] = 1613156480,
 		["isRated"] = true,
 		["Version"] = 310,
@@ -22782,21 +22750,9 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [161]
+	}, -- [160]
 	{
 		["Map"] = 1504,
-		["Hidden"] = false,
-		["PlayersNum"] = 6,
-		["Duration"] = 154,
-		["Season"] = 30,
-		["PlayerNum"] = 1,
-		["Time"] = 1613216453,
-		["isArena"] = true,
-		["PlayerSide"] = 0,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 0,
-		["isBrawl"] = false,
 		["Players"] = {
 			{
 				"Xuna", -- [1]
@@ -22913,7 +22869,19 @@ REFlexDatabase = {
 				35, -- [17]
 			}, -- [6]
 		},
-	}, -- [162]
+		["PlayersNum"] = 6,
+		["Duration"] = 154,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 0,
+		["isArena"] = true,
+		["Time"] = 1613216453,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["PlayerNum"] = 1,
+		["Season"] = 30,
+	}, -- [161]
 	{
 		["Map"] = 2373,
 		["Players"] = {
@@ -23036,9 +23004,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 376,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613227928,
 		["isArena"] = true,
+		["Time"] = 1613227928,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -23060,7 +23028,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [163]
+	}, -- [162]
 	{
 		["Map"] = 1134,
 		["Players"] = {
@@ -23183,9 +23151,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 39,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613228045,
 		["isArena"] = true,
+		["Time"] = 1613228045,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -23207,7 +23175,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [164]
+	}, -- [163]
 	{
 		["Map"] = 617,
 		["Players"] = {
@@ -23330,9 +23298,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 116,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613228263,
 		["isArena"] = true,
+		["Time"] = 1613228263,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -23354,7 +23322,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [165]
+	}, -- [164]
 	{
 		["Map"] = 617,
 		["Players"] = {
@@ -23477,9 +23445,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 31,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613228415,
 		["isArena"] = true,
+		["Time"] = 1613228415,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -23501,7 +23469,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [166]
+	}, -- [165]
 	{
 		["Map"] = 1825,
 		["Players"] = {
@@ -23624,9 +23592,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 187,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613228722,
 		["isArena"] = true,
+		["Time"] = 1613228722,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -23648,7 +23616,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [167]
+	}, -- [166]
 	{
 		["Map"] = 1672,
 		["Players"] = {
@@ -23771,9 +23739,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 99,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613228949,
 		["isArena"] = true,
+		["Time"] = 1613228949,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -23795,7 +23763,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [168]
+	}, -- [167]
 	{
 		["Map"] = 1672,
 		["Players"] = {
@@ -23918,9 +23886,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 80,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613229149,
 		["isArena"] = true,
+		["Time"] = 1613229149,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -23942,7 +23910,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [169]
+	}, -- [168]
 	{
 		["Map"] = 1552,
 		["Players"] = {
@@ -24065,9 +24033,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 130,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613229379,
 		["isArena"] = true,
+		["Time"] = 1613229379,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -24089,7 +24057,7 @@ REFlexDatabase = {
 				2, -- [5]
 			}, -- [2]
 		},
-	}, -- [170]
+	}, -- [169]
 	{
 		["Map"] = 1504,
 		["Players"] = {
@@ -24212,9 +24180,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 49,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613229541,
 		["isArena"] = true,
+		["Time"] = 1613229541,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -24236,7 +24204,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [171]
+	}, -- [170]
 	{
 		["Map"] = 2167,
 		["Players"] = {
@@ -24359,9 +24327,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 41,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613229658,
 		["isArena"] = true,
+		["Time"] = 1613229658,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -24383,7 +24351,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [172]
+	}, -- [171]
 	{
 		["Map"] = 1505,
 		["Players"] = {
@@ -24506,9 +24474,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 212,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613229947,
 		["isArena"] = true,
+		["Time"] = 1613229947,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -24530,7 +24498,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [173]
+	}, -- [172]
 	{
 		["Map"] = 617,
 		["Players"] = {
@@ -24653,9 +24621,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 61,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613230091,
 		["isArena"] = true,
+		["Time"] = 1613230091,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -24677,7 +24645,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [174]
+	}, -- [173]
 	{
 		["Map"] = 2167,
 		["Players"] = {
@@ -24800,9 +24768,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 126,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613230332,
 		["isArena"] = true,
+		["Time"] = 1613230332,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -24824,7 +24792,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [175]
+	}, -- [174]
 	{
 		["Map"] = 1504,
 		["Players"] = {
@@ -24947,9 +24915,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 44,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613230457,
 		["isArena"] = true,
+		["Time"] = 1613230457,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -24971,7 +24939,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [176]
+	}, -- [175]
 	{
 		["Map"] = 1825,
 		["Players"] = {
@@ -25094,9 +25062,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 141,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613230755,
 		["isArena"] = true,
+		["Time"] = 1613230755,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -25118,7 +25086,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [177]
+	}, -- [176]
 	{
 		["Map"] = 980,
 		["Players"] = {
@@ -25241,9 +25209,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 131,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613230971,
 		["isArena"] = true,
+		["Time"] = 1613230971,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -25265,7 +25233,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [178]
+	}, -- [177]
 	{
 		["Map"] = 1825,
 		["Players"] = {
@@ -25388,9 +25356,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 69,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613231174,
 		["isArena"] = true,
+		["Time"] = 1613231174,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -25412,7 +25380,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [179]
+	}, -- [178]
 	{
 		["Map"] = 1505,
 		["Players"] = {
@@ -25535,9 +25503,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 44,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613231350,
 		["isArena"] = true,
+		["Time"] = 1613231350,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -25559,7 +25527,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [180]
+	}, -- [179]
 	{
 		["Map"] = 2373,
 		["Players"] = {
@@ -25682,9 +25650,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 337,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613231787,
 		["isArena"] = true,
+		["Time"] = 1613231787,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -25706,7 +25674,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [181]
+	}, -- [180]
 	{
 		["Map"] = 1911,
 		["Players"] = {
@@ -25829,9 +25797,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 61,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613231927,
 		["isArena"] = true,
+		["Time"] = 1613231927,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 1,
@@ -25853,7 +25821,7 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [182]
+	}, -- [181]
 	{
 		["Map"] = 980,
 		["Players"] = {
@@ -25976,9 +25944,9 @@ REFlexDatabase = {
 		["PlayersNum"] = 6,
 		["Duration"] = 152,
 		["Season"] = 30,
-		["isBrawl"] = false,
-		["Time"] = 1613232277,
 		["isArena"] = true,
+		["Time"] = 1613232277,
+		["isBrawl"] = false,
 		["Version"] = 310,
 		["isRated"] = true,
 		["PlayerSide"] = 0,
@@ -26000,21 +25968,9 @@ REFlexDatabase = {
 				3, -- [5]
 			}, -- [2]
 		},
-	}, -- [183]
+	}, -- [182]
 	{
 		["Map"] = 980,
-		["Season"] = 30,
-		["PlayersNum"] = 6,
-		["Duration"] = 50,
-		["Hidden"] = false,
-		["PlayerNum"] = 1,
-		["Time"] = 1613318932,
-		["isBrawl"] = false,
-		["PlayerSide"] = 1,
-		["isRated"] = false,
-		["Version"] = 310,
-		["Winner"] = 1,
-		["isArena"] = true,
 		["Players"] = {
 			{
 				"Xuna", -- [1]
@@ -26131,21 +26087,21 @@ REFlexDatabase = {
 				72, -- [17]
 			}, -- [6]
 		},
-	}, -- [184]
-	{
-		["Map"] = 572,
-		["Season"] = 30,
 		["PlayersNum"] = 6,
-		["Duration"] = 41,
-		["Hidden"] = false,
-		["PlayerNum"] = 6,
-		["Time"] = 1613319168,
-		["isBrawl"] = false,
+		["Duration"] = 50,
+		["Season"] = 30,
+		["isArena"] = true,
 		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613318932,
 		["isRated"] = false,
 		["Version"] = 310,
 		["Winner"] = 1,
-		["isArena"] = true,
+		["PlayerNum"] = 1,
+		["Hidden"] = false,
+	}, -- [183]
+	{
+		["Map"] = 572,
 		["Players"] = {
 			{
 				"Cybert-Blackmoore", -- [1]
@@ -26262,18 +26218,12234 @@ REFlexDatabase = {
 				125, -- [17]
 			}, -- [6]
 		},
+		["PlayersNum"] = 6,
+		["Duration"] = 41,
+		["Season"] = 30,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613319168,
+		["isRated"] = false,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["Hidden"] = false,
+	}, -- [184]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Ieekzy", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				139386, -- [10]
+				23324, -- [11]
+				2203, -- [12]
+				20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				161871, -- [10]
+				38625, -- [11]
+				2456, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Fodaogaboga-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				111253, -- [10]
+				15712, -- [11]
+				2378, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				242, -- [17]
+			}, -- [3]
+			{
+				"Taurvid-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				3246, -- [10]
+				190915, -- [11]
+				2376, -- [12]
+				-7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				329, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				23960, -- [10]
+				250709, -- [11]
+				2482, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Æsol-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Demon Hunter", -- [8]
+				"DEMONHUNTER", -- [9]
+				209606, -- [10]
+				36623, -- [11]
+				2599, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Havoc", -- [16]
+				337, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 73,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613493280,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2508, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2514, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
 	}, -- [185]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Squírtgodx-Drak'thul", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				174208, -- [10]
+				66130, -- [11]
+				2482, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				105, -- [17]
+			}, -- [1]
+			{
+				"Eliethiax-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				12552, -- [10]
+				236560, -- [11]
+				2482, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				91, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				166773, -- [10]
+				29277, -- [11]
+				2223, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Kineta-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Demon Hunter", -- [8]
+				"DEMONHUNTER", -- [9]
+				174730, -- [10]
+				3558, -- [11]
+				2573, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Havoc", -- [16]
+				101, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				112443, -- [10]
+				52118, -- [11]
+				2470, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				29962, -- [10]
+				188332, -- [11]
+				2495, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 91,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613493549,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2543, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2551, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [186]
+	{
+		["Map"] = 1825,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				285037, -- [10]
+				97770, -- [11]
+				2461, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Crseveñ-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				209481, -- [10]
+				58973, -- [11]
+				2671, -- [12]
+				-17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				566, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				266457, -- [10]
+				24640, -- [11]
+				2223, -- [12]
+				20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Ipvplol-EmeraldDream", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				41986, -- [10]
+				344349, -- [11]
+				2546, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				19, -- [17]
+			}, -- [4]
+			{
+				"Xanm-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				293660, -- [10]
+				105311, -- [11]
+				2218, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				45, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				30642, -- [10]
+				362973, -- [11]
+				2485, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 139,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613493780,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2515, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2519, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [187]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Ieekzy", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				76264, -- [10]
+				4674, -- [11]
+				2243, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				87873, -- [10]
+				20943, -- [11]
+				2475, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Guzzelinare-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				69562, -- [10]
+				13799, -- [11]
+				2386, -- [12]
+				-7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				688, -- [17]
+			}, -- [3]
+			{
+				"Lyånne-Ysondre", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				3636, -- [10]
+				62030, -- [11]
+				2522, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				382, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				14316, -- [10]
+				86250, -- [11]
+				2498, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Érunali-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				47771, -- [10]
+				18294, -- [11]
+				2813, -- [12]
+				-20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Affliction", -- [16]
+				552, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 56,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613493929,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2559, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2545, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [188]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Ieekzy", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				227433, -- [10]
+				8814, -- [11]
+				2264, -- [12]
+				20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				284091, -- [10]
+				84081, -- [11]
+				2490, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Widdism-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				94375, -- [10]
+				43354, -- [11]
+				2437, -- [12]
+				-7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				155, -- [17]
+			}, -- [3]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				30918, -- [10]
+				185881, -- [11]
+				2512, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Антошашвп-Азурегос", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				86810, -- [10]
+				370689, -- [11]
+				2560, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				836, -- [17]
+			}, -- [5]
+			{
+				"Фейкнаэскейп-СвежевательДуш", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				113058, -- [10]
+				51938, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				575, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 4,
+		["PlayersNum"] = 6,
+		["Duration"] = 137,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613494213,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2577, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2555, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [189]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				276041, -- [10]
+				78792, -- [11]
+				2504, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				236246, -- [10]
+				26125, -- [11]
+				2284, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [2]
+			{
+				"Twînklétoés", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				250807, -- [10]
+				52617, -- [11]
+				2622, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				28214, -- [10]
+				379216, -- [11]
+				2525, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Zizko-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				14127, -- [10]
+				318368, -- [11]
+				2691, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				132, -- [17]
+			}, -- [5]
+			{
+				"Дракомелфой-Ревущийфьорд", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				238847, -- [10]
+				103585, -- [11]
+				2622, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				23, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 4,
+		["PlayersNum"] = 6,
+		["Duration"] = 142,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613494433,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2634, -- [4]
+				2, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2602, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [190]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				199201, -- [10]
+				80122, -- [11]
+				2520, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Graftalx-Nemesis", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Pandaren", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				131073, -- [10]
+				79027, -- [11]
+				2652, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				714, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				195477, -- [10]
+				19434, -- [11]
+				2305, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Pappipala-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				23331, -- [10]
+				289279, -- [11]
+				2641, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				118, -- [17]
+			}, -- [4]
+			{
+				"Takenòtes-Nemesis", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				131307, -- [10]
+				42403, -- [11]
+				2672, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				438, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				60990, -- [10]
+				174739, -- [11]
+				2541, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 132,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613494693,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2638, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2621, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [191]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Ieekzy", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				337785, -- [10]
+				48951, -- [11]
+				2326, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				236279, -- [10]
+				87880, -- [11]
+				2535, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Caccie-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				7197, -- [10]
+				309304, -- [11]
+				2677, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				565, -- [17]
+			}, -- [3]
+			{
+				"Leolulu-Lightning'sBlade", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				451623, -- [10]
+				57836, -- [11]
+				2601, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				450, -- [17]
+			}, -- [4]
+			{
+				"Tealights-Blackrock", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				355871, -- [10]
+				143391, -- [11]
+				2516, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				31, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				25347, -- [10]
+				622814, -- [11]
+				2556, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 155,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613494977,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2664, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2659, -- [4]
+				2, -- [5]
+			}, -- [2]
+		},
+	}, -- [192]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				40286, -- [10]
+				60118, -- [11]
+				2571, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Dåne-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				39411, -- [10]
+				1215, -- [11]
+				2771, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				338, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				106496, -- [10]
+				11551, -- [11]
+				2347, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				139454, -- [10]
+				21116, -- [11]
+				2551, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Relzah", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				14032, -- [10]
+				150672, -- [11]
+				2752, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				708, -- [17]
+			}, -- [5]
+			{
+				"Ðbgodx-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				43832, -- [10]
+				47775, -- [11]
+				2005, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				92, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 1,
+		["PlayersNum"] = 6,
+		["Duration"] = 70,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613495133,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2692, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2692, -- [4]
+				2, -- [5]
+			}, -- [2]
+		},
+	}, -- [193]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Inflüence-Drak'thul", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				42201, -- [10]
+				115607, -- [11]
+				2663, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				213, -- [17]
+			}, -- [1]
+			{
+				"Reacôn-TwistingNether", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				139032, -- [10]
+				6065, -- [11]
+				2657, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				136, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				88985, -- [10]
+				5494, -- [11]
+				2368, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				103929, -- [10]
+				27134, -- [11]
+				2568, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Selky-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				18852, -- [10]
+				65778, -- [11]
+				2662, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				216, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				5798, -- [10]
+				61005, -- [11]
+				2587, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 59,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613495363,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2721, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2693, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [194]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Ieekzy", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				82645, -- [10]
+				2955, -- [11]
+				2368, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				88448, -- [10]
+				21065, -- [11]
+				2568, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Onebutton-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				13121, -- [10]
+				14027, -- [11]
+				2557, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				447, -- [17]
+			}, -- [3]
+			{
+				"Soqenn-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				67320, -- [10]
+				38675, -- [11]
+				2612, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				348, -- [17]
+			}, -- [4]
+			{
+				"Wãtchmefear-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				1387, -- [10]
+				32894, -- [11]
+				2772, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				290, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				4722, -- [10]
+				57646, -- [11]
+				2587, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 47,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613495561,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2686, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2693, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [195]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				396333, -- [10]
+				140551, -- [11]
+				2584, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				390722, -- [10]
+				20728, -- [11]
+				2389, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [2]
+			{
+				"Nalaauwu-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				295047, -- [10]
+				59754, -- [11]
+				2587, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				354, -- [17]
+			}, -- [3]
+			{
+				"Nasdaq-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				163276, -- [10]
+				640761, -- [11]
+				2808, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				277, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				47917, -- [10]
+				464456, -- [11]
+				2603, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Øscar-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				197837, -- [10]
+				89261, -- [11]
+				2584, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				198, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 262,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613495923,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2717, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2710, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [196]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Vasheline-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				224128, -- [10]
+				58323, -- [11]
+				2171, -- [12]
+				23, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Ghettomage-DieAldor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				205338, -- [10]
+				53636, -- [11]
+				2557, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				581, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				164211, -- [10]
+				11226, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				247148, -- [10]
+				79366, -- [11]
+				2600, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				46958, -- [10]
+				292523, -- [11]
+				2619, -- [12]
+				-1, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Zabilicious-Blackmoore", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				25546, -- [10]
+				356662, -- [11]
+				2698, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				321, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 133,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613496170,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2744, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2734, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [197]
+	{
+		["Map"] = 1825,
+		["Players"] = {
+			{
+				"Ðbgodx-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				44302, -- [10]
+				34354, -- [11]
+				2074, -- [12]
+				23, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				92, -- [17]
+			}, -- [1]
+			{
+				"Dåne-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				75355, -- [10]
+				2840, -- [11]
+				2768, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				338, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				9705, -- [10]
+				0, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				89422, -- [10]
+				39095, -- [11]
+				2600, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Relzah", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				31288, -- [10]
+				54640, -- [11]
+				2752, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				708, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				0, -- [10]
+				7042, -- [11]
+				2618, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 41,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613496368,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2713, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2712, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [198]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Gaav-BurningLegion", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				257131, -- [10]
+				29721, -- [11]
+				2711, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				220, -- [17]
+			}, -- [1]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				178719, -- [10]
+				34722, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [2]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				227582, -- [10]
+				74103, -- [11]
+				2592, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Shammytls-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				267483, -- [10]
+				113971, -- [11]
+				2720, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				134, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				16063, -- [10]
+				341024, -- [11]
+				2609, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Youngmawrat-Lightning'sBlade", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				7053, -- [10]
+				296941, -- [11]
+				2720, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				447, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 109,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613496569,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2640, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2684, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [199]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Quizieguy-TarrenMill", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				37480, -- [10]
+				19026, -- [11]
+				2780, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				128, -- [17]
+			}, -- [1]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				18258, -- [10]
+				2643, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [2]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				18767, -- [10]
+				8329, -- [11]
+				2582, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Svenmagnus-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				0, -- [10]
+				8869, -- [11]
+				2200, -- [12]
+				22, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				236, -- [17]
+			}, -- [4]
+			{
+				"Theverybest-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				33823, -- [10]
+				0, -- [11]
+				2780, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				353, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				3033, -- [10]
+				4280, -- [11]
+				2598, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 24,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613496713,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2646, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2632, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [200]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Jinxk-Anachronos", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Pandaren", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				69456, -- [10]
+				18522, -- [11]
+				2185, -- [12]
+				22, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				476, -- [17]
+			}, -- [1]
+			{
+				"Avoidx", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				59433, -- [10]
+				43390, -- [11]
+				2668, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				46, -- [17]
+			}, -- [2]
+			{
+				"Bmahpolice", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				7784, -- [10]
+				118419, -- [11]
+				2430, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				452, -- [17]
+			}, -- [3]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				82023, -- [10]
+				2910, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				94300, -- [10]
+				18810, -- [11]
+				2572, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				0, -- [10]
+				56776, -- [11]
+				2587, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 48,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613496837,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2613, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2614, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [201]
+	{
+		["Map"] = 572,
+		["Players"] = {
+			{
+				"Laquîca-Outland", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Dark Iron Dwarf", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				363255, -- [10]
+				175843, -- [11]
+				2377, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				424, -- [17]
+			}, -- [1]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				384469, -- [10]
+				66877, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [2]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				592988, -- [10]
+				179504, -- [11]
+				2561, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				92749, -- [10]
+				705969, -- [11]
+				2576, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Антошапве-Гордунни", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				154580, -- [10]
+				729691, -- [11]
+				2502, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				836, -- [17]
+			}, -- [5]
+			{
+				"Пвеработяга-Голдринн", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				550445, -- [10]
+				162351, -- [11]
+				2490, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				405, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 4,
+		["PlayersNum"] = 6,
+		["Duration"] = 277,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613497188,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2583, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2585, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [202]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Tandray-TwistingNether", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				652399, -- [10]
+				57928, -- [11]
+				2597, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				171, -- [17]
+			}, -- [1]
+			{
+				"Needleyo-TwistingNether", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				286458, -- [10]
+				162621, -- [11]
+				2597, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				284, -- [17]
+			}, -- [2]
+			{
+				"Còób-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				95756, -- [10]
+				721563, -- [11]
+				2597, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				226, -- [17]
+			}, -- [3]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				539634, -- [10]
+				145605, -- [11]
+				2410, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				225663, -- [10]
+				75850, -- [11]
+				2550, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				139670, -- [10]
+				648094, -- [11]
+				2564, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 283,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613497554,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2536, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2555, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [203]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Rezuzz-Draenor", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				130703, -- [10]
+				68792, -- [11]
+				2377, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				733, -- [17]
+			}, -- [1]
+			{
+				"Taxcollectòr-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				66045, -- [10]
+				18578, -- [11]
+				2533, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				372, -- [17]
+			}, -- [2]
+			{
+				"Beautyqt-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				6354, -- [10]
+				47167, -- [11]
+				2190, -- [12]
+				21, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				108, -- [17]
+			}, -- [3]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				38853, -- [10]
+				6866, -- [11]
+				2410, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				58052, -- [10]
+				20376, -- [11]
+				2538, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				42725, -- [10]
+				51103, -- [11]
+				2551, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 37,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613497667,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2531, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2522, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [204]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Smallbaboon-Stormreaver", -- [1]
+				3, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				378735, -- [10]
+				82688, -- [11]
+				2271, -- [12]
+				19, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				255, -- [17]
+			}, -- [1]
+			{
+				"Cathériné-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				421661, -- [10]
+				36030, -- [11]
+				2563, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				282, -- [17]
+			}, -- [2]
+			{
+				"Ieekzy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				318590, -- [10]
+				47365, -- [11]
+				2402, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				153, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				271231, -- [10]
+				89638, -- [11]
+				2526, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Nò-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				46010, -- [10]
+				550077, -- [11]
+				2701, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				245, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				52898, -- [10]
+				550838, -- [11]
+				2538, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 159,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613497905,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2500, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2495, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [205]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Necrot-Outland", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				172964, -- [10]
+				108322, -- [11]
+				2552, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				242, -- [17]
+			}, -- [1]
+			{
+				"Blizô-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Gnome", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				261777, -- [10]
+				22061, -- [11]
+				2552, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				496, -- [17]
+			}, -- [2]
+			{
+				"Loonilita-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				89931, -- [10]
+				372830, -- [11]
+				2471, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				947, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				329582, -- [10]
+				68877, -- [11]
+				2392, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				154207, -- [10]
+				52860, -- [11]
+				2513, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				20648, -- [10]
+				276655, -- [11]
+				2525, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 99,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613657012,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2461, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2433, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [206]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Baboye-TwistingNether", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				193098, -- [10]
+				54772, -- [11]
+				2352, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				230, -- [17]
+			}, -- [1]
+			{
+				"Isquarêxd-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				59297, -- [10]
+				350933, -- [11]
+				2267, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				480, -- [17]
+			}, -- [2]
+			{
+				"Briggo-Silvermoon", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				94978, -- [10]
+				17411, -- [11]
+				2494, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				155, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				183222, -- [10]
+				34806, -- [11]
+				2382, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				191512, -- [10]
+				49462, -- [11]
+				2499, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				37331, -- [10]
+				174308, -- [11]
+				2511, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 124,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613657215,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2393, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2408, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [207]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				165731, -- [10]
+				50840, -- [11]
+				2483, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				187806, -- [10]
+				29525, -- [11]
+				2370, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [2]
+			{
+				"Jheff-Ragnaros", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				114767, -- [10]
+				73272, -- [11]
+				2302, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				110, -- [17]
+			}, -- [3]
+			{
+				"Otexz-Auchindoun", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				517, -- [10]
+				124015, -- [11]
+				2375, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				204, -- [17]
+			}, -- [4]
+			{
+				"Theóblivion-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				100162, -- [10]
+				46363, -- [11]
+				2374, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				549, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				23561, -- [10]
+				134617, -- [11]
+				2495, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 64,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613657380,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2375, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2382, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [208]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				44017, -- [10]
+				55695, -- [11]
+				2503, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Caccie-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				17413, -- [10]
+				7459, -- [11]
+				2564, -- [12]
+				-17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				567, -- [17]
+			}, -- [2]
+			{
+				"Fourshaw-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				1388, -- [10]
+				124333, -- [11]
+				2204, -- [12]
+				-6, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				63, -- [17]
+			}, -- [3]
+			{
+				"Leolulu-Lightning'sBlade", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				79561, -- [10]
+				61347, -- [11]
+				2409, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				451, -- [17]
+			}, -- [4]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				151224, -- [10]
+				18909, -- [11]
+				2382, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [5]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				71375, -- [10]
+				24607, -- [11]
+				2492, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 1,
+		["PlayersNum"] = 6,
+		["Duration"] = 46,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613657511,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2419, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2406, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [209]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Varésa-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				227991, -- [10]
+				38843, -- [11]
+				2408, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				36, -- [17]
+			}, -- [1]
+			{
+				"Визардли-Гордунни", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				30890, -- [10]
+				362459, -- [11]
+				2447, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				228, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				267787, -- [10]
+				138728, -- [11]
+				2395, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				190258, -- [10]
+				65297, -- [11]
+				2502, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				22069, -- [10]
+				194148, -- [11]
+				2512, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Гарнетт-Гордунни", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Void Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				243364, -- [10]
+				78702, -- [11]
+				2445, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				183, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 114,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613657735,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2438, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2449, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [210]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				321417, -- [10]
+				85148, -- [11]
+				2488, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Eksl-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				139928, -- [10]
+				52997, -- [11]
+				2407, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				186, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				337923, -- [10]
+				48213, -- [11]
+				2385, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Ranocchio-TheMaelstrom", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				53193, -- [10]
+				500804, -- [11]
+				2407, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				198, -- [17]
+			}, -- [4]
+			{
+				"Woopx-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				169180, -- [10]
+				42718, -- [11]
+				2410, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				236, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				48738, -- [10]
+				220459, -- [11]
+				2498, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 166,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613658054,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2411, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2412, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [211]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Pakkah-Kazzak", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Troll", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				76114, -- [10]
+				15482, -- [11]
+				2372, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				27, -- [17]
+			}, -- [1]
+			{
+				"Zugmd-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				89743, -- [10]
+				3361, -- [11]
+				2372, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				36, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				32872, -- [10]
+				5407, -- [11]
+				2398, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				8526, -- [10]
+				8319, -- [11]
+				2497, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Saltyben-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				12125, -- [10]
+				30416, -- [11]
+				2373, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				273, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				10348, -- [10]
+				37791, -- [11]
+				2507, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 28,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613658182,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2446, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2440, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [212]
+	{
+		["Map"] = 1825,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				229680, -- [10]
+				81594, -- [11]
+				2388, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				214536, -- [10]
+				86088, -- [11]
+				2483, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Rezuzz-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				247471, -- [10]
+				76676, -- [11]
+				2491, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				735, -- [17]
+			}, -- [3]
+			{
+				"Taxcollectòr-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				158138, -- [10]
+				69421, -- [11]
+				2121, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				375, -- [17]
+			}, -- [4]
+			{
+				"Vializt-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				30333, -- [10]
+				247519, -- [11]
+				1965, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				72, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				49702, -- [10]
+				266505, -- [11]
+				2493, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 110,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613658395,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2412, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2412, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [213]
+	{
+		["Map"] = 1911,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				259971, -- [10]
+				24745, -- [11]
+				2401, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Amzo-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				82414, -- [10]
+				25816, -- [11]
+				2392, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				103, -- [17]
+			}, -- [2]
+			{
+				"Flåp", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				126271, -- [10]
+				103747, -- [11]
+				2479, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				745, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				238568, -- [10]
+				53050, -- [11]
+				2493, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Nemxy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				52191, -- [10]
+				364164, -- [11]
+				2349, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				433, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				54923, -- [10]
+				167083, -- [11]
+				2502, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 105,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613658626,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2426, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2441, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [214]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				537369, -- [10]
+				150768, -- [11]
+				2503, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				754939, -- [10]
+				86573, -- [11]
+				2414, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [2]
+			{
+				"Constantxo-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				89954, -- [10]
+				841979, -- [11]
+				2501, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				147, -- [17]
+			}, -- [3]
+			{
+				"Pureformak-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				415518, -- [10]
+				308139, -- [11]
+				2501, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				85, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				101276, -- [10]
+				582042, -- [11]
+				2511, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Zulpish-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				374807, -- [10]
+				118300, -- [11]
+				2501, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				60, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 256,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613659084,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2467, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2458, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [215]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				108107, -- [10]
+				31076, -- [11]
+				2513, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Immuneman-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				3839, -- [10]
+				194197, -- [11]
+				2456, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				86, -- [17]
+			}, -- [2]
+			{
+				"Lebonpseudal-Hyjal", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Pandaren", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				26904, -- [10]
+				47534, -- [11]
+				2407, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				168, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				182166, -- [10]
+				33322, -- [11]
+				2428, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [4]
+			{
+				"Rltz-DefiasBrotherhood", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				127198, -- [10]
+				25526, -- [11]
+				2440, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				299, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				29787, -- [10]
+				87230, -- [11]
+				2521, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 65,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613659227,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2490, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2495, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [216]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Rezuzz-Draenor", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				220102, -- [10]
+				75929, -- [11]
+				2526, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				736, -- [17]
+			}, -- [1]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				172624, -- [10]
+				42864, -- [11]
+				2442, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [2]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				98862, -- [10]
+				42422, -- [11]
+				2524, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Taxcollectòr-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				120744, -- [10]
+				35007, -- [11]
+				2220, -- [12]
+				20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				375, -- [17]
+			}, -- [4]
+			{
+				"Vializt-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				24708, -- [10]
+				184331, -- [11]
+				2075, -- [12]
+				22, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				72, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				26349, -- [10]
+				188858, -- [11]
+				2532, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 69,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613659375,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2527, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2523, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [217]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				492623, -- [10]
+				134767, -- [11]
+				2512, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Hÿmne-Hyjal", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				207654, -- [10]
+				208116, -- [11]
+				2490, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				105, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				414328, -- [10]
+				54850, -- [11]
+				2433, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Moexd", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				285671, -- [10]
+				56892, -- [11]
+				2489, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				172, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				111668, -- [10]
+				371913, -- [11]
+				2520, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Åtømîç-Hellscream", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				86631, -- [10]
+				605583, -- [11]
+				2487, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				178, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 240,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613659693,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2495, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2495, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [218]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				477310, -- [10]
+				165878, -- [11]
+				2447, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				564975, -- [10]
+				163395, -- [11]
+				2523, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				112783, -- [10]
+				519588, -- [11]
+				2531, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Eliethiax-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				48301, -- [10]
+				839577, -- [11]
+				2577, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				93, -- [17]
+			}, -- [4]
+			{
+				"Kineta-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Demon Hunter", -- [8]
+				"DEMONHUNTER", -- [9]
+				400627, -- [10]
+				49340, -- [11]
+				2591, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Havoc", -- [16]
+				103, -- [17]
+			}, -- [5]
+			{
+				"Squírtgodx-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				417904, -- [10]
+				137620, -- [11]
+				2577, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				106, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 3,
+		["PlayersNum"] = 6,
+		["Duration"] = 242,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613660122,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2524, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2557, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [219]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				469210, -- [10]
+				141305, -- [11]
+				2536, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				75802, -- [10]
+				672432, -- [11]
+				2544, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Iamnrage-Blackhand", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				109044, -- [10]
+				663836, -- [11]
+				2404, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				100, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				555776, -- [10]
+				92934, -- [11]
+				2463, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [4]
+			{
+				"Turbostruck-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				360366, -- [10]
+				190983, -- [11]
+				2425, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				271, -- [17]
+			}, -- [5]
+			{
+				"Unrendered-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				457533, -- [10]
+				124735, -- [11]
+				2425, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				283, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 2,
+		["PlayersNum"] = 6,
+		["Duration"] = 245,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613660517,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2560, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2540, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [220]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Kmrzccident-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				152608, -- [10]
+				201893, -- [11]
+				2517, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				234, -- [17]
+			}, -- [1]
+			{
+				"Paschus-Blackrock", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				260494, -- [10]
+				128433, -- [11]
+				2640, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				260, -- [17]
+			}, -- [2]
+			{
+				"Hiefhilft-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				48841, -- [10]
+				595308, -- [11]
+				2309, -- [12]
+				20, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				342, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				477498, -- [10]
+				40693, -- [11]
+				2478, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				379860, -- [10]
+				92980, -- [11]
+				2548, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				85268, -- [10]
+				235592, -- [11]
+				2556, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 171,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613660877,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2585, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2614, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [221]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				164408, -- [10]
+				30674, -- [11]
+				2470, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				161560, -- [10]
+				27274, -- [11]
+				2538, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Ajaý-Sylvanas", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				12839, -- [10]
+				157944, -- [11]
+				2568, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				202, -- [17]
+			}, -- [3]
+			{
+				"Maro-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				66196, -- [10]
+				29313, -- [11]
+				2568, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				78, -- [17]
+			}, -- [4]
+			{
+				"Narcolies-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				129361, -- [10]
+				61147, -- [11]
+				2568, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				222, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				5297, -- [10]
+				126999, -- [11]
+				2546, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 45,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613661001,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2573, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2561, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [222]
+	{
+		["Map"] = 572,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				178614, -- [10]
+				17900, -- [11]
+				2485, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				133080, -- [10]
+				35514, -- [11]
+				2551, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Apacho-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				97794, -- [10]
+				38193, -- [11]
+				2612, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				232, -- [17]
+			}, -- [3]
+			{
+				"Ezraýl-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				115775, -- [10]
+				18877, -- [11]
+				2612, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				217, -- [17]
+			}, -- [4]
+			{
+				"Izri-Area52", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				7552, -- [10]
+				208569, -- [11]
+				2612, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				109, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				26493, -- [10]
+				140644, -- [11]
+				2559, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 66,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613661161,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2630, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2593, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [223]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Sebrøk-Nemesis", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				467459, -- [10]
+				146336, -- [11]
+				2541, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				442, -- [17]
+			}, -- [1]
+			{
+				"Øuutch-Archimonde", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				566770, -- [10]
+				135721, -- [11]
+				2541, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Affliction", -- [16]
+				191, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				369275, -- [10]
+				184030, -- [11]
+				2502, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				365122, -- [10]
+				121920, -- [11]
+				2566, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Nostalgiae", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				23550, -- [10]
+				459452, -- [11]
+				2538, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				230, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				11012, -- [10]
+				626082, -- [11]
+				2573, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 173,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613661449,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2645, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2630, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [224]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Bakkayaro-Ysondre", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				253856, -- [10]
+				67082, -- [11]
+				2662, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				300, -- [17]
+			}, -- [1]
+			{
+				"Huxalguccix-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				30926, -- [10]
+				760794, -- [11]
+				2443, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				455, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				416413, -- [10]
+				117739, -- [11]
+				2502, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				535096, -- [10]
+				100646, -- [11]
+				2557, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Wildharambe-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				318164, -- [10]
+				230399, -- [11]
+				2542, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				44, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				67248, -- [10]
+				326830, -- [11]
+				2563, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 220,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613661750,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2592, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2603, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [225]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				130306, -- [10]
+				65789, -- [11]
+				2493, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Avokezyo-Azshara", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				61117, -- [10]
+				43480, -- [11]
+				2502, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				139, -- [17]
+			}, -- [2]
+			{
+				"Ericsondisc-Blackmoore", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				6313, -- [10]
+				148200, -- [11]
+				2502, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				52, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				153587, -- [10]
+				30416, -- [11]
+				2546, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Volvoxrogue-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				112730, -- [10]
+				5021, -- [11]
+				2502, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				51, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				27386, -- [10]
+				75584, -- [11]
+				2552, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 73,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613661902,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2572, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2572, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [226]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				160803, -- [10]
+				24092, -- [11]
+				2508, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				83, -- [17]
+			}, -- [1]
+			{
+				"Kaleyra-ArgentDawn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				27652, -- [10]
+				143480, -- [11]
+				2542, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				68, -- [17]
+			}, -- [2]
+			{
+				"Nagisakunx-Blackmoore", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				8391, -- [10]
+				154882, -- [11]
+				2543, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				91, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				212081, -- [10]
+				7237, -- [11]
+				2559, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Narali-ArgentDawn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				30649, -- [10]
+				39144, -- [11]
+				2542, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				54, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				30073, -- [10]
+				34704, -- [11]
+				2565, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 64,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613662111,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2601, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2600, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [227]
+	{
+		["Map"] = 1911,
+		["Players"] = {
+			{
+				"Mvce-Outland", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				81672, -- [10]
+				536459, -- [11]
+				2591, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				284, -- [17]
+			}, -- [1]
+			{
+				"Kyllar-Sylvanas", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				128576, -- [10]
+				94745, -- [11]
+				2591, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				235, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				357100, -- [10]
+				103410, -- [11]
+				2523, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				269902, -- [10]
+				69249, -- [11]
+				2572, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Nessiahx-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				200442, -- [10]
+				40851, -- [11]
+				2591, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				112, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				49867, -- [10]
+				121892, -- [11]
+				2578, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 161,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613662432,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2630, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2606, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [228]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Chenp-Draenor", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				45506, -- [10]
+				201996, -- [11]
+				2525, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				238, -- [17]
+			}, -- [1]
+			{
+				"Osbrah-Archimonde", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				104451, -- [10]
+				48020, -- [11]
+				2609, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				57, -- [17]
+			}, -- [2]
+			{
+				"Faméxyo-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				89013, -- [10]
+				59287, -- [11]
+				2614, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				95, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				217928, -- [10]
+				40115, -- [11]
+				2514, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				85950, -- [10]
+				22308, -- [11]
+				2561, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				4246, -- [10]
+				80543, -- [11]
+				2567, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 59,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613662678,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2596, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2572, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [229]
+	{
+		["Map"] = 1911,
+		["Players"] = {
+			{
+				"Kmrzccident-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				214713, -- [10]
+				52091, -- [11]
+				2520, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				234, -- [17]
+			}, -- [1]
+			{
+				"Paschus-Blackrock", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				213991, -- [10]
+				66757, -- [11]
+				2607, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				260, -- [17]
+			}, -- [2]
+			{
+				"Hiefhilft-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				71548, -- [10]
+				283650, -- [11]
+				2369, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				342, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				260129, -- [10]
+				66488, -- [11]
+				2504, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				136875, -- [10]
+				71567, -- [11]
+				2549, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				8731, -- [10]
+				246666, -- [11]
+				2555, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 117,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613662933,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2562, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2544, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [230]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Bánz-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				139328, -- [10]
+				563336, -- [11]
+				2524, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				151, -- [17]
+			}, -- [1]
+			{
+				"Shadenox-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				346260, -- [10]
+				77125, -- [11]
+				2524, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				344, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				334804, -- [10]
+				112030, -- [11]
+				2493, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [3]
+			{
+				"Minïz-Dalaran", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				321870, -- [10]
+				157584, -- [11]
+				2522, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				308, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				408179, -- [10]
+				142405, -- [11]
+				2537, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				42590, -- [10]
+				393047, -- [11]
+				2543, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 278,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613663401,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2529, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2537, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [231]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Cml-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Troll", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				90820, -- [10]
+				5166, -- [11]
+				2261, -- [12]
+				19, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				347, -- [17]
+			}, -- [1]
+			{
+				"Éru-Archimonde", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				91769, -- [10]
+				15699, -- [11]
+				2619, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				553, -- [17]
+			}, -- [2]
+			{
+				"Lamps-Drak'thul", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				1026, -- [10]
+				88418, -- [11]
+				2369, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				533, -- [17]
+			}, -- [3]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				66353, -- [10]
+				11166, -- [11]
+				2483, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				65166, -- [10]
+				19003, -- [11]
+				2525, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				2525, -- [10]
+				49516, -- [11]
+				2531, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 45,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613663582,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2502, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2514, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [232]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Madhots-Kazzak", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				406494, -- [10]
+				148082, -- [11]
+				2472, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				405222, -- [10]
+				143025, -- [11]
+				2513, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Hotnheavy-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				118172, -- [10]
+				542038, -- [11]
+				2387, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				101, -- [17]
+			}, -- [3]
+			{
+				"Lilbloodyx-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Hunter", -- [8]
+				"HUNTER", -- [9]
+				432947, -- [10]
+				26229, -- [11]
+				2396, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Beast Mastery", -- [16]
+				270, -- [17]
+			}, -- [4]
+			{
+				"Revenj-Elune", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				447901, -- [10]
+				202536, -- [11]
+				2394, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				183, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				72910, -- [10]
+				664138, -- [11]
+				2518, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 229,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613663984,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2475, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2476, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [233]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Pånkek", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Hunter", -- [8]
+				"HUNTER", -- [9]
+				190628, -- [10]
+				42471, -- [11]
+				2297, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Survival", -- [16]
+				240, -- [17]
+			}, -- [1]
+			{
+				"Bigp-Darksorrow", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				177318, -- [10]
+				144231, -- [11]
+				2478, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				456, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				242041, -- [10]
+				46979, -- [11]
+				2484, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				178500, -- [10]
+				43215, -- [11]
+				2524, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Pòpe-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				22369, -- [10]
+				240431, -- [11]
+				2446, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				127, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				12789, -- [10]
+				208656, -- [11]
+				2529, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 86,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613664157,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2494, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2504, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [234]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Flåp", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				188757, -- [10]
+				89358, -- [11]
+				2462, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				745, -- [17]
+			}, -- [1]
+			{
+				"Qia-Sylvanas", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				102260, -- [10]
+				45498, -- [11]
+				2367, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				107, -- [17]
+			}, -- [2]
+			{
+				"Madhots-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				261398, -- [10]
+				42401, -- [11]
+				2472, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				84, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				154798, -- [10]
+				77470, -- [11]
+				2511, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Nemxy", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				43256, -- [10]
+				315381, -- [11]
+				2382, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				434, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				36769, -- [10]
+				107761, -- [11]
+				2516, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 104,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613664354,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2478, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2473, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [235]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				249167, -- [10]
+				160893, -- [11]
+				2418, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				58315, -- [10]
+				510704, -- [11]
+				2503, -- [12]
+				6, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Fazzoorr-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				40711, -- [10]
+				426455, -- [11]
+				2257, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				36, -- [17]
+			}, -- [3]
+			{
+				"Kleindk-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				457533, -- [10]
+				33730, -- [11]
+				2257, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				130, -- [17]
+			}, -- [4]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				332633, -- [10]
+				80380, -- [11]
+				2117, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [5]
+			{
+				"Optimiz-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				266111, -- [10]
+				99145, -- [11]
+				2257, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				217, -- [17]
+			}, -- [6]
+		},
+		["Season"] = 30,
+		["PlayersNum"] = 6,
+		["Duration"] = 154,
+		["PlayerNum"] = 2,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isBrawl"] = false,
+		["PlayerSide"] = 0,
+		["isRated"] = true,
+		["Time"] = 1613670469,
+		["Winner"] = 0,
+		["Hidden"] = false,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2295, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2310, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [236]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				137905, -- [10]
+				64144, -- [11]
+				2426, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				29494, -- [10]
+				153197, -- [11]
+				2509, -- [12]
+				7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				133464, -- [10]
+				25046, -- [11]
+				2135, -- [12]
+				19, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [3]
+			{
+				"Рипичип-СвежевательДуш", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				145584, -- [10]
+				83700, -- [11]
+				2344, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				143, -- [17]
+			}, -- [4]
+			{
+				"Форсе-СвежевательДуш", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				97874, -- [10]
+				41604, -- [11]
+				2340, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Affliction", -- [16]
+				109, -- [17]
+			}, -- [5]
+			{
+				"Чувакабра-Ревущийфьорд", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				12831, -- [10]
+				178367, -- [11]
+				2359, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				179, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 2,
+		["PlayersNum"] = 6,
+		["Duration"] = 82,
+		["Hidden"] = false,
+		["isBrawl"] = false,
+		["PlayerSide"] = 1,
+		["isArena"] = true,
+		["Time"] = 1613670654,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2351, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2336, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [237]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Ls-Outland", -- [1]
+				3, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				669797, -- [10]
+				192164, -- [11]
+				2154, -- [12]
+				19, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [1]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				583005, -- [10]
+				650050, -- [11]
+				2435, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Leyobanned-Archimonde", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Troll", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				860151, -- [10]
+				45928, -- [11]
+				2376, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				539, -- [17]
+			}, -- [3]
+			{
+				"Madicake-Moonglade", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				66535, -- [10]
+				1167136, -- [11]
+				2359, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Mcgregorc-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				733411, -- [10]
+				221958, -- [11]
+				2334, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				204, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				158042, -- [10]
+				794288, -- [11]
+				2516, -- [12]
+				7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 466,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613671204,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2378, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2373, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [238]
+	{
+		["Map"] = 1825,
+		["Players"] = {
+			{
+				"Bigpeter-Darksorrow", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				227323, -- [10]
+				34338, -- [11]
+				2236, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				457, -- [17]
+			}, -- [1]
+			{
+				"Stalfra-Sylvanas", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Hunter", -- [8]
+				"HUNTER", -- [9]
+				92272, -- [10]
+				989, -- [11]
+				2619, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Marksmanship", -- [16]
+				68, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				122051, -- [10]
+				147408, -- [11]
+				2445, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Leilyyz-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				69961, -- [10]
+				185794, -- [11]
+				2226, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				547, -- [17]
+			}, -- [4]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				106979, -- [10]
+				24426, -- [11]
+				2173, -- [12]
+				-5, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				4150, -- [10]
+				142187, -- [11]
+				2523, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 80,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613671460,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2406, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2394, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [239]
+	{
+		["Map"] = 1911,
+		["Players"] = {
+			{
+				"Actionklaus-Blackrock", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				338582, -- [10]
+				27830, -- [11]
+				2335, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				328, -- [17]
+			}, -- [1]
+			{
+				"Discololx-Blackhand", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				87268, -- [10]
+				310039, -- [11]
+				2414, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				162, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				159972, -- [10]
+				177276, -- [11]
+				2431, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				243284, -- [10]
+				66693, -- [11]
+				2168, -- [12]
+				-6, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				10145, -- [10]
+				375789, -- [11]
+				2507, -- [12]
+				-17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Yacunexx-Blackrock", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				283561, -- [10]
+				72859, -- [11]
+				2350, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				243, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 115,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613671766,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 5,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2372, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2356, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [240]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Ls-Outland", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				403712, -- [10]
+				90906, -- [11]
+				2162, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [1]
+			{
+				"Elunnes-TheMaelstrom", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				413674, -- [10]
+				135377, -- [11]
+				2323, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				89, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				362016, -- [10]
+				302406, -- [11]
+				2416, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Kimyoungoom-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				76639, -- [10]
+				614807, -- [11]
+				2350, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				70, -- [17]
+			}, -- [4]
+			{
+				"Sgait-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				386427, -- [10]
+				123116, -- [11]
+				2303, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Affliction", -- [16]
+				253, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				95812, -- [10]
+				462987, -- [11]
+				2490, -- [12]
+				7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 247,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613672143,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2338, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2342, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [241]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"ßabestationx", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				335689, -- [10]
+				35775, -- [11]
+				2338, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				184, -- [17]
+			}, -- [1]
+			{
+				"Crazywings-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				36628, -- [10]
+				470095, -- [11]
+				2338, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				680, -- [17]
+			}, -- [2]
+			{
+				"Frostytbc-Blackhand", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				185634, -- [10]
+				105641, -- [11]
+				2338, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				56, -- [17]
+			}, -- [3]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				247710, -- [10]
+				166035, -- [11]
+				2425, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				260651, -- [10]
+				66574, -- [11]
+				2180, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				51108, -- [10]
+				235088, -- [11]
+				2497, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 157,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613672402,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2378, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2369, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [242]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Vaskez-Kazzak", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				564047, -- [10]
+				129158, -- [11]
+				2397, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				55, -- [17]
+			}, -- [1]
+			{
+				"Addeshaman-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				0, -- [10]
+				770055, -- [11]
+				2373, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				62, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				514600, -- [10]
+				271552, -- [11]
+				2411, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				125, -- [17]
+			}, -- [3]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				572648, -- [10]
+				145013, -- [11]
+				2180, -- [12]
+				-7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				81220, -- [10]
+				578049, -- [11]
+				2481, -- [12]
+				-17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Zaralarssón-Al'Akir", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				515113, -- [10]
+				261179, -- [11]
+				2379, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				172, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 233,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613672713,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 5,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2343, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2341, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [243]
+	{
+		["Map"] = 1825,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				242190, -- [10]
+				32073, -- [11]
+				2498, -- [12]
+				7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Critlolxy-Blackmoore", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				123487, -- [10]
+				66846, -- [11]
+				2313, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Balance", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				212768, -- [10]
+				19998, -- [11]
+				2173, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [3]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				58010, -- [10]
+				186429, -- [11]
+				2464, -- [12]
+				4, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Фаертопчик-ЧерныйШрам", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				108699, -- [10]
+				62899, -- [11]
+				2319, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				491, -- [17]
+			}, -- [5]
+			{
+				"Хиллшотовна-СтражСмерти", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				34712, -- [10]
+				355857, -- [11]
+				2330, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				158, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 91,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613672917,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 4,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2345, -- [4]
+				2, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2349, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [244]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				78646, -- [10]
+				4471, -- [11]
+				2505, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [1]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				22492, -- [10]
+				3486, -- [11]
+				2190, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [2]
+			{
+				"Lulo-GrimBatol", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				47647, -- [10]
+				0, -- [11]
+				2345, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				300, -- [17]
+			}, -- [3]
+			{
+				"Nollieflip-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				13095, -- [10]
+				16314, -- [11]
+				2514, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				80, -- [17]
+			}, -- [4]
+			{
+				"Trustyv-Frostmane", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				17245, -- [10]
+				42188, -- [11]
+				2337, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				190, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				0, -- [10]
+				57097, -- [11]
+				2468, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 30,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613673026,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2373, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2379, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [245]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Edot-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				483284, -- [10]
+				64847, -- [11]
+				2458, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				120, -- [17]
+			}, -- [1]
+			{
+				"Paqx-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				251906, -- [10]
+				200159, -- [11]
+				2457, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				218, -- [17]
+			}, -- [2]
+			{
+				"Akíra-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				50722, -- [10]
+				740631, -- [11]
+				2458, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				93, -- [17]
+			}, -- [3]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				490029, -- [10]
+				39727, -- [11]
+				2208, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [4]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				424789, -- [10]
+				136574, -- [11]
+				2513, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				59586, -- [10]
+				472868, -- [11]
+				2477, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 237,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613673340,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2409, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2408, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [246]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Ls-Outland", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				282805, -- [10]
+				59913, -- [11]
+				2208, -- [12]
+				18, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				283035, -- [10]
+				88905, -- [11]
+				2498, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Deomage-EmeraldDream", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				146466, -- [10]
+				75301, -- [11]
+				2497, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				251, -- [17]
+			}, -- [3]
+			{
+				"Facepunch-EmeraldDream", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Pandaren", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				321387, -- [10]
+				87280, -- [11]
+				2421, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				105, -- [17]
+			}, -- [4]
+			{
+				"Walakazzam-Sunstrider", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				46468, -- [10]
+				299244, -- [11]
+				2307, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				178, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				12835, -- [10]
+				349509, -- [11]
+				2463, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 135,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613673633,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2379, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2396, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [247]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Pinpinpope-TwistingNether", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				6316, -- [10]
+				15643, -- [11]
+				2382, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				329, -- [17]
+			}, -- [1]
+			{
+				"Wisplol-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Dwarf", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				30720, -- [10]
+				4452, -- [11]
+				2382, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				253, -- [17]
+			}, -- [2]
+			{
+				"Ls-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				4782, -- [10]
+				0, -- [11]
+				2226, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				277, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				20850, -- [10]
+				9297, -- [11]
+				2507, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				125, -- [17]
+			}, -- [4]
+			{
+				"Opwizard-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				57495, -- [10]
+				9234, -- [11]
+				2381, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				213, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				3698, -- [10]
+				769, -- [11]
+				2473, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 28,
+		["Season"] = 30,
+		["isArena"] = true,
+		["Time"] = 1613673773,
+		["isBrawl"] = false,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2412, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2415, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [248]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Unrendered-TarrenMill", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				153052, -- [10]
+				37276, -- [11]
+				2345, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				284, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				239863, -- [10]
+				13573, -- [11]
+				2479, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				240666, -- [10]
+				72130, -- [11]
+				2411, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [3]
+			{
+				"Turbostruck-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				163972, -- [10]
+				133246, -- [11]
+				2345, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				272, -- [17]
+			}, -- [4]
+			{
+				"Wet-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				15822, -- [10]
+				349078, -- [11]
+				2403, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				112, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				48920, -- [10]
+				166641, -- [11]
+				2459, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 102,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613757939,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2373, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2370, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [249]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				188133, -- [10]
+				17647, -- [11]
+				2398, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				115302, -- [10]
+				62886, -- [11]
+				2463, -- [12]
+				8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Fringles-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				92545, -- [10]
+				28363, -- [11]
+				2286, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				110, -- [17]
+			}, -- [3]
+			{
+				"Thelols-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				148264, -- [10]
+				24028, -- [11]
+				2290, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				122, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				21275, -- [10]
+				205736, -- [11]
+				2444, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Непончик-СвежевательДуш", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				26092, -- [10]
+				164455, -- [11]
+				2269, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				215, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 5,
+		["PlayersNum"] = 6,
+		["Duration"] = 71,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 1,
+		["isBrawl"] = false,
+		["Time"] = 1613758145,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 1,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2357, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2342, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [250]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				465479, -- [10]
+				144692, -- [11]
+				2471, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Akkane-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				33863, -- [10]
+				814925, -- [11]
+				2339, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				42, -- [17]
+			}, -- [2]
+			{
+				"Gekaz-Garona", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				255300, -- [10]
+				175506, -- [11]
+				2372, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				133, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				774337, -- [10]
+				64855, -- [11]
+				2409, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Spumaga", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Mag'har Orc", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				390038, -- [10]
+				242727, -- [11]
+				2363, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				120, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				65336, -- [10]
+				478014, -- [11]
+				2453, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["PlayerNum"] = 6,
+		["PlayersNum"] = 6,
+		["Duration"] = 254,
+		["Hidden"] = false,
+		["isArena"] = true,
+		["PlayerSide"] = 0,
+		["isBrawl"] = false,
+		["Time"] = 1613758521,
+		["isRated"] = true,
+		["Version"] = 310,
+		["Winner"] = 0,
+		["Season"] = 30,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2375, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2386, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [251]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				168296, -- [10]
+				14098, -- [11]
+				2480, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Bigchingo-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Hunter", -- [8]
+				"HUNTER", -- [9]
+				47338, -- [10]
+				22543, -- [11]
+				2147, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Marksmanship", -- [16]
+				120, -- [17]
+			}, -- [2]
+			{
+				"Mïserygødx-Nemesis", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				8868, -- [10]
+				231947, -- [11]
+				2343, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				194, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				270785, -- [10]
+				38707, -- [11]
+				2420, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Onetwodelete-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				109658, -- [10]
+				146347, -- [11]
+				2539, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Retribution", -- [16]
+				374, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				59229, -- [10]
+				110406, -- [11]
+				2463, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 101,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613758742,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2391, -- [4]
+				2, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2407, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [252]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				273397, -- [10]
+				67757, -- [11]
+				2489, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				284803, -- [10]
+				62822, -- [11]
+				2431, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [2]
+			{
+				"Nerly", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				92569, -- [10]
+				8105, -- [11]
+				2378, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				562, -- [17]
+			}, -- [3]
+			{
+				"Workyticket-Magtheridon", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				69782, -- [10]
+				481614, -- [11]
+				1738, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				37, -- [17]
+			}, -- [4]
+			{
+				"Worldstár-Onyxia", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				100824, -- [10]
+				88197, -- [11]
+				2366, -- [12]
+				-1, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				237, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				63796, -- [10]
+				147553, -- [11]
+				2473, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 136,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613758983,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2434, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2439, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [253]
+	{
+		["Map"] = 2373,
+		["Players"] = {
+			{
+				"Dorxt-Cho'gall", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				74222, -- [10]
+				34767, -- [11]
+				2392, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				623, -- [17]
+			}, -- [1]
+			{
+				"Ironmásk-TarrenMill", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				88776, -- [10]
+				4842, -- [11]
+				2549, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				175, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				152974, -- [10]
+				17032, -- [11]
+				2499, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				106727, -- [10]
+				27176, -- [11]
+				2443, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Sêmtex-Blackhand", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				15416, -- [10]
+				293193, -- [11]
+				2493, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				312, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				37595, -- [10]
+				32629, -- [11]
+				2484, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 61,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613759135,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2475, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2464, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [254]
+	{
+		["Map"] = 1134,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				391712, -- [10]
+				137927, -- [11]
+				2432, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [1]
+			{
+				"Bigpeter-Darksorrow", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				395791, -- [10]
+				286090, -- [11]
+				2487, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				458, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				473233, -- [10]
+				160484, -- [11]
+				2486, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Latiifa-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				66295, -- [10]
+				533506, -- [11]
+				2473, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				56, -- [17]
+			}, -- [4]
+			{
+				"Lddx-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Hunter", -- [8]
+				"HUNTER", -- [9]
+				397905, -- [10]
+				71218, -- [11]
+				2474, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Marksmanship", -- [16]
+				278, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				79514, -- [10]
+				535231, -- [11]
+				2472, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 221,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613759466,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2437, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2434, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [255]
+	{
+		["Map"] = 617,
+		["Players"] = {
+			{
+				"Namw-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				1291040, -- [10]
+				270392, -- [11]
+				2444, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [1]
+			{
+				"Xuna", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				134136, -- [10]
+				1030709, -- [11]
+				2483, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				1024194, -- [10]
+				251346, -- [11]
+				2496, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Destii-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Goblin", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				792186, -- [10]
+				566231, -- [11]
+				2441, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				142, -- [17]
+			}, -- [4]
+			{
+				"Jaq-DefiasBrotherhood", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				698184, -- [10]
+				336644, -- [11]
+				2441, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				96, -- [17]
+			}, -- [5]
+			{
+				"Piscy-Draenor", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				59863, -- [10]
+				1492138, -- [11]
+				2441, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				114, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 538,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613760113,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 2,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2493, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2466, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [256]
+	{
+		["Map"] = 1672,
+		["Players"] = {
+			{
+				"Дэадвулф-Ревущийфьорд", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				282812, -- [10]
+				79956, -- [11]
+				2378, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Enhancement", -- [16]
+				146, -- [17]
+			}, -- [1]
+			{
+				"Траллогар-СвежевательДуш", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				280331, -- [10]
+				41224, -- [11]
+				2592, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				464, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				272671, -- [10]
+				130634, -- [11]
+				2508, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				206578, -- [10]
+				81798, -- [11]
+				2458, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				36084, -- [10]
+				358339, -- [11]
+				2495, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Инставэй-Ревущийфьорд", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				86455, -- [10]
+				400501, -- [11]
+				2359, -- [12]
+				17, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				108, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 140,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613760357,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 5,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2500, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2500, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [257]
+	{
+		["Map"] = 572,
+		["Players"] = {
+			{
+				"Ranocchio-TheMaelstrom", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				95012, -- [10]
+				212565, -- [11]
+				2429, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				199, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				127549, -- [10]
+				99249, -- [11]
+				2496, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Eksl-Kazzak", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				177858, -- [10]
+				69847, -- [11]
+				2429, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				186, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				150290, -- [10]
+				79725, -- [11]
+				2447, -- [12]
+				-11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Woopx-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				124952, -- [10]
+				10965, -- [11]
+				2429, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				237, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				18872, -- [10]
+				160246, -- [11]
+				2483, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 113,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613760554,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2471, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2469, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [258]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Coldyx-Blackrock", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				4601, -- [10]
+				10586, -- [11]
+				2621, -- [12]
+				6, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				154, -- [17]
+			}, -- [1]
+			{
+				"Sharkøuzi-Blackrock", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				60182, -- [10]
+				304, -- [11]
+				2319, -- [12]
+				16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				63, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				10482, -- [10]
+				4425, -- [11]
+				2483, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				8429, -- [10]
+				413, -- [11]
+				2436, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				1205, -- [10]
+				14971, -- [11]
+				2471, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Zyreanxy-Blackrock", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				63700, -- [10]
+				8429, -- [11]
+				2613, -- [12]
+				7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				142, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 28,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613760670,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 5,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2445, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2441, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [259]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Stormfury-Quel'Thalas", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				827716, -- [10]
+				406299, -- [11]
+				2384, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				199, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				968351, -- [10]
+				284534, -- [11]
+				2470, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Mànwe-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				335934, -- [10]
+				209041, -- [11]
+				2384, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				112, -- [17]
+			}, -- [3]
+			{
+				"Namw-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Warlock", -- [8]
+				"WARLOCK", -- [9]
+				846596, -- [10]
+				249490, -- [11]
+				2424, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Destruction", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Winlove-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				261014, -- [10]
+				1366365, -- [11]
+				2383, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				78, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				195457, -- [10]
+				832482, -- [11]
+				2458, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 483,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613761305,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2413, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2388, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [260]
+	{
+		["Map"] = 1911,
+		["Players"] = {
+			{
+				"Kratta-Ragnaros", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Death Knight", -- [8]
+				"DEATHKNIGHT", -- [9]
+				143702, -- [10]
+				9700, -- [11]
+				2330, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Frost", -- [16]
+				54, -- [17]
+			}, -- [1]
+			{
+				"Lukexd-Ragnaros", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				269534, -- [10]
+				57176, -- [11]
+				2339, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				239, -- [17]
+			}, -- [2]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				117484, -- [10]
+				35603, -- [11]
+				2455, -- [12]
+				-16, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [3]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				107425, -- [10]
+				103607, -- [11]
+				2397, -- [12]
+				-14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [4]
+			{
+				"Nhuma-Ragnaros", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				15318, -- [10]
+				177419, -- [11]
+				2324, -- [12]
+				13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				18587, -- [10]
+				185780, -- [11]
+				2444, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 54,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613761601,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2348, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2366, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [261]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				537903, -- [10]
+				175021, -- [11]
+				2439, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Biggiesmalls-Blackrock", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				217366, -- [10]
+				110078, -- [11]
+				2342, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				343, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				417024, -- [10]
+				325368, -- [11]
+				2383, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [3]
+			{
+				"Kfcmanagerx-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Pandaren", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				227555, -- [10]
+				732378, -- [11]
+				2320, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				366, -- [17]
+			}, -- [4]
+			{
+				"Xiey-Blackrock", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				651524, -- [10]
+				15139, -- [11]
+				2173, -- [12]
+				-7, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				116, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				11408, -- [10]
+				617442, -- [11]
+				2429, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 250,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613761972,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2338, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2333, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [262]
+	{
+		["Map"] = 2167,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				214630, -- [10]
+				67233, -- [11]
+				2448, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				198328, -- [10]
+				107177, -- [11]
+				2393, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [2]
+			{
+				"Pvermpisfine-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				133124, -- [10]
+				13458, -- [11]
+				2234, -- [12]
+				-8, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				595, -- [17]
+			}, -- [3]
+			{
+				"Shakemilk-Sylvanas", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				170779, -- [10]
+				92016, -- [11]
+				2355, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				194, -- [17]
+			}, -- [4]
+			{
+				"Vaskyqt-Sylvanas", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				74226, -- [10]
+				293268, -- [11]
+				2130, -- [12]
+				0, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				384, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				34708, -- [10]
+				235594, -- [11]
+				2438, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 169,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613762405,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2363, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2348, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [263]
+	{
+		["Map"] = 1505,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				263365, -- [10]
+				74940, -- [11]
+				2457, -- [12]
+				9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Gíntó-TwistingNether", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				55221, -- [10]
+				354929, -- [11]
+				2338, -- [12]
+				-10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				222, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				178645, -- [10]
+				113186, -- [11]
+				2403, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [3]
+			{
+				"Sarukyw-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Warrior", -- [8]
+				"WARRIOR", -- [9]
+				309338, -- [10]
+				72131, -- [11]
+				2307, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Arms", -- [16]
+				584, -- [17]
+			}, -- [4]
+			{
+				"Shougaku-Onyxia", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				130575, -- [10]
+				31403, -- [11]
+				2296, -- [12]
+				-9, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Elemental", -- [16]
+				681, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				80926, -- [10]
+				325211, -- [11]
+				2447, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 139,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613762643,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2390, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2382, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [264]
+	{
+		["Map"] = 1552,
+		["Players"] = {
+			{
+				"Sixfitta-Ravencrest", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Rogue", -- [8]
+				"ROGUE", -- [9]
+				73378, -- [10]
+				21331, -- [11]
+				2351, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Subtlety", -- [16]
+				105, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				74923, -- [10]
+				16902, -- [11]
+				2466, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				90177, -- [10]
+				56900, -- [11]
+				2414, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [3]
+			{
+				"Rofferufflah", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				96807, -- [10]
+				25041, -- [11]
+				2341, -- [12]
+				15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				104, -- [17]
+			}, -- [4]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				19273, -- [10]
+				83707, -- [11]
+				2457, -- [12]
+				-15, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [5]
+			{
+				"Zæy-Aegwynn", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				40259, -- [10]
+				134721, -- [11]
+				2353, -- [12]
+				14, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				138, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 73,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613762859,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 0,
+		["PlayerNum"] = 5,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2381, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2417, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [265]
+	{
+		["Map"] = 572,
+		["Players"] = {
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				2, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				370948, -- [10]
+				206710, -- [11]
+				2401, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [1]
+			{
+				"Celdor-Eredar", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				303075, -- [10]
+				147925, -- [11]
+				2451, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [2]
+			{
+				"Dolanx-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Monk", -- [8]
+				"MONK", -- [9]
+				547800, -- [10]
+				103073, -- [11]
+				2399, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Windwalker", -- [16]
+				147, -- [17]
+			}, -- [3]
+			{
+				"Frankstêr-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Blood Elf", -- [7]
+				"Demon Hunter", -- [8]
+				"DEMONHUNTER", -- [9]
+				304132, -- [10]
+				26904, -- [11]
+				2399, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Havoc", -- [16]
+				185, -- [17]
+			}, -- [4]
+			{
+				"Sebsy-TarrenMill", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Paladin", -- [8]
+				"PALADIN", -- [9]
+				33323, -- [10]
+				538503, -- [11]
+				2400, -- [12]
+				-13, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Holy", -- [16]
+				126, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				45639, -- [10]
+				515948, -- [11]
+				2442, -- [12]
+				10, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 208,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613763226,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 0,
+		["Winner"] = 0,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2381, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2384, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [266]
+	{
+		["Map"] = 980,
+		["Players"] = {
+			{
+				"Celdor-Eredar", -- [1]
+				1, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Undead", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				115357, -- [10]
+				16119, -- [11]
+				2461, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Shadow", -- [16]
+				164, -- [17]
+			}, -- [1]
+			{
+				"Iamnamqt-Ravencrest", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Tauren", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				127720, -- [10]
+				76022, -- [11]
+				2412, -- [12]
+				12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				126, -- [17]
+			}, -- [2]
+			{
+				"Mànwe-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Human", -- [7]
+				"Mage", -- [8]
+				"MAGE", -- [9]
+				66480, -- [10]
+				21391, -- [11]
+				2401, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Fire", -- [16]
+				112, -- [17]
+			}, -- [3]
+			{
+				"Stormfury-Quel'Thalas", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Druid", -- [8]
+				"DRUID", -- [9]
+				130085, -- [10]
+				50186, -- [11]
+				2401, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Feral", -- [16]
+				199, -- [17]
+			}, -- [4]
+			{
+				"Winlove-Outland", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				0, -- [6]
+				"Night Elf", -- [7]
+				"Priest", -- [8]
+				"PRIEST", -- [9]
+				38819, -- [10]
+				99273, -- [11]
+				2400, -- [12]
+				-12, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Discipline", -- [16]
+				78, -- [17]
+			}, -- [5]
+			{
+				"Xuna", -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+				0, -- [5]
+				1, -- [6]
+				"Orc", -- [7]
+				"Shaman", -- [8]
+				"SHAMAN", -- [9]
+				32712, -- [10]
+				141184, -- [11]
+				2452, -- [12]
+				11, -- [13]
+				0, -- [14]
+				0, -- [15]
+				"Restoration", -- [16]
+				125, -- [17]
+			}, -- [6]
+		},
+		["Hidden"] = false,
+		["PlayersNum"] = 6,
+		["Duration"] = 87,
+		["Season"] = 30,
+		["isBrawl"] = false,
+		["Time"] = 1613763395,
+		["isArena"] = true,
+		["Version"] = 310,
+		["isRated"] = true,
+		["PlayerSide"] = 1,
+		["Winner"] = 1,
+		["PlayerNum"] = 6,
+		["TeamData"] = {
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2420, -- [4]
+				3, -- [5]
+			}, -- [1]
+			{
+				"", -- [1]
+				-1, -- [2]
+				-13, -- [3]
+				2411, -- [4]
+				3, -- [5]
+			}, -- [2]
+		},
+	}, -- [267]
 }
 REFlexHonorDatabase = {
 	[1612562400] = 360,
 	[1612476000] = 20,
-	[1613253600] = 240,
-	[1613167200] = 3445,
-	[1612044000] = 735,
-	[1612821600] = 80,
-	[1612994400] = 1215,
-	[1612908000] = 7690,
-	[1612735200] = 240,
-	[1612303200] = 330,
+	[1613685600] = 1910,
+	[1613599200] = 11925,
+	[1613426400] = 327,
 	[1613080800] = 1855,
+	[1612303200] = 330,
+	[1612735200] = 240,
+	[1612908000] = 7690,
+	[1612994400] = 1215,
+	[1612821600] = 80,
+	[1612044000] = 735,
+	[1613167200] = 3445,
+	[1613253600] = 240,
 }

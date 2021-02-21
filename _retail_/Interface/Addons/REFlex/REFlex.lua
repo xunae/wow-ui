@@ -10,7 +10,6 @@ local DUMP = LibStub("LibTextDump-1.0")
 _G.REFlex = RE
 
 local tinsert = _G.table.insert
-local strmatch = _G.string.match
 local pairs, select, print, tonumber, hooksecurefunc, strsplit, tostring, unpack = _G.pairs, _G.select, _G.print, _G.tonumber, _G.hooksecurefunc, _G.strsplit, _G.tostring, _G.unpack
 local PanelTemplates_GetSelectedTab, PanelTemplates_SetTab, PanelTemplates_SetNumTabs = _G.PanelTemplates_GetSelectedTab, _G.PanelTemplates_SetTab, _G.PanelTemplates_SetNumTabs
 local StaticPopup_Show = _G.StaticPopup_Show
@@ -62,7 +61,7 @@ local SendAddonMessage = _G.C_ChatInfo.SendAddonMessage
 local PlaySound = _G.PlaySound
 local ElvUI = _G.ElvUI
 
-RE.Version = 310
+RE.Version = 312
 RE.LastSquash = 1602662400
 RE.FoundNewVersion = false
 
@@ -101,6 +100,7 @@ RE.BackdropB = {
 }
 
 _G.SLASH_REFLEX1 = "/reflex"
+_G.SLASH_REFLEXGG1 = "/gg"
 
 function RE:OnLoad(self)
 	RE.SessionStart, RE.PlayerTimezone = RE:GetUTCTimestamp(true)
@@ -242,6 +242,9 @@ function RE:OnEvent(_, event, ...)
 				_G.REFlexFrame:Hide()
 			end
 		end
+		_G.SlashCmdList["REFLEXGG"] = function()
+			RE:SurrenderMatch()
+		end
 
 		RE.LDB = LDB:NewDataObject("REFlex", {
 			type = "data source",
@@ -304,6 +307,8 @@ function RE:OnEvent(_, event, ...)
 					else
 						_G.REFlexFrame:Hide()
 					end
+				elseif button == "MiddleButton" then
+					RE:SurrenderMatch()
 				elseif button == "RightButton" then
 					_G.InterfaceOptionsFrame:Show()
 					InterfaceOptionsFrame_OpenToCategory(RE.OptionsMenu)
@@ -316,6 +321,8 @@ function RE:OnEvent(_, event, ...)
 						RE.Settings.LDBSide = "A"
 					end
 					RE.LDB.text = RE["LDB"..RE.Settings.LDBSide]
+				elseif button == "MiddleButton" then
+					RE:SurrenderMatch()
 				elseif button == "RightButton" then
 					if not _G.REFlexFrame:IsVisible() then
 						_G.REFlexFrame:Show()

@@ -7,7 +7,7 @@ _detalhes_database = {
 		["tabelas"] = {
 		},
 	},
-	["last_version"] = "v1.13.5.215",
+	["last_version"] = "v1.13.6.216",
 	["SoloTablesSaved"] = {
 		["Mode"] = 3,
 	},
@@ -109,9 +109,9 @@ _detalhes_database = {
 			["dpshistory"] = {
 			},
 			["enabled"] = false,
-			["author"] = "Details! Team",
-			["level"] = 1,
 			["dps"] = 0,
+			["level"] = 1,
+			["author"] = "Details! Team",
 		},
 		["DETAILS_PLUGIN_DEATH_GRAPHICS"] = {
 			["last_boss"] = "173816",
@@ -181,7 +181,7 @@ _detalhes_database = {
 			["point"] = "TOPLEFT",
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["use_spark"] = true,
+			["font_size"] = 12,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -189,9 +189,13 @@ _detalhes_database = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["main_frame_strata"] = "LOW",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 12,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -203,16 +207,12 @@ _detalhes_database = {
 				["x"] = 0.0001373291015625,
 				["size"] = 32,
 			},
+			["y"] = -28.9441528320313,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
-			["y"] = -28.9441528320313,
+			["use_spark"] = true,
+			["main_frame_strata"] = "LOW",
 			["author"] = "Details! Team",
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
 			["main_frame_locked"] = true,
 			["main_frame_size"] = {
 				200, -- [1]
@@ -291,8 +291,6 @@ _detalhes_database = {
 			["author"] = "Details! Team",
 		},
 	},
-	["last_day"] = "06",
-	["on_death_menu"] = true,
 	["mythic_dungeon_currentsaved"] = {
 		["dungeon_name"] = "The Underrot",
 		["started"] = false,
@@ -309,8 +307,10 @@ _detalhes_database = {
 		["channel"] = "SELF",
 		["reverse"] = false,
 	},
+	["last_day"] = "21",
+	["on_death_menu"] = true,
 	["character_data"] = {
-		["logons"] = 4880,
+		["logons"] = 4882,
 	},
 	["force_font_outline"] = "",
 	["combat_id"] = 0,
@@ -359,11 +359,11 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["bg_alpha"] = 0,
+			["version"] = 3,
 			["stretch_button_side"] = 1,
 			["switch_all_roles_in_combat"] = false,
 			["switch_tank_in_combat"] = false,
-			["name"] = "Xuna1",
+			["bg_alpha"] = 0,
 			["attribute_text"] = {
 				["show_timer"] = {
 					true, -- [1]
@@ -396,13 +396,13 @@ _detalhes_database = {
 				["iconstoo"] = true,
 				["onenter"] = 1,
 			},
+			["desaturated_menu"] = false,
+			["plugins_grow_direction"] = 1,
 			["libwindow"] = {
 				["y"] = 16.6663551330566,
 				["x"] = -59.552490234375,
 				["point"] = "BOTTOMRIGHT",
 			},
-			["plugins_grow_direction"] = 1,
-			["switch_damager"] = false,
 			["strata"] = "MEDIUM",
 			["show_sidebars"] = true,
 			["window_scale"] = 1,
@@ -419,8 +419,15 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["switch_damager"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
@@ -431,10 +438,10 @@ _detalhes_database = {
 				1, -- [2]
 			},
 			["ignore_mass_showhide"] = false,
-			["switch_damager_in_combat"] = false,
-			["grab_on_top"] = false,
-			["skin_custom"] = "",
 			["hide_icon"] = true,
+			["switch_damager_in_combat"] = false,
+			["skin_custom"] = "",
+			["grab_on_top"] = false,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -446,10 +453,7 @@ _detalhes_database = {
 			["hide_in_combat"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 0.999333739280701,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
+			["micro_displays_side"] = 2,
 			["wallpaper"] = {
 				["overlay"] = {
 					1, -- [1]
@@ -480,15 +484,11 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
 			},
-			["version"] = 3,
+			["name"] = "Xuna1",
 			["row_info"] = {
 				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -616,14 +616,14 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["version"] = 3,
+			["name"] = "asd",
 			["stretch_button_side"] = 1,
 			["switch_all_roles_in_combat"] = false,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
 			},
-			["bg_alpha"] = 0.199495792388916,
+			["version"] = 3,
 			["attribute_text"] = {
 				["show_timer"] = {
 					true, -- [1]
@@ -656,13 +656,13 @@ _detalhes_database = {
 				["ignorebars"] = false,
 				["onleave"] = 1,
 			},
+			["switch_damager"] = false,
+			["ignore_mass_showhide"] = false,
 			["libwindow"] = {
 				["y"] = 3.00010442733765,
 				["x"] = -259.000122070313,
 				["point"] = "BOTTOMRIGHT",
 			},
-			["ignore_mass_showhide"] = false,
-			["desaturated_menu"] = false,
 			["strata"] = "MEDIUM",
 			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
@@ -679,15 +679,8 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
-			},
+			["desaturated_menu"] = false,
+			["show_sidebars"] = true,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
@@ -696,10 +689,10 @@ _detalhes_database = {
 			["bars_grow_direction"] = 1,
 			["plugins_grow_direction"] = 1,
 			["skin_custom"] = "",
-			["hide_icon"] = true,
-			["switch_damager_in_combat"] = false,
-			["switch_tank_in_combat"] = false,
 			["grab_on_top"] = false,
+			["hide_icon"] = true,
+			["switch_tank_in_combat"] = false,
+			["switch_damager_in_combat"] = false,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -710,9 +703,13 @@ _detalhes_database = {
 			["hide_in_combat"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
 			},
 			["wallpaper"] = {
 				["enabled"] = false,
@@ -744,8 +741,11 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = true,
-			["name"] = "asd",
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
+			},
+			["bg_alpha"] = 0.199495792388916,
 			["row_info"] = {
 				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -919,6 +919,14 @@ _detalhes_database = {
 					true, -- [3]
 				},
 			},
+			["micro_displays_side"] = 2,
+			["menu_alpha"] = {
+				["enabled"] = false,
+				["onenter"] = 1,
+				["iconstoo"] = true,
+				["ignorebars"] = false,
+				["onleave"] = 1,
+			},
 			["statusbar_info"] = {
 				["alpha"] = 0,
 				["overlay"] = {
@@ -927,21 +935,17 @@ _detalhes_database = {
 					0, -- [3]
 				},
 			},
-			["menu_alpha"] = {
-				["enabled"] = false,
-				["onenter"] = 1,
-				["iconstoo"] = true,
-				["ignorebars"] = false,
-				["onleave"] = 1,
+			["plugins_grow_direction"] = 1,
+			["libwindow"] = {
+				["y"] = 3.00010442733765,
+				["x"] = -259.000122070313,
+				["point"] = "BOTTOMRIGHT",
 			},
+			["strata"] = "MEDIUM",
 			["auto_hide_menu"] = {
 				["left"] = false,
 				["right"] = false,
 			},
-			["plugins_grow_direction"] = 1,
-			["desaturated_menu"] = false,
-			["strata"] = "MEDIUM",
-			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
 			["switch_tank"] = false,
 			["hide_in_combat_alpha"] = 0,
@@ -956,7 +960,7 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
+			["desaturated_menu"] = false,
 			["show_sidebars"] = true,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -966,10 +970,10 @@ _detalhes_database = {
 			["bars_grow_direction"] = 1,
 			["switch_tank_in_combat"] = false,
 			["ignore_mass_showhide"] = false,
-			["hide_icon"] = true,
-			["switch_damager_in_combat"] = false,
-			["skin_custom"] = "",
 			["grab_on_top"] = false,
+			["hide_icon"] = true,
+			["skin_custom"] = "",
+			["switch_damager_in_combat"] = false,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -978,11 +982,7 @@ _detalhes_database = {
 				-3, -- [2]
 			},
 			["hide_in_combat"] = false,
-			["libwindow"] = {
-				["y"] = 3.00010442733765,
-				["x"] = -259.000122070313,
-				["point"] = "BOTTOMRIGHT",
-			},
+			["switch_damager"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
 			["wallpaper"] = {
@@ -1021,11 +1021,7 @@ _detalhes_database = {
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
 				["textR_outline_small"] = true,
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
+				["textL_outline_small"] = true,
 				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
@@ -1106,7 +1102,11 @@ _detalhes_database = {
 				["start_after_icon"] = true,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_outline_small"] = true,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+				},
 				["fast_ps_update"] = true,
 				["textR_separator"] = ",",
 				["height"] = 18,
@@ -1158,14 +1158,7 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
-			},
+			["micro_displays_side"] = 2,
 			["total_bar"] = {
 				["enabled"] = false,
 				["only_in_group"] = true,
@@ -1192,7 +1185,7 @@ _detalhes_database = {
 					true, -- [2]
 					false, -- [3]
 				},
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -1263,23 +1256,27 @@ _detalhes_database = {
 				["textL_class_colors"] = false,
 				["alpha"] = 0.818182498216629,
 				["no_icon"] = false,
-				["percent_type"] = 1,
 				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
 				["fixed_texture_background_color"] = {
 					0, -- [1]
 					0, -- [2]
 					0, -- [3]
 					0.20959597826004, -- [4]
 				},
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["textL_enable_custom_text"] = false,
 				["fast_ps_update"] = true,
 				["textR_separator"] = "NONE",
 				["use_spec_icons"] = true,
 			},
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
 			},
 			["menu_alpha"] = {
 				["enabled"] = false,
@@ -1290,9 +1287,16 @@ _detalhes_database = {
 			},
 			["ignore_mass_showhide"] = false,
 			["switch_all_roles_after_wipe"] = false,
-			["desaturated_menu"] = false,
+			["libwindow"] = {
+				["y"] = 25.5266342163086,
+				["x"] = -293.554443359375,
+				["point"] = "BOTTOMRIGHT",
+			},
 			["strata"] = "MEDIUM",
-			["micro_displays_side"] = 2,
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
@@ -1310,7 +1314,7 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
+			["desaturated_menu"] = false,
 			["show_sidebars"] = false,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -1320,20 +1324,16 @@ _detalhes_database = {
 			["window_scale"] = 1,
 			["bg_alpha"] = 0.199495792388916,
 			["bars_sort_direction"] = 1,
-			["grab_on_top"] = false,
-			["hide_icon"] = true,
-			["switch_tank_in_combat"] = false,
 			["switch_damager_in_combat"] = false,
+			["grab_on_top"] = false,
+			["switch_tank_in_combat"] = false,
+			["hide_icon"] = true,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
 			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["libwindow"] = {
-				["y"] = 25.5266342163086,
-				["x"] = -293.554443359375,
-				["point"] = "BOTTOMRIGHT",
-			},
+			["switch_damager"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
 			["wallpaper"] = {
@@ -1388,7 +1388,7 @@ _detalhes_database = {
 	},
 	["last_encounter"] = "Hakkar",
 	["nick_tag_cache"] = {
-		["nextreset"] = 1605943901,
+		["nextreset"] = 1615206951,
 		["last_version"] = 11,
 	},
 	["announce_deaths"] = {
@@ -1515,8 +1515,408 @@ _detalhes_database = {
 			}, -- [4]
 		},
 	},
-	["combat_counter"] = 63522,
+	["combat_counter"] = 63526,
 	["cached_talents"] = {
+		["Player-4476-0112BEB2"] = {
+			{
+				136076, -- [1]
+				5, -- [2]
+				1, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [1]
+			{
+				136080, -- [1]
+				3, -- [2]
+				1, -- [3]
+				3, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [2]
+			{
+				132150, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [3]
+			{
+				132159, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [4]
+			{
+				134355, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				1, -- [5]
+				[7] = 3,
+			}, -- [5]
+			{
+				132163, -- [1]
+				2, -- [2]
+				2, -- [3]
+				4, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [6]
+			{
+				132242, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [7]
+			{
+				132120, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 1,
+			}, -- [8]
+			{
+				132091, -- [1]
+				5, -- [2]
+				3, -- [3]
+				3, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [9]
+			{
+				132179, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [10]
+			{
+				134297, -- [1]
+				5, -- [2]
+				4, -- [3]
+				3, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [11]
+			{
+				132121, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [12]
+			{
+				132111, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 1,
+			}, -- [13]
+			{
+				136006, -- [1]
+				0, -- [2]
+				5, -- [3]
+				4, -- [4]
+				1, -- [5]
+				[7] = 2,
+			}, -- [14]
+			{
+				134296, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				1, -- [5]
+				[7] = 5,
+			}, -- [15]
+			{
+				132127, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				1, -- [5]
+				[7] = 1,
+			}, -- [16]
+			{
+				135860, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [17]
+			{
+				135865, -- [1]
+				5, -- [2]
+				1, -- [3]
+				3, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [18]
+			{
+				132212, -- [1]
+				3, -- [2]
+				2, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [19]
+			{
+				132312, -- [1]
+				5, -- [2]
+				2, -- [3]
+				3, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [20]
+			{
+				135130, -- [1]
+				1, -- [2]
+				3, -- [3]
+				1, -- [4]
+				2, -- [5]
+				254, -- [6]
+				1, -- [7]
+			}, -- [21]
+			{
+				132218, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [22]
+			{
+				132327, -- [1]
+				3, -- [2]
+				3, -- [3]
+				4, -- [4]
+				2, -- [5]
+				254, -- [6]
+				3, -- [7]
+			}, -- [23]
+			{
+				132204, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [24]
+			{
+				132271, -- [1]
+				5, -- [2]
+				4, -- [3]
+				3, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [25]
+			{
+				132153, -- [1]
+				0, -- [2]
+				5, -- [3]
+				1, -- [4]
+				2, -- [5]
+				254, -- [6]
+				1, -- [7]
+			}, -- [26]
+			{
+				132330, -- [1]
+				3, -- [2]
+				5, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				3, -- [7]
+			}, -- [27]
+			{
+				132169, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				2, -- [5]
+				254, -- [6]
+				3, -- [7]
+			}, -- [28]
+			{
+				135615, -- [1]
+				5, -- [2]
+				6, -- [3]
+				3, -- [4]
+				2, -- [5]
+				254, -- [6]
+				5, -- [7]
+			}, -- [29]
+			{
+				132329, -- [1]
+				1, -- [2]
+				7, -- [3]
+				2, -- [4]
+				2, -- [5]
+				254, -- [6]
+				1, -- [7]
+			}, -- [30]
+			{
+				134154, -- [1]
+				0, -- [2]
+				1, -- [3]
+				1, -- [4]
+				3, -- [5]
+				255, -- [6]
+				3, -- [7]
+			}, -- [31]
+			{
+				135942, -- [1]
+				0, -- [2]
+				1, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				3, -- [7]
+			}, -- [32]
+			{
+				132269, -- [1]
+				0, -- [2]
+				1, -- [3]
+				3, -- [4]
+				3, -- [5]
+				255, -- [6]
+				5, -- [7]
+			}, -- [33]
+			{
+				136100, -- [1]
+				0, -- [2]
+				2, -- [3]
+				1, -- [4]
+				3, -- [5]
+				255, -- [6]
+				5, -- [7]
+			}, -- [34]
+			{
+				132277, -- [1]
+				0, -- [2]
+				2, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				2, -- [7]
+			}, -- [35]
+			{
+				132309, -- [1]
+				0, -- [2]
+				2, -- [3]
+				3, -- [4]
+				3, -- [5]
+				255, -- [6]
+				5, -- [7]
+			}, -- [36]
+			{
+				136106, -- [1]
+				0, -- [2]
+				3, -- [3]
+				1, -- [4]
+				3, -- [5]
+				255, -- [6]
+				2, -- [7]
+			}, -- [37]
+			{
+				136223, -- [1]
+				0, -- [2]
+				3, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				5, -- [7]
+			}, -- [38]
+			{
+				132369, -- [1]
+				0, -- [2]
+				3, -- [3]
+				3, -- [4]
+				3, -- [5]
+				255, -- [6]
+				1, -- [7]
+			}, -- [39]
+			{
+				132149, -- [1]
+				0, -- [2]
+				4, -- [3]
+				1, -- [4]
+				3, -- [5]
+				255, -- [6]
+				2, -- [7]
+			}, -- [40]
+			{
+				132219, -- [1]
+				0, -- [2]
+				4, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				3, -- [7]
+			}, -- [41]
+			{
+				132293, -- [1]
+				0, -- [2]
+				4, -- [3]
+				4, -- [4]
+				3, -- [5]
+				255, -- [6]
+				2, -- [7]
+			}, -- [42]
+			{
+				135881, -- [1]
+				0, -- [2]
+				5, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				3, -- [7]
+			}, -- [43]
+			{
+				132336, -- [1]
+				0, -- [2]
+				5, -- [3]
+				3, -- [4]
+				3, -- [5]
+				255, -- [6]
+				1, -- [7]
+			}, -- [44]
+			{
+				136047, -- [1]
+				0, -- [2]
+				6, -- [3]
+				3, -- [4]
+				3, -- [5]
+				255, -- [6]
+				5, -- [7]
+			}, -- [45]
+			{
+				135125, -- [1]
+				0, -- [2]
+				7, -- [3]
+				2, -- [4]
+				3, -- [5]
+				255, -- [6]
+				1, -- [7]
+			}, -- [46]
+		},
 		["Player-4476-01348A35"] = {
 			{
 				136116, -- [1]
@@ -1951,6 +2351,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
+		["Player-4476-0112BEB2"] = 254,
 		["Player-4476-01348A35"] = 264,
 	},
 }

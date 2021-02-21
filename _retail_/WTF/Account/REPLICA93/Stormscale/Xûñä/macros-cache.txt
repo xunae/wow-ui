@@ -66,6 +66,11 @@ VER 3 0100000000000017 "rsk" "INV_MISC_QUESTIONMARK"
 /cast Rising Sun Kick
 /cast Provoke
 END
+VER 3 0100000000000018 "weapons_of_order" "INV_MISC_QUESTIONMARK"
+#showtooltip Weapons of Order(Kyrian)
+/cast Mana Tea
+/cast Weapons of Order(Kyrian)
+END
 VER 3 0100000000000016 "zft" "INV_MISC_QUESTIONMARK"
 #showtooltip Zen Focus Tea
 /cast Thunder Focus Tea
