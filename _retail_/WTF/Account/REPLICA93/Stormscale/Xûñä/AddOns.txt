@@ -27,3 +27,5 @@ Masque_Caith: disabled
 REFlex: enabled
 Masque: enabled
 Favorites: enabled
+ZPerl: disabled
+Perl_ArcaneBar: enabled

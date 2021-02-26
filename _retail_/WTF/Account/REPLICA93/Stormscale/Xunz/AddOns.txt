@@ -4,3 +4,5 @@ Neuron: disabled
 Masque_Caith: disabled
 REFlex: enabled
 Masque: enabled
+ZPerl: disabled
+Perl_ArcaneBar: enabled

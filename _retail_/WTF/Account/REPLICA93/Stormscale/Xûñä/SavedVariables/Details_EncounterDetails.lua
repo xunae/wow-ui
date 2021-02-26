@@ -1864,12 +1864,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Echelon",
 		},
-		[341442] = {
-			["school"] = 8,
+		[328667] = {
+			["school"] = 16,
 			["token"] = {
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Erupting Ooze",
+			["source"] = "Reanimated Mage",
 		},
 		[323393] = {
 			["school"] = 1,
@@ -1945,15 +1945,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Globgrog",
 		},
-		[320366] = {
-			["school"] = 40,
-			["type"] = "DEBUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-			},
-			["source"] = "Surgeon Stitchflesh",
-		},
 		[322410] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
@@ -1963,6 +1954,15 @@ EncounterDetailsDB = {
 				["SPELL_CAST_SUCCESS"] = true,
 			},
 			["source"] = "Congealed Slime",
+		},
+		[323943] = {
+			["school"] = 1,
+			["token"] = {
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
+			},
+			["source"] = "Devos",
 		},
 		[321005] = {
 			["school"] = 32,
@@ -2199,14 +2199,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Domina Venomblade",
 		},
-		[323943] = {
-			["school"] = 1,
+		[320366] = {
+			["school"] = 40,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_START"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Devos",
+			["source"] = "Surgeon Stitchflesh",
 		},
 		[338003] = {
 			["school"] = 32,
@@ -2257,12 +2257,12 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tred'ova",
 		},
-		[328667] = {
-			["school"] = 16,
+		[341442] = {
+			["school"] = 8,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
-			["source"] = "Reanimated Mage",
+			["source"] = "Erupting Ooze",
 		},
 		[320012] = {
 			["school"] = 1,

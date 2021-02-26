@@ -1,0 +1,28 @@
+
+Perl_Party_Pet_Config = {
+	["Stormscale-Xuna"] = {
+		["DisplayCurableDebuff"] = 0,
+		["Debuffs"] = 16,
+		["XPosition4"] = 298,
+		["HiddenInRaids"] = 0,
+		["Scale"] = 1,
+		["BuffSize"] = 12,
+		["Locked"] = 0,
+		["ShowPortrait"] = 0,
+		["YPosition2"] = -309,
+		["Enabled"] = 0,
+		["XPosition3"] = 298,
+		["DisplayCastableBuffs"] = 0,
+		["BuffLocation"] = 4,
+		["YPosition4"] = -499,
+		["YPosition3"] = -404,
+		["XPosition2"] = 298,
+		["ThreeDPortrait"] = 0,
+		["YPosition1"] = -214,
+		["XPosition1"] = 298,
+		["DebuffLocation"] = 5,
+		["Buffs"] = 16,
+		["DebuffSize"] = 12,
+		["Transparency"] = 1,
+	},
+}

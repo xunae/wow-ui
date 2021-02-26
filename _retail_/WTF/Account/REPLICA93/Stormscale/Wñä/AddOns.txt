@@ -109,3 +109,5 @@ Neuron: disabled
 Masque_Caith: disabled
 FriendListColors: disabled
 LittleWigs_BattleForAzeroth: enabled
+ZPerl: disabled
+Perl_ArcaneBar: enabled
