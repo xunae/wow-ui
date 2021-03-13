@@ -9,8 +9,8 @@
 local mod, CL = BigWigs:NewBoss("Artificer Xy'mox", 2296, 2418)
 if not mod then return end
 mod:RegisterEnableMob(166644) -- Artificer Xy'mox
-mod.engageId = 2405
-mod.respawnTime = 30
+mod:SetEncounterID(2405)
+mod:SetRespawnTime(30)
 mod:SetStage(1)
 
 --------------------------------------------------------------------------------
@@ -196,6 +196,7 @@ function mod:EncounterEvent()
 		self:StopBar(CL.count:format(CL.traps, trapCount)) -- Stasis Trap
 		self:StopBar(CL.count:format(L.tear, dimensionalTearCount)) -- Dimensional Tear
 		self:StopBar(CL.count:format(L.spirits, spiritCount)) -- Fleeting Spirit
+		self:StopBar(CL.count:format(self:SpellName(325399), sparkCount)) -- Hyperlight Spark
 
 		self:SetStage(2)
 		lastStaged = GetTime()
@@ -222,6 +223,7 @@ function mod:EncounterEvent()
 		self:StopBar(CL.count:format(L.tear, dimensionalTearCount)) -- Dimensional Tear
 		self:StopBar(CL.count:format(L.spirits, spiritCount)) -- Fleeting Spirit
 		self:StopBar(CL.count:format(L.seeds, seedCount)) -- Seeds of Extinction
+		self:StopBar(CL.count:format(self:SpellName(325399), sparkCount)) -- Hyperlight Spark
 
 		self:SetStage(3)
 		lastStaged = GetTime()

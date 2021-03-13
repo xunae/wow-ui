@@ -12,6 +12,6 @@ XunaTweaksDB = {
 	["eliteFrame"] = false,
 	["classColorFrames"] = true,
 	["customHealthMana"] = true,
-	["hideBinds"] = true,
+	["hideBinds"] = false,
 	["manaColor"] = false,
 }

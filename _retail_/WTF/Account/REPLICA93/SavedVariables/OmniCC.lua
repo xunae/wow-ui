@@ -1,8 +1,8 @@
 
 OmniCCDB = {
 	["global"] = {
-		["addonVersion"] = "9.0.5",
-		["dbVersion"] = 5,
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.0.8",
 	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
@@ -20,9 +20,9 @@ OmniCCDB = {
 		["Xunaw - Draenor"] = "Default",
 		["Wluna - Draenor"] = "Default",
 		["Xûñá - Ravencrest"] = "Default",
-		["Xunaj - Draenor"] = "Default",
+		["Xuna - Arena Champions - EU"] = "Default",
 		["Xñ - Draenor"] = "Default",
-		["Dkuna - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
 		["Xã - Draenor"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
@@ -31,7 +31,7 @@ OmniCCDB = {
 		["Xunawl - Draenor"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
-		["Xuna - Arena Champions - EU"] = "Default",
+		["Dkuna - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
 	},
@@ -118,7 +118,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -129,7 +128,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -179,17 +178,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["yOff"] = -1,
+			["minDuration"] = 2,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["scaleText"] = true,
+			["yOff"] = -1,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.74,
 			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["fontSize"] = 15,
 		},
 		["Ignore"] = {
@@ -197,17 +196,17 @@ OmniCC4Config = {
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["yOff"] = 0,
+			["minDuration"] = 2,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -254,4 +253,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

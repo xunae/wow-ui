@@ -40,7 +40,7 @@ BigDebuffsDB = {
 		["Xunadwarf - Valley of Heroes - EU"] = "Default",
 		["Xã - Draenor"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
-		["Xunapalah - Arena Champions - EU"] = "Default",
+		["Mktja - Draenor"] = "Default",
 		["Jungyuup - Stormscale"] = "Default",
 		["Xunae - Draenor"] = "Default",
 		["Xuna - Valley of Heroes - EU"] = "Default",
@@ -58,7 +58,7 @@ BigDebuffsDB = {
 		["Níeze - Ravencrest"] = "Default",
 		["Xûñä - Ravencrest"] = "Default",
 		["Xñæ - Draenor"] = "Default",
-		["Mktja - Draenor"] = "Default",
+		["Xunapalah - Arena Champions - EU"] = "Default",
 		["Xunaw - Draenor"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 		["Lightescp - Draenor"] = "Default",
@@ -74,17 +74,21 @@ BigDebuffsDB = {
 				["increaseBuffs"] = true,
 			},
 			["nameplates"] = {
-				["anchor"] = "TOP",
-				["enabled"] = false,
+				["size"] = 48,
+				["x"] = 2,
 			},
 			["spells"] = {
+				[88611] = {
+					["noRaidFrames"] = true,
+					["noUnitFrames"] = true,
+				},
 				[182067] = {
 					["noUnitFrames"] = true,
 					["noRaidFrames"] = false,
 				},
-				[88611] = {
-					["noRaidFrames"] = true,
-					["noUnitFrames"] = true,
+				[2645] = {
+					["nameplates"] = 0,
+					["unitFrames"] = 0,
 				},
 			},
 			["unitFrames"] = {

@@ -18,8 +18,8 @@ do
 		outline = "NONE",
 		additionalWidth = 0,
 		additionalHeight = 0,
-		barColor = {0.2, 0, 1, 0.5},
 		barTextColor = {1, 0.82, 0},
+		barColor = {0.2, 0, 1, 0.5},
 		backgroundColor = {0, 0, 0, 0.3},
 		monochrome = false,
 		expanded = false,
@@ -377,22 +377,68 @@ end
 -- Initialization
 --
 
-local function updateProfile()
-	db = plugin.db.profile
-	oldPlugin.db:ResetProfile(nil, true) -- XXX temp 9.0.2 // no callbacks
+do
+	local function updateProfile()
+		db = plugin.db.profile
 
-	plugin:RestyleWindow()
-end
+		for k, v in next, db do
+			local defaultType = type(plugin.defaultDB[k])
+			if defaultType == "nil" then
+				db[k] = nil
+			elseif type(v) ~= defaultType then
+				db[k] = plugin.defaultDB[k]
+			end
+		end
 
-function plugin:OnPluginEnable()
-	self:RegisterMessage("BigWigs_StartSyncingPower")
-	self:RegisterMessage("BigWigs_ShowAltPower")
-	self:RegisterMessage("BigWigs_HideAltPower", "Close")
-	self:RegisterMessage("BigWigs_OnBossDisable")
-	self:RegisterMessage("BigWigs_OnBossWipe", "BigWigs_OnBossDisable")
+		if db.fontSize < 1 or db.fontSize > 200 then
+			db.fontSize = plugin.defaultDB.fontSize
+		end
+		if db.outline ~= "NONE" and db.outline ~= "OUTLINE" and db.outline ~= "THICKOUTLINE" then
+			db.outline = plugin.defaultDB.outline
+		end
+		if db.additionalWidth < 0 or db.additionalWidth > 100 then
+			db.additionalWidth = plugin.defaultDB.additionalWidth
+		end
+		if db.additionalHeight < 0 or db.additionalHeight > 100 then
+			db.additionalHeight = plugin.defaultDB.additionalHeight
+		end
+		for i = 1, 3 do
+			local n = db.barTextColor[i]
+			if type(n) ~= "number" or n < 0 or n > 1 then
+				db.barTextColor = plugin.defaultDB.barTextColor
+				break
+			end
+		end
+		for i = 1, 4 do
+			local n = db.barColor[i]
+			if type(n) ~= "number" or n < 0 or n > 1 then
+				db.barColor = plugin.defaultDB.barColor
+				break
+			end
+		end
+		for i = 1, 4 do
+			local n = db.backgroundColor[i]
+			if type(n) ~= "number" or n < 0 or n > 1 then
+				db.backgroundColor = plugin.defaultDB.backgroundColor
+				break
+			end
+		end
 
-	self:RegisterMessage("BigWigs_ProfileUpdate", updateProfile)
-	updateProfile()
+		oldPlugin.db:ResetProfile(nil, true) -- XXX temp 9.0.2 // no callbacks
+
+		plugin:RestyleWindow()
+	end
+
+	function plugin:OnPluginEnable()
+		self:RegisterMessage("BigWigs_StartSyncingPower")
+		self:RegisterMessage("BigWigs_ShowAltPower")
+		self:RegisterMessage("BigWigs_HideAltPower", "Close")
+		self:RegisterMessage("BigWigs_OnBossDisable")
+		self:RegisterMessage("BigWigs_OnBossWipe", "BigWigs_OnBossDisable")
+
+		self:RegisterMessage("BigWigs_ProfileUpdate", updateProfile)
+		updateProfile()
+	end
 end
 
 function plugin:OnPluginDisable()

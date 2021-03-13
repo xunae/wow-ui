@@ -66,6 +66,24 @@ plugin.defaultDB = {
 local function updateProfile()
 	db = plugin.db.profile
 
+	for k, v in next, db do
+		local defaultType = type(plugin.defaultDB[k])
+		if defaultType == "nil" then
+			db[k] = nil
+		elseif type(v) ~= defaultType then
+			db[k] = plugin.defaultDB[k]
+		end
+	end
+
+	if db.outline ~= "NONE" and db.outline ~= "OUTLINE" and db.outline ~= "THICKOUTLINE" then
+		db.outline = plugin.defaultDB.outline
+	end
+	if db.emphOutline ~= "NONE" and db.emphOutline ~= "OUTLINE" and db.emphOutline ~= "THICKOUTLINE" then
+		db.emphOutline = plugin.defaultDB.emphOutline
+	end
+	if db.align ~= "LEFT" and db.align ~= "CENTER" and db.align ~= "RIGHT" then
+		db.align = plugin.defaultDB.align
+	end
 	if db.fontSize < 10 or db.fontSize > 200 then
 		db.fontSize = plugin.defaultDB.fontSize
 	end
@@ -118,16 +136,6 @@ local function updateProfile()
 		font:SetHeight(db.fontSize)
 		font:SetFont(media:Fetch(FONT, db.fontName), db.fontSize, flags)
 	end
-
-	-- XXX temp 9.0.2
-	db.BWEmphasizeMessageAnchor_y = nil
-	db.BWEmphasizeMessageAnchor_x = nil
-	db.BWMessageAnchor_y = nil
-	db.BWMessageAnchor_x = nil
-	db.BWEmphasizeCountdownMessageAnchor_y = nil
-	db.BWEmphasizeCountdownMessageAnchor_x = nil
-	db.sink20OutputSink = nil
-	db.emphasizedMessages = nil
 end
 
 --------------------------------------------------------------------------------

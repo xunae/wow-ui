@@ -681,14 +681,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["Masque"] = {
+				["OmniBar_Pummel"] = {
 					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]
@@ -696,6 +690,7 @@ MasqueDB = {
 							0.800000011920929, -- [4]
 						},
 					},
+					["Inherit"] = false,
 				},
 				["OmniBar_Fade"] = {
 					["Colors"] = {
@@ -744,8 +739,18 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_hzwtvTQKYYK"] = {
-					["Upgraded"] = true,
+				["OmniBar_Grounding Totem"] = {
+					["Colors"] = {
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.800000011920929, -- [4]
+						},
+					},
+					["Inherit"] = false,
+				},
+				["Masque"] = {
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -760,18 +765,6 @@ MasqueDB = {
 							0.800000011920929, -- [4]
 						},
 					},
-					["Inherit"] = false,
-				},
-				["OmniBar_Pummel"] = {
-					["Colors"] = {
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.800000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
 				},
 				["WeakAuras_jDexK7ayhMy"] = {
 					["Upgraded"] = true,
@@ -809,17 +802,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["Neuron_Action Bar 3"] = {
-					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
-					},
+				["OmniBar_Asphyxiate"] = {
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
 				["WeakAuras_8GwdFUZHUCX"] = {
 					["Upgraded"] = true,
@@ -869,8 +853,17 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Asphyxiate"] = {
+				["Neuron_Action Bar 3"] = {
+					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
+					},
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
 				["OmniBar_Counterspell"] = {
 					["Colors"] = {
@@ -1010,7 +1003,7 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Muzzle"] = {
+				["OmniBar_Howl of Terror"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Freezing Trap"] = {
@@ -1027,7 +1020,22 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_JHegUq(qwEI"] = {
+				["Neuron_Zone Action Bar 1"] = {
+					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["OmniBar_Blinding Light"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_QWyr5mjtEgR"] = {
 					["Upgraded"] = true,
 					["Colors"] = {
 						["Cooldown"] = {
@@ -1036,20 +1044,6 @@ MasqueDB = {
 							0, -- [3]
 							0.8500000089406967, -- [4]
 						},
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.800000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["OmniBar_Blinding Light"] = {
-					["Inherit"] = false,
-				},
-				["OmniBar_Shadow Word: Death"] = {
-					["Colors"] = {
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1095,13 +1089,14 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Mortal Coil"] = {
+				["OmniBar_Muzzle"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Disrupt"] = {
 					["Inherit"] = false,
 				},
-				["Neuron_Zone Action Bar 1"] = {
+				["WeakAuras_JHegUq(qwEI"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
 						["Cooldown"] = {
 							0, -- [1]
@@ -1109,11 +1104,16 @@ MasqueDB = {
 							0, -- [3]
 							0.8500000089406967, -- [4]
 						},
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.800000011920929, -- [4]
+						},
 					},
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
 				},
-				["OmniBar_Howl of Terror"] = {
+				["OmniBar_Mortal Coil"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Spell Lock"] = {
@@ -1145,8 +1145,15 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Chaos Nova"] = {
+				["WeakAuras_PBvmgNBZ4n6"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1167,15 +1174,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_PBvmgNBZ4n6"] = {
-					["Upgraded"] = true,
+				["OmniBar_Chaos Nova"] = {
 					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1225,6 +1225,9 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
+				["OmniBar_Solar Beam"] = {
+					["Inherit"] = false,
+				},
 				["OmniBar_Silence"] = {
 					["Colors"] = {
 						["Backdrop"] = {
@@ -1234,9 +1237,6 @@ MasqueDB = {
 							0.800000011920929, -- [4]
 						},
 					},
-					["Inherit"] = false,
-				},
-				["OmniBar_Solar Beam"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Nether Ward"] = {
@@ -1279,15 +1279,8 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["WeakAuras_QWyr5mjtEgR"] = {
-					["Upgraded"] = true,
+				["OmniBar_Shadow Word: Death"] = {
 					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]
@@ -1408,8 +1401,15 @@ MasqueDB = {
 					},
 					["Inherit"] = false,
 				},
-				["OmniBar_Grounding Totem"] = {
+				["WeakAuras_hzwtvTQKYYK"] = {
+					["Upgraded"] = true,
 					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
 						["Backdrop"] = {
 							1, -- [1]
 							1, -- [2]

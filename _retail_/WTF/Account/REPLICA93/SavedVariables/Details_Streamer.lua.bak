@@ -34,8 +34,8 @@ Details_StreamerDB = {
 		["Xunawl - Draenor"] = "Xûñä - Ravencrest",
 		["Xunadwarf - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xã - Draenor"] = "Xûñä - Ravencrest",
-		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Mktja - Draenor"] = "Xûñä - Ravencrest",
+		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
 		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
@@ -86,28 +86,13 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["arrow_anchor_y"] = 0,
+			["use_square_mode"] = false,
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
 			["row_texture"] = "Details Serenity",
+			["arrow_anchor_y"] = 0,
+			["font_size"] = 12,
 			["main_frame_strata"] = "LOW",
-			["per_second"] = {
-				["enabled"] = false,
-				["point"] = "CENTER",
-				["scale"] = 1.5,
-				["font_shadow"] = true,
-				["y"] = 1.52587890625e-05,
-				["x"] = 0.0001373291015625,
-				["attribute_type"] = 1,
-				["update_speed"] = 0.05,
-				["size"] = 32,
-			},
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 15,
@@ -122,14 +107,29 @@ Details_StreamerDB = {
 			["author"] = "Details! Team",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -28.9441528320313,
-			["font_size"] = 12,
+			["per_second"] = {
+				["enabled"] = false,
+				["point"] = "CENTER",
+				["scale"] = 1.5,
+				["font_shadow"] = true,
+				["y"] = 1.52587890625e-05,
+				["x"] = 0.0001373291015625,
+				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
+			},
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["use_square_mode"] = false,
-			["scale"] = 1,
-			["row_height"] = 20,
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["point"] = "TOPLEFT",
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 	},
 }

@@ -9,8 +9,8 @@
 local mod, CL = BigWigs:NewBoss("Sun King's Salvation", 2296, 2422)
 if not mod then return end
 mod:RegisterEnableMob(165805, 165759, 168973) -- Shade of Kael'thas, Kael'thas, High Torturer Darithos
-mod.engageId = 2402
-mod.respawnTime = 30
+mod:SetEncounterID(2402)
+mod:SetRespawnTime(30)
 mod:SetStage(1)
 
 --------------------------------------------------------------------------------
@@ -105,7 +105,7 @@ function mod:GetOptions()
 		{325442, "TANK"}, -- Vanquished
 		325506, -- Concussive Smash
 		-21993, -- Bleakwing Assassin
-		{326583, "SAY", "FLASH"}, -- Crimson Flurry
+		{341473, "SAY", "FLASH"}, -- Crimson Flurry
 		333145, -- Return to Stone
 		-21952, -- Vile Occultist
 		333002, -- Vulgar Brand
@@ -156,7 +156,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED_DOSE", "VanquishedApplied", 325442)
 	self:Log("SPELL_CAST_START", "ConcussiveSmash", 325506)
 	self:Death("RockboundVanquisherDeath", 165764) -- Rockbound Vanquisher
-	self:Log("SPELL_AURA_APPLIED", "CrimsonFlurryApplied", 326583)
+	self:Log("SPELL_AURA_APPLIED", "CrimsonFlurryApplied", 341473)
 	self:Log("SPELL_CAST_START", "ReturnToStone", 333145)
 	self:Log("SPELL_CAST_START", "VulgarBrand", 333002)
 

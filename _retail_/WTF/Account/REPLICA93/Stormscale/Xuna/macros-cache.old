@@ -17,6 +17,11 @@ VER 3 010000000000000C "EQ" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@cursor]Earthquake
 END
+VER 3 0100000000000022 "fae_transfusion" "INV_MISC_QUESTIONMARK"
+#showtooltip Fae Transfusion(Night Fae)
+/cast Blood Fury(Racial)
+/cast Fae Transfusion(Night Fae)
+END
 VER 3 0100000000000021 "xm" "INV_MISC_QUESTIONMARK"
 /xm
 END

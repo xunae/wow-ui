@@ -1,13 +1,17 @@
 # BigWigs
 
-## [v216.2](https://github.com/BigWigsMods/BigWigs/tree/v216.2) (2021-02-25)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v216.1...v216.2) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v218.1](https://github.com/BigWigsMods/BigWigs/tree/v218.1) (2021-03-11)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v218...v218.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Update deDE (#1018)  
-- Update deDE (#1017)  
-- Update ptBR (#1016)  
-- CastleNathria/InervaDarkvein: Remove the number from the "big add/small add" say message  
-- CastleNathria/Altimor: Cancel the Vicious Lunge yell countdown when Margore dies  
-- Plugins/BossBlock: Add some talking heads I missed from Sanguine Depths  
-- Common locale: Add "Spell Cancelled", cleanups.  
-- Update itIT (#1015)  
+- Update option files  
+- CastleNathria/Locales: Cleanups  
+- Update itIT (#1027)  
+- CastleNathria/TheCouncilofBlood: Fix Dancing bar icon  
+- CastleNathria/HungeringDestroyer: Fix a missed 'then'  
+- CastleNathria/HungeringDestroyer: Fix LFR timings  
+- CastleNathria/Trash: Tweak  
+- CastleNathria/HungeringDestroyer: Volatile Ejection is now in the combat log for LFR also, remove old code.  
+- CastleNathria/TheCouncilofBlood: Add a Dancing bar for the duration of the dance  
+- CastleNathria/Altimor: Stop playing sound & emphasizing Crushing Stone if it's being ignored  
+- CastleNathria/Trash: Throttle more things  
+- CastleNathria/Denathrius: Tweak  

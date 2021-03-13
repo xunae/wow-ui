@@ -16,9 +16,9 @@ OmniCCDB = {
 		["Xunaw - Draenor"] = "Default",
 		["Æñ - Draenor"] = "Default",
 		["Xûñá - Ravencrest"] = "Default",
-		["Dkuna - Draenor"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Xñ - Draenor"] = "Default",
-		["Xuna - Arena Champions - EU"] = "Default",
+		["Dkuna - Draenor"] = "Default",
 		["Lightescp - Draenor"] = "Default",
 		["Xã - Draenor"] = "Default",
 		["Xñæ - Draenor"] = "Default",
@@ -27,13 +27,13 @@ OmniCCDB = {
 		["Xunawl - Draenor"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
-		["Xunaj - Draenor"] = "Default",
+		["Xuna - Arena Champions - EU"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Wluna - Draenor"] = "Default",
 	},
 	["global"] = {
-		["addonVersion"] = "9.0.5",
-		["dbVersion"] = 5,
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.0.8",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -118,24 +118,23 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
 			["fontSize"] = 15,
 			["effect"] = "pulse",
-			["scaleText"] = true,
+			["yOff"] = -1,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.74,
 			["spiralOpacity"] = 1.00999997742474,
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["yOff"] = -1,
+			["minDuration"] = 2,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -229,20 +228,22 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["yOff"] = 0,
+			["minDuration"] = 2,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1,
-			["scaleText"] = true,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.5,
 			["minEffectDuration"] = 30,
-			["minDuration"] = 2,
+			["scaleText"] = true,
 			["fontSize"] = 18,
 		},
 	},
+	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -253,5 +254,4 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.2.3",
 }

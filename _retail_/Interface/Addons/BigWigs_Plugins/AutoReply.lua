@@ -112,10 +112,40 @@ end
 -- Initialization
 --
 
-function plugin:OnPluginEnable()
-	self:RegisterMessage("BigWigs_OnBossEngage")
-	self:RegisterMessage("BigWigs_OnBossWin", "WinOrWipe")
-	self:RegisterMessage("BigWigs_OnBossWipe", "WinOrWipe")
+do
+	local function updateProfile()
+		local db = plugin.db.profile
+
+		for k, v in next, db do
+			local defaultType = type(plugin.defaultDB[k])
+			if defaultType == "nil" then
+				db[k] = nil
+			elseif type(v) ~= defaultType then
+				db[k] = plugin.defaultDB[k]
+			end
+		end
+
+		if db.mode < 1 or db.mode > 4 then
+			db.mode = plugin.defaultDB.mode
+		end
+		if db.modeOther < 1 or db.modeOther > 4 then
+			db.modeOther = plugin.defaultDB.modeOther
+		end
+		if db.exitCombat < 1 or db.exitCombat > 4 then
+			db.exitCombat = plugin.defaultDB.exitCombat
+		end
+		if db.exitCombatOther < 1 or db.exitCombatOther > 4 then
+			db.exitCombatOther = plugin.defaultDB.exitCombatOther
+		end
+	end
+
+	function plugin:OnPluginEnable()
+		self:RegisterMessage("BigWigs_OnBossEngage")
+		self:RegisterMessage("BigWigs_OnBossWin", "WinOrWipe")
+		self:RegisterMessage("BigWigs_OnBossWipe", "WinOrWipe")
+		self:RegisterMessage("BigWigs_ProfileUpdate", updateProfile)
+		updateProfile()
+	end
 end
 
 function plugin:OnPluginDisable()

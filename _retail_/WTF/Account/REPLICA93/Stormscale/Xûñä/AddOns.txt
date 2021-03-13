@@ -26,6 +26,11 @@ Myslot: disabled
 Masque_Caith: disabled
 REFlex: enabled
 Masque: enabled
-Favorites: enabled
+Favorites: disabled
 ZPerl: disabled
 Perl_ArcaneBar: enabled
+Gladius: enabled
+sArena: disabled
+NameplateAuras: enabled
+BigWigs_CastleNathria: enabled
+DejaCharacterStats: disabled

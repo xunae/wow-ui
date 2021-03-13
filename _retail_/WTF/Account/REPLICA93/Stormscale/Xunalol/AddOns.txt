@@ -6,3 +6,6 @@ REFlex: enabled
 Masque: enabled
 ZPerl: disabled
 Perl_ArcaneBar: enabled
+Favorites: disabled
+sArena: disabled
+NameplateAuras: enabled

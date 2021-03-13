@@ -55,7 +55,7 @@ WeakAurasOptions: enabled
 WeakAurasTemplates: enabled
 Xunamate: disabled
 REFlex: enabled
-Favorites: enabled
+Favorites: disabled
 sArena: disabled
 RaiderIO_DB_US_H_R: disabled
 RaiderIO_DB_US_H: disabled
@@ -130,3 +130,4 @@ ZPerl_PlayerPet: enabled
 ZPerl_PlayerBuffs: disabled
 ZPerl_Party: disabled
 ZPerl_PartyPet: disabled
+DejaCharacterStats: disabled

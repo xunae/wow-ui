@@ -55,6 +55,23 @@ VER 3 00000000000000AE "HS" "INV_MISC_QUESTIONMARK"
 /use Healthstone
 /use Spiritual Healing Potion
 END
+VER 3 000000000000018D "morpf" "237554"
+.race 5
+.skin 11
+.hair 1
+.haircolor 9
+.item 1 32235
+.item 3 90138
+.item 5 90140
+.item 6 90136
+.item 10 90141
+.item 15 0
+.item 16 32837
+.item 17 32838
+.item 19 0
+.enchant 1 257
+.enchant 2 257
+END
 VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 #showtooltip Purge
 /cast [modifier:shift,@player] Purify Spirit
@@ -124,7 +141,6 @@ VER 3 000000000000017B "TRINKET_USE" "INV_MISC_QUESTIONMARK"
 #showtooltip 13
 /use [@cursor]13;13
 /use Healthstone
-/use Phial of Serenity
 END
 VER 3 000000000000017E "TRINKET_USE2" "INV_MISC_QUESTIONMARK"
 #showtooltip

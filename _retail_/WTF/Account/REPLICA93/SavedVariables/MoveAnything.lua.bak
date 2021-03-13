@@ -72,7 +72,7 @@ MADB = {
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
 						0, -- [4]
-						95.99999237060547, -- [5]
+						120, -- [5]
 					},
 					["name"] = "TalkingHeadFrame",
 					["scale"] = 0.75,
@@ -164,8 +164,8 @@ MADB = {
 						"TOPRIGHT", -- [1]
 						"UIParent", -- [2]
 						"BOTTOMRIGHT", -- [3]
-						-100, -- [4]
-						787.9999389648438, -- [5]
+						40, -- [4]
+						803.0000610351562, -- [5]
 					},
 					["name"] = "VehicleSeatIndicator",
 					["scale"] = 0.699999988079071,
