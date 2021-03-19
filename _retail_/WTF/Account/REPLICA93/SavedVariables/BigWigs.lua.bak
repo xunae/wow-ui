@@ -34,6 +34,13 @@ BigWigs3DB = {
 		["Xûñá - Ravencrest"] = "Default",
 	},
 	["namespaces"] = {
+		["BigWigs_Plugins_Victory"] = {
+			["profiles"] = {
+				["Default"] = {
+					["soundName"] = "None",
+				},
+			},
+		},
 		["BigWigs_Bosses_Devos, Paragon of Doubt"] = {
 			["profiles"] = {
 				["Default"] = {
@@ -45,48 +52,19 @@ BigWigs3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
+		["BigWigs_Plugins_Sounds"] = {
+		},
 		["BigWigs_Plugins_AutoReply"] = {
 			["profiles"] = {
 				["Default"] = {
-					["modeOther"] = 2,
 					["exitCombatOther"] = 3,
+					["modeOther"] = 2,
 				},
 			},
-		},
-		["BigWigs_Plugins_AltPower"] = {
-		},
-		["BigWigs_Plugins_Raid Icons"] = {
-		},
-		["BigWigs_Plugins_Messages"] = {
-			["profiles"] = {
-				["Default"] = {
-					["fontSize"] = 18,
-					["fontName"] = "Arial Narrow",
-					["growUpwards"] = false,
-				},
-			},
-		},
-		["BigWigs_Plugins_Victory"] = {
-			["profiles"] = {
-				["Default"] = {
-					["soundName"] = "None",
-				},
-			},
-		},
-		["BigWigs_Bosses_Ingra Maloch"] = {
-			["profiles"] = {
-				["Default"] = {
-					[328756] = 3129591,
-				},
-			},
-		},
-		["BigWigs_Plugins_Sounds"] = {
 		},
 		["BigWigs_Plugins_Countdown"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
-		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_AltPower"] = {
 		},
 		["BigWigs_Plugins_Colors"] = {
 			["profiles"] = {
@@ -122,23 +100,7 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 366.3776637090632,
-					["fontSize"] = 14,
-					["fontName"] = "Arial Narrow",
-					["width"] = 100.0000228881836,
-					["objects"] = {
-						["sound"] = false,
-						["close"] = false,
-					},
-					["font"] = "Arial Narrow",
-					["lock"] = false,
-					["height"] = 71.63385772705078,
-					["posy"] = 237.4672465880358,
-				},
-			},
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 			["profiles"] = {
@@ -159,9 +121,9 @@ BigWigs3DB = {
 					["BigWigsAnchor_height"] = 15.37248992919922,
 					["BigWigsAnchor_x"] = 926.6226986752299,
 					["texture"] = "Blizzard Raid Bar",
-					["BigWigsEmphasizeAnchor_x"] = 588.5112545359298,
 					["BigWigsEmphasizeAnchor_width"] = 221.6539154052734,
 					["fontSizeEmph"] = 12,
+					["BigWigsEmphasizeAnchor_x"] = 588.5112545359298,
 					["emphasizeTime"] = 10,
 				},
 			},
@@ -170,9 +132,47 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_Statistics"] = {
 		},
+		["BigWigs_Bosses_Ingra Maloch"] = {
+			["profiles"] = {
+				["Default"] = {
+					[328756] = 3129591,
+				},
+			},
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
+		},
 		["BigWigs_Plugins_Respawn"] = {
 		},
+		["BigWigs_Plugins_Messages"] = {
+			["profiles"] = {
+				["Default"] = {
+					["fontSize"] = 18,
+					["fontName"] = "Arial Narrow",
+					["growUpwards"] = false,
+				},
+			},
+		},
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 366.3776637090632,
+					["fontSize"] = 14,
+					["fontName"] = "Arial Narrow",
+					["width"] = 100.0000228881836,
+					["objects"] = {
+						["sound"] = false,
+						["close"] = false,
+					},
+					["font"] = "Arial Narrow",
+					["lock"] = false,
+					["height"] = 71.63385772705078,
+					["posy"] = 237.4672465880358,
+				},
+			},
+		},
 		["BigWigs_Plugins_Pull"] = {
+		},
+		["BigWigs_Plugins_BossBlock"] = {
 		},
 	},
 	["global"] = {
@@ -2140,8 +2140,9 @@ BigWigsStatsDB = {
 		},
 		[2424] = {
 			["LFR"] = {
-				["best"] = 561.4659999999858,
-				["kills"] = 1,
+				["kills"] = 2,
+				["best"] = 398.4989999998361,
+				["wipes"] = 2,
 			},
 		},
 		[2425] = {

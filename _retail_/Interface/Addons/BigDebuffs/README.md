@@ -8,6 +8,21 @@ https://github.com/jordonwow/bigdebuffs/issues
 Submit a pull request:
 https://github.com/jordonwow/bigdebuffs/pulls
 
+## v9.18
+* Minor bug fix
+
+## v9.17
+* Add offset options
+
+## v9.16
+* Add option to adjust anchor point
+
+## v9.15
+* Add support for GladiusEx frames
+
+## v9.14
+* Fix for false icons sticking to nameplates
+
 ## v9.13
 * Added Offensive Debuffs category (e.g. Colossus Smash, Dark Simulacrum, Devouring Plague) (#233)
 Abilities that are used rotationally in PvE will by default not show on unitFrames & nameplates, this can easily be overwritten in options

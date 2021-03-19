@@ -51,6 +51,13 @@ L["icon-sort-mode:by-expire-time"] = "By expiration time"
 L["icon-sort-mode:by-icon-size"] = "By icon size"
 L["icon-sort-mode:custom"] = "Custom"
 L["icon-sort-mode:none"] = "Without sorting"
+L["instance-type:arena"] = "Arenas"
+L["instance-type:none"] = "Open World"
+L["instance-type:party"] = "5ppl dungeons"
+L["instance-type:pvp"] = "Battlegrounds"
+L["instance-type:raid"] = "Raid dungeons"
+L["instance-type:scenario"] = "Scenarios"
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["Magic"] = "Magic"
 L["Options are not available in combat!"] = "Options are not available in combat!"
 L["options:alpha:alpha"] = "Alpha of the icons (except the nameplate of your target)"
@@ -91,6 +98,8 @@ L["options:general:full-opacity-always"] = ""
 L["options:general:hide-blizz-frames"] = "Hide Blizzard's aura frames (except player)"
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 L["options:general:icon-grow-direction"] = "Icon growing direction"
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
 L["options:general:show-cooldown-animation"] = "Show cooldown animation"
 L["options:general:show-cooldown-text"] = "Show aura's remaining time"
@@ -381,5 +390,14 @@ L["options:auras:show-on-npcs-and-players"] = "Show this aura on players and NPC
 L["options:auras:show-on-players"] = "Show this aura on players only"
 L["options:auras:show-on-npcs"] = "Show this aura on NPC only"
 L["options:apps:spiteful"] = "Highlight Spiteful Shade (Spiteful M+ affix)";
+L["instance-type:arena"] = "Arenas"
+L["instance-type:none"] = "Open World"
+L["instance-type:party"] = "5ppl dungeons"
+L["instance-type:pvp"] = "Battlegrounds"
+L["instance-type:raid"] = "Raid dungeons"
+L["instance-type:scenario"] = "Scenarios"
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 
 --@end-debug@]===]

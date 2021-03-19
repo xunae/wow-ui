@@ -67,6 +67,20 @@ L["icon-sort-mode:by-icon-size"] = "By icon size"
 L["icon-sort-mode:custom"] = "Custom"
 --[[Translation missing --]]
 L["icon-sort-mode:none"] = "Without sorting"
+--[[Translation missing --]]
+L["instance-type:arena"] = "Arenas"
+--[[Translation missing --]]
+L["instance-type:none"] = "Open World"
+--[[Translation missing --]]
+L["instance-type:party"] = "5ppl dungeons"
+--[[Translation missing --]]
+L["instance-type:pvp"] = "Battlegrounds"
+--[[Translation missing --]]
+L["instance-type:raid"] = "Raid dungeons"
+--[[Translation missing --]]
+L["instance-type:scenario"] = "Scenarios"
+--[[Translation missing --]]
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["Magic"] = "마법"
 L["Options are not available in combat!"] = "전투 중에는 옵션을 사용할 수 없습니다!"
 --[[Translation missing --]]
@@ -131,6 +145,9 @@ L["options:general:hide-blizz-frames"] = "블리자드 프레임 숨기기 (UI �
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 --[[Translation missing --]]
 L["options:general:icon-grow-direction"] = "Icon growing direction"
+--[[Translation missing --]]
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 --[[Translation missing --]]
 L["options:general:show-aura-tooltip"] = "Show aura name when mouse is over auras icon"
 --[[Translation missing --]]

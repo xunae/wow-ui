@@ -50,6 +50,20 @@ L["icon-sort-mode:by-icon-size"] = "Nach Symbolgröße"
 L["icon-sort-mode:custom"] = "Benutzerdefiniert"
 --[[Translation missing --]]
 L["icon-sort-mode:none"] = "Without sorting"
+--[[Translation missing --]]
+L["instance-type:arena"] = "Arenas"
+--[[Translation missing --]]
+L["instance-type:none"] = "Open World"
+--[[Translation missing --]]
+L["instance-type:party"] = "5ppl dungeons"
+--[[Translation missing --]]
+L["instance-type:pvp"] = "Battlegrounds"
+--[[Translation missing --]]
+L["instance-type:raid"] = "Raid dungeons"
+--[[Translation missing --]]
+L["instance-type:scenario"] = "Scenarios"
+--[[Translation missing --]]
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["Magic"] = "Magie"
 L["Options are not available in combat!"] = "Optionen sind im Kampf nicht verfügbar!"
 L["options:alpha:alpha"] = "Deckkraft der Symbole (außer der Namensplakette deines Ziels)"
@@ -101,6 +115,9 @@ L["options:general:hide-blizz-frames"] = "Blizzards Auraelemente ausblenden (UI-
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 --[[Translation missing --]]
 L["options:general:icon-grow-direction"] = "Icon growing direction"
+--[[Translation missing --]]
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 L["options:general:show-aura-tooltip"] = "Zeigt den Namen der Aura, wenn die Maus sich auf dem Aurasymbol befindet."
 L["options:general:show-cooldown-animation"] = "Abklingzeitanimation anzeigen"
 L["options:general:show-cooldown-text"] = "Die verbleibende Zeit der Aura anzeigen"

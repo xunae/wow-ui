@@ -22,6 +22,14 @@ local severityColor = {
     [3] = { 1, 0, 0, 1},
 }
 
+local drIcons = {
+    Stun = 135860,
+    Incapacitate = 136071,
+    Disorient = 136184,
+    Silence = 458230,
+    Root = 136100,
+}
+
 local GetTime = GetTime
 
 function sArenaFrameMixin:FindDR(combatEvent, spellID)
@@ -59,7 +67,7 @@ function sArenaFrameMixin:FindDR(combatEvent, spellID)
         end
     end
 
-    frame.Icon:SetTexture(GetSpellTexture(spellID))
+    frame.Icon:SetTexture(drIcons[category])
     frame.Border:SetVertexColor(unpack(severityColor[frame.severity]))
 
     frame.severity = frame.severity + 1
@@ -121,6 +129,7 @@ drList = {
     [1513]    = "Disorient",       -- Scare Beast
     [10326]   = "Disorient",       -- Turn Evil
     [331866]   = "Disorient",      -- Agent of Chaos
+    [324263]   = "Disorient",      -- Sulfuric Emission
 
     [217832]  = "Incapacitate",    -- Imprison
     [221527]  = "Incapacitate",    -- Imprison (Honor talent)
@@ -179,6 +188,7 @@ drList = {
     [210141]  = "Stun",            -- Zombie Explosion
     [108194]  = "Stun",            -- Asphyxiate (Unholy)
     [221562]  = "Stun",            -- Asphyxiate (Blood)
+    [334693]  = "Stun",            -- Absolute Zero (Frost)
     [91800]   = "Stun",            -- Gnaw (Ghoul)
     [91797]   = "Stun",            -- Monstrous Blow (Mutated Ghoul)
     [287254]  = "Stun",            -- Dead of Winter

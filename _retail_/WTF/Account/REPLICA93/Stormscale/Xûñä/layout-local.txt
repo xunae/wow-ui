@@ -76,13 +76,6 @@ X: 72
 Y: -72
 W: 128
 H: 53
-Frame: TargetFrame
-FrameLevel: 1
-Anchor: TOP
-X: -297
-Y: -136
-W: 232
-H: 100
 Frame: FocusFrame
 FrameLevel: 1
 Anchor: LEFT
@@ -146,3 +139,10 @@ X: -128
 Y: -146
 W: 32
 H: 32
+Frame: TargetFrame
+FrameLevel: 1
+Anchor: TOP
+X: -297
+Y: -136
+W: 232
+H: 100

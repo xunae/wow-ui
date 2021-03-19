@@ -52,43 +52,13 @@ BigWigs3DB = {
 		},
 		["LibDualSpec-1.0"] = {
 		},
-		["BigWigs_Bosses_Domina Venomblade"] = {
-		},
-		["BigWigs_Bosses_The Necrotic Wake Trash"] = {
-		},
 		["BigWigs_Plugins_Sounds"] = {
-		},
-		["BigWigs_Bosses_Tred'ova"] = {
-		},
-		["BigWigs_Bosses_Mists of Tirna Scithe Trash"] = {
 		},
 		["BigWigs_Plugins_AutoReply"] = {
 			["profiles"] = {
 				["Default"] = {
-					["exitCombatOther"] = 3,
 					["modeOther"] = 2,
-				},
-			},
-		},
-		["BigWigs_Bosses_Plaguefall Trash"] = {
-		},
-		["BigWigs_Bosses_Margrave Stradama"] = {
-		},
-		["BigWigs_Plugins_Proximity"] = {
-			["profiles"] = {
-				["Default"] = {
-					["posx"] = 366.3776637090632,
-					["fontSize"] = 14,
-					["fontName"] = "Arial Narrow",
-					["width"] = 100.0000228881836,
-					["objects"] = {
-						["close"] = false,
-						["sound"] = false,
-					},
-					["font"] = "Arial Narrow",
-					["lock"] = false,
-					["height"] = 71.63385772705078,
-					["posy"] = 237.4672465880358,
+					["exitCombatOther"] = 3,
 				},
 			},
 		},
@@ -96,21 +66,9 @@ BigWigs3DB = {
 		},
 		["BigWigs_Plugins_AltPower"] = {
 		},
-		["BigWigs_Bosses_Doctor Ickus"] = {
-		},
 		["BigWigs_Plugins_Colors"] = {
 			["profiles"] = {
 				["Default"] = {
-					["barBackground"] = {
-						["BigWigs_Plugins_Colors"] = {
-							["default"] = {
-								0.109803921568627, -- [1]
-								0.149019607843137, -- [2]
-								0.184313725490196, -- [3]
-								0.5, -- [4]
-							},
-						},
-					},
 					["barColor"] = {
 						["BigWigs_Plugins_Colors"] = {
 							["default"] = {
@@ -129,10 +87,20 @@ BigWigs3DB = {
 							},
 						},
 					},
+					["barBackground"] = {
+						["BigWigs_Plugins_Colors"] = {
+							["default"] = {
+								0.109803921568627, -- [1]
+								0.149019607843137, -- [2]
+								0.184313725490196, -- [3]
+								0.5, -- [4]
+							},
+						},
+					},
 				},
 			},
 		},
-		["BigWigs_Plugins_Raid Icons"] = {
+		["BigWigs_Plugins_Wipe"] = {
 		},
 		["BigWigs_Plugins_InfoBox"] = {
 			["profiles"] = {
@@ -146,31 +114,48 @@ BigWigs3DB = {
 			["profiles"] = {
 				["Default"] = {
 					["BigWigsEmphasizeAnchor_y"] = 271.4221504454545,
-					["BigWigsAnchor_width"] = 184,
 					["BigWigsEmphasizeAnchor_height"] = 17.60788917541504,
+					["BigWigsAnchor_width"] = 184,
+					["BigWigsAnchor_y"] = 602.8219367252605,
 					["fontName"] = "Arial Narrow",
 					["BigWigsAnchor_height"] = 15.37248992919922,
-					["BigWigsAnchor_y"] = 602.8219367252605,
-					["emphasizeTime"] = 10,
-					["fontSizeEmph"] = 12,
 					["BigWigsAnchor_x"] = 926.6226986752299,
-					["BigWigsEmphasizeAnchor_width"] = 221.6539154052734,
+					["emphasizeTime"] = 10,
 					["BigWigsEmphasizeAnchor_x"] = 588.5112545359298,
+					["fontSizeEmph"] = 12,
+					["BigWigsEmphasizeAnchor_width"] = 221.6539154052734,
 					["texture"] = "Blizzard Raid Bar",
 				},
 			},
 		},
-		["BigWigs_Bosses_Mistcaller"] = {
-		},
 		["BigWigs_Plugins_Super Emphasize"] = {
 		},
-		["BigWigs_Plugins_Wipe"] = {
+		["BigWigs_Plugins_BossBlock"] = {
 		},
-		["BigWigs_Plugins_Respawn"] = {
+		["BigWigs_Bosses_Ingra Maloch"] = {
+			["profiles"] = {
+				["Default"] = {
+					[328756] = 3129591,
+				},
+			},
 		},
-		["BigWigs_Plugins_Statistics"] = {
-		},
-		["BigWigs_Bosses_Globgrog"] = {
+		["BigWigs_Plugins_Proximity"] = {
+			["profiles"] = {
+				["Default"] = {
+					["posx"] = 366.3776637090632,
+					["fontSize"] = 14,
+					["fontName"] = "Arial Narrow",
+					["width"] = 100.0000228881836,
+					["objects"] = {
+						["sound"] = false,
+						["close"] = false,
+					},
+					["font"] = "Arial Narrow",
+					["lock"] = false,
+					["height"] = 71.63385772705078,
+					["posy"] = 237.4672465880358,
+				},
+			},
 		},
 		["BigWigs_Plugins_Messages"] = {
 			["profiles"] = {
@@ -181,16 +166,13 @@ BigWigs3DB = {
 				},
 			},
 		},
-		["BigWigs_Plugins_BossBlock"] = {
+		["BigWigs_Plugins_Respawn"] = {
+		},
+		["BigWigs_Plugins_Raid Icons"] = {
 		},
 		["BigWigs_Plugins_Pull"] = {
 		},
-		["BigWigs_Bosses_Ingra Maloch"] = {
-			["profiles"] = {
-				["Default"] = {
-					[328756] = 3129591,
-				},
-			},
+		["BigWigs_Plugins_Statistics"] = {
 		},
 	},
 	["global"] = {
@@ -1448,8 +1430,9 @@ BigWigsStatsDB = {
 		},
 		[2424] = {
 			["LFR"] = {
-				["best"] = 561.4659999999858,
-				["kills"] = 1,
+				["kills"] = 2,
+				["best"] = 398.4989999998361,
+				["wipes"] = 2,
 			},
 		},
 		[2425] = {

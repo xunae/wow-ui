@@ -72,6 +72,17 @@ VER 3 000000000000018D "morpf" "237554"
 .enchant 1 257
 .enchant 2 257
 END
+VER 3 000000000000018E "morpf2" "644389"
+.item 1 8749
+.item 4 16060
+.item 5 10553
+.item 6 3376
+.item 7 9825
+.item 8 40
+.item 3 0
+.item 16 65667
+.item 17 9386 
+END
 VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 #showtooltip Purge
 /cast [modifier:shift,@player] Purify Spirit

@@ -49,6 +49,20 @@ L["icon-sort-mode:by-expire-time"] = "Por duración restante"
 L["icon-sort-mode:by-icon-size"] = "Por tamaño del icono"
 L["icon-sort-mode:custom"] = "Personalizado"
 L["icon-sort-mode:none"] = "Sin ordenar"
+--[[Translation missing --]]
+L["instance-type:arena"] = "Arenas"
+--[[Translation missing --]]
+L["instance-type:none"] = "Open World"
+--[[Translation missing --]]
+L["instance-type:party"] = "5ppl dungeons"
+--[[Translation missing --]]
+L["instance-type:pvp"] = "Battlegrounds"
+--[[Translation missing --]]
+L["instance-type:raid"] = "Raid dungeons"
+--[[Translation missing --]]
+L["instance-type:scenario"] = "Scenarios"
+--[[Translation missing --]]
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["Magic"] = "Magia"
 L["Options are not available in combat!"] = "¡La configuración no está disponible en combate!"
 L["options:alpha:alpha"] = "Transparencia de los iconos (excepto los de la placa de nombre del objetivo)"
@@ -94,6 +108,9 @@ L["options:general:hide-blizz-frames"] = "Ocultar los marcos de aura de Blizzard
 --[[Translation missing --]]
 L["options:general:hide-player-blizz-frame"] = "Hide Blizzard's aura frames on player"
 L["options:general:icon-grow-direction"] = "Dirección de crecimiento de los iconos"
+--[[Translation missing --]]
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 L["options:general:show-aura-tooltip"] = "Mostrar el nombre del aura al pasar el ratón sobre su icono"
 L["options:general:show-cooldown-animation"] = "Mostrar animación de tiempo de enfriamiento"
 L["options:general:show-cooldown-text"] = "Mostrar el tiempo restante del aura"

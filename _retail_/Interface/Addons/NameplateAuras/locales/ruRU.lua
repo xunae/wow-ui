@@ -51,6 +51,20 @@ L["icon-sort-mode:by-expire-time"] = "По оставшемуся времени
 L["icon-sort-mode:by-icon-size"] = "По размеру иконки"
 L["icon-sort-mode:custom"] = "Пользовательский"
 L["icon-sort-mode:none"] = "Без сортировки"
+--[[Translation missing --]]
+L["instance-type:arena"] = "Arenas"
+--[[Translation missing --]]
+L["instance-type:none"] = "Open World"
+--[[Translation missing --]]
+L["instance-type:party"] = "5ppl dungeons"
+--[[Translation missing --]]
+L["instance-type:pvp"] = "Battlegrounds"
+--[[Translation missing --]]
+L["instance-type:raid"] = "Raid dungeons"
+--[[Translation missing --]]
+L["instance-type:scenario"] = "Scenarios"
+--[[Translation missing --]]
+L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["Magic"] = "Магия"
 L["Options are not available in combat!"] = "Настройки недоступны в бою!"
 L["options:alpha:alpha"] = "Прозрачность иконок (исключая те, что на полоске ХП вашей цели)"
@@ -95,6 +109,9 @@ L["options:general:full-opacity-always"] = "Иконки всегда полно
 L["options:general:hide-blizz-frames"] = "Прятать фреймы аур Blizzard (кроме игрока)"
 L["options:general:hide-player-blizz-frame"] = "Прятать фреймы аур Blizzard на игроке"
 L["options:general:icon-grow-direction"] = "Направление роста иконок"
+--[[Translation missing --]]
+L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
+in different types of locations]=]
 L["options:general:show-aura-tooltip"] = "Показывать имя ауры при наведении мышью на иконку"
 L["options:general:show-cooldown-animation"] = "Показывать анимацию кулдауна"
 L["options:general:show-cooldown-text"] = "Показывать оставшееся время ауры"
