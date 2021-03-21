@@ -4515,13 +4515,14 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Stone Legion Commando",
 		},
-		[340324] = {
-			["school"] = 32,
-			["type"] = "DEBUFF",
+		[244969] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_DAMAGE"] = true,
 			},
+			["source"] = "Garothi Worldbreaker",
 		},
 		[155201] = {
 			["school"] = 8,
@@ -4543,13 +4544,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Carrion Worm",
 		},
-		[337255] = {
-			["school"] = 1,
+		[340324] = {
+			["school"] = 32,
+			["type"] = "DEBUFF",
 			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
 			},
-			["source"] = "Tred'ova",
 		},
 		[320120] = {
 			["school"] = 40,
@@ -4630,15 +4631,6 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Shatug",
 		},
-		[326005] = {
-			["school"] = 32,
-			["type"] = "BUFF",
-			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
-			},
-			["source"] = "Sire Denathrius",
-		},
 		[246505] = {
 			["school"] = 4,
 			["token"] = {
@@ -4654,6 +4646,15 @@ EncounterDetailsDB = {
 				["SPELL_DAMAGE"] = true,
 			},
 			["source"] = "Halkias",
+		},
+		[326005] = {
+			["school"] = 32,
+			["type"] = "BUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+			},
+			["source"] = "Sire Denathrius",
 		},
 		[328424] = {
 			["school"] = 32,
@@ -5034,13 +5035,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Illusionary Clone",
 		},
-		[3600] = {
+		[326018] = {
 			["school"] = 8,
 			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
-			["source"] = "Earthbind Totem",
+			["source"] = "Spinemaw Larva",
 		},
 		[155209] = {
 			["school"] = 4,
@@ -5065,15 +5066,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Forsworn Squad-Leader",
 		},
-		[15407] = {
-			["school"] = 32,
-			["type"] = "BUFF",
+		[3600] = {
+			["school"] = 8,
+			["type"] = "DEBUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
-				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Kluspi-TwistingNether",
+			["source"] = "Earthbind Totem",
 		},
 		[339573] = {
 			["school"] = 32,
@@ -5506,6 +5505,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Tzioh-Kazzak",
 		},
+		[323730] = {
+			["school"] = 16,
+			["type"] = "DEBUFF",
+			["token"] = {
+				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+			},
+			["source"] = "Nalthor the Rimebinder",
+		},
 		[339075] = {
 			["school"] = 32,
 			["type"] = "DEBUFF",
@@ -5513,14 +5521,6 @@ EncounterDetailsDB = {
 				["SPELL_AURA_APPLIED"] = true,
 			},
 			["source"] = "Lady Inerva Darkvein",
-		},
-		[332937] = {
-			["school"] = 1,
-			["token"] = {
-				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_CAST_START"] = true,
-			},
-			["source"] = "Sinister Reflection",
 		},
 		[244000] = {
 			["school"] = 4,
@@ -5574,14 +5574,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Hungering Destroyer",
 		},
-		[323730] = {
-			["school"] = 16,
-			["type"] = "DEBUFF",
+		[332937] = {
+			["school"] = 1,
 			["token"] = {
-				["SPELL_AURA_APPLIED"] = true,
-				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Nalthor the Rimebinder",
+			["source"] = "Sinister Reflection",
 		},
 		[323732] = {
 			["school"] = 64,
@@ -5732,13 +5731,15 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Millificent Manastorm",
 		},
-		[326018] = {
-			["school"] = 8,
-			["type"] = "DEBUFF",
+		[15407] = {
+			["school"] = 32,
+			["type"] = "BUFF",
 			["token"] = {
 				["SPELL_AURA_APPLIED"] = true,
+				["SPELL_PERIODIC_DAMAGE"] = true,
+				["SPELL_CAST_SUCCESS"] = true,
 			},
-			["source"] = "Spinemaw Larva",
+			["source"] = "Kluspi-TwistingNether",
 		},
 		[346989] = {
 			["school"] = 0,
@@ -6018,14 +6019,13 @@ EncounterDetailsDB = {
 			},
 			["source"] = "Depraved Houndmaster",
 		},
-		[244969] = {
+		[337255] = {
 			["school"] = 1,
 			["token"] = {
-				["SPELL_CAST_START"] = true,
 				["SPELL_CAST_SUCCESS"] = true,
-				["SPELL_DAMAGE"] = true,
+				["SPELL_CAST_START"] = true,
 			},
-			["source"] = "Garothi Worldbreaker",
+			["source"] = "Tred'ova",
 		},
 		[197509] = {
 			["school"] = 32,

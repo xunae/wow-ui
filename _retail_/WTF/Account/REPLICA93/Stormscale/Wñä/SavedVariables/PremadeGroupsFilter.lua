@@ -361,7 +361,7 @@ PremadeGroupsFilterState = {
 		["heals"] = {
 			["max"] = "0",
 			["min"] = "",
-			["act"] = false,
+			["act"] = true,
 		},
 		["members"] = {
 			["max"] = "",
@@ -576,7 +576,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c9f0"] = {
-		["enabled"] = true,
+		["enabled"] = false,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",

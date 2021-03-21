@@ -27,10 +27,19 @@ VER 3 0100000000000002 "Avatar" "INV_MISC_QUESTIONMARK"
 /cast Blood Fury(Racial)
 /cast Avatar
 END
+VER 3 010000000000000F "cancel_bs" "1390941"
+#showtoolti
+/cancelaura Bladestorm
+END
 VER 3 010000000000000D "Charge" "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /cancelaura Bladestorm
 /cast Charge
+END
+VER 3 010000000000000E "is" "INV_MISC_QUESTIONMARK"
+#showtooltip Intimidating Shout
+/cancelaura Bladestorm
+/cast Intimidating Shout
 END
 VER 3 010000000000000C "Leap" "INV_MISC_QUESTIONMARK"
 #showtooltip Heroic Leap

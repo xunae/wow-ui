@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1037,
+	["session"] = 1047,
 	["errors"] = {
 		{
 			["message"] = "[string \"error('Invalid RaceID')\"]:1: Invalid RaceID",
@@ -68,8 +68,16 @@ BugGrabberDB = {
 			["time"] = "2021/03/07 20:50:30",
 			["locals"] = "Skipped (In Encounter)",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:574: in function `CompactRaidFrameManager_LockContainer'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:567: in function `CompactRaidFrameManager_UpdateContainerLockVisibility'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:56: in function <...mpactRaidFrames\\Blizzard_CompactRaidFrameManager.lua:49>",
-			["session"] = 1032,
-			["counter"] = 27,
+			["session"] = 1047,
+			["counter"] = 31,
 		}, -- [9]
+		{
+			["message"] = "Interface\\FrameXML\\LFGList.lua:1741: Usage: GetCategoryInfo(categoryID)",
+			["time"] = "2021/03/20 21:28:53",
+			["locals"] = "(*temporary) = nil\n",
+			["stack"] = "[string \"=[C]\"]: in function `GetCategoryInfo'\n[string \"@Interface\\FrameXML\\LFGList.lua\"]:1741: in function `LFGListSearchPanel_SetCategory'\n[string \"@Interface\\FrameXML\\LFGList.lua\"]:590: in function `LFGListCategorySelection_StartFindGroup'\n[string \"@Interface\\AddOns\\WorldQuestsList\\WorldQuestsList-100.lua\"]:8225: in function `LFG_Search'\n[string \"@Interface\\AddOns\\WorldQuestsList\\WorldQuestsList-100.lua\"]:1585: in function <Interface\\AddOns\\WorldQuestsList\\WorldQuestsList.lua:1567>\n[string \"=[C]\"]: ?",
+			["session"] = 1047,
+			["counter"] = 1,
+		}, -- [10]
 	},
 }
