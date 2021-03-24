@@ -48,20 +48,13 @@ L["icon-sort-mode:by-expire-time"] = "按到期时间"
 L["icon-sort-mode:by-icon-size"] = "按图标大小"
 L["icon-sort-mode:custom"] = "自定义"
 L["icon-sort-mode:none"] = "没有排序"
---[[Translation missing --]]
-L["instance-type:arena"] = "Arenas"
---[[Translation missing --]]
-L["instance-type:none"] = "Open World"
---[[Translation missing --]]
-L["instance-type:party"] = "5ppl dungeons"
---[[Translation missing --]]
-L["instance-type:pvp"] = "Battlegrounds"
---[[Translation missing --]]
-L["instance-type:raid"] = "Raid dungeons"
---[[Translation missing --]]
-L["instance-type:scenario"] = "Scenarios"
---[[Translation missing --]]
-L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
+L["instance-type:arena"] = "竞技场"
+L["instance-type:none"] = "开放世界"
+L["instance-type:party"] = "5人本"
+L["instance-type:pvp"] = "战场"
+L["instance-type:raid"] = "团本"
+L["instance-type:scenario"] = "场景战役"
+L["instance-type:unknown"] = "未知副本（某些任务场景）"
 L["Magic"] = "魔法"
 L["Options are not available in combat!"] = "选项在战斗中不可用!"
 L["options:alpha:alpha"] = "图标透明度（不包括目标姓名板）"
@@ -100,9 +93,7 @@ L["options:general:full-opacity-always"] = "图标始终完全不透明"
 L["options:general:hide-blizz-frames"] = "隐藏暴雪的光环框架（除玩家外）"
 L["options:general:hide-player-blizz-frame"] = "隐藏暴雪的光环框架（玩家）"
 L["options:general:icon-grow-direction"] = "图标增长方向"
---[[Translation missing --]]
-L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
-in different types of locations]=]
+L["options:general:instance-types"] = "设置光环在不同区域的可见性"
 L["options:general:show-aura-tooltip"] = "当鼠标在光环图标上悬停时显示光环名称"
 L["options:general:show-cooldown-animation"] = "显示冷却动画"
 L["options:general:show-cooldown-text"] = "显示光环的剩余时间"

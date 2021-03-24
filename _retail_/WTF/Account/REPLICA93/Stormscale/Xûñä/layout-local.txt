@@ -37,8 +37,8 @@ H: 192
 Frame: TargetFrameSpellBar
 FrameLevel: 1
 Anchor: CENTER
-X: -195
-Y: 145
+X: -196
+Y: 131
 W: 150
 H: 10
 Frame: FocusFrameSpellBar
@@ -78,9 +78,9 @@ W: 112
 H: 32
 Frame: ArenaEnemyFrame5
 FrameLevel: 2
-Anchor: TOPRIGHT
+Anchor: RIGHT
 X: -85
-Y: -144
+Y: 16
 W: 112
 H: 32
 Frame: CastingBarFrame

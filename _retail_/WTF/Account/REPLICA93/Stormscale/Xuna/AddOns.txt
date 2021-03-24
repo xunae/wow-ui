@@ -25,7 +25,7 @@ ColorPickerPlus: disabled
 Details: enabled
 Details_EncounterDetails: disabled
 Details_RaidCheck: disabled
-Details_DataStorage: disabled
+Details_DataStorage: enabled
 Details_Streamer: disabled
 Details_TinyThreat: disabled
 Details_Vanguard: disabled

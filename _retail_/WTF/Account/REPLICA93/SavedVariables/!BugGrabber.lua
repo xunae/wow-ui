@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
 	["lastSanitation"] = 3,
-	["session"] = 1093,
+	["session"] = 1107,
 	["errors"] = {
 		{
 			["message"] = "[string \"error('Invalid RaceID')\"]:1: Invalid RaceID",

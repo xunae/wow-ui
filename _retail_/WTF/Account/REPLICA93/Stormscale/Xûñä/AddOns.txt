@@ -40,6 +40,6 @@ Details_TinyThreat: disabled
 Details_Streamer: disabled
 Details_RaidCheck: disabled
 Details_EncounterDetails: disabled
-Details_DataStorage: disabled
+Details_DataStorage: enabled
 Screen Overlay Enhanced: disabled
 ShadowedUnitFrames: disabled

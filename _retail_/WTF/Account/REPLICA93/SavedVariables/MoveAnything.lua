@@ -9,33 +9,24 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
-				["ArenaEnemyFrame4"] = {
+				["TargetFrame"] = {
 					["orgPos"] = {
-						{
-							"TOP", -- [1]
-							"ArenaEnemyFrame3", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							-20, -- [5]
-						}, -- [1]
-						{
-							"RIGHT", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"RIGHT", -- [3]
-							-1.99999988079071, -- [4]
-							0, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ArenaEnemyFrame4",
-					["scale"] = 1.199999928474426,
-					["orgScale"] = 1,
-					["pos"] = {
 						"TOP", -- [1]
-						"ArenaEnemyFrame3", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						-20, -- [5]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-297, -- [4]
+						-136, -- [5]
 					},
+					["name"] = "TargetFrame",
+					["scale"] = 1.100000023841858,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						362.6588745117188, -- [4]
+						-136.3636334080342, -- [5]
+					},
+					["orgScale"] = 1,
 				},
 				["PlayerPowerBarAltMover"] = {
 					["orgPos"] = {
@@ -56,61 +47,72 @@ MADB = {
 					},
 					["orgScale"] = 1,
 				},
-				["ArenaEnemyFrame3"] = {
+				["PlayerFrame"] = {
 					["orgPos"] = {
-						{
-							"TOP", -- [1]
-							"ArenaEnemyFrame2", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							-20, -- [5]
-						}, -- [1]
-						{
-							"RIGHT", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"RIGHT", -- [3]
-							-1.99999988079071, -- [4]
-							0, -- [5]
-						}, -- [2]
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136, -- [4]
+						-136, -- [5]
 					},
-					["name"] = "ArenaEnemyFrame3",
-					["scale"] = 1.199999928474426,
-					["orgScale"] = 1,
+					["name"] = "PlayerFrame",
+					["scale"] = 1.100000023841858,
 					["pos"] = {
-						"TOP", -- [1]
-						"ArenaEnemyFrame2", -- [2]
-						"BOTTOM", -- [3]
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136.3636334080342, -- [4]
+						-136.3636334080342, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["MinimapCluster"] = {
+					["orgPos"] = {
+						"TOPRIGHT", -- [1]
+						"UIParent", -- [2]
+						"TOPRIGHT", -- [3]
 						0, -- [4]
-						-20, -- [5]
+						20, -- [5]
+					},
+					["name"] = "MinimapCluster",
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"UIParent", -- [2]
+						"TOPRIGHT", -- [3]
+						-15, -- [4]
+						0, -- [5]
 					},
 				},
-				["ArenaEnemyFrame2"] = {
+				["TalkingHeadFrame"] = {
 					["orgPos"] = {
-						{
-							"TOP", -- [1]
-							"ArenaEnemyFrame1", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							-20, -- [5]
-						}, -- [1]
-						{
-							"RIGHT", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"RIGHT", -- [3]
-							-1.99999988079071, -- [4]
-							0, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ArenaEnemyFrame2",
-					["scale"] = 1.199999928474426,
-					["orgScale"] = 1,
-					["pos"] = {
-						"TOP", -- [1]
-						"ArenaEnemyFrame1", -- [2]
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
 						"BOTTOM", -- [3]
 						0, -- [4]
-						-20, -- [5]
+						95.99999237060547, -- [5]
 					},
+					["name"] = "TalkingHeadFrame",
+					["scale"] = 0.75,
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0.000152587890625, -- [4]
+						200.0000152587891, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["FocusFrameSpellBar"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"FocusFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
+						25, -- [4]
+						6.999999523162842, -- [5]
+					},
+					["name"] = "FocusFrameSpellBar",
+					["scale"] = 1.399999976158142,
+					["orgScale"] = 1,
 				},
 				["CastingBarFrame"] = {
 					["orgPos"] = {
@@ -146,6 +148,74 @@ MADB = {
 						"BOTTOMRIGHT", -- [3]
 						-275, -- [4]
 						0, -- [5]
+					},
+				},
+				["ExtraAbilityContainer"] = {
+					["orgPos"] = {
+						{
+							"CENTER", -- [1]
+							"UIParent", -- [2]
+							"CENTER", -- [3]
+							0, -- [4]
+							0, -- [5]
+						}, -- [1]
+						{
+							"BOTTOM", -- [1]
+							"UIParent", -- [2]
+							"BOTTOM", -- [3]
+							0, -- [4]
+							120, -- [5]
+						}, -- [2]
+					},
+					["name"] = "ExtraAbilityContainer",
+					["scale"] = 0.7999999523162842,
+					["orgScale"] = 1,
+					["pos"] = {
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						-350, -- [5]
+					},
+				},
+				["VehicleSeatIndicator"] = {
+					["orgPos"] = {
+						"TOPRIGHT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						40, -- [4]
+						803.0000610351562, -- [5]
+					},
+					["name"] = "VehicleSeatIndicator",
+					["scale"] = 0.699999988079071,
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-4.760985497730267, -- [4]
+						14.28596403160025, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["ObjectiveTrackerFrameMover"] = {
+					["orgPos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-10, -- [4]
+						0, -- [5]
+					},
+					["name"] = "ObjectiveTrackerFrameMover",
+					["orgHeight"] = 700.0000610351562,
+					["height"] = 600,
+					["orgWidth"] = 235.0000305175781,
+					["width"] = 235,
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-80, -- [4]
+						-10, -- [5]
 					},
 				},
 				["FocusFrame"] = {
@@ -186,193 +256,6 @@ MADB = {
 					},
 					["orgScale"] = 1,
 				},
-				["LossOfControlFrame"] = {
-					["orgPos"] = {
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						0, -- [5]
-					},
-					["name"] = "LossOfControlFrame",
-					["scale"] = 0.7999999523162842,
-					["orgScale"] = 1,
-				},
-				["MinimapCluster"] = {
-					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"UIParent", -- [2]
-						"TOPRIGHT", -- [3]
-						0, -- [4]
-						20, -- [5]
-					},
-					["name"] = "MinimapCluster",
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"UIParent", -- [2]
-						"TOPRIGHT", -- [3]
-						-15, -- [4]
-						0, -- [5]
-					},
-				},
-				["ArenaEnemyFrame5"] = {
-					["orgPos"] = {
-						{
-							"TOP", -- [1]
-							"ArenaEnemyFrame4", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							-20, -- [5]
-						}, -- [1]
-						{
-							"RIGHT", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"RIGHT", -- [3]
-							-1.99999988079071, -- [4]
-							0, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ArenaEnemyFrame5",
-					["scale"] = 1.199999928474426,
-					["orgScale"] = 1,
-				},
-				["PlayerFrame"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136, -- [4]
-						-136, -- [5]
-					},
-					["name"] = "PlayerFrame",
-					["scale"] = 1.100000023841858,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136.3636334080342, -- [4]
-						-136.3636334080342, -- [5]
-					},
-					["orgScale"] = 1,
-				},
-				["TargetFrame"] = {
-					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-297, -- [4]
-						-136, -- [5]
-					},
-					["name"] = "TargetFrame",
-					["scale"] = 1.100000023841858,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						362.6588745117188, -- [4]
-						-136.3636334080342, -- [5]
-					},
-					["orgScale"] = 1,
-				},
-				["ExtraAbilityContainer"] = {
-					["orgPos"] = {
-						{
-							"CENTER", -- [1]
-							"UIParent", -- [2]
-							"CENTER", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [1]
-						{
-							"BOTTOM", -- [1]
-							"UIParent", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							120, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ExtraAbilityContainer",
-					["scale"] = 0.7999999523162842,
-					["orgScale"] = 1,
-					["pos"] = {
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
-						0, -- [4]
-						-350, -- [5]
-					},
-				},
-				["TalkingHeadFrame"] = {
-					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						95.99999237060547, -- [5]
-					},
-					["name"] = "TalkingHeadFrame",
-					["scale"] = 0.75,
-					["pos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0.000152587890625, -- [4]
-						200.0000152587891, -- [5]
-					},
-					["orgScale"] = 1,
-				},
-				["ObjectiveTrackerFrameMover"] = {
-					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-10, -- [4]
-						0, -- [5]
-					},
-					["name"] = "ObjectiveTrackerFrameMover",
-					["orgHeight"] = 700.0000610351562,
-					["height"] = 600,
-					["orgWidth"] = 235.0000305175781,
-					["width"] = 235,
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-80, -- [4]
-						-10, -- [5]
-					},
-				},
-				["FocusFrameSpellBar"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"FocusFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
-						25, -- [4]
-						6.999999523162842, -- [5]
-					},
-					["name"] = "FocusFrameSpellBar",
-					["scale"] = 1.399999976158142,
-					["orgScale"] = 1,
-				},
-				["VehicleSeatIndicator"] = {
-					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						40, -- [4]
-						803.0000610351562, -- [5]
-					},
-					["name"] = "VehicleSeatIndicator",
-					["scale"] = 0.699999988079071,
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-4.760985497730267, -- [4]
-						14.28596403160025, -- [5]
-					},
-					["orgScale"] = 1,
-				},
 				["TargetFrameSpellBar"] = {
 					["orgPos"] = {
 						"TOPLEFT", -- [1]
@@ -385,41 +268,26 @@ MADB = {
 					["scale"] = 1.399999976158142,
 					["orgScale"] = 1,
 				},
-				["ArenaEnemyFrame1"] = {
+				["LossOfControlFrame"] = {
 					["orgPos"] = {
-						{
-							"TOP", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"TOP", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [1]
-						{
-							"RIGHT", -- [1]
-							"ArenaEnemyFrames", -- [2]
-							"RIGHT", -- [3]
-							-1.99999988079071, -- [4]
-							0, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ArenaEnemyFrame1",
-					["scale"] = 1.199999928474426,
-					["pos"] = {
-						"TOP", -- [1]
-						"ArenaEnemyFrames", -- [2]
-						"TOP", -- [3]
-						-260, -- [4]
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
 						0, -- [5]
 					},
+					["name"] = "LossOfControlFrame",
+					["scale"] = 0.7999999523162842,
 					["orgScale"] = 1,
 				},
 			},
 		},
 	},
 	["playSound"] = false,
-	["tooltips"] = true,
+	["closeGUIOnEscape"] = false,
+	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,
-	["closeGUIOnEscape"] = false,
+	["tooltips"] = true,
 }
