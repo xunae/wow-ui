@@ -329,7 +329,7 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["t2c4f0"] = {
-		["enabled"] = false,
+		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -341,14 +341,14 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 		["dps"] = {
-			["max"] = "",
+			["max"] = "1",
 			["min"] = "",
 			["act"] = false,
 		},
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "heals>0",
+		["expression"] = "",
 		["difficulty"] = {
 			["val"] = 3,
 			["act"] = false,
@@ -359,13 +359,13 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 		["heals"] = {
-			["max"] = "0",
-			["min"] = "",
+			["max"] = "1",
+			["min"] = "1",
 			["act"] = true,
 		},
 		["members"] = {
 			["max"] = "",
-			["min"] = "",
+			["min"] = "2",
 			["act"] = false,
 		},
 	},

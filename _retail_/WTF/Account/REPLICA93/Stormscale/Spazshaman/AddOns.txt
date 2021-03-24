@@ -1,5 +1,5 @@
 Xunamate: disabled
-Kui_Media: enabled
+Kui_Media: disabled
 Neuron: disabled
 Masque_Caith: disabled
 REFlex: enabled
@@ -9,3 +9,13 @@ Perl_ArcaneBar: enabled
 Favorites: disabled
 sArena: disabled
 NameplateAuras: enabled
+BigWigs: disabled
+ColorPickerPlus: disabled
+Details_Vanguard: disabled
+Details_TinyThreat: disabled
+Details_Streamer: disabled
+Details_RaidCheck: disabled
+Details_EncounterDetails: disabled
+Details_DataStorage: disabled
+Screen Overlay Enhanced: disabled
+ShadowedUnitFrames: disabled

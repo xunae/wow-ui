@@ -17,9 +17,9 @@ RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_A: disabled
 LittleWigs: enabled
 Xunamate: disabled
-Kui_Media: enabled
+Kui_Media: disabled
 LittleWigs_WrathOfTheLichKing: enabled
-BigWigs: enabled
+BigWigs: disabled
 BigWigs_Shadowlands: enabled
 Neuron: disabled
 Myslot: disabled
@@ -34,3 +34,12 @@ sArena: disabled
 NameplateAuras: enabled
 BigWigs_CastleNathria: enabled
 DejaCharacterStats: disabled
+ColorPickerPlus: disabled
+Details_Vanguard: disabled
+Details_TinyThreat: disabled
+Details_Streamer: disabled
+Details_RaidCheck: disabled
+Details_EncounterDetails: disabled
+Details_DataStorage: disabled
+Screen Overlay Enhanced: disabled
+ShadowedUnitFrames: disabled

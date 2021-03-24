@@ -1,33 +1,36 @@
 
 OmniCDDB = {
 	["profileKeys"] = {
-		["Xuna - Stormscale"] = "Default",
 		["Xunapala - Arena Champions - EU"] = "Default",
+		["Xñ - Draenor"] = "Default",
+		["Xuna - Arena Champions - EU"] = "Default",
+		["Xûñá - Ravencrest"] = "Default",
 		["Xunamonk - Arena Champions - EU"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 		["Xunan - Arena Champions - EU"] = "Default",
-		["Xuna - Arena Champions - EU"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Xûñá - Ravencrest"] = "Default",
+		["Xuna - Stormscale"] = "Default",
 	},
 	["global"] = {
-		["oodVer"] = 2519,
-		["oodChk"] = 210312,
 		["disableElvMsg"] = true,
+		["oodChk"] = 210321,
+		["oodVer"] = 2521,
+		["oodMsg"] = "|cfff16436 A new update is available. (Hotfix)",
 	},
 	["namespaces"] = {
 		["LibDualSpec-1.0"] = {
 		},
 	},
+	["version"] = 2.51,
 	["cooldowns"] = {
 	},
-	["version"] = 2.51,
 	["profiles"] = {
 		["Default"] = {
 			["Party"] = {
 				["arena"] = {
-					["general"] = {
-						["showPlayerEx"] = false,
+					["highlight"] = {
+						["glowBuffs"] = false,
 					},
 					["spells"] = {
 						["216331"] = false,
@@ -41,7 +44,7 @@ OmniCDDB = {
 						["115750"] = false,
 						["200166"] = false,
 						["212619"] = false,
-						["187650"] = false,
+						["183752"] = false,
 						["8122"] = false,
 						["235219"] = false,
 						["6940"] = true,
@@ -53,8 +56,8 @@ OmniCDDB = {
 						["114052"] = false,
 						["345231"] = true,
 						["116705"] = false,
-						["209258"] = false,
-						["96231"] = false,
+						["2139"] = false,
+						["73685"] = false,
 						["204293"] = false,
 						["109964"] = false,
 						["1766"] = false,
@@ -64,7 +67,6 @@ OmniCDDB = {
 						["51485"] = false,
 						["47788"] = false,
 						["231895"] = false,
-						["61336"] = false,
 						["323436"] = false,
 						["47482"] = false,
 						["198111"] = false,
@@ -99,25 +101,25 @@ OmniCDDB = {
 						["475"] = false,
 						["2094"] = false,
 						["199452"] = false,
-						["6789"] = false,
 						["184662"] = true,
+						["325216"] = false,
 						["212623"] = false,
-						["192058"] = false,
 						["119898"] = false,
 						["187827"] = false,
 						["19577"] = false,
-						["325216"] = false,
+						["6789"] = false,
 						["20711"] = false,
 						["51886"] = false,
-						["183752"] = false,
+						["187650"] = false,
 						["64044"] = false,
 						["5246"] = false,
 						["33206"] = false,
 						["147362"] = false,
+						["192058"] = false,
 						["6552"] = false,
 						["73325"] = true,
-						["2139"] = false,
-						["73685"] = false,
+						["209258"] = false,
+						["96231"] = false,
 						["102342"] = false,
 						["19236"] = false,
 					},
@@ -138,8 +140,8 @@ OmniCDDB = {
 						["breakPoint"] = "raidDefensive",
 						["paddingY"] = 1,
 					},
-					["highlight"] = {
-						["glowBuffs"] = false,
+					["general"] = {
+						["showPlayerEx"] = false,
 					},
 					["manualPos"] = {
 						[5] = {

@@ -4,64 +4,51 @@ BagSyncDB = {
 		["Xûñä"] = {
 			["bag"] = {
 				{
-					"175922::::::::::::5:6619:6652:7193:1485:6646:::", -- [1]
-					"158075::::::::::::4:4936:4929:5814:1514:::", -- [2]
-					"175916::::::::::::5:6652:7193:6619:1485:6646:::", -- [3]
-					"172231;8", -- [4]
-					"172230;29", -- [5]
-					"171315;7", -- [6]
-					"169701;65", -- [7]
-					"168589;9", -- [8]
-					"168586;12", -- [9]
-					"168583;8", -- [10]
-					"179315;2", -- [11]
-					"179314;15", -- [12]
-					"172055", -- [13]
-					"172054;16", -- [14]
-					"172053;5", -- [15]
-					"172052;6", -- [16]
-					"171833", -- [17]
-					"171841;2", -- [18]
-					"171832;9", -- [19]
-					"171830;2", -- [20]
-					"171829;2", -- [21]
-					"171840;9", -- [22]
-					"171828;16", -- [23]
-					"173202;200", -- [24]
-					"173202;40", -- [25]
-					"173204;35", -- [26]
+					"169701;65", -- [1]
+					"168583;8", -- [2]
+					"171833;4", -- [3]
+					"171841;8", -- [4]
+					"171832;9", -- [5]
+					"171840;9", -- [6]
+					"171828;16", -- [7]
+					"173202;200", -- [8]
+					"173202;42", -- [9]
+					"173204;35", -- [10]
+					"177716;3", -- [11]
+					"177660;3", -- [12]
+					"172414;3", -- [13]
+					"172360;3", -- [14]
+					"180817", -- [15]
+					"183287", -- [16]
 				}, -- [1]
 				{
-					"177716;3", -- [1]
-					"177660;3", -- [2]
-					"172414;3", -- [3]
-					"172360;3", -- [4]
-					"180817", -- [5]
-					"183287", -- [6]
-					"180805", -- [7]
-					"103533", -- [8]
-					"103533", -- [9]
-					"103533", -- [10]
-					"184379", -- [11]
-					"184315;3", -- [12]
-					"181646", -- [13]
-					"181552", -- [14]
-					"184773;7", -- [15]
-					"184766", -- [16]
-					"184519;3", -- [17]
-					"184371;61", -- [18]
-					"181649;3", -- [19]
-					"181645;2", -- [20]
-					"137642;17", -- [21]
-					"184769", -- [22]
+					"183283", -- [1]
+					"103533", -- [2]
+					"103533", -- [3]
+					"103533", -- [4]
+					"184764", -- [5]
+					"184380", -- [6]
+					"184379", -- [7]
+					"184315;3", -- [8]
+					"184149", -- [9]
+					"181646", -- [10]
+					"181552", -- [11]
+					"184773;7", -- [12]
+					"184766", -- [13]
+					"184519;3", -- [14]
+					"184371;74", -- [15]
+					"184286;14", -- [16]
+					"181649;3", -- [17]
+					"181645;2", -- [18]
+					"137642;19", -- [19]
+					"184769", -- [20]
+					"184306", -- [21]
 				}, -- [2]
 				{
-					"184306", -- [1]
-					"181643;5", -- [2]
-					"181642;3", -- [3]
-					"179009;6", -- [4]
-					"178995;15", -- [5]
-					"182264::::::::::::3:7199:1501:6646:::", -- [6]
+					"181643;5", -- [1]
+					"181642;3", -- [2]
+					"179009;6", -- [3]
+					"178995;15", -- [4]
 				}, -- [3]
 				{
 				}, -- [4]
@@ -70,28 +57,27 @@ BagSyncDB = {
 					"140192", -- [2]
 					"141605", -- [3]
 					"110560", -- [4]
-					"184380", -- [5]
-					"182653;3", -- [6]
-					"182606", -- [7]
-					"178550;8", -- [8]
-					"177040;20", -- [9]
-					"177040;20", -- [10]
-					"184230::::::::::::4:7186:6652:1485:6646:::", -- [11]
-					"183283", -- [12]
-					"184286;14", -- [13]
-					"172314::::::::::::5:7103:6718:6648:6650:1522:::", -- [14]
-					"178372::::::::::::3:6632:1485:6646:::", -- [15]
-					"178755::::::::::::4:6806:40:1485:4785:::", -- [16]
-					"165059", -- [17]
+					"182653;3", -- [5]
+					"178550;8", -- [6]
+					"177040;20", -- [7]
+					"177040;20", -- [8]
+					"184230::::::::::::4:7186:6652:1485:6646:::", -- [9]
+					"172314::::::::::::5:7103:6718:6648:6650:1522:::", -- [10]
+					"184141::::::::::::3:6652:1492:6646:::", -- [11]
+					"165059", -- [12]
+					"175922::::::::::::5:6619:6652:7193:1485:6646:::", -- [13]
+					"158075::::::::::::4:4936:4929:5814:1514:::", -- [14]
+					"175916::::::::::::5:6652:7193:6619:1485:6646:::", -- [15]
+					"178447::::::::::::3:6628:1472:6646:::", -- [16]
+					"172231;8", -- [17]
+					"172230;29", -- [18]
+					"171315;7", -- [19]
 				},
 			},
 			["guild"] = "CyaThursday©",
-			["money"] = 189959098,
+			["money"] = 198615039,
 			["class"] = "MONK",
 			["race"] = "Scourge",
-			["professions"] = {
-			},
-			["faction"] = "Horde",
 			["equip"] = {
 				"175903::::::::::::4:7193:6633:1492:6646:::", -- [1]
 				"178927::::::::::::6:7074:7193:6648:6650:6718:1522:::", -- [2]
@@ -104,224 +90,225 @@ BagSyncDB = {
 				"175897::::::::::::3:6625:1492:6646:::", -- [9]
 				"178442::::::::::::4:7193:6620:1492:6646:::", -- [10]
 				"178381::::::::::::5:6620:6652:7194:1492:6646:::", -- [11]
-				"178447::::::::::::3:6628:1472:6646:::", -- [12]
+				"178386::::::::::::4:6625:6652:1492:6646:::", -- [12]
 				"181333::::::::::::3:6617:1472:6646:::", -- [13]
 				"178414::::::::::::3:6620:1492:6646:::", -- [14]
-				"182409::::::::::::4:7227:6652:1485:6646:::", -- [15]
+				"182409::::::::::::4:6652:7228:1492:6646:::", -- [15]
 				"177866::::::::::::3:7134:1492:6646:::", -- [16]
 				"98162", -- [17]
 			},
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["gender"] = 2,
 			["currency"] = {
 				[1191] = {
-					["name"] = "Valor",
-					["header"] = "Shadowlands",
 					["icon"] = 463447,
 					["count"] = 0,
+					["header"] = "Shadowlands",
+					["name"] = "Valor",
 				},
 				[515] = {
-					["name"] = "Darkmoon Prize Ticket",
-					["header"] = "Miscellaneous",
 					["icon"] = 134481,
 					["count"] = 9,
+					["header"] = "Miscellaneous",
+					["name"] = "Darkmoon Prize Ticket",
 				},
 				[777] = {
-					["name"] = "Timeless Coin",
-					["header"] = "Mists of Pandaria",
 					["icon"] = 900319,
 					["count"] = 16075,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Timeless Coin",
 				},
 				[1101] = {
-					["name"] = "Oil",
-					["header"] = "Warlords of Draenor",
 					["icon"] = 1131085,
 					["count"] = 1700,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Oil",
 				},
 				[1767] = {
-					["name"] = "Stygia",
-					["header"] = "Shadowlands",
 					["icon"] = 3743739,
-					["count"] = 4587,
+					["count"] = 5135,
+					["header"] = "Shadowlands",
+					["name"] = "Stygia",
 				},
 				[738] = {
-					["name"] = "Lesser Charm of Good Fortune",
-					["header"] = "Mists of Pandaria",
 					["icon"] = 237282,
 					["count"] = 4,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Lesser Charm of Good Fortune",
 				},
 				[1716] = {
-					["name"] = "Honorbound Service Medal",
-					["header"] = "Battle for Azeroth",
 					["icon"] = 2565244,
 					["count"] = 65,
+					["header"] = "Battle for Azeroth",
+					["name"] = "Honorbound Service Medal",
 				},
 				[1342] = {
-					["name"] = "Legionfall War Supplies",
-					["header"] = "Legion",
 					["icon"] = 803763,
 					["count"] = 558,
+					["header"] = "Legion",
+					["name"] = "Legionfall War Supplies",
 				},
 				[1220] = {
-					["name"] = "Order Resources",
-					["header"] = "Legion",
 					["icon"] = 1397630,
 					["count"] = 2759,
+					["header"] = "Legion",
+					["name"] = "Order Resources",
 				},
 				[1602] = {
-					["name"] = "Conquest",
-					["header"] = "Player vs. Player",
 					["icon"] = 1523630,
-					["count"] = 445,
+					["count"] = 895,
+					["header"] = "Player vs. Player",
+					["name"] = "Conquest",
 				},
 				[752] = {
-					["name"] = "Mogu Rune of Fate",
-					["header"] = "Mists of Pandaria",
 					["icon"] = 646678,
 					["count"] = 0,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Mogu Rune of Fate",
 				},
 				[823] = {
-					["name"] = "Apexis Crystal",
-					["header"] = "Warlords of Draenor",
 					["icon"] = 1061300,
 					["count"] = 1218,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Apexis Crystal",
 				},
 				[391] = {
-					["name"] = "Tol Barad Commendation",
-					["header"] = "Player vs. Player",
 					["icon"] = 409548,
 					["count"] = 9,
+					["header"] = "Player vs. Player",
+					["name"] = "Tol Barad Commendation",
 				},
 				[776] = {
-					["name"] = "Warforged Seal",
-					["header"] = "Mists of Pandaria",
 					["icon"] = 514015,
 					["count"] = 2,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Warforged Seal",
 				},
 				[1792] = {
-					["name"] = "Honor",
-					["header"] = "Player vs. Player",
 					["icon"] = 1455894,
-					["count"] = 484,
+					["count"] = 146,
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
 				},
 				[1166] = {
-					["name"] = "Timewarped Badge",
-					["header"] = "Dungeon and Raid",
 					["icon"] = 463446,
 					["count"] = 1190,
+					["header"] = "Dungeon and Raid",
+					["name"] = "Timewarped Badge",
 				},
 				[1560] = {
-					["name"] = "War Resources",
-					["header"] = "Battle for Azeroth",
 					["icon"] = 2032600,
 					["count"] = 5,
+					["header"] = "Battle for Azeroth",
+					["name"] = "War Resources",
 				},
 				[1820] = {
-					["name"] = "Infused Ruby",
-					["header"] = "Shadowlands",
 					["icon"] = 133250,
 					["count"] = 100,
-				},
-				[824] = {
-					["name"] = "Garrison Resources",
-					["header"] = "Warlords of Draenor",
-					["icon"] = 1005027,
-					["count"] = 4470,
-				},
-				[402] = {
-					["name"] = "Ironpaw Token",
-					["header"] = "Miscellaneous",
-					["icon"] = 134912,
-					["count"] = 1,
-				},
-				[1580] = {
-					["name"] = "Seal of Wartorn Fate",
-					["header"] = "Battle for Azeroth",
-					["icon"] = 1416740,
-					["count"] = 4,
-				},
-				[1710] = {
-					["name"] = "Seafarer's Dubloon",
-					["header"] = "Battle for Azeroth",
-					["icon"] = 1604167,
-					["count"] = 45,
-				},
-				[1273] = {
-					["name"] = "Seal of Broken Fate",
-					["header"] = "Legion",
-					["icon"] = 1604167,
-					["count"] = 0,
-				},
-				[1718] = {
-					["name"] = "Titan Residuum",
-					["header"] = "Battle for Azeroth",
-					["icon"] = 2065602,
-					["count"] = 0,
-				},
-				[1155] = {
-					["name"] = "Ancient Mana",
-					["header"] = "Legion",
-					["icon"] = 1377394,
-					["count"] = 255,
-				},
-				[1275] = {
-					["name"] = "Curious Coin",
-					["header"] = "Legion",
-					["icon"] = 1604168,
-					["count"] = 6,
-				},
-				[1226] = {
-					["name"] = "Nethershard",
-					["header"] = "Legion",
-					["icon"] = 132775,
-					["count"] = 4887,
-				},
-				[994] = {
-					["name"] = "Seal of Tempered Fate",
-					["header"] = "Warlords of Draenor",
-					["icon"] = 838813,
-					["count"] = 3,
-				},
-				[1828] = {
-					["name"] = "Soul Ash",
 					["header"] = "Shadowlands",
-					["icon"] = 3743738,
-					["count"] = 860,
-				},
-				[697] = {
-					["name"] = "Elder Charm of Good Fortune",
-					["header"] = "Mists of Pandaria",
-					["icon"] = 237281,
-					["count"] = 0,
-				},
-				[944] = {
-					["name"] = "Artifact Fragment",
-					["header"] = "Warlords of Draenor",
-					["icon"] = 1061303,
-					["count"] = 0,
-				},
-				[1813] = {
-					["name"] = "Reservoir Anima",
-					["header"] = "Shadowlands",
-					["icon"] = 3528288,
-					["count"] = 341,
-				},
-				[615] = {
-					["name"] = "Essence of Corrupted Deathwing",
-					["header"] = "Cataclysm",
-					["icon"] = 132851,
-					["count"] = 2,
+					["name"] = "Infused Ruby",
 				},
 				[614] = {
-					["name"] = "Mote of Darkness",
-					["header"] = "Cataclysm",
 					["icon"] = 136192,
 					["count"] = 14,
+					["header"] = "Cataclysm",
+					["name"] = "Mote of Darkness",
+				},
+				[402] = {
+					["icon"] = 134912,
+					["count"] = 1,
+					["header"] = "Miscellaneous",
+					["name"] = "Ironpaw Token",
+				},
+				[1580] = {
+					["icon"] = 1416740,
+					["count"] = 4,
+					["header"] = "Battle for Azeroth",
+					["name"] = "Seal of Wartorn Fate",
+				},
+				[1710] = {
+					["icon"] = 1604167,
+					["count"] = 45,
+					["header"] = "Battle for Azeroth",
+					["name"] = "Seafarer's Dubloon",
+				},
+				[1273] = {
+					["icon"] = 1604167,
+					["count"] = 0,
+					["header"] = "Legion",
+					["name"] = "Seal of Broken Fate",
+				},
+				[1718] = {
+					["icon"] = 2065602,
+					["count"] = 0,
+					["header"] = "Battle for Azeroth",
+					["name"] = "Titan Residuum",
+				},
+				[1155] = {
+					["icon"] = 1377394,
+					["count"] = 255,
+					["header"] = "Legion",
+					["name"] = "Ancient Mana",
+				},
+				[615] = {
+					["icon"] = 132851,
+					["count"] = 2,
+					["header"] = "Cataclysm",
+					["name"] = "Essence of Corrupted Deathwing",
+				},
+				[1226] = {
+					["icon"] = 132775,
+					["count"] = 4887,
+					["header"] = "Legion",
+					["name"] = "Nethershard",
+				},
+				[994] = {
+					["icon"] = 838813,
+					["count"] = 3,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Seal of Tempered Fate",
+				},
+				[1828] = {
+					["icon"] = 3743738,
+					["count"] = 2000,
+					["header"] = "Shadowlands",
+					["name"] = "Soul Ash",
+				},
+				[697] = {
+					["icon"] = 237281,
+					["count"] = 0,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Elder Charm of Good Fortune",
+				},
+				[944] = {
+					["icon"] = 1061303,
+					["count"] = 0,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Artifact Fragment",
+				},
+				[1813] = {
+					["icon"] = 3528288,
+					["count"] = 341,
+					["header"] = "Shadowlands",
+					["name"] = "Reservoir Anima",
+				},
+				[1275] = {
+					["icon"] = 1604168,
+					["count"] = 6,
+					["header"] = "Legion",
+					["name"] = "Curious Coin",
+				},
+				[824] = {
+					["icon"] = 1005027,
+					["count"] = 4470,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Garrison Resources",
 				},
 			},
-			["gender"] = 3,
 			["mailbox"] = {
-				"169220", -- [1]
-				"172410", -- [2]
-				"172364", -- [3]
+				"173202", -- [1]
 			},
 		},
 		["Wñä"] = {
@@ -333,43 +320,42 @@ BagSyncDB = {
 				{
 					"6948", -- [1]
 					"166751;8", -- [2]
-					"137642;22", -- [3]
+					"137642;26", -- [3]
 					"3371;5", -- [4]
-					"173202;138", -- [5]
-					"173204;16", -- [6]
+					"173202;158", -- [5]
+					"173204;17", -- [6]
 					"180817", -- [7]
 				}, -- [3]
 				[0] = {
-					"184371;16", -- [1]
-					"184315", -- [2]
-					"5512", -- [3]
+					"184371;13", -- [1]
+					"182415::::::::::::4:7186:6652:1485:6646:::", -- [2]
+					"180924::::::::::::3:7201:1514:6646:::", -- [3]
 				},
 			},
-			["money"] = 85798669,
+			["money"] = 80786000,
 			["class"] = "WARRIOR",
 			["race"] = "Orc",
+			["professions"] = {
+			},
+			["faction"] = "Horde",
 			["equip"] = {
 				"180900::::::::::::3:7201:1514:6646:::", -- [1]
-				"178387::::::::::::4:6617:7193:1472:6646:::", -- [2]
+				"178387::::::::::::4:7193:6618:1479:6646:::", -- [2]
 				"171417::::::::::::5:6961:6717:6647:6650:1507:::", -- [3]
 				"180902::::::::::::3:7201:1514:6646:::", -- [4]
-				"180924::::::::::::3:7201:1514:6646:::", -- [5]
+				"175912::::::::::::4:7193:6627:1479:6646:::", -- [5]
 				"180916::::::::::::3:7201:1514:6646:::", -- [6]
 				"180905::::::::::::3:7201:1514:6646:::", -- [7]
-				"175918::::::::::::4:6617:7193:1472:6646:::", -- [8]
+				"175918::::::::::::4:7193:6618:1479:6646:::", -- [8]
 				"180910::::::::::::3:7201:1514:6646:::", -- [9]
-				"178381::::::::::::4:6617:7193:1472:6646:::", -- [10]
-				"175916::::::::::::4:6617:7193:1472:6646:::", -- [11]
+				"178381::::::::::::4:7193:6618:1479:6646:::", -- [10]
+				"175916::::::::::::4:7193:6618:1479:6646:::", -- [11]
 				"178298::::::::::::3:6780:1511:6646:::", -- [12]
 				"184052::::::::::::3:6787:1511:6646:::", -- [13]
 				"175851::::::::::::3:6787:1511:6646:::", -- [14]
-				"182415::::::::::::4:7186:6652:1485:6646:::", -- [15]
+				"182402::::::::::::4:6639:6652:1479:6646:::", -- [15]
 				"36941", -- [16]
 			},
-			["faction"] = "Horde",
-			["professions"] = {
-			},
-			["gender"] = 3,
 			["currency"] = {
 				[1828] = {
 					["name"] = "Soul Ash",
@@ -381,7 +367,7 @@ BagSyncDB = {
 					["name"] = "Reservoir Anima",
 					["header"] = "Shadowlands",
 					["icon"] = 3528288,
-					["count"] = 716,
+					["count"] = 1301,
 				},
 				[1191] = {
 					["name"] = "Valor",
@@ -393,7 +379,7 @@ BagSyncDB = {
 					["name"] = "Conquest",
 					["header"] = "Player vs. Player",
 					["icon"] = 1523630,
-					["count"] = 25,
+					["count"] = 325,
 				},
 				[944] = {
 					["name"] = "Artifact Fragment",
@@ -405,13 +391,13 @@ BagSyncDB = {
 					["name"] = "Honor",
 					["header"] = "Player vs. Player",
 					["icon"] = 1455894,
-					["count"] = 7937,
+					["count"] = 12116,
 				},
 				[1820] = {
 					["name"] = "Infused Ruby",
 					["header"] = "Shadowlands",
 					["icon"] = 133250,
-					["count"] = 77,
+					["count"] = 82,
 				},
 				[1767] = {
 					["name"] = "Stygia",
@@ -420,7 +406,9 @@ BagSyncDB = {
 					["count"] = 349,
 				},
 			},
+			["gender"] = 3,
 			["mailbox"] = {
+				"172368", -- [1]
 			},
 		},
 		["Xuna"] = {
@@ -438,7 +426,7 @@ BagSyncDB = {
 					"179315;8", -- [6]
 					"179314;18", -- [7]
 					"172055;15", -- [8]
-					"172054;17", -- [9]
+					"172054;18", -- [9]
 					"172053;13", -- [10]
 					"172052;16", -- [11]
 					"173037;3", -- [12]
@@ -457,15 +445,14 @@ BagSyncDB = {
 					"137642;46", -- [25]
 					"80914", -- [26]
 					"64457", -- [27]
-					"184389", -- [28]
-					"133755", -- [29]
+					"133755", -- [28]
 				}, -- [3]
 				{
 					"140192", -- [1]
 					"141605", -- [2]
 					"110560", -- [3]
 					"109076;20", -- [4]
-					"109076;18", -- [5]
+					"109076;16", -- [5]
 					"184779", -- [6]
 					"183616", -- [7]
 					"40110", -- [8]
@@ -492,454 +479,24 @@ BagSyncDB = {
 					"172231", -- [29]
 				}, -- [4]
 				[0] = {
-					"181478;2", -- [1]
-					"184386;4", -- [2]
+					"175895::::::::::::4:6624:6652:1498:6646:::", -- [1]
 				},
 			},
 			["guild"] = "CyaThursday©",
-			["mailbox"] = {
+			["reagents"] = {
+				[-3] = {
+					"3371;185", -- [1]
+					"168832;7", -- [2]
+					"168327;30", -- [3]
+					"169610;14", -- [4]
+					"166970;103", -- [5]
+					"166971;159", -- [6]
+					"166846;250", -- [7]
+					"166846;123", -- [8]
+				},
 			},
-			["money"] = 1204498031,
+			["money"] = 1235948878,
 			["class"] = "SHAMAN",
-			["gender"] = 3,
-			["race"] = "Orc",
-			["equip"] = {
-				"175902::::::::::::5:6635:6652:1498:6646:6935:::", -- [1]
-				"178387::::::::::::5:6622:6652:6935:1498:6646:::", -- [2]
-				"178376::::::::::::3:6623:1498:6646:::", -- [3]
-				"52019", -- [4]
-				"172322::::::::::::5:7000:6647:6650:6758:1532:::", -- [5]
-				"178379::::::::::::4:6623:1498:6646:6935:::", -- [6]
-				"175906::::::::::::4:6635:6652:1498:6646:::", -- [7]
-				"175895::::::::::::4:6624:6652:1498:6646:::", -- [8]
-				"175919::::::::::::4:6621:1498:6646:6935:::", -- [9]
-				"175900::::::::::::3:6623:1498:6646:::", -- [10]
-				"178381::::::::::::4:6621:1498:6646:6935:::", -- [11]
-				"178442::::::::::::4:6621:1498:6646:6935:::", -- [12]
-				"178447::::::::::::4:6624:6652:1498:6646:::", -- [13]
-				"181333::::::::::::4:6622:6652:1498:6646:::", -- [14]
-				"175888::::::::::::3:6621:1498:6646:::", -- [15]
-				"179559::::::::::::3:7230:1505:6646:::", -- [16]
-				"179609::::::::::::3:7136:1505:6646:::", -- [17]
-				"49086", -- [18]
-			},
-			["auction"] = {
-				["lastscan"] = 1611321262,
-				["bag"] = {
-				},
-				["count"] = 0,
-			},
-			["professions"] = {
-				[794] = {
-					["skillLineMaxLevel"] = 950,
-					["skillLineCurrentLevel"] = 746,
-					["name"] = "Archaeology",
-					["secondary"] = true,
-				},
-				[171] = {
-					["name"] = "Alchemy",
-					["categories"] = {
-						[592] = {
-							["name"] = "Zandalari Alchemy",
-							["skillLineMaxLevel"] = 175,
-							["orderIndex"] = 2,
-							["recipes"] = "|298862|298863|276977|276976|276975|301312|301310|301311|298726|298727|298728|298745|298746|298744|300750|300749|300751|300754|300753|300752|298729|298730|298731|298741|298742|298743|298747|298748|298750|298752|298751|298735|298736|298734|279161|279164|279167|279170|252343|252340|252346|252336|279160|279163|279166|279169|279159|279162|279165|279168|252342|252339|252345|252335|252384|252387|252390|252341|252337|252344|252334|252383|252386|252389|252382|252385|252388|252393|252396|252402|252392|252395|252401|287448|252398|252391|252394|252400|287447|252397|298847|298846|298848|298843|298842|298854|298853|298850|298851|252353|252352|252349|252350|252359|252358|252356|252355|252351|252348|252357|252354|251314|251832|251822|286547|251306|251305|251808|251310|251311|251309|305994|298996|298995|286923|286922|286921|291084|252377|252378|252380|252381|252363|252370|252376|252379|252362|252369|252361|252368|287234|286630|307172|278420|287288|260403",
-							["skillLineCurrentLevel"] = 175,
-						},
-						[433] = {
-							["name"] = "Alchemy of the Broken Isles",
-							["skillLineMaxLevel"] = 100,
-							["orderIndex"] = 3,
-							["recipes"] = "|229218|247619|188300|188303|188335|188326|229217|188329|188332|188299|188302|188334|188325|188328|188331|188297|188301|188304|188347|188344|188342|188341|188338|188346|188343|188340|188337|188800|188323|188322|247688|188308|221690|188317|188313|188307|188316|188319|188310",
-							["skillLineCurrentLevel"] = 100,
-						},
-						[596] = {
-							["name"] = "Alchemy of Pandaria",
-							["skillLineMaxLevel"] = 75,
-							["orderIndex"] = 5,
-							["recipes"] = "|114751|114752",
-							["skillLineCurrentLevel"] = 75,
-						},
-						[598] = {
-							["name"] = "Alchemy of the Cataclysm",
-							["skillLineMaxLevel"] = 75,
-							["orderIndex"] = 6,
-							["recipes"] = "|92688|92643|80478|93935",
-							["skillLineCurrentLevel"] = 75,
-						},
-						[600] = {
-							["name"] = "Alchemy of Northrend",
-							["skillLineMaxLevel"] = 75,
-							["orderIndex"] = 7,
-							["recipes"] = "|53839|53838",
-							["skillLineCurrentLevel"] = 75,
-						},
-						[602] = {
-							["name"] = "Alchemy of Outland",
-							["skillLineMaxLevel"] = 75,
-							["orderIndex"] = 8,
-							["recipes"] = "|33732",
-							["skillLineCurrentLevel"] = 75,
-						},
-						[1294] = {
-							["name"] = "Shadowlands Alchemy",
-							["skillLineMaxLevel"] = 175,
-							["orderIndex"] = 1,
-							["recipes"] = "|338195|338194|338196|307100|261423|301578|301683|307123|307119|307124|307118|307120|256133|256134|342887|295084|261424",
-							["skillLineCurrentLevel"] = 60,
-						},
-						[332] = {
-							["name"] = "Alchemy of Draenor",
-							["skillLineMaxLevel"] = 100,
-							["orderIndex"] = 4,
-							["recipes"] = "|172541|172542|172540|156587|175880|156585|156582|175865|175867|175853|175866|175869|175868",
-							["skillLineCurrentLevel"] = 100,
-						},
-						[604] = {
-							["name"] = "Alchemy",
-							["skillLineMaxLevel"] = 300,
-							["orderIndex"] = 9,
-							["recipes"] = "|2337|2332|2331|2330|2334|3170|2329|7183|17637|3454|7934",
-							["skillLineCurrentLevel"] = 300,
-						},
-					},
-				},
-				[356] = {
-					["skillLineMaxLevel"] = 200,
-					["skillLineCurrentLevel"] = 81,
-					["name"] = "Fishing",
-					["secondary"] = true,
-				},
-			},
-			["faction"] = "Horde",
-			["void"] = {
-			},
-			["currency"] = {
-				[1191] = {
-					["icon"] = 463447,
-					["count"] = 205,
-					["header"] = "Shadowlands",
-					["name"] = "Valor",
-				},
-				[515] = {
-					["icon"] = 134481,
-					["count"] = 118,
-					["header"] = "Unused",
-					["name"] = "Darkmoon Prize Ticket",
-				},
-				[1719] = {
-					["icon"] = 646678,
-					["count"] = 4996,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Corrupted Mementos",
-				},
-				[361] = {
-					["icon"] = 134501,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Illustrious Jewelcrafter's Token",
-				},
-				[1101] = {
-					["icon"] = 1131085,
-					["count"] = 97770,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Oil",
-				},
-				[1357] = {
-					["icon"] = 1455894,
-					["count"] = 0,
-					["header"] = "Legion",
-					["name"] = "Echoes of Domination",
-				},
-				[789] = {
-					["icon"] = 900318,
-					["count"] = 19,
-					["header"] = "Unused",
-					["name"] = "Bloody Coin",
-				},
-				[1755] = {
-					["icon"] = 1003600,
-					["count"] = 180172,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Coalescing Visions",
-				},
-				[1885] = {
-					["icon"] = 134344,
-					["count"] = 219,
-					["header"] = "Shadowlands",
-					["name"] = "Grateful Offering",
-				},
-				[1767] = {
-					["icon"] = 3743739,
-					["count"] = 843,
-					["header"] = "Shadowlands",
-					["name"] = "Stygia",
-				},
-				[738] = {
-					["icon"] = 237282,
-					["count"] = 12,
-					["header"] = "Unused",
-					["name"] = "Lesser Charm of Good Fortune",
-				},
-				[1716] = {
-					["icon"] = 2565244,
-					["count"] = 2,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Honorbound Service Medal",
-				},
-				[1342] = {
-					["icon"] = 803763,
-					["count"] = 189,
-					["header"] = "Legion",
-					["name"] = "Legionfall War Supplies",
-				},
-				[1220] = {
-					["icon"] = 1397630,
-					["count"] = 67726,
-					["header"] = "Legion",
-					["name"] = "Order Resources",
-				},
-				[1602] = {
-					["icon"] = 1523630,
-					["count"] = 1100,
-					["header"] = "Player vs. Player",
-					["name"] = "Conquest",
-				},
-				[402] = {
-					["icon"] = 134912,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Ironpaw Token",
-				},
-				[81] = {
-					["icon"] = 134411,
-					["count"] = 6,
-					["header"] = "Unused",
-					["name"] = "Epicurean's Award",
-				},
-				[1803] = {
-					["icon"] = 3069889,
-					["count"] = 10771,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Echoes of Ny'alotha",
-				},
-				[391] = {
-					["icon"] = 409548,
-					["count"] = 78,
-					["header"] = "Unused",
-					["name"] = "Tol Barad Commendation",
-				},
-				[752] = {
-					["icon"] = 646678,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Mogu Rune of Fate",
-				},
-				[777] = {
-					["icon"] = 900319,
-					["count"] = 176142,
-					["header"] = "Unused",
-					["name"] = "Timeless Coin",
-				},
-				[823] = {
-					["icon"] = 1061300,
-					["count"] = 78980,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Apexis Crystal",
-				},
-				[1508] = {
-					["icon"] = 1064188,
-					["count"] = 528,
-					["header"] = "Legion",
-					["name"] = "Veiled Argunite",
-				},
-				[1149] = {
-					["icon"] = 801132,
-					["count"] = 2592,
-					["header"] = "Unused",
-					["name"] = "Sightless Eye",
-				},
-				[614] = {
-					["icon"] = 136192,
-					["count"] = 35,
-					["header"] = "Unused",
-					["name"] = "Mote of Darkness",
-				},
-				[1268] = {
-					["icon"] = 1061303,
-					["count"] = 58,
-					["header"] = "Unused",
-					["name"] = "Timeworn Artifact",
-				},
-				[416] = {
-					["icon"] = 513195,
-					["count"] = 122,
-					["header"] = "Unused",
-					["name"] = "Mark of the World Tree",
-				},
-				[1314] = {
-					["icon"] = 463284,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Lingering Soul Fragment",
-				},
-				[1721] = {
-					["icon"] = 463858,
-					["count"] = 20,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Prismatic Manapearl",
-				},
-				[776] = {
-					["icon"] = 514015,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Warforged Seal",
-				},
-				[1792] = {
-					["icon"] = 1455894,
-					["count"] = 13120,
-					["header"] = "Player vs. Player",
-					["name"] = "Honor",
-				},
-				[1166] = {
-					["icon"] = 463446,
-					["count"] = 180,
-					["header"] = "Dungeon and Raid",
-					["name"] = "Timewarped Badge",
-				},
-				[615] = {
-					["icon"] = 132851,
-					["count"] = 5,
-					["header"] = "Unused",
-					["name"] = "Essence of Corrupted Deathwing",
-				},
-				[697] = {
-					["icon"] = 237281,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Elder Charm of Good Fortune",
-				},
-				[241] = {
-					["icon"] = 236246,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Champion's Seal",
-				},
-				[1560] = {
-					["icon"] = 2032600,
-					["count"] = 10666,
-					["header"] = "Battle for Azeroth",
-					["name"] = "War Resources",
-				},
-				[994] = {
-					["icon"] = 838813,
-					["count"] = 0,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Seal of Tempered Fate",
-				},
-				[1820] = {
-					["icon"] = 133250,
-					["count"] = 100,
-					["header"] = "Shadowlands",
-					["name"] = "Infused Ruby",
-				},
-				[1129] = {
-					["icon"] = 1119886,
-					["count"] = 0,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Seal of Inevitable Fate",
-				},
-				[1828] = {
-					["icon"] = 3743738,
-					["count"] = 5320,
-					["header"] = "Shadowlands",
-					["name"] = "Soul Ash",
-				},
-				[1580] = {
-					["icon"] = 1416740,
-					["count"] = 5,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Seal of Wartorn Fate",
-				},
-				[1710] = {
-					["icon"] = 1604167,
-					["count"] = 642,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Seafarer's Dubloon",
-				},
-				[1273] = {
-					["icon"] = 1604167,
-					["count"] = 4,
-					["header"] = "Legion",
-					["name"] = "Seal of Broken Fate",
-				},
-				[1718] = {
-					["icon"] = 2065602,
-					["count"] = 0,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Titan Residuum",
-				},
-				[1155] = {
-					["icon"] = 1377394,
-					["count"] = 1081,
-					["header"] = "Legion",
-					["name"] = "Ancient Mana",
-				},
-				[824] = {
-					["icon"] = 1005027,
-					["count"] = 10000,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Garrison Resources",
-				},
-				[1226] = {
-					["icon"] = 132775,
-					["count"] = 10999,
-					["header"] = "Legion",
-					["name"] = "Nethershard",
-				},
-				[1356] = {
-					["icon"] = 1455891,
-					["count"] = 0,
-					["header"] = "Legion",
-					["name"] = "Echoes of Battle",
-				},
-				[1533] = {
-					["icon"] = 236521,
-					["count"] = 423,
-					["header"] = "Legion",
-					["name"] = "Wakening Essence",
-				},
-				[1299] = {
-					["icon"] = 237281,
-					["count"] = 1615,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Brawler's Gold",
-				},
-				[944] = {
-					["icon"] = 1061303,
-					["count"] = 0,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Artifact Fragment",
-				},
-				[1813] = {
-					["icon"] = 3528288,
-					["count"] = 8851,
-					["header"] = "Shadowlands",
-					["name"] = "Reservoir Anima",
-				},
-				[1754] = {
-					["icon"] = 236690,
-					["count"] = 31,
-					["header"] = "Shadowlands",
-					["name"] = "Argent Commendation",
-				},
-				[1275] = {
-					["icon"] = 1604168,
-					["count"] = 175,
-					["header"] = "Legion",
-					["name"] = "Curious Coin",
-				},
-			},
 			["bank"] = {
 				[6] = {
 					"149442", -- [1]
@@ -986,6 +543,15 @@ BagSyncDB = {
 				[8] = {
 				},
 				[10] = {
+				},
+				[11] = {
+					"166751;20", -- [1]
+					"166751;20", -- [2]
+					"166751;20", -- [3]
+					"166751;10", -- [4]
+					"163827;5", -- [5]
+				},
+				[9] = {
 				},
 				[-1] = {
 					"147554", -- [1]
@@ -1049,31 +615,670 @@ BagSyncDB = {
 					"164572", -- [29]
 					"149450", -- [30]
 				},
-				[9] = {
+			},
+			["race"] = "Orc",
+			["void"] = {
+			},
+			["auction"] = {
+				["lastscan"] = 1611321262,
+				["bag"] = {
 				},
-				[11] = {
-					"166751;20", -- [1]
-					"166751;20", -- [2]
-					"166751;20", -- [3]
-					"166751;10", -- [4]
-					"163827;5", -- [5]
+				["count"] = 0,
+			},
+			["professions"] = {
+				[794] = {
+					["skillLineMaxLevel"] = 950,
+					["secondary"] = true,
+					["name"] = "Archaeology",
+					["skillLineCurrentLevel"] = 746,
+				},
+				[356] = {
+					["skillLineMaxLevel"] = 200,
+					["secondary"] = true,
+					["name"] = "Fishing",
+					["skillLineCurrentLevel"] = 81,
+				},
+				[171] = {
+					["name"] = "Alchemy",
+					["categories"] = {
+						[592] = {
+							["name"] = "Zandalari Alchemy",
+							["skillLineMaxLevel"] = 175,
+							["orderIndex"] = 2,
+							["recipes"] = "|298862|298863|276977|276976|276975|301312|301310|301311|298726|298727|298728|298745|298746|298744|300750|300749|300751|300754|300753|300752|298729|298730|298731|298741|298742|298743|298747|298748|298750|298752|298751|298735|298736|298734|279161|279164|279167|279170|252343|252340|252346|252336|279160|279163|279166|279169|279159|279162|279165|279168|252342|252339|252345|252335|252384|252387|252390|252341|252337|252344|252334|252383|252386|252389|252382|252385|252388|252393|252396|252402|252392|252395|252401|287448|252398|252391|252394|252400|287447|252397|298847|298846|298848|298843|298842|298854|298853|298850|298851|252353|252352|252349|252350|252359|252358|252356|252355|252351|252348|252357|252354|251314|251832|251822|286547|251306|251305|251808|251310|251311|251309|305994|298996|298995|286923|286922|286921|291084|252377|252378|252380|252381|252363|252370|252376|252379|252362|252369|252361|252368|287234|286630|307172|278420|287288|260403",
+							["skillLineCurrentLevel"] = 175,
+						},
+						[433] = {
+							["name"] = "Alchemy of the Broken Isles",
+							["skillLineMaxLevel"] = 100,
+							["orderIndex"] = 3,
+							["recipes"] = "|229218|247619|188300|188303|188335|188326|229217|188329|188332|188299|188302|188334|188325|188328|188331|188297|188301|188304|188347|188344|188342|188341|188338|188346|188343|188340|188337|188800|188323|188322|247688|188308|221690|188317|188313|188307|188316|188319|188310",
+							["skillLineCurrentLevel"] = 100,
+						},
+						[596] = {
+							["name"] = "Alchemy of Pandaria",
+							["skillLineMaxLevel"] = 75,
+							["orderIndex"] = 5,
+							["recipes"] = "|114751|114752",
+							["skillLineCurrentLevel"] = 75,
+						},
+						[598] = {
+							["name"] = "Alchemy of the Cataclysm",
+							["skillLineMaxLevel"] = 75,
+							["orderIndex"] = 6,
+							["recipes"] = "|92688|92643|80478|93935",
+							["skillLineCurrentLevel"] = 75,
+						},
+						[600] = {
+							["name"] = "Alchemy of Northrend",
+							["skillLineMaxLevel"] = 75,
+							["orderIndex"] = 7,
+							["recipes"] = "|53839|53838",
+							["skillLineCurrentLevel"] = 75,
+						},
+						[602] = {
+							["name"] = "Alchemy of Outland",
+							["skillLineMaxLevel"] = 75,
+							["orderIndex"] = 8,
+							["recipes"] = "|33732",
+							["skillLineCurrentLevel"] = 75,
+						},
+						[1294] = {
+							["name"] = "Shadowlands Alchemy",
+							["skillLineMaxLevel"] = 175,
+							["orderIndex"] = 1,
+							["recipes"] = "|338195|338194|338196|307100|261423|301578|301683|307123|307119|307124|307118|307120|256133|256134|342887|295084|261424",
+							["skillLineCurrentLevel"] = 60,
+						},
+						[604] = {
+							["name"] = "Alchemy",
+							["skillLineMaxLevel"] = 300,
+							["orderIndex"] = 9,
+							["recipes"] = "|2337|2332|2331|2330|2334|3170|2329|7183|17637|3454|7934",
+							["skillLineCurrentLevel"] = 300,
+						},
+						[332] = {
+							["name"] = "Alchemy of Draenor",
+							["skillLineMaxLevel"] = 100,
+							["orderIndex"] = 4,
+							["recipes"] = "|172541|172542|172540|156587|175880|156585|156582|175865|175867|175853|175866|175869|175868",
+							["skillLineCurrentLevel"] = 100,
+						},
+					},
 				},
 			},
-			["reagents"] = {
-				[-3] = {
-					"3371;185", -- [1]
-					"168832;7", -- [2]
-					"168327;30", -- [3]
-					"169610;14", -- [4]
-					"166970;103", -- [5]
-					"166971;159", -- [6]
-					"166846;250", -- [7]
-					"166846;123", -- [8]
+			["faction"] = "Horde",
+			["equip"] = {
+				"175902::::::::::::5:6635:6652:1498:6646:6935:::", -- [1]
+				"178387::::::::::::5:6622:6652:6935:1498:6646:::", -- [2]
+				"178376::::::::::::3:6623:1498:6646:::", -- [3]
+				"52019", -- [4]
+				"172322::::::::::::5:7000:6647:6650:6758:1532:::", -- [5]
+				"178379::::::::::::4:6623:1498:6646:6935:::", -- [6]
+				"175906::::::::::::4:6635:6652:1498:6646:::", -- [7]
+				"178360::::::::::::4:6624:6652:1498:6646:::", -- [8]
+				"175919::::::::::::4:6621:1498:6646:6935:::", -- [9]
+				"175900::::::::::::3:6623:1498:6646:::", -- [10]
+				"178381::::::::::::4:6621:1498:6646:6935:::", -- [11]
+				"178442::::::::::::4:6621:1498:6646:6935:::", -- [12]
+				"178447::::::::::::4:6624:6652:1498:6646:::", -- [13]
+				"181333::::::::::::4:6622:6652:1498:6646:::", -- [14]
+				"175888::::::::::::3:6621:1498:6646:::", -- [15]
+				"179559::::::::::::3:7230:1505:6646:::", -- [16]
+				"179609::::::::::::3:7136:1505:6646:::", -- [17]
+				"49086", -- [18]
+			},
+			["currency"] = {
+				[1191] = {
+					["header"] = "Shadowlands",
+					["name"] = "Valor",
+					["count"] = 240,
+					["icon"] = 463447,
 				},
+				[515] = {
+					["header"] = "Unused",
+					["name"] = "Darkmoon Prize Ticket",
+					["count"] = 118,
+					["icon"] = 134481,
+				},
+				[1719] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Corrupted Mementos",
+					["count"] = 4996,
+					["icon"] = 646678,
+				},
+				[361] = {
+					["header"] = "Unused",
+					["name"] = "Illustrious Jewelcrafter's Token",
+					["count"] = 0,
+					["icon"] = 134501,
+				},
+				[1101] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Oil",
+					["count"] = 97770,
+					["icon"] = 1131085,
+				},
+				[1357] = {
+					["header"] = "Legion",
+					["name"] = "Echoes of Domination",
+					["count"] = 0,
+					["icon"] = 1455894,
+				},
+				[789] = {
+					["header"] = "Unused",
+					["name"] = "Bloody Coin",
+					["count"] = 19,
+					["icon"] = 900318,
+				},
+				[1755] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Coalescing Visions",
+					["count"] = 180172,
+					["icon"] = 1003600,
+				},
+				[1885] = {
+					["header"] = "Shadowlands",
+					["name"] = "Grateful Offering",
+					["count"] = 219,
+					["icon"] = 134344,
+				},
+				[1767] = {
+					["header"] = "Shadowlands",
+					["name"] = "Stygia",
+					["count"] = 843,
+					["icon"] = 3743739,
+				},
+				[738] = {
+					["header"] = "Unused",
+					["name"] = "Lesser Charm of Good Fortune",
+					["count"] = 12,
+					["icon"] = 237282,
+				},
+				[1716] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Honorbound Service Medal",
+					["count"] = 2,
+					["icon"] = 2565244,
+				},
+				[1342] = {
+					["header"] = "Legion",
+					["name"] = "Legionfall War Supplies",
+					["count"] = 189,
+					["icon"] = 803763,
+				},
+				[1220] = {
+					["header"] = "Legion",
+					["name"] = "Order Resources",
+					["count"] = 67726,
+					["icon"] = 1397630,
+				},
+				[1602] = {
+					["header"] = "Player vs. Player",
+					["name"] = "Conquest",
+					["count"] = 1545,
+					["icon"] = 1523630,
+				},
+				[1275] = {
+					["header"] = "Legion",
+					["name"] = "Curious Coin",
+					["count"] = 175,
+					["icon"] = 1604168,
+				},
+				[81] = {
+					["header"] = "Unused",
+					["name"] = "Epicurean's Award",
+					["count"] = 6,
+					["icon"] = 134411,
+				},
+				[752] = {
+					["header"] = "Unused",
+					["name"] = "Mogu Rune of Fate",
+					["count"] = 0,
+					["icon"] = 646678,
+				},
+				[1754] = {
+					["header"] = "Shadowlands",
+					["name"] = "Argent Commendation",
+					["count"] = 31,
+					["icon"] = 236690,
+				},
+				[1149] = {
+					["header"] = "Unused",
+					["name"] = "Sightless Eye",
+					["count"] = 2592,
+					["icon"] = 801132,
+				},
+				[614] = {
+					["header"] = "Unused",
+					["name"] = "Mote of Darkness",
+					["count"] = 35,
+					["icon"] = 136192,
+				},
+				[823] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Apexis Crystal",
+					["count"] = 78980,
+					["icon"] = 1061300,
+				},
+				[1508] = {
+					["header"] = "Legion",
+					["name"] = "Veiled Argunite",
+					["count"] = 528,
+					["icon"] = 1064188,
+				},
+				[1299] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Brawler's Gold",
+					["count"] = 1615,
+					["icon"] = 237281,
+				},
+				[697] = {
+					["header"] = "Unused",
+					["name"] = "Elder Charm of Good Fortune",
+					["count"] = 0,
+					["icon"] = 237281,
+				},
+				[1268] = {
+					["header"] = "Unused",
+					["name"] = "Timeworn Artifact",
+					["count"] = 58,
+					["icon"] = 1061303,
+				},
+				[824] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Garrison Resources",
+					["count"] = 10000,
+					["icon"] = 1005027,
+				},
+				[1721] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Prismatic Manapearl",
+					["count"] = 20,
+					["icon"] = 463858,
+				},
+				[391] = {
+					["header"] = "Unused",
+					["name"] = "Tol Barad Commendation",
+					["count"] = 78,
+					["icon"] = 409548,
+				},
+				[776] = {
+					["header"] = "Unused",
+					["name"] = "Warforged Seal",
+					["count"] = 0,
+					["icon"] = 514015,
+				},
+				[1792] = {
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
+					["count"] = 15000,
+					["icon"] = 1455894,
+				},
+				[1166] = {
+					["header"] = "Dungeon and Raid",
+					["name"] = "Timewarped Badge",
+					["count"] = 180,
+					["icon"] = 463446,
+				},
+				[994] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Seal of Tempered Fate",
+					["count"] = 0,
+					["icon"] = 838813,
+				},
+				[1533] = {
+					["header"] = "Legion",
+					["name"] = "Wakening Essence",
+					["count"] = 423,
+					["icon"] = 236521,
+				},
+				[1718] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Titan Residuum",
+					["count"] = 0,
+					["icon"] = 2065602,
+				},
+				[1560] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "War Resources",
+					["count"] = 10666,
+					["icon"] = 2032600,
+				},
+				[1129] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Seal of Inevitable Fate",
+					["count"] = 0,
+					["icon"] = 1119886,
+				},
+				[1820] = {
+					["header"] = "Shadowlands",
+					["name"] = "Infused Ruby",
+					["count"] = 100,
+					["icon"] = 133250,
+				},
+				[1828] = {
+					["header"] = "Shadowlands",
+					["name"] = "Soul Ash",
+					["count"] = 5890,
+					["icon"] = 3743738,
+				},
+				[402] = {
+					["header"] = "Unused",
+					["name"] = "Ironpaw Token",
+					["count"] = 0,
+					["icon"] = 134912,
+				},
+				[1580] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Seal of Wartorn Fate",
+					["count"] = 5,
+					["icon"] = 1416740,
+				},
+				[1710] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Seafarer's Dubloon",
+					["count"] = 642,
+					["icon"] = 1604167,
+				},
+				[1273] = {
+					["header"] = "Legion",
+					["name"] = "Seal of Broken Fate",
+					["count"] = 4,
+					["icon"] = 1604167,
+				},
+				[615] = {
+					["header"] = "Unused",
+					["name"] = "Essence of Corrupted Deathwing",
+					["count"] = 5,
+					["icon"] = 132851,
+				},
+				[1155] = {
+					["header"] = "Legion",
+					["name"] = "Ancient Mana",
+					["count"] = 1081,
+					["icon"] = 1377394,
+				},
+				[777] = {
+					["header"] = "Unused",
+					["name"] = "Timeless Coin",
+					["count"] = 176142,
+					["icon"] = 900319,
+				},
+				[1226] = {
+					["header"] = "Legion",
+					["name"] = "Nethershard",
+					["count"] = 10999,
+					["icon"] = 132775,
+				},
+				[1356] = {
+					["header"] = "Legion",
+					["name"] = "Echoes of Battle",
+					["count"] = 0,
+					["icon"] = 1455891,
+				},
+				[1314] = {
+					["header"] = "Unused",
+					["name"] = "Lingering Soul Fragment",
+					["count"] = 0,
+					["icon"] = 463284,
+				},
+				[416] = {
+					["header"] = "Unused",
+					["name"] = "Mark of the World Tree",
+					["count"] = 122,
+					["icon"] = 513195,
+				},
+				[944] = {
+					["header"] = "Warlords of Draenor",
+					["name"] = "Artifact Fragment",
+					["count"] = 0,
+					["icon"] = 1061303,
+				},
+				[1813] = {
+					["header"] = "Shadowlands",
+					["name"] = "Reservoir Anima",
+					["count"] = 10581,
+					["icon"] = 3528288,
+				},
+				[241] = {
+					["header"] = "Unused",
+					["name"] = "Champion's Seal",
+					["count"] = 0,
+					["icon"] = 236246,
+				},
+				[1803] = {
+					["header"] = "Battle for Azeroth",
+					["name"] = "Echoes of Ny'alotha",
+					["count"] = 10771,
+					["icon"] = 3069889,
+				},
+			},
+			["gender"] = 3,
+			["mailbox"] = {
 			},
 		},
 	},
 	["Arena Champions - EU"] = {
+		["Xunan"] = {
+			["bag"] = {
+				{
+					"177660;9", -- [1]
+					"172415;8", -- [2]
+					"177962;6", -- [3]
+					"172322::::::::::::5:7103:6718:6648:6650:1522:::", -- [4]
+					"172322::::::::::::2:6758:1532:::", -- [5]
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				[0] = {
+					"6948", -- [1]
+					"151134;200", -- [2]
+					"137573", -- [3]
+					"13335", -- [4]
+					"116794", -- [5]
+					"168370", -- [6]
+					"82453", -- [7]
+					"73766", -- [8]
+					"174859", -- [9]
+					"93666", -- [10]
+					"184371;5", -- [11]
+					"178356::::::::::::3:6630:1472:6646:::", -- [12]
+					"181335::::::::::::2:1498:6646:::", -- [13]
+					"178386::::::::::::2:1498:6646:::", -- [14]
+					"177040;20", -- [15]
+					"177040;20", -- [16]
+					"172364;8", -- [17]
+					"172366;9", -- [18]
+					"172419;8", -- [19]
+					"172408;8", -- [20]
+				},
+			},
+			["money"] = 216656341,
+			["class"] = "SHAMAN",
+			["race"] = "Orc",
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["gender"] = 2,
+			["currency"] = {
+				[1828] = {
+					["name"] = "Soul Ash",
+					["header"] = "Shadowlands",
+					["icon"] = 3743738,
+					["count"] = 2450,
+				},
+				[1792] = {
+					["name"] = "Honor",
+					["header"] = "Player vs. Player",
+					["icon"] = 1455894,
+					["count"] = 250,
+				},
+			},
+			["equip"] = {
+				"175902::::::::::::2:1498:6646:::", -- [1]
+				"178448::::::::::::2:1498:6646:::", -- [2]
+				"178376::::::::::::2:1498:6646:::", -- [3]
+				"172322::::::::::::5:7000:6758:6647:6650:1532:::", -- [4]
+				"178379::::::::::::2:1498:6646:::", -- [5]
+				"175906::::::::::::2:1498:6646:::", -- [6]
+				"178360::::::::::::2:1498:6646:::", -- [7]
+				"175919::::::::::::2:1498:6646:::", -- [8]
+				"175900::::::::::::2:1498:6646:::", -- [9]
+				"183035::::::::::::4:6652:7193:1498:6646:::", -- [10]
+				"178442::::::::::::2:1498:6646:::", -- [11]
+				"178447::::::::::::2:1498:6646:::", -- [12]
+				"181333::::::::::::2:1498:6646:::", -- [13]
+				"178414::::::::::::2:1498:6646:::", -- [14]
+				"179559::::::::::::4:7230:6652:1505:6646:::", -- [15]
+				"179611::::::::::::3:6652:1531:6646:::", -- [16]
+			},
+		},
+		["Xunamonk"] = {
+			["bag"] = {
+				{
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				[0] = {
+					"6948", -- [1]
+					"151134;200", -- [2]
+					"137573", -- [3]
+					"13335", -- [4]
+					"116794", -- [5]
+					"168370", -- [6]
+					"82453", -- [7]
+					"73766", -- [8]
+					"174859", -- [9]
+					"93666", -- [10]
+					"172314::::::::::::2:6758:1532:::", -- [11]
+					"172316::::::::::::2:6758:1532:::", -- [12]
+					"172319::::::::::::2:6758:1532:::", -- [13]
+					"178380::::::::::::2:1498:6646:::", -- [14]
+					"172364;3", -- [15]
+					"177962;4", -- [16]
+					"172415;4", -- [17]
+					"177660;4", -- [18]
+				},
+			},
+			["money"] = 1441764147,
+			["class"] = "MONK",
+			["race"] = "Tauren",
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["equip"] = {
+				"175903::::::::::::2:1498:6646:::", -- [1]
+				"178448::::::::::::2:1498:6646:::", -- [2]
+				"183029::::::::::::3:6652:1498:6646:::", -- [3]
+				"178357::::::::::::2:1498:6646:::", -- [4]
+				"172320::::::::::::6:7072:6758:7194:6648:6650:1532:::", -- [5]
+				"178372::::::::::::2:1498:6646:::", -- [6]
+				"175896::::::::::::2:1498:6646:::", -- [7]
+				"183019::::::::::::4:6652:7193:1498:6646:::", -- [8]
+				"175897::::::::::::2:1498:6646:::", -- [9]
+				"178442::::::::::::2:1498:6646:::", -- [10]
+				"183038::::::::::::4:6652:7193:1498:6646:::", -- [11]
+				"178447::::::::::::2:1498:6646:::", -- [12]
+				"181333::::::::::::2:1498:6646:::", -- [13]
+				"178414::::::::::::2:1498:6646:::", -- [14]
+				"182404::::::::::::4:7230:6652:1505:6646:::", -- [15]
+				"182400::::::::::::3:6652:1531:6646:::", -- [16]
+			},
+			["currency"] = {
+				[1828] = {
+					["header"] = "Shadowlands",
+					["name"] = "Soul Ash",
+					["count"] = 1850,
+					["icon"] = 3743738,
+				},
+			},
+			["gender"] = 2,
+		},
+		["Xuna"] = {
+			["bag"] = {
+				{
+					"172413;4", -- [1]
+					"172408;4", -- [2]
+					"178376::::::::::::2:1498:6646:::", -- [3]
+				}, -- [1]
+				{
+				}, -- [2]
+				{
+				}, -- [3]
+				{
+				}, -- [4]
+				[0] = {
+					"6948", -- [1]
+					"151134;200", -- [2]
+					"137573", -- [3]
+					"13335", -- [4]
+					"116794", -- [5]
+					"177962;4", -- [6]
+					"82453", -- [7]
+					"73766", -- [8]
+					"174859", -- [9]
+					"93666", -- [10]
+					"181335::::::::::::2:1498:6646:::", -- [11]
+					"178386::::::::::::2:1498:6646:::", -- [12]
+					"172363;8", -- [13]
+					"172364;8", -- [14]
+					"172415;4", -- [15]
+					"177040;20", -- [16]
+					"177040;20", -- [17]
+					"177040;8", -- [18]
+					"173192;20", -- [19]
+					"173192;5", -- [20]
+				},
+			},
+			["money"] = 1417003197,
+			["class"] = "SHAMAN",
+			["race"] = "Orc",
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["equip"] = {
+				"175902::::::::::::2:1498:6646:::", -- [1]
+				"178387::::::::::::2:1498:6646:::", -- [2]
+				"183003::::::::::::3:6652:1498:6646:::", -- [3]
+				"172322::::::::::::5:7000:6758:6647:6650:1532:::", -- [4]
+				"178379::::::::::::2:1498:6646:::", -- [5]
+				"175906::::::::::::2:1498:6646:::", -- [6]
+				"178360::::::::::::2:1498:6646:::", -- [7]
+				"175919::::::::::::2:1498:6646:::", -- [8]
+				"175900::::::::::::2:1498:6646:::", -- [9]
+				"178381::::::::::::2:1498:6646:::", -- [10]
+				"183035::::::::::::4:6652:7193:1498:6646:::", -- [11]
+				"178447::::::::::::2:1498:6646:::", -- [12]
+				"181333::::::::::::2:1498:6646:::", -- [13]
+				"175888::::::::::::2:1498:6646:::", -- [14]
+				"183443::::::::::::4:7230:6652:1505:6646:::", -- [15]
+				"179611::::::::::::3:6652:1531:6646:::", -- [16]
+			},
+			["currency"] = {
+				[1828] = {
+					["header"] = "Shadowlands",
+					["name"] = "Soul Ash",
+					["count"] = 2650,
+					["icon"] = 3743738,
+				},
+				[1792] = {
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
+					["count"] = 130,
+					["icon"] = 1455894,
+				},
+			},
+			["gender"] = 2,
+		},
 		["Xunapala"] = {
 			["bag"] = {
 				{
@@ -1122,6 +1327,21 @@ BagSyncDB = {
 			["faction"] = "Horde",
 			["professions"] = {
 			},
+			["gender"] = 3,
+			["currency"] = {
+				[1828] = {
+					["header"] = "Shadowlands",
+					["name"] = "Soul Ash",
+					["count"] = 2850,
+					["icon"] = 3743738,
+				},
+				[1792] = {
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
+					["count"] = 395,
+					["icon"] = 1455894,
+				},
+			},
 			["equip"] = {
 				"178352::::::::::::2:1498:6646:::", -- [1]
 				"178387::::::::::::2:1498:6646:::", -- [2]
@@ -1140,240 +1360,6 @@ BagSyncDB = {
 				"177851::::::::::::4:7230:6652:1505:6646:::", -- [15]
 				"174315::::::::::::3:6652:1531:6646:::", -- [16]
 			},
-			["currency"] = {
-				[1828] = {
-					["count"] = 2850,
-					["icon"] = 3743738,
-					["name"] = "Soul Ash",
-					["header"] = "Shadowlands",
-				},
-				[1792] = {
-					["count"] = 395,
-					["icon"] = 1455894,
-					["name"] = "Honor",
-					["header"] = "Player vs. Player",
-				},
-			},
-			["gender"] = 3,
-		},
-		["Xunamonk"] = {
-			["bag"] = {
-				{
-				}, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				[0] = {
-					"6948", -- [1]
-					"151134;200", -- [2]
-					"137573", -- [3]
-					"13335", -- [4]
-					"116794", -- [5]
-					"168370", -- [6]
-					"82453", -- [7]
-					"73766", -- [8]
-					"174859", -- [9]
-					"93666", -- [10]
-					"172314::::::::::::2:6758:1532:::", -- [11]
-					"172316::::::::::::2:6758:1532:::", -- [12]
-					"172319::::::::::::2:6758:1532:::", -- [13]
-					"178380::::::::::::2:1498:6646:::", -- [14]
-					"172364;3", -- [15]
-					"177962;4", -- [16]
-					"172415;4", -- [17]
-					"177660;4", -- [18]
-				},
-			},
-			["money"] = 1441764147,
-			["class"] = "MONK",
-			["race"] = "Tauren",
-			["faction"] = "Horde",
-			["professions"] = {
-			},
-			["gender"] = 2,
-			["currency"] = {
-				[1828] = {
-					["count"] = 1850,
-					["icon"] = 3743738,
-					["name"] = "Soul Ash",
-					["header"] = "Shadowlands",
-				},
-			},
-			["equip"] = {
-				"175903::::::::::::2:1498:6646:::", -- [1]
-				"178448::::::::::::2:1498:6646:::", -- [2]
-				"183029::::::::::::3:6652:1498:6646:::", -- [3]
-				"178357::::::::::::2:1498:6646:::", -- [4]
-				"172320::::::::::::6:7072:6758:7194:6648:6650:1532:::", -- [5]
-				"178372::::::::::::2:1498:6646:::", -- [6]
-				"175896::::::::::::2:1498:6646:::", -- [7]
-				"183019::::::::::::4:6652:7193:1498:6646:::", -- [8]
-				"175897::::::::::::2:1498:6646:::", -- [9]
-				"178442::::::::::::2:1498:6646:::", -- [10]
-				"183038::::::::::::4:6652:7193:1498:6646:::", -- [11]
-				"178447::::::::::::2:1498:6646:::", -- [12]
-				"181333::::::::::::2:1498:6646:::", -- [13]
-				"178414::::::::::::2:1498:6646:::", -- [14]
-				"182404::::::::::::4:7230:6652:1505:6646:::", -- [15]
-				"182400::::::::::::3:6652:1531:6646:::", -- [16]
-			},
-		},
-		["Xuna"] = {
-			["bag"] = {
-				{
-					"172413;4", -- [1]
-					"172408;4", -- [2]
-					"178376::::::::::::2:1498:6646:::", -- [3]
-				}, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				[0] = {
-					"6948", -- [1]
-					"151134;200", -- [2]
-					"137573", -- [3]
-					"13335", -- [4]
-					"116794", -- [5]
-					"177962;4", -- [6]
-					"82453", -- [7]
-					"73766", -- [8]
-					"174859", -- [9]
-					"93666", -- [10]
-					"181335::::::::::::2:1498:6646:::", -- [11]
-					"178386::::::::::::2:1498:6646:::", -- [12]
-					"172363;8", -- [13]
-					"172364;8", -- [14]
-					"172415;4", -- [15]
-					"177040;20", -- [16]
-					"177040;20", -- [17]
-					"177040;8", -- [18]
-					"173192;20", -- [19]
-					"173192;5", -- [20]
-				},
-			},
-			["money"] = 1417003197,
-			["class"] = "SHAMAN",
-			["race"] = "Orc",
-			["faction"] = "Horde",
-			["professions"] = {
-			},
-			["gender"] = 2,
-			["currency"] = {
-				[1828] = {
-					["count"] = 2650,
-					["icon"] = 3743738,
-					["name"] = "Soul Ash",
-					["header"] = "Shadowlands",
-				},
-				[1792] = {
-					["count"] = 130,
-					["icon"] = 1455894,
-					["name"] = "Honor",
-					["header"] = "Player vs. Player",
-				},
-			},
-			["equip"] = {
-				"175902::::::::::::2:1498:6646:::", -- [1]
-				"178387::::::::::::2:1498:6646:::", -- [2]
-				"183003::::::::::::3:6652:1498:6646:::", -- [3]
-				"172322::::::::::::5:7000:6758:6647:6650:1532:::", -- [4]
-				"178379::::::::::::2:1498:6646:::", -- [5]
-				"175906::::::::::::2:1498:6646:::", -- [6]
-				"178360::::::::::::2:1498:6646:::", -- [7]
-				"175919::::::::::::2:1498:6646:::", -- [8]
-				"175900::::::::::::2:1498:6646:::", -- [9]
-				"178381::::::::::::2:1498:6646:::", -- [10]
-				"183035::::::::::::4:6652:7193:1498:6646:::", -- [11]
-				"178447::::::::::::2:1498:6646:::", -- [12]
-				"181333::::::::::::2:1498:6646:::", -- [13]
-				"175888::::::::::::2:1498:6646:::", -- [14]
-				"183443::::::::::::4:7230:6652:1505:6646:::", -- [15]
-				"179611::::::::::::3:6652:1531:6646:::", -- [16]
-			},
-		},
-		["Xunan"] = {
-			["bag"] = {
-				{
-					"177660;9", -- [1]
-					"172415;8", -- [2]
-					"177962;6", -- [3]
-					"172322::::::::::::5:7103:6718:6648:6650:1522:::", -- [4]
-					"172322::::::::::::2:6758:1532:::", -- [5]
-				}, -- [1]
-				{
-				}, -- [2]
-				{
-				}, -- [3]
-				{
-				}, -- [4]
-				[0] = {
-					"6948", -- [1]
-					"151134;200", -- [2]
-					"137573", -- [3]
-					"13335", -- [4]
-					"116794", -- [5]
-					"168370", -- [6]
-					"82453", -- [7]
-					"73766", -- [8]
-					"174859", -- [9]
-					"93666", -- [10]
-					"184371;5", -- [11]
-					"178356::::::::::::3:6630:1472:6646:::", -- [12]
-					"181335::::::::::::2:1498:6646:::", -- [13]
-					"178386::::::::::::2:1498:6646:::", -- [14]
-					"177040;20", -- [15]
-					"177040;20", -- [16]
-					"172364;8", -- [17]
-					"172366;9", -- [18]
-					"172419;8", -- [19]
-					"172408;8", -- [20]
-				},
-			},
-			["money"] = 216656341,
-			["class"] = "SHAMAN",
-			["race"] = "Orc",
-			["faction"] = "Horde",
-			["professions"] = {
-			},
-			["equip"] = {
-				"175902::::::::::::2:1498:6646:::", -- [1]
-				"178448::::::::::::2:1498:6646:::", -- [2]
-				"178376::::::::::::2:1498:6646:::", -- [3]
-				"172322::::::::::::5:7000:6758:6647:6650:1532:::", -- [4]
-				"178379::::::::::::2:1498:6646:::", -- [5]
-				"175906::::::::::::2:1498:6646:::", -- [6]
-				"178360::::::::::::2:1498:6646:::", -- [7]
-				"175919::::::::::::2:1498:6646:::", -- [8]
-				"175900::::::::::::2:1498:6646:::", -- [9]
-				"183035::::::::::::4:6652:7193:1498:6646:::", -- [10]
-				"178442::::::::::::2:1498:6646:::", -- [11]
-				"178447::::::::::::2:1498:6646:::", -- [12]
-				"181333::::::::::::2:1498:6646:::", -- [13]
-				"178414::::::::::::2:1498:6646:::", -- [14]
-				"179559::::::::::::4:7230:6652:1505:6646:::", -- [15]
-				"179611::::::::::::3:6652:1531:6646:::", -- [16]
-			},
-			["currency"] = {
-				[1828] = {
-					["icon"] = 3743738,
-					["count"] = 2450,
-					["header"] = "Shadowlands",
-					["name"] = "Soul Ash",
-				},
-				[1792] = {
-					["icon"] = 1455894,
-					["count"] = 250,
-					["header"] = "Player vs. Player",
-					["name"] = "Honor",
-				},
-			},
-			["gender"] = 2,
 		},
 	},
 	["options§"] = {
@@ -1397,53 +1383,220 @@ BagSyncDB = {
 		["enableRealmShortName"] = false,
 		["enableTooltips"] = true,
 		["enableShowUniqueItemsTotals"] = true,
-		["enableLoginVersionInfo"] = true,
-		["showGuildCurrentCharacter"] = false,
+		["enableTooltipGreenCheck"] = false,
+		["enableBNetAccountItems"] = false,
 		["showTotal"] = true,
+		["showGuildCurrentCharacter"] = false,
+		["enableRealmAstrickName"] = false,
 		["colors"] = {
 			["total"] = {
-				["b"] = 0.3764705882352941,
-				["g"] = 0.6431372549019608,
 				["r"] = 0.9568627450980393,
+				["g"] = 0.6431372549019608,
+				["b"] = 0.3764705882352941,
 			},
 			["guild"] = {
-				["b"] = 0.7529411764705882,
-				["g"] = 0.7215686274509804,
 				["r"] = 0.396078431372549,
+				["g"] = 0.7215686274509804,
+				["b"] = 0.7529411764705882,
 			},
 			["cross"] = {
-				["b"] = 0.0392156862745098,
-				["g"] = 0.4901960784313725,
 				["r"] = 1,
-			},
-			["itemid"] = {
-				["b"] = 0.5254901960784314,
-				["g"] = 0.8274509803921568,
-				["r"] = 0.3215686274509804,
-			},
-			["first"] = {
-				["b"] = 0,
-				["g"] = 1,
-				["r"] = 0.5019607843137255,
+				["g"] = 0.4901960784313725,
+				["b"] = 0.0392156862745098,
 			},
 			["bnet"] = {
-				["b"] = 1,
-				["g"] = 0.5333333333333333,
 				["r"] = 0.207843137254902,
+				["g"] = 0.5333333333333333,
+				["b"] = 1,
+			},
+			["first"] = {
+				["r"] = 0.5019607843137255,
+				["g"] = 1,
+				["b"] = 0,
+			},
+			["itemid"] = {
+				["r"] = 0.3215686274509804,
+				["g"] = 0.8274509803921568,
+				["b"] = 0.5254901960784314,
 			},
 			["second"] = {
-				["b"] = 1,
-				["g"] = 1,
 				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
 			},
 		},
-		["enableRealmAstrickName"] = false,
-		["enableBNetAccountItems"] = false,
-		["enableTooltipGreenCheck"] = false,
+		["enableLoginVersionInfo"] = true,
 		["enableTooltipSeperator"] = true,
 		["enableRealmIDTags"] = true,
 	},
 	["blacklist§"] = {
+	},
+	["Draenor"] = {
+		["Xñ"] = {
+			["bag"] = {
+				{
+					"140192", -- [1]
+					"6948", -- [2]
+				}, -- [1]
+				[0] = {
+					"176853", -- [1]
+				},
+			},
+			["money"] = 4590522,
+			["class"] = "PRIEST",
+			["race"] = "Nightborne",
+			["equip"] = {
+				"129302::::::::::::2:3631:6697:::", -- [1]
+				"173143::::::::::::1:3353:::", -- [2]
+				"132765::::::::::::2:4793:4794:::", -- [3]
+				"129320::::::::::::2:3631:6700:::", -- [4]
+				"132906::::::::::::1:3631:::", -- [5]
+				"138852::::::::::::1:4790:::", -- [6]
+				"173195", -- [7]
+				"173201", -- [8]
+				"129324::::::::::::2:4811:4815:::", -- [9]
+				"173136::::::::::::1:3357:::", -- [10]
+				"173135::::::::::::1:3364:::", -- [11]
+				"129317::::::::::::1:4790:::", -- [12]
+				"121494::::::::::::1:4790:::", -- [13]
+				"129035::::::::::::1:6691:::", -- [14]
+				"128827::::::::::::2:740:1528:::", -- [15]
+				"133958", -- [16]
+				"157759", -- [17]
+			},
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["gender"] = 2,
+			["currency"] = {
+				[1220] = {
+					["icon"] = 1397630,
+					["count"] = 2783,
+					["header"] = "Legion",
+					["name"] = "Order Resources",
+				},
+				[1792] = {
+					["icon"] = 1455894,
+					["count"] = 0,
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
+				},
+			},
+			["mailbox"] = {
+				"173136::::::::::::1:3357:::", -- [1]
+				"173143::::::::::::1:3353:::", -- [2]
+				"173201", -- [3]
+				"173195", -- [4]
+			},
+		},
+		["Xunaj"] = {
+			["bag"] = {
+				{
+					"122261::::::::::::1:582:::", -- [1]
+					"122361::::::::::::1:583:::", -- [2]
+					"116395", -- [3]
+					"113578;170", -- [4]
+				}, -- [1]
+				{
+					"74720;6", -- [1]
+					"74715;6", -- [2]
+					"143785;5", -- [3]
+					"140465", -- [4]
+				}, -- [2]
+				{
+					"106715::::::::::::2:6654:201:::", -- [1]
+					"106705::::::::::::2:6654:153:::", -- [2]
+					"35280", -- [3]
+					"112605::::::::::::1:6691:::", -- [4]
+					"153439;6", -- [5]
+				}, -- [3]
+				{
+					"6948", -- [1]
+					"140192", -- [2]
+					"110560", -- [3]
+					"128826::::::::::::1:727:::", -- [4]
+				}, -- [4]
+				[0] = {
+					"107469;40", -- [1]
+					"108978;5", -- [2]
+					"107472;8", -- [3]
+					"122246::::::::::::1:582:::", -- [4]
+					"107471", -- [5]
+					"130309::::::::::::2:4790:4791:::", -- [6]
+					"112959::::::::::::1:6691:::", -- [7]
+					"112589::::::::::::2:6691:6703:::", -- [8]
+					"106826", -- [9]
+					"106824;8", -- [10]
+					"128173::::::::::::1:582:::", -- [11]
+					"109132;6", -- [12]
+					"122668::::::::::::1:582:::", -- [13]
+					"122352::::::::::::1:582:::", -- [14]
+					"106870;16", -- [15]
+					"111557;14", -- [16]
+					"122379::::::::::::1:582:::", -- [17]
+					"109134;5", -- [18]
+					"107603;7", -- [19]
+					"107604", -- [20]
+					"106875;5", -- [21]
+					"109131", -- [22]
+					"106825;2", -- [23]
+					"122252::::::::::::1:582:::", -- [24]
+					"116394", -- [25]
+					"122361::::::::::::1:583:::", -- [26]
+				},
+			},
+			["money"] = 1061,
+			["class"] = "HUNTER",
+			["race"] = "Vulpera",
+			["faction"] = "Horde",
+			["professions"] = {
+			},
+			["equip"] = {
+				"106749::::::::::::2:6654:167:::", -- [1]
+				"118009::::::::::::1:3631:::", -- [2]
+				"114703::::::::::::1:3631:::", -- [3]
+				"114681::::::::::::1:6691:::", -- [4]
+				"118036::::::::::::1:3631:::", -- [5]
+				"114697::::::::::::2:3631:6697:::", -- [6]
+				"114685::::::::::::1:3631:::", -- [7]
+				"112618::::::::::::1:3631:::", -- [8]
+				"114690::::::::::::1:3631:::", -- [9]
+				"119068::::::::::::2:3631:6697:::", -- [10]
+				"118151::::::::::::1:3631:::", -- [11]
+				"116799::::::::::::1:6691:::", -- [12]
+				"112887::::::::::::1:6691:::", -- [13]
+				"114883::::::::::::1:3631:::", -- [14]
+				"114913::::::::::::1:6691:::", -- [15]
+				"174069", -- [16]
+			},
+			["currency"] = {
+				[824] = {
+					["count"] = 282,
+					["icon"] = 1005027,
+					["name"] = "Garrison Resources",
+					["header"] = "Warlords of Draenor",
+				},
+				[1704] = {
+					["count"] = 1,
+					["icon"] = 133286,
+					["name"] = "Spirit Shard",
+					["header"] = "Burning Crusade",
+				},
+				[1220] = {
+					["count"] = 1140,
+					["icon"] = 1397630,
+					["name"] = "Order Resources",
+					["header"] = "Legion",
+				},
+				[1166] = {
+					["count"] = 735,
+					["icon"] = 463446,
+					["name"] = "Timewarped Badge",
+					["header"] = "Dungeon and Raid",
+				},
+			},
+			["gender"] = 3,
+		},
 	},
 	["Ravencrest"] = {
 		["Xûñá"] = {
@@ -1484,39 +1637,6 @@ BagSyncDB = {
 			["faction"] = "Alliance",
 			["professions"] = {
 			},
-			["gender"] = 3,
-			["currency"] = {
-				[824] = {
-					["header"] = "Warlords of Draenor",
-					["name"] = "Garrison Resources",
-					["count"] = 767,
-					["icon"] = 1005027,
-				},
-				[777] = {
-					["header"] = "Mists of Pandaria",
-					["name"] = "Timeless Coin",
-					["count"] = 2929,
-					["icon"] = 900319,
-				},
-				[944] = {
-					["header"] = "Warlords of Draenor",
-					["name"] = "Artifact Fragment",
-					["count"] = 0,
-					["icon"] = 1061303,
-				},
-				[738] = {
-					["header"] = "Mists of Pandaria",
-					["name"] = "Lesser Charm of Good Fortune",
-					["count"] = 21,
-					["icon"] = 237282,
-				},
-				[776] = {
-					["header"] = "Mists of Pandaria",
-					["name"] = "Warforged Seal",
-					["count"] = 0,
-					["icon"] = 514015,
-				},
-			},
 			["equip"] = {
 				"125914", -- [1]
 				"125852", -- [2]
@@ -1535,6 +1655,39 @@ BagSyncDB = {
 				"125842", -- [15]
 				"125863", -- [16]
 			},
+			["currency"] = {
+				[824] = {
+					["icon"] = 1005027,
+					["count"] = 767,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Garrison Resources",
+				},
+				[777] = {
+					["icon"] = 900319,
+					["count"] = 2929,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Timeless Coin",
+				},
+				[944] = {
+					["icon"] = 1061303,
+					["count"] = 0,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Artifact Fragment",
+				},
+				[738] = {
+					["icon"] = 237282,
+					["count"] = 21,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Lesser Charm of Good Fortune",
+				},
+				[776] = {
+					["icon"] = 514015,
+					["count"] = 0,
+					["header"] = "Mists of Pandaria",
+					["name"] = "Warforged Seal",
+				},
+			},
+			["gender"] = 3,
 		},
 	},
 	["forceDBReset§"] = 2,
