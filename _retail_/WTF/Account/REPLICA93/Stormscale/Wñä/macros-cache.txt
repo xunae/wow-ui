@@ -1,6 +1,7 @@
 VER 3 0100000000000009 "a1c" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@arena1]Charge
+/target arena1
 END
 VER 3 0100000000000005 "a1sb" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -9,6 +10,7 @@ END
 VER 3 010000000000000A "a2c" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@arena2]Charge
+/target arena2
 END
 VER 3 0100000000000006 "a2sb" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -17,6 +19,7 @@ END
 VER 3 010000000000000B "a3c" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@arena3]Charge
+/target arena3
 END
 VER 3 0100000000000007 "a3sb" "INV_MISC_QUESTIONMARK"
 #showtooltip
@@ -35,6 +38,10 @@ VER 3 010000000000000D "Charge" "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /cancelaura Bladestorm
 /cast Charge
+END
+VER 3 0100000000000010 "intervene" "INV_MISC_QUESTIONMARK"
+#showtooltip Intervene
+/cast [@mouseover,exists]Intervene;Intervene
 END
 VER 3 010000000000000E "is" "INV_MISC_QUESTIONMARK"
 #showtooltip Intimidating Shout

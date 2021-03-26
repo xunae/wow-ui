@@ -108,8 +108,7 @@ Blizzard_CombatLog_Filters = {
 						["b"] = 0.7,
 					},
 				},
-				["highlightedEvents"] = {
-					["PARTY_KILL"] = true,
+				["eventColoring"] = {
 				},
 				["defaults"] = {
 					["spell"] = {
@@ -125,7 +124,8 @@ Blizzard_CombatLog_Filters = {
 						["b"] = 0,
 					},
 				},
-				["eventColoring"] = {
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
 				},
 			},
 			["hasQuickButton"] = true,
@@ -156,8 +156,8 @@ Blizzard_CombatLog_Filters = {
 				["braces"] = false,
 				["unitBraces"] = false,
 				["schoolNameHighlighting"] = true,
-				["unitIcons"] = true,
 				["hideBuffs"] = false,
+				["unitIcons"] = true,
 				["unitColoring"] = true,
 				["amountSchoolColoring"] = true,
 				["amountColoring"] = true,
@@ -358,8 +358,7 @@ Blizzard_CombatLog_Filters = {
 						["b"] = 0.7,
 					},
 				},
-				["highlightedEvents"] = {
-					["PARTY_KILL"] = true,
+				["eventColoring"] = {
 				},
 				["defaults"] = {
 					["spell"] = {
@@ -375,7 +374,8 @@ Blizzard_CombatLog_Filters = {
 						["b"] = 0,
 					},
 				},
-				["eventColoring"] = {
+				["highlightedEvents"] = {
+					["PARTY_KILL"] = true,
 				},
 			},
 			["hasQuickButton"] = true,
@@ -406,8 +406,8 @@ Blizzard_CombatLog_Filters = {
 				["braces"] = false,
 				["unitBraces"] = true,
 				["schoolNameHighlighting"] = true,
-				["unitIcons"] = true,
 				["hideBuffs"] = false,
+				["unitIcons"] = true,
 				["unitColoring"] = true,
 				["amountSchoolColoring"] = true,
 				["amountColoring"] = true,
@@ -435,25 +435,25 @@ Blizzard_CombatLog_Filters = {
 						["SPELL_AURA_REMOVED"] = 2,
 						["SPELL_AURA_APPLIED_REMOVED_DOSE"] = 2,
 						["UNIT_DESTROYED"] = true,
-						["SPELL_AURA_REFRESH"] = 2,
 						["DAMAGE_SHIELD_MISSED"] = false,
+						["SPELL_AURA_REFRESH"] = 2,
 						["DAMAGE_SPLIT"] = true,
-						["UNIT_DISSIPATES"] = true,
+						["SPELL_DISPEL_FAILED"] = 2,
 						["UNIT_DIED"] = true,
 						["ENVIRONMENTAL_DAMAGE"] = true,
 						["SPELL_CAST_FAILED"] = 2,
 						["ENCHANT_APPLIED"] = 2,
-						["SPELL_DISPEL_FAILED"] = 2,
+						["UNIT_DISSIPATES"] = true,
 						["ENCHANT_REMOVED"] = 2,
 						["SPELL_PERIODIC_DAMAGE"] = true,
 						["SPELL_HEAL"] = true,
-						["SPELL_PERIODIC_HEAL"] = true,
+						["SWING_DAMAGE"] = true,
 						["PARTY_KILL"] = true,
 						["SPELL_DAMAGE"] = true,
 						["SPELL_CAST_SUCCESS"] = 2,
 						["RANGE_DAMAGE"] = true,
 						["SPELL_AURA_APPLIED"] = 2,
-						["SWING_DAMAGE"] = true,
+						["SPELL_PERIODIC_HEAL"] = true,
 						["SPELL_DISPEL"] = 2,
 						["DAMAGE_SHIELD"] = false,
 					},

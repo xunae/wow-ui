@@ -103,208 +103,208 @@ BagSyncDB = {
 			["gender"] = 2,
 			["currency"] = {
 				[1191] = {
-					["icon"] = 463447,
 					["count"] = 0,
-					["header"] = "Shadowlands",
+					["icon"] = 463447,
 					["name"] = "Valor",
+					["header"] = "Shadowlands",
 				},
 				[515] = {
-					["icon"] = 134481,
 					["count"] = 9,
-					["header"] = "Miscellaneous",
+					["icon"] = 134481,
 					["name"] = "Darkmoon Prize Ticket",
+					["header"] = "Miscellaneous",
 				},
 				[777] = {
-					["icon"] = 900319,
 					["count"] = 16075,
-					["header"] = "Mists of Pandaria",
+					["icon"] = 900319,
 					["name"] = "Timeless Coin",
+					["header"] = "Mists of Pandaria",
 				},
 				[1101] = {
-					["icon"] = 1131085,
 					["count"] = 1700,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1131085,
 					["name"] = "Oil",
+					["header"] = "Warlords of Draenor",
 				},
 				[1767] = {
-					["icon"] = 3743739,
 					["count"] = 5135,
-					["header"] = "Shadowlands",
+					["icon"] = 3743739,
 					["name"] = "Stygia",
+					["header"] = "Shadowlands",
 				},
 				[738] = {
-					["icon"] = 237282,
 					["count"] = 4,
-					["header"] = "Mists of Pandaria",
+					["icon"] = 237282,
 					["name"] = "Lesser Charm of Good Fortune",
+					["header"] = "Mists of Pandaria",
 				},
 				[1716] = {
-					["icon"] = 2565244,
 					["count"] = 65,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 2565244,
 					["name"] = "Honorbound Service Medal",
+					["header"] = "Battle for Azeroth",
 				},
 				[1342] = {
-					["icon"] = 803763,
 					["count"] = 558,
-					["header"] = "Legion",
+					["icon"] = 803763,
 					["name"] = "Legionfall War Supplies",
+					["header"] = "Legion",
 				},
 				[1220] = {
-					["icon"] = 1397630,
 					["count"] = 2759,
-					["header"] = "Legion",
+					["icon"] = 1397630,
 					["name"] = "Order Resources",
+					["header"] = "Legion",
 				},
 				[1602] = {
-					["icon"] = 1523630,
 					["count"] = 895,
-					["header"] = "Player vs. Player",
+					["icon"] = 1523630,
 					["name"] = "Conquest",
+					["header"] = "Player vs. Player",
 				},
 				[752] = {
-					["icon"] = 646678,
 					["count"] = 0,
-					["header"] = "Mists of Pandaria",
+					["icon"] = 646678,
 					["name"] = "Mogu Rune of Fate",
+					["header"] = "Mists of Pandaria",
 				},
 				[823] = {
-					["icon"] = 1061300,
 					["count"] = 1218,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1061300,
 					["name"] = "Apexis Crystal",
+					["header"] = "Warlords of Draenor",
 				},
 				[391] = {
-					["icon"] = 409548,
 					["count"] = 9,
-					["header"] = "Player vs. Player",
+					["icon"] = 409548,
 					["name"] = "Tol Barad Commendation",
+					["header"] = "Player vs. Player",
 				},
 				[776] = {
-					["icon"] = 514015,
 					["count"] = 2,
-					["header"] = "Mists of Pandaria",
+					["icon"] = 514015,
 					["name"] = "Warforged Seal",
+					["header"] = "Mists of Pandaria",
 				},
 				[1792] = {
-					["icon"] = 1455894,
 					["count"] = 146,
-					["header"] = "Player vs. Player",
+					["icon"] = 1455894,
 					["name"] = "Honor",
+					["header"] = "Player vs. Player",
 				},
 				[1166] = {
-					["icon"] = 463446,
 					["count"] = 1190,
-					["header"] = "Dungeon and Raid",
+					["icon"] = 463446,
 					["name"] = "Timewarped Badge",
+					["header"] = "Dungeon and Raid",
 				},
 				[1560] = {
-					["icon"] = 2032600,
 					["count"] = 5,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 2032600,
 					["name"] = "War Resources",
+					["header"] = "Battle for Azeroth",
 				},
 				[1820] = {
-					["icon"] = 133250,
 					["count"] = 100,
-					["header"] = "Shadowlands",
+					["icon"] = 133250,
 					["name"] = "Infused Ruby",
+					["header"] = "Shadowlands",
 				},
 				[614] = {
-					["icon"] = 136192,
 					["count"] = 14,
-					["header"] = "Cataclysm",
+					["icon"] = 136192,
 					["name"] = "Mote of Darkness",
+					["header"] = "Cataclysm",
 				},
 				[402] = {
-					["icon"] = 134912,
 					["count"] = 1,
-					["header"] = "Miscellaneous",
+					["icon"] = 134912,
 					["name"] = "Ironpaw Token",
+					["header"] = "Miscellaneous",
 				},
 				[1580] = {
-					["icon"] = 1416740,
 					["count"] = 4,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 1416740,
 					["name"] = "Seal of Wartorn Fate",
+					["header"] = "Battle for Azeroth",
 				},
 				[1710] = {
-					["icon"] = 1604167,
 					["count"] = 45,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 1604167,
 					["name"] = "Seafarer's Dubloon",
+					["header"] = "Battle for Azeroth",
 				},
 				[1273] = {
-					["icon"] = 1604167,
 					["count"] = 0,
-					["header"] = "Legion",
+					["icon"] = 1604167,
 					["name"] = "Seal of Broken Fate",
+					["header"] = "Legion",
 				},
 				[1718] = {
-					["icon"] = 2065602,
 					["count"] = 0,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 2065602,
 					["name"] = "Titan Residuum",
+					["header"] = "Battle for Azeroth",
 				},
 				[1155] = {
-					["icon"] = 1377394,
 					["count"] = 255,
-					["header"] = "Legion",
+					["icon"] = 1377394,
 					["name"] = "Ancient Mana",
+					["header"] = "Legion",
 				},
 				[615] = {
-					["icon"] = 132851,
 					["count"] = 2,
-					["header"] = "Cataclysm",
+					["icon"] = 132851,
 					["name"] = "Essence of Corrupted Deathwing",
+					["header"] = "Cataclysm",
 				},
 				[1226] = {
-					["icon"] = 132775,
 					["count"] = 4887,
-					["header"] = "Legion",
+					["icon"] = 132775,
 					["name"] = "Nethershard",
+					["header"] = "Legion",
 				},
 				[994] = {
-					["icon"] = 838813,
 					["count"] = 3,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 838813,
 					["name"] = "Seal of Tempered Fate",
+					["header"] = "Warlords of Draenor",
 				},
 				[1828] = {
-					["icon"] = 3743738,
 					["count"] = 50,
-					["header"] = "Shadowlands",
+					["icon"] = 3743738,
 					["name"] = "Soul Ash",
+					["header"] = "Shadowlands",
 				},
 				[697] = {
-					["icon"] = 237281,
 					["count"] = 0,
-					["header"] = "Mists of Pandaria",
+					["icon"] = 237281,
 					["name"] = "Elder Charm of Good Fortune",
+					["header"] = "Mists of Pandaria",
 				},
 				[944] = {
-					["icon"] = 1061303,
 					["count"] = 0,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1061303,
 					["name"] = "Artifact Fragment",
+					["header"] = "Warlords of Draenor",
 				},
 				[1813] = {
-					["icon"] = 3528288,
 					["count"] = 341,
-					["header"] = "Shadowlands",
+					["icon"] = 3528288,
 					["name"] = "Reservoir Anima",
+					["header"] = "Shadowlands",
 				},
 				[1275] = {
-					["icon"] = 1604168,
 					["count"] = 6,
-					["header"] = "Legion",
+					["icon"] = 1604168,
 					["name"] = "Curious Coin",
+					["header"] = "Legion",
 				},
 				[824] = {
-					["icon"] = 1005027,
 					["count"] = 4470,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1005027,
 					["name"] = "Garrison Resources",
+					["header"] = "Warlords of Draenor",
 				},
 			},
 			["mailbox"] = {
@@ -319,25 +319,24 @@ BagSyncDB = {
 				{
 					"6948", -- [1]
 					"166751;8", -- [2]
-					"137642;26", -- [3]
+					"137642;5", -- [3]
 					"3371;5", -- [4]
-					"173202;158", -- [5]
+					"173202;163", -- [5]
 					"173204;17", -- [6]
 					"180817", -- [7]
 				}, -- [3]
 				[0] = {
-					"184371;18", -- [1]
+					"184371;31", -- [1]
 					"182415::::::::::::4:7186:6652:1485:6646:::", -- [2]
 					"180924::::::::::::3:7201:1514:6646:::", -- [3]
 					"180905::::::::::::3:7201:1514:6646:::", -- [4]
 					"183388", -- [5]
 					"184550", -- [6]
-					"183051;6", -- [7]
-					"183065;8", -- [8]
-					"183050;2", -- [9]
+					"184315", -- [7]
+					"176809", -- [8]
 				},
 			},
-			["money"] = 82183488,
+			["money"] = 57385923,
 			["class"] = "WARRIOR",
 			["race"] = "Orc",
 			["professions"] = {
@@ -363,55 +362,55 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[1828] = {
-					["name"] = "Soul Ash",
-					["header"] = "Shadowlands",
 					["icon"] = 3743738,
 					["count"] = 1210,
-				},
-				[1813] = {
-					["name"] = "Reservoir Anima",
 					["header"] = "Shadowlands",
-					["icon"] = 3528288,
-					["count"] = 1301,
-				},
-				[1191] = {
-					["name"] = "Valor",
-					["header"] = "Shadowlands",
-					["icon"] = 463447,
-					["count"] = 240,
-				},
-				[1602] = {
-					["name"] = "Conquest",
-					["header"] = "Player vs. Player",
-					["icon"] = 1523630,
-					["count"] = 135,
+					["name"] = "Soul Ash",
 				},
 				[944] = {
-					["name"] = "Artifact Fragment",
-					["header"] = "Warlords of Draenor",
 					["icon"] = 1061303,
 					["count"] = 0,
+					["header"] = "Warlords of Draenor",
+					["name"] = "Artifact Fragment",
 				},
 				[1792] = {
-					["name"] = "Honor",
-					["header"] = "Player vs. Player",
 					["icon"] = 1455894,
-					["count"] = 4626,
+					["count"] = 8239,
+					["header"] = "Player vs. Player",
+					["name"] = "Honor",
 				},
-				[1820] = {
-					["name"] = "Infused Ruby",
-					["header"] = "Shadowlands",
-					["icon"] = 133250,
-					["count"] = 82,
+				[1602] = {
+					["icon"] = 1523630,
+					["count"] = 568,
+					["header"] = "Player vs. Player",
+					["name"] = "Conquest",
 				},
 				[1767] = {
-					["name"] = "Stygia",
-					["header"] = "Shadowlands",
 					["icon"] = 3743739,
-					["count"] = 349,
+					["count"] = 652,
+					["header"] = "Shadowlands",
+					["name"] = "Stygia",
+				},
+				[1820] = {
+					["icon"] = 133250,
+					["count"] = 82,
+					["header"] = "Shadowlands",
+					["name"] = "Infused Ruby",
+				},
+				[1191] = {
+					["icon"] = 463447,
+					["count"] = 240,
+					["header"] = "Shadowlands",
+					["name"] = "Valor",
+				},
+				[1813] = {
+					["icon"] = 3528288,
+					["count"] = 1301,
+					["header"] = "Shadowlands",
+					["name"] = "Reservoir Anima",
 				},
 			},
-			["gender"] = 3,
+			["gender"] = 2,
 			["mailbox"] = {
 				"172368", -- [1]
 			},
@@ -561,6 +560,36 @@ BagSyncDB = {
 				},
 				[9] = {
 				},
+				[-1] = {
+					"147554", -- [1]
+					"86143;43", -- [2]
+					"98715;2", -- [3]
+					"127755", -- [4]
+					"116424;6", -- [5]
+					"116423;4", -- [6]
+					"116421;11", -- [7]
+					"116420;5", -- [8]
+					"116417;10", -- [9]
+					"138729;2", -- [10]
+					"138728;9", -- [11]
+					"138727;13", -- [12]
+					"138488;9", -- [13]
+					"138486;7", -- [14]
+					"2459;20", -- [15]
+					"2459;9", -- [16]
+					"111820", -- [17]
+					"34334", -- [18]
+					"39769", -- [19]
+					"128911::::::::::::2:746:1524:::", -- [20]
+					"128819::::::::::::2:745:1524:::", -- [21]
+					"128935::::::::::::2:744:1523:::", -- [22]
+					"46017", -- [23]
+					"6360", -- [24]
+					"143732::::::::::::3:3529:3459:3570:::", -- [25]
+					"151785::::::::::::2:3459:3570:::", -- [26]
+					"137104::::::::::::3:3529:3459:3570:::", -- [27]
+					"137102::::::::::::2:1811:3570:::", -- [28]
+				},
 				[5] = {
 					"137058::::::::::::2:3459:3570:::", -- [1]
 					"137103::::::::::::2:1811:3630:::", -- [2]
@@ -593,36 +622,6 @@ BagSyncDB = {
 					"164572", -- [29]
 					"149450", -- [30]
 				},
-				[-1] = {
-					"147554", -- [1]
-					"86143;43", -- [2]
-					"98715;2", -- [3]
-					"127755", -- [4]
-					"116424;6", -- [5]
-					"116423;4", -- [6]
-					"116421;11", -- [7]
-					"116420;5", -- [8]
-					"116417;10", -- [9]
-					"138729;2", -- [10]
-					"138728;9", -- [11]
-					"138727;13", -- [12]
-					"138488;9", -- [13]
-					"138486;7", -- [14]
-					"2459;20", -- [15]
-					"2459;9", -- [16]
-					"111820", -- [17]
-					"34334", -- [18]
-					"39769", -- [19]
-					"128911::::::::::::2:746:1524:::", -- [20]
-					"128819::::::::::::2:745:1524:::", -- [21]
-					"128935::::::::::::2:744:1523:::", -- [22]
-					"46017", -- [23]
-					"6360", -- [24]
-					"143732::::::::::::3:3529:3459:3570:::", -- [25]
-					"151785::::::::::::2:3459:3570:::", -- [26]
-					"137104::::::::::::3:3529:3459:3570:::", -- [27]
-					"137102::::::::::::2:1811:3570:::", -- [28]
-				},
 			},
 			["auction"] = {
 				["lastscan"] = 1611321262,
@@ -634,328 +633,328 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[1191] = {
-					["icon"] = 463447,
 					["count"] = 240,
-					["header"] = "Shadowlands",
+					["icon"] = 463447,
 					["name"] = "Valor",
+					["header"] = "Shadowlands",
 				},
 				[515] = {
-					["icon"] = 134481,
 					["count"] = 118,
-					["header"] = "Unused",
+					["icon"] = 134481,
 					["name"] = "Darkmoon Prize Ticket",
+					["header"] = "Unused",
 				},
 				[1719] = {
-					["icon"] = 646678,
 					["count"] = 4996,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 646678,
 					["name"] = "Corrupted Mementos",
+					["header"] = "Battle for Azeroth",
 				},
 				[361] = {
-					["icon"] = 134501,
 					["count"] = 0,
-					["header"] = "Unused",
+					["icon"] = 134501,
 					["name"] = "Illustrious Jewelcrafter's Token",
+					["header"] = "Unused",
 				},
 				[1101] = {
-					["icon"] = 1131085,
 					["count"] = 97770,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1131085,
 					["name"] = "Oil",
+					["header"] = "Warlords of Draenor",
 				},
 				[1357] = {
-					["icon"] = 1455894,
 					["count"] = 0,
-					["header"] = "Legion",
+					["icon"] = 1455894,
 					["name"] = "Echoes of Domination",
+					["header"] = "Legion",
 				},
 				[789] = {
-					["icon"] = 900318,
 					["count"] = 19,
-					["header"] = "Unused",
+					["icon"] = 900318,
 					["name"] = "Bloody Coin",
+					["header"] = "Unused",
 				},
 				[1755] = {
-					["icon"] = 1003600,
 					["count"] = 180172,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 1003600,
 					["name"] = "Coalescing Visions",
+					["header"] = "Battle for Azeroth",
 				},
 				[1885] = {
-					["icon"] = 134344,
 					["count"] = 219,
-					["header"] = "Shadowlands",
+					["icon"] = 134344,
 					["name"] = "Grateful Offering",
+					["header"] = "Shadowlands",
 				},
 				[1767] = {
-					["icon"] = 3743739,
 					["count"] = 843,
-					["header"] = "Shadowlands",
+					["icon"] = 3743739,
 					["name"] = "Stygia",
+					["header"] = "Shadowlands",
 				},
 				[738] = {
-					["icon"] = 237282,
 					["count"] = 12,
-					["header"] = "Unused",
+					["icon"] = 237282,
 					["name"] = "Lesser Charm of Good Fortune",
+					["header"] = "Unused",
 				},
 				[1716] = {
-					["icon"] = 2565244,
 					["count"] = 2,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 2565244,
 					["name"] = "Honorbound Service Medal",
+					["header"] = "Battle for Azeroth",
 				},
 				[1342] = {
-					["icon"] = 803763,
 					["count"] = 189,
-					["header"] = "Legion",
+					["icon"] = 803763,
 					["name"] = "Legionfall War Supplies",
+					["header"] = "Legion",
 				},
 				[1220] = {
-					["icon"] = 1397630,
 					["count"] = 67726,
-					["header"] = "Legion",
+					["icon"] = 1397630,
 					["name"] = "Order Resources",
+					["header"] = "Legion",
 				},
 				[1602] = {
-					["icon"] = 1523630,
 					["count"] = 1545,
-					["header"] = "Player vs. Player",
+					["icon"] = 1523630,
 					["name"] = "Conquest",
-				},
-				[402] = {
-					["icon"] = 134912,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Ironpaw Token",
-				},
-				[81] = {
-					["icon"] = 134411,
-					["count"] = 6,
-					["header"] = "Unused",
-					["name"] = "Epicurean's Award",
-				},
-				[1803] = {
-					["icon"] = 3069889,
-					["count"] = 10771,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Echoes of Ny'alotha",
-				},
-				[391] = {
-					["icon"] = 409548,
-					["count"] = 78,
-					["header"] = "Unused",
-					["name"] = "Tol Barad Commendation",
+					["header"] = "Player vs. Player",
 				},
 				[752] = {
+					["count"] = 0,
 					["icon"] = 646678,
-					["count"] = 0,
-					["header"] = "Unused",
 					["name"] = "Mogu Rune of Fate",
-				},
-				[777] = {
-					["icon"] = 900319,
-					["count"] = 176142,
 					["header"] = "Unused",
-					["name"] = "Timeless Coin",
 				},
-				[823] = {
-					["icon"] = 1061300,
-					["count"] = 78980,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Apexis Crystal",
-				},
-				[1508] = {
-					["icon"] = 1064188,
-					["count"] = 528,
-					["header"] = "Legion",
-					["name"] = "Veiled Argunite",
-				},
-				[1149] = {
-					["icon"] = 801132,
-					["count"] = 2592,
+				[81] = {
+					["count"] = 6,
+					["icon"] = 134411,
+					["name"] = "Epicurean's Award",
 					["header"] = "Unused",
-					["name"] = "Sightless Eye",
 				},
-				[614] = {
-					["icon"] = 136192,
-					["count"] = 35,
-					["header"] = "Unused",
-					["name"] = "Mote of Darkness",
-				},
-				[1268] = {
-					["icon"] = 1061303,
-					["count"] = 58,
-					["header"] = "Unused",
-					["name"] = "Timeworn Artifact",
-				},
-				[416] = {
-					["icon"] = 513195,
-					["count"] = 122,
-					["header"] = "Unused",
-					["name"] = "Mark of the World Tree",
-				},
-				[1314] = {
-					["icon"] = 463284,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Lingering Soul Fragment",
-				},
-				[1721] = {
-					["icon"] = 463858,
-					["count"] = 20,
+				[1803] = {
+					["count"] = 10771,
+					["icon"] = 3069889,
+					["name"] = "Echoes of Ny'alotha",
 					["header"] = "Battle for Azeroth",
-					["name"] = "Prismatic Manapearl",
-				},
-				[776] = {
-					["icon"] = 514015,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Warforged Seal",
-				},
-				[1792] = {
-					["icon"] = 1455894,
-					["count"] = 12900,
-					["header"] = "Player vs. Player",
-					["name"] = "Honor",
-				},
-				[1166] = {
-					["icon"] = 463446,
-					["count"] = 180,
-					["header"] = "Dungeon and Raid",
-					["name"] = "Timewarped Badge",
-				},
-				[615] = {
-					["icon"] = 132851,
-					["count"] = 5,
-					["header"] = "Unused",
-					["name"] = "Essence of Corrupted Deathwing",
-				},
-				[697] = {
-					["icon"] = 237281,
-					["count"] = 0,
-					["header"] = "Unused",
-					["name"] = "Elder Charm of Good Fortune",
 				},
 				[241] = {
+					["count"] = 0,
 					["icon"] = 236246,
-					["count"] = 0,
-					["header"] = "Unused",
 					["name"] = "Champion's Seal",
+					["header"] = "Unused",
 				},
-				[1560] = {
-					["icon"] = 2032600,
-					["count"] = 10666,
-					["header"] = "Battle for Azeroth",
-					["name"] = "War Resources",
+				[1149] = {
+					["count"] = 2592,
+					["icon"] = 801132,
+					["name"] = "Sightless Eye",
+					["header"] = "Unused",
 				},
-				[994] = {
-					["icon"] = 838813,
-					["count"] = 0,
+				[614] = {
+					["count"] = 35,
+					["icon"] = 136192,
+					["name"] = "Mote of Darkness",
+					["header"] = "Unused",
+				},
+				[823] = {
+					["count"] = 78980,
+					["icon"] = 1061300,
+					["name"] = "Apexis Crystal",
 					["header"] = "Warlords of Draenor",
-					["name"] = "Seal of Tempered Fate",
 				},
-				[1820] = {
-					["icon"] = 133250,
-					["count"] = 100,
-					["header"] = "Shadowlands",
-					["name"] = "Infused Ruby",
-				},
-				[1129] = {
-					["icon"] = 1119886,
-					["count"] = 0,
-					["header"] = "Warlords of Draenor",
-					["name"] = "Seal of Inevitable Fate",
-				},
-				[1828] = {
-					["icon"] = 3743738,
-					["count"] = 5890,
-					["header"] = "Shadowlands",
-					["name"] = "Soul Ash",
-				},
-				[1580] = {
-					["icon"] = 1416740,
-					["count"] = 5,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Seal of Wartorn Fate",
-				},
-				[1710] = {
-					["icon"] = 1604167,
-					["count"] = 642,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Seafarer's Dubloon",
-				},
-				[1273] = {
-					["icon"] = 1604167,
-					["count"] = 4,
+				[1508] = {
+					["count"] = 528,
+					["icon"] = 1064188,
+					["name"] = "Veiled Argunite",
 					["header"] = "Legion",
-					["name"] = "Seal of Broken Fate",
 				},
-				[1718] = {
-					["icon"] = 2065602,
+				[416] = {
+					["count"] = 122,
+					["icon"] = 513195,
+					["name"] = "Mark of the World Tree",
+					["header"] = "Unused",
+				},
+				[1314] = {
 					["count"] = 0,
-					["header"] = "Battle for Azeroth",
-					["name"] = "Titan Residuum",
+					["icon"] = 463284,
+					["name"] = "Lingering Soul Fragment",
+					["header"] = "Unused",
 				},
-				[1155] = {
-					["icon"] = 1377394,
-					["count"] = 1081,
-					["header"] = "Legion",
-					["name"] = "Ancient Mana",
+				[1268] = {
+					["count"] = 58,
+					["icon"] = 1061303,
+					["name"] = "Timeworn Artifact",
+					["header"] = "Unused",
 				},
 				[824] = {
-					["icon"] = 1005027,
 					["count"] = 10000,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1005027,
 					["name"] = "Garrison Resources",
+					["header"] = "Warlords of Draenor",
 				},
-				[1226] = {
-					["icon"] = 132775,
-					["count"] = 10999,
-					["header"] = "Legion",
-					["name"] = "Nethershard",
+				[391] = {
+					["count"] = 78,
+					["icon"] = 409548,
+					["name"] = "Tol Barad Commendation",
+					["header"] = "Unused",
 				},
-				[1356] = {
-					["icon"] = 1455891,
+				[1721] = {
+					["count"] = 20,
+					["icon"] = 463858,
+					["name"] = "Prismatic Manapearl",
+					["header"] = "Battle for Azeroth",
+				},
+				[776] = {
 					["count"] = 0,
+					["icon"] = 514015,
+					["name"] = "Warforged Seal",
+					["header"] = "Unused",
+				},
+				[1792] = {
+					["count"] = 12900,
+					["icon"] = 1455894,
+					["name"] = "Honor",
+					["header"] = "Player vs. Player",
+				},
+				[1166] = {
+					["count"] = 180,
+					["icon"] = 463446,
+					["name"] = "Timewarped Badge",
+					["header"] = "Dungeon and Raid",
+				},
+				[777] = {
+					["count"] = 176142,
+					["icon"] = 900319,
+					["name"] = "Timeless Coin",
+					["header"] = "Unused",
+				},
+				[1155] = {
+					["count"] = 1081,
+					["icon"] = 1377394,
+					["name"] = "Ancient Mana",
 					["header"] = "Legion",
-					["name"] = "Echoes of Battle",
+				},
+				[615] = {
+					["count"] = 5,
+					["icon"] = 132851,
+					["name"] = "Essence of Corrupted Deathwing",
+					["header"] = "Unused",
+				},
+				[1560] = {
+					["count"] = 10666,
+					["icon"] = 2032600,
+					["name"] = "War Resources",
+					["header"] = "Battle for Azeroth",
+				},
+				[1129] = {
+					["count"] = 0,
+					["icon"] = 1119886,
+					["name"] = "Seal of Inevitable Fate",
+					["header"] = "Warlords of Draenor",
+				},
+				[1820] = {
+					["count"] = 100,
+					["icon"] = 133250,
+					["name"] = "Infused Ruby",
+					["header"] = "Shadowlands",
+				},
+				[402] = {
+					["count"] = 0,
+					["icon"] = 134912,
+					["name"] = "Ironpaw Token",
+					["header"] = "Unused",
+				},
+				[1828] = {
+					["count"] = 5890,
+					["icon"] = 3743738,
+					["name"] = "Soul Ash",
+					["header"] = "Shadowlands",
+				},
+				[1580] = {
+					["count"] = 5,
+					["icon"] = 1416740,
+					["name"] = "Seal of Wartorn Fate",
+					["header"] = "Battle for Azeroth",
+				},
+				[1710] = {
+					["count"] = 642,
+					["icon"] = 1604167,
+					["name"] = "Seafarer's Dubloon",
+					["header"] = "Battle for Azeroth",
+				},
+				[1273] = {
+					["count"] = 4,
+					["icon"] = 1604167,
+					["name"] = "Seal of Broken Fate",
+					["header"] = "Legion",
+				},
+				[1718] = {
+					["count"] = 0,
+					["icon"] = 2065602,
+					["name"] = "Titan Residuum",
+					["header"] = "Battle for Azeroth",
 				},
 				[1533] = {
-					["icon"] = 236521,
 					["count"] = 423,
-					["header"] = "Legion",
+					["icon"] = 236521,
 					["name"] = "Wakening Essence",
+					["header"] = "Legion",
+				},
+				[994] = {
+					["count"] = 0,
+					["icon"] = 838813,
+					["name"] = "Seal of Tempered Fate",
+					["header"] = "Warlords of Draenor",
+				},
+				[1226] = {
+					["count"] = 10999,
+					["icon"] = 132775,
+					["name"] = "Nethershard",
+					["header"] = "Legion",
+				},
+				[1356] = {
+					["count"] = 0,
+					["icon"] = 1455891,
+					["name"] = "Echoes of Battle",
+					["header"] = "Legion",
+				},
+				[697] = {
+					["count"] = 0,
+					["icon"] = 237281,
+					["name"] = "Elder Charm of Good Fortune",
+					["header"] = "Unused",
 				},
 				[1299] = {
-					["icon"] = 237281,
 					["count"] = 1615,
-					["header"] = "Battle for Azeroth",
+					["icon"] = 237281,
 					["name"] = "Brawler's Gold",
+					["header"] = "Battle for Azeroth",
 				},
 				[944] = {
-					["icon"] = 1061303,
 					["count"] = 0,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1061303,
 					["name"] = "Artifact Fragment",
+					["header"] = "Warlords of Draenor",
 				},
 				[1813] = {
-					["icon"] = 3528288,
 					["count"] = 10581,
-					["header"] = "Shadowlands",
+					["icon"] = 3528288,
 					["name"] = "Reservoir Anima",
+					["header"] = "Shadowlands",
 				},
 				[1754] = {
-					["icon"] = 236690,
 					["count"] = 31,
-					["header"] = "Shadowlands",
+					["icon"] = 236690,
 					["name"] = "Argent Commendation",
+					["header"] = "Shadowlands",
 				},
 				[1275] = {
-					["icon"] = 1604168,
 					["count"] = 175,
-					["header"] = "Legion",
+					["icon"] = 1604168,
 					["name"] = "Curious Coin",
+					["header"] = "Legion",
 				},
 			},
 			["professions"] = {
@@ -1115,16 +1114,16 @@ BagSyncDB = {
 			["gender"] = 2,
 			["currency"] = {
 				[1828] = {
-					["header"] = "Shadowlands",
 					["name"] = "Soul Ash",
-					["count"] = 2450,
+					["header"] = "Shadowlands",
 					["icon"] = 3743738,
+					["count"] = 2450,
 				},
 				[1792] = {
-					["header"] = "Player vs. Player",
 					["name"] = "Honor",
-					["count"] = 250,
+					["header"] = "Player vs. Player",
 					["icon"] = 1455894,
+					["count"] = 250,
 				},
 			},
 			["equip"] = {
@@ -1203,10 +1202,10 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[1828] = {
-					["name"] = "Soul Ash",
 					["header"] = "Shadowlands",
-					["icon"] = 3743738,
+					["name"] = "Soul Ash",
 					["count"] = 1850,
+					["icon"] = 3743738,
 				},
 			},
 			["gender"] = 2,
@@ -1273,16 +1272,16 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[1828] = {
-					["name"] = "Soul Ash",
 					["header"] = "Shadowlands",
-					["icon"] = 3743738,
+					["name"] = "Soul Ash",
 					["count"] = 2650,
+					["icon"] = 3743738,
 				},
 				[1792] = {
-					["name"] = "Honor",
 					["header"] = "Player vs. Player",
-					["icon"] = 1455894,
+					["name"] = "Honor",
 					["count"] = 130,
+					["icon"] = 1455894,
 				},
 			},
 			["gender"] = 2,
@@ -1338,16 +1337,16 @@ BagSyncDB = {
 			["gender"] = 3,
 			["currency"] = {
 				[1828] = {
-					["name"] = "Soul Ash",
 					["header"] = "Shadowlands",
-					["icon"] = 3743738,
+					["name"] = "Soul Ash",
 					["count"] = 2850,
+					["icon"] = 3743738,
 				},
 				[1792] = {
-					["name"] = "Honor",
 					["header"] = "Player vs. Player",
-					["icon"] = 1455894,
+					["name"] = "Honor",
 					["count"] = 395,
+					["icon"] = 1455894,
 				},
 			},
 			["equip"] = {
@@ -1394,6 +1393,8 @@ BagSyncDB = {
 		["enableTooltipGreenCheck"] = false,
 		["enableBNetAccountItems"] = false,
 		["showTotal"] = true,
+		["showGuildCurrentCharacter"] = false,
+		["enableRealmAstrickName"] = false,
 		["colors"] = {
 			["total"] = {
 				["r"] = 0.9568627450980393,
@@ -1431,8 +1432,6 @@ BagSyncDB = {
 				["b"] = 1,
 			},
 		},
-		["enableRealmAstrickName"] = false,
-		["showGuildCurrentCharacter"] = false,
 		["enableLoginVersionInfo"] = true,
 		["enableTooltipSeperator"] = true,
 		["enableRealmIDTags"] = true,
@@ -1478,16 +1477,16 @@ BagSyncDB = {
 			["gender"] = 2,
 			["currency"] = {
 				[1220] = {
-					["count"] = 2783,
 					["icon"] = 1397630,
-					["name"] = "Order Resources",
+					["count"] = 2783,
 					["header"] = "Legion",
+					["name"] = "Order Resources",
 				},
 				[1792] = {
-					["count"] = 0,
 					["icon"] = 1455894,
-					["name"] = "Honor",
+					["count"] = 0,
 					["header"] = "Player vs. Player",
+					["name"] = "Honor",
 				},
 			},
 			["mailbox"] = {
@@ -1579,28 +1578,28 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[824] = {
-					["icon"] = 1005027,
 					["count"] = 282,
-					["header"] = "Warlords of Draenor",
+					["icon"] = 1005027,
 					["name"] = "Garrison Resources",
+					["header"] = "Warlords of Draenor",
 				},
 				[1704] = {
-					["icon"] = 133286,
 					["count"] = 1,
-					["header"] = "Burning Crusade",
+					["icon"] = 133286,
 					["name"] = "Spirit Shard",
-				},
-				[1166] = {
-					["icon"] = 463446,
-					["count"] = 735,
-					["header"] = "Dungeon and Raid",
-					["name"] = "Timewarped Badge",
+					["header"] = "Burning Crusade",
 				},
 				[1220] = {
-					["icon"] = 1397630,
 					["count"] = 1140,
-					["header"] = "Legion",
+					["icon"] = 1397630,
 					["name"] = "Order Resources",
+					["header"] = "Legion",
+				},
+				[1166] = {
+					["count"] = 735,
+					["icon"] = 463446,
+					["name"] = "Timewarped Badge",
+					["header"] = "Dungeon and Raid",
 				},
 			},
 			["gender"] = 3,
@@ -1665,34 +1664,34 @@ BagSyncDB = {
 			},
 			["currency"] = {
 				[824] = {
-					["count"] = 767,
 					["icon"] = 1005027,
-					["name"] = "Garrison Resources",
+					["count"] = 767,
 					["header"] = "Warlords of Draenor",
+					["name"] = "Garrison Resources",
 				},
 				[777] = {
-					["count"] = 2929,
 					["icon"] = 900319,
-					["name"] = "Timeless Coin",
+					["count"] = 2929,
 					["header"] = "Mists of Pandaria",
+					["name"] = "Timeless Coin",
 				},
 				[944] = {
-					["count"] = 0,
 					["icon"] = 1061303,
-					["name"] = "Artifact Fragment",
+					["count"] = 0,
 					["header"] = "Warlords of Draenor",
+					["name"] = "Artifact Fragment",
 				},
 				[738] = {
-					["count"] = 21,
 					["icon"] = 237282,
-					["name"] = "Lesser Charm of Good Fortune",
+					["count"] = 21,
 					["header"] = "Mists of Pandaria",
+					["name"] = "Lesser Charm of Good Fortune",
 				},
 				[776] = {
-					["count"] = 0,
 					["icon"] = 514015,
-					["name"] = "Warforged Seal",
+					["count"] = 0,
 					["header"] = "Mists of Pandaria",
+					["name"] = "Warforged Seal",
 				},
 			},
 			["gender"] = 3,

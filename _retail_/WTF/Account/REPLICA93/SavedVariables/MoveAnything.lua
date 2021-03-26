@@ -9,25 +9,6 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
-				["TargetFrame"] = {
-					["orgPos"] = {
-						"TOP", -- [1]
-						"UIParent", -- [2]
-						"TOP", -- [3]
-						-297, -- [4]
-						-136, -- [5]
-					},
-					["name"] = "TargetFrame",
-					["scale"] = 1.100000023841858,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						362.6588745117188, -- [4]
-						-136.3636334080342, -- [5]
-					},
-					["orgScale"] = 1,
-				},
 				["PlayerPowerBarAltMover"] = {
 					["orgPos"] = {
 						"BOTTOM", -- [1]
@@ -47,23 +28,16 @@ MADB = {
 					},
 					["orgScale"] = 1,
 				},
-				["PlayerFrame"] = {
+				["FocusFrameSpellBar"] = {
 					["orgPos"] = {
 						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136, -- [4]
-						-136, -- [5]
+						"FocusFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
+						25, -- [4]
+						6.999999523162842, -- [5]
 					},
-					["name"] = "PlayerFrame",
-					["scale"] = 1.100000023841858,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136.3636334080342, -- [4]
-						-136.3636334080342, -- [5]
-					},
+					["name"] = "FocusFrameSpellBar",
+					["scale"] = 1.399999976158142,
 					["orgScale"] = 1,
 				},
 				["MinimapCluster"] = {
@@ -102,16 +76,42 @@ MADB = {
 					},
 					["orgScale"] = 1,
 				},
-				["FocusFrameSpellBar"] = {
+				["TargetFrame"] = {
+					["orgPos"] = {
+						"TOP", -- [1]
+						"UIParent", -- [2]
+						"TOP", -- [3]
+						-297, -- [4]
+						-136, -- [5]
+					},
+					["name"] = "TargetFrame",
+					["scale"] = 1.100000023841858,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						362.6588745117188, -- [4]
+						-136.3636334080342, -- [5]
+					},
+					["orgScale"] = 1,
+				},
+				["PlayerFrame"] = {
 					["orgPos"] = {
 						"TOPLEFT", -- [1]
-						"FocusFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
-						25, -- [4]
-						6.999999523162842, -- [5]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136, -- [4]
+						-136, -- [5]
 					},
-					["name"] = "FocusFrameSpellBar",
-					["scale"] = 1.399999976158142,
+					["name"] = "PlayerFrame",
+					["scale"] = 1.100000023841858,
+					["pos"] = {
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136.3636334080342, -- [4]
+						-136.3636334080342, -- [5]
+					},
 					["orgScale"] = 1,
 				},
 				["CastingBarFrame"] = {

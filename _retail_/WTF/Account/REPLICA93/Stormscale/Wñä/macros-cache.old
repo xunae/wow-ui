@@ -27,6 +27,10 @@ VER 3 0100000000000002 "Avatar" "INV_MISC_QUESTIONMARK"
 /cast Blood Fury(Racial)
 /cast Avatar
 END
+VER 3 010000000000000F "cancel_bs" "1390941"
+#showtoolti
+/cancelaura Bladestorm
+END
 VER 3 010000000000000D "Charge" "INV_MISC_QUESTIONMARK"
 #showtooltip Charge
 /cancelaura Bladestorm

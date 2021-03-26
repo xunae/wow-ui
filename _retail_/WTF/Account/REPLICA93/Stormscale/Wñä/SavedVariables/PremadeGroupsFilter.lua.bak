@@ -343,15 +343,15 @@ PremadeGroupsFilterState = {
 		["dps"] = {
 			["max"] = "1",
 			["min"] = "",
-			["act"] = false,
+			["act"] = true,
 		},
 		["noilvl"] = {
 			["act"] = false,
 		},
 		["expression"] = "",
 		["difficulty"] = {
-			["val"] = 3,
-			["act"] = false,
+			["val"] = 6,
+			["act"] = true,
 		},
 		["defeated"] = {
 			["max"] = "",
@@ -451,7 +451,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["moveable"] = false,
+	["moveable"] = true,
 	["t1c1f0"] = {
 		["enabled"] = false,
 		["tanks"] = {

@@ -343,15 +343,15 @@ PremadeGroupsFilterState = {
 		["dps"] = {
 			["max"] = "1",
 			["min"] = "",
-			["act"] = false,
+			["act"] = true,
 		},
 		["noilvl"] = {
 			["act"] = false,
 		},
 		["expression"] = "",
 		["difficulty"] = {
-			["act"] = false,
-			["val"] = 3,
+			["act"] = true,
+			["val"] = 6,
 		},
 		["members"] = {
 			["max"] = "",
