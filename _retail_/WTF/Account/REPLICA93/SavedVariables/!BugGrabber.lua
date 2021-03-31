@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1118,
 	["lastSanitation"] = 3,
-	["session"] = 1113,
 	["errors"] = {
 		{
 			["message"] = "[string \"error('Invalid RaceID')\"]:1: Invalid RaceID",
@@ -13,8 +13,8 @@ BugGrabberDB = {
 		}, -- [1]
 		{
 			["message"] = "Error loading Interface\\AddOns\\PremadeGroupsFilter\\Plugins\\RaiderIO.lua",
-			["time"] = "2021/03/08 12:53:51",
 			["session"] = 982,
+			["time"] = "2021/03/08 12:53:51",
 			["counter"] = 24,
 		}, -- [2]
 		{

@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
-	["session"] = 1112,
 	["lastSanitation"] = 3,
+	["session"] = 1117,
 	["errors"] = {
 		{
 			["message"] = "[string \"error('Invalid RaceID')\"]:1: Invalid RaceID",
@@ -13,8 +13,8 @@ BugGrabberDB = {
 		}, -- [1]
 		{
 			["message"] = "Error loading Interface\\AddOns\\PremadeGroupsFilter\\Plugins\\RaiderIO.lua",
-			["session"] = 982,
 			["time"] = "2021/03/08 12:53:51",
+			["session"] = 982,
 			["counter"] = 24,
 		}, -- [2]
 		{
@@ -105,16 +105,16 @@ BugGrabberDB = {
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn 'MoveAnything' tried to call the protected function 'ArenaEnemyFrames:ClearAllPoints()'.",
 			["time"] = "2021/03/23 20:45:51",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `ClearAllPoints'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:3389: in function `UIParentManageFramePositions'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:2637: in function <Interface\\FrameXML\\UIParent.lua:2624>\n[string \"=[C]\"]: in function `SetAttribute'\n[string \"@Interface\\FrameXML\\UIParent.lua\"]:3427: in function `UIParent_ManageFramePositions'\n[string \"@Interface\\FrameXML\\MainMenuBar.lua\"]:60: in function `SetPositionForStatusBars'\n[string \"@Interface\\FrameXML\\MainMenuBar.lua\"]:109: in function <Interface\\FrameXML\\MainMenuBar.lua:65>",
-			["session"] = 1108,
-			["counter"] = 4,
+			["session"] = 1113,
+			["counter"] = 5,
 		}, -- [14]
 		{
 			["message"] = "[ADDON_ACTION_BLOCKED] AddOn '!BlizzardRaidFramesFix' tried to call the protected function 'CompactRaidFrameManagerContainerResizeFrame:Hide()'.",
 			["time"] = "2021/03/07 20:50:30",
 			["locals"] = "Skipped (In Encounter)",
 			["stack"] = "[string \"@Interface\\AddOns\\!BugGrabber\\BugGrabber.lua\"]:519: in function <Interface\\AddOns\\!BugGrabber\\BugGrabber.lua:519>\n[string \"=[C]\"]: in function `Hide'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:574: in function `CompactRaidFrameManager_LockContainer'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:567: in function `CompactRaidFrameManager_UpdateContainerLockVisibility'\n[string \"@Interface\\AddOns\\Blizzard_CompactRaidFrames\\Blizzard_CompactRaidFrameManager.lua\"]:56: in function <...mpactRaidFrames\\Blizzard_CompactRaidFrameManager.lua:49>",
-			["session"] = 1111,
-			["counter"] = 43,
+			["session"] = 1113,
+			["counter"] = 44,
 		}, -- [15]
 	},
 }

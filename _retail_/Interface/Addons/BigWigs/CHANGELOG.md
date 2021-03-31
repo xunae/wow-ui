@@ -1,9 +1,10 @@
 # BigWigs
 
-## [v219.1](https://github.com/BigWigsMods/BigWigs/tree/v219.1) (2021-03-22)
-[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v219...v219.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
+## [v220.1](https://github.com/BigWigsMods/BigWigs/tree/v220.1) (2021-03-31)
+[Full Changelog](https://github.com/BigWigsMods/BigWigs/compare/v220...v220.1) [Previous Releases](https://github.com/BigWigsMods/BigWigs/releases)
 
-- Plugins/Sound: Comment out a cleanup check for now  
-- Update deDE (#1048)  
-- Update zhTW (#1046)  
-- Update zhCN (#1047)  
+- Bump version  
+- Plugins/BossBlock: Move audio stuff to a separate tab  
+- CastleNathria/InervaDarkvein: Simplify icon count logic  
+- CastleNathria/InervaDarkvein: Update options to display only 2 icons for Conjured Manifestations and 3 icons for Concentrated Anima  
+- CastleNathria/InervaDarkvein: Don't re-mark a previous wave Conjured Manifestation (only mark skull and cross each wave)  
