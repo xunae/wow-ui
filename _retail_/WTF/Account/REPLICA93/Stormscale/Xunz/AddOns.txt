@@ -19,3 +19,5 @@ Details_EncounterDetails: disabled
 Details_DataStorage: enabled
 Screen Overlay Enhanced: disabled
 ShadowedUnitFrames: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled

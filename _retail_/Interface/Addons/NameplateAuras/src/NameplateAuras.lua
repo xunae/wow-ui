@@ -10,7 +10,7 @@ local _, addonTable = ...;
 
 local buildTimestamp = "DEVELOPER COPY";
 --@non-debug@
-buildTimestamp = "90005.1-release";
+buildTimestamp = "90005.2-release";
 --@end-non-debug@
 
 local LBG_ShowOverlayGlow, LBG_HideOverlayGlow = NAuras_LibButtonGlow.ShowOverlayGlow, NAuras_LibButtonGlow.HideOverlayGlow;

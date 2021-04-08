@@ -1,0 +1,75 @@
+VER 3 010000000000002F " " "INV_MISC_QUESTIONMARK"
+#showtooltip Cleanse Spirit
+/cast [@mouseover,exists] Cleanse Spirit; Cleanse Spirit
+END
+VER 3 010000000000003E " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Ghost Wolf
+END
+VER 3 010000000000003D " " "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [mod:alt] Bind Elemental
+/cast [nomod] Hex
+END
+VER 3 010000000000002A " " "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [@arena1] Hex
+END
+VER 3 010000000000002B " " "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [@arena2] Hex
+END
+VER 3 010000000000002C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Hex
+/cast [@arena3] Hex
+END
+VER 3 0100000000000042 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast !Healing Rain
+END
+VER 3 010000000000001E " " "INV_MISC_QUESTIONMARK"
+#showtooltip Ancestral Swiftness
+/use Cataclysmic Gladiator's Emblem of Meditation
+/cast Blood Fury
+/cast Ancestral Swiftness
+/cast [@mouseover,exists] Greater Healing Wave; Greater Healing Wave
+/use Healthstone
+END
+VER 3 010000000000001F " " "INV_MISC_QUESTIONMARK"
+#showtooltip Spiritwalker's Grace
+/cast Spiritwalker's Grace
+/stopcasting
+END
+VER 3 010000000000003C " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/cast [modifier:shift] Wind Shear
+/cast [target=focus,harm] Wind Shear; [harm] Wind Shear
+END
+VER 3 0100000000000031 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/cast [@arena1] Wind Shear
+END
+VER 3 0100000000000032 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/cast [@arena2] Wind Shear
+END
+VER 3 0100000000000033 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Wind Shear
+/cast [@arena3] Wind Shear
+END
+VER 3 0100000000000046 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [modifier:shift,@player] Cleanse Spirit
+/cast Purge
+END
+VER 3 0100000000000048 " " "INV_MISC_QUESTIONMARK"
+#showtooltip Elemental Mastery
+/cast Elemental Mastery
+/cast Blood Fury
+/use 13
+/cast Lava Burst
+END
+VER 3 0100000000000049 " " "INV_MISC_QUESTIONMARK"
+#showtooltip
+/use 13
+END

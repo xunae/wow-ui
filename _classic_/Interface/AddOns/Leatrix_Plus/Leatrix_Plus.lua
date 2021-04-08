@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 1.13.98 (25th March 2021)
+-- 	Leatrix Plus 1.13.100 (8th April 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "1.13.98"
+	LeaPlusLC["AddonVer"] = "1.13.100"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -2452,9 +2452,9 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["NoClassBar"] == "On" then
-			local stancebar = CreateFrame("FRAME")
-			stancebar:Hide();
-			UIPARENT_MANAGED_FRAME_POSITIONS["StanceBarFrame"] = nil;
+			local stancebar = CreateFrame("FRAME", nil, UIParent)
+			stancebar:Hide()
+			StanceBarFrame:UnregisterAllEvents()
 			StanceBarFrame:SetParent(stancebar)
 		end
 
@@ -4663,7 +4663,7 @@
 			UIWidgetTopCenterContainerFrame:SetScale(LeaPlusLC["WidgetScale"])
 
 			-- Create drag frame
-			local dragframe = CreateFrame("FRAME", nil, nil, LeaPlusLC.BackdropTemplate)
+			local dragframe = CreateFrame("FRAME")
 			dragframe:SetPoint("CENTER", topCenterHolder, "CENTER", 0, 1)
 			dragframe:SetBackdropColor(0.0, 0.5, 1.0)
 			dragframe:SetBackdrop({edgeFile = "Interface/Tooltips/UI-Tooltip-Border", tile = false, tileSize = 0, edgeSize = 16, insets = { left = 0, right = 0, top = 0, bottom = 0}})
@@ -9106,7 +9106,7 @@
 				-- Help panel
 				if not LeaPlusLC.HelpFrame then
 					local frame = CreateFrame("FRAME", nil, UIParent)
-					frame:SetSize(570, 360); frame:SetFrameStrata("FULLSCREEN_DIALOG"); frame:SetFrameLevel(100)
+					frame:SetSize(570, 340); frame:SetFrameStrata("FULLSCREEN_DIALOG"); frame:SetFrameLevel(100)
 					frame.tex = frame:CreateTexture(nil, "BACKGROUND"); frame.tex:SetAllPoints(); frame.tex:SetColorTexture(0.05, 0.05, 0.05, 0.9)
 					frame.close = CreateFrame("Button", nil, frame, "UIPanelCloseButton"); frame.close:SetSize(30, 30); frame.close:SetPoint("TOPRIGHT", 0, 0); frame.close:SetScript("OnClick", function() frame:Hide() end)
 					frame:ClearAllPoints(); frame:SetPoint("CENTER", UIParent, "CENTER", 0, 0)
@@ -9118,7 +9118,7 @@
 					frame:SetScript("OnDragStart", frame.StartMoving)
 					frame:SetScript("OnDragStop", function() frame:StopMovingOrSizing() frame:SetUserPlaced(false) end)
 					frame:Hide()
-					LeaPlusLC:CreateBar("HelpPanelMainTexture", frame, 570, 360, "TOPRIGHT", 0.7, 0.7, 0.7, 0.7,  "Interface\\ACHIEVEMENTFRAME\\UI-GuildAchievement-Parchment-Horizontal-Desaturated.png")
+					LeaPlusLC:CreateBar("HelpPanelMainTexture", frame, 570, 340, "TOPRIGHT", 0.7, 0.7, 0.7, 0.7,  "Interface\\ACHIEVEMENTFRAME\\UI-GuildAchievement-Parchment-Horizontal-Desaturated.png")
 					-- Panel contents
 					local col1, col2, color1 = 10, 120, "|cffffffaa"
 					LeaPlusLC:MakeTx(frame, "Leatrix Plus Help", col1, -10)
@@ -9144,16 +9144,14 @@
 					LeaPlusLC:MakeWD(frame, "Play a movie by its ID.", col2, -210)
 					LeaPlusLC:MakeWD(frame, color1 .. "/ltp marker", col1, -230)
 					LeaPlusLC:MakeWD(frame, "Block target markers (toggle) (requires assistant or leader in raid).", col2, -230)
-					LeaPlusLC:MakeWD(frame, color1 .. "/ltp af", col1, -250)
-					LeaPlusLC:MakeWD(frame, "Follow your target persistently (toggle).", col2, -250)
-					LeaPlusLC:MakeWD(frame, color1 .. "/ltp rsnd", col1, -270)
-					LeaPlusLC:MakeWD(frame, "Restart the sound system.", col2, -270)
-					LeaPlusLC:MakeWD(frame, color1 .. "/ltp ra", col1, -290)
-					LeaPlusLC:MakeWD(frame, "Announce target in General chat channel (useful for rares).", col2, -290)
-					LeaPlusLC:MakeWD(frame, color1 .. "/ltp con", col1, -310)
-					LeaPlusLC:MakeWD(frame, "Launch the developer console with a large font.", col2, -310)
-					LeaPlusLC:MakeWD(frame, color1 .. "/rl", col1, -330)
-					LeaPlusLC:MakeWD(frame, "Reload the UI.", col2, -330)
+					LeaPlusLC:MakeWD(frame, color1 .. "/ltp rsnd", col1, -250)
+					LeaPlusLC:MakeWD(frame, "Restart the sound system.", col2, -250)
+					LeaPlusLC:MakeWD(frame, color1 .. "/ltp ra", col1, -270)
+					LeaPlusLC:MakeWD(frame, "Announce target in General chat channel (useful for rares).", col2, -270)
+					LeaPlusLC:MakeWD(frame, color1 .. "/ltp con", col1, -290)
+					LeaPlusLC:MakeWD(frame, "Launch the developer console with a large font.", col2, -290)
+					LeaPlusLC:MakeWD(frame, color1 .. "/rl", col1, -310)
+					LeaPlusLC:MakeWD(frame, "Reload the UI.", col2, -310)
 					LeaPlusLC.HelpFrame = frame
 					_G["LeaPlusGlobalHelpPanel"] = frame
 					table.insert(UISpecialFrames, "LeaPlusGlobalHelpPanel")

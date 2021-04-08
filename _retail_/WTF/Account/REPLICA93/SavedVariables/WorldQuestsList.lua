@@ -1,31 +1,30 @@
 
 VWQL = {
 	["Xñ-Draenor"] = {
-		["VERSION"] = 100,
+		["Filter"] = 63,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 			[59789] = true,
 			[60337] = true,
 			[58605] = true,
-			[60929] = true,
-			[61060] = true,
 			[59642] = true,
 			[59680] = true,
+			[61667] = true,
+			[61060] = true,
 			[59718] = true,
 			[61946] = true,
-			[57328] = true,
-			[59585] = true,
-			[58490] = true,
 			[61783] = true,
+			[58490] = true,
+			[59585] = true,
+			[57328] = true,
 			[61866] = true,
-			[61667] = true,
+			[60929] = true,
 		},
-		["Filter"] = 63,
+		["VERSION"] = 100,
 	},
 	["Mktja-Draenor"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["VERSION"] = 96,
 		["Quests"] = {
 			[58505] = true,
@@ -75,80 +74,89 @@ VWQL = {
 			[44121] = true,
 			[52892] = true,
 			[51626] = true,
-			[52937] = true,
+			[51806] = true,
 			[61540] = true,
 			[51892] = true,
 			[51642] = true,
-			[50636] = true,
+			[52163] = true,
 			[54190] = true,
 			[61885] = true,
-			[58747] = true,
+			[51000] = true,
 			[50519] = true,
 			[51920] = true,
 			[52064] = true,
 			[52309] = true,
 			[42788] = true,
-			[51175] = true,
-			[50873] = true,
+			[55343] = true,
+			[51608] = true,
 			[43943] = true,
 			[54615] = true,
-			[51429] = true,
+			[49068] = true,
 			[52464] = true,
 			[52849] = true,
 			[56139] = true,
-			[50634] = true,
-			[50845] = true,
+			[54545] = true,
+			[58084] = true,
 			[51198] = true,
 			[59703] = true,
 			[52873] = true,
-			[58084] = true,
-			[54545] = true,
+			[50845] = true,
+			[50634] = true,
 			[51742] = true,
-			[49068] = true,
-			[51608] = true,
-			[55343] = true,
+			[51429] = true,
+			[50873] = true,
+			[51175] = true,
 			[58743] = true,
-			[51000] = true,
+			[58747] = true,
 			[51639] = true,
-			[52163] = true,
-			[51806] = true,
+			[50636] = true,
+			[52937] = true,
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Scale"] = 0.8,
 	["Xuna-ArenaChampions-EU"] = {
-		["Filter"] = 63,
+		["VERSION"] = 98,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 98,
+		["Filter"] = 63,
+	},
+	["Nakolx-Stormscale"] = {
+		["VERSION"] = 100,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["Filter"] = 63,
 	},
 	["Xunamonk-ArenaChampions-EU"] = {
-		["Filter"] = 63,
+		["VERSION"] = 98,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 98,
+		["Filter"] = 63,
 	},
 	["VERSION"] = 100,
 	["DisableIconsGeneral"] = false,
 	["Xunapala-ArenaChampions-EU"] = {
-		["VERSION"] = 98,
+		["Filter"] = 63,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["VERSION"] = 98,
 	},
 	["Mktja-Stormreaver"] = {
-		["Filter"] = 63,
+		["VERSION"] = 96,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 96,
+		["Filter"] = 63,
 	},
 	["AzeriteFormat"] = 20,
 	["Xuna-Stormscale"] = {
@@ -156,10 +164,7 @@ VWQL = {
 		["HideMap"] = true,
 		["VERSION"] = 100,
 		["Quests"] = {
-			[50695] = true,
 			[45379] = true,
-			[61411] = true,
-			[58221] = true,
 			[43943] = true,
 		},
 		["FilterType"] = {
@@ -172,63 +177,59 @@ VWQL = {
 	["DisableIconsGeneralMap947"] = true,
 	["DisableLFG_Popup"] = true,
 	["Xunaj-Draenor"] = {
-		["Filter"] = 63,
+		["VERSION"] = 100,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 100,
+		["Filter"] = 63,
 	},
 	["Xûñá-Ravencrest"] = {
-		["Filter"] = 63,
+		["VERSION"] = 98,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["VERSION"] = 98,
+		["Filter"] = 63,
 	},
 	["Xûñä-Stormscale"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["VERSION"] = 100,
 		["Quests"] = {
 			[61411] = true,
 			[58221] = true,
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Arrow_Point2"] = "CENTER",
 	["Xunan-ArenaChampions-EU"] = {
-		["VERSION"] = 98,
+		["Filter"] = 63,
 		["FilterType"] = {
 		},
 		["Quests"] = {
 		},
-		["Filter"] = 63,
+		["VERSION"] = 98,
 	},
 	["DisableRewardIcons"] = false,
 	["DisableArrow"] = true,
 	["DisableShellGame"] = true,
 	["Wñä-Stormscale"] = {
-		["FilterType"] = {
-		},
+		["Filter"] = 63,
 		["VERSION"] = 100,
 		["Quests"] = {
-			[60649] = true,
 			[61303] = true,
 		},
-		["Filter"] = 63,
+		["FilterType"] = {
+		},
 	},
 	["Arrow_PointX"] = 8.666380882263184,
 	["Ignore"] = {
 	},
-	["OppositeContinentNazjatar"] = false,
-	["SortPrio"] = {
-	},
-	["ReverseSort"] = false,
-	["Arrow_Point1"] = "CENTER",
+	["HideLegion"] = true,
+	["Sort"] = 5,
 	["Xunae-Stormreaver"] = {
-		["Filter"] = 63,
+		["VERSION"] = 96,
 		["FilterType"] = {
 		},
 		["Quests"] = {
@@ -239,28 +240,39 @@ VWQL = {
 			[58490] = true,
 			[60786] = true,
 			[43985] = true,
-			[45379] = true,
+			[60657] = true,
 			[58705] = true,
-			[60564] = true,
+			[59789] = true,
 			[58437] = true,
-			[61605] = true,
+			[60842] = true,
 			[61787] = true,
 			[59680] = true,
-			[57205] = true,
+			[48959] = true,
 			[61883] = true,
 			[61667] = true,
 			[59808] = true,
-			[48959] = true,
+			[57205] = true,
 			[61949] = true,
 			[57328] = true,
 			[58975] = true,
-			[60842] = true,
-			[59789] = true,
+			[61605] = true,
+			[60564] = true,
 			[43943] = true,
-			[60657] = true,
+			[45379] = true,
 		},
-		["VERSION"] = 96,
+		["Filter"] = 63,
 	},
-	["Sort"] = 5,
-	["HideLegion"] = true,
+	["Arrow_Point1"] = "CENTER",
+	["ReverseSort"] = false,
+	["SortPrio"] = {
+	},
+	["OppositeContinentNazjatar"] = false,
+	["Xunz-Stormscale"] = {
+		["Filter"] = 63,
+		["FilterType"] = {
+		},
+		["Quests"] = {
+		},
+		["VERSION"] = 100,
+	},
 }

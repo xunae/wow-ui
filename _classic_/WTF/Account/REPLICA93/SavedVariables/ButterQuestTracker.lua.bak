@@ -1,0 +1,20 @@
+
+ButterQuestTrackerConfig = {
+	["char"] = {
+		["Skraum - Gehennas"] = {
+			["QUESTS_LAST_UPDATED"] = {
+				[3376] = 1617874139,
+				[757] = 1617874428,
+				[780] = 1617874604,
+				[781] = 1617874334,
+			},
+		},
+	},
+	["profileKeys"] = {
+		["Skraum - Gehennas"] = "Default",
+	},
+	["global"] = {
+		["PositionY"] = -230.666564941406,
+		["PositionX"] = -115.33349609375,
+	},
+}
