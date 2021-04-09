@@ -72,7 +72,7 @@ Gladius2DB = {
 				["arena1"] = 503.4669020334914,
 			},
 		},
-		["Drmscp - Draenor"] = {
+		["Xunan - Arena Champions - EU"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -80,17 +80,17 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Mktja - Stormreaver"] = {
+		["Xunz - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 			["y"] = {
-				["arena1"] = 460.8001045227065,
+				["arena1"] = 537.6001056671157,
 			},
 			["x"] = {
-				["arena1"] = 1014.400405740744,
+				["arena1"] = 1049.600308609013,
 			},
 		},
-		["Xunan - Arena Champions - EU"] = {
+		["Drmscp - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -147,7 +147,7 @@ Gladius2DB = {
 				["g"] = 1,
 				["b"] = 1,
 			},
-			["castTextSize"] = 12,
+			["targetBarAnchor"] = "TOPRIGHT",
 			["healthBarTexture"] = "Blizzard Raid Bar",
 			["trinketGloss"] = false,
 			["dispellFrameLevel"] = 5,
@@ -358,21 +358,21 @@ Gladius2DB = {
 			["y"] = {
 				["arena1"] = 344.3566945844395,
 			},
-			["targetBarAnchor"] = "TOPRIGHT",
+			["castTextSize"] = 12,
+		},
+		["Mktja - Stormreaver"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 460.8001045227065,
+			},
+			["x"] = {
+				["arena1"] = 1014.400405740744,
+			},
 		},
 		["Wñä - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
-		},
-		["Xunz - Stormscale"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["y"] = {
-				["arena1"] = 537.6001056671157,
-			},
-			["x"] = {
-				["arena1"] = 1049.600308609013,
-			},
 		},
 	},
 }

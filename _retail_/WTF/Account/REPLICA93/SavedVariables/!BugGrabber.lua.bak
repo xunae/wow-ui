@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1138,
+	["session"] = 1140,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -11,5 +11,13 @@ BugGrabberDB = {
 			["session"] = 1128,
 			["counter"] = 2,
 		}, -- [1]
+		{
+			["message"] = "Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus-9.0.23.lua:5271: Usage: HookScript(object, method, [handler]): 'object' - nil or table expected got string",
+			["time"] = "2021/04/09 12:20:45",
+			["locals"] = "(*temporary) = \"Usage: HookScript(object, method, [handler]): 'object' - nil or table expected got string\"\n",
+			["stack"] = "[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\BigDebuffs\\Libs\\AceHook-3.0\\AceHook-3.0-9.lua\"]:130: in function <...e\\AddOns\\BigDebuffs\\Libs\\AceHook-3.0\\AceHook-3.0.lua:118>\n[string \"@Interface\\AddOns\\BigDebuffs\\Libs\\AceHook-3.0\\AceHook-3.0-9.lua\"]:367: in function `HookScript'\n[string \"@Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus-9.0.23.lua\"]:5271: in function `HighlightTabs'\n[string \"@Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus-9.0.23.lua\"]:5290: in function `?'\n[string \"@Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus-9.0.23.lua\"]:8890: in function <Interface\\AddOns\\Leatrix_Plus\\Leatrix_Plus.lua:8438>",
+			["session"] = 1140,
+			["counter"] = 1,
+		}, -- [2]
 	},
 }

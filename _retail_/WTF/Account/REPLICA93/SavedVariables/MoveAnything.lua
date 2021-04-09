@@ -73,8 +73,8 @@ MADB = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
-						0.000152587890625, -- [4]
-						200.0000152587891, -- [5]
+						0.000180844907631974, -- [4]
+						230.0000762939453, -- [5]
 					},
 					["orgScale"] = 1,
 				},
@@ -283,8 +283,9 @@ MADB = {
 			},
 		},
 	},
-	["playSound"] = false,
 	["closeGUIOnEscape"] = false,
+	["playSound"] = false,
+	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,

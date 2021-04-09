@@ -62,16 +62,6 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Mktja - Stormreaver"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-			["x"] = {
-				["arena1"] = 1014.400405740744,
-			},
-			["y"] = {
-				["arena1"] = 460.8001045227065,
-			},
-		},
 		["Xunz - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
@@ -82,15 +72,25 @@ Gladius2DB = {
 				["arena1"] = 537.6001056671157,
 			},
 		},
-		["Xunae - Stormreaver"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
-		},
 		["Wñä - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Xunan - Arena Champions - EU"] = {
+		["Xunae - Stormreaver"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+		},
+		["Mktja - Stormreaver"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["x"] = {
+				["arena1"] = 1014.400405740744,
+			},
+			["y"] = {
+				["arena1"] = 460.8001045227065,
+			},
+		},
+		["Drmscp - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -122,7 +122,7 @@ Gladius2DB = {
 			["classIconGloss"] = false,
 			["trinketSize"] = 40,
 			["x"] = {
-				["arena1"] = 933.3334404627385,
+				["arena1"] = 933.3335100015029,
 			},
 			["targetBarIconCrop"] = true,
 			["bottomMargin"] = 2,
@@ -147,7 +147,7 @@ Gladius2DB = {
 				["g"] = 1,
 				["r"] = 1,
 			},
-			["targetBarAnchor"] = "TOPRIGHT",
+			["castTextSize"] = 12,
 			["drCategories"] = {
 				["taunt"] = false,
 				["ctrlstun"] = true,
@@ -263,7 +263,7 @@ Gladius2DB = {
 				["Burning Determination"] = 0,
 				["Master of the Elements"] = false,
 			},
-			["castTextSize"] = 12,
+			["targetBarAnchor"] = "TOPRIGHT",
 			["healthBarTexture"] = "Blizzard Raid Bar",
 			["drTrackerSize"] = 36,
 			["drTrackerCooldown"] = true,
@@ -356,11 +356,11 @@ Gladius2DB = {
 			["dispellGloss"] = false,
 			["backgroundPadding"] = 2,
 			["y"] = {
-				["arena1"] = 344.3566689278669,
+				["arena1"] = 344.3566945844395,
 			},
 			["castBarHeight"] = 25,
 		},
-		["Drmscp - Draenor"] = {
+		["Xunan - Arena Champions - EU"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},

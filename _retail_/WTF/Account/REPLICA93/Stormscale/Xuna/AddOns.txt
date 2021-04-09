@@ -21,7 +21,7 @@ BigWigs_Nyalotha: enabled
 BigWigs_EternalPalace: enabled
 BigWigs_Uldir: enabled
 !BlizzardRaidFramesFix: enabled
-ColorPickerPlus: enabled
+ColorPickerPlus: disabled
 Details: enabled
 Details_EncounterDetails: disabled
 Details_RaidCheck: disabled
