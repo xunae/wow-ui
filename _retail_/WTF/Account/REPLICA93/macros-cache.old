@@ -46,7 +46,7 @@ END
 VER 3 000000000000015A "HEX" "INV_MISC_QUESTIONMARK"
 #showtooltip Hex
 /cast [@player,mod:alt,nocombat,nomounted]Water Walking
-/click [mod:alt,nocombat]MultiBarLeftButton1
+/click [mod:alt,nocombat,nomounted]MultiBarLeftButton1
 /stopmacro [nocombat,mod:alt]
 /use [nomod]Hex
 END

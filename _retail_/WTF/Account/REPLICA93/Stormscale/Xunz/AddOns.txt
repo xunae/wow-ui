@@ -21,3 +21,5 @@ Screen Overlay Enhanced: disabled
 ShadowedUnitFrames: disabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
+Quartz: disabled
+WorldQuestsList: enabled

@@ -21,5 +21,6 @@ WeakAurasCompanion: disabled
 XunaTweaks: enabled
 Questie: disabled
 Guidelime: enabled
-SpeedyAutoLoot: enabled
-ButterQuestTracker: disabled
+SpeedyAutoLoot: disabled
+ButterQuestTracker: enabled
+ClassicCodex: enabled

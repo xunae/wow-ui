@@ -6,12 +6,12 @@ MasqueDB = {
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
-		["Xunaj - Draenor"] = "Default",
-		["Xñ - Draenor"] = "Default",
 		["Nakolx - Stormscale"] = "Default",
+		["Xunz - Stormscale"] = "Default",
+		["Xunaj - Draenor"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Xunz - Stormscale"] = "Default",
+		["Xñ - Draenor"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {

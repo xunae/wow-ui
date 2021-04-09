@@ -5,6 +5,684 @@ _detalhes_database = {
 	["mythic_dungeon_id"] = 243,
 	["tabela_historico"] = {
 		["tabelas"] = {
+			{
+				{
+					["combatId"] = 1,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["totalabsorbed"] = 0.001663,
+							["damage_from"] = {
+							},
+							["targets"] = {
+								["Training Dummy"] = 167158,
+							},
+							["pets"] = {
+							},
+							["aID"] = "2073-095F567D",
+							["friendlyfire"] = {
+							},
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 167158.001663,
+							["colocacao"] = 1,
+							["timeMachine"] = 2,
+							["dps_started"] = true,
+							["total"] = 167158.001663,
+							["classe"] = "SHAMAN",
+							["on_hold"] = true,
+							["nome"] = "Xuna",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+									[188443] = {
+										["c_amt"] = 1,
+										["b_amt"] = 0,
+										["c_dmg"] = 4645,
+										["g_amt"] = 0,
+										["n_max"] = 1923,
+										["targets"] = {
+											["Training Dummy"] = 17735,
+										},
+										["n_dmg"] = 13090,
+										["n_min"] = 1834,
+										["g_dmg"] = 0,
+										["counter"] = 8,
+										["total"] = 17735,
+										["c_max"] = 4645,
+										["id"] = 188443,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 4645,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 7,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[8042] = {
+										["c_amt"] = 0,
+										["b_amt"] = 0,
+										["c_dmg"] = 0,
+										["g_amt"] = 0,
+										["n_max"] = 8028,
+										["targets"] = {
+											["Training Dummy"] = 14871,
+										},
+										["n_dmg"] = 14871,
+										["n_min"] = 6843,
+										["g_dmg"] = 0,
+										["counter"] = 2,
+										["total"] = 14871,
+										["c_max"] = 0,
+										["id"] = 8042,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 0,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 2,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[188389] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 4978,
+										["g_amt"] = 0,
+										["n_max"] = 488,
+										["targets"] = {
+											["Training Dummy"] = 8946,
+										},
+										["n_dmg"] = 3968,
+										["n_min"] = 275,
+										["g_dmg"] = 0,
+										["counter"] = 19,
+										["total"] = 8946,
+										["c_max"] = 1192,
+										["id"] = 188389,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 714,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 13,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[45297] = {
+										["c_amt"] = 6,
+										["b_amt"] = 0,
+										["c_dmg"] = 24150,
+										["g_amt"] = 0,
+										["n_max"] = 1633,
+										["targets"] = {
+											["Training Dummy"] = 65629,
+										},
+										["n_dmg"] = 41479,
+										["n_min"] = 1560,
+										["g_dmg"] = 0,
+										["counter"] = 32,
+										["total"] = 65629,
+										["c_max"] = 4049,
+										["id"] = 45297,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 4004,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 26,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[285452] = {
+										["c_amt"] = 4,
+										["b_amt"] = 0,
+										["c_dmg"] = 24145,
+										["g_amt"] = 0,
+										["n_max"] = 0,
+										["targets"] = {
+											["Training Dummy"] = 24145,
+										},
+										["n_dmg"] = 0,
+										["n_min"] = 0,
+										["g_dmg"] = 0,
+										["counter"] = 4,
+										["total"] = 24145,
+										["c_max"] = 6109,
+										["id"] = 285452,
+										["r_dmg"] = 0,
+										["spellschool"] = 4,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 5952,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 0,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+									[328928] = {
+										["c_amt"] = 3,
+										["b_amt"] = 0,
+										["c_dmg"] = 23314,
+										["g_amt"] = 0,
+										["n_max"] = 3160,
+										["targets"] = {
+											["Training Dummy"] = 35832,
+										},
+										["n_dmg"] = 12518,
+										["n_min"] = 3099,
+										["g_dmg"] = 0,
+										["counter"] = 7,
+										["total"] = 35832,
+										["c_max"] = 7932,
+										["id"] = 328928,
+										["r_dmg"] = 0,
+										["spellschool"] = 8,
+										["extra"] = {
+										},
+										["a_dmg"] = 0,
+										["c_min"] = 7678,
+										["successful_casted"] = 0,
+										["a_amt"] = 0,
+										["n_amt"] = 4,
+										["b_dmg"] = 0,
+										["r_amt"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["spec"] = 262,
+							["serial"] = "Player-2073-095F567D",
+							["last_dps"] = 5765.85842719974,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 0.001663,
+							["start_time"] = 1617958278,
+							["delay"] = 1617958312,
+							["last_event"] = 1617958312,
+						}, -- [1]
+						{
+							["flag_original"] = 68136,
+							["totalabsorbed"] = 0.007982,
+							["friendlyfire"] = {
+							},
+							["damage_from"] = {
+								["Xuna"] = true,
+							},
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["fight_component"] = true,
+							["on_hold"] = false,
+							["friendlyfire_total"] = 0,
+							["raid_targets"] = {
+							},
+							["total_without_pet"] = 0.007982,
+							["aID"] = "153285",
+							["dps_started"] = false,
+							["total"] = 0.007982,
+							["classe"] = "UNKNOW",
+							["serial"] = "Creature-0-1467-1-10257-153285-00036DC1A3",
+							["nome"] = "Training Dummy",
+							["spells"] = {
+								["tipo"] = 2,
+								["_ActorTable"] = {
+								},
+							},
+							["end_time"] = 1617958307,
+							["last_dps"] = 0,
+							["custom"] = 0,
+							["tipo"] = 1,
+							["damage_taken"] = 167158.007982,
+							["start_time"] = 1617958307,
+							["delay"] = 0,
+							["last_event"] = 0,
+						}, -- [2]
+					},
+				}, -- [1]
+				{
+					["combatId"] = 1,
+					["tipo"] = 3,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1297,
+							["targets_overheal"] = {
+								["Xuna"] = 21500,
+							},
+							["pets"] = {
+							},
+							["iniciar_hps"] = false,
+							["classe"] = "SHAMAN",
+							["totalover"] = 21500.004124,
+							["total_without_pet"] = 0.004124,
+							["total"] = 0.004124,
+							["targets_absorbs"] = {
+							},
+							["heal_enemy"] = {
+							},
+							["on_hold"] = false,
+							["serial"] = "Player-2073-095F567D",
+							["totalabsorb"] = 0.004124,
+							["last_hps"] = 0,
+							["targets"] = {
+							},
+							["totalover_without_pet"] = 0.004124,
+							["healing_taken"] = 0.004124,
+							["end_time"] = 1617958307,
+							["healing_from"] = {
+							},
+							["heal_enemy_amt"] = 0,
+							["nome"] = "Xuna",
+							["spells"] = {
+								["tipo"] = 3,
+								["_ActorTable"] = {
+									[328930] = {
+										["c_amt"] = 0,
+										["totalabsorb"] = 0,
+										["targets_overheal"] = {
+											["Xuna"] = 21500,
+										},
+										["n_max"] = 0,
+										["targets"] = {
+											["Xuna"] = 0,
+										},
+										["n_min"] = 0,
+										["counter"] = 1,
+										["overheal"] = 21500,
+										["total"] = 0,
+										["c_max"] = 0,
+										["id"] = 328930,
+										["targets_absorbs"] = {
+										},
+										["c_min"] = 0,
+										["c_curado"] = 0,
+										["n_curado"] = 0,
+										["totaldenied"] = 0,
+										["n_amt"] = 1,
+										["absorbed"] = 0,
+									},
+								},
+							},
+							["grupo"] = true,
+							["start_time"] = 1617958303,
+							["spec"] = 262,
+							["custom"] = 0,
+							["tipo"] = 2,
+							["aID"] = "2073-095F567D",
+							["totaldenied"] = 0.004124,
+							["delay"] = 0,
+							["last_event"] = 1617958303,
+						}, -- [1]
+					},
+				}, -- [2]
+				{
+					["combatId"] = 1,
+					["tipo"] = 7,
+					["_ActorTable"] = {
+						{
+							["received"] = 0.001246,
+							["resource"] = 160.001246,
+							["targets"] = {
+							},
+							["pets"] = {
+							},
+							["powertype"] = 0,
+							["classe"] = "SHAMAN",
+							["passiveover"] = 0.001246,
+							["total"] = 0.001246,
+							["resource_type"] = 11,
+							["nome"] = "Xuna",
+							["spells"] = {
+								["tipo"] = 7,
+								["_ActorTable"] = {
+								},
+							},
+							["grupo"] = true,
+							["spec"] = 262,
+							["flag_original"] = 1297,
+							["alternatepower"] = 0.001246,
+							["last_event"] = 1617958295,
+							["aID"] = "2073-095F567D",
+							["tipo"] = 3,
+							["serial"] = "Player-2073-095F567D",
+							["totalover"] = 0.001246,
+						}, -- [1]
+					},
+				}, -- [3]
+				{
+					["combatId"] = 1,
+					["tipo"] = 9,
+					["_ActorTable"] = {
+						{
+							["flag_original"] = 1047,
+							["debuff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[188389] = {
+										["activedamt"] = 1,
+										["id"] = 188389,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[325437] = {
+										["activedamt"] = 0,
+										["id"] = 325437,
+										["targets"] = {
+										},
+										["uptime"] = 22,
+										["appliedamt"] = 10,
+										["refreshamt"] = 49,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["buff_uptime"] = 209,
+							["aID"] = "2073-095F567D",
+							["buff_uptime_spells"] = {
+								["tipo"] = 9,
+								["_ActorTable"] = {
+									[191634] = {
+										["activedamt"] = 1,
+										["id"] = 191634,
+										["targets"] = {
+										},
+										["uptime"] = 7,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[325443] = {
+										["activedamt"] = 1,
+										["id"] = 325443,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[77762] = {
+										["activedamt"] = 1,
+										["id"] = 77762,
+										["targets"] = {
+										},
+										["uptime"] = 2,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[343594] = {
+										["activedamt"] = 1,
+										["id"] = 343594,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[328933] = {
+										["activedamt"] = 1,
+										["id"] = 328933,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[328923] = {
+										["activedamt"] = 1,
+										["id"] = 328923,
+										["targets"] = {
+										},
+										["uptime"] = 4,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[33697] = {
+										["activedamt"] = 1,
+										["id"] = 33697,
+										["targets"] = {
+										},
+										["uptime"] = 10,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[72968] = {
+										["activedamt"] = 1,
+										["id"] = 72968,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[192106] = {
+										["activedamt"] = 1,
+										["id"] = 192106,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[260734] = {
+										["activedamt"] = 3,
+										["id"] = 260734,
+										["targets"] = {
+										},
+										["uptime"] = 6,
+										["appliedamt"] = 3,
+										["refreshamt"] = 1,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[546] = {
+										["activedamt"] = 1,
+										["id"] = 546,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+									[335148] = {
+										["activedamt"] = 1,
+										["id"] = 335148,
+										["targets"] = {
+										},
+										["uptime"] = 29,
+										["appliedamt"] = 1,
+										["refreshamt"] = 0,
+										["actived"] = false,
+										["counter"] = 0,
+									},
+								},
+							},
+							["debuff_uptime"] = 51,
+							["nome"] = "Xuna",
+							["spec"] = 262,
+							["grupo"] = true,
+							["spell_cast"] = {
+								[328930] = 1,
+								[191634] = 1,
+								[328923] = 1,
+								[188443] = 2,
+								[188389] = 1,
+								[51505] = 4,
+								[192106] = 1,
+								[8042] = 2,
+								[33697] = 1,
+							},
+							["debuff_uptime_targets"] = {
+							},
+							["buff_uptime_targets"] = {
+							},
+							["last_event"] = 1617958307,
+							["pets"] = {
+							},
+							["classe"] = "SHAMAN",
+							["serial"] = "Player-2073-095F567D",
+							["tipo"] = 4,
+						}, -- [1]
+					},
+				}, -- [4]
+				{
+					["combatId"] = 1,
+					["tipo"] = 2,
+					["_ActorTable"] = {
+					},
+				}, -- [5]
+				["raid_roster"] = {
+					["Xuna"] = true,
+				},
+				["raid_roster_indexed"] = {
+					"Xuna", -- [1]
+				},
+				["CombatStartedAt"] = 175634.342,
+				["overall_added"] = true,
+				["last_events_tables"] = {
+				},
+				["alternate_power"] = {
+				},
+				["combat_counter"] = 10287,
+				["playing_solo"] = true,
+				["totals"] = {
+					167157.988454, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = -0.008077,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+					["frags_total"] = 0,
+					["voidzone_damage"] = 0,
+				},
+				["player_last_events"] = {
+				},
+				["frags_need_refresh"] = false,
+				["instance_type"] = "none",
+				["data_fim"] = "11:51:48",
+				["pvp"] = true,
+				["cleu_timeline"] = {
+				},
+				["enemy"] = "Training Dummy",
+				["TotalElapsedCombatTime"] = 28.97800000000279,
+				["CombatEndedAt"] = 175663.32,
+				["aura_timeline"] = {
+				},
+				["__call"] = {
+				},
+				["data_inicio"] = "11:51:19",
+				["end_time"] = 175663.32,
+				["combat_id"] = 1,
+				["tempo_start"] = 1617958278,
+				["frags"] = {
+				},
+				["cleu_events"] = {
+					["n"] = 1,
+				},
+				["totals_grupo"] = {
+					167158, -- [1]
+					0, -- [2]
+					{
+						0, -- [1]
+						[0] = 0,
+						["alternatepower"] = 0,
+						[3] = 0,
+						[6] = 0,
+					}, -- [3]
+					{
+						["buff_uptime"] = 0,
+						["ress"] = 0,
+						["debuff_uptime"] = 0,
+						["cooldowns_defensive"] = 0,
+						["interrupt"] = 0,
+						["dispell"] = 0,
+						["cc_break"] = 0,
+						["dead"] = 0,
+					}, -- [4]
+				},
+				["CombatSkillCache"] = {
+				},
+				["PhaseData"] = {
+					{
+						1, -- [1]
+						1, -- [2]
+					}, -- [1]
+					["heal_section"] = {
+					},
+					["heal"] = {
+						{
+							["Xuna"] = 0.004124,
+						}, -- [1]
+					},
+					["damage_section"] = {
+					},
+					["damage"] = {
+						{
+							["Xuna"] = 165808.001663,
+						}, -- [1]
+					},
+				},
+				["start_time"] = 175634.329,
+				["TimeData"] = {
+				},
+				["spells_cast_timeline"] = {
+				},
+			}, -- [1]
 		},
 	},
 	["ocd_tracker"] = {
@@ -87,7 +765,7 @@ _detalhes_database = {
 		["DETAILS_PLUGIN_TINY_THREAT"] = {
 			["updatespeed"] = 1,
 			["enabled"] = true,
-			["showamount"] = false,
+			["animate"] = false,
 			["useplayercolor"] = false,
 			["author"] = "Details! Team",
 			["useclasscolors"] = false,
@@ -96,7 +774,7 @@ _detalhes_database = {
 				1, -- [2]
 				1, -- [3]
 			},
-			["animate"] = false,
+			["showamount"] = false,
 		},
 		["DETAILS_PLUGIN_RAIDCHECK"] = {
 			["enabled"] = true,
@@ -167,7 +845,27 @@ _detalhes_database = {
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
 			["row_texture"] = "Details Serenity",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
+			["use_spark"] = true,
 			["main_frame_strata"] = "LOW",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 15,
+			["font_size"] = 12,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["author"] = "Details! Team",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -179,27 +877,7 @@ _detalhes_database = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 15,
-			["use_spark"] = true,
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["author"] = "Details! Team",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -28.9441528320313,
-			["font_size"] = 12,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
@@ -209,17 +887,20 @@ _detalhes_database = {
 			["point"] = "TOPLEFT",
 		},
 	},
-	["announce_prepots"] = {
-		["enabled"] = false,
-		["reverse"] = false,
-		["channel"] = "SELF",
-	},
-	["last_day"] = "08",
 	["benchmark_db"] = {
 		["frame"] = {
 		},
 	},
 	["cached_talents"] = {
+		["Player-2073-095F567D"] = {
+			19264, -- [1]
+			19259, -- [2]
+			23110, -- [3]
+			22322, -- [4]
+			22144, -- [5]
+			19265, -- [6]
+			22359, -- [7]
+		},
 	},
 	["cd_tracker"] = {
 		["enabled"] = false,
@@ -232,8 +913,14 @@ _detalhes_database = {
 		["pos"] = {
 		},
 	},
+	["last_encounter"] = "Gruul",
+	["announce_prepots"] = {
+		["enabled"] = false,
+		["reverse"] = false,
+		["channel"] = "SELF",
+	},
 	["character_data"] = {
-		["logons"] = 2144,
+		["logons"] = 2154,
 	},
 	["local_instances_config"] = {
 		{
@@ -258,10 +945,10 @@ _detalhes_database = {
 			["attribute"] = 1,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -425.7737197875977,
-					["x"] = 524.407958984375,
-					["w"] = 209.3332672119141,
-					["h"] = 95.60381317138672,
+					["y"] = -428.8648414611816,
+					["x"] = 520.333251953125,
+					["w"] = 216.6665344238281,
+					["h"] = 90.27045440673828,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -293,10 +980,10 @@ _detalhes_database = {
 			["attribute"] = 2,
 			["pos"] = {
 				["normal"] = {
-					["y"] = -425.7737197875977,
-					["x"] = 733.7410888671875,
-					["w"] = 209.3332672119141,
-					["h"] = 95.60381317138672,
+					["y"] = -428.8648414611816,
+					["x"] = 736.999755859375,
+					["w"] = 216.6665344238281,
+					["h"] = 90.27045440673828,
 				},
 				["solo"] = {
 					["y"] = 2,
@@ -341,7 +1028,7 @@ _detalhes_database = {
 			},
 		}, -- [3]
 	},
-	["combat_id"] = 0,
+	["combat_id"] = 1,
 	["savedStyles"] = {
 		{
 			["show_statusbar"] = false,
@@ -387,11 +1074,11 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["bg_alpha"] = 0,
+			["name"] = "Xuna1",
 			["stretch_button_side"] = 1,
 			["switch_all_roles_in_combat"] = false,
 			["switch_tank_in_combat"] = false,
-			["name"] = "Xuna1",
+			["version"] = 3,
 			["attribute_text"] = {
 				["show_timer"] = {
 					true, -- [1]
@@ -424,13 +1111,9 @@ _detalhes_database = {
 				["iconstoo"] = true,
 				["onenter"] = 1,
 			},
-			["libwindow"] = {
-				["y"] = 16.6663551330566,
-				["x"] = -59.552490234375,
-				["point"] = "BOTTOMRIGHT",
-			},
-			["plugins_grow_direction"] = 1,
 			["switch_damager"] = false,
+			["plugins_grow_direction"] = 1,
+			["desaturated_menu"] = false,
 			["strata"] = "MEDIUM",
 			["show_sidebars"] = true,
 			["window_scale"] = 1,
@@ -447,8 +1130,15 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["desaturated_menu"] = false,
-			["micro_displays_side"] = 2,
+			["libwindow"] = {
+				["y"] = 16.6663551330566,
+				["x"] = -59.552490234375,
+				["point"] = "BOTTOMRIGHT",
+			},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
@@ -459,10 +1149,10 @@ _detalhes_database = {
 				1, -- [2]
 			},
 			["ignore_mass_showhide"] = false,
-			["switch_damager_in_combat"] = false,
 			["grab_on_top"] = false,
-			["skin_custom"] = "",
 			["hide_icon"] = true,
+			["skin_custom"] = "",
+			["switch_damager_in_combat"] = false,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -474,9 +1164,13 @@ _detalhes_database = {
 			["hide_in_combat"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 0.999333739280701,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
 			},
 			["wallpaper"] = {
 				["overlay"] = {
@@ -508,15 +1202,8 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
-			},
-			["version"] = 3,
+			["micro_displays_side"] = 2,
+			["bg_alpha"] = 0,
 			["row_info"] = {
 				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -644,14 +1331,14 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["version"] = 3,
+			["bg_alpha"] = 0.199495792388916,
 			["stretch_button_side"] = 1,
 			["switch_all_roles_in_combat"] = false,
 			["instance_button_anchor"] = {
 				-27, -- [1]
 				1, -- [2]
 			},
-			["bg_alpha"] = 0.199495792388916,
+			["name"] = "asd",
 			["attribute_text"] = {
 				["show_timer"] = {
 					true, -- [1]
@@ -684,13 +1371,9 @@ _detalhes_database = {
 				["ignorebars"] = false,
 				["onleave"] = 1,
 			},
-			["libwindow"] = {
-				["y"] = 3.00010442733765,
-				["x"] = -259.000122070313,
-				["point"] = "BOTTOMRIGHT",
-			},
-			["ignore_mass_showhide"] = false,
 			["desaturated_menu"] = false,
+			["ignore_mass_showhide"] = false,
+			["switch_damager"] = false,
 			["strata"] = "MEDIUM",
 			["micro_displays_side"] = 2,
 			["window_scale"] = 1,
@@ -707,14 +1390,14 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
+			["libwindow"] = {
+				["y"] = 3.00010442733765,
+				["x"] = -259.000122070313,
+				["point"] = "BOTTOMRIGHT",
+			},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
 			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -724,10 +1407,10 @@ _detalhes_database = {
 			["bars_grow_direction"] = 1,
 			["plugins_grow_direction"] = 1,
 			["skin_custom"] = "",
-			["hide_icon"] = true,
 			["switch_damager_in_combat"] = false,
-			["switch_tank_in_combat"] = false,
 			["grab_on_top"] = false,
+			["switch_tank_in_combat"] = false,
+			["hide_icon"] = true,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -738,10 +1421,7 @@ _detalhes_database = {
 			["hide_in_combat"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
+			["show_sidebars"] = true,
 			["wallpaper"] = {
 				["enabled"] = false,
 				["width"] = 283.000183105469,
@@ -772,8 +1452,15 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["show_sidebars"] = true,
-			["name"] = "asd",
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+			},
+			["version"] = 3,
 			["row_info"] = {
 				["textR_outline"] = false,
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
@@ -947,13 +1634,9 @@ _detalhes_database = {
 					true, -- [3]
 				},
 			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
 			},
 			["menu_alpha"] = {
 				["enabled"] = false,
@@ -962,14 +1645,18 @@ _detalhes_database = {
 				["ignorebars"] = false,
 				["onleave"] = 1,
 			},
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
-			["plugins_grow_direction"] = 1,
-			["desaturated_menu"] = false,
-			["strata"] = "MEDIUM",
 			["micro_displays_side"] = 2,
+			["plugins_grow_direction"] = 1,
+			["switch_damager"] = false,
+			["strata"] = "MEDIUM",
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+			},
 			["window_scale"] = 1,
 			["switch_tank"] = false,
 			["hide_in_combat_alpha"] = 0,
@@ -984,7 +1671,11 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
+			["libwindow"] = {
+				["y"] = 3.00010442733765,
+				["x"] = -259.000122070313,
+				["point"] = "BOTTOMRIGHT",
+			},
 			["show_sidebars"] = true,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -994,10 +1685,10 @@ _detalhes_database = {
 			["bars_grow_direction"] = 1,
 			["switch_tank_in_combat"] = false,
 			["ignore_mass_showhide"] = false,
-			["hide_icon"] = true,
 			["switch_damager_in_combat"] = false,
-			["skin_custom"] = "",
 			["grab_on_top"] = false,
+			["skin_custom"] = "",
+			["hide_icon"] = true,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
@@ -1006,11 +1697,7 @@ _detalhes_database = {
 				-3, -- [2]
 			},
 			["hide_in_combat"] = false,
-			["libwindow"] = {
-				["y"] = 3.00010442733765,
-				["x"] = -259.000122070313,
-				["point"] = "BOTTOMRIGHT",
-			},
+			["desaturated_menu"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
 			["wallpaper"] = {
@@ -1049,11 +1736,7 @@ _detalhes_database = {
 				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
 				["textL_outline"] = false,
 				["textR_outline_small"] = true,
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					true, -- [3]
-				},
+				["textL_outline_small"] = true,
 				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
@@ -1134,7 +1817,11 @@ _detalhes_database = {
 				["start_after_icon"] = true,
 				["font_face"] = "Arial Narrow",
 				["texture_class_colors"] = true,
-				["textL_outline_small"] = true,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					true, -- [3]
+				},
 				["fast_ps_update"] = true,
 				["textR_separator"] = ",",
 				["height"] = 18,
@@ -1186,13 +1873,9 @@ _detalhes_database = {
 				["n_abilities"] = 3,
 				["n_enemies"] = 3,
 			},
-			["statusbar_info"] = {
-				["alpha"] = 0,
-				["overlay"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-				},
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
 			},
 			["total_bar"] = {
 				["enabled"] = false,
@@ -1220,7 +1903,7 @@ _detalhes_database = {
 					true, -- [2]
 					false, -- [3]
 				},
-				["textL_enable_custom_text"] = false,
+				["percent_type"] = 1,
 				["fixed_text_color"] = {
 					1, -- [1]
 					1, -- [2]
@@ -1291,24 +1974,21 @@ _detalhes_database = {
 				["textL_class_colors"] = false,
 				["alpha"] = 0.818182498216629,
 				["no_icon"] = false,
-				["percent_type"] = 1,
-				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
 				["fixed_texture_background_color"] = {
 					0, -- [1]
 					0, -- [2]
 					0, -- [3]
 					0.20959597826004, -- [4]
 				},
+				["textL_enable_custom_text"] = false,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["texture_background_file"] = "Interface\\TargetingFrame\\UI-StatusBar",
 				["fast_ps_update"] = true,
 				["textR_separator"] = "NONE",
 				["use_spec_icons"] = true,
 			},
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
+			["micro_displays_side"] = 2,
 			["menu_alpha"] = {
 				["enabled"] = false,
 				["onleave"] = 1,
@@ -1318,9 +1998,16 @@ _detalhes_database = {
 			},
 			["ignore_mass_showhide"] = false,
 			["switch_all_roles_after_wipe"] = false,
-			["desaturated_menu"] = false,
+			["switch_damager"] = false,
 			["strata"] = "MEDIUM",
-			["micro_displays_side"] = 2,
+			["statusbar_info"] = {
+				["alpha"] = 0,
+				["overlay"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+				},
+			},
 			["menu_anchor_down"] = {
 				16, -- [1]
 				-3, -- [2]
@@ -1338,7 +2025,11 @@ _detalhes_database = {
 				["space"] = -3,
 				["shadow"] = true,
 			},
-			["switch_damager"] = false,
+			["libwindow"] = {
+				["y"] = 25.5266342163086,
+				["x"] = -293.554443359375,
+				["point"] = "BOTTOMRIGHT",
+			},
 			["show_sidebars"] = false,
 			["row_show_animation"] = {
 				["anim"] = "Fade",
@@ -1348,20 +2039,16 @@ _detalhes_database = {
 			["window_scale"] = 1,
 			["bg_alpha"] = 0.199495792388916,
 			["bars_sort_direction"] = 1,
-			["grab_on_top"] = false,
 			["hide_icon"] = true,
-			["switch_tank_in_combat"] = false,
 			["switch_damager_in_combat"] = false,
+			["switch_tank_in_combat"] = false,
+			["grab_on_top"] = false,
 			["auto_current"] = true,
 			["toolbar_side"] = 1,
 			["bg_g"] = 0,
 			["bars_grow_direction"] = 1,
 			["hide_in_combat"] = false,
-			["libwindow"] = {
-				["y"] = 25.5266342163086,
-				["x"] = -293.554443359375,
-				["point"] = "BOTTOMRIGHT",
-			},
+			["desaturated_menu"] = false,
 			["hide_in_combat_type"] = 1,
 			["menu_icons_size"] = 1,
 			["wallpaper"] = {
@@ -1438,7 +2125,107 @@ _detalhes_database = {
 			},
 			["switch_all_roles_in_combat"] = false,
 			["clickthrough_toolbaricons"] = false,
-			["clickthrough_rows"] = false,
+			["row_info"] = {
+				["textR_outline"] = false,
+				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
+				["textL_outline"] = false,
+				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
+				["textL_outline_small"] = true,
+				["textL_enable_custom_text"] = false,
+				["fixed_text_color"] = {
+					1, -- [1]
+					1, -- [2]
+					1, -- [3]
+					1, -- [4]
+				},
+				["space"] = {
+					["right"] = 0,
+					["left"] = 0,
+					["between"] = 0,
+				},
+				["texture_background_class_color"] = false,
+				["start_after_icon"] = true,
+				["font_face_file"] = "Fonts\\ARIALN.TTF",
+				["backdrop"] = {
+					["enabled"] = false,
+					["size"] = 1,
+					["color"] = {
+						1, -- [1]
+						1, -- [2]
+						1, -- [3]
+						1, -- [4]
+					},
+					["texture"] = "Details BarBorder 3",
+				},
+				["font_size"] = 11,
+				["textL_translit_text"] = false,
+				["height"] = 16,
+				["texture_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+				["models"] = {
+					["upper_model"] = "Character\\Bloodelf\\Female\\BloodElfFemale.M2",
+					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
+					["upper_alpha"] = 0.5,
+					["lower_enabled"] = false,
+					["lower_alpha"] = 0.1,
+					["upper_enabled"] = false,
+				},
+				["textR_bracket"] = "(",
+				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes",
+				["icon_grayscale"] = false,
+				["textL_custom_text"] = "{data1}. {data3}{data2}",
+				["use_spec_icons"] = true,
+				["texture_custom"] = "",
+				["textL_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["fixed_texture_color"] = {
+					0.109803921568627, -- [1]
+					0.149019607843137, -- [2]
+					0.184313725490196, -- [3]
+					1, -- [4]
+				},
+				["textL_show_number"] = true,
+				["percent_type"] = 1,
+				["textR_show_data"] = {
+					true, -- [1]
+					true, -- [2]
+					false, -- [3]
+				},
+				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
+				["fixed_texture_background_color"] = {
+					0.101960784313725, -- [1]
+					0.101960784313725, -- [2]
+					0.101960784313725, -- [3]
+					0, -- [4]
+				},
+				["textR_outline_small"] = true,
+				["texture_background_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+				["textL_class_colors"] = false,
+				["alpha"] = 1,
+				["textR_class_colors"] = false,
+				["texture_background"] = "Blizzard Raid Bar",
+				["textR_outline_small_color"] = {
+					0, -- [1]
+					0, -- [2]
+					0, -- [3]
+					1, -- [4]
+				},
+				["no_icon"] = false,
+				["icon_offset"] = {
+					0, -- [1]
+					0, -- [2]
+				},
+				["textR_enable_custom_text"] = false,
+				["font_face"] = "Arial Narrow",
+				["texture_class_colors"] = true,
+				["texture"] = "Blizzard Raid Bar",
+				["fast_ps_update"] = true,
+				["textR_separator"] = "NONE",
+				["texture_custom_file"] = "Interface\\",
+			},
 			["ignore_mass_showhide"] = false,
 			["switch_all_roles_after_wipe"] = false,
 			["menu_icons"] = {
@@ -1596,20 +2383,14 @@ _detalhes_database = {
 					0.1843137254901961, -- [3]
 				},
 			},
-			["menu_anchor_down"] = {
-				16, -- [1]
-				-3, -- [2]
-			},
 			["row_show_animation"] = {
 				["anim"] = "Fade",
 				["options"] = {
 				},
 			},
+			["bars_grow_direction"] = 1,
 			["switch_tank_in_combat"] = false,
-			["auto_hide_menu"] = {
-				["left"] = false,
-				["right"] = false,
-			},
+			["show_sidebars"] = true,
 			["grab_on_top"] = false,
 			["switch_damager_in_combat"] = false,
 			["micro_displays_locked"] = true,
@@ -1617,109 +2398,31 @@ _detalhes_database = {
 			["auto_current"] = true,
 			["icon_desaturated"] = false,
 			["switch_tank"] = false,
-			["bars_grow_direction"] = 1,
+			["menu_anchor_down"] = {
+				16, -- [1]
+				-3, -- [2]
+			},
 			["hide_in_combat"] = false,
 			["name"] = "Xuna",
-			["row_info"] = {
-				["textR_outline"] = false,
-				["spec_file"] = "Interface\\AddOns\\Details\\images\\spec_icons_normal",
-				["textL_outline"] = false,
-				["texture_highlight"] = "Interface\\FriendsFrame\\UI-FriendsList-Highlight",
-				["textL_outline_small"] = true,
-				["textL_enable_custom_text"] = false,
-				["fixed_text_color"] = {
-					1, -- [1]
-					1, -- [2]
-					1, -- [3]
-					1, -- [4]
+			["attribute_text"] = {
+				["show_timer"] = true,
+				["shadow"] = false,
+				["side"] = 1,
+				["text_color"] = {
+					0.882352941176471, -- [1]
+					0.882352941176471, -- [2]
+					0.882352941176471, -- [3]
+					0.763886287808418, -- [4]
 				},
-				["space"] = {
-					["right"] = 0,
-					["left"] = 0,
-					["between"] = 0,
+				["custom_text"] = "{name}",
+				["text_face"] = "Oswald",
+				["anchor"] = {
+					3, -- [1]
+					3, -- [2]
 				},
-				["texture_background_class_color"] = false,
-				["start_after_icon"] = true,
-				["font_face_file"] = "Fonts\\ARIALN.TTF",
-				["backdrop"] = {
-					["enabled"] = false,
-					["size"] = 1,
-					["color"] = {
-						1, -- [1]
-						1, -- [2]
-						1, -- [3]
-						1, -- [4]
-					},
-					["texture"] = "Details BarBorder 3",
-				},
-				["font_size"] = 11,
-				["textL_translit_text"] = false,
-				["height"] = 16,
-				["texture_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
-				["models"] = {
-					["upper_model"] = "Character\\Bloodelf\\Female\\BloodElfFemale.M2",
-					["lower_model"] = "World\\EXPANSION02\\DOODADS\\Coldarra\\COLDARRALOCUS.m2",
-					["upper_alpha"] = 0.5,
-					["lower_enabled"] = false,
-					["lower_alpha"] = 0.1,
-					["upper_enabled"] = false,
-				},
-				["textR_bracket"] = "(",
-				["icon_file"] = "Interface\\AddOns\\Details\\images\\classes",
-				["icon_grayscale"] = false,
-				["textL_custom_text"] = "{data1}. {data3}{data2}",
-				["use_spec_icons"] = true,
-				["texture_custom"] = "",
-				["textL_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["fixed_texture_color"] = {
-					0.109803921568627, -- [1]
-					0.149019607843137, -- [2]
-					0.184313725490196, -- [3]
-					1, -- [4]
-				},
-				["textL_show_number"] = true,
-				["percent_type"] = 1,
-				["textR_show_data"] = {
-					true, -- [1]
-					true, -- [2]
-					false, -- [3]
-				},
-				["textR_custom_text"] = "{data1} ({data2}, {data3}%)",
-				["fixed_texture_background_color"] = {
-					0.101960784313725, -- [1]
-					0.101960784313725, -- [2]
-					0.101960784313725, -- [3]
-					0, -- [4]
-				},
-				["textR_outline_small"] = true,
-				["texture_background_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
-				["textR_class_colors"] = false,
-				["alpha"] = 1,
-				["texture_background"] = "Blizzard Raid Bar",
-				["textL_class_colors"] = false,
-				["textR_outline_small_color"] = {
-					0, -- [1]
-					0, -- [2]
-					0, -- [3]
-					1, -- [4]
-				},
-				["no_icon"] = false,
-				["icon_offset"] = {
-					0, -- [1]
-					0, -- [2]
-				},
-				["textR_enable_custom_text"] = false,
-				["font_face"] = "Arial Narrow",
-				["texture_class_colors"] = true,
-				["texture"] = "Blizzard Raid Bar",
-				["fast_ps_update"] = true,
-				["textR_separator"] = "NONE",
-				["texture_custom_file"] = "Interface\\",
+				["text_size"] = 11,
+				["enable_custom_text"] = false,
+				["enabled"] = true,
 			},
 			["plugins_grow_direction"] = 1,
 			["wallpaper"] = {
@@ -1752,29 +2455,13 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["bars_inverted"] = false,
-			["attribute_text"] = {
-				["show_timer"] = true,
-				["shadow"] = false,
-				["side"] = 1,
-				["text_color"] = {
-					0.882352941176471, -- [1]
-					0.882352941176471, -- [2]
-					0.882352941176471, -- [3]
-					0.763886287808418, -- [4]
-				},
-				["custom_text"] = "{name}",
-				["text_face"] = "Oswald",
-				["anchor"] = {
-					3, -- [1]
-					3, -- [2]
-				},
-				["text_size"] = 11,
-				["enable_custom_text"] = false,
-				["enabled"] = true,
+			["auto_hide_menu"] = {
+				["left"] = false,
+				["right"] = false,
 			},
+			["clickthrough_rows"] = false,
 			["use_multi_fontstrings"] = false,
-			["show_sidebars"] = true,
+			["bars_inverted"] = false,
 		}, -- [5]
 		{
 			["show_statusbar"] = false,
@@ -1793,7 +2480,7 @@ _detalhes_database = {
 				1, -- [4]
 			},
 			["toolbar_icon_file"] = "Interface\\AddOns\\Details\\images\\toolbar_icons",
-			["skin_custom"] = "",
+			["bars_sort_direction"] = 1,
 			["fontstrings_width"] = 35,
 			["tooltip"] = {
 				["n_abilities"] = 3,
@@ -1879,10 +2566,10 @@ _detalhes_database = {
 				},
 				["textR_outline_small"] = true,
 				["texture_background_file"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
-				["textL_class_colors"] = false,
-				["alpha"] = 1,
-				["textR_class_colors"] = false,
 				["texture_background"] = "Blizzard Raid Bar",
+				["alpha"] = 1,
+				["textL_class_colors"] = false,
+				["textR_class_colors"] = false,
 				["textR_outline_small_color"] = {
 					0.1098039215686275, -- [1]
 					0.1490196078431373, -- [2]
@@ -1904,7 +2591,16 @@ _detalhes_database = {
 			},
 			["ignore_mass_showhide"] = false,
 			["plugins_grow_direction"] = 1,
-			["icon_desaturated"] = false,
+			["menu_icons"] = {
+				false, -- [1]
+				true, -- [2]
+				false, -- [3]
+				true, -- [4]
+				true, -- [5]
+				false, -- [6]
+				["space"] = -3,
+				["shadow"] = true,
+			},
 			["desaturated_menu"] = false,
 			["auto_hide_menu"] = {
 				["left"] = false,
@@ -2063,27 +2759,17 @@ _detalhes_database = {
 				-3, -- [2]
 			},
 			["bg_alpha"] = 0,
-			["switch_tank_in_combat"] = false,
+			["bars_inverted"] = false,
 			["grab_on_top"] = false,
 			["switch_damager_in_combat"] = false,
 			["bars_grow_direction"] = 1,
-			["micro_displays_locked"] = true,
+			["skin_custom"] = "",
 			["auto_current"] = true,
-			["bars_sort_direction"] = 1,
-			["switch_tank"] = false,
-			["menu_icons"] = {
-				false, -- [1]
-				true, -- [2]
-				false, -- [3]
-				true, -- [4]
-				true, -- [5]
-				false, -- [6]
-				["space"] = -3,
-				["shadow"] = true,
-			},
+			["micro_displays_locked"] = true,
+			["clickthrough_rows"] = false,
+			["switch_all_roles_after_wipe"] = false,
 			["hide_in_combat"] = false,
 			["version"] = 3,
-			["clickthrough_rows"] = false,
 			["attribute_text"] = {
 				["show_timer"] = true,
 				["shadow"] = false,
@@ -2104,6 +2790,7 @@ _detalhes_database = {
 				["enable_custom_text"] = false,
 				["enabled"] = true,
 			},
+			["switch_tank"] = false,
 			["wallpaper"] = {
 				["enabled"] = false,
 				["width"] = 304.6667785644531,
@@ -2134,13 +2821,13 @@ _detalhes_database = {
 					1, -- [3]
 				},
 			},
-			["micro_displays_side"] = 2,
-			["switch_all_roles_after_wipe"] = false,
+			["switch_tank_in_combat"] = false,
+			["icon_desaturated"] = false,
 			["use_multi_fontstrings"] = false,
-			["bars_inverted"] = false,
+			["micro_displays_side"] = 2,
 		}, -- [6]
 	},
-	["combat_counter"] = 10269,
+	["combat_counter"] = 10287,
 	["force_font_outline"] = "",
 	["announce_deaths"] = {
 		["enabled"] = false,
@@ -2152,21 +2839,537 @@ _detalhes_database = {
 		{
 			["tipo"] = 2,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["totalabsorbed"] = 0.003183,
+					["friendlyfire_total"] = 0,
+					["damage_from"] = {
+					},
+					["targets"] = {
+						["Training Dummy"] = 165808,
+					},
+					["pets"] = {
+					},
+					["friendlyfire"] = {
+					},
+					["end_time"] = 1617958308,
+					["aID"] = "2073-095F567D",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 165808.003183,
+					["classe"] = "SHAMAN",
+					["dps_started"] = false,
+					["total"] = 165808.003183,
+					["last_event"] = 0,
+					["on_hold"] = false,
+					["nome"] = "Xuna",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+							[188443] = {
+								["c_amt"] = 1,
+								["b_amt"] = 0,
+								["c_dmg"] = 4645,
+								["g_amt"] = 0,
+								["n_max"] = 1923,
+								["targets"] = {
+									["Training Dummy"] = 17735,
+								},
+								["n_dmg"] = 13090,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 8,
+								["total"] = 17735,
+								["c_max"] = 4645,
+								["id"] = 188443,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 7,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[8042] = {
+								["c_amt"] = 0,
+								["b_amt"] = 0,
+								["c_dmg"] = 0,
+								["g_amt"] = 0,
+								["n_max"] = 8028,
+								["targets"] = {
+									["Training Dummy"] = 14871,
+								},
+								["n_dmg"] = 14871,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 2,
+								["total"] = 14871,
+								["c_max"] = 0,
+								["id"] = 8042,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 2,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[188389] = {
+								["c_amt"] = 5,
+								["b_amt"] = 0,
+								["c_dmg"] = 4210,
+								["g_amt"] = 0,
+								["n_max"] = 488,
+								["targets"] = {
+									["Training Dummy"] = 7596,
+								},
+								["n_dmg"] = 3386,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 16,
+								["total"] = 7596,
+								["c_max"] = 1192,
+								["id"] = 188389,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 11,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[45297] = {
+								["c_amt"] = 6,
+								["b_amt"] = 0,
+								["c_dmg"] = 24150,
+								["g_amt"] = 0,
+								["n_max"] = 1633,
+								["targets"] = {
+									["Training Dummy"] = 65629,
+								},
+								["n_dmg"] = 41479,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 32,
+								["total"] = 65629,
+								["c_max"] = 4049,
+								["id"] = 45297,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 26,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[285452] = {
+								["c_amt"] = 4,
+								["b_amt"] = 0,
+								["c_dmg"] = 24145,
+								["g_amt"] = 0,
+								["n_max"] = 0,
+								["targets"] = {
+									["Training Dummy"] = 24145,
+								},
+								["n_dmg"] = 0,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 4,
+								["total"] = 24145,
+								["c_max"] = 6109,
+								["id"] = 285452,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 0,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+							[328928] = {
+								["c_amt"] = 3,
+								["b_amt"] = 0,
+								["c_dmg"] = 23314,
+								["g_amt"] = 0,
+								["n_max"] = 3160,
+								["targets"] = {
+									["Training Dummy"] = 35832,
+								},
+								["n_dmg"] = 12518,
+								["n_min"] = 0,
+								["g_dmg"] = 0,
+								["counter"] = 7,
+								["total"] = 35832,
+								["c_max"] = 7932,
+								["id"] = 328928,
+								["r_dmg"] = 0,
+								["extra"] = {
+								},
+								["a_dmg"] = 0,
+								["c_min"] = 0,
+								["successful_casted"] = 0,
+								["a_amt"] = 0,
+								["n_amt"] = 4,
+								["b_dmg"] = 0,
+								["r_amt"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["spec"] = 262,
+					["serial"] = "Player-2073-095F567D",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["last_dps"] = 0,
+					["start_time"] = 1617958276,
+					["delay"] = 0,
+					["damage_taken"] = 0.003183,
+				}, -- [1]
+				{
+					["flag_original"] = 68136,
+					["totalabsorbed"] = 0.016902,
+					["aID"] = "153285",
+					["damage_from"] = {
+						["Xuna"] = true,
+					},
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["fight_component"] = true,
+					["classe"] = "UNKNOW",
+					["raid_targets"] = {
+					},
+					["total_without_pet"] = 0.016902,
+					["last_event"] = 0,
+					["dps_started"] = false,
+					["end_time"] = 1617958308,
+					["on_hold"] = false,
+					["friendlyfire_total"] = 0,
+					["nome"] = "Training Dummy",
+					["spells"] = {
+						["tipo"] = 2,
+						["_ActorTable"] = {
+						},
+					},
+					["friendlyfire"] = {
+					},
+					["total"] = 0.016902,
+					["serial"] = "Creature-0-1467-1-10257-153285-00036DC1A3",
+					["custom"] = 0,
+					["tipo"] = 1,
+					["damage_taken"] = 165808.016902,
+					["start_time"] = 1617958305,
+					["delay"] = 0,
+					["last_dps"] = 0,
+				}, -- [2]
 			},
 		}, -- [1]
 		{
 			["tipo"] = 3,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1297,
+					["healing_from"] = {
+					},
+					["pets"] = {
+					},
+					["iniciar_hps"] = false,
+					["classe"] = "SHAMAN",
+					["totalover"] = 21500.011321,
+					["total_without_pet"] = 0.011321,
+					["total"] = 0.011321,
+					["targets_absorbs"] = {
+					},
+					["heal_enemy"] = {
+					},
+					["on_hold"] = false,
+					["serial"] = "Player-2073-095F567D",
+					["totalabsorb"] = 0.011321,
+					["last_hps"] = 0,
+					["targets"] = {
+					},
+					["totalover_without_pet"] = 0.011321,
+					["healing_taken"] = 0.011321,
+					["end_time"] = 1617958308,
+					["targets_overheal"] = {
+						["Xuna"] = 21500,
+					},
+					["start_time"] = 1617958301,
+					["nome"] = "Xuna",
+					["spells"] = {
+						["tipo"] = 3,
+						["_ActorTable"] = {
+							[328930] = {
+								["c_amt"] = 0,
+								["totalabsorb"] = 0,
+								["targets_overheal"] = {
+									["Xuna"] = 21500,
+								},
+								["n_max"] = 0,
+								["targets"] = {
+									["Xuna"] = 0,
+								},
+								["n_min"] = 0,
+								["counter"] = 1,
+								["overheal"] = 21500,
+								["total"] = 0,
+								["c_max"] = 0,
+								["id"] = 328930,
+								["targets_absorbs"] = {
+								},
+								["c_min"] = 0,
+								["c_curado"] = 0,
+								["n_curado"] = 0,
+								["totaldenied"] = 0,
+								["n_amt"] = 1,
+								["absorbed"] = 0,
+							},
+						},
+					},
+					["grupo"] = true,
+					["aID"] = "2073-095F567D",
+					["heal_enemy_amt"] = 0,
+					["custom"] = 0,
+					["last_event"] = 0,
+					["spec"] = 262,
+					["totaldenied"] = 0.011321,
+					["delay"] = 0,
+					["tipo"] = 2,
+				}, -- [1]
 			},
 		}, -- [2]
 		{
 			["tipo"] = 7,
 			["_ActorTable"] = {
+				{
+					["received"] = 0.009506,
+					["resource"] = 160.009506,
+					["targets"] = {
+					},
+					["pets"] = {
+					},
+					["powertype"] = 0,
+					["classe"] = "SHAMAN",
+					["passiveover"] = 0.00826,
+					["resource_type"] = 11,
+					["total"] = 0.009506,
+					["tipo"] = 3,
+					["totalover"] = 0.00826,
+					["nome"] = "Xuna",
+					["spells"] = {
+						["tipo"] = 7,
+						["_ActorTable"] = {
+						},
+					},
+					["grupo"] = true,
+					["spec"] = 262,
+					["flag_original"] = 1297,
+					["alternatepower"] = 0.009506,
+					["last_event"] = 0,
+					["aID"] = "2073-095F567D",
+					["serial"] = "Player-2073-095F567D",
+				}, -- [1]
 			},
 		}, -- [3]
 		{
 			["tipo"] = 9,
 			["_ActorTable"] = {
+				{
+					["flag_original"] = 1047,
+					["debuff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[188389] = {
+								["refreshamt"] = 1,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 188389,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[325437] = {
+								["refreshamt"] = 49,
+								["activedamt"] = 0,
+								["appliedamt"] = 10,
+								["id"] = 325437,
+								["uptime"] = 22,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["buff_uptime"] = 209,
+					["classe"] = "SHAMAN",
+					["buff_uptime_spells"] = {
+						["tipo"] = 9,
+						["_ActorTable"] = {
+							[33697] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 33697,
+								["uptime"] = 10,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[325443] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 325443,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[77762] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 77762,
+								["uptime"] = 2,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[343594] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 343594,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[335148] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 335148,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[191634] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 191634,
+								["uptime"] = 7,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[260734] = {
+								["refreshamt"] = 1,
+								["activedamt"] = 3,
+								["appliedamt"] = 3,
+								["id"] = 260734,
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[72968] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 72968,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[328933] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 328933,
+								["uptime"] = 6,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[192106] = {
+								["refreshamt"] = 1,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 192106,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[546] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 546,
+								["uptime"] = 29,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+							[328923] = {
+								["refreshamt"] = 0,
+								["activedamt"] = 1,
+								["appliedamt"] = 1,
+								["id"] = 328923,
+								["uptime"] = 4,
+								["targets"] = {
+								},
+								["counter"] = 0,
+							},
+						},
+					},
+					["debuff_uptime"] = 51,
+					["nome"] = "Xuna",
+					["spec"] = 262,
+					["grupo"] = true,
+					["spell_cast"] = {
+						[328930] = 1,
+						[8042] = 2,
+						[328923] = 1,
+						[188443] = 2,
+						[188389] = 1,
+						[51505] = 4,
+						[192106] = 1,
+						[33697] = 1,
+						[191634] = 1,
+					},
+					["debuff_uptime_targets"] = {
+					},
+					["last_event"] = 0,
+					["tipo"] = 4,
+					["buff_uptime_targets"] = {
+					},
+					["pets"] = {
+					},
+					["serial"] = "Player-2073-095F567D",
+					["aID"] = "2073-095F567D",
+				}, -- [1]
 			},
 		}, -- [4]
 		{
@@ -2178,20 +3381,20 @@ _detalhes_database = {
 		},
 		["raid_roster_indexed"] = {
 		},
-		["tempo_start"] = 1617818175,
+		["tempo_start"] = 1617958278,
 		["last_events_tables"] = {
 		},
 		["alternate_power"] = {
 		},
-		["combat_counter"] = 10256,
+		["combat_counter"] = 10286,
 		["spells_cast_timeline"] = {
 		},
 		["totals"] = {
-			0, -- [1]
-			0, -- [2]
+			165808.009645, -- [1]
+			0.004124, -- [2]
 			{
 				0, -- [1]
-				[0] = 0,
+				[0] = 0.001246,
 				["alternatepower"] = 0,
 				[3] = 0,
 				[6] = 0,
@@ -2199,10 +3402,10 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
@@ -2216,13 +3419,25 @@ _detalhes_database = {
 		},
 		["__call"] = {
 		},
-		["data_inicio"] = 0,
+		["data_inicio"] = "11:51:19",
+		["end_time"] = 175663.32,
+		["cleu_events"] = {
+			["n"] = 1,
+		},
+		["segments_added"] = {
+			{
+				["elapsed"] = 28.99100000000908,
+				["type"] = 0,
+				["name"] = "Training Dummy",
+				["clock"] = "11:51:19",
+			}, -- [1]
+		},
 		["totals_grupo"] = {
-			0, -- [1]
-			0, -- [2]
+			165808.001663, -- [1]
+			0.004124, -- [2]
 			{
 				0, -- [1]
-				[0] = 0,
+				[0] = 0.001246,
 				["alternatepower"] = 0,
 				[3] = 0,
 				[6] = 0,
@@ -2230,27 +3445,23 @@ _detalhes_database = {
 			{
 				["buff_uptime"] = 0,
 				["ress"] = 0,
-				["cooldowns_defensive"] = 0,
-				["dispell"] = 0,
-				["interrupt"] = 0,
 				["debuff_uptime"] = 0,
+				["cooldowns_defensive"] = 0,
+				["interrupt"] = 0,
+				["dispell"] = 0,
 				["cc_break"] = 0,
 				["dead"] = 0,
 			}, -- [4]
 		},
-		["overall_refreshed"] = true,
-		["hasSaved"] = true,
 		["frags"] = {
 		},
-		["data_fim"] = 0,
-		["cleu_timeline"] = {
-		},
+		["data_fim"] = "11:51:48",
+		["overall_enemy_name"] = "Training Dummy",
 		["CombatSkillCache"] = {
 		},
-		["cleu_events"] = {
-			["n"] = 1,
+		["cleu_timeline"] = {
 		},
-		["start_time"] = 0,
+		["start_time"] = 175634.329,
 		["TimeData"] = {
 			["Player Damage Done"] = {
 			},
@@ -2260,11 +3471,11 @@ _detalhes_database = {
 				1, -- [1]
 				1, -- [2]
 			}, -- [1]
-			["damage_section"] = {
-			},
 			["heal_section"] = {
 			},
 			["heal"] = {
+			},
+			["damage_section"] = {
 			},
 			["damage"] = {
 			},
@@ -2275,7 +3486,7 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["last_realversion"] = 144,
-	["last_encounter"] = "Gruul",
+	["last_day"] = "09",
 	["announce_cooldowns"] = {
 		["ignored_cooldowns"] = {
 		},
@@ -2292,12 +3503,8 @@ _detalhes_database = {
 		["channel"] = "SELF",
 	},
 	["cached_specs"] = {
-		["Player-2073-0438D74E"] = 259,
-		["Player-2073-09698CE7"] = 70,
-		["Player-2073-042D298B"] = 66,
-		["Player-2073-09495848"] = 252,
 		["Player-2073-095F567D"] = 264,
-		["Player-2073-07112CA6"] = 262,
-		["Player-2073-06F7DBA9"] = 64,
+		["Player-2073-063AE3E9"] = 65,
+		["Player-2073-0438C27B"] = 262,
 	},
 }

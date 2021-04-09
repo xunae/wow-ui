@@ -43,3 +43,5 @@ Details_EncounterDetails: disabled
 Details_DataStorage: enabled
 Screen Overlay Enhanced: disabled
 ShadowedUnitFrames: disabled
+Quartz: disabled
+WorldQuestsList: enabled

@@ -2,11 +2,17 @@
 ButterQuestTrackerConfig = {
 	["char"] = {
 		["Skraum - Gehennas"] = {
+			["MANUALLY_TRACKED_QUESTS"] = {
+				[748] = true,
+			},
 			["QUESTS_LAST_UPDATED"] = {
-				[3376] = 1617874139,
-				[757] = 1617874428,
-				[780] = 1617874604,
-				[781] = 1617874334,
+				[761] = 1617903129,
+				[771] = 1617903471,
+				[746] = 1617903147,
+				[748] = 1617903754,
+				[743] = 1617903043,
+				[745] = 1617903141,
+				[766] = 1617903184,
 			},
 		},
 	},
@@ -14,7 +20,9 @@ ButterQuestTrackerConfig = {
 		["Skraum - Gehennas"] = "Default",
 	},
 	["global"] = {
-		["PositionY"] = -230.666564941406,
-		["PositionX"] = -115.33349609375,
+		["QuestPadding"] = 2,
+		["PositionY"] = -198.666442871094,
+		["ColorHeadersByDifficultyLevel"] = true,
+		["PositionX"] = -111.334106445313,
 	},
 }

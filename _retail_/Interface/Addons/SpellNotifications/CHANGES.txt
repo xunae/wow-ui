@@ -1,6 +1,12 @@
-lightweight tag 73317440d60475fcb9a546fff7e29b5c0132f636 v2.0.1
+lightweight tag 6b873ec54f49290f001f978c61f8e9626349b061 v2.0.2
 Author:	Johan Bäckman <johan.c.backman@gmail.com>
-Date:	Sat Nov 7 16:19:59 2020 +0100
+Date:	Thu Apr 8 19:20:37 2021 +0200
+
+commit 6b873ec54f49290f001f978c61f8e9626349b061
+Author: Johan Bäckman <johan.c.backman@gmail.com>
+Date:   Thu Apr 8 19:20:37 2021 +0200
+
+    2.0.2
 
 commit 73317440d60475fcb9a546fff7e29b5c0132f636
 Author: Johan Bäckman <johan.c.backman@gmail.com>

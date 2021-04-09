@@ -29,10 +29,10 @@ OmniCCDB = {
 							["scale"] = 1.00000000745058,
 						},
 						["seconds"] = {
-							["r"] = 0.949019607843137,
+							["b"] = 1,
 							["scale"] = 1.00000000745058,
 							["g"] = 0.980392156862745,
-							["b"] = 1,
+							["r"] = 0.949019607843137,
 						},
 						["minutes"] = {
 							["scale"] = 1.00000000745058,
@@ -55,11 +55,11 @@ OmniCCDB = {
 				},
 				["Ignore"] = {
 					["textStyles"] = {
+						["soon"] = {
+						},
 						["minutes"] = {
 						},
 						["seconds"] = {
-						},
-						["soon"] = {
 						},
 					},
 					["enableText"] = false,
@@ -70,7 +70,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -81,7 +80,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -206,4 +205,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

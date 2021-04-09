@@ -72,7 +72,7 @@ Gladius2DB = {
 				["arena1"] = 503.4669020334914,
 			},
 		},
-		["Xunan - Arena Champions - EU"] = {
+		["Drmscp - Draenor"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
@@ -80,33 +80,32 @@ Gladius2DB = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
-		["Xunz - Stormscale"] = {
+		["Mktja - Stormreaver"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 			["y"] = {
-				["arena1"] = 537.6001056671157,
+				["arena1"] = 460.8001045227065,
 			},
 			["x"] = {
-				["arena1"] = 1049.600308609013,
+				["arena1"] = 1014.400405740744,
 			},
 		},
-		["Drmscp - Draenor"] = {
+		["Xunan - Arena Champions - EU"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
 		},
 		["Default"] = {
 			["modules"] = {
-				["Announcements"] = false,
 				["Dispel"] = false,
+				["Announcements"] = false,
 			},
 			["castTimeTextOffsetY"] = -1,
-			["castBarHeight"] = 25,
 			["drTrackerOffsetX"] = 2,
 			["targetBarBackgroundColor"] = {
 				["a"] = 0,
 			},
 			["castBarTextureUninterruptible"] = "Blizzard Raid Bar",
-			["classIconShowSpec"] = true,
+			["classIconCrop"] = true,
 			["dispellOffsetY"] = -1,
 			["dispellAdjustSize"] = false,
 			["drTrackerAnchor"] = "TOPLEFT",
@@ -117,41 +116,38 @@ Gladius2DB = {
 			["growUp"] = true,
 			["drTrackerRelativePoint"] = "TOPRIGHT",
 			["tagsVersion"] = 4,
-			["castBarWidth"] = 240,
+			["castBarWidth"] = 242,
 			["dispellGloss"] = false,
 			["locked"] = true,
 			["classIconGloss"] = false,
 			["trinketSize"] = 40,
-			["y"] = {
-				["arena1"] = 344.3566689278669,
-			},
 			["x"] = {
-				["arena1"] = 933.3334404627385,
+				["arena1"] = 933.3335100015029,
 			},
 			["targetBarIconCrop"] = true,
-			["bottomMargin"] = 5,
+			["bottomMargin"] = 2,
 			["classIconCooldown"] = true,
 			["healthBarBackgroundColor"] = {
-				["a"] = 1,
-				["r"] = 0.1019607843137255,
-				["g"] = 0.1019607843137255,
-				["b"] = 0.1019607843137255,
+				["a"] = 0.3300000429153442,
 			},
 			["trinketAdjustSize"] = false,
 			["castBarAdjustWidth"] = false,
+			["targetBarRelativePoint"] = "TOPLEFT",
 			["healthBarHeight"] = 30,
 			["targetBarHeight"] = 20,
 			["globalFont"] = "Arial Narrow",
 			["dispellFaction"] = false,
-			["castBarOffsetY"] = -1,
 			["castTextOffsetY"] = -1,
 			["highlightTargetColor"] = {
 				["g"] = 0.701960784313726,
 			},
 			["backgroundColor"] = {
-				["a"] = 0,
+				["a"] = 0.3300000429153442,
+				["r"] = 1,
+				["g"] = 1,
+				["b"] = 1,
 			},
-			["targetBarAnchor"] = "TOPRIGHT",
+			["castTextSize"] = 12,
 			["healthBarTexture"] = "Blizzard Raid Bar",
 			["trinketGloss"] = false,
 			["dispellFrameLevel"] = 5,
@@ -171,6 +167,7 @@ Gladius2DB = {
 			["drTrackerAttachTo"] = "Trinket",
 			["targetBarEnableBar"] = false,
 			["dispellSize"] = 36,
+			["highlightWidth"] = 2,
 			["tagsTexts"] = {
 				["PowerBar Left Text"] = {
 					["offsetX"] = 4,
@@ -204,14 +201,12 @@ Gladius2DB = {
 				},
 			},
 			["powerBarBackgroundColor"] = {
-				["a"] = 1,
-				["r"] = 0.1019607843137255,
-				["g"] = 0.1019607843137255,
-				["b"] = 0.1019607843137255,
+				["a"] = 0.3300000429153442,
 			},
 			["drFontSize"] = 20,
+			["trinketIconCrop"] = true,
 			["castBarTexture"] = "Blizzard Raid Bar",
-			["trinketFaction"] = false,
+			["castTextOffsetX"] = 3,
 			["classIconAuras"] = {
 				["Hibernate"] = 8,
 				["Alter Time"] = 5,
@@ -251,6 +246,7 @@ Gladius2DB = {
 				["Spirit Mend"] = 0,
 				["Master of the Elements"] = false,
 			},
+			["castBarHeight"] = 25,
 			["drCategories"] = {
 				["taunt"] = false,
 				["ctrlstun"] = true,
@@ -354,29 +350,29 @@ Gladius2DB = {
 				["g"] = 0.1019607843137255,
 				["b"] = 0.1019607843137255,
 			},
-			["castTextOffsetX"] = 3,
 			["castTimeTextSize"] = 12,
 			["targetBarOffsetX"] = -4,
 			["auraVersion"] = 1,
-			["castBarOffsetX"] = 1,
 			["highlightRaidIcon"] = false,
 			["backgroundPadding"] = 2,
-			["targetBarRelativePoint"] = "TOPLEFT",
-			["castTextSize"] = 12,
-		},
-		["Mktja - Stormreaver"] = {
-			["auraVersion"] = 1,
-			["tagsVersion"] = 4,
 			["y"] = {
-				["arena1"] = 460.8001045227065,
+				["arena1"] = 344.3566945844395,
 			},
-			["x"] = {
-				["arena1"] = 1014.400405740744,
-			},
+			["targetBarAnchor"] = "TOPRIGHT",
 		},
 		["Wñä - Stormscale"] = {
 			["auraVersion"] = 1,
 			["tagsVersion"] = 4,
+		},
+		["Xunz - Stormscale"] = {
+			["auraVersion"] = 1,
+			["tagsVersion"] = 4,
+			["y"] = {
+				["arena1"] = 537.6001056671157,
+			},
+			["x"] = {
+				["arena1"] = 1049.600308609013,
+			},
 		},
 	},
 }

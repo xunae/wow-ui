@@ -6,7 +6,7 @@ WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
 ATT: disabled
-Quartz: enabled
+Quartz: disabled
 ClassicUI: enabled
 XunaTweaks: enabled
 AdvancedInterfaceOptions: enabled

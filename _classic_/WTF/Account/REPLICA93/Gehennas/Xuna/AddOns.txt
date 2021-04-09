@@ -691,5 +691,5 @@ HealCommClassic: enabled
 Leatrix_Maps: enabled
 CharacterStatsClassic: disabled
 BigWigs_Naxxramas: disabled
-SpeedyAutoLoot: enabled
-ButterQuestTracker: disabled
+SpeedyAutoLoot: disabled
+ButterQuestTracker: enabled

@@ -9,17 +9,24 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
-				["FocusFrameSpellBar"] = {
+				["VehicleSeatIndicator"] = {
 					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"FocusFrame", -- [2]
-						"BOTTOMLEFT", -- [3]
-						25, -- [4]
-						6.999999523162842, -- [5]
+						"TOPRIGHT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						39.9998779296875, -- [4]
+						802.9999389648438, -- [5]
 					},
-					["name"] = "FocusFrameSpellBar",
-					["scale"] = 1.399999976158142,
+					["name"] = "VehicleSeatIndicator",
+					["scale"] = 0.699999988079071,
 					["orgScale"] = 1,
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-4.760985497730267, -- [4]
+						14.28596403160025, -- [5]
+					},
 				},
 				["PlayerPowerBarAltMover"] = {
 					["orgPos"] = {
@@ -39,6 +46,18 @@ MADB = {
 						0, -- [4]
 						300, -- [5]
 					},
+				},
+				["FocusFrameSpellBar"] = {
+					["orgPos"] = {
+						"TOPLEFT", -- [1]
+						"FocusFrame", -- [2]
+						"BOTTOMLEFT", -- [3]
+						25, -- [4]
+						6.999999523162842, -- [5]
+					},
+					["name"] = "FocusFrameSpellBar",
+					["scale"] = 1.399999976158142,
+					["orgScale"] = 1,
 				},
 				["TalkingHeadFrame"] = {
 					["orgPos"] = {
@@ -114,23 +133,6 @@ MADB = {
 						-136.3636334080342, -- [5]
 					},
 				},
-				["CastingBarFrame"] = {
-					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						160, -- [5]
-					},
-					["name"] = "CastingBarFrame",
-					["pos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						150, -- [5]
-					},
-				},
 				["Boss1TargetFrame"] = {
 					["orgPos"] = {
 						"TOPRIGHT", -- [1]
@@ -149,6 +151,23 @@ MADB = {
 						0, -- [5]
 					},
 					["orgScale"] = 0.75,
+				},
+				["CastingBarFrame"] = {
+					["orgPos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						160, -- [5]
+					},
+					["name"] = "CastingBarFrame",
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0, -- [4]
+						150, -- [5]
+					},
 				},
 				["ExtraAbilityContainer"] = {
 					["orgPos"] = {
@@ -177,25 +196,6 @@ MADB = {
 						-350, -- [5]
 					},
 					["orgScale"] = 1,
-				},
-				["VehicleSeatIndicator"] = {
-					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"UIParent", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						39.9998779296875, -- [4]
-						802.9999389648438, -- [5]
-					},
-					["name"] = "VehicleSeatIndicator",
-					["scale"] = 0.699999988079071,
-					["orgScale"] = 1,
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-4.760985497730267, -- [4]
-						14.28596403160025, -- [5]
-					},
 				},
 				["ObjectiveTrackerFrameMover"] = {
 					["orgPos"] = {
@@ -285,7 +285,6 @@ MADB = {
 	},
 	["tooltips"] = true,
 	["closeGUIOnEscape"] = false,
-	["modifiedFramesOnly"] = true,
 	["squareMM"] = false,
 	["noBags"] = false,
 	["disableErrorMessages"] = true,

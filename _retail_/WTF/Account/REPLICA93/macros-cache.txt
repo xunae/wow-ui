@@ -55,6 +55,9 @@ VER 3 00000000000000AE "HS" "INV_MISC_QUESTIONMARK"
 /use Healthstone
 /use Spiritual Healing Potion
 END
+VER 3 000000000000018D "MainBar" "INV_MISC_QUESTIONMARK"
+/script MainMenuBar:ClearAllPoints();MainMenuBar:SetPoint("CENTER",UIParent,"BOTTOM",40,38);
+END
 VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 #showtooltip Purge
 /cast [modifier:shift,@player] Purify Spirit
