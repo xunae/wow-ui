@@ -40,7 +40,6 @@ mod:RegisterEnableMob(
 -- Locals
 --
 
-local castCollector = {}
 local playerListFeast = {}
 
 --------------------------------------------------------------------------------
@@ -142,7 +141,6 @@ function mod:GetOptions()
 end
 
 function mod:OnBossEnable()
-	castCollector = {}
 	playerListFeast = {}
 
 	--[[ General ]]--
@@ -168,7 +166,7 @@ function mod:OnBossEnable()
 	self:Log("SPELL_AURA_APPLIED", "GroundDamage", 339553) -- Lingering Anima
 	self:Log("SPELL_PERIODIC_DAMAGE", "GroundDamage", 339553)
 	self:Log("SPELL_PERIODIC_MISSED", "GroundDamage", 339553)
-	self:RegisterEvent("UNIT_SPELLCAST_SUCCEEDED")
+	self:Log("SPELL_CAST_SUCCESS", "BottledAnima", 339557)
 	self:Log("SPELL_AURA_APPLIED", "WarpedDesiresApplied", 339528)
 	self:Log("SPELL_AURA_APPLIED_DOSE", "WarpedDesiresApplied", 339528)
 	self:Log("SPELL_AURA_APPLIED", "ConcentrateAnima", 339527)
@@ -197,12 +195,17 @@ function mod:Curse(args)
 	end
 end
 
-function mod:Stoneskin(args)
-	local canDo, ready = self:Interrupter()
-	if canDo then
-		self:Message(args.spellId, "red", CL.casting:format(args.spellName))
-		if ready then
-			self:PlaySound(args.spellId, "alert")
+do
+	local prev = 0
+	function mod:Stoneskin(args)
+		local canDo, ready = self:Interrupter()
+		local t = args.time
+		if canDo and t-prev > 1 then
+			prev = t
+			self:Message(args.spellId, "red", CL.casting:format(args.spellName))
+			if ready then
+				self:PlaySound(args.spellId, "alert")
+			end
 		end
 	end
 end
@@ -214,9 +217,16 @@ function mod:StoneskinApplied(args)
 	end
 end
 
-function mod:GraniteWings(args)
-	self:Message(args.spellId, "orange", CL.casting:format(CL.knockback))
-	self:PlaySound(args.spellId, "long")
+do
+	local prev = 0
+	function mod:GraniteWings(args)
+		local t = args.time
+		if t-prev > 1 then
+			prev = t
+			self:Message(args.spellId, "orange", CL.casting:format(CL.knockback))
+			self:PlaySound(args.spellId, "long")
+		end
+	end
 end
 
 --[[ Shriekwing -> Huntsman Altimor ]]--
@@ -292,15 +302,10 @@ do
 	end
 end
 
-function mod:UNIT_SPELLCAST_SUCCEEDED(_, _, castGUID, spellId)
-	if castCollector[castGUID] then return end -- Throttle the same cast from multiple unitIds (target/focus/nameplate)
-
-	if spellId == 339557 then -- Bottled Anima
-		castCollector[castGUID] = true
-		self:Message(spellId, "yellow", CL.incoming:format(self:SpellName(spellId)))
-		self:Bar(spellId, 9.7)
-		self:PlaySound(spellId, "info")
-	end
+function mod:BottledAnima(args)
+	self:Message(args.spellId, "yellow", CL.incoming:format(args.spellName))
+	self:Bar(args.spellId, 9.7)
+	self:PlaySound(args.spellId, "info")
 end
 
 function mod:WarpedDesiresApplied(args)

@@ -6,6 +6,7 @@ MasqueDB = {
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
+		["Xñ - Stormscale"] = "Default",
 		["Xunaj - Draenor"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Nakolx - Stormscale"] = "Default",

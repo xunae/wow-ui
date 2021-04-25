@@ -47,12 +47,12 @@ Go to the northern gate of Andorhal, and east of the first watch tower you'll fi
 Get full hp/mana, get next to one of them and click your Temporal Displacer (looks like a horn). 1 to 3 lvl 57 worms will spawn and attack you. When it's 3 it might be tough to handle solo, so always start those fights with full hp and if possible potions / long cooldown abilities up. Back off from the silos after you summon the worms, if you stay too close more worms will spawn sometimes, and that's probably more than you can handle solo.
 The worms only appear when the silo is sparkling blue. They take a while to sparkle again after you use the temporal displacer next to them. There's 3 more silos just a bit more to the east.
 Keep doing that until you have 15 Temporal Parasites slain for [QC4971]
-Turn in [QT4971] and accept [QA4972]
-Now what you have to do is to check every destroyed houses in Andorhal and look for *Small Lockboxes* and loot the Watches from them for [QC4972]
+Turn in [QT4971] and accept [Q4972]
+Now what you have to do is to check every destroyed houses in Andorhal and look for *Small Lockboxes* and loot the Watches from them for [Q4972]
 Go to the town hall (with a tower clock) which is in the middle of Andorhal, close to where *Araj the Summoner* is, you can sneak in the town hall without having to fight any of the bunch of mobs close to it.
 Inside the town hall you'll find several *Musty Tome* lying on the floor. When you click one, there is a chance you will find the Annals of Darrowshire, but there is a higher chance that you will get a *Ruined Tome* and 1 or 2 level 57 mobs will attack you. They give no loot and no EXP. However there is a trick to know which Tome is the right one. There is a slight graphical difference. The pages of the fake tomes have two-tone colored pages, light-brown and white.
 You can easily see the difference if you zoom in 1st person view and put your mouse pointer over the books to highlight them. Loot the Annals of Darrowshire for [QC5154]
-Turn in [QT4972]
+Turn in [Q4972] [G39.4,66.8 Western Plaguelands]
 *The Attuned Dampener you get as a reward is only usable on Araj the Summoner, so save it for later when you are 60 and do the big quests. Killing Araj is necessary to get your Scholomance key and another quest for a decent trinket. You'll need a solid group of 60s to kill him, but the Attuned Dampener will help.*
 Turn in [QT5154] and accept [QA5210]
 Now you should also have finished [QC964], if you haven't, kill some more skeletons while you are in Andorhal.

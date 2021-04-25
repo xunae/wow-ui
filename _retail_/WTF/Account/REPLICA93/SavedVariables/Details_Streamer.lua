@@ -16,6 +16,7 @@ Details_StreamerDB = {
 		["Xunalol - Stormscale"] = "Xûñä - Ravencrest",
 		["Uñ - Draenor"] = "Xûñä - Ravencrest",
 		["Xunaorc - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Xñ - Stormscale"] = "Xûñä - Ravencrest",
 		["Xñ - Draenor"] = "Xûñä - Ravencrest",
 		["Nakolx - Stormscale"] = "Xûñä - Ravencrest",
 		["Enimos - Stormscale"] = "Xûñä - Ravencrest",
@@ -81,21 +82,16 @@ Details_StreamerDB = {
 				["radius"] = 160,
 				["hide"] = true,
 			},
-			["scale"] = 1,
+			["arrow_anchor_y"] = 0,
 			["arrow_anchor_x"] = 0,
-			["row_height"] = 20,
+			["main_frame_locked"] = true,
 			["row_texture"] = "Details Serenity",
-			["font_color"] = {
-				1, -- [1]
-				1, -- [2]
-				1, -- [3]
-				1, -- [4]
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
 			},
-			["point"] = "TOPLEFT",
-			["main_frame_strata"] = "LOW",
-			["square_amount"] = 5,
-			["enabled"] = false,
-			["arrow_size"] = 15,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -103,10 +99,15 @@ Details_StreamerDB = {
 				["font_shadow"] = true,
 				["y"] = 1.52587890625e-05,
 				["x"] = 0.0001373291015625,
-				["size"] = 32,
-				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
+				["update_speed"] = 0.05,
+				["size"] = 32,
 			},
+			["author"] = "Details! Team",
+			["square_amount"] = 5,
+			["enabled"] = false,
+			["arrow_size"] = 15,
+			["font_size"] = 12,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -114,22 +115,22 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["main_frame_strata"] = "LOW",
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
 			["y"] = -28.9441528320313,
-			["font_size"] = 12,
+			["use_spark"] = true,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
+			["point"] = "TOPLEFT",
+			["font_color"] = {
+				1, -- [1]
+				1, -- [2]
+				1, -- [3]
+				1, -- [4]
 			},
-			["use_spark"] = true,
-			["main_frame_locked"] = true,
-			["arrow_anchor_y"] = 0,
+			["row_height"] = 20,
+			["scale"] = 1,
 		},
 	},
 }

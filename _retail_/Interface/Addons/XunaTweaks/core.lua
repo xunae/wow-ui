@@ -184,8 +184,8 @@ function XunaTweaks:classColorFrames()
 		end
 	end
 	
-	--hooksecurefunc("UnitFrameHealthBar_Update", colorStatusBar)
-	--hooksecurefunc("HealthBar_OnValueChanged", function(self) colorStatusBar(self, self.unit) end)
+	hooksecurefunc("UnitFrameHealthBar_Update", colorStatusBar)
+	hooksecurefunc("HealthBar_OnValueChanged", function(self) colorStatusBar(self, self.unit) end)
 
 	setTargetFrameColor()
 	--setPlayerFrameColor()

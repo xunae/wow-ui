@@ -1,9 +1,10 @@
 
 HealCommSettings = {
 	["profileKeys"] = {
+		["Xuna - Gehennas"] = "Xuna - Gehennas",
+		["Xñ - Gehennas"] = "Xñ - Gehennas",
 		["Skraum - Gehennas"] = "Skraum - Gehennas",
 		["Xuna - Firemaw"] = "Xuna - Firemaw",
-		["Xuna - Gehennas"] = "Xuna - Gehennas",
 	},
 	["global"] = {
 		["healColor"] = {

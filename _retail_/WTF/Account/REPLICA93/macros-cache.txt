@@ -55,9 +55,6 @@ VER 3 00000000000000AE "HS" "INV_MISC_QUESTIONMARK"
 /use Healthstone
 /use Spiritual Healing Potion
 END
-VER 3 000000000000018D "MainBar" "INV_MISC_QUESTIONMARK"
-/script MainMenuBar:ClearAllPoints();MainMenuBar:SetPoint("CENTER",UIParent,"BOTTOM",40,38);
-END
 VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 #showtooltip Purge
 /cast [modifier:shift,@player] Purify Spirit
@@ -65,6 +62,7 @@ VER 3 000000000000013B "PURGE" "INV_MISC_QUESTIONMARK"
 /cast [modifier:alt,@party2]Purify Spirit
 /cast [harm][@targettarget] Purge
 /stopcasting [nomod]
+/petattack
 END
 VER 3 0000000000000180 "RSHAM_HR" "INV_MISC_QUESTIONMARK"
 #showtooltip

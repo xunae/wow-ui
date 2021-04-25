@@ -91,16 +91,15 @@ Kill Elder Stranglethorn Tigers for [QC187]
 Turn in [QT187][QT192][QT195]
 Accept [QA188][QA196]
 Go north-west and kill Bloodscalp Trolls until you have 20 Heads for [QC582]
+Run to Grom'Gol and Turn in [QT568][QT582]
+Fly to [F Booty Bay]
 Turn in [QT1182][QT213][QT577]
 Accept [QA1183][QA628]
-Fly to [F Grom'Gol]
-Turn in [QT568][QT582]
-Fly to [F Booty Bay]
 Make sure you have all STV Pages, if not check the Booty Bay AH for them.
 Chapter I: page 1,4,6,8 2. Chapter II: page 10,11,14,16 3. Chapter III: page 18,20,21,24 4. Chapter IV: page 25,26,27
 Now to hit level 39 you have two Options, Either go do Scarlet Monastery and the Quests associated with it, or grind until youre level [XP39 39]
 Hearth to [H Orgrimmar]
-If youre not Undead or a Warlock, go to the AH and buy some Underwater breathing pots.
+If youre not Undead,a Warlock or a Shaman with *[Shiny Fish Scales]*, go to the AH and buy some Underwater breathing pots or craft them if you're an Alchemist.
 Take the Zeppelin to Undercity
 Fly to [F Hammerfall]
 Now onwards to Faldir's cove. Run to [G31,64 Arathi Highlands]

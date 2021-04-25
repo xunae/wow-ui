@@ -20,6 +20,7 @@ BigDebuffsDB = {
 		["Xùñâ - Outland"] = "Default",
 		["Uñ - Draenor"] = "Default",
 		["Xunaorc - Arena Champions - EU"] = "Default",
+		["Xñ - Stormscale"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Nakolx - Stormscale"] = "Default",
 		["Enimos - Stormscale"] = "Default",
@@ -108,6 +109,7 @@ BigDebuffsDB = {
 				},
 			},
 			["unitFrames"] = {
+				["tooltips"] = false,
 				["arena1"] = {
 				},
 			},

@@ -7,6 +7,7 @@ Guidelime.registerGuide([[
 
 You should be level [XP41 41] to start this guide.
 Find and Kill Boss Tho'Grun for  [QC782]
+Go Kill Troggs for [QC1108] around [G50,68.6 Badlands]
 Turn in [QT1108][QT703] and accept [QA1137]
 Turn in [QT711] and accept [QA712]
 Turn in [QT1419][QT782][QT2258]
@@ -24,7 +25,7 @@ Turn in [QT1422] and  accept [QA1426]
 Kill Murlocs for [QC1426]
 Turn in [QT1426] and accept [QA1427]
 Turn in  [QT1427]  and accept [QA1428]
-Go back  to the shore and kill Murlocs for [QC1428] and crawlers for [QC1430]
+Go back  to the shore [G91.4,66 Swamp of Sorrows] and kill Murlocs for [QC1428] and crawlers for [QC1430]
 Turn in [QT1428][QT1430]
 Fly to [F Kargath]
 Kill Rock Elementals for [QC712]

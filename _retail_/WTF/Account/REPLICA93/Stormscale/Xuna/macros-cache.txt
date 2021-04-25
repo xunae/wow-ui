@@ -1,7 +1,3 @@
-VER 3 0100000000000023 "cl/ch" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [harm,exists]Chain Lightning;Chain Heal
-END
 VER 3 0100000000000020 "ele" "INV_MISC_QUESTIONMARK"
 #showtooltip Fire Elemental
 /cast Blood Fury(Racial)
@@ -16,6 +12,10 @@ VER 3 010000000000001C "ele_sk" "INV_MISC_QUESTIONMARK"
 /cast Stormkeeper
 /cast [talent:6/2] Eye of the Storm
 /cast [talent:6/2] Meteor
+END
+VER 3 0100000000000024 "ENHA_WEP_BUFFS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Windfury Weapon(Weapon Imbue),Flametongue Weapon(Weapon Imbue)
 END
 VER 3 010000000000000C "EQ" "INV_MISC_QUESTIONMARK"
 #showtooltip

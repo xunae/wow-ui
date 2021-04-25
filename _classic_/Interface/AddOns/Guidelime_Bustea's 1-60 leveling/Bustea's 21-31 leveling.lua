@@ -20,7 +20,7 @@ Accept [QA6442]
 Kill Nagas for [QC6442]
 Now comes a grinding session, stay here and grind until you hit level [XP22 22]. Keep any Shredder Operating Manual pages
 Turn in [QT6442]
-Hearth to [Orgrimmar]
+Hearth to [H Orgrimmar]
 Put any Shredder pages in the Bank
 [T] Train your level 22 skills.(Druids will have to go to Moonglade and then fly back)
 Go to [G51,14 Durotar] outside Orgrimmar.
@@ -41,10 +41,10 @@ Then free thog'thar for [QC498,2]
 Jailor Eston is also somewhere around here, kill him, loot the key and free Drull for [QC498,1]
 Kill syndicate mobs here until youre done with [QC549]
 Now for another small grind. Stay here until you hit level [XP23 23]
-Go towards tarren mill, kill bears and Spiders for [QC496]
+Go towards tarren mill [G60.1,21.4 Hillsbrad Foothills] , kill bears and Spiders for [QC496]
 When youre done, head back into Tarren Mill and turn in [QT498][QT549][QT496], accept [QA499]
 Turn in [QT499]
-Now its time to kill Mountain Lions for [QC501]
+Now its time to kill Mountain Lions around [G50.6,31.4 Hillsbrad Foothills] for [QC501]
 When youre done, head to the small farm West of here for [QC527]
 Get back to Tarren Mill and turn in [QT501][QT527], accept [QA502][QA528][QA546]
 Go back to the Farm and turn in [QT502], then kill Stanley once he transforms.

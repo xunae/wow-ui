@@ -115,7 +115,7 @@ ButtonForge: enabled
 bChat: disabled
 LibDialog-1.0: enabled
 OmniCC_Config: enabled
-Kui_Nameplates: disabled
+Kui_Nameplates: enabled
 ControlledRoll: disabled
 MogIt: enabled
 MogIt_Accessories: disabled
@@ -365,10 +365,10 @@ Details_DpsTuning: enabled
 ArkInventoryRules_Example: disabled
 DataStore: disabled
 DataStore_Containers: enabled
-Details: disabled
+Details: enabled
 Details_EncounterDetails: enabled
 Details_RaidCheck: enabled
-Details_DataStorage: disabled
+Details_DataStorage: enabled
 Details_TimeAttack: enabled
 Details_TinyThreat: disabled
 Details_Vanguard: enabled
@@ -386,8 +386,8 @@ nMainbar: enabled
 XLoot_Options: enabled
 PlateBuffs: disabled
 ActionBarProfiles: disabled
-Kui_Nameplates_Core_Config: disabled
-Kui_Nameplates_Core: disabled
+Kui_Nameplates_Core_Config: enabled
+Kui_Nameplates_Core: enabled
 Plater: disabled
 mOnArs_WardrobeHelper: enabled
 AdvancedInterfaceOptions: enabled
@@ -528,7 +528,7 @@ epgp_lootmaster_ml: disabled
 epgp_lootmaster: disabled
 Bagnon_Facade: enabled
 BarrelsOEasy: disabled
-Kui_Media: disabled
+Kui_Media: enabled
 OrderHallCommander: enabled
 ReagentBanker: enabled
 BigDumbLootCouncil: disabled

@@ -1,0 +1,82 @@
+
+BigWigs:AddColors("The Tarragrue", {
+	[346985] = {"blue","purple"},
+	[346986] = {"blue","purple"},
+	[347269] = {"blue","yellow"},
+	[347274] = "blue",
+	[347283] = {"blue","green","orange","red"},
+	[347286] = "blue",
+	[347369] = {"green","red"},
+	[347490] = {"green","orange","yellow"},
+	[347668] = {"blue","red"},
+	[347679] = {"cyan","yellow"},
+	[352368] = "yellow",
+	[352382] = "cyan",
+	[352389] = "cyan",
+	[352398] = "cyan",
+})
+
+BigWigs:AddColors("The Eye of the Jailer", {
+	[348074] = "blue",
+	[349028] = "orange",
+	[349979] = {"blue","orange"},
+	[350028] = "yellow",
+	[350713] = {"blue","orange"},
+	[350764] = "yellow",
+	[350803] = "purple",
+	[350828] = "yellow",
+	[350847] = {"blue","red"},
+	[351825] = "red",
+	[351827] = {"blue","yellow"},
+	["stages"] = "green",
+})
+
+BigWigs:AddColors("The Nine", {
+	[350031] = "cyan",
+	[350039] = {"blue","orange"},
+	[350098] = "cyan",
+	[350109] = {"blue","cyan","yellow"},
+	[350157] = "cyan",
+	[350184] = "cyan",
+	[350202] = {"blue","purple"},
+	[350283] = "yellow",
+	[350286] = "yellow",
+	[350339] = "yellow",
+	[350342] = "yellow",
+	[350365] = "red",
+	[350385] = "red",
+	[350467] = "orange",
+	[350475] = {"blue","purple"},
+	[350482] = {"blue","yellow"},
+	[350542] = {"blue","cyan"},
+	[350555] = "blue",
+	[350687] = "cyan",
+	[351399] = "yellow",
+	["stages"] = "green",
+})
+
+BigWigs:AddColors("Soulrender Dormazain", {
+	[349985] = "red",
+	[350217] = "yellow",
+	[350411] = "red",
+	[350422] = {"blue","purple"},
+	[350647] = {"blue","orange"},
+	[350650] = {"blue","orange"},
+	[351229] = "yellow",
+	[351779] = "yellow",
+	[354231] = "blue",
+})
+
+BigWigs:AddColors("Guardian of the First Ones", {
+	[347359] = "blue",
+	[350455] = "blue",
+	[350496] = {"blue","orange","yellow"},
+	[350732] = {"blue","purple"},
+	[350734] = {"blue","purple"},
+	[352385] = "cyan",
+	[352394] = {"green","red"},
+	[352538] = "red",
+	[352589] = "orange",
+	[352660] = "yellow",
+	[352833] = "red",
+})

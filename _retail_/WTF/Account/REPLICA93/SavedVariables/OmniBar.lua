@@ -16,6 +16,7 @@ OmniBarDB = {
 		["Delimn - Dunemaul"] = "Default",
 		["Uñ - Draenor"] = "Default",
 		["Xunaorc - Arena Champions - EU"] = "Default",
+		["Xñ - Stormscale"] = "Default",
 		["Xñ - Draenor"] = "Default",
 		["Nakolx - Stormscale"] = "Default",
 		["Enimos - Stormscale"] = "Default",
