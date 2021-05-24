@@ -1,7 +1,3 @@
-VER 3 0100000000000023 "cl/ch" "INV_MISC_QUESTIONMARK"
-#showtooltip
-/cast [harm,exists]Chain Lightning;Chain Heal
-END
 VER 3 0100000000000020 "ele" "INV_MISC_QUESTIONMARK"
 #showtooltip Fire Elemental
 /cast Blood Fury(Racial)
@@ -17,6 +13,10 @@ VER 3 010000000000001C "ele_sk" "INV_MISC_QUESTIONMARK"
 /cast [talent:6/2] Eye of the Storm
 /cast [talent:6/2] Meteor
 END
+VER 3 0100000000000024 "ENHA_WEP_BUFFS" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/castsequence Windfury Weapon(Weapon Imbue),Flametongue Weapon(Weapon Imbue)
+END
 VER 3 010000000000000C "EQ" "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@cursor]Earthquake
@@ -25,6 +25,13 @@ VER 3 0100000000000022 "fae_transfusion" "INV_MISC_QUESTIONMARK"
 #showtooltip Fae Transfusion(Night Fae)
 /cast Blood Fury(Racial)
 /cast Fae Transfusion(Night Fae)
+END
+VER 3 0100000000000025 "hmm" "INV_MISC_QUESTIONMARK"
+/run MainMenuBarArtFrameBackground:Hide()
+/run ActionButton1:ClearAllPoints()
+/run ActionButton1:SetPoint("CENTER",-365,-10)
+/run MultiBarBottomRightButton1:ClearAllPoints()
+/run MultiBarBottomRightButton1:SetPoint("CENTER",-130,0)
 END
 VER 3 0100000000000021 "xm" "INV_MISC_QUESTIONMARK"
 /xm

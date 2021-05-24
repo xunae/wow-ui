@@ -1,6 +1,0 @@
-Kui_Nameplates: enabled
-Kui_Nameplates_Core: enabled
-Kui_Nameplates_Core_Config: enabled
-Kui_Media: enabled
-Details: enabled
-Details_DataStorage: enabled

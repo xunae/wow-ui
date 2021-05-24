@@ -6,13 +6,13 @@ WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
 ATT: disabled
-Quartz: disabled
+Quartz: enabled
 ClassicUI: enabled
 XunaTweaks: enabled
 AdvancedInterfaceOptions: enabled
 AngryKeystones: disabled
 BigDebuffs: enabled
-BigWigs: enabled
+BigWigs: disabled
 BigWigs_Azeroth: enabled
 BigWigs_BattleOfDazaralor: enabled
 BigWigs_CastleNathria: enabled
@@ -104,7 +104,7 @@ RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
 RaiderIO_DB_EU_H_R: enabled
 BigWigs_Shadowlands: enabled
-Myslot: disabled
+Myslot: enabled
 Neuron: disabled
 Masque_Caith: disabled
 ZPerl: enabled

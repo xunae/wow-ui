@@ -22,7 +22,7 @@ LittleWigs_WrathOfTheLichKing: enabled
 BigWigs: disabled
 BigWigs_Shadowlands: enabled
 Neuron: disabled
-Myslot: disabled
+Myslot: enabled
 Masque_Caith: disabled
 REFlex: enabled
 Masque: enabled
@@ -34,14 +34,14 @@ sArena: disabled
 NameplateAuras: enabled
 BigWigs_CastleNathria: enabled
 DejaCharacterStats: disabled
-ColorPickerPlus: disabled
+ColorPickerPlus: enabled
 Details_Vanguard: disabled
 Details_TinyThreat: disabled
 Details_Streamer: disabled
 Details_RaidCheck: disabled
 Details_EncounterDetails: disabled
 Details_DataStorage: enabled
-Screen Overlay Enhanced: disabled
-ShadowedUnitFrames: disabled
-Quartz: disabled
+Screen Overlay Enhanced: enabled
+ShadowedUnitFrames: enabled
+Quartz: enabled
 WorldQuestsList: enabled

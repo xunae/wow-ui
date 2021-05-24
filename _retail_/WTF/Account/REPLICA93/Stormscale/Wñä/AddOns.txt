@@ -6,7 +6,7 @@ WeakAurasArchive: enabled
 OmniBar: enabled
 OmniCC: enabled
 ATT: disabled
-Quartz: disabled
+Quartz: enabled
 ClassicUI: enabled
 XunaTweaks: enabled
 AdvancedInterfaceOptions: enabled
@@ -21,7 +21,7 @@ BigWigs_Nyalotha: enabled
 BigWigs_EternalPalace: enabled
 BigWigs_Uldir: enabled
 !BlizzardRaidFramesFix: enabled
-ColorPickerPlus: disabled
+ColorPickerPlus: enabled
 Details: enabled
 Details_EncounterDetails: disabled
 Details_RaidCheck: disabled
@@ -46,7 +46,7 @@ NameplateAuras: enabled
 OmniCC_Config: enabled
 PremadeGroupsFilter: enabled
 ShadowedUF_Options: enabled
-ShadowedUnitFrames: disabled
+ShadowedUnitFrames: enabled
 tullaRange: enabled
 tullaRange_Config: enabled
 WeakAuras: enabled
@@ -96,7 +96,7 @@ LittleWigs_Classic: enabled
 LittleWigs_MistsOfPandaria: enabled
 LittleWigs_WarlordsOfDraenor: enabled
 LittleWigs_WrathOfTheLichKing: enabled
-Screen Overlay Enhanced: disabled
+Screen Overlay Enhanced: enabled
 WorldQuestsList: enabled
 RaiderIO: enabled
 RaiderIO_DB_EU_A: disabled
@@ -104,7 +104,7 @@ RaiderIO_DB_EU_H: enabled
 RaiderIO_DB_EU_A_R: disabled
 RaiderIO_DB_EU_H_R: enabled
 BigWigs_Shadowlands: enabled
-Myslot: disabled
+Myslot: enabled
 Neuron: disabled
 Masque_Caith: disabled
 FriendListColors: disabled

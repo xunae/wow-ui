@@ -6,7 +6,7 @@ codes:
  - N Name and level range of the guide [N(min)-(max)(name)]
  - NX Name and level range of the next guide proposed after finishing this [NX(min)-(max)(name)]
  - D details of the guide [D(details)]
- - GA guide applies to [GA(race),(class),(faction),...]
+ - GA guide applies to [GA(race),(class),(faction),(reputation),...]
  - Q [QA/T/C/S(id)[,objective](title)] quest accept/turnin/complete/skip    -- QW is deprecated; replaced by [QC...][O]
  - L [L(x),(y)[zone] ] loc
  - G [G(x),(y)[zone] ] goto
@@ -18,9 +18,13 @@ codes:
  - P get flight point
  - V vendor
  - R repair
- - A applies to [A(race),(class),(faction),...]
+ - A applies to [A(race),(class),(faction),(reputation),...]
  - O optional step
- - C complete this step along with the next one
+ - OC complete this step along with the next one
+ - CI collect item
+ - REP acquire reputation
+ - GG ON/OFF enable/disable automatically generating goto coordinates
+ - GL ON/OFF enable/disable automatically generating additional loc coordinates
 ]]
 
 addon.codes = {
@@ -50,6 +54,7 @@ addon.codes = {
 	AUTO_ADD_COORDINATES_GOTO = "GG",
 	AUTO_ADD_COORDINATES_LOC = "GL",
 	COLLECT_ITEM = "CI",
+	REPUTATION = "REP",
 --deprecated
 	COMPLETE_WITH_NEXT = "C", -- same as OC
 	PICKUP = "QP", -- same as QA
@@ -72,6 +77,9 @@ function addon.getSuperCode(code)
 end
 
 function addon.parseGuide(guide, group, strict, nameOnly)
+	local time
+	if addon.debugging then time = debugprofilestop() end
+	
 	if strict == nil then strict = true end
 	if type(guide) == "string" then
 		guide = {text = guide}
@@ -122,6 +130,8 @@ function addon.parseGuide(guide, group, strict, nameOnly)
 		if guide.minLevel ~= nil then guide.name = guide.minLevel .. guide.name end
 	end
 	if guide.group ~= nil then guide.name = guide.group .. " " .. guide.name end
+
+	if addon.debugging then print("LIME: parseGuide " .. guide.name .. (nameOnly and " names only" or "") .. " in " .. math.floor(debugprofilestop() - time) .. " ms") end
 	
 	if strict and guide.title == nil or guide.title == "" then 
 		addon.createPopupFrame(L.ERROR_GUIDE_HAS_NO_NAME):Show()
@@ -173,7 +183,8 @@ function addon.parseLine(step, guide, strict, nameOnly)
 		element.endPos = pos - 1
 		element.index = #step.elements + 1
 		element.step = step
-		element.t = addon.codesReverse[code:sub(1, 2)]
+		element.t = addon.codesReverse[code:sub(1, 3)]
+		if element.t == nil then element.t = addon.codesReverse[code:sub(1, 2)] end
 		if element.t == nil then element.t = addon.codesReverse[code:sub(1, 1)] end
 		if element.t == nil then 
 			addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
@@ -224,7 +235,7 @@ function addon.parseLine(step, guide, strict, nameOnly)
 				err = true
 			end
 		elseif element.t == "GUIDE_APPLIES" then
-			tag:upper():gsub(" ",""):gsub("([^,]+)", function(c)
+			tag:upper():gsub(" ",""):gsub("([^,%d%-<>]+)%s*([<>]?)%s*(%-?%d*)", function(c, less, value)
 				if addon.isClass(c) then
 					if guide.classes == nil then guide.classes = {} end
 					table.insert(guide.classes, addon.getClass(c))
@@ -233,11 +244,77 @@ function addon.parseLine(step, guide, strict, nameOnly)
 					table.insert(guide.races, addon.getRace(c))
 				elseif addon.isFaction(c) then
 					guide.faction = addon.getFaction(c)
+				elseif addon.isReputation(c) then
+					guide.reputation = addon.getReputation(c)
+					if less == "<" then
+						guide.repMax = tonumber(value)
+					else
+						guide.repMin = tonumber(value)
+					end
+					-- if none specified friendly reputation is required
+					if guide.repMin == nil and guide.repMax == nil then guide.repMin = 3000 end
 				else
 					addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 					err = true
 				end
 			end)
+		elseif addon.getSuperCode(element.t) == "QUEST" then
+			if element.t == "PICKUP" then
+				element.t = "ACCEPT"
+			elseif element.t == "WORK" then
+				element.t = "COMPLETE"
+				element.optional = true
+			elseif element.t == "QUEST" then
+				element.t = "COMPLETE"
+			end
+			local _, c = tag:gsub("%s*([%d/%?]+),?(%d*)%s*(.-)%s*$", function(id, objective, title)
+				element.questId = tonumber(id)
+				if element.questId == nil then
+					if strict then 
+						addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
+					else
+						element.questId = id
+					end
+				end
+				if not nameOnly then
+					if addon.getQuestReplacement(element.questId) ~= nil then
+						element.questId = addon.getQuestReplacement(element.questId)
+					end
+					if objective ~= "" then element.objective = tonumber(objective) end
+					if title == "-" then
+						element.title = ""
+					-- here we used to have a feature to replace an english quest name with the localized name whenever the english name is written out in the guide
+					-- this is disabled since right now there is not a way to get the non-localized quest name
+					elseif title ~= "" --[[ and (not strict or addon.questsDB[element.questId] == nil or title ~= addon.questsDB[element.questId].name) ]] then
+						element.title = title
+					end
+					if step.races == nil and addon.getQuestRaces(element.questId) ~= nil then 
+						step.races = {}
+						for i, r in pairs(addon.getQuestRaces(element.questId)) do step.races[i] = r end
+					end
+					if step.classes == nil and addon.getQuestClasses(element.questId) ~= nil then 
+						step.classes = {}
+						for i, r in pairs(addon.getQuestClasses(element.questId)) do step.classes[i] = r end
+					end
+					if step.faction == nil and addon.getQuestFaction(element.questId) ~= nil then 
+						step.faction = addon.getQuestFaction(element.questId) 
+					end
+					if step.reputation == nil and addon.getQuestReputation(element.questId) ~= nil then
+						step.reputation, step.repMin, step.repMax = addon.getQuestReputation(element.questId)
+					end
+					if addon.getQuestSort(element.questId) ~= nil and addon.mapIDs[addon.getQuestSort(element.questId)] ~= nil then 
+						guide.currentZone = addon.mapIDs[addon.getQuestSort(element.questId)] 
+					end
+					if element.t ~= "SKIP" then 
+						previousAutoStep = lastAutoStep
+						lastAutoStep = element 
+					end
+				end
+			end, 1)
+			if c ~= 1 then
+				addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
+				err = true
+			end
 		elseif nameOnly then
 			return ""
 		elseif element.t == "AUTO_ADD_COORDINATES_GOTO" then
@@ -258,64 +335,8 @@ function addon.parseLine(step, guide, strict, nameOnly)
 				addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 				err = true
 			end
-		elseif addon.getSuperCode(element.t) == "QUEST" then
-			if element.t == "PICKUP" then
-				element.t = "ACCEPT"
-			elseif element.t == "WORK" then
-				element.t = "COMPLETE"
-				element.optional = true
-			elseif element.t == "QUEST" then
-				element.t = "COMPLETE"
-			end
-			local _, c = tag:gsub("%s*([%d/%?]+),?(%d*)%s*(.-)%s*$", function(id, objective, title)
-				element.questId = tonumber(id)
-				if element.questId == nil then
-					if strict then 
-						addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
-					else
-						element.questId = id
-					end
-				end
-				if addon.questsDB[element.questId] ~= nil and addon.questsDB[element.questId].replacement ~= nil then
-					element.questId = addon.questsDB[element.questId].replacement
-				end
-				if objective ~= "" then element.objective = tonumber(objective) end
-				if title == "-" then
-					element.title = ""
-				elseif title ~= "" and (not strict or addon.questsDB[element.questId] == nil or title ~= addon.questsDB[element.questId].name) then
-					element.title = title
-				end
-				--if addon.debugging and addon.questsDB[element.questId] == nil then 
-				--	print("LIME: loading guide \"" .. (guide.title or "") .. "\": unknown quest id " .. (element.questId or "") .. "\" in line \"" .. (step.line or "") .. " " .. step.text .. "\"") 
-				--end
-				--elseif addon.debugging and addon.questsDB[element.questId].name ~= element.title:sub(1, #addon.questsDB[element.questId].name) then
-				--	error("loading guide \"" .. GuidelimeDataChar.currentGuide.title .. "\": wrong title for quest " .. element.questId .. " \"" .. element.title .. "\" instead of \"" .. addon.questsDB[element.questId].name .. "\" in line \"" .. step.text .. "\"")
-				--end
-				if addon.questsDB[element.questId] ~= nil then
-					if step.races == nil and addon.getQuestRaces(element.questId) ~= nil then 
-						step.races = {}
-						for i, r in pairs(addon.getQuestRaces(element.questId)) do step.races[i] = r end
-					end
-					if step.classes == nil and addon.getQuestClasses(element.questId) ~= nil then 
-						step.classes = {}
-						for i, r in pairs(addon.getQuestClasses(element.questId)) do step.classes[i] = r end
-					end
-					if step.faction == nil and addon.getQuestFaction(element.questId) ~= nil then step.faction = addon.getQuestFaction(element.questId) end
-					if addon.questsDB[element.questId].sort ~= nil and addon.mapIDs[addon.questsDB[element.questId].sort] ~= nil then 
-						guide.currentZone = addon.mapIDs[addon.questsDB[element.questId].sort] 
-					end
-				end
-				if element.t ~= "SKIP" then 
-					previousAutoStep = lastAutoStep
-					lastAutoStep = element 
-				end
-			end, 1)
-			if c ~= 1 then
-				addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
-				err = true
-			end
 		elseif element.t == "APPLIES" then
-			tag:upper():gsub(" ",""):gsub("([^,]+)", function(c)
+			tag:upper():gsub(" ",""):gsub("([^,%d%-<>]+)%s*([<>]?)%s*(%-?%d*)", function(c, less, value)
 				if addon.isClass(c) then
 					if step.classes == nil then step.classes = {} end
 					table.insert(step.classes, addon.getClass(c))
@@ -324,6 +345,15 @@ function addon.parseLine(step, guide, strict, nameOnly)
 					table.insert(step.races, addon.getRace(c))
 				elseif addon.isFaction(c) then
 					step.faction = addon.getFaction(c)
+				elseif addon.isReputation(c) and step.reputation == nil then
+					step.reputation = addon.getReputation(c)
+					if less == "<" then
+						step.repMax = tonumber(value)
+					else
+						step.repMin = tonumber(value)
+					end
+					-- if none specified friendly reputation is required
+					if step.repMin == nil and step.repMax == nil then step.repMin = 3000 end
 				else
 					addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 					err = true
@@ -394,6 +424,35 @@ function addon.parseLine(step, guide, strict, nameOnly)
 				addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 				err = true
 			end
+		elseif element.t == "REPUTATION" then
+			local _, c = tag:gsub("([^%d%-<>]+)%s*([<>]?)%s*(%-?%d*)%s*(.*)", function(c, less, value, text)
+				if addon.isReputation(c) then
+					element.reputation = addon.getReputation(c)
+					if less == "<" then
+						element.repMax = tonumber(value)
+					else
+						element.repMin = tonumber(value)
+					end
+					-- if none specified friendly reputation is required
+					if element.repMin == nil and element.repMax == nil then element.repMin = 3000 end
+					if text ~= "" then
+						if text == "-" then text = "" end
+						element.text, element.textInactive, _ = textFormatting(text:gsub("%s*(.*)", "%1", 1))
+					end
+					if element.text == nil then
+						element.text = addon.getLocalizedReputation(element.reputation)
+						element.textInactive = element.text
+					end
+					lastAutoStep = element
+				else
+					addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
+					err = true
+				end
+			end, 1)
+			if c ~= 1 then
+				addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
+				err = true
+			end
 		elseif element.t == "OPTIONAL_COMPLETE_WITH_NEXT" then
 			element.text, element.textInactive, _ = textFormatting(tag)
 			step.completeWithNext = true
@@ -414,12 +473,13 @@ function addon.parseLine(step, guide, strict, nameOnly)
 		elseif element.t == "FLY" or element.t == "GET_FLIGHT_POINT" then
 			if tag:gsub(" ", "") ~= "" then
 				element.text, element.textInactive = textFormatting(tag)
-				element.flightmaster = addon.getFlightmasterByPlace(tag, step.faction or guide.faction)
+				element.flightmaster = addon.getFlightmasterByPlace(tag, step.faction or guide.faction or addon.faction)
+				if element.flightmaster == nil then
 --TODO: active this error check
---				if element.flightmaster == nil then
 --					addon.createPopupFrame(string.format(L.ERROR_CODE_NOT_RECOGNIZED, guide.title or "", code, (step.line or "") .. " " .. step.text)):Show()
 --					err = true
---				end
+					if addon.debugging then print("LIME: flight point not recognized -", tag) end
+				end
 			end
 		elseif element.t == "COLLECT_ITEM" then
 			local _, c = tag:gsub("%s*(%d+),?(%d*)%s*(.-)%s*$", function(id, qty, title)	

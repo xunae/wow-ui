@@ -2,6 +2,9 @@
 HandyNotes_ShadowlandsDB = {
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
+		["Spazshaman - Stormscale"] = "Default",
+		["Wñä - Stormscale"] = "Default",
+		["Xunae - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 	},
 	["profiles"] = {

@@ -1,17 +1,28 @@
 local addonName, addon = ...
 local L = addon.L
 
+HBD = LibStub("HereBeDragons-2.0")
+
 -- Register events and call functions
 addon.frame:SetScript("OnEvent", function(self, event, ...)
 	addon.frame[event](self, ...)
 end)
 
-addon.frame:RegisterEvent('PLAYER_ENTERING_WORLD')
-function addon.frame:PLAYER_ENTERING_WORLD()
-	--if addon.debugging then print("LIME: Player entering world...") end
+local function init()
 	if not addon.dataLoaded then addon.loadData() end
 	if GuidelimeDataChar.mainFrameShowing then addon.showMainFrame() end
 	addon.alive = HBD:GetPlayerZone() == nil or C_DeathInfo.GetCorpseMapPosition(HBD:GetPlayerZone()) == nil
+end
+
+addon.frame:RegisterEvent('PLAYER_LOGIN')
+function addon.frame:PLAYER_LOGIN()
+	--if addon.debugging then print("LIME: Player logged in...") end
+	C_Timer.After(2, init)
+end
+
+addon.frame:RegisterEvent('PLAYER_ENTERING_WORLD')
+function addon.frame:PLAYER_ENTERING_WORLD()
+	--if addon.debugging then print("LIME: Player entering world...") end
 end
 
 addon.frame:RegisterEvent('PLAYER_LEVEL_UP')
@@ -31,22 +42,51 @@ function addon.frame:PLAYER_XP_UPDATE(level)
 	addon.updateSteps()
 end
 
+addon.frame:RegisterEvent('UPDATE_FACTION')
+function addon.frame:UPDATE_FACTION(level)
+	if addon.debugging then print("LIME: Update faction") end
+	addon.updateMainFrame()
+end
+
 function addon.updateFromQuestLog()
 	local questLog = {}
 	local isCollapsed = {}
 	local currentHeader
-	for i=1,GetNumQuestLogEntries() do
-		local name, _, _, header, collapsed, completed, _, id = GetQuestLogTitle(i)
-		if header then
-			isCollapsed[name] = collapsed
-			currentHeader = name
-		else
-			questLog[id] = {}
-			questLog[id].index = i
-			questLog[id].finished = (completed == 1)
-			questLog[id].failed = (completed == -1)
-			questLog[id].name = name
-			questLog[id].sort = currentHeader
+	if C_QuestLog.GetInfo ~= nil then
+		local i = 1
+		while (true) do	
+			local info = C_QuestLog.GetInfo(i)
+			if not info then break end
+			if info.isHeader then
+				isCollapsed[info.title] = info.isCollapsed
+				currentHeader = info.title
+			else
+				questLog[info.questID] = {}
+				questLog[info.questID].index = i
+				--local completed = true
+				--local objectives = C_QuestLog.GetQuestObjectives(info.questID)
+				--for i, o in ipairs(objectives) do if not o.finished then completed = false end end
+				questLog[info.questID].finished = C_QuestLog.IsComplete(info.questID)
+				questLog[info.questID].failed = C_QuestLog.IsFailed(info.questID)
+				questLog[info.questID].name = info.title
+				questLog[info.questID].sort = currentHeader
+			end
+			i = i + 1
+		end
+	else
+		for i = 1, GetNumQuestLogEntries() do
+			local name, _, _, header, collapsed, completed, _, id = GetQuestLogTitle(i)
+			if header then
+				isCollapsed[name] = collapsed
+				currentHeader = name
+			else
+				questLog[id] = {}
+				questLog[id].index = i
+				questLog[id].finished = (completed == 1)
+				questLog[id].failed = (completed == -1)
+				questLog[id].name = name
+				questLog[id].sort = currentHeader	
+			end
 		end
 	end
 	
@@ -118,7 +158,7 @@ end
 local function doQuestUpdate()
 	addon.xp = UnitXP("player")
 	addon.xpMax = UnitXPMax("player")
-	addon.y, addon.x = UnitPosition("player")
+	addon.x, addon.y, addon.instance = HBD:GetPlayerWorldPosition()
 	
 	if addon.quests ~= nil then 
 		local checkCompleted, questChanged, questFound = addon.updateFromQuestLog()
@@ -137,7 +177,7 @@ local function doQuestUpdate()
 					addon.updateStepsText()
 				end
 				C_Timer.After(0.1, function() 
-					local completed = GetQuestsCompleted()
+					local completed = addon.GetQuestsCompleted()
 					local questCompleted = false
 					for id, q in pairs(addon.quests) do
 						if completed[id] and not q.completed then
@@ -172,15 +212,16 @@ end
 addon.frame:RegisterEvent('GOSSIP_SHOW')
 function addon.frame:GOSSIP_SHOW()
 	if GuidelimeData.autoCompleteQuest and not IsShiftKeyDown() and addon.currentGuide ~= nil and addon.currentGuide.activeQuests ~= nil then 
-		if addon.debugging then print ("LIME: GOSSIP_SHOW", GetGossipActiveQuests()) end
-		if addon.debugging then print ("LIME: GOSSIP_SHOW", GetGossipAvailableQuests()) end
-		local q = { GetGossipActiveQuests() }
+		if addon.debugging then print ("LIME: GOSSIP_SHOW", addon.GetGossipActiveQuests()) end
+		if addon.debugging then print ("LIME: GOSSIP_SHOW", addon.GetGossipAvailableQuests()) end
+		local q = { addon.GetGossipActiveQuests() }
 		local selectActive = nil
 		local selectAvailable = nil
 		addon.openNpcAgain = false
-		for i = 1, GetNumGossipActiveQuests() do
+		for i = 1, addon.GetNumGossipActiveQuests() do
 			local name = q[(i-1) * 6 + 1]
-			if addon.contains(addon.currentGuide.activeQuests, function(id) return name == addon.getQuestNameById(id) end) then
+			local complete = q[(i-1) * 6 + 4]
+			if complete and addon.contains(addon.currentGuide.activeQuests, function(id) return name == addon.getQuestNameById(id) end) then
 				if selectActive == nil then
 					selectActive = i
 				else
@@ -188,8 +229,8 @@ function addon.frame:GOSSIP_SHOW()
 				end			
 			end
 		end
-		q = { GetGossipAvailableQuests() }
-		for i = 1, GetNumGossipAvailableQuests() do
+		q = { addon.GetGossipAvailableQuests() }
+		for i = 1, addon.GetNumGossipAvailableQuests() do
 			local name = q[(i-1) * 7 + 1]
 			if addon.contains(addon.currentGuide.activeQuests, function(id) return name == addon.getQuestNameById(id) end) then
 				if selectActive == nil and selectAvailable == nil then
@@ -203,12 +244,12 @@ function addon.frame:GOSSIP_SHOW()
 		if selectActive ~= nil then
 			C_Timer.After(addon.AUTO_COMPLETE_DELAY, function() 
 				if addon.debugging then print ("LIME: GOSSIP_SHOW selectActive", selectActive) end
-				SelectGossipActiveQuest(selectActive)
+				addon.SelectGossipActiveQuest(selectActive)
 			end)
 		elseif selectAvailable ~= nil then
 			C_Timer.After(addon.AUTO_COMPLETE_DELAY, function() 
 				if addon.debugging then print ("LIME: GOSSIP_SHOW selectAvailable", selectAvailable) end
-				SelectGossipAvailableQuest(selectAvailable)
+				addon.SelectGossipAvailableQuest(selectAvailable)
 			end)
 		end
 	end
@@ -221,7 +262,7 @@ function addon.frame:GOSSIP_SHOW()
 						local gossip = {GetGossipOptions()}
 						for i = 1, GetNumGossipOptions() do
 							if gossip[i * 2] == "taxi" then
-								SelectGossipOption(i)
+								addon.SelectGossipOption(i)
 							end
 						end
 					end
@@ -337,13 +378,17 @@ function addon.frame:TAXIMAP_OPENED()
 				if not element.completed then
 					if element.flightmaster ~= nil then
 						local master = addon.flightmasterDB[element.flightmaster]
+						if addon.debugging then print("LIME: looking for", master.zone, master.place) end
 						for j = 1, NumTaxiNodes() do
-							if (master.place or master.zone) == TaxiNodeName(j):sub(1, #(master.place or master.zone)) then
+							--if addon.debugging then print("LIME: ", TaxiNodeName(j)) end
+							if addon.isFlightmasterMatch(master, TaxiNodeName(j)) then
 								if element.t == "FLY" and TaxiNodeGetType(j) == "REACHABLE" then
 									if IsMounted() then Dismount() end -- dismount before using the flightpoint
 									if addon.debugging then print ("LIME: Flying to " .. (master.place or master.zone)) end
-									TakeTaxiNode(j)
-									addon.completeSemiAutomatic(element)
+									if _G["TaxiButton"..j] then TaxiNodeOnButtonEnter(_G["TaxiButton"..j]) end
+									C_Timer.After(0.5, function()
+										TakeTaxiNode(j)
+									end)
 								elseif element.t == "GET_FLIGHT_POINT" and TaxiNodeGetType(j) == "CURRENT" then
 									addon.completeSemiAutomatic(element)
 								end
@@ -419,8 +464,8 @@ end
 
 addon.frame:RegisterEvent('BAG_UPDATE')
 function addon.frame:BAG_UPDATE()
-	if addon.debugging then print ("LIME: BAG_UPDATE") end
-	local guide = addon.guides[GuidelimeDataChar.currentGuide]
+	-- if addon.debugging then print ("LIME: BAG_UPDATE") end
+	local guide = GuidelimeDataChar and addon.guides[GuidelimeDataChar.currentGuide]
 	if guide and guide.itemUpdateIndices and #guide.itemUpdateIndices > 0 then
 		addon.updateSteps(guide.itemUpdateIndices)
 	end

@@ -1,0 +1,28 @@
+VER 3 0100000000000001 "ele" "INV_Misc_QuestionMark"
+#showtooltip Fire Elemental
+/cast Blood Fury(Racial)
+/cast Fire Elemental
+END
+VER 3 0100000000000002 "ELE_LMT" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@cursor]Liquid Magma Totem
+END
+VER 3 0100000000000003 "ele_sk" "INV_Misc_QuestionMark"
+#showtooltip Stormkeeper
+/cast Stormkeeper
+/cast [talent:6/2] Eye of the Storm
+/cast [talent:6/2] Meteor
+END
+VER 3 0100000000000004 "ENHA_WEP_BUFFS" "INV_Misc_QuestionMark"
+#showtooltip
+/castsequence Windfury Weapon(Weapon Imbue),Flametongue Weapon(Weapon Imbue)
+END
+VER 3 0100000000000005 "EQ" "INV_Misc_QuestionMark"
+#showtooltip
+/cast [@cursor]Earthquake
+END
+VER 3 0100000000000006 "fae_transfusion" "INV_Misc_QuestionMark"
+#showtooltip Fae Transfusion(Night Fae)
+/cast Blood Fury(Racial)
+/cast Fae Transfusion(Night Fae)
+END

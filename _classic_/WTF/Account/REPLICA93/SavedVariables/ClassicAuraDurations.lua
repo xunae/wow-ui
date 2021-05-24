@@ -1,4 +1,0 @@
-
-ClassicAuraDurationsDB = {
-	["enemyBuffs"] = true,
-}

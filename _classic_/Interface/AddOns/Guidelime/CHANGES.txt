@@ -1,116 +1,12 @@
-tag fa72530f182b58a9fad444ed7e83b4a7ea0903ee v1.045
+tag 9959afe0a2ba10aef70513f638b10b0d927002d5 v2.012(TBC)
 Author:	max-ri <51713394+max-ri@users.noreply.github.com>
-Date:	Thu Apr 1 10:47:07 2021 +0200
+Date:	Fri May 21 01:56:18 2021 +0200
 
-v1.045
+v2.012(TBC)
 
-commit e141b2a1d3da17a94eb1e14200a06e55b1ac4e6b
+commit 84fd75c18d53d6643d3a256b40e4ac28b2fc4629
 Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Thu Apr 1 10:47:07 2021 +0200
+Date:   Fri May 21 01:56:18 2021 +0200
 
-    v1.045
-
-commit e17b0a9ab2ae57a4b4011eae51a1c2287dbc67db
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Wed Mar 31 12:15:25 2021 +0200
-
-    #133
-
-commit 6a9c149d27a3f2b8d7a0d7f4018da5007b76bd09
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Wed Mar 31 12:11:27 2021 +0200
-
-    #132
-
-commit 0b0b4628c7ca810152f7b75e62bb016669055430
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 13:12:59 2021 +0100
-
-    #131
-
-commit 69716c6f79c7d01b51bf2b8021d35bbd0874ab69
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 10:24:34 2021 +0100
-
-    #130
-
-commit 69716c6f79c7d01b51bf2b8021d35bbd0874ab69
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 10:24:34 2021 +0100
-
-    #130
-
-commit 69716c6f79c7d01b51bf2b8021d35bbd0874ab69
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 10:24:34 2021 +0100
-
-    #130
-
-commit 69716c6f79c7d01b51bf2b8021d35bbd0874ab69
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 10:24:34 2021 +0100
-
-    #130
-
-commit 959ac0fc53ccb2558f91ea623bc759c331bb55a5
-Author: max-ri <51713394+max-ri@users.noreply.github.com>
-Date:   Sat Mar 27 10:06:19 2021 +0100
-
-    Update .gitignore
-    
-    a .gitignore which ignores everything except the guidelime files; so you can have whatever other addons you want in the same folder
-
-commit 3cdaa215c007bf99edda4aecfcdf25830573f670
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Fri Mar 5 13:46:31 2021 -0300
-
-    minor fixes
-
-commit 546688910e46f3ef76061a41e5da1eb862fe9977
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Fri Feb 26 18:31:51 2021 -0300
-
-    minor fixes
-
-commit b81474b041c94c923a386e62b8dcc09845f927e9
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Fri Feb 26 18:24:47 2021 -0300
-
-    small correction
-
-commit 915e964834dfb9a403a05108658d1035c7865c0a
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Thu Feb 25 14:38:52 2021 -0300
-
-    better event handling
-
-commit 5a61f75751be3617c34b42a834335dc9ac6b1520
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Tue Feb 23 16:58:28 2021 -0300
-
-    allowing the execution of lua code
-
-commit e3a33f0913e3b624124c493ecd7dd32313279d4b
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Tue Feb 23 01:38:00 2021 -0300
-
-    small fixes
-
-commit adc988ccb3a2a2ae443e9d794979a0d2ab8076e0
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Sat Feb 20 22:29:05 2021 -0300
-
-    identation fix
-
-commit adc988ccb3a2a2ae443e9d794979a0d2ab8076e0
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Sat Feb 20 22:29:05 2021 -0300
-
-    identation fix
-
-commit c32651802d6517be0e15cd027eb4d7cb6617bb9f
-Author: Zarant <26726709+Zarant@users.noreply.github.com>
-Date:   Sat Feb 20 22:26:09 2021 -0300
-
-    added a collect item tag
+    v2.012(TBC)
 

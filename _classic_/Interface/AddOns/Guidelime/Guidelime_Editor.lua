@@ -3,21 +3,38 @@ local L = addon.L
 
 local function setQuestInfo(id)
 	if id == nil or addon.getQuestNameById(id) == nil then return end
-	local text = L.NAME .. ": " .. addon.COLOR_WHITE .. addon.getQuestNameById(id) .. " (#" .. id .. ")|r\n"
-	local quest = addon.questsDB[id]
-	if quest ~= nil then
-		if quest.name ~= addon.getQuestNameById(id) then text = text .. L.ENGLISH_NAME .. ": " .. addon.COLOR_WHITE .. quest.name .. "|r\n" end
-		text = text .. L.CATEGORY .. ": " .. addon.COLOR_WHITE .. quest.sort .. "|r\n"
-		text = text .. L.MINIMUM_LEVEL .. ": " .. addon.COLOR_WHITE .. quest.req .. "|r\n"
-		text = text .. L.SUGGESTED_LEVEL .. ": " .. addon.COLOR_WHITE .. quest.level .. "|r\n"
-		if quest.type ~= nul then text = text .. L.TYPE .. ": " .. addon.COLOR_WHITE .. quest.type .. "|r\n" end
-		text = text .. L.OBJECTIVE .. ": " .. addon.COLOR_WHITE .. addon.getQuestObjective(id) .. "|r\n"
-		if quest.series ~= nil or quest.next ~= nil or quest.prev ~= nil then
+	local text = L.NAME .. ": " .. addon.COLOR_WHITE .. (addon.getQuestNameById(id) or "?") .. " (#" .. id .. ")|r\n"
+	if addon.getQuestNameById(id) ~= nil then
+		--if quest.name ~= addon.getQuestNameById(id) then text = text .. L.ENGLISH_NAME .. ": " .. addon.COLOR_WHITE .. quest.name .. "|r\n" end
+		text = text .. L.CATEGORY .. ": " .. addon.COLOR_WHITE .. (addon.getQuestSort(id) or "?") .. "|r\n"
+		text = text .. L.MINIMUM_LEVEL .. ": " .. addon.COLOR_WHITE .. (addon.getQuestMinimumLevel(id) or "?") .. "|r\n"
+		text = text .. L.SUGGESTED_LEVEL .. ": " .. addon.COLOR_WHITE .. (addon.getQuestLevel(id) or "?") .. "|r\n"
+		if addon.getQuestType(id) ~= nil then text = text .. L.TYPE .. ": " .. addon.COLOR_WHITE .. (addon.getQuestType(id) or "?") .. "|r\n" end
+		text = text .. L.OBJECTIVE .. ": " .. addon.COLOR_WHITE .. (addon.getQuestObjective(id) or "?") .. "|r\n"
+		if addon.getQuestClasses(id) ~= nil then
+			text = text .. CLASS .. ": " .. addon.COLOR_WHITE 
+			for i, class in ipairs(addon.getQuestClasses(id)) do
+				if i > 1 then text = text .. ", " end
+				text = text .. addon.getLocalizedClass(class)
+			end
+			text = text .. "|r\n"
+		end
+		if addon.getQuestRaces(id) ~= nil then
+			text = text .. RACE .. ": " .. addon.COLOR_WHITE 
+			for i, race in ipairs(addon.getQuestRaces(id)) do
+				if i > 1 then text = text .. ", " end
+				text = text .. addon.getLocalizedRace(race)
+			end
+			text = text .. "|r\n"
+		end
+		if addon.getQuestFaction(id) ~= nil then text = text .. FACTION .. ": " .. addon.COLOR_WHITE .. L[addon.getQuestFaction(id)] .. "|r\n" end
+		
+		if addon.getQuestSeries(id) ~= nil or addon.getQuestNext(id) ~= nil or addon.getQuestPrev(id) ~= nil then
 			text = text .. "\n" .. L.QUEST_CHAIN
-			if quest.series ~= nil then text = text .. addon.COLOR_WHITE .. " (" .. L.PART .. " " .. quest.series .. ")|r" end
+			if addon.getQuestSeries(id) ~= nil then text = text .. addon.COLOR_WHITE .. " (" .. L.PART .. " " .. addon.getQuestSeries(id) .. ")|r" end
 			text = text .. "\n"
-			if quest.next ~= nil then text = text .. L.NEXT .. ": " .. addon.COLOR_WHITE .. addon.getQuestNameById(quest.next) .. " (#" .. quest.next .. ")|r\n" end
-			if quest.prev ~= nil then text = text .. L.PREVIOUS .. ": " .. addon.COLOR_WHITE .. addon.getQuestNameById(quest.prev) .. " (#" .. quest.prev .. ")|r\n" end
+			if addon.getQuestNext(id) ~= nil then text = text .. L.NEXT .. ": " .. addon.COLOR_WHITE .. (addon.getQuestNameById(addon.getQuestNext(id)) or "?") .. " (#" .. addon.getQuestNext(id) .. ")|r\n" end
+			if addon.getQuestPrev(id) ~= nil then text = text .. L.PREVIOUS .. ": " .. addon.COLOR_WHITE .. (addon.getQuestNameById(addon.getQuestPrev(id)) or "?") .. " (#" .. addon.getQuestPrev(id) .. ")|r\n" end
 		end
 	end
 	local first = true
@@ -304,16 +321,19 @@ function addon.popupAppliesSetEnabledCheckboxes(popup, typ, guide)
 		for key, box in pairs(popup.checkboxes) do
 			if addon.isFaction(key) and faction ~= nil then
 				box:SetEnabled(false)
+				box:SetChecked(faction == key)
 			elseif addon.isRace(key) and 
 				((faction ~= nil and faction ~= addon.races[key]) or 
 				(guide.races ~= nil and not addon.contains(guide.races, key)) or
 				(guide.races ~= nil and #guide.races == 1)) then
 				box:SetEnabled(false)
+				box:SetChecked(guide.races ~= nil and addon.contains(guide.races, key))
 			elseif addon.isClass(key) and 
 				((faction ~= nil and addon.classesWithFaction[key] ~= nil and faction ~= addon.classesWithFaction[key]) or 
 				(guide.classes ~= nil and not addon.contains(guide.classes, key)) or
 				(guide.classes ~= nil and #guide.classes == 1)) then
 				box:SetEnabled(false)
+				box:SetChecked(guide.classes ~= nil and addon.contains(guide.classes, key))
 			end
 		end
 	end
@@ -457,7 +477,7 @@ function addon.showEditPopupQUEST(typ, guide, selection)
 			end
 			id = ids[1]
 		else
-			if addon.questsDB[id] == nil then 
+			if addon.getQuestNameById(id) == nil then 
 				addon.createPopupFrame(string.format(L.ERROR_QUEST_NOT_FOUND, id)):Show() 
 				return false
 			end

@@ -1,6 +1,6 @@
 
 	----------------------------------------------------------------------
-	-- 	Leatrix Maps 1.13.102 (21st April 2021)
+	-- 	Leatrix Maps 2.5.10 (15th May 2021)
 	----------------------------------------------------------------------
 
 	-- 10:Func, 20:Comm, 30:Evnt, 40:Panl
@@ -12,7 +12,7 @@
 	local LeaMapsLC, LeaMapsCB, LeaConfigList = {}, {}, {}
 
 	-- Version
-	LeaMapsLC["AddonVer"] = "1.13.102"
+	LeaMapsLC["AddonVer"] = "2.5.10"
 	LeaMapsLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -22,7 +22,7 @@
 	-- Check Wow version is valid
 	do
 		local gameversion, gamebuild, gamedate, gametocversion = GetBuildInfo()
-		if gametocversion and gametocversion > 19999 then
+		if gametocversion and gametocversion < 20000 or gametocversion > 29999 then
 			-- Game client is not Wow Classic
 			C_Timer.After(2, function()
 				print(L["LEATRIX MAPS: WRONG VERSION INSTALLED!"])
@@ -59,21 +59,21 @@
 		if LeaMapsLC["EnhanceBattleMap"] == "On" then
 
 			-- Group icon texture
-			local partyTexture = "Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps_Icon.blp"
+			local partyTexture = "WhiteCircle-RaidBlips"
 
 			-- Create configuraton panel
 			local battleFrame = LeaMapsLC:CreatePanel("Enhance battlefield map", "battleFrame")
 
 			-- Add controls
 			LeaMapsLC:MakeTx(battleFrame, "Settings", 16, -72)
-			LeaMapsLC:MakeSL(battleFrame, "BattleGroupIconSize", "Group Icons", "Drag to set the group icon size.", 20, 40, 1, 36, -122, "%.0f")
+			LeaMapsLC:MakeSL(battleFrame, "BattleGroupIconSize", "Group Icons", "Drag to set the group icon size.", 8, 32, 1, 36, -122, "%.0f")
 			LeaMapsLC:MakeSL(battleFrame, "BattlePlayerArrowSize", "Player Arrow", "Drag to set the player arrow size.", 12, 24, 1, 36, -182, "%.0f")
 			LeaMapsLC:MakeSL(battleFrame, "BattleMapSize", "Map Size", "Drag to set the battlefield map size.", 0.5, 3, 0.1, 206, -182, "%.0f")
 
 			-- Add preview texture
 			local prevIcon = battleFrame:CreateTexture(nil, "ARTWORK")
 			prevIcon:SetPoint("CENTER", battleFrame, "TOPLEFT", 240, -132)
-			prevIcon:SetTexture(partyTexture)
+			prevIcon:SetAtlas(partyTexture)
 			prevIcon:SetSize(30,30)
 			prevIcon:SetVertexColor(0.78, 0.61, 0.43, 1)
 
@@ -167,7 +167,7 @@
 
 			-- Function to refresh size slider and update battlefield map if it's loaded
 			local function SetIconSize()
-				LeaMapsCB["BattleGroupIconSize"].f:SetText(LeaMapsLC["BattleGroupIconSize"] .. " (" .. string.format("%.0f%%", LeaMapsLC["BattleGroupIconSize"] / 20 * 100) .. ")")
+				LeaMapsCB["BattleGroupIconSize"].f:SetText(LeaMapsLC["BattleGroupIconSize"] .. " (" .. string.format("%.0f%%", LeaMapsLC["BattleGroupIconSize"] / 16 * 100) .. ")")
 				if IsAddOnLoaded("Blizzard_BattlefieldMap") then FixGroupPin() end
 				prevIcon:SetSize(LeaMapsLC["BattleGroupIconSize"], LeaMapsLC["BattleGroupIconSize"])
 			end
@@ -187,7 +187,7 @@
 
 			-- Reset button click
 			battleFrame.r:HookScript("OnClick", function()
-				LeaMapsLC["BattleGroupIconSize"] = 20
+				LeaMapsLC["BattleGroupIconSize"] = 16
 				LeaMapsLC["BattlePlayerArrowSize"] = 12
 				LeaMapsLC["BattleMapSize"] = 1
 				SetIconSize()
@@ -208,7 +208,7 @@
 			LeaMapsCB["EnhanceBattleMapBtn"]:HookScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
-					LeaMapsLC["BattleGroupIconSize"] = 20
+					LeaMapsLC["BattleGroupIconSize"] = 16
 					LeaMapsLC["BattlePlayerArrowSize"] = 12
 					LeaMapsLC["BattleMapSize"] = 1
 					SetIconSize()
@@ -308,7 +308,7 @@
 		if LeaMapsLC["UseClassIcons"] == "On" then
 
 			local WorldMapUnitPin, WorldMapUnitPinSizes
-			local partyTexture = "Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps_Icon.blp"
+			local partyTexture = "WhiteCircle-RaidBlips"
 
 			-- Set group icon textures
 			for pin in WorldMapFrame:EnumeratePinsByTemplate("GroupMembersPinTemplate") do
@@ -333,12 +333,12 @@
 			-- Add controls
 			LeaMapsLC:MakeTx(classFrame, "Settings", 16, -72)
 			LeaMapsLC:MakeWD(classFrame, "Set the group icon size.", 16, -92)
-			LeaMapsLC:MakeSL(classFrame, "ClassIconSize", "Group Icons", "Drag to set the group icon size.", 20, 40, 1, 36, -142, "%.0f")
+			LeaMapsLC:MakeSL(classFrame, "ClassIconSize", "Group Icons", "Drag to set the group icon size.", 10, 40, 1, 36, -142, "%.0f")
 
 			-- Add preview texture
 			local prevIcon = classFrame:CreateTexture(nil, "ARTWORK")
 			prevIcon:SetPoint("CENTER", classFrame, "TOPLEFT", 240, -152)
-			prevIcon:SetTexture(partyTexture)
+			prevIcon:SetAtlas(partyTexture)
 			prevIcon:SetSize(30,30)
 			prevIcon:SetVertexColor(0.78, 0.61, 0.43, 1)
 
@@ -372,7 +372,7 @@
 			LeaMapsCB["UseClassIconsBtn"]:HookScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
-					LeaMapsLC["ClassIconSize"] = 27
+					LeaMapsLC["ClassIconSize"] = 20
 					SetIconSize()
 					if classFrame:IsShown() then classFrame:Hide(); classFrame:Show(); end
 				else
@@ -496,6 +496,7 @@
 				-- Hide dropdown menus
 				WorldMapZoneDropDown:Hide()
 				WorldMapContinentDropDown:Hide()
+				WorldMapZoneMinimapDropDown:Hide()
 
 				-- Hide zoom out button
 				WorldMapZoomOutButton:Hide()
@@ -559,11 +560,11 @@
 			-- Add controls
 			LeaMapsLC:MakeTx(arrowFrame, "Settings", 16, -72)
 			LeaMapsLC:MakeWD(arrowFrame, "Set the player arrow size.", 16, -92)
-			LeaMapsLC:MakeSL(arrowFrame, "PlayerArrowSize", "Player Arrow", "Drag to set the player arrow size.|n|nWow Classic default is 16.|nWow Retail default is 27.", 16, 32, 1, 36, -142, "%.0f")
+			LeaMapsLC:MakeSL(arrowFrame, "PlayerArrowSize", "Player Arrow", "Drag to set the player arrow size.", 14, 56, 1, 36, -142, "%.0f")
 
 			-- Function to set player arrow size
 			local function SetArrowSize()
-				LeaMapsCB["PlayerArrowSize"].f:SetText(LeaMapsLC["PlayerArrowSize"] .. " (" .. string.format("%.0f%%", LeaMapsLC["PlayerArrowSize"] / 16 * 100) .. ")")
+				LeaMapsCB["PlayerArrowSize"].f:SetText(LeaMapsLC["PlayerArrowSize"] .. " (" .. string.format("%.0f%%", LeaMapsLC["PlayerArrowSize"] / 28 * 100) .. ")")
 				if LeaMapsLC["EnlargePlayerArrow"] == "On" then
 					WorldMapUnitPinSizes.player = LeaMapsLC["PlayerArrowSize"]
 				else
@@ -585,7 +586,7 @@
 
 			-- Reset button click
 			arrowFrame.r:HookScript("OnClick", function()
-				LeaMapsLC["PlayerArrowSize"] = 27
+				LeaMapsLC["PlayerArrowSize"] = 28
 				SetArrowSize()
 				arrowFrame:Hide(); arrowFrame:Show()
 			end)
@@ -594,7 +595,7 @@
 			LeaMapsCB["EnlargePlayerArrowBtn"]:HookScript("OnClick", function()
 				if IsShiftKeyDown() and IsControlKeyDown() then
 					-- Preset profile
-					LeaMapsLC["PlayerArrowSize"] = 27
+					LeaMapsLC["PlayerArrowSize"] = 28
 					SetArrowSize()
 					if arrowFrame:IsShown() then arrowFrame:Hide(); arrowFrame:Show(); end
 				else
@@ -663,6 +664,15 @@
 				--[[Thunder Bluff]]			[1456] = {minFish = 1,},
 				--[[Un'Goro Crater]]		[1449] = {minLevel = 48, 	maxLevel = 55,		minFish = "205",},
 				--[[Winterspring]]			[1452] = {minLevel = 55, 	maxLevel = 60,		minFish = "330",},
+
+				-- Outland
+				--[[Blade's Edge Mntains]]	[1949] = {minLevel = 65, 	maxLevel = 70,},
+				--[[Hellfire Peninsula]]	[1944] = {minLevel = 58, 	maxLevel = 70,		minFish = "280",},
+				--[[Nagrand]]				[1951] = {minLevel = 64, 	maxLevel = 70,		minFish = "280 (380) (395)",},
+				--[[Netherstorm]]			[1953] = {minLevel = 66, 	maxLevel = 70,		minFish = "380",},
+				--[[Shadowmoon Valley]]		[1948] = {minLevel = 67, 	maxLevel = 70,		minFish = "280",},
+				--[[Terokkar Forest]]		[1952] = {minLevel = 62, 	maxLevel = 70,		minFish = "355 (405)",},
+				--[[Zangarmarsh]]			[1946] = {minLevel = 60, 	maxLevel = 63,		minFish = "305 (355)",},
 
 			}
 
@@ -1102,6 +1112,9 @@
 			-- Flight points
 			local tATex, tHTex, tNTex = "TaxiNode_Alliance", "TaxiNode_Horde", "TaxiNode_Neutral"
 
+			-- Portals
+			local pATex, pHTex, pNTex = "TaxiNode_Continent_Alliance", "TaxiNode_Continent_Horde", "TaxiNode_Continent_Neutral"
+
 			-- Boat harbors, zeppelin towers and tram stations (these are just templates, they will be replaced)
 			local fATex, fHTex, fNTex = "Vehicle-TempleofKotmogu-CyanBall", "Vehicle-TempleofKotmogu-CyanBall", "Vehicle-TempleofKotmogu-CyanBall"
 
@@ -1115,6 +1128,15 @@
 				--[[Arathi Highlands]] [1417] = {
 					{"FlightA", 45.8, 46.1, L["Refuge Pointe"] .. ", " .. L["Arathi Highlands"], nil, tATex, nil, nil},
 					{"FlightH", 73.1, 32.7, L["Hammerfall"] .. ", " .. L["Arathi Highlands"], nil, tHTex, nil, nil},
+				},
+				--[[The Exodar]] [1947] = {
+					{"FlightA", 68.5, 63.7, L["The Exodar"] .. ", " .. L["Azuremyst Isle"], nil, tATex, nil, nil},
+				},
+				--[[Azuremyst Isle]] [1943] = {
+					{"FlightA", 31.9, 46.4, L["The Exodar"] .. ", " .. L["Azuremyst Isle"], nil, tATex, nil, nil},
+				},
+				--[[Bloodmyst Isle]] [1950] = {
+					{"FlightA", 57.7, 53.9, L["Blood Watch"] .. ", " .. L["Bloodmyst Isle"], nil, tATex, nil, nil},
 				},
 				--[[Badlands]] [1418] = {
 					{"Dungeon", 44.6, 12.1, L["Uldaman"], L["Dungeon"], dnTex, 41, 51},
@@ -1174,6 +1196,7 @@
 				--[[Stranglethorn Vale]] [1434] = {
 					{"Raid", 53.9, 17.6, L["Zul'Gurub"], L["Raid"], rdTex, 60, 60},
 					{"FlightA", 27.5, 77.8, L["Booty Bay"] .. ", " .. L["Stranglethorn Vale"], nil, tATex, nil, nil},
+					{"FlightA", 38.2, 4.0, L["Rebel Camp"] .. ", " .. L["Stranglethorn Vale"], nil, tATex, nil, nil},
 					{"FlightH", 26.9, 77.1, L["Booty Bay"] .. ", " .. L["Stranglethorn Vale"], nil, tHTex, nil, nil},
 					{"FlightH", 32.5, 29.4, L["Grom'gol Base Camp"] .. ", " .. L["Stranglethorn Vale"], nil, tHTex, nil, nil},
 					{"TravelN", 25.9, 73.1, L["Boat to"] .. " " .. L["Ratchet"] .. ", " .. L["The Barrens"], nil, fNTex, nil, nil},
@@ -1213,6 +1236,13 @@
 				--[[Durotar]] [1411] = {
 					{"TravelH", 50.9, 13.9, L["Zeppelin to"] .. " " .. L["Undercity"] .. ", " .. L["Tirisfal Glades"], nil, fHTex, nil, nil, nil, nil},
 					{"TravelH", 50.6, 12.6, L["Zeppelin to"] .. " " .. L["Grom'gol Base Camp"] .. ", " .. L["Stranglethorn Vale"], nil, fHTex, nil, nil, nil, nil},
+				},
+				--[[Eversong Woods]] [1941] = {
+					{"FlightH", 54.4, 50.7, L["Silvermoon City"] .. ", " .. L["Eversong Woods"], nil, tHTex, nil, nil},
+				},
+				--[[Tranquillien]] [1942] = {
+					{"FlightH", 45.4, 30.5, L["Tranquillien"] .. ", " .. L["Ghostlands"], nil, tHTex, nil, nil},
+					{"FlightN", 74.6, 67.0, L["Zul'Aman"] .. ", " .. L["Ghostlands"], nil, tNTex, nil, nil},
 				},
 				--[[The Barrens]] [1413] = {
 					{"Dungeon", 46.0, 36.4, L["Wailing Caverns"], L["Dungeon"], dnTex, 17, 24}, {"Dungeon", 42.9, 90.2, L["Razorfen Kraul"], L["Dungeon"], dnTex, 29, 38}, {"Dungeon", 49.0, 93.9, L["Razorfen Downs"], L["Dungeon"], dnTex, 37, 46},
@@ -1263,6 +1293,7 @@
 					{"Raid", 52.6, 76.8, L["Onyxia's Lair"], L["Raid"], rdTex, 60, 60},
 					{"FlightA", 67.5, 51.3, L["Theramore Isle"] .. ", " .. L["Dustwallow Marsh"], nil, tATex, nil, nil},
 					{"FlightH", 35.6, 31.9, L["Brackenwall Village"] .. ", " .. L["Dustwallow Marsh"], nil, tHTex, nil, nil},
+					{"FlightN", 42.8, 72.5, L["Mudsprocket"] .. ", " .. L["Dustwallow Marsh"], nil, tNTex, nil, nil},
 					{"TravelA", 71.6, 56.4, L["Boat to"] .. " " .. L["Menethil Harbor"] .. ", " .. L["Wetlands"], nil, fATex, nil, nil, nil, nil},
 				},
 				--[[Tanaris]] [1446] = {
@@ -1298,10 +1329,85 @@
 					{"Dungeon", 52.6, 49.0, L["Ragefire Chasm"], L["Dungeon"], dnTex, 13, 18},
 					{"FlightH", 45.1, 63.9, L["Valley of Strength"] .. ", " .. L["Orgrimmar"], nil, tHTex, nil, nil},
 				},
-				--[[Thunder Bluff ]] [1456] = {
+				--[[Thunder Bluff]] [1456] = {
 					{"FlightH", 47.0, 49.8, L["Central Mesa"] .. ", " .. L["Thunder Bluff"], nil, tHTex, nil, nil},
 				},
+
+				----------------------------------------------------------------------
+				--	Outland
+				----------------------------------------------------------------------
+
+				--[[Blade's Edge Mountains]] [1949] = {
+					{"FlightA", 37.8, 61.4, L["Sylvanaar"] .. ", " .. L["Blade's Edge Mountains"], nil, tATex, nil, nil},
+					{"FlightA", 61.0, 70.4, L["Toshley's Station"] .. ", " .. L["Blade's Edge Mountains"], nil, tATex, nil, nil},
+					{"FlightH", 52.0, 54.2, L["Thunderlord Stronghold"] .. ", " .. L["Blade's Edge Mountains"], nil, tHTex, nil, nil},
+					{"FlightH", 76.4, 65.8, L["Mok'Nathal Village"] .. ", " .. L["Blade's Edge Mountains"], nil, tHTex, nil, nil},
+					{"FlightN", 61.6, 39.6, L["Evergrove"] .. ", " .. L["Blade's Edge Mountains"], nil, tNTex, nil, nil},
+					{"Raid", 68.7, 24.3, L["Gruul's Lair"], L["Raid"], rdTex, 70, 70},
+				},
+				--[[Hellfire Peninsula]] [1944] = {
+					{"FlightA", 25.2, 37.2, L["Temple of Telhamat"] .. ", " .. L["Hellfire Peninsula"], nil, tATex, nil, nil},
+					{"FlightA", 54.6, 62.4, L["Honor Hold"] .. ", " .. L["Hellfire Peninsula"], nil, tATex, nil, nil},
+					{"FlightA", 87.4, 52.4, L["The Dark Portal"] .. ", " .. L["Hellfire Peninsula"], nil, tATex, nil, nil},
+					{"FlightH", 56.2, 36.2, L["Thrallmar"] .. ", " .. L["Hellfire Peninsula"], nil, tHTex, nil, nil},
+					{"FlightH", 27.8, 60.0, L["Falcon Watch"] .. ", " .. L["Hellfire Peninsula"], nil, tHTex, nil, nil},
+					{"FlightH", 87.4, 48.2, L["The Dark Portal"] .. ", " .. L["Hellfire Peninsula"], nil, tHTex, nil, nil},
+					{"FlightH", 61.6, 81.2, L["Spinebreaker Ridge"] .. ", " .. L["Hellfire Peninsula"], nil, tHTex, nil, nil},
+					{"Raid", 46.6, 52.8, L["Magtheridon's Lair"], L["Raid"], rdTex, 70, 70},
+					{"Dungeon", 47.7, 53.6, L["Hellfire Ramparts"], L["Dungeon"], dnTex, 59, 67},
+					{"Dungeon", 47.7, 52.0, L["The Shattered Halls"], L["Dungeon"], dnTex, 69, 70},
+					{"Dungeon", 46.0, 51.8, L["The Blood Furnace"], L["Dungeon"], dnTex, 60, 68},
+				},
+				--[[Nagrand]] [1951] = {
+					{"FlightA", 54.2, 75.0, L["Telaar"] .. ", " .. L["Nagrand"], nil, tATex, nil, nil},
+					{"FlightH", 57.2, 35.2, L["Garadar"] .. ", " .. L["Nagrand"], nil, tHTex, nil, nil},
+				},
+				--[[Netherstorm]] [1953] = {
+					{"FlightN", 33.8, 64.0, L["Area 52"] .. ", " .. L["Netherstorm"], nil, tNTex, nil, nil},
+					{"FlightN", 45.2, 34.8, L["The Stormspire"] .. ", " .. L["Netherstorm"], nil, tNTex, nil, nil},
+					{"FlightN", 65.2, 66.6, L["Cosmowrench"] .. ", " .. L["Netherstorm"], nil, tNTex, nil, nil},
+					{"Raid", 73.7, 63.7, L["The Eye"], L["Raid"], rdTex, 70, 70},
+					{"Dungeon", 71.7, 55.0, L["The Botanica"], L["Dungeon"], dnTex, 69, 70},
+					{"Dungeon", 74.4, 57.7, L["The Arcatraz"], L["Dungeon"], dnTex, 69, 70},
+					{"Dungeon", 70.6, 69.7, L["The Mechanar"], L["Dungeon"], dnTex, 68, 70},
+				},
+				--[[Shadowmoon Valley]] [1948] = {
+					{"FlightA", 37.6, 55.4, L["Wildhammer Stronghold"] .. ", " .. L["Shadowmoon Valley"], nil, tATex, nil, nil},
+					{"FlightH", 30.2, 29.2, L["Shadowmoon Village"] .. ", " .. L["Shadowmoon Valley"], nil, tHTex, nil, nil},
+					{"FlightN", 63.2, 34.0, L["Altar of Sha'tar"] .. ", " .. L["Shadowmoon Valley"], nil, tNTex, nil, nil},
+					{"FlightN", 56.2, 57.8, L["Sanctum of the Stars"] .. ", " .. L["Shadowmoon Valley"], nil, tNTex, nil, nil},
+					{"Raid", 71.0, 46.4, L["Black Temple"], L["Raid"], rdTex, 70, 70},
+				},
+				--[[Shattrath City]] [1955] = {
+					{"FlightN", 64.1, 41.1, L["Shattrath City"] .. ", " .. L["Terokkar Forest"], nil, tNTex, nil, nil},
+					{"TravelN", 48.5, 42.0, L["Isle of Quel'Danas"], L["Portal"], pNTex},
+					{"TravelA", 57.2, 48.3, L["Stormwind"], L["Portal"], pATex},
+					{"TravelH", 56.8, 48.9, L["Orgrimmar"], L["Portal"], pHTex},
+				},
+				--[[Terokkar Forest]] [1952] = {
+					{"FlightA", 59.4, 55.4, L["Allerian Stronghold"] .. ", " .. L["Terokkar Forest"], nil, tATex, nil, nil},
+					{"FlightH", 49.2, 43.4, L["Stonebreaker Hold"] .. ", " .. L["Terokkar Forest"], nil, tHTex, nil, nil},
+					{"FlightN", 33.1, 23.1, L["Shattrath City"] .. ", " .. L["Terokkar Forest"], nil, tNTex, nil, nil},
+					{"Dungeon", 43.2, 65.6, L["Sethekk Halls"], L["Dungeon"], dnTex, 66, 70},
+					{"Dungeon", 36.1, 65.6, L["Auchenai Crypts"], L["Dungeon"], dnTex, 64, 70},
+					{"Dungeon", 39.6, 71.0, L["Shadow Labyrinth"], L["Dungeon"], dnTex, 69, 70},
+					{"Dungeon", 39.7, 60.2, L["Mana-Tombs"], L["Dungeon"], dnTex, 63, 70},
+				},
+				--[[Zangarmarsh]] [1946] = {
+					{"FlightA", 41.2, 28.8, L["Orebor Harborage"] .. ", " .. L["Zangarmarsh"], nil, tATex, nil, nil},
+					{"FlightA", 67.8, 51.4, L["Telredor"] .. ", " .. L["Zangarmarsh"], nil, tATex, nil, nil},
+					{"FlightH", 33.0, 51.0, L["Zabra'jin"] .. ", " .. L["Zangarmarsh"], nil, tHTex, nil, nil},
+					{"FlightH", 84.8, 55.0, L["Swamprat Post"] .. ", " .. L["Zangarmarsh"], nil, tHTex, nil, nil},
+					{"Raid", 50.4, 40.9, L["Coilfang Reservoir"], L["Serpentshrine Cavern"] .. ", " .. L["Slave Pens"] .. ",|n" .. L["Steamvault"] .. ", " .. L["Underbog"], dnTex, 61, 70},
+				},
+
 			}
+
+			-- Add Caverns of Time portal to Shattrath if reputation with Keepers of Time is revered or higher
+			local name, description, standingID = GetFactionInfoByID(989) 
+			if standingID and standingID >= 7 then
+				PinData[1955] = PinData[1955] or {}; tinsert(PinData[1955], {"TravelN", 74.7, 31.4, L["Caverns of Time"], L["Portal from Zephyr"], pNTex})
+			end
 
 			-- Add situational data
 			local void, class = UnitClass("player")
@@ -1376,18 +1482,24 @@
 								if pinInfo[1] == "TravelA" then
 									pin.Texture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.Texture:SetTexCoord(0, 0.125, 0.5, 1)
+									pin.Texture:SetSize(32, 32)
 									pin.HighlightTexture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.HighlightTexture:SetTexCoord(0, 0.125, 0.5, 1)
+									pin.HighlightTexture:SetSize(32, 32)
 								elseif pinInfo[1] == "TravelH" then
 									pin.Texture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.HighlightTexture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.Texture:SetTexCoord(0.125, 0.25, 0.5, 1)
+									pin.Texture:SetSize(32, 32)
 									pin.HighlightTexture:SetTexCoord(0.125, 0.25, 0.5, 1)
+									pin.HighlightTexture:SetSize(32, 32)
 								elseif pinInfo[1] == "TravelN" then
 									pin.Texture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.HighlightTexture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.Texture:SetTexCoord(0.25, 0.375, 0.5, 1)
+									pin.Texture:SetSize(32, 32)
 									pin.HighlightTexture:SetTexCoord(0.25, 0.375, 0.5, 1)
+									pin.HighlightTexture:SetSize(32, 32)
 								elseif pinInfo[1] == "Dunraid" then
 									pin.Texture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
 									pin.HighlightTexture:SetTexture("Interface\\AddOns\\Leatrix_Maps\\Leatrix_Maps.blp")
@@ -1860,12 +1972,12 @@
 			maintitle:ClearAllPoints()
 			maintitle:SetPoint("TOP", 0, -72)
 
-			local expTitle = LeaMapsLC:MakeTx(interPanel, "World of Warcraft Classic", 0, 0)
+			local expTitle = LeaMapsLC:MakeTx(interPanel, "Burning Crusade Classic", 0, 0)
 			expTitle:SetFont(expTitle:GetFont(), 32)
 			expTitle:ClearAllPoints()
 			expTitle:SetPoint("TOP", 0, -152)
 
-			local subTitle = LeaMapsLC:MakeTx(interPanel, "curseforge.com/wow/addons/leatrix-maps-classic", 0, 0)
+			local subTitle = LeaMapsLC:MakeTx(interPanel, "curseforge.com/wow/addons/leatrix-maps-bcc", 0, 0)
 			subTitle:SetFont(subTitle:GetFont(), 20)
 			subTitle:ClearAllPoints()
 			subTitle:SetPoint("BOTTOM", 0, 72)
@@ -2486,9 +2598,9 @@
 				LeaMapsDB["NoMapBorder"] = "On"
 				LeaMapsDB["RememberZoom"] = "On"
 				LeaMapsDB["EnlargePlayerArrow"] = "On"
-				LeaMapsDB["PlayerArrowSize"] = 27
+				LeaMapsDB["PlayerArrowSize"] = 28
 				LeaMapsDB["UseClassIcons"] = "On"
-				LeaMapsDB["ClassIconSize"] = 27
+				LeaMapsDB["ClassIconSize"] = 20
 				LeaMapsDB["UnlockMapFrame"] = "On"
 				LeaMapsDB["MapPosA"] = "CENTER"
 				LeaMapsDB["MapPosR"] = "CENTER"
@@ -2521,7 +2633,7 @@
 
 				-- More
 				LeaMapsDB["EnhanceBattleMap"] = "On"
-				LeaMapsDB["BattleGroupIconSize"] = 20
+				LeaMapsDB["BattleGroupIconSize"] = 16
 				LeaMapsDB["BattlePlayerArrowSize"] = 12
 				LeaMapsDB["BattleMapSize"] = 1
 				LeaMapsDB["ShowMinimapIcon"] = "On"
@@ -2531,7 +2643,7 @@
 			elseif str == "help" then
 				-- Show available commands
 				LeaMapsLC:Print("Leatrix Maps" .. "|n")
-				LeaMapsLC:Print(L["Classic"] .. " " .. LeaMapsLC["AddonVer"] .. "|n|n")
+				LeaMapsLC:Print(L["BCC"] .. " " .. LeaMapsLC["AddonVer"] .. "|n|n")
 				LeaMapsLC:Print("/ltm reset - Reset the panel position.")
 				LeaMapsLC:Print("/ltm wipe - Wipe all settings and reload.")
 				LeaMapsLC:Print("/ltm help - Show this information.")
@@ -2583,9 +2695,9 @@
 			LeaMapsLC:LoadVarChk("NoMapBorder", "On")					-- Remove map border
 			LeaMapsLC:LoadVarChk("RememberZoom", "On")					-- Remember zoom level
 			LeaMapsLC:LoadVarChk("EnlargePlayerArrow", "On")			-- Enlarge player arrow
-			LeaMapsLC:LoadVarNum("PlayerArrowSize", 27, 16, 32)			-- Player arrow size
+			LeaMapsLC:LoadVarNum("PlayerArrowSize", 28, 14, 56)			-- Player arrow size
 			LeaMapsLC:LoadVarChk("UseClassIcons", "On")					-- Use class icons
-			LeaMapsLC:LoadVarNum("ClassIconSize", 20, 20, 40)			-- Class icon size
+			LeaMapsLC:LoadVarNum("ClassIconSize", 20, 10, 40)			-- Class icon size
 			LeaMapsLC:LoadVarChk("UnlockMapFrame", "On")				-- Unlock map frame
 			LeaMapsLC:LoadVarAnc("MapPosA", "CENTER")					-- Map anchor
 			LeaMapsLC:LoadVarAnc("MapPosR", "CENTER")					-- Map relative
@@ -2618,7 +2730,7 @@
 
 			-- More
 			LeaMapsLC:LoadVarChk("EnhanceBattleMap", "Off")				-- Enhance battlefield map
-			LeaMapsLC:LoadVarNum("BattleGroupIconSize", 20, 20, 40)		-- Battlefield group icon size
+			LeaMapsLC:LoadVarNum("BattleGroupIconSize", 16, 8, 32)		-- Battlefield group icon size
 			LeaMapsLC:LoadVarNum("BattlePlayerArrowSize", 12, 12, 24)	-- Battlefield player arrow size
 			LeaMapsLC:LoadVarNum("BattleMapSize", 1, 0.5, 3)			-- Battlefield map size
 			LeaMapsLC:LoadVarChk("ShowMinimapIcon", "On")				-- Show minimap button
@@ -2765,7 +2877,7 @@
 	PageF.v:SetPoint('TOPLEFT', PageF.mt, 'BOTTOMLEFT', 0, -8)
 	PageF.v:SetPoint('RIGHT', PageF, -32, 0)
 	PageF.v:SetJustifyH('LEFT'); PageF.v:SetJustifyV('TOP')
-	PageF.v:SetNonSpaceWrap(true); PageF.v:SetText(L["Classic"] .. " " .. LeaMapsLC["AddonVer"])
+	PageF.v:SetNonSpaceWrap(true); PageF.v:SetText(L["BCC"] .. " " .. LeaMapsLC["AddonVer"])
 
 	-- Add reload UI Button
 	local reloadb = LeaMapsLC:CreateButton("ReloadUIButton", PageF, "Reload", "BOTTOMRIGHT", -16, 10, 25, "Your UI needs to be reloaded for some of the changes to take effect.|n|nYou don't have to click the reload button immediately but you do need to click it when you are done making changes and you want the changes to take effect.")

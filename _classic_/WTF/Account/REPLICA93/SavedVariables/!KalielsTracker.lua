@@ -1,58 +1,62 @@
 
 KalielsTrackerDB = {
 	["char"] = {
-		["Xuna - Stormscale"] = {
-			["collapsed"] = true,
+		["Xuna - Earthshaker"] = {
+			["trackedQuests"] = {
+				{
+					["id"] = 9283,
+					["zone"] = "Ammen Vale",
+				}, -- [1]
+				{
+					["id"] = 10302,
+					["zone"] = "Ammen Vale",
+				}, -- [2]
+				{
+					["id"] = 9303,
+					["zone"] = "Ammen Vale",
+				}, -- [3]
+				{
+					["id"] = 9305,
+					["zone"] = "Ammen Vale",
+				}, -- [4]
+			},
 		},
-		["Xûñä - Stormscale"] = {
+		["Xuna - Firemaw"] = {
 			["collapsed"] = true,
 		},
 		["Xuna - Gehennas"] = {
 			["trackedQuests"] = {
 				{
-					["id"] = 8075,
-					["zone"] = "Zul'Gurub",
+					["id"] = 4903,
+					["zone"] = "Blackrock Spire",
 				}, -- [1]
 				{
-					["id"] = 8074,
-					["zone"] = "Zul'Gurub",
+					["id"] = 5341,
+					["zone"] = "Scholomance",
 				}, -- [2]
 				{
-					["id"] = 8240,
-					["zone"] = "Zul'Gurub",
+					["id"] = 5529,
+					["zone"] = "Scholomance",
 				}, -- [3]
 			},
-			["sort"] = "level",
 		},
 	},
 	["profileKeys"] = {
-		["Xuna - Stormscale"] = "Default",
-		["Xûñä - Stormscale"] = "Default",
+		["Xuna - Earthshaker"] = "Default",
+		["Xuna - Firemaw"] = "Default",
 		["Xuna - Gehennas"] = "Default",
-		["Xüñâ - Stormscale"] = "Default",
 	},
 	["global"] = {
 		["helpTutorial"] = 8,
-		["version"] = "0.3.1",
+		["version"] = "2.0.0",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["progressBar"] = "Blizzard Raid Bar",
-			["yOffset"] = -219,
 			["bgrColor"] = {
 				["a"] = 0,
 			},
-			["bgr"] = "None",
-			["filterAchievCat"] = {
-				[15117] = false,
-			},
-			["fontSize"] = 11,
-			["hdrOtherButtons"] = false,
-			["maxHeight"] = 470,
-			["colorDifficulty"] = true,
-			["headerCollapsedTxt"] = 2,
-			["textWordWrap"] = true,
-			["questsShowZones"] = false,
+			["maxHeight"] = 526,
 		},
 	},
 }

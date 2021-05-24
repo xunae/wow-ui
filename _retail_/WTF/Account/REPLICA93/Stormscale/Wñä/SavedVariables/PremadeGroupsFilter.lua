@@ -341,25 +341,25 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 		["dps"] = {
-			["max"] = "1",
+			["max"] = "",
 			["min"] = "",
-			["act"] = true,
+			["act"] = false,
 		},
 		["noilvl"] = {
 			["act"] = false,
 		},
 		["expression"] = "",
 		["difficulty"] = {
-			["act"] = true,
+			["act"] = false,
 			["val"] = 6,
 		},
 		["members"] = {
 			["max"] = "",
-			["min"] = "2",
+			["min"] = "",
 			["act"] = false,
 		},
 		["heals"] = {
-			["max"] = "1",
+			["max"] = "",
 			["min"] = "1",
 			["act"] = true,
 		},
@@ -451,7 +451,7 @@ PremadeGroupsFilterState = {
 			["act"] = false,
 		},
 	},
-	["moveable"] = true,
+	["moveable"] = false,
 	["t1c1f0"] = {
 		["enabled"] = false,
 		["tanks"] = {
@@ -576,8 +576,49 @@ PremadeGroupsFilterState = {
 		},
 	},
 	["expert"] = false,
+	["t2c8f0"] = {
+		["enabled"] = true,
+		["tanks"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+		["ilvl"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+		["dps"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+		["noilvl"] = {
+			["act"] = false,
+		},
+		["expression"] = "",
+		["difficulty"] = {
+			["act"] = false,
+			["val"] = 3,
+		},
+		["members"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+		["heals"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+		["defeated"] = {
+			["max"] = "",
+			["min"] = "",
+			["act"] = false,
+		},
+	},
 	["t2c9f0"] = {
-		["enabled"] = false,
+		["enabled"] = true,
 		["tanks"] = {
 			["max"] = "",
 			["min"] = "",
@@ -596,7 +637,7 @@ PremadeGroupsFilterState = {
 		["noilvl"] = {
 			["act"] = false,
 		},
-		["expression"] = "",
+		["expression"] = "not voice",
 		["difficulty"] = {
 			["val"] = 3,
 			["act"] = false,

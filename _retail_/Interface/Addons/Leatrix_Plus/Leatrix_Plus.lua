@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 9.0.25 (21st April 2021)
+-- 	Leatrix Plus 9.0.29 (20th May 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "9.0.25"
+	LeaPlusLC["AddonVer"] = "9.0.29"
 
 	-- Get locale table
 	local void, Leatrix_Plus = ...
@@ -386,6 +386,7 @@
 		LeaPlusLC:LockOption("AutomateQuests", "AutomateQuestsBtn", false)			-- Automate quests
 		LeaPlusLC:LockOption("AutoRepairGear", "AutoRepairBtn", false)				-- Repair automatically
 		LeaPlusLC:LockOption("InviteFromWhisper", "InvWhisperBtn", false)			-- Invite from whispers
+		LeaPlusLC:LockOption("NoChatButtons", "NoChatButtonsBtn", true)				-- Hide chat buttons
 		LeaPlusLC:LockOption("MailFontChange", "MailTextBtn", true)					-- Resize mail text
 		LeaPlusLC:LockOption("QuestFontChange", "QuestTextBtn", true)				-- Resize quest text
 		LeaPlusLC:LockOption("MinimapMod", "ModMinimapBtn", true)					-- Enhance minimap
@@ -641,6 +642,13 @@
 					StaticPopup1EditBox:Hide()
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
+					-- Custom link for battle pets
+					local linkType, linkOptions, name = LinkUtil.ExtractLink(link)
+					if linkType == "battlepet" then
+						local speciesID, level, breedQuality = strsplit(":", linkOptions)
+						local qualityColor = BAG_ITEM_QUALITY_COLORS[tonumber(breedQuality)]
+						link = qualityColor:WrapTextInColorCode(name .. " |n" .. L["Level"] .. " " .. level .. L["Battle Pet"])
+					end
 					StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n" .. link)
 				else
 					-- Item does not require player to type delete so just show item link
@@ -648,6 +656,13 @@
 					StaticPopup1EditBox:Hide()
 					StaticPopup1Button1:Enable()
 					local link = select(3, GetCursorInfo())
+					-- Custom link for battle pets
+					local linkType, linkOptions, name = LinkUtil.ExtractLink(link)
+					if linkType == "battlepet" then
+						local speciesID, level, breedQuality = strsplit(":", linkOptions)
+						local qualityColor = BAG_ITEM_QUALITY_COLORS[tonumber(breedQuality)]
+						link = qualityColor:WrapTextInColorCode(name .. " |n" .. L["Level"] .. " " .. level .. L["Battle Pet"])
+					end
 					StaticPopup1Text:SetText(gsub(StaticPopup1Text:GetText(), gsub(TypeDeleteLine, "@", ""), "") .. "|n|n" .. link)
 				end
 			end)
@@ -1660,29 +1675,16 @@
 			LeaPlusCB["DressUpNudeBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpNudeBtn"]:SetPoint("RIGHT", DressUpFrameResetButton, "LEFT", 0, 0)
 			LeaPlusCB["DressUpNudeBtn"]:SetScript("OnClick", function()
-				-- Strip model
-				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
+				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
+				playerActor:Undress()
 			end)
 
 			LeaPlusLC:CreateButton("DressUpTabBtn", DressUpFrame, "Tabard", "BOTTOMLEFT", 26, 79, 80, 22, false, "")
 			LeaPlusCB["DressUpTabBtn"]:ClearAllPoints()
 			LeaPlusCB["DressUpTabBtn"]:SetPoint("RIGHT", LeaPlusCB["DressUpNudeBtn"], "LEFT", 0, 0)
 			LeaPlusCB["DressUpTabBtn"]:SetScript("OnClick", function()
-				-- Store all appearance sources in table
-				local appearanceSources = {}
 				local playerActor = DressUpFrame.ModelScene:GetPlayerActor()
-				for slotID = 1, 19 do
-					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-					tinsert(appearanceSources, appearanceSourceID)
-				end
-				-- Strip model
-				SetupPlayerForModelScene(DressUpFrame.ModelScene, {}, false, false)
-				-- Apply all appearance sources except tabard slot (19)
-				for slotID = 1, 18 do
-					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-						playerActor:TryOn(appearanceSources[slotID])
-					end
-				end
+				playerActor:UndressSlot(19)
 			end)
 
 			-- Only show dressup buttons if its a player (reset button will show too)
@@ -1694,47 +1696,6 @@
 			hooksecurefunc(DressUpFrameResetButton, "Hide", function()
 				LeaPlusCB["DressUpNudeBtn"]:Hide()
 				LeaPlusCB["DressUpTabBtn"]:Hide()
-			end)
-
-			-- Add buttons to auction house dressup frame
-			LeaPlusLC:CreateButton("DressUpSideBtn", SideDressUpFrame, "Tabard", "BOTTOMLEFT", 14, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideBtn"]:SetFrameLevel(4)
-			LeaPlusCB["DressUpSideBtn"]:SetFrameStrata("HIGH")
-			LeaPlusCB["DressUpSideBtn"]:SetScript("OnClick", function()
-				-- Store all appearance sources in table
-				local appearanceSources = {}
-				local playerActor = SideDressUpFrame.ModelScene:GetPlayerActor()
-				for slotID = 1, 19 do
-					local appearanceSourceID, illusionSourceID = playerActor:GetSlotTransmogSources(slotID)
-					tinsert(appearanceSources, appearanceSourceID)
-				end
-				-- Strip model
-				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-				-- Apply all appearance sources except tabard slot (19)
-				for slotID = 1, 18 do
-					if appearanceSources[slotID] and appearanceSources[slotID] > 0 then
-						playerActor:TryOn(appearanceSources[slotID])
-					end
-				end
-			end)
-
-			LeaPlusLC:CreateButton("DressUpSideNudeBtn", SideDressUpFrame, "Nude", "BOTTOMRIGHT", -18, 40, 60, 22, false, "")
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameLevel(4)
-			LeaPlusCB["DressUpSideNudeBtn"]:SetFrameStrata("HIGH")
-			LeaPlusCB["DressUpSideNudeBtn"]:SetScript("OnClick", function()
-				-- Strip model
-				SetupPlayerForModelScene(SideDressUpFrame.ModelScene, {}, false, false)
-			end)
-
-			-- Only show side dressup buttons if its a player (reset button will show too)
-			hooksecurefunc(SideDressUpFrame.ResetButton, "Show", function()
-				LeaPlusCB["DressUpSideBtn"]:Show()
-				LeaPlusCB["DressUpSideNudeBtn"]:Show()
-			end)
-
-			hooksecurefunc(SideDressUpFrame.ResetButton, "Hide", function()
-				LeaPlusCB["DressUpSideBtn"]:Hide()
-				LeaPlusCB["DressUpSideNudeBtn"]:Hide()
 			end)
 
 			----------------------------------------------------------------------
@@ -2101,13 +2062,17 @@
 
 				-- Move LevelUpDisplay
 				LevelUpDisplay:ClearAllPoints()
-				LevelUpDisplay:SetPoint("TOP", LevelUpDisplayHolder)
+				if not IsAddOnLoaded("ElvUI") then
+					LevelUpDisplay:SetPoint("TOP", LevelUpDisplayHolder)
+				end
 
 				-- Maintain position of LevelUpDisplay
 				hooksecurefunc(LevelUpDisplay, "SetPoint", function(frame, void, anchor)
 					if anchor ~= LevelUpDisplayHolder then
 						frame:ClearAllPoints()
-						frame:SetPoint("TOP", LevelUpDisplayHolder)
+						if not IsAddOnLoaded("ElvUI") then
+							frame:SetPoint("TOP", LevelUpDisplayHolder)
+						end
 					end
 				end)
 
@@ -3843,7 +3808,7 @@
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["ClassIconPortraits"] == "On" then
-			local UnitIsPlayer, UnitClass, CLASS_ICON_TCOORDS, SetTexture, SetTexCoord = UnitIsPlayer, UnitClass, CLASS_ICON_TCOORDS, SetTexture, SetTexCoord
+			local select, UnitIsPlayer, UnitClass, CLASS_ICON_TCOORDS, SetTexture, SetTexCoord, UnitFramePortrait_Update, x = select, UnitIsPlayer, UnitClass, CLASS_ICON_TCOORDS, SetTexture, SetTexCoord, UnitFramePortrait_Update, "Interface\\TargetingFrame\\UI-Classes-Circles"
 			hooksecurefunc("UnitFramePortrait_Update",function(self)
 				if self.unit == "player" or self.unit == "pet" then
 					return
@@ -3852,7 +3817,7 @@
 					if UnitIsPlayer(self.unit) then
 						local t = CLASS_ICON_TCOORDS[select(2, UnitClass(self.unit))]
 						if t then
-							self.portrait:SetTexture("Interface\\TargetingFrame\\UI-Classes-Circles")
+							self.portrait:SetTexture(x)
 							self.portrait:SetTexCoord(unpack(t))
 						end
 					else
@@ -5287,12 +5252,6 @@
 
 			end
 
-			-- Hide chat menu buttons
-			ChatFrameMenuButton:SetParent(tframe)
-			ChatFrameChannelButton:SetParent(tframe)
-			ChatFrameToggleVoiceDeafenButton:SetParent(tframe)
-			ChatFrameToggleVoiceMuteButton:SetParent(tframe)
-
 			-- Set options for normal and existing chat frames
 			for i = 1, 50 do
 				if _G["ChatFrame" .. i] then
@@ -5316,6 +5275,93 @@
 					end)
 				end
 			end)
+
+			-- Move voice chat and chat menu buttons inside the chat frame
+			ChatFrameChannelButton:ClearAllPoints()
+			ChatFrameChannelButton:SetPoint("TOPRIGHT", ChatFrame1Background, "TOPRIGHT", 1, -3)
+			ChatFrameChannelButton:SetSize(26,25)
+
+			ChatFrameToggleVoiceDeafenButton:ClearAllPoints()
+			ChatFrameToggleVoiceDeafenButton:SetPoint("TOP", ChatFrameChannelButton, "BOTTOM", 0, -2)
+			ChatFrameToggleVoiceDeafenButton:SetSize(26,25)
+
+			ChatFrameToggleVoiceMuteButton:ClearAllPoints()
+			ChatFrameToggleVoiceMuteButton:SetPoint("TOP", ChatFrameToggleVoiceDeafenButton, "BOTTOM", 0, -2)
+			ChatFrameToggleVoiceMuteButton:SetSize(26,25)
+
+			ChatFrameMenuButton:ClearAllPoints()
+			ChatFrameMenuButton:SetPoint("BOTTOMRIGHT", ChatFrame1Background, "BOTTOMRIGHT", 3, 18)
+			ChatFrameMenuButton:SetSize(29,29)
+
+			-- Function to set voice chat and chat menu buttons
+			local function SetChatButtonFrameButtons()
+				if LeaPlusLC["ShowVoiceButtons"] == "On" then
+					-- Show voice chat buttons
+					ChatFrameChannelButton:SetParent(UIParent)
+					ChatFrameToggleVoiceDeafenButton:SetParent(UIParent)
+					ChatFrameToggleVoiceMuteButton:SetParent(UIParent)
+				else
+					-- Hide voice chat buttons
+					ChatFrameChannelButton:SetParent(tframe)
+					ChatFrameToggleVoiceDeafenButton:SetParent(tframe)
+					ChatFrameToggleVoiceMuteButton:SetParent(tframe)
+				end
+				if LeaPlusLC["ShowChatMenuButton"] == "On" then
+					-- Show chat menu button
+					ChatFrameMenuButton:SetParent(UIParent)
+				else
+					-- Hide chat menu button
+					ChatFrameMenuButton:SetParent(tframe)
+				end
+			end
+
+			-- Create configuration panel
+			local HideChatButtonsPanel = LeaPlusLC:CreatePanel("Hide chat buttons", "HideChatButtonsPanel")
+
+			-- Add checkboxes
+			LeaPlusLC:MakeTx(HideChatButtonsPanel, "General", 16, -72)
+			LeaPlusLC:MakeCB(HideChatButtonsPanel, "ShowVoiceButtons", "Show voice chat buttons", 16, -92, false, "If checked, voice chat buttons will be shown.")
+			LeaPlusLC:MakeCB(HideChatButtonsPanel, "ShowChatMenuButton", "Show chat menu button", 16, -112, false, "If checked, the chat menu button will be shown.")
+
+			-- Help button hidden
+			HideChatButtonsPanel.h:Hide()
+
+			-- Back button handler
+			HideChatButtonsPanel.b:SetScript("OnClick", function() 
+				HideChatButtonsPanel:Hide(); LeaPlusLC["PageF"]:Show(); LeaPlusLC["Page3"]:Show()
+				return
+			end)
+
+			-- Reset button handler
+			HideChatButtonsPanel.r:SetScript("OnClick", function()
+
+				-- Reset checkboxes
+				LeaPlusLC["ShowVoiceButtons"] = "Off"
+				LeaPlusLC["ShowChatMenuButton"] = "Off"
+
+				-- Refresh panel
+				SetChatButtonFrameButtons()
+				HideChatButtonsPanel:Hide(); HideChatButtonsPanel:Show()
+
+			end)
+
+			-- Show panal when options panel button is clicked
+			LeaPlusCB["NoChatButtonsBtn"]:SetScript("OnClick", function()
+				if IsShiftKeyDown() and IsControlKeyDown() then
+					-- Preset profile
+					LeaPlusLC["ShowVoiceButtons"] = "On"
+					LeaPlusLC["ShowChatMenuButton"] = "Off"
+					SetChatButtonFrameButtons()
+				else
+					HideChatButtonsPanel:Show()
+					LeaPlusLC:HideFrames()
+				end
+			end)
+
+			-- Run function when options are clicked and on startup
+			LeaPlusCB["ShowVoiceButtons"]:HookScript("OnClick", SetChatButtonFrameButtons)
+			LeaPlusCB["ShowChatMenuButton"]:HookScript("OnClick", SetChatButtonFrameButtons)
+			SetChatButtonFrameButtons()
 
 		end
 
@@ -8817,6 +8863,8 @@
 				LeaPlusLC:LoadVarChk("UseEasyChatResizing", "Off")			-- Use easy resizing
 				LeaPlusLC:LoadVarChk("NoCombatLogTab", "Off")				-- Hide the combat log
 				LeaPlusLC:LoadVarChk("NoChatButtons", "Off")				-- Hide chat buttons
+				LeaPlusLC:LoadVarChk("ShowVoiceButtons", "Off")				-- Show voice buttons
+				LeaPlusLC:LoadVarChk("ShowChatMenuButton", "Off")			-- Show chat menu button
 				LeaPlusLC:LoadVarChk("NoSocialButton", "Off")				-- Hide social button
 				LeaPlusLC:LoadVarChk("UnclampChat", "Off")					-- Unclamp chat frame
 				LeaPlusLC:LoadVarChk("MoveChatEditBoxToTop", "Off")			-- Move editbox to top
@@ -9020,6 +9068,8 @@
 			LeaPlusDB["UseEasyChatResizing"]	= LeaPlusLC["UseEasyChatResizing"]
 			LeaPlusDB["NoCombatLogTab"]			= LeaPlusLC["NoCombatLogTab"]
 			LeaPlusDB["NoChatButtons"]			= LeaPlusLC["NoChatButtons"]
+			LeaPlusDB["ShowVoiceButtons"]		= LeaPlusLC["ShowVoiceButtons"]
+			LeaPlusDB["ShowChatMenuButton"]		= LeaPlusLC["ShowChatMenuButton"]
 			LeaPlusDB["NoSocialButton"]			= LeaPlusLC["NoSocialButton"]
 			LeaPlusDB["UnclampChat"]			= LeaPlusLC["UnclampChat"]
 			LeaPlusDB["MoveChatEditBoxToTop"]	= LeaPlusLC["MoveChatEditBoxToTop"]
@@ -10966,6 +11016,44 @@
 					end
 				end)
 				return
+			elseif str == "perf" then
+				-- Average FPS during combat
+				local fTab = {}
+				if not LeaPlusLC.perf then
+					LeaPlusLC.perf = CreateFrame("FRAME")
+				end
+				local fFrm = LeaPlusLC.perf
+				local k, startTime = 0, 0
+				if fFrm:IsEventRegistered("PLAYER_REGEN_DISABLED") then
+					fFrm:UnregisterAllEvents()
+					fFrm:SetScript("OnUpdate", nil)
+					LeaPlusLC:Print("PERF unloaded.")
+				else
+					fFrm:RegisterEvent("PLAYER_REGEN_DISABLED")
+					fFrm:RegisterEvent("PLAYER_REGEN_ENABLED")
+					LeaPlusLC:Print("Waiting for combat to start...")
+				end
+				fFrm:SetScript("OnEvent", function(self, event)
+					if event == "PLAYER_REGEN_DISABLED" then
+						LeaPlusLC:Print("Monitoring FPS during combat...")
+						fFrm:SetScript("OnUpdate", function()
+							k = k + 1
+							fTab[k] = GetFramerate()
+						end)
+						startTime = GetTime()
+					else
+						fFrm:SetScript("OnUpdate", nil)
+						local tSum = 0
+						for i = 1, #fTab do
+							tSum = tSum + fTab[i]
+						end
+						local timeTaken = string.format("%.0f", GetTime() - startTime)
+						if tSum > 0 then
+							LeaPlusLC:Print("Average FPS for " .. timeTaken .. " seconds of combat: " .. string.format("%.0f", tSum / #fTab))
+						end
+					end
+				end)
+				return
 			elseif str == "admin" then
 				-- Preset profile (used for testing)
 				LpEvt:UnregisterAllEvents()						-- Prevent changes
@@ -11000,6 +11088,8 @@
 				LeaPlusDB["UseEasyChatResizing"] = "On"			-- Use easy resizing
 				LeaPlusDB["NoCombatLogTab"] = "On"				-- Hide the combat log
 				LeaPlusDB["NoChatButtons"] = "On"				-- Hide chat buttons
+				LeaPlusDB["ShowVoiceButtons"] = "On"			-- Show voice buttons
+				LeaPlusDB["ShowChatMenuButton"] = "Off"			-- Show chat menu button
 				LeaPlusDB["NoSocialButton"] = "On"				-- Hide social button
 				LeaPlusDB["UnclampChat"] = "On"					-- Unclamp chat frame
 				LeaPlusDB["MoveChatEditBoxToTop"] = "On"		-- Move editbox to top
@@ -11421,6 +11511,8 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "UnivGroupColor"			,	"Universal group color"			,	340, -172,	false,	"If checked, raid chat and instance chat will both be colored blue (to match the default party chat color).")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "RecentChatWindow"			,	"Recent chat window"			, 	340, -192, 	true,	"If checked, you can hold down the control key and click a chat tab to view recent chat in a copy-friendly window.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "MaxChatHstory"				,	"Increase chat history"			, 	340, -212, 	true,	"If checked, your chat history will increase to 4096 lines.  If unchecked, the default will be used (128 lines).|n|nEnabling this option may prevent some chat text from showing during login.")
+
+	LeaPlusLC:CfgBtn("NoChatButtonsBtn", LeaPlusCB["NoChatButtons"])
 
 ----------------------------------------------------------------------
 -- 	LC4: Text

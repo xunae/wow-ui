@@ -55,7 +55,6 @@ function addon.addQuestCoordinates(guide)
 end
 
 function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addCoordinates)
-	if addon.questsDB[id] == nil then return end
 	local firstElement, lastElement = selection, selection
 	local objective = ""
 	if key == "COMPLETE" and objectiveIndex ~= nil then
@@ -77,11 +76,12 @@ function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addC
 			end
 		end
 	end
+	--[[
 	local applies = ""
-	if addon.questsDB[id].races ~= nil or addon.questsDB[id].faction ~= nil then
+	if addon.getQuestRaces(id) ~= nil or addon.getQuestFaction(id) ~= nil then
 		local races = {}
-		local qraces = addon.questsDB[id].races
-		if qraces == nil then qraces = addon.racesPerFaction[addon.questsDB[id].faction] end
+		local qraces = addon.getQuestRaces(id)
+		if qraces == nil then qraces = addon.racesPerFaction[addon.getQuestFaction(id)] end
 		if guide.race ~= nil then
 			for i, race in ipairs(guide.race) do
 				if addon.contains(qraces, race) then table.insert(races, race) end
@@ -93,7 +93,7 @@ function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addC
 			end
 			if #races == #addon.racesPerFaction[guide.faction] then races = nil end
 		else
-			races = addon.questsDB[id].races
+			races = addon.getQuestRaces(id)
 		end
 		if races ~= nil then 
 			if #races == 0 then
@@ -107,10 +107,10 @@ function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addC
 			applies = applies .. table.concat(races, ",")
 		end
 	end
-	if addon.questsDB[id].classes ~= nil or addon.questsDB[id].faction ~= nil then
+	if addon.getQuestClasses(id) ~= nil or addon.getQuestFaction(id) ~= nil then
 		local classes = {}
-		local qclasses = addon.questsDB[id].classes
-		if qclasses == nil then qclasses = addon.classesPerFaction[addon.questsDB[id].faction] end
+		local qclasses = addon.getQuestClasses(id)
+		if qclasses == nil then qclasses = addon.classesPerFaction[addon.getQuestFaction(id)] end
 		if guide.class ~= nil then
 			for i, class in ipairs(guide.class) do
 				if addon.contains(qclasses, class) then table.insert(classes, class) end
@@ -122,12 +122,12 @@ function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addC
 			end
 			if #classes == #addon.classesPerFaction[guide.faction] then classes = nil end
 		else
-			classes = addon.questsDB[id].classes
+			classes = addon.getQuestClasses(id)
 		end
 		if classes ~= nil then
 			if #classes == 0 then
 				local classesLoc = {}
-				for i, class in ipairs(addon.questsDB[id].classes) do
+				for i, class in ipairs(addon.getQuestClasses(id)) do
 					table.insert(classesLoc, addon.getLocalizedClass(class))
 				end
 				addon.createPopupFrame(L.ERROR_QUEST_CLASS_ONLY .. table.concat(classesLoc, ", ")):Show()
@@ -142,8 +142,8 @@ function addon.addQuestTag(guide, selection, id, key, objectiveIndex, text, addC
 		if lastElement ~= nil and #lastElement.step.elements > lastElement.index and lastElement.step.elements[lastElement.index + 1].t == "APPLIES" then 
 			lastElement = lastElement.step.elements[lastElement.index + 1] 
 		end
-	end
+	end]]
 	text = text or ""
 	if text ~= "" then text = " " .. text end
-	return coords .. "[" .. addon.codes["QUEST"] .. key:sub(1, 1) .. id .. objective .. text  .. "]" .. applies, firstElement, lastElement, coords
+	return coords .. "[" .. addon.codes["QUEST"] .. key:sub(1, 1) .. id .. objective .. text  .. "]" --[[.. applies]], firstElement, lastElement, coords
 end

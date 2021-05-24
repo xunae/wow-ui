@@ -6,6 +6,3 @@ VER 3 0000000001000002 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists]Cure Poison;Cure Poison
 END
-VER 3 0000000001000004 "TT Cast" "INV_MISC_QUESTIONMARK"
-/castsequence reset=combat/60  Searing Totem, Stoneskin Totem, Healing Stream Totem, Grace of Air Totem
-END

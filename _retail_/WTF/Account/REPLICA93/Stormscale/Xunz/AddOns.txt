@@ -10,16 +10,17 @@ Favorites: disabled
 sArena: disabled
 NameplateAuras: enabled
 BigWigs: disabled
-ColorPickerPlus: disabled
+ColorPickerPlus: enabled
 Details_Vanguard: disabled
 Details_TinyThreat: disabled
 Details_Streamer: disabled
 Details_RaidCheck: disabled
 Details_EncounterDetails: disabled
 Details_DataStorage: enabled
-Screen Overlay Enhanced: disabled
-ShadowedUnitFrames: disabled
+Screen Overlay Enhanced: enabled
+ShadowedUnitFrames: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-Quartz: disabled
+Quartz: enabled
 WorldQuestsList: enabled
+Myslot: enabled
