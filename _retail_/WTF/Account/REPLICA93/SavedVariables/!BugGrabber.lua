@@ -1,6 +1,6 @@
 
 BugGrabberDB = {
-	["session"] = 1406,
+	["session"] = 1452,
 	["lastSanitation"] = 3,
 	["errors"] = {
 		{
@@ -18,5 +18,13 @@ BugGrabberDB = {
 			["session"] = 1406,
 			["counter"] = 8,
 		}, -- [2]
+		{
+			["message"] = "Interface\\AddOns\\WeakAuras\\WeakAuras-3.4.1.lua:2701: bad argument #1 to 'pairs' (table expected, got nil)",
+			["time"] = "2021/05/24 15:37:02",
+			["locals"] = "(*temporary) = nil\n(*temporary) = \"table expected, got nil\"\n = <function> defined =[C]:-1\n",
+			["stack"] = "[string \"=[C]\"]: in function `pairs'\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.4.1.lua\"]:2701: in function <Interface\\AddOns\\WeakAuras\\WeakAuras.lua:2681>\n[string \"@Interface\\AddOns\\WeakAuras\\WeakAuras-3.4.1.lua\"]:2813: in function `Add'\n[string \"@Interface\\AddOns\\WeakAurasOptions\\OptionsFrames\\MoverSizer.lua\"]:645: in function <...AddOns\\WeakAurasOptions\\OptionsFrames\\MoverSizer.lua:564>",
+			["session"] = 1432,
+			["counter"] = 35,
+		}, -- [3]
 	},
 }

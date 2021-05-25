@@ -19,24 +19,26 @@ BigWigs:AddColors("The Tarragrue", {
 BigWigs:AddColors("The Eye of the Jailer", {
 	[348074] = "blue",
 	[349028] = "orange",
-	[349979] = "blue",
+	[349979] = {"blue","red"},
 	[350022] = {"blue","yellow"},
-	[350604] = {"blue","cyan"},
+	[350604] = {"blue","red"},
 	[350713] = {"blue","orange"},
 	[350828] = "yellow",
 	[350847] = {"blue","red"},
 	[351413] = "yellow",
 	[351825] = "red",
-	[351827] = {"blue","orange"},
+	[351827] = "blue",
 	[355232] = "blue",
 	["stages"] = "green",
 })
 
 BigWigs:AddColors("The Nine", {
+	[350031] = "yellow",
 	[350039] = {"blue","orange"},
+	[350098] = "yellow",
 	[350109] = "yellow",
-	[350158] = "red",
-	[350184] = "cyan",
+	[350158] = {"red","yellow"},
+	[350184] = {"blue","cyan"},
 	[350202] = {"blue","purple"},
 	[350286] = "yellow",
 	[350339] = "yellow",
@@ -54,21 +56,22 @@ BigWigs:AddColors("The Nine", {
 })
 
 BigWigs:AddColors("Remnant of Ner'zhul", {
-	[349889] = {"blue","purple"},
 	[349890] = {"blue","purple"},
 	[350073] = "blue",
 	[350388] = "blue",
 	[350469] = {"blue","orange","yellow"},
 	[350489] = "blue",
+	[350676] = "yellow",
 	[351066] = "cyan",
-	[353332] = "yellow",
+	[355123] = "yellow",
 })
 
 BigWigs:AddColors("Soulrender Dormazain", {
-	[349985] = "red",
+	[349985] = "cyan",
 	[350217] = "yellow",
-	[350411] = "red",
+	[350411] = {"green","red"},
 	[350422] = {"blue","purple"},
+	[350615] = "yellow",
 	[350647] = {"blue","orange"},
 	[350650] = {"blue","orange"},
 	[351229] = "yellow",
@@ -84,7 +87,7 @@ BigWigs:AddColors("Painsmith Raznal", {
 	[355568] = {"blue","yellow"},
 	[355778] = {"blue","yellow"},
 	[355786] = {"blue","purple"},
-	["stages"] = "green",
+	["stages"] = {"cyan","green"},
 })
 
 BigWigs:AddColors("Guardian of the First Ones", {
@@ -99,6 +102,7 @@ BigWigs:AddColors("Guardian of the First Ones", {
 	[352589] = "orange",
 	[352660] = "yellow",
 	[352833] = "red",
+	[355352] = "red",
 })
 
 BigWigs:AddColors("Fatescribe Roh-Kalo", {

@@ -1,13 +1,13 @@
 
 OmniCCDB = {
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.0.10",
+	},
 	["profileKeys"] = {
 		["Xuna - Earthshaker"] = "Default",
 		["Xuna - Firemaw"] = "Default",
 		["Xuna - Gehennas"] = "Default",
-	},
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.10",
 	},
 	["profiles"] = {
 		["Default"] = {
@@ -42,16 +42,16 @@ OmniCCDB = {
 			["themes"] = {
 				["Default"] = {
 					["textStyles"] = {
-						["soon"] = {
-						},
 						["seconds"] = {
+						},
+						["soon"] = {
 						},
 						["minutes"] = {
 						},
 					},
+					["fontSize"] = 16,
 					["minSize"] = 0.65,
 					["yOff"] = -1,
-					["fontSize"] = 16,
 				},
 			},
 		},

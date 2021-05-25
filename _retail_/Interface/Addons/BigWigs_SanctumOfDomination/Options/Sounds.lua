@@ -27,7 +27,7 @@ BigWigs:AddSounds("The Eye of the Jailer", {
 	[350847] = "warning",
 	[351413] = "warning",
 	[351825] = "warning",
-	[351827] = {"alert","warning"},
+	[351827] = "warning",
 	[355232] = {"info","warning"},
 	["stages"] = "long",
 })
@@ -54,21 +54,21 @@ BigWigs:AddSounds("The Nine", {
 })
 
 BigWigs:AddSounds("Remnant of Ner'zhul", {
-	[349889] = "warning",
 	[349890] = {"alarm","warning"},
 	[350073] = "alarm",
-	[350388] = "alarm",
+	[350388] = "info",
 	[350469] = "warning",
 	[350489] = "underyou",
+	[350676] = "alert",
 	[351066] = "long",
-	[353332] = "alert",
+	[355123] = "alert",
 })
 
 BigWigs:AddSounds("Soulrender Dormazain", {
 	[349985] = "alert",
-	[350217] = "alert",
 	[350411] = "long",
 	[350422] = "alarm",
+	[350615] = "info",
 	[350647] = "warning",
 	[351779] = "alert",
 	[354231] = "info",
@@ -82,6 +82,7 @@ BigWigs:AddSounds("Painsmith Raznal", {
 	[355568] = {"alert","warning"},
 	[355778] = {"alert","warning"},
 	[355786] = {"alarm","warning"},
+	["stages"] = {"info","long"},
 })
 
 BigWigs:AddSounds("Guardian of the First Ones", {
@@ -96,6 +97,7 @@ BigWigs:AddSounds("Guardian of the First Ones", {
 	[352589] = "alert",
 	[352660] = "long",
 	[352833] = "alert",
+	[355352] = "warning",
 })
 
 BigWigs:AddSounds("Fatescribe Roh-Kalo", {

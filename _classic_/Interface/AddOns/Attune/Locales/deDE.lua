@@ -9,8 +9,8 @@ end
 Lang["Credits"] = "Ein großes DANKESCHÖN an meine Gilde |cffffd100<Divine Heresy>|r für Ihre Unterstützung bei der Entwicklung und dem Test des Addons, und danke an |cffffd100Bushido @ Pyrewood Village|r für die Hilfe bei TBC!\n\nVielen, vielen dank auch an die Übersetzer:\n  - Deutsche Übersetzung: |cffffd100Sumaya @ Razorfen DE|r\n  - Russische Übersetzung: |cffffd100Greymarch Gilde @ Flamegor RU|r\n  - Spanische Übersetzung: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Chinesische Übersetzung: |cffffd100ly395842562|r und |cffffd100Icyblade|r\n  - Koreanische Übersetzung: |cffffd100Drix @ Azshara KR|r\n\n/Hug von Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
-Lang["Version"] = "Attune ##VERSION## von Cixi@Remulos"
-Lang["Splash"] = "v.##VERSION## by Cixi@Remulos. Gib /attune ein um zu starten."
+Lang["Version"] = "Attune v.##VERSION## von Cixi@Remulos"
+Lang["Splash"] = "v.##VERSION## von Cixi@Remulos. Gib /attune ein um zu starten."
 Lang["Survey"] = "Umfrage"
 Lang["Guild"] = "Gilde"
 Lang["Party"] = "Gruppe"
@@ -126,9 +126,10 @@ Lang["Select a raid and click on players to add them in"] = "Wähle den Raid und
 --v224
 Lang["Enter a new name for this raid group"] = "Geben Sie einen neuen Namen für diese Schlachtzugsgruppe ein"
 Lang["Save"] = "Speichern"
---v225
+--v226
 Lang["Invite"] = "Einladen"
 Lang["Send raid invites to all listed players?"] = "Raid-Einladungen an alle aufgelisteten Spieler senden?"
+Lang["External link"] = "Link zu einer Online-Datenbank"
 
 
 -- OPTIONS

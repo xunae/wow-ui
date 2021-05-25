@@ -1,5 +1,5 @@
 Xunamate: disabled
-Kui_Media: disabled
+Kui_Media: enabled
 Neuron: disabled
 Masque_Caith: disabled
 REFlex: enabled
@@ -24,3 +24,7 @@ WorldQuestsList: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
 Myslot: enabled
+!KalielsTracker: enabled
+Dominos_Cast: disabled
+Dominos_Encounter: disabled
+Dominos_Roll: disabled

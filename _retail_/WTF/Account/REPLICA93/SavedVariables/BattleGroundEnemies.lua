@@ -2,6 +2,7 @@
 BattleGroundEnemiesDB = {
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
+		["Xûñä - Stormscale"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 	},
 	["profiles"] = {

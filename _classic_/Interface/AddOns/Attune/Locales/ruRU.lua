@@ -9,7 +9,7 @@ end
 Lang["Credits"] = "Огромное спасибо моей гильдии |cffffd100<Divine Heresy>|r за их поддержку и понимание, пока я тестирую аддон, и спасибо |cffffd100Bushido @ Pyrewood Village|r за помощь на TBC!\n\nТакже большое-огромное спасибо переводчикам:\n  - Перевод на немецкий: |cffffd100Sumaya @ Razorfen DE|r\n  - Русский перевод: |cffffd100Гильдия \"Серый Марш\" @ Пламегор RU|r\n  - испанский перевод: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Китайский перевод: |cffffd100ly395842562|r и |cffffd100Icyblade|r\n  - Перевод на корейский: |cffffd100Drix @ Azshara KR|r\n\n/Hug от Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Мин"
 Lang["Maxi"] = "Макс"
-Lang["Version"] = "Attune ##VERSION## от Cixi@Remulos"
+Lang["Version"] = "Attune v.##VERSION## от Cixi@Remulos"
 Lang["Splash"] = "v.##VERSION## от Cixi@Remulos. Наберите /attune для начала работы."
 Lang["Survey"] = "Отчет"
 Lang["Guild"] = "Гильдия"
@@ -126,9 +126,10 @@ Lang["Select a raid and click on players to add them in"] ="Выберите р�
 --v224
 Lang["Enter a new name for this raid group"] = "Укажите новое название для рейдового состава."
 Lang["Save"] = "Сохранить"
---v225
+--v226
 Lang["Invite"] = "Приглашать"
 Lang["Send raid invites to all listed players?"] = "Отправить приглашения в рейд всем перечисленным игрокам?"
+Lang["External link"] = "Ссылка на онлайн-базу данных"
 
 
 -- OPTIONS

@@ -230,8 +230,6 @@ Do [QC4182 Dragonkin Menace]
               [OC]Don't accept the next part
 
 |cFFfff8a3Hearth to [H Stormwind] [V]|r
-       [OC]At the Auction House
-              [OC]Buy 2 Thorium Bar for upcoming quest
 
 |cFFfff8a3Fly to [F Chillwind Camp]|r
 
@@ -290,8 +288,8 @@ Do [QC4182 Dragonkin Menace]
               [QA5152 Auntie Marlene] [QA5241 Uncle Carlin]
 
 [OC]Grind east along the southern mountains to Tyr's hand
-       Finish [QC5543 Blood Tinged Skies] (Kill 30 Plaguebat (Fear) (Aoe'able))[O]
-       Finish [QC5544 Carrion Grubbage] (Kill Carrion Grub (Aoe'able) for 15 Slab of Carrion Worm Meat)
+       Do some [QC5544 Carrion Grubbage] (Kill Carrion Grub (Aoe'able) for 15 Slab of Carrion Worm Meat)[OC]
+       Finish [QC5543 Blood Tinged Skies] (Kill 30 Plaguebat (Fear) (Aoe'able))
 
 [OC]Grind northeast to Light's Hope Chapel [G 81.5,59 Eastern Plaguelands] (81.5, 59)
        [O][QT64037 Eastern Plaguelands]

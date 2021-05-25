@@ -102,6 +102,16 @@ OmniCCDB = {
 					},
 					["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
 					["minSize"] = 0.55,
+					["mmSSDuration"] = 120,
+					["fontShadow"] = {
+						["y"] = -2,
+						["x"] = 2,
+						["r"] = 0.1254901960784314,
+						["b"] = 0.1254901960784314,
+						["g"] = 0.1254901960784314,
+						["a"] = 0.5,
+					},
+					["effect"] = "none",
 					["spiralOpacity"] = 1.00999997742474,
 					["yOff"] = -2,
 					["fontSize"] = 14,
@@ -123,6 +133,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -133,7 +144,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.2.3",
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -258,5 +269,4 @@ OmniCC4Config = {
 			},
 		},
 	},
-	["engine"] = "AniUpdater",
 }

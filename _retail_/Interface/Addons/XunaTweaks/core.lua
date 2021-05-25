@@ -67,8 +67,8 @@ function XunaTweaks:Initialize()
 	StoreMicroButton:Hide()
 	MainMenuMicroButton:Hide()
 
-	StoreMicroButton:SetScript("OnShow",StoreMicroButton.Hide)
-	StoreMicroButton.Show = function() end
+	--StoreMicroButton:SetScript("OnShow",StoreMicroButton.Hide)
+	--StoreMicroButton.Show = function() end
 
 	PlayerName:SetPoint("CENTER", 50, 18)
 	PlayerName.SetPoint = function() end
@@ -283,8 +283,8 @@ function XunaTweaks:beautifyActionBar()
 				_G[v..i..'HotKey']:SetAlpha(bindAlpha)
 				_G[v..i..'Name']:SetAlpha(macroAlpha)
 
-				_G[v..i..'HotKey']:ClearAllPoints()
-				_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
+				--_G[v..i..'HotKey']:ClearAllPoints()
+				--_G[v..i..'HotKey']:SetPoint('TOPRIGHT', -2, -3)
 
 				local Path, Height = _G[v..i..'HotKey']:GetFont()
 				_G[v..i..'HotKey']:SetFont(Path, 10, 'OUTLINE')

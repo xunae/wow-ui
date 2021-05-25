@@ -9,7 +9,7 @@ end
 Lang["Credits"] = "非常感谢我的行会|cffffd100<Divine Heresy>|r在我测试插件时给予的支持和理解，并感谢|cffffd100Bushido @ Pyrewood Village|r在TBC上的帮助！\n\n 另外，非常感谢翻译人员：\n  - 德语翻译: |cffffd100Sumaya @ Razorfen DE|r\n  - 俄语翻译: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - 西班牙语翻译: |cffffd100Coyu @ Pyrewood Village EU|r\n  - 中文翻译: |cffffd100ly395842562|r 和 |cffffd100Icyblade|r\n  - 韩语翻译: |cffffd100Drix @ Azshara KR|r\n\n/Hug 来自 Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "缩小"
 Lang["Maxi"] = "放大"
-Lang["Version"] = "Attune ##VERSION## by Cixi@Remulos"
+Lang["Version"] = "Attune v.##VERSION## by Cixi@Remulos"
 Lang["Splash"] = "v.##VERSION## by Cixi@Remulos. 键入/ attune开始。"
 Lang["Survey"] = "扫描"
 Lang["Guild"] = "公会"
@@ -126,9 +126,10 @@ Lang["Select a raid and click on players to add them in"] = "选择一个团队�
 --v224
 Lang["Enter a new name for this raid group"] = "输入此团队的新名称"
 Lang["Save"] = "保存"
---v225
+--v226
 Lang["Invite"] = "邀请"
 Lang["Send raid invites to all listed players?"] = "向所有列出的玩家发送突袭邀请？"
+Lang["External link"] = "链接到在线数据库"
 
 
 -- OPTIONS

@@ -9,52 +9,24 @@ MADB = {
 		["default"] = {
 			["name"] = "default",
 			["frames"] = {
-				["VehicleSeatIndicator"] = {
+				["TalkingHeadFrame"] = {
 					["orgPos"] = {
-						"TOPRIGHT", -- [1]
+						"BOTTOM", -- [1]
 						"UIParent", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						39.9998779296875, -- [4]
-						802.9999389648438, -- [5]
-					},
-					["name"] = "VehicleSeatIndicator",
-					["scale"] = 0.699999988079071,
-					["orgScale"] = 1,
-					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-4.760985497730267, -- [4]
-						14.28596403160025, -- [5]
-					},
-				},
-				["ExtraAbilityContainer"] = {
-					["orgPos"] = {
-						{
-							"CENTER", -- [1]
-							"UIParent", -- [2]
-							"CENTER", -- [3]
-							0, -- [4]
-							0, -- [5]
-						}, -- [1]
-						{
-							"BOTTOM", -- [1]
-							"UIParent", -- [2]
-							"BOTTOM", -- [3]
-							0, -- [4]
-							120, -- [5]
-						}, -- [2]
-					},
-					["name"] = "ExtraAbilityContainer",
-					["scale"] = 0.7999999523162842,
-					["pos"] = {
-						"CENTER", -- [1]
-						"UIParent", -- [2]
-						"CENTER", -- [3]
+						"BOTTOM", -- [3]
 						0, -- [4]
-						-350, -- [5]
+						95.99999237060547, -- [5]
 					},
+					["name"] = "TalkingHeadFrame",
+					["scale"] = 0.75,
 					["orgScale"] = 1,
+					["pos"] = {
+						"BOTTOM", -- [1]
+						"UIParent", -- [2]
+						"BOTTOM", -- [3]
+						0.000180844907631974, -- [4]
+						230.0000915527344, -- [5]
+					},
 				},
 				["PlayerPowerBarAltMover"] = {
 					["orgPos"] = {
@@ -104,6 +76,44 @@ MADB = {
 						0, -- [5]
 					},
 				},
+				["VehicleSeatIndicator"] = {
+					["orgPos"] = {
+						"TOPRIGHT", -- [1]
+						"UIParent", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						39.9998779296875, -- [4]
+						802.9999389648438, -- [5]
+					},
+					["name"] = "VehicleSeatIndicator",
+					["scale"] = 0.699999988079071,
+					["orgScale"] = 1,
+					["pos"] = {
+						"TOPRIGHT", -- [1]
+						"MinimapCluster", -- [2]
+						"BOTTOMRIGHT", -- [3]
+						-4.760985497730267, -- [4]
+						14.28596403160025, -- [5]
+					},
+				},
+				["ExtraAbilityContainer"] = {
+					["orgPos"] = {
+						"CENTER", -- [1]
+						"DominosFrameextra", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						0, -- [5]
+					},
+					["name"] = "ExtraAbilityContainer",
+					["scale"] = 0.7999999523162842,
+					["pos"] = {
+						"CENTER", -- [1]
+						"UIParent", -- [2]
+						"CENTER", -- [3]
+						0, -- [4]
+						-350, -- [5]
+					},
+					["orgScale"] = 1,
+				},
 				["TargetFrame"] = {
 					["orgPos"] = {
 						"TOP", -- [1]
@@ -121,42 +131,6 @@ MADB = {
 						"TOPLEFT", -- [3]
 						362.6588745117188, -- [4]
 						-136.3636334080342, -- [5]
-					},
-				},
-				["PlayerFrame"] = {
-					["orgPos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136, -- [4]
-						-136, -- [5]
-					},
-					["name"] = "PlayerFrame",
-					["scale"] = 1.100000023841858,
-					["orgScale"] = 1,
-					["pos"] = {
-						"TOPLEFT", -- [1]
-						"UIParent", -- [2]
-						"TOPLEFT", -- [3]
-						136.3636334080342, -- [4]
-						-136.3636334080342, -- [5]
-					},
-				},
-				["CastingBarFrame"] = {
-					["orgPos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						160, -- [5]
-					},
-					["name"] = "CastingBarFrame",
-					["pos"] = {
-						"BOTTOM", -- [1]
-						"UIParent", -- [2]
-						"BOTTOM", -- [3]
-						0, -- [4]
-						150, -- [5]
 					},
 				},
 				["Boss1TargetFrame"] = {
@@ -195,45 +169,41 @@ MADB = {
 						-29.79999764611694, -- [5]
 					},
 				},
-				["TalkingHeadFrame"] = {
+				["CastingBarFrame"] = {
 					["orgPos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
 						0, -- [4]
-						95.99999237060547, -- [5]
+						160, -- [5]
 					},
-					["name"] = "TalkingHeadFrame",
-					["scale"] = 0.75,
-					["orgScale"] = 1,
+					["name"] = "CastingBarFrame",
 					["pos"] = {
 						"BOTTOM", -- [1]
 						"UIParent", -- [2]
 						"BOTTOM", -- [3]
-						0.000180844907631974, -- [4]
-						230.0000915527344, -- [5]
+						0, -- [4]
+						155, -- [5]
 					},
 				},
-				["ObjectiveTrackerFrameMover"] = {
+				["PlayerFrame"] = {
 					["orgPos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-10, -- [4]
-						0, -- [5]
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136, -- [4]
+						-136, -- [5]
 					},
-					["name"] = "ObjectiveTrackerFrameMover",
-					["orgHeight"] = 700.0000610351562,
-					["height"] = 600,
-					["orgWidth"] = 235,
+					["name"] = "PlayerFrame",
+					["scale"] = 1.100000023841858,
+					["orgScale"] = 1,
 					["pos"] = {
-						"TOPRIGHT", -- [1]
-						"MinimapCluster", -- [2]
-						"BOTTOMRIGHT", -- [3]
-						-80, -- [4]
-						-9.99993896484375, -- [5]
+						"TOPLEFT", -- [1]
+						"UIParent", -- [2]
+						"TOPLEFT", -- [3]
+						136.3636334080342, -- [4]
+						-136.3636334080342, -- [5]
 					},
-					["width"] = 235,
 				},
 				["FocusFrame"] = {
 					["orgPos"] = {

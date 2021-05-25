@@ -1,6 +1,10 @@
-## Interface: 90001
+## Interface: 90005
 ## Title: SpellNotifications
 ## Notes: Simple spell notifications tailored to each and every class. Original by Veex-Executus(US), v2.0.0 updated by LucyON
-## Version: 2.0.2
 ## Author: LucyON
+## Version: v2.1.0
+## X-Curse-Project-ID: 301888
+## X-Wago-ID: WYK9blGL
+## X-WoWI-ID:
+
 SpellNotifications.xml

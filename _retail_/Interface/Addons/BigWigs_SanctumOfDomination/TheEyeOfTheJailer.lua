@@ -6,7 +6,7 @@ local mod, CL = BigWigs:NewBoss("The Eye of the Jailer", 2450, 2442)
 if not mod then return end
 mod:RegisterEnableMob(175725)
 mod:SetEncounterID(2433)
-mod:SetRespawnTime(30)
+mod:SetRespawnTime(35)
 mod:SetStage(1)
 
 --------------------------------------------------------------------------------
@@ -39,19 +39,19 @@ function mod:GetOptions()
 		"stages",
 		-- Stage One: His Gaze Upon You
 		350828, -- Deathlink
-		{349979, "SAY"}, -- Dragging Chains
+		349979, -- Dragging Chains
 		348074, -- Assailing Lance
 		-- Stage Two: Double Vision
 		349028, -- Titanic Death Gaze
 		{350847, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Desolation Beam
-		350022, -- Soul Shatter
+		{350022, "ME_ONLY_EMPHASIZE"}, -- Soul Shatter
 		{351825, "TANK"}, -- Shared Suffering
 		350713, -- Slothful Corruption
 		{351827, "SAY", "SAY_COUNTDOWN", "ME_ONLY_EMPHASIZE"}, -- Spreading Misery
 		-- Stage Three: Immediate Extermination
 		348974, -- Immediate Extermination
 		351413, -- Annihilating Glare
-		{350604, "SAY"}, -- Hopeless Lethargy
+		{350604, "SAY", "ME_ONLY_EMPHASIZE"}, -- Hopeless Lethargy
 		355232, -- Scorn and Ire
 	},{
 		["stages"] = "general",
@@ -106,9 +106,16 @@ function mod:OnEngage()
 	stage = 1
 
 	self:CDBar(350828, 9.4) -- Death Link
-	self:Bar(351413, 41.5, CL.laser)
+	self:Bar(351413, self:Mythic() and 25 or 41.5, CL.laser) -- Annihilating Glare
+	if self:Mythic() then
+		self:Bar(350604, 9.7, L.slow) -- Hopeless Lethargy
+	end
 
 	self:RegisterUnitEvent("UNIT_HEALTH", nil, "boss1")
+
+	-- XXX testing
+	self:Log("SPELL_CAST_START", "DraggingChainsStart", 349979)
+	self:RegisterMessage("BigWigs_BossComm")
 end
 
 --------------------------------------------------------------------------------
@@ -124,6 +131,22 @@ function mod:UNIT_HEALTH(event, unit)
 		if nextStageWarning < 25 then
 			self:UnregisterUnitEvent(event, unit)
 		end
+	end
+end
+
+do
+	local prev = 0
+	local function printTarget(self, name, guid)
+		self:Sync("Chains", name)
+	end
+	function mod:BigWigs_BossComm(_, msg, extra)
+		if msg == "Chains" and extra and (GetTime()-prev) > 8 then
+			prev = GetTime()
+			self:TargetMessage(349979, "red", "Chains??", extra)
+		end
+	end
+	function mod:DraggingChainsStart(args)
+		self:GetUnitTarget(printTarget, 0.5, args.sourceGUID)
 	end
 end
 
@@ -162,17 +185,22 @@ function mod:StygianDarkshieldApplied(args)
 	self:PlaySound("stages", "long")
 
 	self:StopBar(350828) -- Death Link
+	self:StopBar(CL.laser) -- Annihilating Glare
+	self:StopBar(L.slow)
 
-	self:Bar(350847, 8.5, CL.beam) -- Desolation Beam
-	self:Bar(351827, 12.6) -- Spreading Misery
-	self:Bar(349028, 17, L.death_gaze) -- Titanic Death Gaze
-	self:Bar(350713, 17.5) -- Slothful Corruption
+	self:Bar(350847, self:Mythic() and 21.1 or 8.5, CL.beam) -- Desolation Beam
+	self:Bar(351827, 12.6, L.pool) -- Spreading Misery
+	self:Bar(349028, self:Mythic() and 28.1 or 17, L.death_gaze) -- Titanic Death Gaze
+	self:Bar(350713, 17.5, L.corruption) -- Slothful Corruption
+	if self:Mythic() then
+		self:Bar(355232, 12) -- Scorn and Ire
+	end
 end
 
 function mod:TitanicDeathGaze(args)
 	self:Message(349028, "orange", CL.casting:format(L.death_gaze))
 	self:PlaySound(349028, "alarm")
-	self:CastBar(349028, 8)
+	self:CastBar(349028, 8, L.death_gaze)
 	self:Bar(349028, 33, L.death_gaze)
 end
 
@@ -220,7 +248,7 @@ do
 			if self:Healer() then
 				self:PlaySound(350713, "alert")
 			end
-			self:Bar(350713, 25)
+			self:Bar(350713, 25, L.corruption)
 		end
 	end
 end
@@ -238,16 +266,14 @@ do
 		local t = args.time
 		if t-prev > 5 then -- Both adds cast it seperately
 			prev = t
-			self:Message(351827, "orange", CL.incoming:format(L.pool))
-			self:PlaySound(351827, "alert")
-			self:Bar(351827, 12)
+			self:Bar(351827, 12, L.pool)
 		end
 	end
 end
 
 function mod:SpreadingMiseryApplied(args)
 	if self:Me(args.destGUID) then
-		self:PersonalMessage(args.spellId)
+		self:PersonalMessage(args.spellId, nil, L.pool)
 		self:Say(args.spellId, L.pool)
 		self:SayCountdown(args.spellId, 5)
 		self:PlaySound(args.spellId, "warning")
@@ -262,9 +288,9 @@ end
 
 function mod:StygianDarkshieldRemoved(args)
 	self:StopBar(CL.beam) -- Desolation Beam
-	self:StopBar(351827) -- Spreading Misery
+	self:StopBar(L.pools) -- Spreading Misery
 	self:StopBar(L.death_gaze) -- Titanic Death Gaze
-	self:StopBar(350713) -- Slothful Corruption
+	self:StopBar(L.corruption) -- Slothful Corruption
 
 	if stage == 2 then
 		self:SetStage(1)
@@ -273,7 +299,10 @@ function mod:StygianDarkshieldRemoved(args)
 		self:PlaySound("stages", "long")
 
 		self:Bar(350828, 20.5) -- Death Link
-		self:Bar(351413, 41.3, CL.laser)
+		self:Bar(351413, self:Mythic() and 38 or 41.3, CL.laser) -- Annihilating Glare
+		if self:Mythic() then
+			self:Bar(350604, 12.7, L.slow) -- Hopeless Lethargy
+		end
 	end
 end
 
@@ -285,14 +314,17 @@ function mod:ImmediateExtermination(args)
 	self:PlaySound("stages", "long")
 
 	self:Bar(350828, 12.4) -- Death Link
-	self:Bar(351413, 40.8, CL.laser)
+	self:Bar(351413, self:Mythic() and 28 or 40.8, CL.laser) -- Annihilating Glare
+	if self:Mythic() then
+		self:Bar(350604, 11, L.slow) -- Hopeless Lethargy
+	end
 end
 
 function mod:AnnihilatingGlare(args)
 	self:Message(args.spellId, "yellow", CL.laser)
 	self:PlaySound(args.spellId, "warning")
 	self:CastBar(args.spellId, 25, CL.laser) -- 5s cast + 20s channel
-	self:Bar(args.spellId, 69, CL.laser)
+	self:Bar(args.spellId, 69, CL.laser) -- XXX acuracy issues on mythic
 end
 
 -- Mythic
@@ -304,6 +336,7 @@ do
 		if t-prev > 5 then
 			prev = t
 			playerList = {}
+			self:Bar(args.spellId, 20, L.slow)
 		end
 		local count = #playerList+1
 		playerList[count] = args.destName
@@ -311,7 +344,7 @@ do
 			self:Say(args.spellId, L.slow)
 			self:PlaySound(args.spellId, "warning")
 		end
-		self:NewTargetsMessage(args.spellId, "cyan", playerList, nil, L.slow)
+		self:NewTargetsMessage(args.spellId, "red", playerList, nil, L.slow)
 	end
 end
 

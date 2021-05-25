@@ -25,30 +25,17 @@ KalielsTrackerDB = {
 			["collapsed"] = true,
 		},
 		["Xuna - Gehennas"] = {
-			["trackedQuests"] = {
-				{
-					["id"] = 4903,
-					["zone"] = "Blackrock Spire",
-				}, -- [1]
-				{
-					["id"] = 5341,
-					["zone"] = "Scholomance",
-				}, -- [2]
-				{
-					["id"] = 5529,
-					["zone"] = "Scholomance",
-				}, -- [3]
-			},
+			["collapsed"] = true,
 		},
+	},
+	["global"] = {
+		["helpTutorial"] = 8,
+		["version"] = "2.0.0",
 	},
 	["profileKeys"] = {
 		["Xuna - Earthshaker"] = "Default",
 		["Xuna - Firemaw"] = "Default",
 		["Xuna - Gehennas"] = "Default",
-	},
-	["global"] = {
-		["helpTutorial"] = 8,
-		["version"] = "2.0.0",
 	},
 	["profiles"] = {
 		["Default"] = {

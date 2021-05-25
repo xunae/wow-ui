@@ -17,7 +17,7 @@ RaiderIO_DB_KR_A_R: disabled
 RaiderIO_DB_KR_A: disabled
 LittleWigs: enabled
 Xunamate: disabled
-Kui_Media: disabled
+Kui_Media: enabled
 LittleWigs_WrathOfTheLichKing: enabled
 BigWigs: disabled
 BigWigs_Shadowlands: enabled
@@ -45,3 +45,7 @@ Screen Overlay Enhanced: enabled
 ShadowedUnitFrames: enabled
 Quartz: enabled
 WorldQuestsList: enabled
+!KalielsTracker: enabled
+Dominos_Cast: disabled
+Dominos_Encounter: disabled
+Dominos_Roll: disabled

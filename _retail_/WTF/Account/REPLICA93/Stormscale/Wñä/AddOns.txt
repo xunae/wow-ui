@@ -33,8 +33,8 @@ DurabilityAndItemLevel: enabled
 eAlignUpdated: enabled
 ExRT: enabled
 Gladius: enabled
-!KalielsTracker: disabled
-Kui_Media: disabled
+!KalielsTracker: enabled
+Kui_Media: enabled
 Kui_Nameplates: enabled
 Kui_Nameplates_Core_Config: enabled
 Kui_Nameplates_Core: enabled
@@ -111,3 +111,6 @@ FriendListColors: disabled
 LittleWigs_BattleForAzeroth: enabled
 ZPerl: disabled
 Perl_ArcaneBar: enabled
+Dominos_Cast: disabled
+Dominos_Encounter: disabled
+Dominos_Roll: disabled
