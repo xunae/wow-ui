@@ -1,0 +1,7 @@
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Questie: enabled
+ClassicCodex: enabled
+ClassicCodex-db: enabled
+ClassicCodex-patch: enabled
+ClassicCodex-loader: disabled

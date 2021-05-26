@@ -1,0 +1,13 @@
+Dominos_Cast: disabled
+Dominos_Roll: disabled
+Details_TinyThreat: disabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+ClassicCodex-db-zhTW: disabled
+ClassicCodex-db-zhCN: disabled
+ClassicCodex-db-ruRU: disabled
+ClassicCodex-db-koKR: disabled
+ClassicCodex-db-frFR: disabled
+ClassicCodex-db-esMX: disabled
+ClassicCodex-db-esES: disabled
+ClassicCodex-db-deDE: disabled

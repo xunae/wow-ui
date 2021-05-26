@@ -5,11 +5,6 @@ f.name = addonName;
 
 f:SetScript('OnShow', function(frame)
   local settings = {{
-      label       = 'Elite frame',
-      description = 'Show elite frame around the player frame',
-      dbKey       = 'eliteFrame',
-      reloadUi    = false,
-    }, {
       label       = 'Dark frames',
       description = 'Make unit frames, player frame and minimap more darker',
       dbKey       = 'darkFrames',
@@ -40,11 +35,6 @@ f:SetScript('OnShow', function(frame)
       dbKey       = 'hideGryphons',
       reloadUi    = false,
     }, {
-      label       = 'Out of range icons',
-      description = 'Color the whole action bar icon when out of range or out of mana',
-      dbKey       = 'outOfRangeIcons',
-      reloadUi    = true,
-    }, {
       label       = 'Hide binds',
       description = 'Hide action bar binds',
       dbKey       = 'hideBinds',
@@ -54,16 +44,6 @@ f:SetScript('OnShow', function(frame)
       description = 'Hide action bar macros',
       dbKey       = 'hideMacros',
       reloadUi    = false,
-    }, {
-      label       = 'Fix mana color',
-      description = 'Makes mana not so blue',
-      dbKey       = 'manaColor',
-      reloadUi    = true,
-    }, {
-      label       = 'Fix shaman color',
-      description = 'Makes shaman blue again',
-      dbKey       = 'shamanColor',
-      reloadUi    = true,
     }
   }
 
@@ -140,7 +120,7 @@ f:SetScript('OnShow', function(frame)
   dfcSlider.minValue, dfcSlider.maxValue = dfcSlider:GetMinMaxValues() 
   dfcSlider.textLow:SetText('Darkest')
   dfcSlider.textHigh:SetText('Lightest')
-  dfcSlider:SetValue(XunaTweaksDB.dfc)
+  dfcSlider:SetValue(XunaTweaksDB.dfc or .5)
   dfcSlider:SetValueStep(0.01)
   dfcSlider:SetScript('OnValueChanged', function(self, value)
     XunaTweaksDB.dfc = value

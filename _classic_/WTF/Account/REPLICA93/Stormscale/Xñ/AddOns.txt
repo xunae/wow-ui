@@ -1,0 +1,16 @@
+ColorPickerPlus: enabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+WeakAurasCompanion: enabled
+WeakAurasArchive: enabled
+Quartz: enabled
+BigWigs: disabled
+ShadowedUnitFrames: enabled
+Screen Overlay Enhanced: enabled
+Myslot: enabled
+!KalielsTracker: enabled
+Kui_Media: enabled
+Dominos_Cast: disabled
+Dominos_Encounter: disabled
+Dominos_Roll: disabled

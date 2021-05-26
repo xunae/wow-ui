@@ -1,0 +1,28 @@
+local L = LibStub("AceLocale-3.0"):NewLocale("RepByZone", "ruRU")
+if not L then return end
+
+ L["Aldor Rise"] = "Возвышенность Алдоров"
+L["Deeprun Tram"] = "Подземный поезд"
+L["Default watched faction"] = "Фракция по умолчанию"
+L["Defaults to your racial faction per character."] = "По умолчанию отслеживается репутация вашей расы."
+L["Dwarven District"] = "Квартал Дворфов"
+L["Now watching %s"] = "Отслеживается репутация с фракцией \"%s\"."
+--[[Translation missing --]]
+L["Override some default racial reps with class reps."] = "Override some default racial reps with class reps."
+L["Print to chat when you switch watched faction."] = "Сообщать в чат о переключении отслеживания."
+L["Reputation Settings"] = "Настройки репутации"
+L["Scryer's Tier"] = "Ярус Провидцев"
+L["Shrine of Unending Light"] = "Святилище Вечного Света"
+L["Switch on taxi"] = "Переключать в полёте"
+L["Switch watched faction based on subzones."] = "Отслеживание репутации на основе подзон."
+L["Switch watched faction while you are on a taxi."] = "Переключать отслеживание при перелёте."
+L["The Salty Sailor Tavern"] = "Таверна \"Старый моряк\""
+L["The Seer's Library"] = "Библиотека Провидца"
+L["Tinker Town"] = "Город Механиков"
+L["Toggle RepByZone on or off."] = "Включите или выключите RepByZone."
+L["Valley of Spirits"] = "Аллея Духов"
+L["Valley of Wisdom"] = "Аллея Мудрости"
+L["Verbose"] = "Подробно"
+L["Watch Subzones"] = "Смотреть подзоны"
+L["You have joined the faction %s, switching watched saved variable to %s."] = "Вы присоединились к фракции %s, переключив наблюдаемую сохраненную переменную на %s."
+L["Your class reputation is %s"] = "Ваша классовая репутация %s"

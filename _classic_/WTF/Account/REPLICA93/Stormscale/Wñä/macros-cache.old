@@ -1,0 +1,63 @@
+VER 3 0100000000000009 "a1c" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1]Charge
+END
+VER 3 0100000000000005 "a1sb" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena1]Storm Bolt
+END
+VER 3 010000000000000A "a2c" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2]Charge
+END
+VER 3 0100000000000006 "a2sb" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena2]Storm Bolt
+END
+VER 3 010000000000000B "a3c" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3]Charge
+END
+VER 3 0100000000000007 "a3sb" "INV_MISC_QUESTIONMARK"
+#showtooltip
+/cast [@arena3]Storm Bolt
+END
+VER 3 0100000000000002 "Avatar" "INV_MISC_QUESTIONMARK"
+#showtooltip Avatar
+/cast Blood Fury(Racial)
+/cast Avatar
+END
+VER 3 010000000000000F "cancel_bs" "1390941"
+#showtoolti
+/cancelaura Bladestorm
+END
+VER 3 010000000000000D "Charge" "INV_MISC_QUESTIONMARK"
+#showtooltip Charge
+/cancelaura Bladestorm
+/cast Charge
+END
+VER 3 010000000000000E "is" "INV_MISC_QUESTIONMARK"
+#showtooltip Intimidating Shout
+/cancelaura Bladestorm
+/cast Intimidating Shout
+END
+VER 3 010000000000000C "Leap" "INV_MISC_QUESTIONMARK"
+#showtooltip Heroic Leap
+/cancelaura Bladestorm
+/cast Heroic Leap
+END
+VER 3 0100000000000003 "MS" "INV_MISC_QUESTIONMARK"
+#showtooltip Mortal Strike
+/cancelaura Bladestorm
+/cast Mortal Strike
+END
+VER 3 0100000000000008 "Pummel" "INV_MISC_QUESTIONMARK"
+#showtooltip Pummel
+/cancelaura Bladestorm
+/cast Pummel
+END
+VER 3 0100000000000004 "Shattering" "INV_MISC_QUESTIONMARK"
+#showtooltip Shattering Throw
+/cancelaura Bladestorm
+/cast Shattering Throw
+END

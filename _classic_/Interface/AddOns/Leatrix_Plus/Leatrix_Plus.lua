@@ -1,5 +1,5 @@
 ----------------------------------------------------------------------
--- 	Leatrix Plus 2.5.34 (23rd May 2021)
+-- 	Leatrix Plus 2.5.37 (26th May 2021)
 ----------------------------------------------------------------------
 
 --	01:Functions	20:Live			50:RunOnce		70:Logout			
@@ -20,7 +20,7 @@
 	local void
 
 	-- Version
-	LeaPlusLC["AddonVer"] = "2.5.34"
+	LeaPlusLC["AddonVer"] = "2.5.37"
 	LeaPlusLC["RestartReq"] = nil
 
 	-- Get locale table
@@ -448,7 +448,7 @@
 		or	(LeaPlusLC["CharAddonList"]			~= LeaPlusDB["CharAddonList"])			-- Show character addons
 		or	(LeaPlusLC["FasterLooting"]			~= LeaPlusDB["FasterLooting"])			-- Faster auto loot
 		or	(LeaPlusLC["FasterMovieSkip"]		~= LeaPlusDB["FasterMovieSkip"])		-- Faster movie skip
-		or	(LeaPlusLC["StandAndDismount"]		~= LeaPlusDB["StandAndDismount"])		-- Stand and dismount
+		or	(LeaPlusLC["StandAndDismount"]		~= LeaPlusDB["StandAndDismount"])		-- Dismount automatically
 		or	(LeaPlusLC["ShowVendorPrice"]		~= LeaPlusDB["ShowVendorPrice"])		-- Show vendor price
 		or	(LeaPlusLC["CombatPlates"]			~= LeaPlusDB["CombatPlates"])			-- Combat plates
 		or	(LeaPlusLC["EasyItemDestroy"]		~= LeaPlusDB["EasyItemDestroy"])		-- Easy item destroy
@@ -3940,7 +3940,7 @@
 		end
 
 		----------------------------------------------------------------------
-		--	Stand and dismount (actually, it's just dismount now)
+		--	Dismount automatically
 		----------------------------------------------------------------------
 
 		if LeaPlusLC["StandAndDismount"] == "On" then
@@ -3952,7 +3952,6 @@
 				if msg == ERR_OUT_OF_RAGE
 				or msg == ERR_OUT_OF_MANA
 				or msg == ERR_OUT_OF_ENERGY
-				or msg == ERR_SPELL_OUT_OF_RANGE
 				or msg == SPELL_FAILED_MOVING
 				or msg == ERR_TAXIPLAYERALREADYMOUNTED
 				then
@@ -8293,7 +8292,7 @@
 				LeaPlusLC:LoadVarChk("NoConfirmLoot", "Off")				-- Disable loot warnings
 				LeaPlusLC:LoadVarChk("FasterLooting", "Off")				-- Faster auto loot
 				LeaPlusLC:LoadVarChk("FasterMovieSkip", "Off")				-- Faster movie skip
-				LeaPlusLC:LoadVarChk("StandAndDismount", "Off")				-- Stand and dismount
+				LeaPlusLC:LoadVarChk("StandAndDismount", "Off")				-- Dismount automatically
 				LeaPlusLC:LoadVarChk("ShowVendorPrice", "Off")				-- Show vendor price
 				LeaPlusLC:LoadVarChk("CombatPlates", "Off")					-- Combat plates
 				LeaPlusLC:LoadVarChk("EasyItemDestroy", "Off")				-- Easy item destroy
@@ -10033,7 +10032,7 @@
 				LeaPlusDB["NoConfirmLoot"] = "On"				-- Disable loot warnings
 				LeaPlusDB["FasterLooting"] = "On"				-- Faster auto loot
 				LeaPlusDB["FasterMovieSkip"] = "On"				-- Faster movie skip
-				LeaPlusDB["StandAndDismount"] = "On"			-- Stand and dismount
+				LeaPlusDB["StandAndDismount"] = "On"			-- Dismount automatically
 				LeaPlusDB["ShowVendorPrice"] = "On"				-- Show vendor price
 				LeaPlusDB["CombatPlates"] = "On"				-- Combat plates
 				LeaPlusDB["EasyItemDestroy"] = "On"				-- Easy item destroy
@@ -10382,7 +10381,7 @@
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "NoConfirmLoot"				, 	"Disable loot warnings"			,	340, -132, 	false,	"If checked, confirmations will no longer appear when you choose a loot roll option or attempt to sell or mail a tradable item.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterLooting"				, 	"Faster auto loot"				,	340, -152, 	true,	"If checked, the amount of time it takes to auto loot creatures will be significantly reduced.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "FasterMovieSkip"			, 	"Faster movie skip"				,	340, -172, 	true,	"If checked, you will be able to cancel cinematics without being prompted for confirmation.")
-	LeaPlusLC:MakeCB(LeaPlusLC[pg], "StandAndDismount"			, 	"Dismount automatically"		,	340, -192, 	true,	"If checked, your character will dismount when you select a flight location or attempt to cast a spell regardless of whether you have enough resource to cast or whether the target is in range.")
+	LeaPlusLC:MakeCB(LeaPlusLC[pg], "StandAndDismount"			, 	"Dismount automatically"		,	340, -192, 	true,	"If checked, your character will dismount when you select a flight location or attempt to cast a spell regardless of whether you have enough resource to cast it.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "ShowVendorPrice"			, 	"Show vendor price"				,	340, -212, 	true,	"If checked, the vendor price will be shown in item tooltips.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "CombatPlates"				, 	"Combat plates"					,	340, -232, 	true,	"If checked, enemy nameplates will be shown during combat and hidden when combat ends.")
 	LeaPlusLC:MakeCB(LeaPlusLC[pg], "EasyItemDestroy"			, 	"Easy item destroy"				,	340, -252, 	true,	"If checked, you will no longer need to type delete when destroying a superior quality item.|n|nIn addition, item links will be shown in all item destroy confirmation windows.")
