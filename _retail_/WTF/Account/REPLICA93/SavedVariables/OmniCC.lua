@@ -1,9 +1,5 @@
 
 OmniCCDB = {
-	["global"] = {
-		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.10",
-	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
 		["Xunac - Draenor"] = "Default",
@@ -40,6 +36,10 @@ OmniCCDB = {
 		["Xûñä - Stormscale"] = "Default",
 		["Æñ - Draenor"] = "Default",
 	},
+	["global"] = {
+		["dbVersion"] = 6,
+		["addonVersion"] = "9.0.10",
+	},
 	["profiles"] = {
 		["Default"] = {
 			["rules"] = {
@@ -68,9 +68,9 @@ OmniCCDB = {
 			["themes"] = {
 				["Plater Nameplates Theme"] = {
 					["textStyles"] = {
-						["seconds"] = {
-						},
 						["soon"] = {
+						},
+						["seconds"] = {
 						},
 						["minutes"] = {
 						},
@@ -100,27 +100,27 @@ OmniCCDB = {
 							["scale"] = 1.00000000745058,
 						},
 					},
-					["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
+					["fontSize"] = 14,
 					["minSize"] = 0.55,
 					["mmSSDuration"] = 120,
 					["fontShadow"] = {
 						["y"] = -2,
 						["x"] = 2,
 						["r"] = 0.1254901960784314,
-						["b"] = 0.1254901960784314,
-						["g"] = 0.1254901960784314,
 						["a"] = 0.5,
+						["g"] = 0.1254901960784314,
+						["b"] = 0.1254901960784314,
 					},
 					["effect"] = "none",
 					["spiralOpacity"] = 1.00999997742474,
 					["yOff"] = -2,
-					["fontSize"] = 14,
+					["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
 				},
 				["Ignore"] = {
 					["textStyles"] = {
-						["minutes"] = {
-						},
 						["seconds"] = {
+						},
+						["minutes"] = {
 						},
 						["soon"] = {
 						},
@@ -133,22 +133,24 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
-	["groups"] = {
-		{
-			["id"] = "Ignore",
-			["rules"] = {
-				"LossOfControl", -- [1]
-				"TotemFrame", -- [2]
-			},
-			["enabled"] = true,
-		}, -- [1]
-	},
 	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
 			["fontFace"] = "Interface\\Addons\\Details\\fonts\\Oswald-Regular.otf",
+			["fontSize"] = 15,
+			["effect"] = "pulse",
+			["minDuration"] = 2,
+			["minEffectDuration"] = 30,
+			["minSize"] = 0.74,
+			["spiralOpacity"] = 1.00999997742474,
+			["yOff"] = -1,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["anchor"] = "CENTER",
+			["mmSSDuration"] = 0,
+			["scaleText"] = true,
 			["styles"] = {
 				["soon"] = {
 					["a"] = 1,
@@ -193,36 +195,10 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
-			["effect"] = "pulse",
-			["minDuration"] = 2,
-			["mmSSDuration"] = 0,
-			["anchor"] = "CENTER",
-			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = -1,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["minSize"] = 0.74,
-			["minEffectDuration"] = 30,
-			["scaleText"] = true,
-			["fontSize"] = 15,
 		},
 		["Ignore"] = {
 			["enabled"] = false,
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
-			["fontSize"] = 18,
-			["effect"] = "pulse",
-			["scaleText"] = true,
-			["minEffectDuration"] = 30,
-			["minSize"] = 0.5,
-			["spiralOpacity"] = 1,
-			["minDuration"] = 2,
-			["xOff"] = 0,
-			["tenthsDuration"] = 0,
-			["fontOutline"] = "OUTLINE",
-			["anchor"] = "CENTER",
-			["mmSSDuration"] = 0,
-			["yOff"] = 0,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -267,6 +243,30 @@ OmniCC4Config = {
 					["b"] = 0.1,
 				},
 			},
+			["effect"] = "pulse",
+			["scaleText"] = true,
+			["mmSSDuration"] = 0,
+			["anchor"] = "CENTER",
+			["spiralOpacity"] = 1,
+			["minDuration"] = 2,
+			["xOff"] = 0,
+			["tenthsDuration"] = 0,
+			["fontOutline"] = "OUTLINE",
+			["minSize"] = 0.5,
+			["minEffectDuration"] = 30,
+			["yOff"] = 0,
+			["fontSize"] = 18,
 		},
 	},
+	["groups"] = {
+		{
+			["id"] = "Ignore",
+			["rules"] = {
+				"LossOfControl", -- [1]
+				"TotemFrame", -- [2]
+			},
+			["enabled"] = true,
+		}, -- [1]
+	},
+	["version"] = "8.2.3",
 }

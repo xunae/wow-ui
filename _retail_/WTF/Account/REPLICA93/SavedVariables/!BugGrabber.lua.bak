@@ -1,7 +1,7 @@
 
 BugGrabberDB = {
+	["session"] = 1458,
 	["lastSanitation"] = 3,
-	["session"] = 1455,
 	["errors"] = {
 		{
 			["message"] = "...ce\\AddOns\\Blizzard_Collections\\Blizzard_Wardrobe.lua:3139: attempt to get length of local 'variantSets' (a number value)",
@@ -26,5 +26,12 @@ BugGrabberDB = {
 			["session"] = 1432,
 			["counter"] = 35,
 		}, -- [3]
+		{
+			["message"] = "Interface\\AddOns\\OmniBar\\OmniBar-v12.3.lua:1170: attempt to index field '?' (a nil value)",
+			["time"] = "2021/06/14 15:33:51",
+			["stack"] = "[string \"@Interface\\AddOns\\OmniBar\\OmniBar-v12.3.lua\"]:1170: in function `OmniBar_AddIcon'\n[string \"@Interface\\AddOns\\OmniBar\\OmniBar-v12.3.lua\"]:1268: in function `OmniBar_Test'\n[string \"@Interface\\AddOns\\OmniBar\\OmniBar-v12.3.lua\"]:1350: in function <Interface\\AddOns\\OmniBar\\OmniBar.lua:1348>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Masque\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-81.lua\"]:51: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:49>\n[string \"@Interface\\AddOns\\Masque\\Libs\\AceConfig-3.0-3\\AceConfigDialog-3.0\\AceConfigDialog-3.0-81.lua\"]:842: in function <...nfig-3.0\\AceConfigDialog-3.0\\AceConfigDialog-3.0.lua:668>\n[string \"=[C]\"]: ?\n[string \"@Interface\\AddOns\\Masque\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:72: in function <...terface\\AddOns\\Masque\\Libs\\AceGUI-3.0\\AceGUI-3.0.lua:70>\n[string \"@Interface\\AddOns\\Masque\\Libs\\AceGUI-3.0\\AceGUI-3.0-41.lua\"]:306: in function `Fire'\n[string \"@Interface\\AddOns\\Masque\\Libs\\AceGUI-3.0-41\\widgets\\AceGUIWidget-Button.lua\"]:22: in function <...sque\\Libs\\AceGUI-3.0\\widgets\\AceGUIWidget-Button.lua:19>",
+			["session"] = 1458,
+			["counter"] = 8,
+		}, -- [4]
 	},
 }

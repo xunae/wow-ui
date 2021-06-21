@@ -9,8 +9,8 @@ end
 Lang["Credits"] = "Un énorme MERCI à ma guilde |cffffd100<Divine Heresy>|r pour leur support et patience pendant que je teste l'addon, et merci à |cffffd100Bushido @ Pyrewood Village|r pour l'aide sur TBC!\n\nMerci aussi beaucoup aux traducteurs:\n  - Traduction allemande: |cffffd100Sumaya @ Razorfen DE|r\n  - Traduction russe: |cffffd100Guilde Greymarch @ Flamegor RU|r\n  - Traduction espagnole: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Traduction chinoise: |cffffd100ly395842562|r et |cffffd100Icyblade|r\n  - Traduction coréenne: |cffffd100Drix @ Azshara KR|r\n\n/Hug de la part Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
-Lang["Version"] = "Attune v.##VERSION## par Cixi@Remulos"
-Lang["Splash"] = "v.##VERSION## par Cixi@Remulos. Tapez /attune pour commencer."
+Lang["Version"] = "Attune v##VERSION## par Cixi@Remulos"
+Lang["Splash"] = "v##VERSION## par Cixi@Remulos. Tapez /attune pour commencer."
 Lang["Survey"] = "Sondage"
 Lang["Guild"] = "Guilde"
 Lang["Party"] = "Groupe"
@@ -563,6 +563,10 @@ Lang["Q1_10284"] = "Évasion de Fort-de-Durn"			-- https://www.thegeekcrusade-se
 Lang["Q2_10284"] = "Faites signe à Thrall lorsque vous serez <prêt/prête> à continuer. Suivez-le dans son évasion du bastion de Fort-de-Durn et aidez-le à libérer Taretha et à accomplir son destin.\n\nAllez parler à Erozion au Hautebrande d'antan si vous parvenez à accomplir cette tâche."
 Lang["Q1_10285"] = "Retour vers Andormu"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10285
 Lang["Q2_10285"] = "Retournez voir le jeune dragon, Andormu, aux Grottes du temps dans le désert de Tanaris."
+Lang["Q1_10265"] = "La collection de cristaux du Consortium"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10265
+Lang["Q2_10265"] = "Procurez-vous un artefact cristallin d'Arklon et rapportez-le au traqueur-du-Néant Khay'ji à la Zone 52 au Raz-de-Néant."
+Lang["Q1_10262"] = "Un monceau d'éthériens"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10262
+Lang["Q2_10262"] = "Collectez 10 Insignes de Zaxxis et et apportez-les au Traqueur-du-Néant Khay'ji dans la Zone 52 de Raz-de-Néant."
 Lang["Q1_10205"] = "L'écumeur-dimensionnel Nesaad"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10205
 Lang["Q2_10205"] = "Tuez l'Écumeur-dimensionnel Nesaad, puis retournez voir le traqueur-du-Néant Khay'ji dans la Zone 52 de Raz-de-Néant."
 Lang["Q1_10266"] = "Demande d'assistance"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10266
@@ -597,6 +601,8 @@ Lang["Q1_9836"] = "Le toucher du maître"			-- https://www.thegeekcrusade-serveu
 Lang["Q2_9836"] = "Rendez-vous aux Grottes du temps et persuadez Medivh d’accepter votre Clé de l’apprenti réparée."
 Lang["Q1_9837"] = "Retour vers Khadgar"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9837
 Lang["Q2_9837"] = "Retournez voir Khadgar à Shattrath, et montrez-lui à la Clé du maître."
+Lang["Q1_9838"] = "L’Œil pourpre"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9838
+Lang["Q2_9838"] = "Parlez à l'archimage Alturus à l'extérieur de Karazhan."
 Lang["Q1_9630"] = "Le journal de Medivh"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9630
 Lang["Q2_9630"] = "L’archimage Alturus, du défilé de Deuillevent, veut que vous entriez dans Karazhan et que vous parliez à Wravien."
 Lang["Q1_9638"] = "En de bonnes mains"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9638

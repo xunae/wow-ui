@@ -11,3 +11,14 @@ ClassicCodex-db-frFR: disabled
 ClassicCodex-db-esMX: disabled
 ClassicCodex-db-esES: disabled
 ClassicCodex-db-deDE: disabled
+BigWigs_Core: enabled
+BigWigs_Options: enabled
+BigWigs_Plugins: enabled
+LittleWigs: enabled
+!KalielsTracker: disabled
+BigWigs_Karazhan: enabled
+BigWigs_Outland: enabled
+Gladdy: enabled
+XunaTweaks: enabled
+Gladius: disabled
+sArena: enabled

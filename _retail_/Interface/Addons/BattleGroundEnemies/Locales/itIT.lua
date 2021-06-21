@@ -1,6 +1,7 @@
-local L = LibStub('AceLocale-3.0'):NewLocale('BattleGroundEnemies', 'itIT')
+if not LOCALE_itIT then return end
 
-if not L then return end
+local addonName, Data = ...
+local L = Data.L;
 
 L["Allies"] = "Alleati"
 L["allies"] = "alleati"
@@ -12,14 +13,9 @@ L["AND"] = "e"
 L["AttachToObject"] = "Allega all'oggetto"
 L["AttachToObject_Desc"] = "Nota che non è possibile selezionare qualunque oggetto, dipende dal posizionamento degli altri riquadri. Ad esempio, ancorando i talenti PvP alle abilità razziali e nel mentre si ancorano le stesse ai talenti PvP, comparirà un messaggio d'errore."
 L["Auras_Buffs_Container_Color_Desc"] = "Il colore del bordo del contenitore delle icone dei potenziamenti"
-L["Auras_Buffs_Fontsize_Desc"] = "La dimensione del carattere degli accumuli sulle icone dei potenziamenti"
-L["Auras_Buffs_ShowNumbers_Desc"] = "Quando attivo, compariranno i numeri sulle icone dei potenziamenti indicando il tempo restante"
-L["Auras_Buffs_Textcolor_Desc"] = "Il colore del testo degli accumuli sui potenziamenti"
 L["Auras_Debuffs_Coloring_Enabled"] = "Colore per tipologia di Penalità"
 L["Auras_Debuffs_Coloring_Enabled_Desc"] = "Quando questa opzione è attiva si potrà scegliere se il bordo del riquadro, o il testo del conteggio alla rovescia, dovranno colorarsi in base alla tipologia della penalità (come adottate dall'interfaccia predefinita, i veleni in verde, le malattie in blu, ecc.)"
 L["Auras_Debuffs_Container_Color_Desc"] = "Il colore del bordo del contenitore delle icone delle penalità"
-L["Auras_Debuffs_Fontsize_Desc"] = "La dimensione del carattere degli accumuli sulle icone delle penalità"
-L["Auras_Debuffs_ShowNumbers_Desc"] = "Quando attivo, compariranno i numeri sulle icone delle penalità indicando il tempo restante"
 L["TargetIndicator"] = "Indicatore Bersaglio"
 L["TargetIndicator_Desc"] = "Indicatori bersaglio numerici e simbolici"
 L["Testmode_Toggle"] = "Mostra/Nascondi modalità di test"
@@ -34,7 +30,6 @@ L["TOPLEFT"] = "Superiore sinistro"
 L["TOPRIGHT"] = "Superiore destro"
 L["Trinket_Enabled"] = "Attiva Monili"
 L["Trinket_Enabled_Desc"] = "Quando attivi, compariranno le icone per il Medaglione del Gladiatore, Adattamento e Implacabilità."
-L["Trinket_ShowNumbers_Desc"] = "Quando attivo, comparirà il tempo di recupero sulle icone deli monili"
 L["Trinket_Width_Desc"] = "La larghezza del monile."
 L["TrinketSettings"] = "Monile"
 L["TrinketSettings_Desc"] = "Impostazioni relative ai Monili"

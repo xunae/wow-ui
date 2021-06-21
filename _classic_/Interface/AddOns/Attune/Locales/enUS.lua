@@ -9,8 +9,8 @@ end
 Lang["Credits"] = "A huge thank you to my guild |cffffd100<Divine Heresy>|r for their support and understanding while I test the addon, and heaps of kudos to |cffffd100Bushido @ Pyrewood Village|r for the help on TBC!\n\n Also, many, many thanks to the translators:\n  - German translation: |cffffd100Sumaya @ Razorfen DE|r\n  - Russian translation: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Spanish translation: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Chinese translation: |cffffd100ly395842562|r and |cffffd100Icyblade|r\n  - Korean translation: |cffffd100Drix @ Azshara KR|r\n\n/Hug from Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
-Lang["Version"] = "Attune v.##VERSION## by Cixi@Remulos"
-Lang["Splash"] = "v.##VERSION## by Cixi@Remulos. Type /attune to start."
+Lang["Version"] = "Attune v##VERSION## by Cixi@Remulos"
+Lang["Splash"] = "v##VERSION## by Cixi@Remulos. Type /attune to start."
 Lang["Survey"] = "Survey"
 Lang["Guild"] = "Guild"
 Lang["Party"] = "Party"
@@ -563,6 +563,10 @@ Lang["Q1_10284"] = "Escape from Durnholde"			-- https://www.thegeekcrusade-serve
 Lang["Q2_10284"] = "When you are ready to proceed, let Thrall know. Follow Thrall out of Durnholde Keep and help him free Taretha and fulfill his destiny."
 Lang["Q1_10285"] = "Return to Andormu"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10285
 Lang["Q2_10285"] = "Return to the child Andormu at the Caverns of Time in the Tanaris desert."
+Lang["Q1_10265"] = "Consortium Crystal Collection"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10265
+Lang["Q2_10265"] = "Obtain an Arklon Crystal Artifact and return it to Nether-Stalker Khay'ji at Area 52 in the Netherstorm."
+Lang["Q1_10262"] = "A Heap of Ethereals"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10262
+Lang["Q2_10262"] = "Collect 10 Zaxxis Insignias and return them to Nether-Stalker Khay'ji at Area 52 in the Netherstorm."
 Lang["Q1_10205"] = "Warp-Raider Nesaad"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10205
 Lang["Q2_10205"] = "Kill Warp-Raider Nesaad and then return to Nether-Stalker Khay'ji at Area 52 in the Netherstorm."
 Lang["Q1_10266"] = "Request for Assistance"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10266
@@ -597,6 +601,8 @@ Lang["Q1_9836"] = "The Master's Touch"			-- https://www.thegeekcrusade-serveur.c
 Lang["Q2_9836"] = "Go into the Caverns of Time and convince Medivh to enable your Restored Apprentice's Key."
 Lang["Q1_9837"] = "Return to Khadgar"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9837
 Lang["Q2_9837"] = "Return to Khadgar in Shattrath City and show him the Master's Key."
+Lang["Q1_9838"] = "The Violet Eye"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9838
+Lang["Q2_9838"] = "Speak to Archmage Alturus outside Karazhan."
 Lang["Q1_9630"] = "Medivh's Journal"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9630
 Lang["Q2_9630"] = "Archmage Alturus at Deadwind Pass wants you go into Karazhan and speak to Wravien."
 Lang["Q1_9638"] = "In Good Hands"			-- https://www.thegeekcrusade-serveur.com/db/?quest=9638

@@ -53,9 +53,9 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[7281] = {
-						["title"] = "Brotherly Love",
-						["zone"] = "Alterac Valley",
+					[62284] = {
+						["title"] = "Observing Battle",
+						["zone"] = "Oribos",
 						["level"] = 60,
 						["startMapID"] = 0,
 						["isCalling"] = false,
@@ -81,9 +81,9 @@ KalielsTrackerDB = {
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
-					[62284] = {
-						["title"] = "Observing Battle",
-						["zone"] = "Oribos",
+					[7281] = {
+						["title"] = "Brotherly Love",
+						["zone"] = "Alterac Valley",
 						["level"] = 60,
 						["startMapID"] = 0,
 						["isCalling"] = false,
@@ -91,9 +91,6 @@ KalielsTrackerDB = {
 				},
 				["num"] = 8,
 			},
-			["collapsed"] = true,
-		},
-		["Xuna - Gehennas"] = {
 			["collapsed"] = true,
 		},
 		["Xûñä - Stormscale"] = {
@@ -117,43 +114,63 @@ KalielsTrackerDB = {
 				["num"] = 2,
 			},
 		},
+		["Xuna - Gehennas"] = {
+			["trackedQuests"] = {
+				{
+					["id"] = 9838,
+					["zone"] = "Karazhan",
+				}, -- [1]
+			},
+		},
 		["Lightescp - Gehennas"] = {
 			["trackedQuests"] = {
 				{
-					["id"] = 8326,
-					["zone"] = "Sunstrider Isle",
+					["id"] = 9066,
+					["zone"] = "Eversong Woods",
 				}, -- [1]
 				{
-					["id"] = 9676,
-					["zone"] = "Paladin",
+					["id"] = 9254,
+					["zone"] = "Eversong Woods",
 				}, -- [2]
 				{
-					["id"] = 8336,
-					["zone"] = "Sunstrider Isle",
+					["id"] = 9067,
+					["zone"] = "Eversong Woods",
 				}, -- [3]
 				{
-					["id"] = 8346,
-					["zone"] = "Sunstrider Isle",
+					["id"] = 8886,
+					["zone"] = "Eversong Woods",
 				}, -- [4]
+				{
+					["id"] = 9144,
+					["zone"] = "Ghostlands",
+				}, -- [5]
+				{
+					["id"] = 9359,
+					["zone"] = "Eversong Woods",
+				}, -- [6]
+				{
+					["id"] = 9252,
+					["zone"] = "Eversong Woods",
+				}, -- [7]
 			},
 		},
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
 		["Wñä - Stormscale"] = "Default",
-		["Xuna - Gehennas"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
+		["Xuna - Gehennas"] = "Default",
 		["Lightescp - Gehennas"] = "Default",
 	},
 	["global"] = {
-		["helpTutorial"] = 8,
-		["version"] = "2.0.0",
+		["helpTutorial"] = 9,
+		["version"] = "2.2.0",
 	},
 	["profiles"] = {
 		["Default"] = {
-			["xOffset"] = -95,
+			["hdrOtherButtons"] = false,
 			["progressBar"] = "Blizzard Raid Bar",
-			["yOffset"] = -210,
+			["yOffset"] = -220,
 			["bgrColor"] = {
 				["a"] = 0,
 			},
@@ -163,10 +180,12 @@ KalielsTrackerDB = {
 				[15117] = false,
 			},
 			["hdrQuestsTitleAppend"] = false,
-			["hdrOtherButtons"] = false,
+			["xOffset"] = -95,
 			["addonMasque"] = true,
 			["maxHeight"] = 600,
 			["hdrAchievsTitleAppend"] = false,
+			["addonQuestie"] = true,
+			["questsShowZones"] = false,
 		},
 	},
 }

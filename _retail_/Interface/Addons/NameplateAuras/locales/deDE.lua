@@ -48,22 +48,14 @@ L["icon-sort-mode:by-aura-type+by-expire-time"] = "Nach Auratyp und nach Ablaufz
 L["icon-sort-mode:by-expire-time"] = "Nach Ablaufzeit"
 L["icon-sort-mode:by-icon-size"] = "Nach Symbolgröße"
 L["icon-sort-mode:custom"] = "Benutzerdefiniert"
---[[Translation missing --]]
-L["icon-sort-mode:none"] = "Without sorting"
---[[Translation missing --]]
-L["instance-type:arena"] = "Arenas"
---[[Translation missing --]]
-L["instance-type:none"] = "Open World"
---[[Translation missing --]]
-L["instance-type:party"] = "5ppl dungeons"
---[[Translation missing --]]
-L["instance-type:pvp"] = "Battlegrounds"
---[[Translation missing --]]
-L["instance-type:raid"] = "Raid dungeons"
---[[Translation missing --]]
-L["instance-type:scenario"] = "Scenarios"
---[[Translation missing --]]
-L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
+L["icon-sort-mode:none"] = "Ohne Sortierung"
+L["instance-type:arena"] = "Arenen"
+L["instance-type:none"] = "Offene Welt"
+L["instance-type:party"] = "5-Spieler-Dungeons"
+L["instance-type:pvp"] = "Schlachtfelder"
+L["instance-type:raid"] = "Schlachtzüge"
+L["instance-type:scenario"] = "Szenarien"
+L["instance-type:unknown"] = "Unbekannte Dungeons (Manche Questszenarien)"
 L["Magic"] = "Magie"
 L["Options are not available in combat!"] = "Optionen sind im Kampf nicht verfügbar!"
 L["options:alpha:alpha"] = "Deckkraft der Symbole (außer der Namensplakette deines Ziels)"
@@ -73,8 +65,7 @@ L["options:alpha:use-target-alpha-if-not-target-selected"] = "Display auras with
 L["options:animation-type:ICON_ANIMATION_TYPE_ALPHA"] = "Deckkraft"
 L["options:apps:dispellable-spells"] = "Bannbare/stehlbare Auras auf Namensplaketten von Feinden"
 L["options:apps:dispellable-spells:black-list-button"] = "Ausschlussliste öffnen"
---[[Translation missing --]]
-L["options:apps:dispellable-spells:tooltip"] = "Show dispellable/stealable auras on nameplates of enemies. These auras have a dim glow and default size"
+L["options:apps:dispellable-spells:tooltip"] = "Zeit bannbare/stehlbare Auren auf Namensplaketten von Gegnern. Diese Auren haben ein schwachtes Leuchten und Standardgröße"
 --[[Translation missing --]]
 L["options:apps:dr"] = "Enable display of diminishing return (beta)"
 L["options:apps:dr:pve"] = "PvE (nur betäuben)"
@@ -94,15 +85,13 @@ L["options:auras:enabled-state-mineonly"] = "Aktiviert, nur meine Auren zeigen"
 L["options:auras:show-on-npcs"] = "Diese Aura nur auf NSCs anzeigen"
 L["options:auras:show-on-npcs-and-players"] = "Diese Aura auf Spielern und NSCs anzeigen"
 L["options:auras:show-on-players"] = "Diese Aura nur auf Spielern anzeigen"
---[[Translation missing --]]
-L["options:borders:BORDER_TYPE_BUILTIN"] = "Built-in"
+L["options:borders:BORDER_TYPE_BUILTIN"] = "Eingebaut"
 L["options:borders:BORDER_TYPE_CUSTOM"] = "Benutzerdefiniert"
 L["options:borders:border-file-path"] = "Speicherort der Rahmentextur (beginnt mit 'Interface\\')"
 L["options:borders:border-type"] = "Rahmenart"
 L["options:category:alpha"] = "Deckkraft"
 L["options:category:apps"] = "Erweiterungen"
---[[Translation missing --]]
-L["options:category:dispel"] = "Purge/steal"
+L["options:category:dispel"] = "Reinigen/stehlen"
 L["options:category:interrupts"] = "Unterbrechungen"
 L["options:category:size-and-position"] = "Größe & Position"
 L["options:general:always-show-my-auras:tooltip"] = [=[Dies ist ein Filter höchster Priorität. Falls du diese

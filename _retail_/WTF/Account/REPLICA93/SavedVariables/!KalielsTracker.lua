@@ -31,42 +31,42 @@ KalielsTrackerDB = {
 		},
 		["Xûñä - Stormscale"] = {
 			["quests"] = {
-				["num"] = 2,
 				["cache"] = {
 					[61983] = {
 						["title"] = "Replenish the Reservoir",
 						["zone"] = "The Art of War",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[61739] = {
 						["title"] = "The Wayward Baron",
 						["zone"] = "The Art of War",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 				},
+				["num"] = 2,
 			},
 		},
 		["Wñä - Stormscale"] = {
 			["quests"] = {
-				["num"] = 8,
+				["num"] = 9,
 				["cache"] = {
-					[55509] = {
-						["title"] = "Victory in Wintergrasp",
-						["zone"] = "Wintergrasp",
+					[60060] = {
+						["title"] = "Mirror Attunement: Pridefall Hamlet",
+						["zone"] = "Covenant Sanctum",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[62284] = {
-						["title"] = "Observing Battle",
+					[62288] = {
+						["title"] = "Observing Teamwork",
 						["zone"] = "Oribos",
 						["level"] = 60,
 						["isCalling"] = false,
-						["startMapID"] = 0,
+						["startMapID"] = 1670,
 					},
 					[61981] = {
 						["title"] = "Replenish the Reservoir",
@@ -82,13 +82,6 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[60060] = {
-						["title"] = "Mirror Attunement: Pridefall Hamlet",
-						["zone"] = "Covenant Sanctum",
-						["level"] = 60,
-						["isCalling"] = false,
-						["startMapID"] = 0,
-					},
 					[60139] = {
 						["title"] = "Torment Chamber: Jaina",
 						["zone"] = "The Maw",
@@ -96,9 +89,9 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
-					[62457] = {
-						["title"] = "The Great Vault",
-						["zone"] = "Oribos",
+					[55509] = {
+						["title"] = "Victory in Wintergrasp",
+						["zone"] = "Wintergrasp",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -110,29 +103,50 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[62634] = {
+						["title"] = "A Shattered Path Through Time",
+						["zone"] = "Weekend Event",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1670,
+					},
+					[62286] = {
+						["title"] = "Observing Skirmishes",
+						["zone"] = "Oribos",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1670,
+					},
+					[62284] = {
+						["title"] = "Observing Battle",
+						["zone"] = "Oribos",
+						["level"] = 60,
+						["startMapID"] = 0,
+						["isCalling"] = false,
+					},
 				},
 			},
-			["collapsed"] = true,
 		},
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.2.13",
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Wñä - Stormscale"] = "Default",
 	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.2.13",
+	},
 	["profiles"] = {
 		["Default"] = {
 			["xOffset"] = -95,
 			["progressBar"] = "Blizzard Raid Bar",
 			["yOffset"] = -210,
+			["hdrOtherButtons"] = false,
 			["bgrColor"] = {
 				["a"] = 0,
 			},
-			["hdrOtherButtons"] = false,
+			["hideEmptyTracker"] = true,
 			["font"] = "Arial Narrow",
 			["filterAchievCat"] = {
 				[15117] = false,
@@ -141,6 +155,7 @@ KalielsTrackerDB = {
 			["addonMasque"] = true,
 			["hdrAchievsTitleAppend"] = false,
 			["maxHeight"] = 600,
+			["questShowZones"] = false,
 		},
 	},
 }

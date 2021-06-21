@@ -200,7 +200,7 @@ L["X offset"] = "X offset"
 L["Y offset"] = "Y offset"
 
 --@end-non-debug@
---[===[@debug@
+--[==[@debug@
 L = L or {}
 L["< 1min"] = "< 1min"
 L["< 5sec"] = "< 5sec"
@@ -400,4 +400,4 @@ L["instance-type:unknown"] = "Unknown dungeons (some quest scenarios)"
 L["options:general:instance-types"] = [=[Set the visibility of the cooldowns
 in different types of locations]=]
 
---@end-debug@]===]
+--@end-debug@]==]

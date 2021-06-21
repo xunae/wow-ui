@@ -9,8 +9,8 @@ end
 Lang["Credits"] = "Muchas gracias a mi hermandad |cffffd100<Divine Heresy>|r por su apoyo y comprensión mientras probaba el addon y mi agradecimiento a |cffffd100Bushido @ Pyrewood Village|r por la ayuda con la TBC!\n\n También, muchas, muchas, gracias a los traductores :\n  - Traducción Alemana: |cffffd100Sumaya @ Razorfen DE|r\n  - Traducción Rusa: |cffffd100Greymarch Guild @ Flamegor RU|r\n  - Traducción Española: |cffffd100Coyu @ Pyrewood Village EU|r\n  - Traducción China: |cffffd100ly395842562|r y |cffffd100Icyblade|r\n  - Traducción coreana: |cffffd100Drix @ Azshara KR|r\n\n/Hug de Cixi/Gaya @ Remulos Horde"
 Lang["Mini"] = "Mini"
 Lang["Maxi"] = "Maxi"
-Lang["Version"] = "Attune v.##VERSION## de Cixi@Remulos"
-Lang["Splash"] = "v.##VERSION## de Cixi@Remulos. Escribe /attune para empezar."
+Lang["Version"] = "Attune v##VERSION## de Cixi@Remulos"
+Lang["Splash"] = "v##VERSION## de Cixi@Remulos. Escribe /attune para empezar."
 Lang["Survey"] = "Sondear"
 Lang["Guild"] = "Hermandad"
 Lang["Party"] = "Grupo"
@@ -563,6 +563,10 @@ Lang["Q1_10284"] = "Huida de Durnholde"			-- https://es.tbc.wowhead.com/quest=10
 Lang["Q2_10284"] = "Cuando estés para proceder, díselo a Thrall. Sigue a Thrall al exterior del Castillo de Durnholde y ayúdale a liberar a Taretha y así cumplir su destino."
 Lang["Q1_10285"] = "Regresa junto a Andormu"			-- https://es.tbc.wowhead.com/quest=10285
 Lang["Q2_10285"] = "Regresa junto al niño, Andormu, en las Cavernas del Tiempo, en el Desierto de Tanaris."
+Lang["Q1_10265"] = "Colección de cristales de El Consorcio"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10265
+Lang["Q2_10265"] = "Consigue un artefacto de cristal de Arklon y llévaselo al acechador abisal Khay'ji al Área 52 en Tormenta Abisal."
+Lang["Q1_10262"] = "Un montón de etéreos"			-- https://www.thegeekcrusade-serveur.com/db/?quest=10262
+Lang["Q2_10262"] = "Recoge 10 insignias de Zaxxis y llévaselas al acechador abisal Khay'ji al Área 52 en Tormenta Abisal."
 Lang["Q1_10205"] = "Asaltante de distorsión Nesaad"			-- https://es.tbc.wowhead.com/quest=10205
 Lang["Q2_10205"] = "Mata al asaltante de distorsión Nesaad y ve a ver al acechador abisal Khay'ji al Área 52 en Tormenta Abisal."
 Lang["Q1_10266"] = "Petición de ayuda"			-- https://es.tbc.wowhead.com/quest=10266
@@ -597,6 +601,8 @@ Lang["Q1_9836"] = "El toque del maestro"			-- https://es.tbc.wowhead.com/quest=9
 Lang["Q2_9836"] = "Ve a las Cavernas del Tiempo y convence a Medivh para que active tu llave de aprendiz restaurada."
 Lang["Q1_9837"] = "Regresa junto a Khadgar"			-- https://es.tbc.wowhead.com/quest=9837
 Lang["Q2_9837"] = "Vuelve a ver a Khadgar en la Ciudad de Shattrath y enséñale la llave del maestro."
+Lang["Q1_9838"] = "El Ojo Violeta"			-- https://es.tbc.wowhead.com/quest=9838
+Lang["Q2_9838"] = "Habla con el Archimago Alturus fuera de Karazhan."
 Lang["Q1_9630"] = "El diario de Medivh"			-- https://es.tbc.wowhead.com/quest=9630
 Lang["Q2_9630"] = "El archimago Alturus, del Paso de la Muerte, quiere que vayas a Karazhan y hables con Wravien."
 Lang["Q1_9638"] = "En buenas manos"			-- https://es.tbc.wowhead.com/quest=9638

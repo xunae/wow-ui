@@ -9,6 +9,8 @@ local l10n = QuestieLoader:ImportModule("l10n")
 
 QuestieAnnounce._itemCache = {} -- cache data since this happens on item looted it could happen a lot with auto loot
 
+QuestieAnnounce._AlreadySentBandaid = {} -- TODO: rewrite the entire thing its a lost cause
+
 function QuestieAnnounce:Announce(questId, progressType, itemId, objectiveText, objectiveProgress)
     if "disabled" ~= Questie.db.char.questAnnounce and UnitInParty("player") then
         local message
@@ -23,10 +25,16 @@ function QuestieAnnounce:Announce(questId, progressType, itemId, objectiveText, 
             else
                 objective = objectiveProgress.." "..objectiveText
             end
-            message = "{rt1} Questie: " .. l10n("%s for %s!", objective, "[["..tostring(questLevel).."] "..questName.." ("..tostring(questId)..")]")
+            message = "{rt1} Questie : " .. l10n("%s for %s!", objective, "[["..tostring(questLevel).."] "..questName.." ("..tostring(questId)..")]")
         elseif progressType == "item" then
-            message = "{rt1} Questie: " .. l10n("Picked up %s which starts %s!", (select(2,GetItemInfo(itemId))), "[["..tostring(questLevel).."] "..questName.." ("..tostring(questId)..")]")
+            message = "{rt1} Questie : " .. l10n("Picked up %s which starts %s!", (select(2,GetItemInfo(itemId))), "[["..tostring(questLevel).."] "..questName.." ("..tostring(questId)..")]")
         end
+
+        if (not message) or QuestieAnnounce._AlreadySentBandaid[message] then
+            return
+        end
+
+        QuestieAnnounce._AlreadySentBandaid[message] = true
 
         SendChatMessage(message, "PARTY")
     end

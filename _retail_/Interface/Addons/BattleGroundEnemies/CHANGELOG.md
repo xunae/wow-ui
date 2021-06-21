@@ -1,6 +1,6 @@
 # BattleGroundEnemies
 
-## [9.0.2.7](https://github.com/bullsei/BattleGroundEnemies/tree/9.0.2.7) (2020-12-22)
-[Full Changelog](https://github.com/bullsei/BattleGroundEnemies/compare/9.0.2.6...9.0.2.7) [Previous Releases](https://github.com/bullsei/BattleGroundEnemies/releases)
+## [9.0.5.5](https://github.com/bullsei/BattleGroundEnemies/tree/9.0.5.5) (2021-06-09)
+[Full Changelog](https://github.com/bullsei/BattleGroundEnemies/compare/9.0.5.4...9.0.5.5) [Previous Releases](https://github.com/bullsei/BattleGroundEnemies/releases)
 
-- Put the stuff in the right order again to make it work again  
+- Added horde and alliance flag for warsung gulch in TBCC  

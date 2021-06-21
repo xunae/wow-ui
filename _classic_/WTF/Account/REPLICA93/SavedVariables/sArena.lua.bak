@@ -1,0 +1,43 @@
+
+sArenaDB = {
+	["profileKeys"] = {
+		["Xuna - Gehennas"] = "Default",
+	},
+	["profiles"] = {
+		["Default"] = {
+			["Cast Bars"] = {
+				["y"] = -19.9,
+				["x"] = 8.3,
+				["scale"] = 1.3,
+				["width"] = 100,
+			},
+			["minimap"] = {
+				["hide"] = true,
+			},
+			["Trinkets"] = {
+				["y"] = -0.8,
+				["x"] = 61.7,
+				["size"] = 30,
+			},
+			["Frame Styles"] = {
+				["frameStyle"] = "Xaryu",
+				["mirroredFrames"] = true,
+				["barTexture"] = "Interface\\RaidFrame\\Raid-Bar-Hp-Fill",
+			},
+			["DR Tracker"] = {
+				["spacing"] = 1,
+				["size"] = 18,
+				["growth"] = "RIGHT",
+				["y"] = -6,
+				["x"] = 87.3,
+			},
+			["Unit Frames"] = {
+				["y"] = 237.9,
+				["x"] = 619.4,
+				["frameSpacing"] = 30,
+				["scale"] = 1.2,
+				["statusTextScale"] = 0.6,
+			},
+		},
+	},
+}

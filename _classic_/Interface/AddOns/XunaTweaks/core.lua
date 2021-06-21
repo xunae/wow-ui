@@ -46,7 +46,7 @@ XunaTweaks:OnLoad()
 XunaTweaks:SetScript('OnEvent', XunaTweaks.OnEvent)
 
 function XunaTweaks:Initialize()
-	self:darkFrames()
+	--self:darkFrames()
 	self:classColorFrames()
 	self:hideGryphons()
 	self:beautifyActionBar()

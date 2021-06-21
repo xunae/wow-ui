@@ -36,8 +36,8 @@ OmniCCDB = {
 		["Xuna - Earthshaker"] = "Default",
 		["Xñæ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
-		["Wñä - Stormscale"] = "Default",
 		["Lightescp - Gehennas"] = "Default",
+		["Wñä - Stormscale"] = "Default",
 		["Nakolx - Stormscale"] = "Default",
 		["Xunap - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
@@ -136,7 +136,6 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
-	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -147,7 +146,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["engine"] = "AniUpdater",
+	["version"] = "8.2.3",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -272,4 +271,5 @@ OmniCC4Config = {
 			},
 		},
 	},
+	["engine"] = "AniUpdater",
 }

@@ -5,3 +5,7 @@ ClassicCodex: enabled
 ClassicCodex-db: enabled
 ClassicCodex-patch: enabled
 ClassicCodex-loader: disabled
+Dominos_Cast: disabled
+Dominos_Roll: disabled
+Gladdy: enabled
+Gladius: enabled

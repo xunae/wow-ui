@@ -3,19 +3,10 @@
 ## Interface-Classic: 11307
 ## Interface-BC: 20501
 ## Title: Lib: Diminishing Returns Database
-## Version: @project-version@
+## Version: v1.2.4
 ## X-Category: Library
 ## X-Curse-Project-ID: 315757
 ## X-Wago-ID: 9rN4BxKD
 
-#@no-lib-strip@
-libs\LibStub\LibStub.lua
-#@end-no-lib-strip@
 
 DRList-1.0.xml
-#@do-not-package@
-tests\engine.lua
-tests\test-retail.lua
-tests\test-classic.lua
-tests\test-tbc.lua
-#@end-do-not-package@

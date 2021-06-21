@@ -37,11 +37,11 @@ function QuestieTBCItemFixes:Load()
         [23339] = {
             [itemKeys.npcDrops] = {},
         },
-        [23442] = {
-            [itemKeys.npcDrops] = {16975},
-        },
         [23486] = {
             [itemKeys.objectDrops] = {181582},
+        },
+        [23552] = {
+            [itemKeys.objectDrops] = {184079},
         },
         [23614] = {
             [itemKeys.objectDrops] = {181616},
@@ -82,6 +82,12 @@ function QuestieTBCItemFixes:Load()
         [24156] = {
             [itemKeys.npcDrops] = {17544},
         },
+        [24285] = {
+            [itemKeys.npcDrops] = {16683},
+        },
+        [24286] = {
+            [itemKeys.npcDrops] = {16611},
+        },
         [24317] = {
             [itemKeys.objectDrops] = {182074},
         },
@@ -93,6 +99,15 @@ function QuestieTBCItemFixes:Load()
         },
         [24226] = {
             [itemKeys.npcDrops] = {17832},
+        },
+        [25461] = {
+            [itemKeys.npcDrops] = {18472},
+        },
+        [25462] = {
+            [itemKeys.npcDrops] = {16807},
+        },
+        [25807] = {
+            [itemKeys.npcDrops] = {18476,18477,},
         },
         [25852] = {
             [itemKeys.objectDrops] = {184842},
@@ -106,6 +121,9 @@ function QuestieTBCItemFixes:Load()
         [29162] = {
             [itemKeys.objectDrops] = {184162},
         },
+        [30426] = {
+            [itemKeys.npcDrops] = {19762,19768,19789,},
+        },
         [30430] = {
             [itemKeys.objectDrops] = {184715},
         },
@@ -118,11 +136,32 @@ function QuestieTBCItemFixes:Load()
         [30658] = {
             [itemKeys.npcDrops] = {21727},
         },
+        [30659] = {
+            [itemKeys.npcDrops] = {21725}
+        },
+        [30823] = {
+            [itemKeys.npcDrops] = {19678},
+        },
         [30890] = {
             [itemKeys.npcDrops] = {21057},
         },
         [31130] = {
             [itemKeys.npcDrops] = {21387},
+        },
+        [31252] = {
+            [itemKeys.npcDrops] = {18733},
+        },
+        [31530] = {
+            [itemKeys.objectDrops] = {177281},
+        },
+        [31941] = {
+            [itemKeys.objectDrops] = {185460},
+        },
+        [31957] = {
+            [itemKeys.npcDrops] = {20520},
+        },
+        [32380] = {
+            [itemKeys.npcDrops] = {20600},
         },
         [33071] = {
             [itemKeys.npcDrops] = {},
@@ -136,6 +175,9 @@ function QuestieTBCItemFixes:Load()
         [32742] = {
             [itemKeys.npcDrops] = {23363}
         },
+        [33041] = {
+            [itemKeys.objectDrops] = {186283},
+        },
         [33086] = {
             [itemKeys.npcDrops] = {},
         },
@@ -144,6 +186,12 @@ function QuestieTBCItemFixes:Load()
         },
         [33175] = {
             [itemKeys.npcDrops] = {},
+        },
+        [34864] = {
+            [itemKeys.objectDrops] = {500004,500005,500006},
+        },
+        [34865] = {
+            [itemKeys.objectDrops] = {182956},
         },
 
         -- Below are fake items which can be used to show special quest "objectives" as requiredSourceItem.

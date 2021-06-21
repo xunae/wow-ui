@@ -6,6 +6,9 @@ RepByZoneDB = {
 	},
 	["profiles"] = {
 		["Xuna - Gehennas"] = {
+			["watchedRepID"] = 81,
+			["watchedRepName"] = "Thunder Bluff",
+			["verbose"] = false,
 		},
 		["Lightescp - Gehennas"] = {
 		},

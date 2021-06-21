@@ -1,3 +1,5 @@
+---@class ChatFilter
+local ChatFilter = QuestieLoader:CreateModule("ChatFilter")
 ---@type QuestieDB
 local QuestieDB = QuestieLoader:ImportModule("QuestieDB")
 ---@type QuestieLib
@@ -9,36 +11,28 @@ local QuestieLib = QuestieLoader:ImportModule("QuestieLib")
 ---------------------------------------------------------------------------------------------------
 
 --- Message Event Filter which intercepts incoming linked quests and replaces them with Hyperlinks
-local function QuestsFilter(chatFrame, _, msg, playerName, languageName, channelName, playerName2, specialFlags, zoneChannelID, channelIndex, channelBaseName, unused, lineID, senderGUID, bnSenderID, ...)
+ChatFilter.Filter = function(chatFrame, _, msg, playerName, languageName, channelName, playerName2, specialFlags, zoneChannelID, channelIndex, channelBaseName, unused, lineID, senderGUID, bnSenderID, ...)
+    if (not Questie.started) then
+        return
+    end
+
     if string.find(msg, "%[(..-) %((%d+)%)%]") then
         if chatFrame and chatFrame.historyBuffer and #(chatFrame.historyBuffer.elements) > 0 and chatFrame ~= _G.ChatFrame2 then
             for k in string.gmatch(msg, "%[%[?%d?..?%]?..-%]") do
-                local complete, sqid, questId, questLevel, questName, realQuestName, realQuestLevel
-                
-                if Questie.IsTBC then
-                    questName, sqid = string.match(k, "%[(..-) %((%d+)%)%]")
-                else
-                    _, _, questName, sqid = string.match(k, "%[(..-) %((%d+)%)%]")
-                end
+                local sqid, questId, questLevel, questName, realQuestName, realQuestLevel
+
+                questName, sqid = string.match(k, "%[(..-) %((%d+)%)%]")
 
                 if questName and sqid then
                     questId = tonumber(sqid)
 
                     if string.find(questName, "(%[%d+.-%]) ") ~= nil then
-                        if Questie.IsTBC then
-                            questLevel, questName = string.match(questName, "%[(..-)%] (.+)")
-                        else
-                            _, _, questLevel, questName = string.match(questName, "%[(..-)%] (.+)")
-                        end
+                        questLevel, questName = string.match(questName, "%[(..-)%] (.+)")
                     end
 
                     if QuestieDB.QueryQuest then
                         realQuestName = QuestieDB.QueryQuestSingle(questId, "name");
                         realQuestLevel, _ = QuestieLib:GetTbcLevel(questId);
-
-                        if questName and questId then
-                            complete = QuestieDB:IsComplete(questId)
-                        end
                     end
                 end
 
@@ -91,38 +85,39 @@ local function QuestsFilter(chatFrame, _, msg, playerName, languageName, channel
     end
 end
 
--- The message filter that triggers the above local function
+function ChatFilter:RegisterEvents() -- todo: register immediately and cache calls until db is available
+    -- The message filter that triggers the above local function
+    -- Party
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", ChatFilter.Filter)
 
--- Party
-ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_PARTY_LEADER", QuestsFilter)
+    -- Raid
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_LEADER", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_WARNING", ChatFilter.Filter)
 
--- Raid
-ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_LEADER", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_RAID_WARNING", QuestsFilter)
+    -- Guild
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_OFFICER", ChatFilter.Filter)
 
--- Guild
-ChatFrame_AddMessageEventFilter("CHAT_MSG_GUILD", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_OFFICER", QuestsFilter)
+    -- Battleground
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT_LEADER", ChatFilter.Filter)
 
--- Battleground
-ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_INSTANCE_CHAT_LEADER", QuestsFilter)
+    -- Whisper
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER_INFORM", ChatFilter.Filter)
 
--- Whisper
-ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_WHISPER_INFORM", QuestsFilter)
+    -- Battle Net
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_BN", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_BN_WHISPER", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_BN_WHISPER_INFORM", ChatFilter.Filter)
 
--- Battle Net
-ChatFrame_AddMessageEventFilter("CHAT_MSG_BN", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_BN_WHISPER", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_BN_WHISPER_INFORM", QuestsFilter)
+    -- Open world
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", ChatFilter.Filter)
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", ChatFilter.Filter)
 
--- Open world
-ChatFrame_AddMessageEventFilter("CHAT_MSG_CHANNEL", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_SAY", QuestsFilter)
-ChatFrame_AddMessageEventFilter("CHAT_MSG_YELL", QuestsFilter)
-
--- Emote
-ChatFrame_AddMessageEventFilter("CHAT_MSG_EMOTE", QuestsFilter)
+    -- Emote
+    ChatFrame_AddMessageEventFilter("CHAT_MSG_EMOTE", ChatFilter.Filter)
+end

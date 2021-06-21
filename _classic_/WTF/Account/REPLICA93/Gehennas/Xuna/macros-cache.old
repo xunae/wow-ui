@@ -6,3 +6,26 @@ VER 3 0000000001000003 " " "INV_MISC_QUESTIONMARK"
 #showtooltip
 /cast [@mouseover,exists]Cure Disease;Cure Disease
 END
+VER 3 0000000001000004 "EM" "INV_MISC_QUESTIONMARK"
+#showtooltip Elemental Mastery
+/use 13
+/use 14
+/cast Elemental Mastery
+END
+VER 3 0000000001000006 "ES / FOCUS" "INV_MISC_QUESTIONMARK"
+#showtooltip [mod:shift,harm]Earth Shock(Rank 1);[@focus,exists,harm]Earth Shock(Rank 1);Earth Shock(Rank 1)
+/stopcasting
+/cast [mod:shift,harm] Earth Shock(Rank 1)
+/cast [@focus,harm] Earth Shock(Rank 1); [harm] Earth Shock(Rank 1)
+END
+VER 3 0000000001000007 "FS / FOCUS" "INV_MISC_QUESTIONMARK"
+#showtooltip [mod:shift,harm]Frost Shock(Rank 1);[@focus,exists,harm]Frost Shock(Rank 1);Frost Shock(Rank 1)
+/stopcasting
+/cast [modifier:shift] Frost Shock(Rank 1)
+/cast [target=focus,harm] Frost Shock(Rank 1); [harm] Frost Shock(Rank 1)
+END
+VER 3 0000000001000005 "NS" "INV_MISC_QUESTIONMARK"
+#showtooltip Nature's Swiftness
+/cast Nature's Swiftness
+/cast Healing Wave
+END

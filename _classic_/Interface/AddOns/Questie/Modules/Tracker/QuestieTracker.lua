@@ -31,7 +31,7 @@ local ZoneDB = QuestieLoader:ImportModule("ZoneDB")
 ---@type l10n
 local l10n = QuestieLoader:ImportModule("l10n")
 
-local LibDropDown = LibStub:GetLibrary("LibUIDropDownMenu-4.0")
+local LibDropDown = LibStub:GetLibrary("LibUIDropDownMenuQuestie-4.0")
 
 -- Local Vars
 local trackerLineCount = 80
@@ -2428,9 +2428,8 @@ _GetContinent = function(uiMapId)
         return "Kalimdor"
     elseif uiMapId > 1900 and uiMapId < 2000 then
         return "Outland"
-    else
-
-        Questie:Error("[QuestieTracker] " .. uiMapId .. " is an unknown uiMapId")
+    else -- todo: check C_Map.GetMapInfo parent (we need to test that more, this is safe for now)
+        return "Outland" --Questie:Error("[QuestieTracker] " .. uiMapId .. " is an unknown uiMapId")
     end
 end
 

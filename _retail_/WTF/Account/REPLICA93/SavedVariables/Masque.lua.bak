@@ -11,18 +11,18 @@ MasqueDB = {
 		["Xuna - Stormscale"] = "Default",
 		["Spazshaman - Stormscale"] = "Default",
 		["Wñä - Stormscale"] = "Default",
-		["Nakolx - Stormscale"] = "Default",
+		["Xunz - Stormscale"] = "Default",
 		["Xunae - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
-		["Xunz - Stormscale"] = "Default",
+		["Nakolx - Stormscale"] = "Default",
 	},
 	["profiles"] = {
 		["Default"] = {
 			["Groups"] = {
 				["WeakAuras_Jn(tS6BEko1"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Dominos_Action Bar 1"] = {
 					["SkinID"] = "Epix",
@@ -30,8 +30,8 @@ MasqueDB = {
 				},
 				["WeakAuras_BUiU2F21YNi"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Dominos_Possess Bar"] = {
 					["SkinID"] = "Epix",
@@ -39,8 +39,8 @@ MasqueDB = {
 				},
 				["WeakAuras_H(NZYA9mDQi"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Strangulate"] = {
 					["Inherit"] = false,
@@ -88,8 +88,8 @@ MasqueDB = {
 				},
 				["WeakAuras_KKMS82(njKR"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Kaliel's Tracker"] = {
 					["SkinID"] = "Epix",
@@ -131,26 +131,26 @@ MasqueDB = {
 				},
 				["WeakAuras_FrtnEP3ShRN"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_Kgm)vcSXULu"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Hammer of Justice"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_R83kmHL5pTM"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_PsCfgXDKb(B"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Axe Toss"] = {
 					["Inherit"] = false,
@@ -169,8 +169,8 @@ MasqueDB = {
 				},
 				["WeakAuras_kAeGURcheSr"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Spell Reflection"] = {
 					["Inherit"] = false,
@@ -178,18 +178,18 @@ MasqueDB = {
 				},
 				["WeakAuras_wtzuhPE8rc2"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_u6G6gTMkVEk"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_bW9L54nehH0"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Shadowstep"] = {
 					["Inherit"] = false,
@@ -205,8 +205,8 @@ MasqueDB = {
 				},
 				["WeakAuras_8GwdFUZHUCX"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Neuron_Action Bar 2"] = {
 					["Colors"] = {
@@ -222,8 +222,8 @@ MasqueDB = {
 				},
 				["WeakAuras_0dPfLdG8dcF"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Grounding Totem"] = {
 					["Inherit"] = false,
@@ -231,8 +231,8 @@ MasqueDB = {
 				},
 				["WeakAuras_pO0R2J7JCYC"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Dominos_Action Bar 4"] = {
 					["SkinID"] = "Epix",
@@ -252,18 +252,18 @@ MasqueDB = {
 				},
 				["WeakAuras_vFwLKkywLXQ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_PfFKMIorfLD"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_HlIW5)k4IyG"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Spear Hand Strike"] = {
 					["Inherit"] = false,
@@ -271,8 +271,8 @@ MasqueDB = {
 				},
 				["WeakAuras_PBvmgNBZ4n6"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Rebuke"] = {
 					["Inherit"] = false,
@@ -284,8 +284,8 @@ MasqueDB = {
 				},
 				["WeakAuras_)yqKWE9tp0c"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Silence"] = {
 					["Inherit"] = false,
@@ -305,8 +305,8 @@ MasqueDB = {
 				},
 				["WeakAuras_pPsOmBIe5SA"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Kick"] = {
 					["Inherit"] = false,
@@ -314,16 +314,16 @@ MasqueDB = {
 				},
 				["WeakAuras_Krtf)P(110b"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Kidney Shot"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_NIdh8Xtub8W"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Dominos_Action Bar 8"] = {
 					["SkinID"] = "Epix",
@@ -335,13 +335,13 @@ MasqueDB = {
 				},
 				["WeakAuras_Kv3Ei)cYeWa"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_tmwqhGvdSYT"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Kaliel's Tracker_Quest Active Button"] = {
 					["SkinID"] = "Epix",
@@ -349,13 +349,13 @@ MasqueDB = {
 				},
 				["WeakAuras_gwydyUir0Iq"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_6FQen4yEnju"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Storm Bolt"] = {
 					["Inherit"] = false,
@@ -403,8 +403,8 @@ MasqueDB = {
 				},
 				["WeakAuras_C9BEafpklrn"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Dominos_Pet Bar"] = {
 					["SkinID"] = "Epix",
@@ -415,18 +415,18 @@ MasqueDB = {
 				},
 				["WeakAuras_m796PbGI(Sh"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_AeoJTd0HRs3"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_7SX7Fz)AVyz"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Neuron_Action Bar 1"] = {
 					["Colors"] = {
@@ -445,8 +445,8 @@ MasqueDB = {
 				},
 				["WeakAuras_Hezzru0qtvA"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Death Grip"] = {
 					["Inherit"] = false,
@@ -457,8 +457,8 @@ MasqueDB = {
 				},
 				["WeakAuras_iaQza7oBq3c"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Neuron_Action Bar 5"] = {
 					["Colors"] = {
@@ -481,8 +481,8 @@ MasqueDB = {
 				},
 				["WeakAuras_(fpBa2yX9IP"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Smoke Bomb"] = {
 					["Inherit"] = false,
@@ -505,8 +505,8 @@ MasqueDB = {
 				},
 				["WeakAuras_B3)qTZ(lnQJ"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Fade"] = {
 					["Inherit"] = false,
@@ -514,16 +514,16 @@ MasqueDB = {
 				},
 				["WeakAuras_VnuRIWgoqrU"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Masque"] = {
 					["SkinID"] = "Epix",
 				},
 				["WeakAuras_hzwtvTQKYYK"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["Neuron_Pet Bar 1"] = {
 					["Colors"] = {
@@ -549,56 +549,58 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["OmniBar_Muzzle"] = {
+				["WeakAuras_qNCtP7u3rH1"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
-				["Dominos_Action Bar 9"] = {
+				["Dominos_Action Bar 10"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
-				["OmniBar_Chaos Nova"] = {
-					["Inherit"] = false,
+				["Dominos_Action Bar 7"] = {
 					["SkinID"] = "Epix",
+					["Inherit"] = false,
 				},
 				["WeakAuras_EadCQpL5Mnu"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
-				},
-				["Dominos"] = {
 					["SkinID"] = "Epix",
+				},
+				["WeakAuras_UgHxUTR6oP9"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["OmniBar_Freezing Trap"] = {
 					["Inherit"] = false,
 				},
 				["Kaliel's Tracker_Quest Item Buttons"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
-				["OmniBar_Freezing Trap"] = {
-					["Inherit"] = false,
-				},
-				["Dominos_Action Bar 6"] = {
+				["Dominos_Action Bar 2"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
-				["Neuron_Action Bar 3"] = {
-					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
-					},
+				["WeakAuras_QWyr5mjtEgR"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
-					["SkinID"] = "Caith",
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Blinding Light"] = {
 					["Inherit"] = false,
 					["SkinID"] = "Epix",
 				},
-				["WeakAuras_YNUbj)vZxAH"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
+				["OmniBar_Avenger's Shield"] = {
+					["Colors"] = {
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.800000011920929, -- [4]
+						},
+					},
 					["Inherit"] = false,
 				},
 				["WeakAuras_I2qleCHijda"] = {
@@ -621,23 +623,31 @@ MasqueDB = {
 				},
 				["WeakAuras_pRoSxYNsr8U"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Epix",
-					["Inherit"] = false,
 				},
-				["OmniBar_Asphyxiate"] = {
+				["WeakAuras_iw0xuNfNb1V"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Disrupt"] = {
 					["Inherit"] = false,
 				},
 				["WeakAuras_oZXTwj8G(A9"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
-				},
-				["WeakAuras_JHegUq(qwEI"] = {
-					["Upgraded"] = true,
 					["SkinID"] = "Epix",
+				},
+				["OmniBar_Call Felhunter"] = {
+					["Colors"] = {
+						["Backdrop"] = {
+							1, -- [1]
+							1, -- [2]
+							1, -- [3]
+							0.800000011920929, -- [4]
+						},
+					},
 					["Inherit"] = false,
 				},
 				["OmniBar_Spell Lock"] = {
@@ -656,16 +666,18 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["OmniBar_Howl of Terror"] = {
+				["WeakAuras_jDexK7ayhMy"] = {
+					["Upgraded"] = true,
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Mortal Coil"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_o)eOdz5UT8u"] = {
+				["WeakAuras_1(zakwI0AdP"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Pummel"] = {
 					["Inherit"] = false,
@@ -673,64 +685,15 @@ MasqueDB = {
 				},
 				["WeakAuras_r7F(H9QlJFi"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
-				["WeakAuras_pa(xHen0fvW"] = {
+				["WeakAuras_9hF)BixTcSd"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["OmniBar_Solar Beam"] = {
-					["Inherit"] = false,
-				},
-				["WeakAuras_uTYgomjYlZh"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["WeakAuras_tfhCByxW4n6"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["WeakAuras_VhAWHEphgu6"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["OmniBar"] = {
-					["Inherit"] = false,
-					["SkinID"] = "Epix",
-				},
-				["WeakAuras_vZuoVF(hxYn"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["WeakAuras_0exdH)K9nS0"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["WeakAuras_k53)FwLQBZv"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["Neuron"] = {
-					["Colors"] = {
-						["Cooldown"] = {
-							0, -- [1]
-							0, -- [2]
-							0, -- [3]
-							0.8500000089406967, -- [4]
-						},
-					},
-					["Inherit"] = false,
-					["SkinID"] = "Caith",
-				},
-				["OmniBar_Wind Shear"] = {
 					["Inherit"] = false,
 				},
 				["Neuron_Extra Action Bar 1"] = {
@@ -745,64 +708,104 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Caith",
 				},
-				["WeakAuras_9hF)BixTcSd"] = {
+				["WeakAuras_tfhCByxW4n6"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["Neuron"] = {
+					["Colors"] = {
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
+						},
+					},
+					["Inherit"] = false,
+					["SkinID"] = "Caith",
+				},
+				["WeakAuras_k53)FwLQBZv"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["WeakAuras_vZuoVF(hxYn"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["WeakAuras_0exdH)K9nS0"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["OmniBar"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["WeakAuras_VhAWHEphgu6"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["OmniBar_Wind Shear"] = {
+					["Inherit"] = false,
+				},
+				["WeakAuras_uTYgomjYlZh"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["WeakAuras_pa(xHen0fvW"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_iQvo1cQJyGn"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
 				["WeakAuras_vsXEa7EOleU"] = {
 					["Upgraded"] = true,
-					["SkinID"] = "Epix",
 					["Inherit"] = false,
+					["SkinID"] = "Epix",
 				},
-				["WeakAuras_1(zakwI0AdP"] = {
+				["WeakAuras_o)eOdz5UT8u"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Epix",
+				},
+				["OmniBar_Howl of Terror"] = {
 					["Inherit"] = false,
 				},
-				["WeakAuras_jDexK7ayhMy"] = {
+				["WeakAuras_JHegUq(qwEI"] = {
 					["Upgraded"] = true,
+					["Inherit"] = false,
 					["SkinID"] = "Epix",
+				},
+				["OmniBar_Asphyxiate"] = {
 					["Inherit"] = false,
 				},
-				["OmniBar_Call Felhunter"] = {
+				["WeakAuras_YNUbj)vZxAH"] = {
+					["Upgraded"] = true,
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["Neuron_Action Bar 3"] = {
 					["Colors"] = {
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.800000011920929, -- [4]
+						["Cooldown"] = {
+							0, -- [1]
+							0, -- [2]
+							0, -- [3]
+							0.8500000089406967, -- [4]
 						},
 					},
 					["Inherit"] = false,
+					["SkinID"] = "Caith",
 				},
-				["WeakAuras_iw0xuNfNb1V"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["OmniBar_Avenger's Shield"] = {
-					["Colors"] = {
-						["Backdrop"] = {
-							1, -- [1]
-							1, -- [2]
-							1, -- [3]
-							0.800000011920929, -- [4]
-						},
-					},
-					["Inherit"] = false,
-				},
-				["WeakAuras_QWyr5mjtEgR"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["Dominos_Action Bar 2"] = {
+				["Dominos_Action Bar 6"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
@@ -810,22 +813,19 @@ MasqueDB = {
 					["Inherit"] = false,
 					["SkinID"] = "Epix",
 				},
-				["WeakAuras_UgHxUTR6oP9"] = {
-					["Upgraded"] = true,
+				["Dominos"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar 7"] = {
+				["OmniBar_Chaos Nova"] = {
+					["Inherit"] = false,
+					["SkinID"] = "Epix",
+				},
+				["Dominos_Action Bar 9"] = {
 					["SkinID"] = "Epix",
 					["Inherit"] = false,
 				},
-				["Dominos_Action Bar 10"] = {
-					["SkinID"] = "Epix",
-					["Inherit"] = false,
-				},
-				["WeakAuras_qNCtP7u3rH1"] = {
-					["Upgraded"] = true,
-					["SkinID"] = "Epix",
+				["OmniBar_Muzzle"] = {
 					["Inherit"] = false,
 				},
 				["OmniBar_Mighty Bash"] = {

@@ -13,7 +13,7 @@ BattleGroundEnemiesDB = {
 				},
 				["RangeIndicator_Everything"] = true,
 				["15"] = {
-					["Position_Y"] = 549.600398814684,
+					["Position_Y"] = 583.7337489326856,
 					["RoleIcon_VerticalPosition"] = 6,
 					["DrTrackingFiltering_Filterlist"] = {
 						["stun"] = true,
@@ -22,7 +22,7 @@ BattleGroundEnemiesDB = {
 					},
 					["HealthBar_Texture"] = "Blizzard Raid Bar",
 					["Name_Fontsize"] = 12,
-					["Position_X"] = 894.9337047418012,
+					["Position_X"] = 1019.200601124772,
 					["DrTrackingFiltering_Enabled"] = true,
 				},
 			},

@@ -2,9 +2,9 @@
 ## Title: SpellNotifications
 ## Notes: Simple spell notifications tailored to each and every class. Original by Veex-Executus(US), v2.0.0 updated by LucyON
 ## Author: LucyON
-## Version: v2.1.0
+## Version: v2.2.1
 ## X-Curse-Project-ID: 301888
 ## X-Wago-ID: WYK9blGL
-## X-WoWI-ID:
+## X-WoWI-ID: 26039
 
 SpellNotifications.xml

@@ -1,6 +1,6 @@
-## Interface: 90002
+## Interface: 20501
 ## Title: Masque: |cff99CCFFEpix|r
-## Version: 1.9.1
+## Version: 1.0
 ## Author: Epix
 ## Notes: Epix's skin for Masque.
 ## Dependencies: Masque

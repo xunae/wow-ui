@@ -2,7 +2,9 @@
 ## Title: NameplateAuras
 ## Notes: Displays people's buffs/debuffs above their nameplates
 ## SavedVariables: NameplateAurasAceDB
-## Version: 90005.9-release
+## Version: 90005.12-release
+## X-Curse-Project-ID: 101192
+## X-Wago-ID: lQNl536e
 
 src\consts.lua
 embeds.xml
