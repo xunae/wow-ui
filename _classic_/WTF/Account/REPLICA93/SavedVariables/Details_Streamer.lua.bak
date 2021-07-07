@@ -36,9 +36,9 @@ Details_StreamerDB = {
 		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Xunadwarf - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xã - Draenor"] = "Xûñä - Ravencrest",
-		["Mktja - Draenor"] = "Xûñä - Ravencrest",
 		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
-		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
+		["Mktja - Draenor"] = "Xûñä - Ravencrest",
+		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
 		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Hãllàáhø - Stormscale"] = "Xûñä - Ravencrest",
@@ -55,7 +55,7 @@ Details_StreamerDB = {
 		["Xuna - Gehennas"] = "Xûñä - Ravencrest",
 		["Xûñä - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xñæ - Draenor"] = "Xûñä - Ravencrest",
-		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
+		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
 		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
 		["Wñä - Stormscale"] = "Xûñä - Ravencrest",
 		["Dkuna - Draenor"] = "Xûñä - Ravencrest",
@@ -87,17 +87,28 @@ Details_StreamerDB = {
 			["arrow_anchor_x"] = 0,
 			["main_frame_locked"] = true,
 			["row_texture"] = "Details Serenity",
-			["author"] = "Details! Team",
-			["y"] = -28.9441528320313,
 			["row_color"] = {
 				0.101960784313725, -- [1]
 				0.101960784313725, -- [2]
 				0.101960784313725, -- [3]
 				0.777777433395386, -- [4]
 			},
+			["use_spark"] = true,
+			["author"] = "Details! Team",
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 15,
+			["y"] = -28.9441528320313,
+			["row_spacement"] = 21,
+			["main_frame_color"] = {
+				0, -- [1]
+				0, -- [2]
+				0, -- [3]
+				0, -- [4]
+			},
+			["main_frame_strata"] = "LOW",
+			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
+			["font_size"] = 12,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -109,17 +120,6 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["size"] = 32,
 			},
-			["row_spacement"] = 21,
-			["main_frame_color"] = {
-				0, -- [1]
-				0, -- [2]
-				0, -- [3]
-				0, -- [4]
-			},
-			["main_frame_strata"] = "LOW",
-			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["use_spark"] = true,
-			["font_size"] = 12,
 			["x"] = 4.38843965530396,
 			["font_face"] = "Friz Quadrata TT",
 			["square_size"] = 32,

@@ -46,36 +46,36 @@ XunaTweaks:OnLoad()
 XunaTweaks:SetScript('OnEvent', XunaTweaks.OnEvent)
 
 function XunaTweaks:Initialize()
-	self:darkFrames()
+	--self:darkFrames()
 	self:classColorFrames()
-	self:hideGryphons()
+	--self:hideGryphons()
 	self:beautifyActionBar()
 
-	MinimapZoomOut:Hide()
-	MinimapZoomIn:Hide()
+	--MinimapZoomOut:Hide()
+	--MinimapZoomIn:Hide()
 
-	MicroButtonAndBagsBar:Hide()
-	CharacterMicroButton:Hide()
-	SpellbookMicroButton:Hide()
-	TalentMicroButton:Hide()
-	AchievementMicroButton:Hide()
-	QuestLogMicroButton:Hide()
-	GuildMicroButton:Hide()
-	LFDMicroButton:Hide()
-	CollectionsMicroButton:Hide()
-	EJMicroButton:Hide()
-	StoreMicroButton:Hide()
-	MainMenuMicroButton:Hide()
+	--MicroButtonAndBagsBar:Hide()
+	--CharacterMicroButton:Hide()
+	--SpellbookMicroButton:Hide()
+	--TalentMicroButton:Hide()
+	--AchievementMicroButton:Hide()
+	--QuestLogMicroButton:Hide()
+	--GuildMicroButton:Hide()
+	--LFDMicroButton:Hide()
+	--CollectionsMicroButton:Hide()
+	--EJMicroButton:Hide()
+	--StoreMicroButton:Hide()
+	--MainMenuMicroButton:Hide()
 
 	--StoreMicroButton:SetScript("OnShow",StoreMicroButton.Hide)
 	--StoreMicroButton.Show = function() end
 
-	PlayerName:SetPoint("CENTER", 50, 18)
-	PlayerName.SetPoint = function() end
-	TargetFrameTextureFrameName:SetPoint("CENTER", -50, 18)
-	TargetFrameTextureFrameName.SetPoint = function() end
-	FocusFrameTextureFrameName:SetPoint("CENTER", -50, 18)
-	FocusFrameTextureFrameName.SetPoint = function() end
+	--PlayerName:SetPoint("CENTER", 50, 18)
+	--PlayerName.SetPoint = function() end
+	--TargetFrameTextureFrameName:SetPoint("CENTER", -50, 18)
+	--TargetFrameTextureFrameName.SetPoint = function() end
+	--FocusFrameTextureFrameName:SetPoint("CENTER", -50, 18)
+	--FocusFrameTextureFrameName.SetPoint = function() end
 
 	--MainMenuBarArtFrameBackground:Hide()
 	--ActionBarUpButton:Hide()
@@ -94,7 +94,7 @@ function XunaTweaks:Initialize()
 
 	if not initialSetupDone then
 		initialSetupDone = true
-		self:hideGroupTitles()
+		--self:hideGroupTitles()
 		if XunaTweaksDB.classIconPortraits then self:classIconPortraits() end
 		if XunaTweaksDB.customHealthMana then self:customHealthMana() end
 		if XunaTweaksDB.bottomRaidFrame then self:bottomRaidFrame() end

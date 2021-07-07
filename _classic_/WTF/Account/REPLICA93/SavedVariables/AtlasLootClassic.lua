@@ -10,7 +10,7 @@ AtlasLootClassicDB = {
 	["profiles"] = {
 		["Xuna - Gehennas"] = {
 			["minimap"] = {
-				["minimapPos"] = 340.5138770286569,
+				["minimapPos"] = 337.6403043911589,
 			},
 			["GUI"] = {
 				["classFilter"] = true,
@@ -18,14 +18,14 @@ AtlasLootClassicDB = {
 					nil, -- [1]
 					nil, -- [2]
 					"CENTER", -- [3]
-					11.00002384185791, -- [4]
-					4.000029563903809, -- [5]
+					29.99993133544922, -- [4]
+					14.99996566772461, -- [5]
 				},
 				["selected"] = {
 					nil, -- [1]
-					"HyjalSummit", -- [2]
+					"MagtheridonsLair", -- [2]
 					nil, -- [3]
-					6, -- [4]
+					1, -- [4]
 					0, -- [5]
 				},
 			},

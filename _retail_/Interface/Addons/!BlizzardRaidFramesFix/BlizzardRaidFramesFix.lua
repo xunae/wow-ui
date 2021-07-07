@@ -442,7 +442,7 @@ local function CompactUnitFrame_UpdateAllSecure(frame)
     end
 end
 
-if WOW_PROJECT_ID ~= WOW_PROJECT_CLASSIC then
+if WOW_PROJECT_ID == WOW_PROJECT_MAINLINE then
     if CompactUnitFrame_UpdateInVehicle then
         hooksecurefunc(
             "CompactUnitFrame_UpdateInVehicle",
@@ -499,7 +499,7 @@ hooksecurefunc(
     end
 )
 
-if WOW_PROJECT_ID == WOW_PROJECT_CLASSIC then
+if WOW_PROJECT_ID ~= WOW_PROJECT_MAINLINE then
     hooksecurefunc(
         "CompactUnitFrame_UpdateRoleIcon",
         function(frame)
@@ -687,8 +687,6 @@ do
                 end
             end
 
-            frame:SetScript("OnEnter", UnitFrame_OnEnter)
-
             frames[frame] = unitTarget
 
             if updateAll then
@@ -832,12 +830,6 @@ local function updateAllFrames()
                 end
             end
 
-            if unit then
-                frame:SetScript("OnEnter", UnitFrame_OnEnter)
-            else
-                frame:SetScript("OnEnter", nil)
-            end
-
             CompactUnitFrame_UpdateAllSecure(frame)
 
             for _, hookfunc in ipairs(hooks_CompactUnitFrame_SetUnit) do
@@ -846,6 +838,23 @@ local function updateAllFrames()
         end
     end
 end
+
+local function CompactUnitFrame_OnEnter(self)
+    if self.unit then
+        UnitFrame_UpdateTooltip(self)
+    end
+end
+
+hooksecurefunc(
+    "CompactUnitFrame_SetUpFrame",
+    function(frame)
+        if frame:IsForbidden() or not frame:GetName() or not frame:GetName():find("^Compact") then
+            return
+        end
+
+        frame:SetScript("OnEnter", CompactUnitFrame_OnEnter)
+    end
+)
 
 do
     local function CompactPartyFrame_UpdateUnits(self)

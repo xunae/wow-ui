@@ -12,8 +12,8 @@ sArenaDB = {
 				["width"] = 100,
 			},
 			["Unit Frames"] = {
-				["y"] = 237.9,
-				["x"] = 619.4,
+				["y"] = 125.6,
+				["x"] = 296.1,
 				["frameSpacing"] = 30,
 				["scale"] = 1.2,
 				["statusTextScale"] = 0.6,

@@ -7,6 +7,7 @@ BattleGroundEnemiesDB = {
 	},
 	["profiles"] = {
 		["Default"] = {
+			["onlyShowWhenNewVersion"] = true,
 			["Enemies"] = {
 				["40"] = {
 					["Enabled"] = false,
@@ -27,6 +28,7 @@ BattleGroundEnemiesDB = {
 				},
 			},
 			["Font"] = "Arial Narrow",
+			["lastReadVersion"] = "9.0.5.6",
 			["Allies"] = {
 				["Enabled"] = false,
 				["15"] = {

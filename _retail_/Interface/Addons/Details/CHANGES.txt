@@ -1,28 +1,34 @@
-tag f6878036da75dda78d50c13578cc18385f1a4815 DetailsRetail.9.0.5.8516.144
+tag 27e9a91e1e467580c07954929aad9fc95dae5155 DetailsRetail.9.1.0.8698.145
 Author:	Tercio Jose <terciob19@hotmail.com>
-Date:	Mon May 31 15:40:31 2021 -0300
+Date:	Sun Jul 4 18:53:48 2021 -0300
 
-commit 361264a5f432c9fda2f52698c4daa0d0c2601e43
+commit ec4d1f06cc0f63c72d44f65ec52de90e17013fec
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Mon May 31 15:39:20 2021 -0300
+Date:   Sun Jul 4 18:53:06 2021 -0300
 
-    Version stuff
+    version up
 
-commit 3374a15932e8307b32dd497a0f316fc3faa821ad
-Author: Flamanis <Flamanis@users.noreply.github.com>
-Date:   Mon May 31 13:15:20 2021 -0500
-
-    Tiny Threat Resizing Fixes
-
-commit 3374a15932e8307b32dd497a0f316fc3faa821ad
-Author: Flamanis <Flamanis@users.noreply.github.com>
-Date:   Mon May 31 13:15:20 2021 -0500
-
-    Tiny Threat Resizing Fixes
-
-commit 4b6c229d8b93f2aeaa6442f286b9258469ca4cd1
+commit 999be46647dd7e6978bc54ead8e303d11d406b9f
 Author: Tercio Jose <terciob19@hotmail.com>
-Date:   Sat May 29 20:02:17 2021 -0300
+Date:   Sun Jul 4 18:52:41 2021 -0300
 
-    Old Twitch strings fixed, bar border updated to the new framework border
+    Fix some issues with the Coach
+
+commit fce191bf4f63de36b94e65033dcf5cd352844133
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sat Jul 3 14:48:17 2021 -0300
+
+    Typo
+
+commit dd49b0d8ec2916546da395028066f048af9cc8a3
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Sat Jul 3 10:16:55 2021 -0300
+
+    removed CONFIG_OPTION_DONT_MOVE_BATTLEGROUND_MINIMAP_ICON_ON_ERROR
+
+commit dbfe4b0fc21af365743f3c8098f6499cf20fba6c
+Author: Tercio Jose <terciob19@hotmail.com>
+Date:   Thu Jul 1 22:26:00 2021 -0300
+
+    Don't show new version chat message when Suppress Alerts
 

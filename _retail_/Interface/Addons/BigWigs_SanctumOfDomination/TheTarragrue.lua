@@ -1,7 +1,7 @@
 --------------------------------------------------------------------------------
 -- Module Declaration
 --
-if not IsTestBuild() then return end
+
 local mod, CL = BigWigs:NewBoss("The Tarragrue", 2450, 2435)
 if not mod then return end
 mod:RegisterEnableMob(175611) -- The Tarragrue
@@ -360,7 +360,7 @@ function mod:FuryOfTheAgesStart(args)
 end
 
 function mod:FuryOfTheAgesApplied(args)
-	if bit.band(args.destFlags, 0x400) == 0 and self:Dispeller("enrage", true, args.spellId) then -- COMBATLOG_OBJECT_TYPE_PLAYER
+	if not self:Player(args.destFlags) and self:Dispeller("enrage", true, args.spellId) then
 		self:Message(args.spellId, "orange", CL.buff_boss:format(L.enrage))
 		self:PlaySound(args.spellId, "warning")
 	end

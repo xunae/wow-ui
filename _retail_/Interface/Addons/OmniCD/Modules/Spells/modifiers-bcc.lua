@@ -1,10 +1,10 @@
+-- $ comments stripped
+
 local E, L, C = select(2, ...):unpack()
 
 if not E.isBCC then return end
 
 local BLANK = {}
-
--- obj_func_src_acc
 
 E.spell_cdmod_talents = {
 
@@ -440,7 +440,7 @@ local spellRanks = {
 	{1776,  1777,   8629,   11285,  11286,  38764   },
 	{1766,  1767,   1768,   1769,   38768   },
 	{408,   8643    },
-	{2983,  8696    },
+	{2983,  8696,   11305   },
 	{1784,  1785,   1786,   1787    },
 	{1856,  1857,   26889   },
 
@@ -584,9 +584,16 @@ for i = 1, #talentRanks do
 			E.talentNameToRankID[name] = t
 		end
 	else
-		E.Write("Invalid TalentID: |cffffd200" .. talentID)
+		--E.Write("Invalid TalentID: |cffffd200" .. talentID)
 	end
 end
+
+
+for k in pairs(E.spell_merged) do
+	E.spell_highlighted[k] = true
+end
+
+E.merged_buff_fix = BLANK
 
 E.spell_updateOnCast = {
 	[19244]  = { 24 },
@@ -631,7 +638,8 @@ E.cd_reset_cast = {
 		11426,
 		120,
 		122,
-		12472
+		12472,
+		6143,
 	},
 	[14185] = {
 		nil,
@@ -710,6 +718,8 @@ E.covenant_cdmod_items_mult = BLANK
 E.soulbind_conduits_rank = BLANK
 E.spell_cdmod_conduits = BLANK
 E.spell_cdmod_conduits_mult = BLANK
+E.spell_symbolOfHopeMajorCD = BLANK
+E.spell_majorCD = BLANK
 
 
 
@@ -823,6 +833,12 @@ E.item_setBonus = {
 	[28331] = { 44292,  4   },
 	[28332] = { 44292,  4   },
 	[28333] = { 44292,  4   },
+
+
+
+
+
+
 
 	[19621] = { 24465,  3   },
 	[19953] = { 24465,  3   },

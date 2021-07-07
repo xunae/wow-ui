@@ -9,7 +9,7 @@ Perl_ArcaneBar: enabled
 Favorites: disabled
 sArena: disabled
 NameplateAuras: enabled
-BigWigs: disabled
+BigWigs: enabled
 ColorPickerPlus: enabled
 Details_Vanguard: disabled
 Details_TinyThreat: disabled
@@ -21,10 +21,10 @@ Screen Overlay Enhanced: enabled
 ShadowedUnitFrames: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-Quartz: enabled
+Quartz: disabled
 WorldQuestsList: enabled
 Myslot: enabled
-!KalielsTracker: enabled
+!KalielsTracker: disabled
 Dominos_Cast: disabled
 Dominos_Encounter: disabled
 Dominos_Roll: disabled

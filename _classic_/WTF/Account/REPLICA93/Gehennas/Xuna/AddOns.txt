@@ -18,7 +18,9 @@ LittleWigs: enabled
 !KalielsTracker: disabled
 BigWigs_Karazhan: enabled
 BigWigs_Outland: enabled
-Gladdy: enabled
+Gladdy: disabled
 XunaTweaks: enabled
 Gladius: disabled
 sArena: enabled
+Bagnon: enabled
+Combuctor: disabled

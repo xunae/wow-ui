@@ -2,7 +2,7 @@
 OmniCCDB = {
 	["global"] = {
 		["dbVersion"] = 6,
-		["addonVersion"] = "9.0.10",
+		["addonVersion"] = "9.1.0",
 	},
 	["profileKeys"] = {
 		["Xunay - Draenor"] = "Default",
@@ -36,8 +36,8 @@ OmniCCDB = {
 		["Xuna - Earthshaker"] = "Default",
 		["Xñæ - Draenor"] = "Default",
 		["Dkuna - Draenor"] = "Default",
-		["Lightescp - Gehennas"] = "Default",
 		["Wñä - Stormscale"] = "Default",
+		["Lightescp - Gehennas"] = "Default",
 		["Nakolx - Stormscale"] = "Default",
 		["Xunap - Draenor"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
@@ -136,6 +136,7 @@ OmniCCDB = {
 	},
 }
 OmniCC4Config = {
+	["version"] = "8.2.3",
 	["groups"] = {
 		{
 			["id"] = "Ignore",
@@ -146,7 +147,7 @@ OmniCC4Config = {
 			["enabled"] = true,
 		}, -- [1]
 	},
-	["version"] = "8.2.3",
+	["engine"] = "AniUpdater",
 	["groupSettings"] = {
 		["base"] = {
 			["enabled"] = true,
@@ -196,17 +197,17 @@ OmniCC4Config = {
 				},
 			},
 			["effect"] = "pulse",
-			["minDuration"] = 2,
+			["yOff"] = -1,
 			["mmSSDuration"] = 0,
 			["anchor"] = "CENTER",
 			["spiralOpacity"] = 1.00999997742474,
-			["yOff"] = -1,
+			["scaleText"] = true,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["minSize"] = 0.74,
 			["minEffectDuration"] = 30,
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["fontSize"] = 15,
 		},
 		["Ignore"] = {
@@ -214,17 +215,17 @@ OmniCC4Config = {
 			["fontFace"] = "Fonts\\FRIZQT__.TTF",
 			["fontSize"] = 18,
 			["effect"] = "pulse",
-			["scaleText"] = true,
+			["minDuration"] = 2,
 			["minEffectDuration"] = 30,
 			["minSize"] = 0.5,
 			["spiralOpacity"] = 1,
-			["minDuration"] = 2,
+			["yOff"] = 0,
 			["xOff"] = 0,
 			["tenthsDuration"] = 0,
 			["fontOutline"] = "OUTLINE",
 			["anchor"] = "CENTER",
 			["mmSSDuration"] = 0,
-			["yOff"] = 0,
+			["scaleText"] = true,
 			["styles"] = {
 				["seconds"] = {
 					["a"] = 1,
@@ -271,5 +272,4 @@ OmniCC4Config = {
 			},
 		},
 	},
-	["engine"] = "AniUpdater",
 }

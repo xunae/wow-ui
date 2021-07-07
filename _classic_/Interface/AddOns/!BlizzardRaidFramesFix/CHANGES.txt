@@ -1,10 +1,10 @@
-lightweight tag be9b3e507dbf7cc582f466b705ed9ff3273a5dc5 v1.2.20-classic
+lightweight tag a02cf1109b2e5b4bc6f17762b1be8cd1359f674e v1.2.21-classic
 Author:	dev7355608 <dev7355608@gmail.com>
-Date:	Tue May 25 03:43:52 2021 +0200
+Date:	Fri Jun 25 04:43:42 2021 +0200
 
-commit abe57ae6a81348c0025d4385913a54269613f6f8
+commit 896a8641c04277fa12c9a960497684750ee823f7
 Author: dev7355608 <dev7355608@gmail.com>
-Date:   Tue May 25 02:59:34 2021 +0200
+Date:   Fri Jun 25 04:22:19 2021 +0200
 
-    Update interface version
+    Fix Clique incompatibility
 

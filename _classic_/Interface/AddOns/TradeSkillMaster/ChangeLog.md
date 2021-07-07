@@ -1,6 +1,5 @@
-## v4.10.43 Changes
+## v4.11.5 Changes
 
-* [BCC] Destroying will ignore items below required skill level
-* [BCC] Disenchanting material data fixes
+* [Classic] Fixed error when running a post scan
 
 [Known Issues](http://support.tradeskillmaster.com/display/KB/TSM4+Currently+Known+Issues)

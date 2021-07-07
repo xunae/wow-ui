@@ -1,13 +1,5 @@
 local TOCNAME,GBB=...
-local L = setmetatable({}, {__index = function (t, k)  
-	if GBB.L and GBB.L[k] then 
-		return GBB.L[k]
-	elseif GBB.locales.enGB and GBB.locales.enGB[k] then
-		return GBB.locales.enGB[k]
-	else
-		return "["..k.."]"
-	end	
-end})
+
 GroupBulletinBoard_Addon=GBB
 
 GBB.Version=GetAddOnMetadata(TOCNAME, "Version") 
@@ -19,6 +11,7 @@ GBB.MiniIcon= "Interface\\Icons\\spell_holy_prayerofshadowprotection"
 GBB.FriendIcon="Interface\\LootFrame\\toast-star"
 --"Interface\\COMMON\\FavoritesIcon"
 GBB.GuildIcon="Interface\\COMMON\\Indicator-Green"
+GBB.PastPlayerIcon="Interface\\COMMON\\Indicator-Yellow"
 GBB.TxtEscapePicture="|T%s:0|t"
 --"Interface\\Calendar\\MeetingIcon"
 --"Interface\\Icons\\spell_holy_prayerofshadowprotection"
@@ -171,6 +164,13 @@ function GBB.JoinLFG()
 	end
 end
 
+function GBB.BtnSelectChannel()
+	if UIDROPDOWNMENU_OPEN_MENU ~=  GBB.FramePullDownChannel then 
+		UIDropDownMenu_Initialize( GBB.FramePullDownChannel, GBB.CreateChannelPulldown, "MENU")
+	end
+	ToggleDropDownMenu(nil, nil,  GBB.FramePullDownChannel, GroupBulletinBoardFrameSelectChannel, 0,0)
+end
+
 --gui
 -------------------------------------------------------------------------------------
 
@@ -192,7 +192,7 @@ end
 
 function GBB.ResizeFrameList()
 	local w
-	GroupBulletinBoardFrame_ScrollFrame:SetHeight(GroupBulletinBoardFrame:GetHeight() -30-25 )
+	GroupBulletinBoardFrame_ScrollFrame:SetHeight(GroupBulletinBoardFrame:GetHeight() -55-25 )
 	w=GroupBulletinBoardFrame:GetWidth() -20-10-10
 	GroupBulletinBoardFrame_ScrollFrame:SetWidth( w )
 	GroupBulletinBoardFrame_ScrollChildFrame:SetWidth( w )
@@ -323,9 +323,8 @@ local function hooked_createTooltip(self)
 				self:AddLine(GBB.Tool.RGBtoEscape(GBB.DB.ColorGuild).."< "..guildName.." / "..guildRankName.." >")
 			end
 		end
-	
+
 		if GBB.DB.EnableGroup and GBB.GroupTrans and GBB.GroupTrans[name] then
-		
 			local inInstance, instanceType = IsInInstance()
 		
 			if instanceType=="none" then
@@ -410,17 +409,16 @@ function GBB.Init()
 	GBB.DB.minimapPos=nil
 	
 	-- Get localize and Dungeon-Information
-	GBB.LocalizationInit()	
+	L = GBB.LocalizationInit()	
 	GBB.dungeonNames = GBB.GetDungeonNames()
 	GBB.RaidList = GBB.GetRaids()
 	--GBB.dungeonLevel
 	GBB.dungeonSort = GBB.GetDungeonSort()	
-	--GBB.searchTagsLoc,GBB.badTagsLoc,GBB.dungeonTagsLoc,GBB.dungeonSecondTags,GBB.suffixTagsLoc = GroupBulletinBoard_GetTags()
-	
+
 	-- Reset Request-List
 	GBB.RequestList={}
 	GBB.FramesEntries={}
-	-- ownRequestDungeons={}
+
 	GBB.FoldedDungeons={}
 	
 	-- Timer-Stuff
@@ -434,7 +432,7 @@ function GBB.Init()
 	
 	GBB.AutoUpdateTimer=time()+GBB.UPDATETIMER
 		
-	
+	GBB.AnnounceInit()
 	
 	local x, y, w, h = GBB.DB.X, GBB.DB.Y, GBB.DB.Width, GBB.DB.Height
 	if not x or not y or not w or not h then
@@ -510,7 +508,15 @@ function GBB.Init()
 	)	
 	
 	GBB.FramePullDownChannel=CreateFrame("Frame", "GBB.PullDownMenu", UIParent, "UIDropDownMenuTemplate")
-	
+	if GBB.DB.AnnounceChannel == nil then
+		if L["lfg_channel"] ~= "" then
+			GBB.DB.AnnounceChannel = L["lfg_channel"]
+		else
+			_, GBB.DB.AnnounceChannel = GetChannelList()
+		end
+	end
+	GroupBulletinBoardFrameSelectChannel:SetText(GBB.DB.AnnounceChannel)
+
 	GBB.ResizeFrameList()
 	
 	if GBB.DB.EscapeQuit then 

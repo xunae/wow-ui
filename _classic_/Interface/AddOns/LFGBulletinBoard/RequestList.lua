@@ -1,13 +1,4 @@
 local 	TOCNAME,GBB=...
-local L = setmetatable({}, {__index = function (t, k)  
-	if GBB.L and GBB.L[k] then 
-		return GBB.L[k]
-	elseif GBB.locales.enGB and GBB.locales.enGB[k] then
-		return GBB.locales.enGB[k]
-	else
-		return "["..k.."]"
-	end	
-end})
 
 --ScrollList / Request
 -------------------------------------------------------------------------------------
@@ -182,7 +173,8 @@ local function CreateItem(yy,i,doCompact,req,forceHight)
 		end	
 		
 		local FriendIcon=(req.IsFriend and string.format(GBB.TxtEscapePicture,GBB.FriendIcon) or "") ..
-						 (req.IsGuildMember and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "")
+						 (req.IsGuildMember and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "") ..
+						 (req.IsPastPlayer and string.format(GBB.TxtEscapePicture,GBB.PastPlayerIcon) or "")
 	
 		local suffix="|r"
 	
@@ -688,6 +680,7 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 					GBB.RequestList[index].dungeon=dungeon
 					GBB.RequestList[index].IsGuildMember=IsInGuild() and IsGuildMember(guid)
 					GBB.RequestList[index].IsFriend=C_FriendList.IsFriend(guid)
+					GBB.RequestList[index].IsPastPlayer=GBB.GroupTrans[name]~=nil
 					
 					if GBB.FilterDungeon(dungeon, isHeroic, isRaid) and dungeon~="TRADE" and dungeon~="MISC" and GBB.FoldedDungeons[dungeon]~= true then
 						if dungeonTXT=="" then
@@ -710,7 +703,8 @@ function GBB.PhraseMessage(msg,name,guid,channel)
 	if dungeonTXT~="" and GBB.AllowInInstance() then 
 		if GBB.DB.NotifyChat then
 			local FriendIcon=(C_FriendList.IsFriend(guid) and string.format(GBB.TxtEscapePicture,GBB.FriendIcon) or "") ..
-						 ((IsInGuild() and IsGuildMember(guid)) and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "")
+						 ((IsInGuild() and IsGuildMember(guid)) and string.format(GBB.TxtEscapePicture,GBB.GuildIcon) or "") ..
+						 (GBB.GroupTrans[name]~=nil and string.format(GBB.TxtEscapePicture,GBB.PastPlayerIcon) or "" )
 			local linkname=	"|Hplayer:"..name.."|h[|c"..RAID_CLASS_COLORS[engClass].colorStr ..name.."|r]|h"
 			if GBB.DB.OneLineNotification then 
 				DEFAULT_CHAT_FRAME:AddMessage(GBB.MSGPREFIX..linkname..FriendIcon..": "..msg,GBB.DB.NotifyColor.r,GBB.DB.NotifyColor.g,GBB.DB.NotifyColor.b)

@@ -19,7 +19,7 @@ LittleWigs: enabled
 Xunamate: disabled
 Kui_Media: enabled
 LittleWigs_WrathOfTheLichKing: enabled
-BigWigs: disabled
+BigWigs: enabled
 BigWigs_Shadowlands: enabled
 Neuron: disabled
 Myslot: enabled
@@ -43,9 +43,9 @@ Details_EncounterDetails: disabled
 Details_DataStorage: enabled
 Screen Overlay Enhanced: enabled
 ShadowedUnitFrames: enabled
-Quartz: enabled
+Quartz: disabled
 WorldQuestsList: enabled
-!KalielsTracker: enabled
+!KalielsTracker: disabled
 Dominos_Cast: disabled
 Dominos_Encounter: disabled
 Dominos_Roll: disabled

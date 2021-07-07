@@ -26,6 +26,7 @@ VER 3 0000000001000007 "FS / FOCUS" "INV_MISC_QUESTIONMARK"
 END
 VER 3 0000000001000005 "NS" "INV_MISC_QUESTIONMARK"
 #showtooltip Nature's Swiftness
+/use Ribbon of Sacrifice
 /cast Nature's Swiftness
 /cast Healing Wave
 END

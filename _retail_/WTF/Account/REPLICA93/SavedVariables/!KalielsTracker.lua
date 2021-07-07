@@ -3,7 +3,7 @@ KalielsTrackerDB = {
 	["char"] = {
 		["Xuna - Stormscale"] = {
 			["quests"] = {
-				["num"] = 3,
+				["num"] = 4,
 				["cache"] = {
 					[60641] = {
 						["title"] = "Blossoming of the Grove",
@@ -26,72 +26,78 @@ KalielsTrackerDB = {
 						["isCalling"] = false,
 						["startMapID"] = 0,
 					},
+					[63578] = {
+						["title"] = "The Battle of Ardenweald",
+						["zone"] = "Chains of Domination",
+						["level"] = 60,
+						["isCalling"] = false,
+						["startMapID"] = 1670,
+					},
 				},
 			},
 		},
 		["Xûñä - Stormscale"] = {
 			["quests"] = {
+				["num"] = 2,
 				["cache"] = {
 					[61983] = {
 						["title"] = "Replenish the Reservoir",
 						["zone"] = "The Art of War",
 						["level"] = 60,
-						["startMapID"] = 0,
 						["isCalling"] = false,
+						["startMapID"] = 0,
 					},
 					[61739] = {
 						["title"] = "The Wayward Baron",
 						["zone"] = "The Art of War",
 						["level"] = 60,
-						["startMapID"] = 0,
 						["isCalling"] = false,
+						["startMapID"] = 0,
 					},
 				},
-				["num"] = 2,
 			},
 		},
 		["Wñä - Stormscale"] = {
 			["quests"] = {
-				["num"] = 9,
 				["cache"] = {
 					[60060] = {
 						["title"] = "Mirror Attunement: Pridefall Hamlet",
 						["zone"] = "Covenant Sanctum",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[62288] = {
 						["title"] = "Observing Teamwork",
 						["zone"] = "Oribos",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 1670,
+						["isCalling"] = false,
 					},
 					[61981] = {
 						["title"] = "Replenish the Reservoir",
 						["zone"] = "Venthyr Campaign",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[7281] = {
 						["title"] = "Brotherly Love",
 						["zone"] = "Alterac Valley",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[60139] = {
 						["title"] = "Torment Chamber: Jaina",
 						["zone"] = "The Maw",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
-					[55509] = {
-						["title"] = "Victory in Wintergrasp",
-						["zone"] = "Wintergrasp",
+					[62284] = {
+						["title"] = "Observing Battle",
+						["zone"] = "Oribos",
 						["level"] = 60,
 						["isCalling"] = false,
 						["startMapID"] = 0,
@@ -100,42 +106,43 @@ KalielsTrackerDB = {
 						["title"] = "Halls of Atonement: Medallion of Pride",
 						["zone"] = "Dungeon",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 0,
+						["isCalling"] = false,
 					},
 					[62634] = {
 						["title"] = "A Shattered Path Through Time",
 						["zone"] = "Weekend Event",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 1670,
+						["isCalling"] = false,
 					},
 					[62286] = {
 						["title"] = "Observing Skirmishes",
 						["zone"] = "Oribos",
 						["level"] = 60,
-						["isCalling"] = false,
 						["startMapID"] = 1670,
+						["isCalling"] = false,
 					},
-					[62284] = {
-						["title"] = "Observing Battle",
-						["zone"] = "Oribos",
+					[55509] = {
+						["title"] = "Victory in Wintergrasp",
+						["zone"] = "Wintergrasp",
 						["level"] = 60,
 						["startMapID"] = 0,
 						["isCalling"] = false,
 					},
 				},
+				["num"] = 9,
 			},
 		},
+	},
+	["global"] = {
+		["helpTutorial"] = 11,
+		["version"] = "4.2.13",
 	},
 	["profileKeys"] = {
 		["Xuna - Stormscale"] = "Default",
 		["Xûñä - Stormscale"] = "Default",
 		["Wñä - Stormscale"] = "Default",
-	},
-	["global"] = {
-		["helpTutorial"] = 11,
-		["version"] = "4.2.13",
 	},
 	["profiles"] = {
 		["Default"] = {

@@ -56,7 +56,7 @@ MADB = {
 						"UIParent", -- [2]
 						"TOPRIGHT", -- [3]
 						0, -- [4]
-						20, -- [5]
+						0, -- [5]
 					},
 					["name"] = "MinimapCluster",
 					["pos"] = {

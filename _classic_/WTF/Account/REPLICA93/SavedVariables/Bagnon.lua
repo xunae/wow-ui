@@ -29,7 +29,7 @@ Bagnon_Sets = {
 	},
 	["mineColor"] = {
 	},
-	["version"] = "9.0.7",
+	["version"] = "9.1.0",
 	["colorSlots"] = true,
 	["global"] = {
 		["inventory"] = {
@@ -81,8 +81,8 @@ Bagnon_Sets = {
 			["money"] = true,
 			["hiddenRules"] = {
 			},
-			["y"] = 181.8332366943359,
-			["x"] = -80.667236328125,
+			["y"] = 181.1665802001953,
+			["x"] = -81.3338623046875,
 			["search"] = false,
 			["broker"] = false,
 			["reverseSlots"] = false,

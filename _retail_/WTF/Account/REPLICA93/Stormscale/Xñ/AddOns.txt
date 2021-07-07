@@ -4,12 +4,12 @@ BigWigs_Options: enabled
 BigWigs_Plugins: enabled
 WeakAurasCompanion: enabled
 WeakAurasArchive: enabled
-Quartz: enabled
-BigWigs: disabled
+Quartz: disabled
+BigWigs: enabled
 ShadowedUnitFrames: enabled
 Screen Overlay Enhanced: enabled
 Myslot: enabled
-!KalielsTracker: enabled
+!KalielsTracker: disabled
 Kui_Media: enabled
 Dominos_Cast: disabled
 Dominos_Encounter: disabled

@@ -36,9 +36,9 @@ Details_StreamerDB = {
 		["Xunaj - Draenor"] = "Xûñä - Ravencrest",
 		["Xunadwarf - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Xã - Draenor"] = "Xûñä - Ravencrest",
-		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
-		["Mktja - Draenor"] = "Xûñä - Ravencrest",
 		["Jungyuup - Stormscale"] = "Xûñä - Ravencrest",
+		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Xuna - Stormscale"] = "Xûñä - Ravencrest",
 		["Xûñá - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xuna - Valley of Heroes - EU"] = "Xûñä - Ravencrest",
 		["Drmscp - Draenor"] = "Xûñä - Ravencrest",
@@ -55,7 +55,7 @@ Details_StreamerDB = {
 		["Xuna - Gehennas"] = "Xûñä - Ravencrest",
 		["Xûñä - Ravencrest"] = "Xûñä - Ravencrest",
 		["Xñæ - Draenor"] = "Xûñä - Ravencrest",
-		["Xunapalah - Arena Champions - EU"] = "Xûñä - Ravencrest",
+		["Mktja - Draenor"] = "Xûñä - Ravencrest",
 		["Xunamonk - Arena Champions - EU"] = "Xûñä - Ravencrest",
 		["Wñä - Stormscale"] = "Xûñä - Ravencrest",
 		["Lightescp - Draenor"] = "Xûñä - Ravencrest",
@@ -98,7 +98,7 @@ Details_StreamerDB = {
 			["square_amount"] = 5,
 			["enabled"] = false,
 			["arrow_size"] = 15,
-			["use_spark"] = true,
+			["font_size"] = 12,
 			["row_spacement"] = 21,
 			["main_frame_color"] = {
 				0, -- [1]
@@ -106,13 +106,13 @@ Details_StreamerDB = {
 				0, -- [3]
 				0, -- [4]
 			},
-			["author"] = "Details! Team",
+			["row_color"] = {
+				0.101960784313725, -- [1]
+				0.101960784313725, -- [2]
+				0.101960784313725, -- [3]
+				0.777777433395386, -- [4]
+			},
 			["arrow_texture"] = "Interface\\Tooltips\\ReforgeGreenArrow",
-			["font_size"] = 12,
-			["y"] = -28.9441528320313,
-			["x"] = 4.38843965530396,
-			["font_face"] = "Friz Quadrata TT",
-			["square_size"] = 32,
 			["per_second"] = {
 				["enabled"] = false,
 				["point"] = "CENTER",
@@ -124,12 +124,12 @@ Details_StreamerDB = {
 				["update_speed"] = 0.05,
 				["attribute_type"] = 1,
 			},
-			["row_color"] = {
-				0.101960784313725, -- [1]
-				0.101960784313725, -- [2]
-				0.101960784313725, -- [3]
-				0.777777433395386, -- [4]
-			},
+			["use_spark"] = true,
+			["x"] = 4.38843965530396,
+			["font_face"] = "Friz Quadrata TT",
+			["square_size"] = 32,
+			["y"] = -28.9441528320313,
+			["author"] = "Details! Team",
 			["main_frame_locked"] = true,
 			["arrow_anchor_y"] = 0,
 		},

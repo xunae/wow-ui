@@ -7,5 +7,5 @@ ClassicCodex-patch: enabled
 ClassicCodex-loader: disabled
 Dominos_Cast: disabled
 Dominos_Roll: disabled
-Gladdy: enabled
-Gladius: enabled
+Gladdy: disabled
+Gladius: disabled
